@@ -146,7 +146,7 @@ s = S[1]
 for sh in s.shapes:
     if sh.has_text_frame and "Team Details" in sh.text_frame.text:
         ps = sh.text_frame.paragraphs
-        fills = {"Team name: ": "Team name: LedgerLens", "Team leader name: ": "Team leader name: Changhyeon (SK Telecom, AI CIC)",
+        fills = {"Team name: ": "Team name: Hey Merlion!", "Team leader name: ": "Team leader name: Changhyeon Nam (team: Changhyeon Nam, Hyunho Yang)",
                  "Problem Statement:": "Problem Statement: BFSI: Intelligent Risk, Fraud & Financial Experiences"}
         for p in ps:
             key = next((k for k in fills if p.runs and p.runs[0].text.strip() == k.strip()), None)
@@ -378,7 +378,7 @@ rows = [["Assumption", "Value"],
         ["Tokens per 20-document case", "60-90k input, 15-25k output"],
         ["Hosting", "Cloud Run scales to zero; Firestore and Storage in free tier"],
         ["Guardrail", "Budget-cap env var stops Gemini calls once spent"],
-        ["Build", "4 engineers, 4 days, free tier and trial credits"]]
+        ["Build", "2 engineers, 4 days, free tier and trial credits"]]
 table(s, 6.3, 1.8, 3.4, 3.4, rows, [1.35, 2.05], font=8.5, bold_first_col=True)
 
 def framed(slide, path, x, y, w=None, h=None):
