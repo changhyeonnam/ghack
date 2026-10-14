@@ -266,22 +266,25 @@ tb(s, 0.3, 5.12, 9.4, 0.3, [{"t": [("Out of scope by design: ", {"bold": True, "
 # ---------- Slide 8: Wireframes -> the moment ----------
 s = S[8]
 set_title(s, "Wireframes / Mock diagrams of the proposed solution")
-card(s, 0.3, 1.25, 9.4, 4.2, fill=INK, line=None, radius=0.04)
-tb(s, 0.5, 1.33, 6.0, 0.3, [{"t": "THE PRODUCT IN ONE INTERACTION", "size": 9, "bold": True, "color": AMBER}], margin=0.0)
-tb(s, 0.5, 1.6, 6.2, 0.6, [{"t": "Click the number. See the line.", "size": 26, "bold": True, "color": WHITE}], margin=0.0)
-_p = picture(s, f"{SHOTS}/v2_evidence_c.jpg", 0.5, 2.3, h=2.85); _p.line.color.rgb = RGBColor(0x2E, 0x5F, 0x6E); _p.line.width = Pt(0.75)
-pw = _p.width / 914400
-rx = 0.5 + pw + 0.25; rw = 9.7 - 0.2 - rx
-cards8 = [("VND 82,500,000", "Credits from the applicant's own accounts. Sum of 3 credits whose sender matches the account holder.", False),
-          ("3 sources, 1 click", "bank_statement p.2, p.4, p.5. The viewer opens the page and highlights the row.", False),
-          ("Unsourced numbers: 0", "Enforced by the output schema. A miss becomes a Challenger objection.", True)]
-y = 2.3
-for t, d, acc in cards8:
-    card(s, rx, y, rw, 0.88, fill=AMBER if acc else RGBColor(0x15, 0x50, 0x5F), line=None, radius=0.06)
-    tb(s, rx + 0.14, y + 0.07, rw - 0.28, 0.35, [{"t": t, "size": 13 if not acc else 12.5, "bold": True, "color": INK if acc else AMBER}], margin=0.0)
-    tb(s, rx + 0.14, y + 0.42, rw - 0.28, 0.5, [{"t": d, "size": 9, "color": INK if acc else RGBColor(0xBF, 0xD8, 0xD5)}], margin=0.0)
-    y += 0.985
-tb(s, 0.5, 5.2, 6.5, 0.22, [{"t": "Live prototype, case B (Linh Fashion Online): 14 documents, 130 figures, 0 unsourced, 12 objections.", "size": 8, "italic": True, "color": RGBColor(0x8F, 0xB8, 0xB3)}], margin=0.0)
+eyebrow(s, "The product in one interaction", y=1.18)
+tb(s, 0.3, 1.4, 9.4, 0.5, [{"t": "Click the number. See the line.", "size": 26, "bold": True, "color": INK}], margin=0.0)
+_sc = 3.4 / 460
+_p = picture(s, f"{SHOTS}/v2_evidence_c.jpg", 0.3, 1.95, h=3.4); _p.line.color.rgb = LINE; _p.line.width = Pt(0.75)
+marks = [(148, 72), (318, 88), (592, 118)]
+for i, (px, py) in enumerate(marks):
+    cx = 0.3 + px * _sc; cy = 1.95 + py * _sc
+    pill(s, cx - 0.15, cy - 0.15, 0.3, 0.3, str(i + 1), fill=AMBER, color=INK, size=10)
+steps8 = [("The memo cites a figure", "Every underlined value is a catalog figure with a source. Here: VND 82,500,000, credits from the applicant's own accounts."),
+          ("One click opens the evidence", "The computation (sum of 3 credits whose sender matches the account holder) and all 3 source references: pages 2, 4 and 5."),
+          ("The source line lights up", "The statement page opens with the extractor's bounding box drawn on the exact row. Unsourced numbers: 0, enforced by the output schema.")]
+y = 1.95
+for i, (t, d) in enumerate(steps8):
+    acc = i == 2
+    card(s, 5.2, y, 4.5, 1.05, fill=AMBER_T if acc else WHITE, line=AMBER if acc else LINE, lw=1.5 if acc else 1)
+    pill(s, 5.34, y + 0.14, 0.34, 0.34, str(i + 1), fill=AMBER if acc else INK, color=INK if acc else WHITE, size=11)
+    tb(s, 5.8, y + 0.1, 3.8, 0.4, [{"t": t, "size": 13.5, "bold": True, "color": INK}], anchor=MSO_ANCHOR.MIDDLE, margin=0.0)
+    tb(s, 5.34, y + 0.5, 4.25, 0.55, [{"t": d, "size": 9.5, "color": TXT}], margin=0.0)
+    y += 1.15
 
 # ---------- Slide 10: Technologies ----------
 s = S[10]
