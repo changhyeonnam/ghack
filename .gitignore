@@ -9,4 +9,3 @@ data/runtime/
 .DS_Store
 benchmark/results/*.tmp
 data/runtime_benchmark/
-.claude/

@@ -23,7 +23,7 @@ Full-resolution recording: [docs/media/ledgerlens_demo.mp4](docs/media/ledgerlen
 | ![Evidence](docs/media/04_evidence_highlight.png) Click a figure: the statement page opens with the source rows highlighted | ![Objections](docs/media/05_objections.png) Challenger objections with tool evidence and accept / dismiss |
 | ![Decision](docs/media/08_decision_form.png) Underwriter decision with open-critical warning and conditions | ![Letter](docs/media/09_signed_decision_letter.png) Signed decision and plain-language customer letter |
 
-More: [objection evidence](docs/media/07_objection_evidence.png) · [audit trail](docs/media/10_audit_trail.png) · [workbench before run](docs/media/02_workbench_before_run.png) · [pitch deck (PDF)](docs/LedgerLens_AI_Builder_Cup_Submission.pdf)
+More: [objection evidence](docs/media/07_objection_evidence.png) · [audit trail](docs/media/10_audit_trail.png) · [workbench before run](docs/media/02_workbench_before_run.png) · [pitch deck (PDF)](presentation/LedgerLens_AI_Builder_Cup_Submission.pdf)
 
 ## What makes it different
 
