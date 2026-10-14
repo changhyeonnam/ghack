@@ -1,0 +1,3369 @@
+{
+ "account_holder": "SARI DEWI",
+ "bank_name": "Bank Nusantara Digital (synthetic)",
+ "account_masked": "1120 **** **** 7781",
+ "currency": "IDR",
+ "period_start": "2026-01-01",
+ "period_end": "2026-06-30",
+ "opening_balance": 10550000,
+ "closing_balance": 21878054,
+ "opening_balance_bbox": [
+  239,
+  60,
+  258,
+  940
+ ],
+ "opening_balance_page": 1,
+ "closing_balance_bbox": [
+  632,
+  60,
+  650,
+  940
+ ],
+ "closing_balance_page": 5,
+ "pages": 5,
+ "months_covered": [
+  "2026-01",
+  "2026-02",
+  "2026-03",
+  "2026-04",
+  "2026-05",
+  "2026-06"
+ ],
+ "sections": [
+  {
+   "label": "2026-01",
+   "opening_balance": 10550000,
+   "closing_balance": 21878054,
+   "opening_bbox": [
+    239,
+    60,
+    258,
+    940
+   ],
+   "opening_page": 1,
+   "closing_bbox": [
+    632,
+    60,
+    650,
+    940
+   ],
+   "closing_page": 5
+  }
+ ],
+ "balance_breaks": [],
+ "transactions": [
+  {
+   "row_id": "T0001",
+   "date": "2026-01-01",
+   "description": "SEWA KIOS BULAN 01/2026 - H. MAHMUD",
+   "counterparty": "H. MAHMUD (PEMILIK KIOS)",
+   "debit": 2500000,
+   "credit": 0,
+   "balance_after": 8050000,
+   "page": 1,
+   "bbox": [
+    258,
+    60,
+    276,
+    940
+   ],
+   "ref": "FT26010126125",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0002",
+   "date": "2026-01-01",
+   "description": "QRIS SETTLEMENT MID 93605980 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 985000,
+   "balance_after": 9035000,
+   "page": 1,
+   "bbox": [
+    276,
+    60,
+    295,
+    940
+   ],
+   "ref": "FT26010119119",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0003",
+   "date": "2026-01-01",
+   "description": "TARIK TUNAI ATM - ATM NUSANTARA 0231",
+   "counterparty": null,
+   "debit": 1300000,
+   "credit": 0,
+   "balance_after": 7735000,
+   "page": 1,
+   "bbox": [
+    295,
+    60,
+    313,
+    940
+   ],
+   "ref": "FT26010191586",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0004",
+   "date": "2026-01-02",
+   "description": "QRIS SETTLEMENT MID 93609566 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1705000,
+   "balance_after": 9440000,
+   "page": 1,
+   "bbox": [
+    313,
+    60,
+    331,
+    940
+   ],
+   "ref": "FT26010292523",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0005",
+   "date": "2026-01-05",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 2700000,
+   "balance_after": 12140000,
+   "page": 1,
+   "bbox": [
+    331,
+    60,
+    350,
+    940
+   ],
+   "ref": "FT26010524159",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0006",
+   "date": "2026-01-06",
+   "description": "TRF DARI HENDRA KUSUMA - PESANAN SEMBAKO",
+   "counterparty": "HENDRA KUSUMA",
+   "debit": 0,
+   "credit": 1130000,
+   "balance_after": 13270000,
+   "page": 1,
+   "bbox": [
+    350,
+    60,
+    368,
+    940
+   ],
+   "ref": "FT26010679680",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0007",
+   "date": "2026-01-06",
+   "description": "PLN LISTRIK PASCABAYAR - ID PEL 5412xxxx",
+   "counterparty": "PLN",
+   "debit": 354000,
+   "credit": 0,
+   "balance_after": 12916000,
+   "page": 1,
+   "bbox": [
+    368,
+    60,
+    387,
+    940
+   ],
+   "ref": "FT26010677521",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0008",
+   "date": "2026-01-08",
+   "description": "QRIS SETTLEMENT MID 93601889 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1365000,
+   "balance_after": 14281000,
+   "page": 1,
+   "bbox": [
+    387,
+    60,
+    405,
+    940
+   ],
+   "ref": "FT26010820129",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0009",
+   "date": "2026-01-08",
+   "description": "TARIK TUNAI ATM - ATM NUSANTARA 0231",
+   "counterparty": null,
+   "debit": 600000,
+   "credit": 0,
+   "balance_after": 13681000,
+   "page": 1,
+   "bbox": [
+    405,
+    60,
+    423,
+    940
+   ],
+   "ref": "FT26010827840",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0010",
+   "date": "2026-01-10",
+   "description": "QRIS SETTLEMENT MID 93609050 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1477000,
+   "balance_after": 15158000,
+   "page": 1,
+   "bbox": [
+    423,
+    60,
+    442,
+    940
+   ],
+   "ref": "FT26011092570",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0011",
+   "date": "2026-01-10",
+   "description": "TRF KE CV SUMBER REJEKI - PEMBELIAN STOK",
+   "counterparty": "CV SUMBER REJEKI",
+   "debit": 780000,
+   "credit": 0,
+   "balance_after": 14378000,
+   "page": 1,
+   "bbox": [
+    442,
+    60,
+    460,
+    940
+   ],
+   "ref": "FT26011047983",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0012",
+   "date": "2026-01-10",
+   "description": "PDAM AIR BERSIH - TAGIHAN BULANAN",
+   "counterparty": "PDAM",
+   "debit": 134000,
+   "credit": 0,
+   "balance_after": 14244000,
+   "page": 1,
+   "bbox": [
+    460,
+    60,
+    479,
+    940
+   ],
+   "ref": "FT26011095498",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0013",
+   "date": "2026-01-11",
+   "description": "TRF DARI BUDI SANTOSO - PESANAN SEMBAKO",
+   "counterparty": "BUDI SANTOSO",
+   "debit": 0,
+   "credit": 740000,
+   "balance_after": 14984000,
+   "page": 1,
+   "bbox": [
+    479,
+    60,
+    497,
+    940
+   ],
+   "ref": "FT26011138965",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0014",
+   "date": "2026-01-12",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 2650000,
+   "balance_after": 17634000,
+   "page": 1,
+   "bbox": [
+    497,
+    60,
+    516,
+    940
+   ],
+   "ref": "FT26011281127",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0015",
+   "date": "2026-01-14",
+   "description": "TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK",
+   "counterparty": "TOKO GROSIR MAKMUR",
+   "debit": 6450000,
+   "credit": 0,
+   "balance_after": 11184000,
+   "page": 1,
+   "bbox": [
+    516,
+    60,
+    534,
+    940
+   ],
+   "ref": "FT26011467077",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0016",
+   "date": "2026-01-15",
+   "description": "QRIS SETTLEMENT MID 93601394 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1588000,
+   "balance_after": 12772000,
+   "page": 1,
+   "bbox": [
+    534,
+    60,
+    552,
+    940
+   ],
+   "ref": "FT26011525329",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0017",
+   "date": "2026-01-16",
+   "description": "QRIS SETTLEMENT MID 93603458 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 857000,
+   "balance_after": 13629000,
+   "page": 1,
+   "bbox": [
+    552,
+    60,
+    571,
+    940
+   ],
+   "ref": "FT26011645736",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0018",
+   "date": "2026-01-16",
+   "description": "TRF KE CV SUMBER REJEKI - PEMBELIAN STOK",
+   "counterparty": "CV SUMBER REJEKI",
+   "debit": 4200000,
+   "credit": 0,
+   "balance_after": 9429000,
+   "page": 1,
+   "bbox": [
+    571,
+    60,
+    589,
+    940
+   ],
+   "ref": "FT26011640544",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0019",
+   "date": "2026-01-17",
+   "description": "QRIS SETTLEMENT MID 93609802 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1606000,
+   "balance_after": 11035000,
+   "page": 1,
+   "bbox": [
+    589,
+    60,
+    608,
+    940
+   ],
+   "ref": "FT26011758706",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0020",
+   "date": "2026-01-18",
+   "description": "QRIS SETTLEMENT MID 93607245 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1063000,
+   "balance_after": 12098000,
+   "page": 1,
+   "bbox": [
+    608,
+    60,
+    626,
+    940
+   ],
+   "ref": "FT26011808876",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0021",
+   "date": "2026-01-19",
+   "description": "QRIS SETTLEMENT MID 93607352 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1279000,
+   "balance_after": 13377000,
+   "page": 1,
+   "bbox": [
+    626,
+    60,
+    644,
+    940
+   ],
+   "ref": "FT26011956641",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0022",
+   "date": "2026-01-19",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 2450000,
+   "balance_after": 15827000,
+   "page": 1,
+   "bbox": [
+    644,
+    60,
+    663,
+    940
+   ],
+   "ref": "FT26011937263",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0023",
+   "date": "2026-01-21",
+   "description": "INTERNET WIFI NUSANET - TAGIHAN",
+   "counterparty": "NUSANET",
+   "debit": 204000,
+   "credit": 0,
+   "balance_after": 15623000,
+   "page": 1,
+   "bbox": [
+    663,
+    60,
+    681,
+    940
+   ],
+   "ref": "FT26012126903",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0024",
+   "date": "2026-01-22",
+   "description": "TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN STOK",
+   "counterparty": "GROSIR SEMBAKO BAROKAH",
+   "debit": 729000,
+   "credit": 0,
+   "balance_after": 14894000,
+   "page": 1,
+   "bbox": [
+    681,
+    60,
+    700,
+    940
+   ],
+   "ref": "FT26012265033",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0025",
+   "date": "2026-01-23",
+   "description": "QRIS SETTLEMENT MID 93606396 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1660000,
+   "balance_after": 16554000,
+   "page": 1,
+   "bbox": [
+    700,
+    60,
+    718,
+    940
+   ],
+   "ref": "FT26012359259",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0026",
+   "date": "2026-01-23",
+   "description": "TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN STOK",
+   "counterparty": "GROSIR SEMBAKO BAROKAH",
+   "debit": 7450000,
+   "credit": 0,
+   "balance_after": 9104000,
+   "page": 1,
+   "bbox": [
+    718,
+    60,
+    736,
+    940
+   ],
+   "ref": "FT26012373232",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0027",
+   "date": "2026-01-25",
+   "description": "QRIS SETTLEMENT MID 93606068 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1064000,
+   "balance_after": 10168000,
+   "page": 1,
+   "bbox": [
+    736,
+    60,
+    755,
+    940
+   ],
+   "ref": "FT26012557404",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0028",
+   "date": "2026-01-26",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 2450000,
+   "balance_after": 12618000,
+   "page": 1,
+   "bbox": [
+    755,
+    60,
+    773,
+    940
+   ],
+   "ref": "FT26012644858",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0029",
+   "date": "2026-01-26",
+   "description": "TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN STOK",
+   "counterparty": "GROSIR SEMBAKO BAROKAH",
+   "debit": 4019639,
+   "credit": 0,
+   "balance_after": 8598361,
+   "page": 1,
+   "bbox": [
+    773,
+    60,
+    792,
+    940
+   ],
+   "ref": "FT26012629663",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0030",
+   "date": "2026-01-27",
+   "description": "QRIS SETTLEMENT MID 93607855 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1314000,
+   "balance_after": 9912361,
+   "page": 1,
+   "bbox": [
+    792,
+    60,
+    810,
+    940
+   ],
+   "ref": "FT26012784577",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0031",
+   "date": "2026-01-29",
+   "description": "QRIS SETTLEMENT MID 93602312 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1670000,
+   "balance_after": 11582361,
+   "page": 1,
+   "bbox": [
+    810,
+    60,
+    828,
+    940
+   ],
+   "ref": "FT26012902245",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0032",
+   "date": "2026-01-30",
+   "description": "QRIS SETTLEMENT MID 93604304 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 930000,
+   "balance_after": 12512361,
+   "page": 2,
+   "bbox": [
+    135,
+    60,
+    153,
+    940
+   ],
+   "ref": "FT26013096640",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0033",
+   "date": "2026-01-31",
+   "description": "BIAYA ADMIN BULANAN",
+   "counterparty": null,
+   "debit": 15000,
+   "credit": 0,
+   "balance_after": 12497361,
+   "page": 2,
+   "bbox": [
+    153,
+    60,
+    172,
+    940
+   ],
+   "ref": "FT26013191644",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0034",
+   "date": "2026-02-01",
+   "description": "SEWA KIOS BULAN 02/2026 - H. MAHMUD",
+   "counterparty": "H. MAHMUD (PEMILIK KIOS)",
+   "debit": 2500000,
+   "credit": 0,
+   "balance_after": 9997361,
+   "page": 2,
+   "bbox": [
+    172,
+    60,
+    190,
+    940
+   ],
+   "ref": "FT26020197427",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0035",
+   "date": "2026-02-01",
+   "description": "QRIS SETTLEMENT MID 93604103 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1449000,
+   "balance_after": 11446361,
+   "page": 2,
+   "bbox": [
+    190,
+    60,
+    208,
+    940
+   ],
+   "ref": "FT26020111288",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0036",
+   "date": "2026-02-02",
+   "description": "QRIS SETTLEMENT MID 93605170 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1543000,
+   "balance_after": 12989361,
+   "page": 2,
+   "bbox": [
+    208,
+    60,
+    227,
+    940
+   ],
+   "ref": "FT26020224034",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0037",
+   "date": "2026-02-02",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 2900000,
+   "balance_after": 15889361,
+   "page": 2,
+   "bbox": [
+    227,
+    60,
+    245,
+    940
+   ],
+   "ref": "FT26020230639",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0038",
+   "date": "2026-02-04",
+   "description": "QRIS SETTLEMENT MID 93605183 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1522000,
+   "balance_after": 17411361,
+   "page": 2,
+   "bbox": [
+    245,
+    60,
+    264,
+    940
+   ],
+   "ref": "FT26020451421",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0039",
+   "date": "2026-02-05",
+   "description": "QRIS SETTLEMENT MID 93606492 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1726000,
+   "balance_after": 19137361,
+   "page": 2,
+   "bbox": [
+    264,
+    60,
+    282,
+    940
+   ],
+   "ref": "FT26020526061",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0040",
+   "date": "2026-02-05",
+   "description": "TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN STOK",
+   "counterparty": "GROSIR SEMBAKO BAROKAH",
+   "debit": 6350000,
+   "credit": 0,
+   "balance_after": 12787361,
+   "page": 2,
+   "bbox": [
+    282,
+    60,
+    301,
+    940
+   ],
+   "ref": "FT26020512095",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0041",
+   "date": "2026-02-05",
+   "description": "TARIK TUNAI ATM - ATM NUSANTARA 0231",
+   "counterparty": null,
+   "debit": 700000,
+   "credit": 0,
+   "balance_after": 12087361,
+   "page": 2,
+   "bbox": [
+    301,
+    60,
+    319,
+    940
+   ],
+   "ref": "FT26020535586",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0042",
+   "date": "2026-02-06",
+   "description": "TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK",
+   "counterparty": "TOKO GROSIR MAKMUR",
+   "debit": 2215000,
+   "credit": 0,
+   "balance_after": 9872361,
+   "page": 2,
+   "bbox": [
+    319,
+    60,
+    337,
+    940
+   ],
+   "ref": "FT26020674453",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0043",
+   "date": "2026-02-07",
+   "description": "QRIS SETTLEMENT MID 93603497 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1363000,
+   "balance_after": 11235361,
+   "page": 2,
+   "bbox": [
+    337,
+    60,
+    356,
+    940
+   ],
+   "ref": "FT26020773879",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0044",
+   "date": "2026-02-09",
+   "description": "QRIS SETTLEMENT MID 93604794 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 935000,
+   "balance_after": 12170361,
+   "page": 2,
+   "bbox": [
+    356,
+    60,
+    374,
+    940
+   ],
+   "ref": "FT26020952370",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0045",
+   "date": "2026-02-09",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 3300000,
+   "balance_after": 15470361,
+   "page": 2,
+   "bbox": [
+    374,
+    60,
+    393,
+    940
+   ],
+   "ref": "FT26020993017",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0046",
+   "date": "2026-02-10",
+   "description": "QRIS SETTLEMENT MID 93602962 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1445000,
+   "balance_after": 16915361,
+   "page": 2,
+   "bbox": [
+    393,
+    60,
+    411,
+    940
+   ],
+   "ref": "FT26021056718",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0047",
+   "date": "2026-02-10",
+   "description": "PDAM AIR BERSIH - TAGIHAN BULANAN",
+   "counterparty": "PDAM",
+   "debit": 96500,
+   "credit": 0,
+   "balance_after": 16818861,
+   "page": 2,
+   "bbox": [
+    411,
+    60,
+    429,
+    940
+   ],
+   "ref": "FT26021086605",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0048",
+   "date": "2026-02-11",
+   "description": "QRIS SETTLEMENT MID 93603434 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 969000,
+   "balance_after": 17787861,
+   "page": 2,
+   "bbox": [
+    429,
+    60,
+    448,
+    940
+   ],
+   "ref": "FT26021166230",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0049",
+   "date": "2026-02-11",
+   "description": "PLN LISTRIK PASCABAYAR - ID PEL 5412xxxx",
+   "counterparty": "PLN",
+   "debit": 465000,
+   "credit": 0,
+   "balance_after": 17322861,
+   "page": 2,
+   "bbox": [
+    448,
+    60,
+    466,
+    940
+   ],
+   "ref": "FT26021180504",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0050",
+   "date": "2026-02-12",
+   "description": "QRIS SETTLEMENT MID 93606025 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1778000,
+   "balance_after": 19100861,
+   "page": 2,
+   "bbox": [
+    466,
+    60,
+    485,
+    940
+   ],
+   "ref": "FT26021208126",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0051",
+   "date": "2026-02-14",
+   "description": "QRIS SETTLEMENT MID 93602540 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1367000,
+   "balance_after": 20467861,
+   "page": 2,
+   "bbox": [
+    485,
+    60,
+    503,
+    940
+   ],
+   "ref": "FT26021472505",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0052",
+   "date": "2026-02-16",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 2450000,
+   "balance_after": 22917861,
+   "page": 2,
+   "bbox": [
+    503,
+    60,
+    521,
+    940
+   ],
+   "ref": "FT26021659221",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0053",
+   "date": "2026-02-16",
+   "description": "TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN STOK",
+   "counterparty": "GROSIR SEMBAKO BAROKAH",
+   "debit": 5500000,
+   "credit": 0,
+   "balance_after": 17417861,
+   "page": 2,
+   "bbox": [
+    521,
+    60,
+    540,
+    940
+   ],
+   "ref": "FT26021672687",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0054",
+   "date": "2026-02-20",
+   "description": "TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK",
+   "counterparty": "TOKO GROSIR MAKMUR",
+   "debit": 4450000,
+   "credit": 0,
+   "balance_after": 12967861,
+   "page": 2,
+   "bbox": [
+    540,
+    60,
+    558,
+    940
+   ],
+   "ref": "FT26022001284",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0055",
+   "date": "2026-02-21",
+   "description": "QRIS SETTLEMENT MID 93605187 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1239000,
+   "balance_after": 14206861,
+   "page": 2,
+   "bbox": [
+    558,
+    60,
+    577,
+    940
+   ],
+   "ref": "FT26022109744",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0056",
+   "date": "2026-02-22",
+   "description": "QRIS SETTLEMENT MID 93602291 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1241000,
+   "balance_after": 15447861,
+   "page": 2,
+   "bbox": [
+    577,
+    60,
+    595,
+    940
+   ],
+   "ref": "FT26022288236",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0057",
+   "date": "2026-02-23",
+   "description": "QRIS SETTLEMENT MID 93609955 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1230000,
+   "balance_after": 16677861,
+   "page": 2,
+   "bbox": [
+    595,
+    60,
+    614,
+    940
+   ],
+   "ref": "FT26022368057",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0058",
+   "date": "2026-02-23",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 2550000,
+   "balance_after": 19227861,
+   "page": 2,
+   "bbox": [
+    614,
+    60,
+    632,
+    940
+   ],
+   "ref": "FT26022392422",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0059",
+   "date": "2026-02-23",
+   "description": "INTERNET WIFI NUSANET - TAGIHAN",
+   "counterparty": "NUSANET",
+   "debit": 200000,
+   "credit": 0,
+   "balance_after": 19027861,
+   "page": 2,
+   "bbox": [
+    632,
+    60,
+    650,
+    940
+   ],
+   "ref": "FT26022313680",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0060",
+   "date": "2026-02-24",
+   "description": "TRF DARI AGUS PRASETYO - PESANAN SEMBAKO",
+   "counterparty": "AGUS PRASETYO",
+   "debit": 0,
+   "credit": 430000,
+   "balance_after": 19457861,
+   "page": 2,
+   "bbox": [
+    650,
+    60,
+    669,
+    940
+   ],
+   "ref": "FT26022422040",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0061",
+   "date": "2026-02-26",
+   "description": "TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK",
+   "counterparty": "TOKO GROSIR MAKMUR",
+   "debit": 1259000,
+   "credit": 0,
+   "balance_after": 18198861,
+   "page": 2,
+   "bbox": [
+    669,
+    60,
+    687,
+    940
+   ],
+   "ref": "FT26022622890",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0062",
+   "date": "2026-02-27",
+   "description": "QRIS SETTLEMENT MID 93605121 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1480000,
+   "balance_after": 19678861,
+   "page": 2,
+   "bbox": [
+    687,
+    60,
+    706,
+    940
+   ],
+   "ref": "FT26022795078",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0063",
+   "date": "2026-02-27",
+   "description": "TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN STOK",
+   "counterparty": "GROSIR SEMBAKO BAROKAH",
+   "debit": 5299219,
+   "credit": 0,
+   "balance_after": 14379642,
+   "page": 2,
+   "bbox": [
+    706,
+    60,
+    724,
+    940
+   ],
+   "ref": "FT26022756673",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0064",
+   "date": "2026-02-28",
+   "description": "BIAYA ADMIN BULANAN",
+   "counterparty": null,
+   "debit": 15000,
+   "credit": 0,
+   "balance_after": 14364642,
+   "page": 2,
+   "bbox": [
+    724,
+    60,
+    742,
+    940
+   ],
+   "ref": "FT26022854679",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0065",
+   "date": "2026-03-01",
+   "description": "SEWA KIOS BULAN 03/2026 - H. MAHMUD",
+   "counterparty": "H. MAHMUD (PEMILIK KIOS)",
+   "debit": 2500000,
+   "credit": 0,
+   "balance_after": 11864642,
+   "page": 2,
+   "bbox": [
+    742,
+    60,
+    761,
+    940
+   ],
+   "ref": "FT26030160547",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0066",
+   "date": "2026-03-01",
+   "description": "QRIS SETTLEMENT MID 93604102 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1759000,
+   "balance_after": 13623642,
+   "page": 2,
+   "bbox": [
+    761,
+    60,
+    779,
+    940
+   ],
+   "ref": "FT26030142763",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0067",
+   "date": "2026-03-02",
+   "description": "QRIS SETTLEMENT MID 93608939 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1251000,
+   "balance_after": 14874642,
+   "page": 2,
+   "bbox": [
+    779,
+    60,
+    798,
+    940
+   ],
+   "ref": "FT26030249738",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0068",
+   "date": "2026-03-02",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 3150000,
+   "balance_after": 18024642,
+   "page": 2,
+   "bbox": [
+    798,
+    60,
+    816,
+    940
+   ],
+   "ref": "FT26030206026",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0069",
+   "date": "2026-03-04",
+   "description": "TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN STOK",
+   "counterparty": "GROSIR SEMBAKO BAROKAH",
+   "debit": 7950000,
+   "credit": 0,
+   "balance_after": 10074642,
+   "page": 2,
+   "bbox": [
+    816,
+    60,
+    834,
+    940
+   ],
+   "ref": "FT26030431303",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0070",
+   "date": "2026-03-05",
+   "description": "QRIS SETTLEMENT MID 93601301 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1133000,
+   "balance_after": 11207642,
+   "page": 2,
+   "bbox": [
+    834,
+    60,
+    853,
+    940
+   ],
+   "ref": "FT26030532703",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0071",
+   "date": "2026-03-06",
+   "description": "QRIS SETTLEMENT MID 93601944 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1438000,
+   "balance_after": 12645642,
+   "page": 2,
+   "bbox": [
+    853,
+    60,
+    871,
+    940
+   ],
+   "ref": "FT26030615413",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0072",
+   "date": "2026-03-08",
+   "description": "QRIS SETTLEMENT MID 93601398 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1189000,
+   "balance_after": 13834642,
+   "page": 2,
+   "bbox": [
+    871,
+    60,
+    890,
+    940
+   ],
+   "ref": "FT26030837543",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0073",
+   "date": "2026-03-09",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 2400000,
+   "balance_after": 16234642,
+   "page": 2,
+   "bbox": [
+    890,
+    60,
+    908,
+    940
+   ],
+   "ref": "FT26030935243",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0074",
+   "date": "2026-03-09",
+   "description": "TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK",
+   "counterparty": "TOKO GROSIR MAKMUR",
+   "debit": 8100000,
+   "credit": 0,
+   "balance_after": 8134642,
+   "page": 3,
+   "bbox": [
+    135,
+    60,
+    153,
+    940
+   ],
+   "ref": "FT26030901241",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0075",
+   "date": "2026-03-10",
+   "description": "PLN LISTRIK PASCABAYAR - ID PEL 5412xxxx",
+   "counterparty": "PLN",
+   "debit": 366000,
+   "credit": 0,
+   "balance_after": 7768642,
+   "page": 3,
+   "bbox": [
+    153,
+    60,
+    172,
+    940
+   ],
+   "ref": "FT26031069595",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0076",
+   "date": "2026-03-11",
+   "description": "QRIS SETTLEMENT MID 93608743 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 938000,
+   "balance_after": 8706642,
+   "page": 3,
+   "bbox": [
+    172,
+    60,
+    190,
+    940
+   ],
+   "ref": "FT26031122289",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0077",
+   "date": "2026-03-12",
+   "description": "PDAM AIR BERSIH - TAGIHAN BULANAN",
+   "counterparty": "PDAM",
+   "debit": 111500,
+   "credit": 0,
+   "balance_after": 8595142,
+   "page": 3,
+   "bbox": [
+    190,
+    60,
+    208,
+    940
+   ],
+   "ref": "FT26031241178",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0078",
+   "date": "2026-03-13",
+   "description": "QRIS SETTLEMENT MID 93609718 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1266000,
+   "balance_after": 9861142,
+   "page": 3,
+   "bbox": [
+    208,
+    60,
+    227,
+    940
+   ],
+   "ref": "FT26031334466",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0079",
+   "date": "2026-03-16",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 2550000,
+   "balance_after": 12411142,
+   "page": 3,
+   "bbox": [
+    227,
+    60,
+    245,
+    940
+   ],
+   "ref": "FT26031656706",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0080",
+   "date": "2026-03-17",
+   "description": "TARIK TUNAI ATM - ATM NUSANTARA 0231",
+   "counterparty": null,
+   "debit": 1100000,
+   "credit": 0,
+   "balance_after": 11311142,
+   "page": 3,
+   "bbox": [
+    245,
+    60,
+    264,
+    940
+   ],
+   "ref": "FT26031744456",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0081",
+   "date": "2026-03-18",
+   "description": "TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK",
+   "counterparty": "TOKO GROSIR MAKMUR",
+   "debit": 7169113,
+   "credit": 0,
+   "balance_after": 4142029,
+   "page": 3,
+   "bbox": [
+    264,
+    60,
+    282,
+    940
+   ],
+   "ref": "FT26031854098",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0082",
+   "date": "2026-03-19",
+   "description": "QRIS SETTLEMENT MID 93608657 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1413000,
+   "balance_after": 5555029,
+   "page": 3,
+   "bbox": [
+    282,
+    60,
+    301,
+    940
+   ],
+   "ref": "FT26031914457",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0083",
+   "date": "2026-03-21",
+   "description": "QRIS SETTLEMENT MID 93608176 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 943000,
+   "balance_after": 6498029,
+   "page": 3,
+   "bbox": [
+    301,
+    60,
+    319,
+    940
+   ],
+   "ref": "FT26032104290",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0084",
+   "date": "2026-03-21",
+   "description": "TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK",
+   "counterparty": "TOKO GROSIR MAKMUR",
+   "debit": 892000,
+   "credit": 0,
+   "balance_after": 5606029,
+   "page": 3,
+   "bbox": [
+    319,
+    60,
+    337,
+    940
+   ],
+   "ref": "FT26032104029",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0085",
+   "date": "2026-03-23",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 2400000,
+   "balance_after": 8006029,
+   "page": 3,
+   "bbox": [
+    337,
+    60,
+    356,
+    940
+   ],
+   "ref": "FT26032345119",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0086",
+   "date": "2026-03-24",
+   "description": "QRIS SETTLEMENT MID 93606968 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1772000,
+   "balance_after": 9778029,
+   "page": 3,
+   "bbox": [
+    356,
+    60,
+    374,
+    940
+   ],
+   "ref": "FT26032406575",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0087",
+   "date": "2026-03-24",
+   "description": "INTERNET WIFI NUSANET - TAGIHAN",
+   "counterparty": "NUSANET",
+   "debit": 215000,
+   "credit": 0,
+   "balance_after": 9563029,
+   "page": 3,
+   "bbox": [
+    374,
+    60,
+    393,
+    940
+   ],
+   "ref": "FT26032458383",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0088",
+   "date": "2026-03-26",
+   "description": "QRIS SETTLEMENT MID 93604516 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 912000,
+   "balance_after": 10475029,
+   "page": 3,
+   "bbox": [
+    393,
+    60,
+    411,
+    940
+   ],
+   "ref": "FT26032667993",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0089",
+   "date": "2026-03-26",
+   "description": "TRF DARI AGUS PRASETYO - PESANAN SEMBAKO",
+   "counterparty": "AGUS PRASETYO",
+   "debit": 0,
+   "credit": 535000,
+   "balance_after": 11010029,
+   "page": 3,
+   "bbox": [
+    411,
+    60,
+    429,
+    940
+   ],
+   "ref": "FT26032663144",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0090",
+   "date": "2026-03-26",
+   "description": "TARIK TUNAI ATM - ATM NUSANTARA 0231",
+   "counterparty": null,
+   "debit": 1500000,
+   "credit": 0,
+   "balance_after": 9510029,
+   "page": 3,
+   "bbox": [
+    429,
+    60,
+    448,
+    940
+   ],
+   "ref": "FT26032676273",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0091",
+   "date": "2026-03-28",
+   "description": "QRIS SETTLEMENT MID 93602478 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 931000,
+   "balance_after": 10441029,
+   "page": 3,
+   "bbox": [
+    448,
+    60,
+    466,
+    940
+   ],
+   "ref": "FT26032874370",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0092",
+   "date": "2026-03-30",
+   "description": "QRIS SETTLEMENT MID 93603453 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1122000,
+   "balance_after": 11563029,
+   "page": 3,
+   "bbox": [
+    466,
+    60,
+    485,
+    940
+   ],
+   "ref": "FT26033068950",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0093",
+   "date": "2026-03-30",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 3250000,
+   "balance_after": 14813029,
+   "page": 3,
+   "bbox": [
+    485,
+    60,
+    503,
+    940
+   ],
+   "ref": "FT26033082106",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0094",
+   "date": "2026-03-31",
+   "description": "QRIS SETTLEMENT MID 93603455 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1609000,
+   "balance_after": 16422029,
+   "page": 3,
+   "bbox": [
+    503,
+    60,
+    521,
+    940
+   ],
+   "ref": "FT26033199569",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0095",
+   "date": "2026-03-31",
+   "description": "BIAYA ADMIN BULANAN",
+   "counterparty": null,
+   "debit": 15000,
+   "credit": 0,
+   "balance_after": 16407029,
+   "page": 3,
+   "bbox": [
+    521,
+    60,
+    540,
+    940
+   ],
+   "ref": "FT26033176650",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0096",
+   "date": "2026-04-01",
+   "description": "SEWA KIOS BULAN 04/2026 - H. MAHMUD",
+   "counterparty": "H. MAHMUD (PEMILIK KIOS)",
+   "debit": 2500000,
+   "credit": 0,
+   "balance_after": 13907029,
+   "page": 3,
+   "bbox": [
+    540,
+    60,
+    558,
+    940
+   ],
+   "ref": "FT26040136614",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0097",
+   "date": "2026-04-02",
+   "description": "TARIK TUNAI ATM - ATM NUSANTARA 0231",
+   "counterparty": null,
+   "debit": 1000000,
+   "credit": 0,
+   "balance_after": 12907029,
+   "page": 3,
+   "bbox": [
+    558,
+    60,
+    577,
+    940
+   ],
+   "ref": "FT26040269575",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0098",
+   "date": "2026-04-04",
+   "description": "QRIS SETTLEMENT MID 93602708 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 969000,
+   "balance_after": 13876029,
+   "page": 3,
+   "bbox": [
+    577,
+    60,
+    595,
+    940
+   ],
+   "ref": "FT26040493321",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0099",
+   "date": "2026-04-05",
+   "description": "QRIS SETTLEMENT MID 93605184 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1381000,
+   "balance_after": 15257029,
+   "page": 3,
+   "bbox": [
+    595,
+    60,
+    614,
+    940
+   ],
+   "ref": "FT26040586053",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0100",
+   "date": "2026-04-06",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 3650000,
+   "balance_after": 18907029,
+   "page": 3,
+   "bbox": [
+    614,
+    60,
+    632,
+    940
+   ],
+   "ref": "FT26040671689",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0101",
+   "date": "2026-04-08",
+   "description": "TRF KE CV SUMBER REJEKI - PEMBELIAN STOK",
+   "counterparty": "CV SUMBER REJEKI",
+   "debit": 9300000,
+   "credit": 0,
+   "balance_after": 9607029,
+   "page": 3,
+   "bbox": [
+    632,
+    60,
+    650,
+    940
+   ],
+   "ref": "FT26040846594",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0102",
+   "date": "2026-04-09",
+   "description": "QRIS SETTLEMENT MID 93609248 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1000000,
+   "balance_after": 10607029,
+   "page": 3,
+   "bbox": [
+    650,
+    60,
+    669,
+    940
+   ],
+   "ref": "FT26040929005",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0103",
+   "date": "2026-04-09",
+   "description": "TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN STOK",
+   "counterparty": "GROSIR SEMBAKO BAROKAH",
+   "debit": 10300000,
+   "credit": 0,
+   "balance_after": 307029,
+   "page": 3,
+   "bbox": [
+    669,
+    60,
+    687,
+    940
+   ],
+   "ref": "FT26040934915",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0104",
+   "date": "2026-04-10",
+   "description": "QRIS SETTLEMENT MID 93607927 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1805000,
+   "balance_after": 2112029,
+   "page": 3,
+   "bbox": [
+    687,
+    60,
+    706,
+    940
+   ],
+   "ref": "FT26041010804",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0105",
+   "date": "2026-04-10",
+   "description": "PLN LISTRIK PASCABAYAR - ID PEL 5412xxxx",
+   "counterparty": "PLN",
+   "debit": 368000,
+   "credit": 0,
+   "balance_after": 1744029,
+   "page": 3,
+   "bbox": [
+    706,
+    60,
+    724,
+    940
+   ],
+   "ref": "FT26041076522",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0106",
+   "date": "2026-04-12",
+   "description": "PDAM AIR BERSIH - TAGIHAN BULANAN",
+   "counterparty": "PDAM",
+   "debit": 122500,
+   "credit": 0,
+   "balance_after": 1621529,
+   "page": 3,
+   "bbox": [
+    724,
+    60,
+    742,
+    940
+   ],
+   "ref": "FT26041260891",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0107",
+   "date": "2026-04-13",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 3500000,
+   "balance_after": 5121529,
+   "page": 3,
+   "bbox": [
+    742,
+    60,
+    761,
+    940
+   ],
+   "ref": "FT26041355061",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0108",
+   "date": "2026-04-15",
+   "description": "QRIS SETTLEMENT MID 93609041 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1426000,
+   "balance_after": 6547529,
+   "page": 3,
+   "bbox": [
+    761,
+    60,
+    779,
+    940
+   ],
+   "ref": "FT26041573894",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0109",
+   "date": "2026-04-16",
+   "description": "QRIS SETTLEMENT MID 93607179 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1788000,
+   "balance_after": 8335529,
+   "page": 3,
+   "bbox": [
+    779,
+    60,
+    798,
+    940
+   ],
+   "ref": "FT26041650620",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0110",
+   "date": "2026-04-18",
+   "description": "QRIS SETTLEMENT MID 93608001 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1796000,
+   "balance_after": 10131529,
+   "page": 3,
+   "bbox": [
+    798,
+    60,
+    816,
+    940
+   ],
+   "ref": "FT26041876355",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0111",
+   "date": "2026-04-19",
+   "description": "QRIS SETTLEMENT MID 93607784 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 943000,
+   "balance_after": 11074529,
+   "page": 3,
+   "bbox": [
+    816,
+    60,
+    834,
+    940
+   ],
+   "ref": "FT26041912469",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0112",
+   "date": "2026-04-20",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 2700000,
+   "balance_after": 13774529,
+   "page": 3,
+   "bbox": [
+    834,
+    60,
+    853,
+    940
+   ],
+   "ref": "FT26042065697",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0113",
+   "date": "2026-04-20",
+   "description": "INTERNET WIFI NUSANET - TAGIHAN",
+   "counterparty": "NUSANET",
+   "debit": 194000,
+   "credit": 0,
+   "balance_after": 13580529,
+   "page": 3,
+   "bbox": [
+    853,
+    60,
+    871,
+    940
+   ],
+   "ref": "FT26042048133",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0114",
+   "date": "2026-04-21",
+   "description": "TRF DARI HENDRA KUSUMA - PESANAN SEMBAKO",
+   "counterparty": "HENDRA KUSUMA",
+   "debit": 0,
+   "credit": 1040000,
+   "balance_after": 14620529,
+   "page": 3,
+   "bbox": [
+    871,
+    60,
+    890,
+    940
+   ],
+   "ref": "FT26042197225",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0115",
+   "date": "2026-04-22",
+   "description": "QRIS SETTLEMENT MID 93608019 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1303000,
+   "balance_after": 15923529,
+   "page": 3,
+   "bbox": [
+    890,
+    60,
+    908,
+    940
+   ],
+   "ref": "FT26042295804",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0116",
+   "date": "2026-04-23",
+   "description": "QRIS SETTLEMENT MID 93603553 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1198000,
+   "balance_after": 17121529,
+   "page": 4,
+   "bbox": [
+    135,
+    60,
+    153,
+    940
+   ],
+   "ref": "FT26042364912",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0117",
+   "date": "2026-04-24",
+   "description": "QRIS SETTLEMENT MID 93602606 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1787000,
+   "balance_after": 18908529,
+   "page": 4,
+   "bbox": [
+    153,
+    60,
+    172,
+    940
+   ],
+   "ref": "FT26042428385",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0118",
+   "date": "2026-04-24",
+   "description": "TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN STOK",
+   "counterparty": "GROSIR SEMBAKO BAROKAH",
+   "debit": 8887329,
+   "credit": 0,
+   "balance_after": 10021200,
+   "page": 4,
+   "bbox": [
+    172,
+    60,
+    190,
+    940
+   ],
+   "ref": "FT26042431179",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0119",
+   "date": "2026-04-25",
+   "description": "QRIS SETTLEMENT MID 93601470 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1765000,
+   "balance_after": 11786200,
+   "page": 4,
+   "bbox": [
+    190,
+    60,
+    208,
+    940
+   ],
+   "ref": "FT26042568695",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0120",
+   "date": "2026-04-25",
+   "description": "TRF DARI SITI AMINAH - PESANAN SEMBAKO",
+   "counterparty": "SITI AMINAH",
+   "debit": 0,
+   "credit": 745000,
+   "balance_after": 12531200,
+   "page": 4,
+   "bbox": [
+    208,
+    60,
+    227,
+    940
+   ],
+   "ref": "FT26042531707",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0121",
+   "date": "2026-04-27",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 3100000,
+   "balance_after": 15631200,
+   "page": 4,
+   "bbox": [
+    227,
+    60,
+    245,
+    940
+   ],
+   "ref": "FT26042727275",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0122",
+   "date": "2026-04-28",
+   "description": "QRIS SETTLEMENT MID 93605836 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1444000,
+   "balance_after": 17075200,
+   "page": 4,
+   "bbox": [
+    245,
+    60,
+    264,
+    940
+   ],
+   "ref": "FT26042813276",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0123",
+   "date": "2026-04-30",
+   "description": "QRIS SETTLEMENT MID 93607839 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1322000,
+   "balance_after": 18397200,
+   "page": 4,
+   "bbox": [
+    264,
+    60,
+    282,
+    940
+   ],
+   "ref": "FT26043077828",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0124",
+   "date": "2026-04-30",
+   "description": "BIAYA ADMIN BULANAN",
+   "counterparty": null,
+   "debit": 15000,
+   "credit": 0,
+   "balance_after": 18382200,
+   "page": 4,
+   "bbox": [
+    282,
+    60,
+    301,
+    940
+   ],
+   "ref": "FT26043009516",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0125",
+   "date": "2026-05-01",
+   "description": "SEWA KIOS BULAN 05/2026 - H. MAHMUD",
+   "counterparty": "H. MAHMUD (PEMILIK KIOS)",
+   "debit": 2500000,
+   "credit": 0,
+   "balance_after": 15882200,
+   "page": 4,
+   "bbox": [
+    301,
+    60,
+    319,
+    940
+   ],
+   "ref": "FT26050162885",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0126",
+   "date": "2026-05-03",
+   "description": "QRIS SETTLEMENT MID 93602199 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1137000,
+   "balance_after": 17019200,
+   "page": 4,
+   "bbox": [
+    319,
+    60,
+    337,
+    940
+   ],
+   "ref": "FT26050354475",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0127",
+   "date": "2026-05-04",
+   "description": "QRIS SETTLEMENT MID 93605576 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1567000,
+   "balance_after": 18586200,
+   "page": 4,
+   "bbox": [
+    337,
+    60,
+    356,
+    940
+   ],
+   "ref": "FT26050480328",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0128",
+   "date": "2026-05-04",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 2900000,
+   "balance_after": 21486200,
+   "page": 4,
+   "bbox": [
+    356,
+    60,
+    374,
+    940
+   ],
+   "ref": "FT26050489286",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0129",
+   "date": "2026-05-06",
+   "description": "PLN LISTRIK PASCABAYAR - ID PEL 5412xxxx",
+   "counterparty": "PLN",
+   "debit": 409000,
+   "credit": 0,
+   "balance_after": 21077200,
+   "page": 4,
+   "bbox": [
+    374,
+    60,
+    393,
+    940
+   ],
+   "ref": "FT26050636741",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0130",
+   "date": "2026-05-08",
+   "description": "QRIS SETTLEMENT MID 93605453 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1371000,
+   "balance_after": 22448200,
+   "page": 4,
+   "bbox": [
+    393,
+    60,
+    411,
+    940
+   ],
+   "ref": "FT26050854625",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0131",
+   "date": "2026-05-08",
+   "description": "TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN STOK",
+   "counterparty": "GROSIR SEMBAKO BAROKAH",
+   "debit": 7400000,
+   "credit": 0,
+   "balance_after": 15048200,
+   "page": 4,
+   "bbox": [
+    411,
+    60,
+    429,
+    940
+   ],
+   "ref": "FT26050828013",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0132",
+   "date": "2026-05-11",
+   "description": "QRIS SETTLEMENT MID 93602489 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1419000,
+   "balance_after": 16467200,
+   "page": 4,
+   "bbox": [
+    429,
+    60,
+    448,
+    940
+   ],
+   "ref": "FT26051136097",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0133",
+   "date": "2026-05-11",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 3050000,
+   "balance_after": 19517200,
+   "page": 4,
+   "bbox": [
+    448,
+    60,
+    466,
+    940
+   ],
+   "ref": "FT26051173629",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0134",
+   "date": "2026-05-11",
+   "description": "TRF DARI RINA WULANDARI - PESANAN SEMBAKO",
+   "counterparty": "RINA WULANDARI",
+   "debit": 0,
+   "credit": 435000,
+   "balance_after": 19952200,
+   "page": 4,
+   "bbox": [
+    466,
+    60,
+    485,
+    940
+   ],
+   "ref": "FT26051168667",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0135",
+   "date": "2026-05-11",
+   "description": "PDAM AIR BERSIH - TAGIHAN BULANAN",
+   "counterparty": "PDAM",
+   "debit": 109500,
+   "credit": 0,
+   "balance_after": 19842700,
+   "page": 4,
+   "bbox": [
+    485,
+    60,
+    503,
+    940
+   ],
+   "ref": "FT26051120196",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0136",
+   "date": "2026-05-13",
+   "description": "TRF KE CV SUMBER REJEKI - PEMBELIAN STOK",
+   "counterparty": "CV SUMBER REJEKI",
+   "debit": 708000,
+   "credit": 0,
+   "balance_after": 19134700,
+   "page": 4,
+   "bbox": [
+    503,
+    60,
+    521,
+    940
+   ],
+   "ref": "FT26051390094",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0137",
+   "date": "2026-05-14",
+   "description": "QRIS SETTLEMENT MID 93608562 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1552000,
+   "balance_after": 20686700,
+   "page": 4,
+   "bbox": [
+    521,
+    60,
+    540,
+    940
+   ],
+   "ref": "FT26051436008",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0138",
+   "date": "2026-05-14",
+   "description": "TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN STOK",
+   "counterparty": "GROSIR SEMBAKO BAROKAH",
+   "debit": 8200000,
+   "credit": 0,
+   "balance_after": 12486700,
+   "page": 4,
+   "bbox": [
+    540,
+    60,
+    558,
+    940
+   ],
+   "ref": "FT26051489504",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0139",
+   "date": "2026-05-16",
+   "description": "TARIK TUNAI ATM - ATM NUSANTARA 0231",
+   "counterparty": null,
+   "debit": 1200000,
+   "credit": 0,
+   "balance_after": 11286700,
+   "page": 4,
+   "bbox": [
+    558,
+    60,
+    577,
+    940
+   ],
+   "ref": "FT26051606446",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0140",
+   "date": "2026-05-17",
+   "description": "QRIS SETTLEMENT MID 93605921 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 978000,
+   "balance_after": 12264700,
+   "page": 4,
+   "bbox": [
+    577,
+    60,
+    595,
+    940
+   ],
+   "ref": "FT26051713152",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0141",
+   "date": "2026-05-18",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 3800000,
+   "balance_after": 16064700,
+   "page": 4,
+   "bbox": [
+    595,
+    60,
+    614,
+    940
+   ],
+   "ref": "FT26051820341",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0142",
+   "date": "2026-05-18",
+   "description": "TRF DARI AGUS PRASETYO - PESANAN SEMBAKO",
+   "counterparty": "AGUS PRASETYO",
+   "debit": 0,
+   "credit": 1155000,
+   "balance_after": 17219700,
+   "page": 4,
+   "bbox": [
+    614,
+    60,
+    632,
+    940
+   ],
+   "ref": "FT26051800186",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0143",
+   "date": "2026-05-20",
+   "description": "QRIS SETTLEMENT MID 93609774 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1447000,
+   "balance_after": 18666700,
+   "page": 4,
+   "bbox": [
+    632,
+    60,
+    650,
+    940
+   ],
+   "ref": "FT26052015454",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0144",
+   "date": "2026-05-21",
+   "description": "QRIS SETTLEMENT MID 93606417 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1156000,
+   "balance_after": 19822700,
+   "page": 4,
+   "bbox": [
+    650,
+    60,
+    669,
+    940
+   ],
+   "ref": "FT26052197609",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0145",
+   "date": "2026-05-22",
+   "description": "QRIS SETTLEMENT MID 93605720 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1283000,
+   "balance_after": 21105700,
+   "page": 4,
+   "bbox": [
+    669,
+    60,
+    687,
+    940
+   ],
+   "ref": "FT26052201202",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0146",
+   "date": "2026-05-23",
+   "description": "INTERNET WIFI NUSANET - TAGIHAN",
+   "counterparty": "NUSANET",
+   "debit": 206000,
+   "credit": 0,
+   "balance_after": 20899700,
+   "page": 4,
+   "bbox": [
+    687,
+    60,
+    706,
+    940
+   ],
+   "ref": "FT26052351246",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0147",
+   "date": "2026-05-25",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 3350000,
+   "balance_after": 24249700,
+   "page": 4,
+   "bbox": [
+    706,
+    60,
+    724,
+    940
+   ],
+   "ref": "FT26052531809",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0148",
+   "date": "2026-05-26",
+   "description": "QRIS SETTLEMENT MID 93606969 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1178000,
+   "balance_after": 25427700,
+   "page": 4,
+   "bbox": [
+    724,
+    60,
+    742,
+    940
+   ],
+   "ref": "FT26052640886",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0149",
+   "date": "2026-05-27",
+   "description": "QRIS SETTLEMENT MID 93605456 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1569000,
+   "balance_after": 26996700,
+   "page": 4,
+   "bbox": [
+    742,
+    60,
+    761,
+    940
+   ],
+   "ref": "FT26052767228",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0150",
+   "date": "2026-05-28",
+   "description": "QRIS SETTLEMENT MID 93608103 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1254000,
+   "balance_after": 28250700,
+   "page": 4,
+   "bbox": [
+    761,
+    60,
+    779,
+    940
+   ],
+   "ref": "FT26052824285",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0151",
+   "date": "2026-05-29",
+   "description": "QRIS SETTLEMENT MID 93601093 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1219000,
+   "balance_after": 29469700,
+   "page": 4,
+   "bbox": [
+    779,
+    60,
+    798,
+    940
+   ],
+   "ref": "FT26052972565",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0152",
+   "date": "2026-05-29",
+   "description": "TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK",
+   "counterparty": "TOKO GROSIR MAKMUR",
+   "debit": 10430851,
+   "credit": 0,
+   "balance_after": 19038849,
+   "page": 4,
+   "bbox": [
+    798,
+    60,
+    816,
+    940
+   ],
+   "ref": "FT26052964673",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0153",
+   "date": "2026-05-30",
+   "description": "QRIS SETTLEMENT MID 93608805 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1691000,
+   "balance_after": 20729849,
+   "page": 4,
+   "bbox": [
+    816,
+    60,
+    834,
+    940
+   ],
+   "ref": "FT26053098499",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0154",
+   "date": "2026-05-31",
+   "description": "BIAYA ADMIN BULANAN",
+   "counterparty": null,
+   "debit": 15000,
+   "credit": 0,
+   "balance_after": 20714849,
+   "page": 4,
+   "bbox": [
+    834,
+    60,
+    853,
+    940
+   ],
+   "ref": "FT26053124190",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0155",
+   "date": "2026-06-01",
+   "description": "SEWA KIOS BULAN 06/2026 - H. MAHMUD",
+   "counterparty": "H. MAHMUD (PEMILIK KIOS)",
+   "debit": 2500000,
+   "credit": 0,
+   "balance_after": 18214849,
+   "page": 4,
+   "bbox": [
+    853,
+    60,
+    871,
+    940
+   ],
+   "ref": "FT26060166109",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0156",
+   "date": "2026-06-01",
+   "description": "QRIS SETTLEMENT MID 93604989 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1316000,
+   "balance_after": 19530849,
+   "page": 4,
+   "bbox": [
+    871,
+    60,
+    890,
+    940
+   ],
+   "ref": "FT26060102003",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0157",
+   "date": "2026-06-01",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 3000000,
+   "balance_after": 22530849,
+   "page": 4,
+   "bbox": [
+    890,
+    60,
+    908,
+    940
+   ],
+   "ref": "FT26060113854",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0158",
+   "date": "2026-06-04",
+   "description": "TRF KE CV SUMBER REJEKI - PEMBELIAN STOK",
+   "counterparty": "CV SUMBER REJEKI",
+   "debit": 10200000,
+   "credit": 0,
+   "balance_after": 12330849,
+   "page": 5,
+   "bbox": [
+    135,
+    60,
+    153,
+    940
+   ],
+   "ref": "FT26060442328",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0159",
+   "date": "2026-06-05",
+   "description": "QRIS SETTLEMENT MID 93604400 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1729000,
+   "balance_after": 14059849,
+   "page": 5,
+   "bbox": [
+    153,
+    60,
+    172,
+    940
+   ],
+   "ref": "FT26060585452",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0160",
+   "date": "2026-06-05",
+   "description": "TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN STOK",
+   "counterparty": "GROSIR SEMBAKO BAROKAH",
+   "debit": 12950000,
+   "credit": 0,
+   "balance_after": 1109849,
+   "page": 5,
+   "bbox": [
+    172,
+    60,
+    190,
+    940
+   ],
+   "ref": "FT26060512633",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0161",
+   "date": "2026-06-06",
+   "description": "QRIS SETTLEMENT MID 93601238 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1204000,
+   "balance_after": 2313849,
+   "page": 5,
+   "bbox": [
+    190,
+    60,
+    208,
+    940
+   ],
+   "ref": "FT26060682999",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0162",
+   "date": "2026-06-08",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 2800000,
+   "balance_after": 5113849,
+   "page": 5,
+   "bbox": [
+    208,
+    60,
+    227,
+    940
+   ],
+   "ref": "FT26060815667",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0163",
+   "date": "2026-06-09",
+   "description": "QRIS SETTLEMENT MID 93607104 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1904000,
+   "balance_after": 7017849,
+   "page": 5,
+   "bbox": [
+    227,
+    60,
+    245,
+    940
+   ],
+   "ref": "FT26060970202",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0164",
+   "date": "2026-06-09",
+   "description": "PLN LISTRIK PASCABAYAR - ID PEL 5412xxxx",
+   "counterparty": "PLN",
+   "debit": 471000,
+   "credit": 0,
+   "balance_after": 6546849,
+   "page": 5,
+   "bbox": [
+    245,
+    60,
+    264,
+    940
+   ],
+   "ref": "FT26060907855",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0165",
+   "date": "2026-06-10",
+   "description": "PDAM AIR BERSIH - TAGIHAN BULANAN",
+   "counterparty": "PDAM",
+   "debit": 124500,
+   "credit": 0,
+   "balance_after": 6422349,
+   "page": 5,
+   "bbox": [
+    264,
+    60,
+    282,
+    940
+   ],
+   "ref": "FT26061006729",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0166",
+   "date": "2026-06-12",
+   "description": "TARIK TUNAI ATM - ATM NUSANTARA 0231",
+   "counterparty": null,
+   "debit": 1300000,
+   "credit": 0,
+   "balance_after": 5122349,
+   "page": 5,
+   "bbox": [
+    282,
+    60,
+    301,
+    940
+   ],
+   "ref": "FT26061264815",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0167",
+   "date": "2026-06-13",
+   "description": "QRIS SETTLEMENT MID 93609931 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1796000,
+   "balance_after": 6918349,
+   "page": 5,
+   "bbox": [
+    301,
+    60,
+    319,
+    940
+   ],
+   "ref": "FT26061381607",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0168",
+   "date": "2026-06-15",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 2650000,
+   "balance_after": 9568349,
+   "page": 5,
+   "bbox": [
+    319,
+    60,
+    337,
+    940
+   ],
+   "ref": "FT26061590535",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0169",
+   "date": "2026-06-18",
+   "description": "QRIS SETTLEMENT MID 93605625 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1358000,
+   "balance_after": 10926349,
+   "page": 5,
+   "bbox": [
+    337,
+    60,
+    356,
+    940
+   ],
+   "ref": "FT26061851602",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0170",
+   "date": "2026-06-19",
+   "description": "QRIS SETTLEMENT MID 93605086 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1941000,
+   "balance_after": 12867349,
+   "page": 5,
+   "bbox": [
+    356,
+    60,
+    374,
+    940
+   ],
+   "ref": "FT26061932662",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0171",
+   "date": "2026-06-19",
+   "description": "TRF DARI SITI AMINAH - PESANAN SEMBAKO",
+   "counterparty": "SITI AMINAH",
+   "debit": 0,
+   "credit": 645000,
+   "balance_after": 13512349,
+   "page": 5,
+   "bbox": [
+    374,
+    60,
+    393,
+    940
+   ],
+   "ref": "FT26061905394",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0172",
+   "date": "2026-06-20",
+   "description": "QRIS SETTLEMENT MID 93606737 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1084000,
+   "balance_after": 14596349,
+   "page": 5,
+   "bbox": [
+    393,
+    60,
+    411,
+    940
+   ],
+   "ref": "FT26062020534",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0173",
+   "date": "2026-06-21",
+   "description": "QRIS SETTLEMENT MID 93605873 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1516000,
+   "balance_after": 16112349,
+   "page": 5,
+   "bbox": [
+    411,
+    60,
+    429,
+    940
+   ],
+   "ref": "FT26062123019",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0174",
+   "date": "2026-06-21",
+   "description": "INTERNET WIFI NUSANET - TAGIHAN",
+   "counterparty": "NUSANET",
+   "debit": 196000,
+   "credit": 0,
+   "balance_after": 15916349,
+   "page": 5,
+   "bbox": [
+    429,
+    60,
+    448,
+    940
+   ],
+   "ref": "FT26062134374",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0175",
+   "date": "2026-06-22",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 2850000,
+   "balance_after": 18766349,
+   "page": 5,
+   "bbox": [
+    448,
+    60,
+    466,
+    940
+   ],
+   "ref": "FT26062245254",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0176",
+   "date": "2026-06-24",
+   "description": "QRIS SETTLEMENT MID 93601850 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1105000,
+   "balance_after": 19871349,
+   "page": 5,
+   "bbox": [
+    466,
+    60,
+    485,
+    940
+   ],
+   "ref": "FT26062407701",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0177",
+   "date": "2026-06-25",
+   "description": "QRIS SETTLEMENT MID 93607519 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1803000,
+   "balance_after": 21674349,
+   "page": 5,
+   "bbox": [
+    485,
+    60,
+    503,
+    940
+   ],
+   "ref": "FT26062561528",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0178",
+   "date": "2026-06-25",
+   "description": "TRF KE CV SUMBER REJEKI - PEMBELIAN STOK",
+   "counterparty": "CV SUMBER REJEKI",
+   "debit": 7566295,
+   "credit": 0,
+   "balance_after": 14108054,
+   "page": 5,
+   "bbox": [
+    503,
+    60,
+    521,
+    940
+   ],
+   "ref": "FT26062549442",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0179",
+   "date": "2026-06-27",
+   "description": "TRF DARI RINA WULANDARI - PESANAN SEMBAKO",
+   "counterparty": "RINA WULANDARI",
+   "debit": 0,
+   "credit": 720000,
+   "balance_after": 14828054,
+   "page": 5,
+   "bbox": [
+    521,
+    60,
+    540,
+    940
+   ],
+   "ref": "FT26062744169",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0180",
+   "date": "2026-06-28",
+   "description": "QRIS SETTLEMENT MID 93605495 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1575000,
+   "balance_after": 16403054,
+   "page": 5,
+   "bbox": [
+    540,
+    60,
+    558,
+    940
+   ],
+   "ref": "FT26062895128",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0181",
+   "date": "2026-06-29",
+   "description": "QRIS SETTLEMENT MID 93607776 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1319000,
+   "balance_after": 17722054,
+   "page": 5,
+   "bbox": [
+    558,
+    60,
+    577,
+    940
+   ],
+   "ref": "FT26062969530",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0182",
+   "date": "2026-06-29",
+   "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 2500000,
+   "balance_after": 20222054,
+   "page": 5,
+   "bbox": [
+    577,
+    60,
+    595,
+    940
+   ],
+   "ref": "FT26062907739",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0183",
+   "date": "2026-06-30",
+   "description": "QRIS SETTLEMENT MID 93608030 - PENJUALAN",
+   "counterparty": "QRIS ACQUIRER",
+   "debit": 0,
+   "credit": 1671000,
+   "balance_after": 21893054,
+   "page": 5,
+   "bbox": [
+    595,
+    60,
+    614,
+    940
+   ],
+   "ref": "FT26063034506",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0184",
+   "date": "2026-06-30",
+   "description": "BIAYA ADMIN BULANAN",
+   "counterparty": null,
+   "debit": 15000,
+   "credit": 0,
+   "balance_after": 21878054,
+   "page": 5,
+   "bbox": [
+    614,
+    60,
+    632,
+    940
+   ],
+   "ref": "FT26063052395",
+   "trap_ids": []
+  }
+ ]
+}

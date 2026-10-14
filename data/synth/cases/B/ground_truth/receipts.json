@@ -1,0 +1,355 @@
+[
+ {
+  "filename": "ghn_receipt_01.jpg",
+  "merchant": "GHN Express",
+  "date": "2026-01-22",
+  "receipt_number": "GHN-2187",
+  "currency": "VND",
+  "total": 158000,
+  "direction": "expense",
+  "handwritten": false,
+  "doc_type": "logistics_receipt",
+  "cod_collected": 2144000,
+  "parcels": 7,
+  "items": [
+   {
+    "description": "GHN589830A (450g)",
+    "amount": 22000
+   },
+   {
+    "description": "GHN731287A (250g)",
+    "amount": 18000
+   },
+   {
+    "description": "GHN609045A (450g)",
+    "amount": 22000
+   },
+   {
+    "description": "GHN559257A (450g)",
+    "amount": 22000
+   },
+   {
+    "description": "GHN302675A (300g)",
+    "amount": 18000
+   },
+   {
+    "description": "GHN566838A (350g)",
+    "amount": 20000
+   },
+   {
+    "description": "GHN300919A (1200g)",
+    "amount": 36000
+   }
+  ],
+  "total_bbox": [
+   629,
+   100,
+   656,
+   902
+  ],
+  "date_bbox": [
+   258,
+   98,
+   285,
+   899
+  ],
+  "image_size": [
+   664,
+   1173
+  ],
+  "trap_ids": []
+ },
+ {
+  "filename": "ghn_receipt_02.jpg",
+  "merchant": "GHN Express",
+  "date": "2026-02-11",
+  "receipt_number": "GHN-2231",
+  "currency": "VND",
+  "total": 159000,
+  "direction": "expense",
+  "handwritten": false,
+  "doc_type": "logistics_receipt",
+  "cod_collected": 2202000,
+  "parcels": 6,
+  "items": [
+   {
+    "description": "GHN277928A (350g)",
+    "amount": 20000
+   },
+   {
+    "description": "GHN503007A (1200g)",
+    "amount": 36000
+   },
+   {
+    "description": "GHN693758A (500g)",
+    "amount": 22000
+   },
+   {
+    "description": "GHN871029A (250g)",
+    "amount": 18000
+   },
+   {
+    "description": "GHN337858A (750g)",
+    "amount": 27000
+   },
+   {
+    "description": "GHN189065A (1200g)",
+    "amount": 36000
+   }
+  ],
+  "total_bbox": [
+   608,
+   113,
+   653,
+   868
+  ],
+  "date_bbox": [
+   261,
+   138,
+   305,
+   893
+  ],
+  "image_size": [
+   706,
+   1166
+  ],
+  "trap_ids": [
+   "T08"
+  ]
+ },
+ {
+  "filename": "ghn_receipt_03.jpg",
+  "merchant": "GHN Express",
+  "date": "2026-03-27",
+  "receipt_number": "GHN-2305",
+  "currency": "VND",
+  "total": 185000,
+  "direction": "expense",
+  "handwritten": false,
+  "doc_type": "logistics_receipt",
+  "cod_collected": 2387000,
+  "parcels": 8,
+  "items": [
+   {
+    "description": "GHN822558A (900g)",
+    "amount": 30000
+   },
+   {
+    "description": "GHN786112A (300g)",
+    "amount": 18000
+   },
+   {
+    "description": "GHN454555A (750g)",
+    "amount": 27000
+   },
+   {
+    "description": "GHN186228A (300g)",
+    "amount": 18000
+   },
+   {
+    "description": "GHN711582A (350g)",
+    "amount": 20000
+   },
+   {
+    "description": "GHN336121A (250g)",
+    "amount": 18000
+   },
+   {
+    "description": "GHN736685A (300g)",
+    "amount": 18000
+   },
+   {
+    "description": "GHN292342A (1200g)",
+    "amount": 36000
+   }
+  ],
+  "total_bbox": [
+   637,
+   101,
+   664,
+   895
+  ],
+  "date_bbox": [
+   252,
+   106,
+   279,
+   900
+  ],
+  "image_size": [
+   670,
+   1206
+  ],
+  "trap_ids": []
+ },
+ {
+  "filename": "ghn_receipt_04.jpg",
+  "merchant": "GHN Express",
+  "date": "2026-04-22",
+  "receipt_number": "GHN-2378",
+  "currency": "VND",
+  "total": 96000,
+  "direction": "expense",
+  "handwritten": false,
+  "doc_type": "logistics_receipt",
+  "cod_collected": 1177000,
+  "parcels": 5,
+  "items": [
+   {
+    "description": "GHN867458A (250g)",
+    "amount": 18000
+   },
+   {
+    "description": "GHN446703A (450g)",
+    "amount": 22000
+   },
+   {
+    "description": "GHN945896A (250g)",
+    "amount": 18000
+   },
+   {
+    "description": "GHN210028A (250g)",
+    "amount": 18000
+   },
+   {
+    "description": "GHN180053A (350g)",
+    "amount": 20000
+   }
+  ],
+  "total_bbox": [
+   611,
+   98,
+   637,
+   902
+  ],
+  "date_bbox": [
+   273,
+   98,
+   299,
+   902
+  ],
+  "image_size": [
+   662,
+   1115
+  ],
+  "trap_ids": []
+ },
+ {
+  "filename": "ghn_receipt_05.jpg",
+  "merchant": "GHN Express",
+  "date": "2026-03-11",
+  "receipt_number": "GHN-2231",
+  "currency": "VND",
+  "total": 159000,
+  "direction": "expense",
+  "handwritten": false,
+  "doc_type": "logistics_receipt",
+  "cod_collected": 2202000,
+  "parcels": 6,
+  "items": [
+   {
+    "description": "GHN277928A (350g)",
+    "amount": 20000
+   },
+   {
+    "description": "GHN503007A (1200g)",
+    "amount": 36000
+   },
+   {
+    "description": "GHN693758A (500g)",
+    "amount": 22000
+   },
+   {
+    "description": "GHN871029A (250g)",
+    "amount": 18000
+   },
+   {
+    "description": "GHN337858A (750g)",
+    "amount": 27000
+   },
+   {
+    "description": "GHN189065A (1200g)",
+    "amount": 36000
+   }
+  ],
+  "total_bbox": [
+   608,
+   113,
+   653,
+   868
+  ],
+  "date_bbox": [
+   261,
+   138,
+   305,
+   893
+  ],
+  "image_size": [
+   706,
+   1166
+  ],
+  "trap_ids": [
+   "T08"
+  ],
+  "duplicate_of": "ghn_receipt_02.jpg"
+ },
+ {
+  "filename": "jt_receipt_01.jpg",
+  "merchant": "J&T Express",
+  "date": "2026-05-06",
+  "receipt_number": "JT-77109",
+  "currency": "VND",
+  "total": 200000,
+  "direction": "expense",
+  "handwritten": false,
+  "doc_type": "logistics_receipt",
+  "cod_collected": 2284000,
+  "parcels": 7,
+  "items": [
+   {
+    "description": "JT682375A (900g)",
+    "amount": 30000
+   },
+   {
+    "description": "JT159438A (1200g)",
+    "amount": 36000
+   },
+   {
+    "description": "JT296826A (500g)",
+    "amount": 22000
+   },
+   {
+    "description": "JT557983A (900g)",
+    "amount": 30000
+   },
+   {
+    "description": "JT823730A (900g)",
+    "amount": 30000
+   },
+   {
+    "description": "JT391637A (450g)",
+    "amount": 22000
+   },
+   {
+    "description": "JT290135A (900g)",
+    "amount": 30000
+   }
+  ],
+  "total_bbox": [
+   629,
+   99,
+   655,
+   898
+  ],
+  "date_bbox": [
+   259,
+   102,
+   285,
+   901
+  ],
+  "image_size": [
+   666,
+   1175
+  ],
+  "trap_ids": []
+ }
+]

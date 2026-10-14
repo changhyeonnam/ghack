@@ -1,0 +1,592 @@
+{
+  "version": "2026-10-14",
+  "description": "Answer key of 20 planted traps across synthetic cases B and C. Case A is clean (false-positive control).",
+  "types": {
+    "double_count": "The same money appears in two sources and would be counted twice",
+    "round_trip": "Money that circulates back to the applicant (own accounts / family) and is not revenue",
+    "doc_manipulation": "Documents reused, altered or inconsistent with each other",
+    "period_mismatch": "Periods, balances or coverage that do not line up",
+    "hidden_debt": "Recurring transfers that look like undisclosed loan repayments"
+  },
+  "traps": [
+    {
+      "id": "T01",
+      "case_id": "B",
+      "type": "double_count",
+      "title": "Shopee GMV and bank payouts are the same money",
+      "description": "Dashboard gross sales (Jan-Jun) and SHOPEE PAYOUT credits in the statement overlap ~90%; summing both doubles revenue.",
+      "planted_in": [
+        "shopee_dashboard_2026-01.png",
+        "shopee_dashboard_2026-02.png",
+        "shopee_dashboard_2026-03.png",
+        "shopee_dashboard_2026-04.png",
+        "shopee_dashboard_2026-05.png",
+        "bank_statement_2025-12_2026-05.pdf"
+      ],
+      "detection": "both",
+      "expected_question_ids": [
+        "Q1"
+      ],
+      "expected_severity": "critical",
+      "match": {
+        "any_keywords": [
+          "double",
+          "payout",
+          "GMV",
+          "gross sales",
+          "same money",
+          "already"
+        ],
+        "amounts": []
+      }
+    },
+    {
+      "id": "T02",
+      "case_id": "B",
+      "type": "double_count",
+      "title": "Dashboard gross sales vs dashboard payout",
+      "description": "Each capture shows Gross sales and Total payout; payout is a subset of gross sales, not additional income.",
+      "planted_in": [
+        "shopee_dashboard_2026-01.png",
+        "shopee_dashboard_2026-02.png",
+        "shopee_dashboard_2026-03.png",
+        "shopee_dashboard_2026-04.png",
+        "shopee_dashboard_2026-05.png",
+        "shopee_dashboard_2026-06.png"
+      ],
+      "detection": "llm",
+      "expected_question_ids": [
+        "Q1"
+      ],
+      "expected_severity": "high",
+      "match": {
+        "all_keywords": [
+          "payout"
+        ],
+        "any_keywords": [
+          "gross",
+          "subset",
+          "net of",
+          "fees",
+          "already included",
+          "same dashboard",
+          "not additional"
+        ],
+        "amounts": []
+      }
+    },
+    {
+      "id": "T03",
+      "case_id": "B",
+      "type": "double_count",
+      "title": "COD dashboard revenue vs cash deposits",
+      "description": "Cash-on-delivery sales on the dashboards (COD orders value card) are later deposited as NOP TIEN MAT lumps; the monthly deposit total equals the dashboard COD value - both are the same revenue.",
+      "planted_in": [
+        "shopee_dashboard_2026-01.png",
+        "shopee_dashboard_2026-02.png",
+        "shopee_dashboard_2026-03.png",
+        "shopee_dashboard_2026-04.png",
+        "shopee_dashboard_2026-05.png",
+        "bank_statement_2025-12_2026-05.pdf"
+      ],
+      "detection": "both",
+      "expected_question_ids": [
+        "Q1"
+      ],
+      "expected_severity": "high",
+      "match": {
+        "any_keywords": [
+          "COD",
+          "cash on delivery",
+          "NOP TIEN MAT",
+          "cash deposit"
+        ],
+        "amounts": []
+      }
+    },
+    {
+      "id": "T04",
+      "case_id": "B",
+      "type": "round_trip",
+      "title": "Own-account transfer #1 counted as income",
+      "description": "CHUYEN TIEN TU NGUYEN THI LINH - VCB credit; the sender is the applicant herself.",
+      "planted_in": [
+        "bank_statement_2025-12_2026-05.pdf"
+      ],
+      "detection": "both",
+      "expected_question_ids": [
+        "Q3"
+      ],
+      "expected_severity": "high",
+      "match": {
+        "any_keywords": [
+          "self",
+          "own account",
+          "NGUYEN THI LINH",
+          "VCB",
+          "same person",
+          "applicant"
+        ],
+        "amounts": [
+          24000000
+        ]
+      }
+    },
+    {
+      "id": "T05",
+      "case_id": "B",
+      "type": "round_trip",
+      "title": "Own-account transfer #2 counted as income",
+      "description": "Second own-account credit from VCB in a different month.",
+      "planted_in": [
+        "bank_statement_2025-12_2026-05.pdf"
+      ],
+      "detection": "both",
+      "expected_question_ids": [
+        "Q3"
+      ],
+      "expected_severity": "high",
+      "match": {
+        "any_keywords": [
+          "self",
+          "own account",
+          "NGUYEN THI LINH",
+          "VCB",
+          "same person",
+          "applicant"
+        ],
+        "amounts": [
+          31000000
+        ]
+      }
+    },
+    {
+      "id": "T06",
+      "case_id": "B",
+      "type": "round_trip",
+      "title": "Own-account transfer #3 counted as income",
+      "description": "Third own-account credit from VCB.",
+      "planted_in": [
+        "bank_statement_2025-12_2026-05.pdf"
+      ],
+      "detection": "both",
+      "expected_question_ids": [
+        "Q3"
+      ],
+      "expected_severity": "high",
+      "match": {
+        "any_keywords": [
+          "self",
+          "own account",
+          "NGUYEN THI LINH",
+          "VCB",
+          "same person",
+          "applicant"
+        ],
+        "amounts": [
+          27500000
+        ]
+      }
+    },
+    {
+      "id": "T07",
+      "case_id": "B",
+      "type": "round_trip",
+      "title": "Family round-trip 50,000,000 in and out",
+      "description": "+50,000,000 from NGUYEN VAN LONG on 2026-03-14, -50,000,000 back to him on 2026-03-20.",
+      "planted_in": [
+        "bank_statement_2025-12_2026-05.pdf"
+      ],
+      "detection": "both",
+      "expected_question_ids": [
+        "Q3",
+        "Q2"
+      ],
+      "expected_severity": "high",
+      "match": {
+        "any_keywords": [
+          "NGUYEN VAN LONG",
+          "round",
+          "returned",
+          "in and out",
+          "circular"
+        ],
+        "amounts": [
+          50000000
+        ]
+      }
+    },
+    {
+      "id": "T08",
+      "case_id": "B",
+      "type": "doc_manipulation",
+      "title": "Logistics receipt reused with a changed date",
+      "description": "ghn_receipt_02.jpg (11/02/2026) and ghn_receipt_05.jpg (11/03/2026) are the same receipt GHN-2231 (same waybills, fees, staff); only the printed date differs, so phash distance is 0.",
+      "planted_in": [
+        "ghn_receipt_02.jpg",
+        "ghn_receipt_05.jpg"
+      ],
+      "detection": "tool",
+      "expected_question_ids": [
+        "Q4"
+      ],
+      "expected_severity": "high",
+      "match": {
+        "any_keywords": [
+          "duplicate",
+          "reused",
+          "same receipt",
+          "identical",
+          "GHN-2231",
+          "image"
+        ],
+        "filenames_any": [
+          "ghn_receipt_02.jpg",
+          "ghn_receipt_05.jpg"
+        ]
+      }
+    },
+    {
+      "id": "T09",
+      "case_id": "B",
+      "type": "doc_manipulation",
+      "title": "March dashboard inconsistent (followers, shop name)",
+      "description": "Followers drop 12,900 -> 9,800 -> 13,600 and the March capture is titled 'Linh Fashion VN'.",
+      "planted_in": [
+        "shopee_dashboard_2026-03.png"
+      ],
+      "detection": "llm",
+      "expected_question_ids": [
+        "Q11",
+        "Q4",
+        "CUSTOM"
+      ],
+      "expected_severity": "medium",
+      "match": {
+        "any_keywords": [
+          "follower",
+          "shop name",
+          "Linh Fashion VN",
+          "March",
+          "inconsistent"
+        ],
+        "filenames_any": [
+          "shopee_dashboard_2026-03.png"
+        ]
+      }
+    },
+    {
+      "id": "T10",
+      "case_id": "B",
+      "type": "period_mismatch",
+      "title": "Dashboard period vs statement period",
+      "description": "Dashboards Jan-Jun 2026, statement Dec 2025-May 2026: June sales have no bank evidence.",
+      "planted_in": [
+        "shopee_dashboard_2026-06.png",
+        "bank_statement_2025-12_2026-05.pdf"
+      ],
+      "detection": "both",
+      "expected_question_ids": [
+        "Q5"
+      ],
+      "expected_severity": "medium",
+      "match": {
+        "any_keywords": [
+          "June",
+          "2026-06",
+          "period",
+          "not covered",
+          "no bank",
+          "mismatch",
+          "December"
+        ],
+        "amounts": []
+      }
+    },
+    {
+      "id": "T11",
+      "case_id": "B",
+      "type": "period_mismatch",
+      "title": "Balance continuity break: credit without balance change",
+      "description": "THANH TOAN DON HANG SI - TRAN THI HOA +18,500,000 on 2026-02-17 but the running balance is unchanged from the previous row.",
+      "planted_in": [
+        "bank_statement_2025-12_2026-05.pdf"
+      ],
+      "detection": "tool",
+      "expected_question_ids": [
+        "Q6"
+      ],
+      "expected_severity": "critical",
+      "match": {
+        "any_keywords": [
+          "balance",
+          "continuity",
+          "running balance",
+          "2026-02-17",
+          "does not reconcile"
+        ],
+        "amounts": [
+          18500000
+        ]
+      }
+    },
+    {
+      "id": "T12",
+      "case_id": "B",
+      "type": "period_mismatch",
+      "title": "Balance continuity break: missing debit row",
+      "description": "Balance drops by 7,200,000 between two April rows with no transaction shown (balance_after of the THANH TOAN GHN EXPRESS row on 2026-04-07 is 7,200,000 lower than prev + credit - debit).",
+      "planted_in": [
+        "bank_statement_2025-12_2026-05.pdf"
+      ],
+      "detection": "tool",
+      "expected_question_ids": [
+        "Q6"
+      ],
+      "expected_severity": "critical",
+      "match": {
+        "any_keywords": [
+          "balance",
+          "continuity",
+          "missing",
+          "April",
+          "2026-04",
+          "deleted"
+        ],
+        "amounts": [
+          7200000
+        ]
+      }
+    },
+    {
+      "id": "T13",
+      "case_id": "B",
+      "type": "hidden_debt",
+      "title": "FE Credit instalment every month",
+      "description": "CHUYEN DEN FE CREDIT - TRA GOP -3,250,000 on the 5th, 6 of 6 months.",
+      "planted_in": [
+        "bank_statement_2025-12_2026-05.pdf"
+      ],
+      "detection": "both",
+      "expected_question_ids": [
+        "Q7"
+      ],
+      "expected_severity": "high",
+      "match": {
+        "any_keywords": [
+          "FE CREDIT",
+          "instalment",
+          "installment",
+          "loan",
+          "recurring",
+          "debt"
+        ],
+        "amounts": [
+          3250000
+        ]
+      }
+    },
+    {
+      "id": "T14",
+      "case_id": "B",
+      "type": "hidden_debt",
+      "title": "SPayLater repayment every month",
+      "description": "SPAYLATER THANH TOAN -1,480,000 around the 20th, 6 of 6 months.",
+      "planted_in": [
+        "bank_statement_2025-12_2026-05.pdf"
+      ],
+      "detection": "both",
+      "expected_question_ids": [
+        "Q7"
+      ],
+      "expected_severity": "medium",
+      "match": {
+        "any_keywords": [
+          "SPAYLATER",
+          "pay later",
+          "BNPL",
+          "loan",
+          "recurring",
+          "debt"
+        ],
+        "amounts": [
+          1480000
+        ]
+      }
+    },
+    {
+      "id": "T15",
+      "case_id": "C",
+      "type": "doc_manipulation",
+      "title": "Ledger page photographed twice with month changed",
+      "description": "ledger_p3.jpg (Marso 2026) and ledger_p6.jpg (Abril 2026) are the same page render with only the month header changed; all entries, day numbers and weekly totals are identical. A genuine Abril page (ledger_p4.jpg) also exists.",
+      "planted_in": [
+        "ledger_p3.jpg",
+        "ledger_p6.jpg"
+      ],
+      "detection": "tool",
+      "expected_question_ids": [
+        "Q4"
+      ],
+      "expected_severity": "critical",
+      "match": {
+        "any_keywords": [
+          "duplicate",
+          "same page",
+          "identical",
+          "reused",
+          "ledger"
+        ],
+        "filenames_any": [
+          "ledger_p3.jpg",
+          "ledger_p6.jpg"
+        ]
+      }
+    },
+    {
+      "id": "T16",
+      "case_id": "C",
+      "type": "period_mismatch",
+      "title": "Two statement months missing; balances do not chain",
+      "description": "Mar-Apr 2026 absent although the header period says 01/01/2026-06/30/2026; May BALANCE FORWARD 61,400.00 vs Feb ENDING BALANCE 48,950.00.",
+      "planted_in": [
+        "bank_statement_2026_partial.pdf"
+      ],
+      "detection": "both",
+      "expected_question_ids": [
+        "Q5",
+        "Q6"
+      ],
+      "expected_severity": "critical",
+      "match": {
+        "any_keywords": [
+          "missing",
+          "March",
+          "April",
+          "gap",
+          "two months",
+          "opening balance",
+          "closing balance"
+        ],
+        "amounts": [
+          61400,
+          48950
+        ]
+      }
+    },
+    {
+      "id": "T17",
+      "case_id": "C",
+      "type": "hidden_debt",
+      "title": "BDO auto loan payment monthly",
+      "description": "BDO AUTO LOAN PAYMENT -14,800 on the 10th in every month present.",
+      "planted_in": [
+        "bank_statement_2026_partial.pdf"
+      ],
+      "detection": "both",
+      "expected_question_ids": [
+        "Q7"
+      ],
+      "expected_severity": "high",
+      "match": {
+        "any_keywords": [
+          "BDO",
+          "auto loan",
+          "loan",
+          "recurring",
+          "debt"
+        ],
+        "amounts": [
+          14800
+        ]
+      }
+    },
+    {
+      "id": "T18",
+      "case_id": "C",
+      "type": "hidden_debt",
+      "title": "Weekly GCash transfer to an individual (informal lender)",
+      "description": "GCASH TRANSFER TO JUAN DELA CRUZ -3,000 every Friday.",
+      "planted_in": [
+        "bank_statement_2026_partial.pdf"
+      ],
+      "detection": "both",
+      "expected_question_ids": [
+        "Q7"
+      ],
+      "expected_severity": "medium",
+      "match": {
+        "any_keywords": [
+          "JUAN DELA CRUZ",
+          "weekly",
+          "every Friday",
+          "informal",
+          "lender",
+          "recurring"
+        ],
+        "amounts": [
+          3000
+        ]
+      }
+    },
+    {
+      "id": "T19",
+      "case_id": "C",
+      "type": "double_count",
+      "title": "Ledger cash income vs Monday cash deposits",
+      "description": "Each Monday CASH DEPOSIT - BRANCH 0045 QUIAPO equals the previous week's (Mon-Sun) ledger cash income; adding ledger income and deposits doubles revenue.",
+      "planted_in": [
+        "ledger_p1.jpg",
+        "ledger_p2.jpg",
+        "ledger_p4.jpg",
+        "ledger_p5.jpg",
+        "ledger_p7.jpg",
+        "bank_statement_2026_partial.pdf"
+      ],
+      "detection": "both",
+      "expected_question_ids": [
+        "Q1"
+      ],
+      "expected_severity": "high",
+      "match": {
+        "any_keywords": [
+          "cash deposit",
+          "ledger",
+          "same cash",
+          "double",
+          "already deposited"
+        ],
+        "amounts": []
+      }
+    },
+    {
+      "id": "T20",
+      "case_id": "C",
+      "type": "doc_manipulation",
+      "title": "Premises photo reused from a previous applicant",
+      "description": "premises_02.jpg is byte-identical to data/synth/past_cases/PAST-2025-0471/premises.jpg (a prior applicant's workshop interior, sign 'SERVICE BAY 2'); see past_cases/index.json for sha256/phash.",
+      "planted_in": [
+        "premises_02.jpg"
+      ],
+      "detection": "tool",
+      "expected_question_ids": [
+        "Q4",
+        "Q8"
+      ],
+      "expected_severity": "critical",
+      "match": {
+        "any_keywords": [
+          "previous case",
+          "past case",
+          "PAST-2025-0471",
+          "another applicant",
+          "reused",
+          "duplicate"
+        ],
+        "filenames_any": [
+          "premises_02.jpg"
+        ]
+      }
+    }
+  ]
+}

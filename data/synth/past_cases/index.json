@@ -1,0 +1,11 @@
+[
+ {
+  "case_id": "PAST-2025-0471",
+  "filename": "premises.jpg",
+  "sha256": "2e5959b8cb410932b7ec00ec2211548af2e0c31ffba07783bff03a5b64ce4f7d",
+  "phash": "85d16c768fde2950",
+  "applicant": "Motortek Auto Service (synthetic prior applicant)",
+  "filed": "2025-09-18",
+  "note": "Synthetic. Used by trap T20: case C premises_02.jpg is a byte-identical copy of this file."
+ }
+]

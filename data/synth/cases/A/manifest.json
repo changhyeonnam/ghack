@@ -1,0 +1,149 @@
+{
+ "case_id": "A",
+ "name": "Warung Ibu Sari",
+ "business_name": "Warung Ibu Sari",
+ "sector": "grocery retail",
+ "country": "ID",
+ "city": "Jakarta",
+ "language": "id",
+ "currency": "IDR",
+ "requested_amount": 25000000,
+ "expected_outcome": "approve",
+ "account_holder": "SARI DEWI",
+ "bank_name": "Bank Nusantara Digital (synthetic)",
+ "notes": "Clean control case: no traps. Healthy, slightly growing inflow; receipts partly paid by bank transfer (matching TRF KE rows).",
+ "documents": [
+  {
+   "filename": "bank_statement_2026H1.pdf",
+   "doc_type": "bank_statement",
+   "pages": 5,
+   "ground_truth": "ground_truth/bank_statement.json",
+   "description": "6-month mobile banking statement, Jan-Jun 2026"
+  },
+  {
+   "filename": "receipt_01.jpg",
+   "doc_type": "receipt",
+   "pages": 1,
+   "ground_truth": "ground_truth/receipts.json",
+   "description": "printed supplier receipt - Grosir Sembako Barokah"
+  },
+  {
+   "filename": "receipt_02.jpg",
+   "doc_type": "receipt",
+   "pages": 1,
+   "ground_truth": "ground_truth/receipts.json",
+   "description": "printed supplier receipt - CV Sumber Rejeki"
+  },
+  {
+   "filename": "receipt_03.jpg",
+   "doc_type": "receipt",
+   "pages": 1,
+   "ground_truth": "ground_truth/receipts.json",
+   "description": "handwritten supplier nota - Agen Gas & Galon Pak Udin"
+  },
+  {
+   "filename": "receipt_04.jpg",
+   "doc_type": "receipt",
+   "pages": 1,
+   "ground_truth": "ground_truth/receipts.json",
+   "description": "printed supplier receipt - Toko Grosir Makmur"
+  },
+  {
+   "filename": "receipt_05.jpg",
+   "doc_type": "receipt",
+   "pages": 1,
+   "ground_truth": "ground_truth/receipts.json",
+   "description": "printed supplier receipt - Toko Grosir Makmur"
+  },
+  {
+   "filename": "receipt_06.jpg",
+   "doc_type": "receipt",
+   "pages": 1,
+   "ground_truth": "ground_truth/receipts.json",
+   "description": "printed supplier receipt - Toko Plastik Anugerah"
+  },
+  {
+   "filename": "receipt_07.jpg",
+   "doc_type": "receipt",
+   "pages": 1,
+   "ground_truth": "ground_truth/receipts.json",
+   "description": "printed supplier receipt - Toko Grosir Makmur"
+  },
+  {
+   "filename": "receipt_08.jpg",
+   "doc_type": "receipt",
+   "pages": 1,
+   "ground_truth": "ground_truth/receipts.json",
+   "description": "handwritten supplier nota - Warung Sayur Bu Tini"
+  },
+  {
+   "filename": "receipt_09.jpg",
+   "doc_type": "receipt",
+   "pages": 1,
+   "ground_truth": "ground_truth/receipts.json",
+   "description": "printed supplier receipt - Toko Grosir Makmur"
+  },
+  {
+   "filename": "receipt_10.jpg",
+   "doc_type": "receipt",
+   "pages": 1,
+   "ground_truth": "ground_truth/receipts.json",
+   "description": "printed supplier receipt - Toko Grosir Makmur"
+  },
+  {
+   "filename": "receipt_11.jpg",
+   "doc_type": "receipt",
+   "pages": 1,
+   "ground_truth": "ground_truth/receipts.json",
+   "description": "printed supplier receipt - CV Sumber Rejeki"
+  },
+  {
+   "filename": "receipt_12.jpg",
+   "doc_type": "receipt",
+   "pages": 1,
+   "ground_truth": "ground_truth/receipts.json",
+   "description": "printed supplier receipt - CV Sumber Rejeki"
+  },
+  {
+   "filename": "receipt_13.jpg",
+   "doc_type": "receipt",
+   "pages": 1,
+   "ground_truth": "ground_truth/receipts.json",
+   "description": "handwritten supplier nota - Toko Telur Pak Yanto"
+  },
+  {
+   "filename": "receipt_14.jpg",
+   "doc_type": "receipt",
+   "pages": 1,
+   "ground_truth": "ground_truth/receipts.json",
+   "description": "printed supplier receipt - Toko Grosir Makmur"
+  },
+  {
+   "filename": "receipt_15.jpg",
+   "doc_type": "receipt",
+   "pages": 1,
+   "ground_truth": "ground_truth/receipts.json",
+   "description": "printed supplier receipt - CV Sumber Rejeki"
+  },
+  {
+   "filename": "premises_01.jpg",
+   "doc_type": "premises_photo",
+   "pages": 1,
+   "ground_truth": null,
+   "description": "storefront"
+  },
+  {
+   "filename": "premises_02.jpg",
+   "doc_type": "premises_photo",
+   "pages": 1,
+   "ground_truth": null,
+   "description": "shop interior"
+  }
+ ],
+ "traps": [],
+ "generated_with": {
+  "generator": "data/synth/generate.py",
+  "seed": 7,
+  "synthetic": true
+ }
+}

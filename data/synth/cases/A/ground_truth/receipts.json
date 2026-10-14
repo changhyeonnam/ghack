@@ -1,0 +1,642 @@
+[
+ {
+  "filename": "receipt_01.jpg",
+  "merchant": "Grosir Sembako Barokah",
+  "date": "2026-01-22",
+  "receipt_number": "GSB-1452",
+  "currency": "IDR",
+  "total": 729000,
+  "direction": "purchase",
+  "handwritten": false,
+  "paid_by_bank_transfer": true,
+  "items": [
+   {
+    "description": "Kecap Manis 600ml x5",
+    "amount": 120000
+   },
+   {
+    "description": "Bawang Merah 1kg x1",
+    "amount": 38000
+   },
+   {
+    "description": "Garam 1kg x2",
+    "amount": 18000
+   },
+   {
+    "description": "Minuman Botol 1 krat x5",
+    "amount": 360000
+   },
+   {
+    "description": "Minyak Goreng 2L x4",
+    "amount": 136000
+   },
+   {
+    "description": "Deterjen 800g x1",
+    "amount": 21000
+   },
+   {
+    "description": "Kopi Sachet 1 renceng x3",
+    "amount": 36000
+   }
+  ],
+  "total_bbox": [
+   644,
+   110,
+   673,
+   897
+  ],
+  "image_size": [
+   676,
+   1237
+  ],
+  "trap_ids": []
+ },
+ {
+  "filename": "receipt_02.jpg",
+  "merchant": "CV Sumber Rejeki",
+  "date": "2026-01-10",
+  "receipt_number": "SR-0618",
+  "currency": "IDR",
+  "total": 780000,
+  "direction": "purchase",
+  "handwritten": false,
+  "paid_by_bank_transfer": true,
+  "items": [
+   {
+    "description": "Pasta Gigi 1 lusin x5",
+    "amount": 480000
+   },
+   {
+    "description": "Sabun Mandi 1 lusin x5",
+    "amount": 240000
+   },
+   {
+    "description": "Kopi Sachet 1 renceng x5",
+    "amount": 60000
+   }
+  ],
+  "total_bbox": [
+   561,
+   104,
+   598,
+   892
+  ],
+  "image_size": [
+   676,
+   1007
+  ],
+  "trap_ids": []
+ },
+ {
+  "filename": "receipt_03.jpg",
+  "merchant": "Agen Gas & Galon Pak Udin",
+  "date": "2026-01-16",
+  "receipt_number": "001",
+  "currency": "IDR",
+  "total": 421000,
+  "direction": "purchase",
+  "handwritten": true,
+  "paid_by_bank_transfer": false,
+  "items": [
+   {
+    "description": "Gas LPG 3kg x8",
+    "amount": 176000
+   },
+   {
+    "description": "Galon isi ulang x5",
+    "amount": 30000
+   },
+   {
+    "description": "Gas LPG 12kg x1",
+    "amount": 215000
+   }
+  ],
+  "total_bbox": [
+   742,
+   755,
+   779,
+   921
+  ],
+  "image_size": [
+   762,
+   978
+  ],
+  "trap_ids": []
+ },
+ {
+  "filename": "receipt_04.jpg",
+  "merchant": "Toko Grosir Makmur",
+  "date": "2026-02-26",
+  "receipt_number": "TGM-1006",
+  "currency": "IDR",
+  "total": 1259000,
+  "direction": "purchase",
+  "handwritten": false,
+  "paid_by_bank_transfer": true,
+  "items": [
+   {
+    "description": "Kecap Manis 600ml x6",
+    "amount": 144000
+   },
+   {
+    "description": "Minuman Botol 1 krat x1",
+    "amount": 72000
+   },
+   {
+    "description": "Cabai Rawit 1kg x1",
+    "amount": 65000
+   },
+   {
+    "description": "Snack Ringan 1 dus x6",
+    "amount": 588000
+   },
+   {
+    "description": "Biskuit 1 dus x3",
+    "amount": 390000
+   }
+  ],
+  "total_bbox": [
+   604,
+   106,
+   640,
+   885
+  ],
+  "image_size": [
+   684,
+   1127
+  ],
+  "trap_ids": []
+ },
+ {
+  "filename": "receipt_05.jpg",
+  "merchant": "Toko Grosir Makmur",
+  "date": "2026-02-06",
+  "receipt_number": "TGM-1023",
+  "currency": "IDR",
+  "total": 2215000,
+  "direction": "purchase",
+  "handwritten": false,
+  "paid_by_bank_transfer": true,
+  "items": [
+   {
+    "description": "Sabun Mandi 1 lusin x5",
+    "amount": 240000
+   },
+   {
+    "description": "Susu Kental Manis 1 dus x2",
+    "amount": 920000
+   },
+   {
+    "description": "Cabai Rawit 1kg x6",
+    "amount": 390000
+   },
+   {
+    "description": "Deterjen 800g x3",
+    "amount": 63000
+   },
+   {
+    "description": "Tepung Terigu 1kg x2",
+    "amount": 26000
+   },
+   {
+    "description": "Pasta Gigi 1 lusin x6",
+    "amount": 576000
+   }
+  ],
+  "total_bbox": [
+   625,
+   113,
+   658,
+   896
+  ],
+  "image_size": [
+   680,
+   1183
+  ],
+  "trap_ids": []
+ },
+ {
+  "filename": "receipt_06.jpg",
+  "merchant": "Toko Plastik Anugerah",
+  "date": "2026-03-16",
+  "receipt_number": "TPA-0632",
+  "currency": "IDR",
+  "total": 324000,
+  "direction": "purchase",
+  "handwritten": false,
+  "paid_by_bank_transfer": false,
+  "items": [
+   {
+    "description": "Minuman Botol 1 krat x4",
+    "amount": 288000
+   },
+   {
+    "description": "Kecap Manis 600ml x1",
+    "amount": 24000
+   },
+   {
+    "description": "Kopi Sachet 1 renceng x1",
+    "amount": 12000
+   }
+  ],
+  "total_bbox": [
+   556,
+   118,
+   602,
+   890
+  ],
+  "image_size": [
+   690,
+   1017
+  ],
+  "trap_ids": []
+ },
+ {
+  "filename": "receipt_07.jpg",
+  "merchant": "Toko Grosir Makmur",
+  "date": "2026-03-21",
+  "receipt_number": "TGM-1044",
+  "currency": "IDR",
+  "total": 892000,
+  "direction": "purchase",
+  "handwritten": false,
+  "paid_by_bank_transfer": true,
+  "items": [
+   {
+    "description": "Cabai Rawit 1kg x3",
+    "amount": 195000
+   },
+   {
+    "description": "Susu Kental Manis 1 dus x1",
+    "amount": 460000
+   },
+   {
+    "description": "Sabun Mandi 1 lusin x4",
+    "amount": 192000
+   },
+   {
+    "description": "Garam 1kg x5",
+    "amount": 45000
+   }
+  ],
+  "total_bbox": [
+   577,
+   114,
+   625,
+   873
+  ],
+  "image_size": [
+   702,
+   1079
+  ],
+  "trap_ids": []
+ },
+ {
+  "filename": "receipt_08.jpg",
+  "merchant": "Warung Sayur Bu Tini",
+  "date": "2026-03-30",
+  "receipt_number": "027",
+  "currency": "IDR",
+  "total": 460000,
+  "direction": "purchase",
+  "handwritten": true,
+  "paid_by_bank_transfer": false,
+  "items": [
+   {
+    "description": "Tomat 1kg x2",
+    "amount": 28000
+   },
+   {
+    "description": "Kentang 1kg x4",
+    "amount": 72000
+   },
+   {
+    "description": "Bawang putih 1kg x10",
+    "amount": 360000
+   }
+  ],
+  "total_bbox": [
+   750,
+   754,
+   786,
+   931
+  ],
+  "image_size": [
+   748,
+   966
+  ],
+  "trap_ids": []
+ },
+ {
+  "filename": "receipt_09.jpg",
+  "merchant": "Toko Grosir Makmur",
+  "date": "2026-04-27",
+  "receipt_number": "TGM-1055",
+  "currency": "IDR",
+  "total": 1249500,
+  "direction": "purchase",
+  "handwritten": false,
+  "paid_by_bank_transfer": false,
+  "items": [
+   {
+    "description": "Tisu 1 dus x4",
+    "amount": 344000
+   },
+   {
+    "description": "Gula Pasir 1kg x1",
+    "amount": 17500
+   },
+   {
+    "description": "Air Mineral 1 dus (48) x6",
+    "amount": 252000
+   },
+   {
+    "description": "Mie Instan 1 dus (40) x3",
+    "amount": 336000
+   },
+   {
+    "description": "Minyak Goreng 2L x2",
+    "amount": 68000
+   },
+   {
+    "description": "Teh Celup 1 dus x4",
+    "amount": 220000
+   },
+   {
+    "description": "Kopi Sachet 1 renceng x1",
+    "amount": 12000
+   }
+  ],
+  "total_bbox": [
+   639,
+   108,
+   675,
+   875
+  ],
+  "image_size": [
+   694,
+   1247
+  ],
+  "trap_ids": []
+ },
+ {
+  "filename": "receipt_10.jpg",
+  "merchant": "Toko Grosir Makmur",
+  "date": "2026-04-20",
+  "receipt_number": "TGM-1063",
+  "currency": "IDR",
+  "total": 1052000,
+  "direction": "purchase",
+  "handwritten": false,
+  "paid_by_bank_transfer": false,
+  "items": [
+   {
+    "description": "Kecap Manis 600ml x6",
+    "amount": 144000
+   },
+   {
+    "description": "Bawang Merah 1kg x5",
+    "amount": 190000
+   },
+   {
+    "description": "Sabun Mandi 1 lusin x3",
+    "amount": 144000
+   },
+   {
+    "description": "Air Mineral 1 dus (48) x1",
+    "amount": 42000
+   },
+   {
+    "description": "Susu Kental Manis 1 dus x1",
+    "amount": 460000
+   },
+   {
+    "description": "Shampo Sachet 1 renceng x4",
+    "amount": 72000
+   }
+  ],
+  "total_bbox": [
+   617,
+   136,
+   662,
+   886
+  ],
+  "image_size": [
+   710,
+   1197
+  ],
+  "trap_ids": []
+ },
+ {
+  "filename": "receipt_11.jpg",
+  "merchant": "CV Sumber Rejeki",
+  "date": "2026-05-13",
+  "receipt_number": "SR-0638",
+  "currency": "IDR",
+  "total": 708000,
+  "direction": "purchase",
+  "handwritten": false,
+  "paid_by_bank_transfer": true,
+  "items": [
+   {
+    "description": "Deterjen 800g x2",
+    "amount": 42000
+   },
+   {
+    "description": "Pasta Gigi 1 lusin x6",
+    "amount": 576000
+   },
+   {
+    "description": "Shampo Sachet 1 renceng x5",
+    "amount": 90000
+   }
+  ],
+  "total_bbox": [
+   556,
+   110,
+   602,
+   882
+  ],
+  "image_size": [
+   690,
+   1015
+  ],
+  "trap_ids": []
+ },
+ {
+  "filename": "receipt_12.jpg",
+  "merchant": "CV Sumber Rejeki",
+  "date": "2026-05-27",
+  "receipt_number": "SR-0678",
+  "currency": "IDR",
+  "total": 1123000,
+  "direction": "purchase",
+  "handwritten": false,
+  "paid_by_bank_transfer": false,
+  "items": [
+   {
+    "description": "Bawang Merah 1kg x4",
+    "amount": 152000
+   },
+   {
+    "description": "Gula Pasir 1kg x2",
+    "amount": 35000
+   },
+   {
+    "description": "Tisu 1 dus x5",
+    "amount": 430000
+   },
+   {
+    "description": "Mie Instan 1 dus (40) x3",
+    "amount": 336000
+   },
+   {
+    "description": "Minyak Goreng 2L x5",
+    "amount": 170000
+   }
+  ],
+  "total_bbox": [
+   604,
+   115,
+   641,
+   894
+  ],
+  "image_size": [
+   684,
+   1127
+  ],
+  "trap_ids": []
+ },
+ {
+  "filename": "receipt_13.jpg",
+  "merchant": "Toko Telur Pak Yanto",
+  "date": "2026-05-25",
+  "receipt_number": "086",
+  "currency": "IDR",
+  "total": 635000,
+  "direction": "purchase",
+  "handwritten": true,
+  "paid_by_bank_transfer": false,
+  "items": [
+   {
+    "description": "Telur bebek 1 tray x3",
+    "amount": 255000
+   },
+   {
+    "description": "Telur puyuh 1kg x10",
+    "amount": 380000
+   }
+  ],
+  "total_bbox": [
+   757,
+   723,
+   790,
+   901
+  ],
+  "image_size": [
+   782,
+   992
+  ],
+  "trap_ids": []
+ },
+ {
+  "filename": "receipt_14.jpg",
+  "merchant": "Toko Grosir Makmur",
+  "date": "2026-06-26",
+  "receipt_number": "TGM-1094",
+  "currency": "IDR",
+  "total": 1422000,
+  "direction": "purchase",
+  "handwritten": false,
+  "paid_by_bank_transfer": false,
+  "items": [
+   {
+    "description": "Beras Premium 25kg x1",
+    "amount": 310000
+   },
+   {
+    "description": "Garam 1kg x2",
+    "amount": 18000
+   },
+   {
+    "description": "Tepung Terigu 1kg x4",
+    "amount": 52000
+   },
+   {
+    "description": "Bawang Merah 1kg x5",
+    "amount": 190000
+   },
+   {
+    "description": "Kopi Sachet 1 renceng x1",
+    "amount": 12000
+   },
+   {
+    "description": "Telur Ayam 1 peti 15kg x2",
+    "amount": 840000
+   }
+  ],
+  "total_bbox": [
+   616,
+   115,
+   662,
+   861
+  ],
+  "image_size": [
+   714,
+   1199
+  ],
+  "trap_ids": []
+ },
+ {
+  "filename": "receipt_15.jpg",
+  "merchant": "CV Sumber Rejeki",
+  "date": "2026-06-17",
+  "receipt_number": "SR-0698",
+  "currency": "IDR",
+  "total": 1161000,
+  "direction": "purchase",
+  "handwritten": false,
+  "paid_by_bank_transfer": false,
+  "items": [
+   {
+    "description": "Kantong Plastik 1 pak x5",
+    "amount": 75000
+   },
+   {
+    "description": "Garam 1kg x6",
+    "amount": 54000
+   },
+   {
+    "description": "Pasta Gigi 1 lusin x2",
+    "amount": 192000
+   },
+   {
+    "description": "Kopi Sachet 1 renceng x1",
+    "amount": 12000
+   },
+   {
+    "description": "Kecap Manis 600ml x2",
+    "amount": 48000
+   },
+   {
+    "description": "Cabai Rawit 1kg x6",
+    "amount": 390000
+   },
+   {
+    "description": "Biskuit 1 dus x3",
+    "amount": 390000
+   }
+  ],
+  "total_bbox": [
+   634,
+   115,
+   678,
+   859
+  ],
+  "image_size": [
+   716,
+   1257
+  ],
+  "trap_ids": []
+ }
+]

@@ -1,0 +1,2882 @@
+[
+ {
+  "filename": "ledger_p1.jpg",
+  "period_label": "Enero 2026",
+  "business_name_header": "Reyes Auto Repair",
+  "month": "2026-01",
+  "image_size": [
+   1318,
+   1712
+  ],
+  "income_total": 78400.0,
+  "entries": [
+   {
+    "row_id": "L0001",
+    "date": "2026-01-02",
+    "description": "Check engine - Avanza",
+    "amount": 2400.0,
+    "kind": "income",
+    "bbox": [
+     152,
+     85,
+     189,
+     932
+    ]
+   },
+   {
+    "row_id": "L0002",
+    "date": "2026-01-03",
+    "description": "Change oil - Toyota Vios",
+    "amount": 1850.0,
+    "kind": "income",
+    "bbox": [
+     178,
+     85,
+     215,
+     932
+    ]
+   },
+   {
+    "row_id": "L0003",
+    "date": "2026-01-03",
+    "description": "Kabuuan ng linggo",
+    "amount": 4250.0,
+    "kind": "weekly_total",
+    "bbox": [
+     204,
+     84,
+     240,
+     931
+    ]
+   },
+   {
+    "row_id": "L0004",
+    "date": "2026-01-05",
+    "description": "Alternator repair - Crosswind",
+    "amount": 4500.0,
+    "kind": "income",
+    "bbox": [
+     229,
+     84,
+     266,
+     931
+    ]
+   },
+   {
+    "row_id": "L0005",
+    "date": "2026-01-07",
+    "description": "Battery replace - Hyundai Accent",
+    "amount": 5850.0,
+    "kind": "income",
+    "bbox": [
+     255,
+     83,
+     292,
+     930
+    ]
+   },
+   {
+    "row_id": "L0006",
+    "date": "2026-01-08",
+    "description": "Check engine - Avanza",
+    "amount": 2050.0,
+    "kind": "income",
+    "bbox": [
+     281,
+     82,
+     318,
+     930
+    ]
+   },
+   {
+    "row_id": "L0007",
+    "date": "2026-01-08",
+    "description": "Pamasahe - delivery parts",
+    "amount": 250.0,
+    "kind": "expense",
+    "bbox": [
+     306,
+     82,
+     343,
+     929
+    ]
+   },
+   {
+    "row_id": "L0008",
+    "date": "2026-01-09",
+    "description": "Clutch adjust - Wigo",
+    "amount": 2000.0,
+    "kind": "income",
+    "bbox": [
+     332,
+     81,
+     369,
+     928
+    ]
+   },
+   {
+    "row_id": "L0009",
+    "date": "2026-01-10",
+    "description": "Brake pads - Honda City",
+    "amount": 3150.0,
+    "kind": "income",
+    "bbox": [
+     358,
+     81,
+     395,
+     928
+    ]
+   },
+   {
+    "row_id": "L0010",
+    "date": "2026-01-10",
+    "description": "Kabuuan ng linggo",
+    "amount": 17550.0,
+    "kind": "weekly_total",
+    "bbox": [
+     383,
+     80,
+     420,
+     927
+    ]
+   },
+   {
+    "row_id": "L0011",
+    "date": "2026-01-12",
+    "description": "Palit shock absorber - Xpander",
+    "amount": 5400.0,
+    "kind": "income",
+    "bbox": [
+     409,
+     80,
+     446,
+     927
+    ]
+   },
+   {
+    "row_id": "L0012",
+    "date": "2026-01-14",
+    "description": "Palit shock absorber - Xpander",
+    "amount": 4850.0,
+    "kind": "income",
+    "bbox": [
+     435,
+     79,
+     472,
+     926
+    ]
+   },
+   {
+    "row_id": "L0013",
+    "date": "2026-01-15",
+    "description": "Wheel alignment - Montero",
+    "amount": 1650.0,
+    "kind": "income",
+    "bbox": [
+     461,
+     78,
+     497,
+     926
+    ]
+   },
+   {
+    "row_id": "L0014",
+    "date": "2026-01-15",
+    "description": "Bayad welding gas",
+    "amount": 900.0,
+    "kind": "expense",
+    "bbox": [
+     486,
+     78,
+     523,
+     925
+    ]
+   },
+   {
+    "row_id": "L0015",
+    "date": "2026-01-16",
+    "description": "Overhaul deposit - L300",
+    "amount": 5150.0,
+    "kind": "income",
+    "bbox": [
+     512,
+     77,
+     549,
+     924
+    ]
+   },
+   {
+    "row_id": "L0016",
+    "date": "2026-01-17",
+    "description": "Clutch adjust - Wigo",
+    "amount": 2350.0,
+    "kind": "income",
+    "bbox": [
+     538,
+     77,
+     574,
+     924
+    ]
+   },
+   {
+    "row_id": "L0017",
+    "date": "2026-01-17",
+    "description": "Kabuuan ng linggo",
+    "amount": 19400.0,
+    "kind": "weekly_total",
+    "bbox": [
+     563,
+     76,
+     600,
+     923
+    ]
+   },
+   {
+    "row_id": "L0018",
+    "date": "2026-01-19",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 2100.0,
+    "kind": "income",
+    "bbox": [
+     589,
+     76,
+     626,
+     923
+    ]
+   },
+   {
+    "row_id": "L0019",
+    "date": "2026-01-20",
+    "description": "Brake pads - Honda City",
+    "amount": 3750.0,
+    "kind": "income",
+    "bbox": [
+     615,
+     75,
+     652,
+     922
+    ]
+   },
+   {
+    "row_id": "L0020",
+    "date": "2026-01-21",
+    "description": "Palit gulong x2 - Fortuner",
+    "amount": 5000.0,
+    "kind": "income",
+    "bbox": [
+     640,
+     74,
+     677,
+     922
+    ]
+   },
+   {
+    "row_id": "L0021",
+    "date": "2026-01-22",
+    "description": "Aircon freon - City",
+    "amount": 2250.0,
+    "kind": "income",
+    "bbox": [
+     666,
+     74,
+     703,
+     921
+    ]
+   },
+   {
+    "row_id": "L0022",
+    "date": "2026-01-23",
+    "description": "Clutch adjust - Wigo",
+    "amount": 2000.0,
+    "kind": "income",
+    "bbox": [
+     692,
+     73,
+     729,
+     920
+    ]
+   },
+   {
+    "row_id": "L0023",
+    "date": "2026-01-24",
+    "description": "Overhaul deposit - L300",
+    "amount": 5850.0,
+    "kind": "income",
+    "bbox": [
+     718,
+     73,
+     754,
+     920
+    ]
+   },
+   {
+    "row_id": "L0024",
+    "date": "2026-01-24",
+    "description": "Kabuuan ng linggo",
+    "amount": 20950.0,
+    "kind": "weekly_total",
+    "bbox": [
+     743,
+     72,
+     780,
+     919
+    ]
+   },
+   {
+    "row_id": "L0025",
+    "date": "2026-01-27",
+    "description": "Overhaul deposit - L300",
+    "amount": 6000.0,
+    "kind": "income",
+    "bbox": [
+     769,
+     72,
+     806,
+     919
+    ]
+   },
+   {
+    "row_id": "L0026",
+    "date": "2026-01-28",
+    "description": "Palit bumbilya + wiper - Vios",
+    "amount": 1750.0,
+    "kind": "income",
+    "bbox": [
+     795,
+     71,
+     831,
+     918
+    ]
+   },
+   {
+    "row_id": "L0027",
+    "date": "2026-01-29",
+    "description": "Wheel alignment - Montero",
+    "amount": 2200.0,
+    "kind": "income",
+    "bbox": [
+     820,
+     70,
+     857,
+     918
+    ]
+   },
+   {
+    "row_id": "L0028",
+    "date": "2026-01-30",
+    "description": "Aircon freon - City",
+    "amount": 2700.0,
+    "kind": "income",
+    "bbox": [
+     846,
+     70,
+     883,
+     917
+    ]
+   },
+   {
+    "row_id": "L0029",
+    "date": "2026-01-31",
+    "description": "Brake pads - Honda City",
+    "amount": 3600.0,
+    "kind": "income",
+    "bbox": [
+     872,
+     69,
+     909,
+     916
+    ]
+   },
+   {
+    "row_id": "L0030",
+    "date": "2026-01-31",
+    "description": "Kabuuan ng linggo",
+    "amount": 16250.0,
+    "kind": "weekly_total",
+    "bbox": [
+     897,
+     69,
+     934,
+     916
+    ]
+   }
+  ],
+  "trap_ids": [
+   "T19"
+  ]
+ },
+ {
+  "filename": "ledger_p2.jpg",
+  "period_label": "Pebrero 2026",
+  "business_name_header": "Reyes Auto Repair",
+  "month": "2026-02",
+  "image_size": [
+   1292,
+   1692
+  ],
+  "income_total": 68600.0,
+  "entries": [
+   {
+    "row_id": "L0031",
+    "date": "2026-02-03",
+    "description": "Brake pads - Honda City",
+    "amount": 4100.0,
+    "kind": "income",
+    "bbox": [
+     153,
+     69,
+     180,
+     933
+    ]
+   },
+   {
+    "row_id": "L0032",
+    "date": "2026-02-04",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 1600.0,
+    "kind": "income",
+    "bbox": [
+     179,
+     69,
+     206,
+     933
+    ]
+   },
+   {
+    "row_id": "L0033",
+    "date": "2026-02-04",
+    "description": "Bili parts - Banawe",
+    "amount": 2950.0,
+    "kind": "expense",
+    "bbox": [
+     205,
+     69,
+     232,
+     933
+    ]
+   },
+   {
+    "row_id": "L0034",
+    "date": "2026-02-05",
+    "description": "Change oil + filter - Raize",
+    "amount": 2550.0,
+    "kind": "income",
+    "bbox": [
+     231,
+     69,
+     258,
+     933
+    ]
+   },
+   {
+    "row_id": "L0035",
+    "date": "2026-02-05",
+    "description": "Bayad welding gas",
+    "amount": 1300.0,
+    "kind": "expense",
+    "bbox": [
+     257,
+     69,
+     284,
+     933
+    ]
+   },
+   {
+    "row_id": "L0036",
+    "date": "2026-02-06",
+    "description": "Overhaul deposit - L300",
+    "amount": 5150.0,
+    "kind": "income",
+    "bbox": [
+     283,
+     69,
+     310,
+     933
+    ]
+   },
+   {
+    "row_id": "L0037",
+    "date": "2026-02-07",
+    "description": "Radiator flush - Adventure",
+    "amount": 2750.0,
+    "kind": "income",
+    "bbox": [
+     309,
+     70,
+     336,
+     933
+    ]
+   },
+   {
+    "row_id": "L0038",
+    "date": "2026-02-07",
+    "description": "Kabuuan ng linggo",
+    "amount": 16150.0,
+    "kind": "weekly_total",
+    "bbox": [
+     335,
+     70,
+     362,
+     933
+    ]
+   },
+   {
+    "row_id": "L0039",
+    "date": "2026-02-10",
+    "description": "Wheel alignment - Montero",
+    "amount": 2100.0,
+    "kind": "income",
+    "bbox": [
+     362,
+     70,
+     388,
+     933
+    ]
+   },
+   {
+    "row_id": "L0040",
+    "date": "2026-02-11",
+    "description": "Palit shock absorber - Xpander",
+    "amount": 4750.0,
+    "kind": "income",
+    "bbox": [
+     388,
+     70,
+     414,
+     933
+    ]
+   },
+   {
+    "row_id": "L0041",
+    "date": "2026-02-13",
+    "description": "Brake pads - Honda City",
+    "amount": 3550.0,
+    "kind": "income",
+    "bbox": [
+     414,
+     70,
+     440,
+     933
+    ]
+   },
+   {
+    "row_id": "L0042",
+    "date": "2026-02-14",
+    "description": "Tune up - Mitsubishi Mirage",
+    "amount": 3000.0,
+    "kind": "income",
+    "bbox": [
+     440,
+     70,
+     466,
+     933
+    ]
+   },
+   {
+    "row_id": "L0043",
+    "date": "2026-02-14",
+    "description": "Kabuuan ng linggo",
+    "amount": 13400.0,
+    "kind": "weekly_total",
+    "bbox": [
+     466,
+     70,
+     492,
+     933
+    ]
+   },
+   {
+    "row_id": "L0044",
+    "date": "2026-02-16",
+    "description": "Aircon freon - City",
+    "amount": 2300.0,
+    "kind": "income",
+    "bbox": [
+     492,
+     70,
+     518,
+     933
+    ]
+   },
+   {
+    "row_id": "L0045",
+    "date": "2026-02-17",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 1950.0,
+    "kind": "income",
+    "bbox": [
+     518,
+     70,
+     544,
+     933
+    ]
+   },
+   {
+    "row_id": "L0046",
+    "date": "2026-02-18",
+    "description": "Palit shock absorber - Xpander",
+    "amount": 5250.0,
+    "kind": "income",
+    "bbox": [
+     544,
+     70,
+     570,
+     933
+    ]
+   },
+   {
+    "row_id": "L0047",
+    "date": "2026-02-19",
+    "description": "Palit bumbilya + wiper - Vios",
+    "amount": 1850.0,
+    "kind": "income",
+    "bbox": [
+     570,
+     70,
+     596,
+     934
+    ]
+   },
+   {
+    "row_id": "L0048",
+    "date": "2026-02-20",
+    "description": "Palit bumbilya + wiper - Vios",
+    "amount": 1850.0,
+    "kind": "income",
+    "bbox": [
+     596,
+     70,
+     622,
+     934
+    ]
+   },
+   {
+    "row_id": "L0049",
+    "date": "2026-02-21",
+    "description": "Clutch adjust - Wigo",
+    "amount": 2050.0,
+    "kind": "income",
+    "bbox": [
+     622,
+     70,
+     648,
+     934
+    ]
+   },
+   {
+    "row_id": "L0050",
+    "date": "2026-02-21",
+    "description": "Kabuuan ng linggo",
+    "amount": 15250.0,
+    "kind": "weekly_total",
+    "bbox": [
+     648,
+     70,
+     674,
+     934
+    ]
+   },
+   {
+    "row_id": "L0051",
+    "date": "2026-02-23",
+    "description": "Palit gulong x2 - Fortuner",
+    "amount": 5050.0,
+    "kind": "income",
+    "bbox": [
+     674,
+     70,
+     700,
+     934
+    ]
+   },
+   {
+    "row_id": "L0052",
+    "date": "2026-02-24",
+    "description": "Aircon freon - City",
+    "amount": 1850.0,
+    "kind": "income",
+    "bbox": [
+     700,
+     70,
+     726,
+     934
+    ]
+   },
+   {
+    "row_id": "L0053",
+    "date": "2026-02-25",
+    "description": "Overhaul deposit - L300",
+    "amount": 5050.0,
+    "kind": "income",
+    "bbox": [
+     726,
+     70,
+     752,
+     934
+    ]
+   },
+   {
+    "row_id": "L0054",
+    "date": "2026-02-26",
+    "description": "Battery replace - Hyundai Accent",
+    "amount": 5750.0,
+    "kind": "income",
+    "bbox": [
+     752,
+     70,
+     778,
+     934
+    ]
+   },
+   {
+    "row_id": "L0055",
+    "date": "2026-02-26",
+    "description": "Bili parts - Banawe",
+    "amount": 3000.0,
+    "kind": "expense",
+    "bbox": [
+     778,
+     70,
+     804,
+     934
+    ]
+   },
+   {
+    "row_id": "L0056",
+    "date": "2026-02-27",
+    "description": "Palit gulong x2 - Fortuner",
+    "amount": 4450.0,
+    "kind": "income",
+    "bbox": [
+     804,
+     70,
+     830,
+     934
+    ]
+   },
+   {
+    "row_id": "L0057",
+    "date": "2026-02-28",
+    "description": "Palit bumbilya + wiper - Vios",
+    "amount": 1650.0,
+    "kind": "income",
+    "bbox": [
+     830,
+     70,
+     856,
+     934
+    ]
+   },
+   {
+    "row_id": "L0058",
+    "date": "2026-02-28",
+    "description": "Tubig + yelo",
+    "amount": 350.0,
+    "kind": "expense",
+    "bbox": [
+     856,
+     70,
+     882,
+     934
+    ]
+   },
+   {
+    "row_id": "L0059",
+    "date": "2026-02-28",
+    "description": "Kabuuan ng linggo",
+    "amount": 23800.0,
+    "kind": "weekly_total",
+    "bbox": [
+     882,
+     70,
+     908,
+     934
+    ]
+   }
+  ],
+  "trap_ids": [
+   "T19"
+  ]
+ },
+ {
+  "filename": "ledger_p3.jpg",
+  "period_label": "Marso 2026",
+  "business_name_header": "Reyes Auto Repair",
+  "month": "2026-03",
+  "image_size": [
+   1300,
+   1696
+  ],
+  "income_total": 69000.0,
+  "entries": [
+   {
+    "row_id": "L0060",
+    "date": "2026-03-02",
+    "description": "Check engine - Avanza",
+    "amount": 2050.0,
+    "kind": "income",
+    "bbox": [
+     153,
+     70,
+     182,
+     929
+    ]
+   },
+   {
+    "row_id": "L0061",
+    "date": "2026-03-03",
+    "description": "Radiator flush - Adventure",
+    "amount": 2850.0,
+    "kind": "income",
+    "bbox": [
+     179,
+     70,
+     208,
+     929
+    ]
+   },
+   {
+    "row_id": "L0062",
+    "date": "2026-03-04",
+    "description": "Fan belt - Hilux",
+    "amount": 2200.0,
+    "kind": "income",
+    "bbox": [
+     205,
+     70,
+     234,
+     929
+    ]
+   },
+   {
+    "row_id": "L0063",
+    "date": "2026-03-06",
+    "description": "Radiator flush - Adventure",
+    "amount": 2250.0,
+    "kind": "income",
+    "bbox": [
+     231,
+     71,
+     260,
+     929
+    ]
+   },
+   {
+    "row_id": "L0064",
+    "date": "2026-03-07",
+    "description": "Aircon cleaning - Innova",
+    "amount": 2600.0,
+    "kind": "income",
+    "bbox": [
+     257,
+     71,
+     286,
+     929
+    ]
+   },
+   {
+    "row_id": "L0065",
+    "date": "2026-03-07",
+    "description": "Kabuuan ng linggo",
+    "amount": 11950.0,
+    "kind": "weekly_total",
+    "bbox": [
+     283,
+     71,
+     312,
+     930
+    ]
+   },
+   {
+    "row_id": "L0066",
+    "date": "2026-03-09",
+    "description": "Check engine - Avanza",
+    "amount": 2350.0,
+    "kind": "income",
+    "bbox": [
+     308,
+     71,
+     338,
+     930
+    ]
+   },
+   {
+    "row_id": "L0067",
+    "date": "2026-03-10",
+    "description": "Clutch adjust - Wigo",
+    "amount": 1900.0,
+    "kind": "income",
+    "bbox": [
+     334,
+     71,
+     364,
+     930
+    ]
+   },
+   {
+    "row_id": "L0068",
+    "date": "2026-03-11",
+    "description": "Change oil + filter - Raize",
+    "amount": 2300.0,
+    "kind": "income",
+    "bbox": [
+     360,
+     71,
+     390,
+     930
+    ]
+   },
+   {
+    "row_id": "L0069",
+    "date": "2026-03-13",
+    "description": "Underchassis - Civic",
+    "amount": 3300.0,
+    "kind": "income",
+    "bbox": [
+     386,
+     72,
+     416,
+     930
+    ]
+   },
+   {
+    "row_id": "L0070",
+    "date": "2026-03-14",
+    "description": "Tubig + yelo",
+    "amount": 400.0,
+    "kind": "expense",
+    "bbox": [
+     412,
+     72,
+     442,
+     930
+    ]
+   },
+   {
+    "row_id": "L0071",
+    "date": "2026-03-14",
+    "description": "Kabuuan ng linggo",
+    "amount": 9850.0,
+    "kind": "weekly_total",
+    "bbox": [
+     438,
+     72,
+     467,
+     931
+    ]
+   },
+   {
+    "row_id": "L0072",
+    "date": "2026-03-16",
+    "description": "Wheel alignment - Montero",
+    "amount": 1900.0,
+    "kind": "income",
+    "bbox": [
+     464,
+     72,
+     493,
+     931
+    ]
+   },
+   {
+    "row_id": "L0073",
+    "date": "2026-03-17",
+    "description": "Overhaul deposit - L300",
+    "amount": 5200.0,
+    "kind": "income",
+    "bbox": [
+     490,
+     72,
+     519,
+     931
+    ]
+   },
+   {
+    "row_id": "L0074",
+    "date": "2026-03-17",
+    "description": "Bili parts - Banawe",
+    "amount": 2250.0,
+    "kind": "expense",
+    "bbox": [
+     516,
+     72,
+     545,
+     931
+    ]
+   },
+   {
+    "row_id": "L0075",
+    "date": "2026-03-18",
+    "description": "Alternator repair - Crosswind",
+    "amount": 5000.0,
+    "kind": "income",
+    "bbox": [
+     542,
+     73,
+     571,
+     931
+    ]
+   },
+   {
+    "row_id": "L0076",
+    "date": "2026-03-19",
+    "description": "Suspension bushing - Innova",
+    "amount": 4650.0,
+    "kind": "income",
+    "bbox": [
+     568,
+     73,
+     597,
+     931
+    ]
+   },
+   {
+    "row_id": "L0077",
+    "date": "2026-03-21",
+    "description": "Palit gulong x2 - Fortuner",
+    "amount": 5850.0,
+    "kind": "income",
+    "bbox": [
+     594,
+     73,
+     623,
+     932
+    ]
+   },
+   {
+    "row_id": "L0078",
+    "date": "2026-03-21",
+    "description": "Kabuuan ng linggo",
+    "amount": 22600.0,
+    "kind": "weekly_total",
+    "bbox": [
+     620,
+     73,
+     649,
+     932
+    ]
+   },
+   {
+    "row_id": "L0079",
+    "date": "2026-03-23",
+    "description": "Underchassis - Civic",
+    "amount": 3150.0,
+    "kind": "income",
+    "bbox": [
+     646,
+     73,
+     675,
+     932
+    ]
+   },
+   {
+    "row_id": "L0080",
+    "date": "2026-03-24",
+    "description": "Battery replace - Hyundai Accent",
+    "amount": 4850.0,
+    "kind": "income",
+    "bbox": [
+     672,
+     73,
+     701,
+     932
+    ]
+   },
+   {
+    "row_id": "L0081",
+    "date": "2026-03-25",
+    "description": "Palit gulong x2 - Fortuner",
+    "amount": 4650.0,
+    "kind": "income",
+    "bbox": [
+     698,
+     74,
+     727,
+     932
+    ]
+   },
+   {
+    "row_id": "L0082",
+    "date": "2026-03-26",
+    "description": "Check engine - Avanza",
+    "amount": 3000.0,
+    "kind": "income",
+    "bbox": [
+     724,
+     74,
+     753,
+     932
+    ]
+   },
+   {
+    "row_id": "L0083",
+    "date": "2026-03-26",
+    "description": "Kuryente - Meralco (cash)",
+    "amount": 2350.0,
+    "kind": "expense",
+    "bbox": [
+     750,
+     74,
+     779,
+     933
+    ]
+   },
+   {
+    "row_id": "L0084",
+    "date": "2026-03-27",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 1750.0,
+    "kind": "income",
+    "bbox": [
+     775,
+     74,
+     805,
+     933
+    ]
+   },
+   {
+    "row_id": "L0085",
+    "date": "2026-03-27",
+    "description": "Bili sandpaper, grease",
+    "amount": 800.0,
+    "kind": "expense",
+    "bbox": [
+     801,
+     74,
+     831,
+     933
+    ]
+   },
+   {
+    "row_id": "L0086",
+    "date": "2026-03-28",
+    "description": "Palit gulong x2 - Fortuner",
+    "amount": 4850.0,
+    "kind": "income",
+    "bbox": [
+     827,
+     74,
+     857,
+     933
+    ]
+   },
+   {
+    "row_id": "L0087",
+    "date": "2026-03-28",
+    "description": "Kabuuan ng linggo",
+    "amount": 22250.0,
+    "kind": "weekly_total",
+    "bbox": [
+     853,
+     75,
+     883,
+     933
+    ]
+   },
+   {
+    "row_id": "L0088",
+    "date": "2026-03-30",
+    "description": "Check engine - Avanza",
+    "amount": 2350.0,
+    "kind": "income",
+    "bbox": [
+     879,
+     75,
+     908,
+     933
+    ]
+   },
+   {
+    "row_id": "L0089",
+    "date": "2026-03-30",
+    "description": "Kabuuan ng linggo",
+    "amount": 2350.0,
+    "kind": "weekly_total",
+    "bbox": [
+     905,
+     75,
+     934,
+     934
+    ]
+   }
+  ],
+  "trap_ids": []
+ },
+ {
+  "filename": "ledger_p4.jpg",
+  "period_label": "Abril 2026",
+  "business_name_header": "Reyes Auto Repair",
+  "month": "2026-04",
+  "image_size": [
+   1306,
+   1702
+  ],
+  "income_total": 61950.0,
+  "entries": [
+   {
+    "row_id": "L0090",
+    "date": "2026-04-01",
+    "description": "Aircon cleaning - Innova",
+    "amount": 3300.0,
+    "kind": "income",
+    "bbox": [
+     153,
+     70,
+     185,
+     925
+    ]
+   },
+   {
+    "row_id": "L0091",
+    "date": "2026-04-04",
+    "description": "Palit bumbilya + wiper - Vios",
+    "amount": 1850.0,
+    "kind": "income",
+    "bbox": [
+     179,
+     71,
+     210,
+     925
+    ]
+   },
+   {
+    "row_id": "L0092",
+    "date": "2026-04-04",
+    "description": "Kabuuan ng linggo",
+    "amount": 5150.0,
+    "kind": "weekly_total",
+    "bbox": [
+     204,
+     71,
+     236,
+     926
+    ]
+   },
+   {
+    "row_id": "L0093",
+    "date": "2026-04-06",
+    "description": "Fan belt - Hilux",
+    "amount": 1900.0,
+    "kind": "income",
+    "bbox": [
+     230,
+     71,
+     262,
+     926
+    ]
+   },
+   {
+    "row_id": "L0094",
+    "date": "2026-04-06",
+    "description": "Bili parts - Banawe",
+    "amount": 3100.0,
+    "kind": "expense",
+    "bbox": [
+     256,
+     71,
+     288,
+     926
+    ]
+   },
+   {
+    "row_id": "L0095",
+    "date": "2026-04-07",
+    "description": "Check engine - Avanza",
+    "amount": 2000.0,
+    "kind": "income",
+    "bbox": [
+     282,
+     72,
+     314,
+     927
+    ]
+   },
+   {
+    "row_id": "L0096",
+    "date": "2026-04-08",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 1700.0,
+    "kind": "income",
+    "bbox": [
+     308,
+     72,
+     340,
+     927
+    ]
+   },
+   {
+    "row_id": "L0097",
+    "date": "2026-04-10",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 2000.0,
+    "kind": "income",
+    "bbox": [
+     334,
+     72,
+     366,
+     927
+    ]
+   },
+   {
+    "row_id": "L0098",
+    "date": "2026-04-11",
+    "description": "Palit bumbilya + wiper - Vios",
+    "amount": 1700.0,
+    "kind": "income",
+    "bbox": [
+     360,
+     73,
+     391,
+     927
+    ]
+   },
+   {
+    "row_id": "L0099",
+    "date": "2026-04-11",
+    "description": "Bili sandpaper, grease",
+    "amount": 550.0,
+    "kind": "expense",
+    "bbox": [
+     385,
+     73,
+     417,
+     928
+    ]
+   },
+   {
+    "row_id": "L0100",
+    "date": "2026-04-11",
+    "description": "Kabuuan ng linggo",
+    "amount": 9300.0,
+    "kind": "weekly_total",
+    "bbox": [
+     411,
+     73,
+     443,
+     928
+    ]
+   },
+   {
+    "row_id": "L0101",
+    "date": "2026-04-13",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 1900.0,
+    "kind": "income",
+    "bbox": [
+     437,
+     74,
+     469,
+     928
+    ]
+   },
+   {
+    "row_id": "L0102",
+    "date": "2026-04-14",
+    "description": "Overhaul deposit - L300",
+    "amount": 5400.0,
+    "kind": "income",
+    "bbox": [
+     463,
+     74,
+     495,
+     929
+    ]
+   },
+   {
+    "row_id": "L0103",
+    "date": "2026-04-15",
+    "description": "Tune up - Mitsubishi Mirage",
+    "amount": 2700.0,
+    "kind": "income",
+    "bbox": [
+     489,
+     74,
+     521,
+     929
+    ]
+   },
+   {
+    "row_id": "L0104",
+    "date": "2026-04-15",
+    "description": "Tubig + yelo",
+    "amount": 500.0,
+    "kind": "expense",
+    "bbox": [
+     515,
+     75,
+     546,
+     929
+    ]
+   },
+   {
+    "row_id": "L0105",
+    "date": "2026-04-17",
+    "description": "Radiator flush - Adventure",
+    "amount": 2100.0,
+    "kind": "income",
+    "bbox": [
+     540,
+     75,
+     572,
+     930
+    ]
+   },
+   {
+    "row_id": "L0106",
+    "date": "2026-04-18",
+    "description": "Palit gulong x2 - Fortuner",
+    "amount": 5050.0,
+    "kind": "income",
+    "bbox": [
+     566,
+     75,
+     598,
+     930
+    ]
+   },
+   {
+    "row_id": "L0107",
+    "date": "2026-04-18",
+    "description": "Kabuuan ng linggo",
+    "amount": 17150.0,
+    "kind": "weekly_total",
+    "bbox": [
+     592,
+     75,
+     624,
+     930
+    ]
+   },
+   {
+    "row_id": "L0108",
+    "date": "2026-04-20",
+    "description": "Underchassis - Civic",
+    "amount": 2650.0,
+    "kind": "income",
+    "bbox": [
+     618,
+     76,
+     650,
+     931
+    ]
+   },
+   {
+    "row_id": "L0109",
+    "date": "2026-04-21",
+    "description": "Clutch adjust - Wigo",
+    "amount": 2250.0,
+    "kind": "income",
+    "bbox": [
+     644,
+     76,
+     676,
+     931
+    ]
+   },
+   {
+    "row_id": "L0110",
+    "date": "2026-04-22",
+    "description": "Tune up - Mitsubishi Mirage",
+    "amount": 3650.0,
+    "kind": "income",
+    "bbox": [
+     670,
+     76,
+     702,
+     931
+    ]
+   },
+   {
+    "row_id": "L0111",
+    "date": "2026-04-24",
+    "description": "Palit shock absorber - Xpander",
+    "amount": 4850.0,
+    "kind": "income",
+    "bbox": [
+     696,
+     77,
+     727,
+     931
+    ]
+   },
+   {
+    "row_id": "L0112",
+    "date": "2026-04-24",
+    "description": "Tubig + yelo",
+    "amount": 300.0,
+    "kind": "expense",
+    "bbox": [
+     721,
+     77,
+     753,
+     932
+    ]
+   },
+   {
+    "row_id": "L0113",
+    "date": "2026-04-25",
+    "description": "Check engine - Avanza",
+    "amount": 3000.0,
+    "kind": "income",
+    "bbox": [
+     747,
+     77,
+     779,
+     932
+    ]
+   },
+   {
+    "row_id": "L0114",
+    "date": "2026-04-25",
+    "description": "Kabuuan ng linggo",
+    "amount": 16400.0,
+    "kind": "weekly_total",
+    "bbox": [
+     773,
+     78,
+     805,
+     932
+    ]
+   },
+   {
+    "row_id": "L0115",
+    "date": "2026-04-27",
+    "description": "Alternator repair - Crosswind",
+    "amount": 5450.0,
+    "kind": "income",
+    "bbox": [
+     799,
+     78,
+     831,
+     933
+    ]
+   },
+   {
+    "row_id": "L0116",
+    "date": "2026-04-28",
+    "description": "Fan belt - Hilux",
+    "amount": 1650.0,
+    "kind": "income",
+    "bbox": [
+     825,
+     78,
+     857,
+     933
+    ]
+   },
+   {
+    "row_id": "L0117",
+    "date": "2026-04-29",
+    "description": "Palit bumbilya + wiper - Vios",
+    "amount": 1750.0,
+    "kind": "income",
+    "bbox": [
+     851,
+     78,
+     883,
+     933
+    ]
+   },
+   {
+    "row_id": "L0118",
+    "date": "2026-04-30",
+    "description": "Overhaul deposit - L300",
+    "amount": 5100.0,
+    "kind": "income",
+    "bbox": [
+     877,
+     79,
+     908,
+     934
+    ]
+   },
+   {
+    "row_id": "L0119",
+    "date": "2026-04-30",
+    "description": "Kabuuan ng linggo",
+    "amount": 13950.0,
+    "kind": "weekly_total",
+    "bbox": [
+     902,
+     79,
+     934,
+     934
+    ]
+   }
+  ],
+  "trap_ids": [
+   "T19"
+  ]
+ },
+ {
+  "filename": "ledger_p5.jpg",
+  "period_label": "Mayo 2026",
+  "business_name_header": "Reyes Auto Repair",
+  "month": "2026-05",
+  "image_size": [
+   1308,
+   1704
+  ],
+  "income_total": 55150.0,
+  "entries": [
+   {
+    "row_id": "L0120",
+    "date": "2026-05-02",
+    "description": "Brake pads - Honda City",
+    "amount": 4100.0,
+    "kind": "income",
+    "bbox": [
+     152,
+     80,
+     186,
+     933
+    ]
+   },
+   {
+    "row_id": "L0121",
+    "date": "2026-05-02",
+    "description": "Kabuuan ng linggo",
+    "amount": 4100.0,
+    "kind": "weekly_total",
+    "bbox": [
+     178,
+     79,
+     211,
+     933
+    ]
+   },
+   {
+    "row_id": "L0122",
+    "date": "2026-05-04",
+    "description": "Tune up - Mitsubishi Mirage",
+    "amount": 3250.0,
+    "kind": "income",
+    "bbox": [
+     204,
+     79,
+     237,
+     932
+    ]
+   },
+   {
+    "row_id": "L0123",
+    "date": "2026-05-05",
+    "description": "Change oil + filter - Raize",
+    "amount": 2100.0,
+    "kind": "income",
+    "bbox": [
+     230,
+     78,
+     263,
+     932
+    ]
+   },
+   {
+    "row_id": "L0124",
+    "date": "2026-05-06",
+    "description": "Change oil + filter - Raize",
+    "amount": 2550.0,
+    "kind": "income",
+    "bbox": [
+     256,
+     78,
+     289,
+     932
+    ]
+   },
+   {
+    "row_id": "L0125",
+    "date": "2026-05-07",
+    "description": "Change oil - Toyota Vios",
+    "amount": 1950.0,
+    "kind": "income",
+    "bbox": [
+     282,
+     78,
+     315,
+     931
+    ]
+   },
+   {
+    "row_id": "L0126",
+    "date": "2026-05-07",
+    "description": "Tubig + yelo",
+    "amount": 300.0,
+    "kind": "expense",
+    "bbox": [
+     307,
+     77,
+     341,
+     931
+    ]
+   },
+   {
+    "row_id": "L0127",
+    "date": "2026-05-08",
+    "description": "Radiator flush - Adventure",
+    "amount": 2150.0,
+    "kind": "income",
+    "bbox": [
+     333,
+     77,
+     366,
+     930
+    ]
+   },
+   {
+    "row_id": "L0128",
+    "date": "2026-05-08",
+    "description": "Pamasahe - delivery parts",
+    "amount": 450.0,
+    "kind": "expense",
+    "bbox": [
+     359,
+     77,
+     392,
+     930
+    ]
+   },
+   {
+    "row_id": "L0129",
+    "date": "2026-05-09",
+    "description": "Palit bumbilya + wiper - Vios",
+    "amount": 1850.0,
+    "kind": "income",
+    "bbox": [
+     385,
+     76,
+     418,
+     930
+    ]
+   },
+   {
+    "row_id": "L0130",
+    "date": "2026-05-09",
+    "description": "Kabuuan ng linggo",
+    "amount": 13850.0,
+    "kind": "weekly_total",
+    "bbox": [
+     411,
+     76,
+     444,
+     929
+    ]
+   },
+   {
+    "row_id": "L0131",
+    "date": "2026-05-13",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 1950.0,
+    "kind": "income",
+    "bbox": [
+     436,
+     75,
+     470,
+     929
+    ]
+   },
+   {
+    "row_id": "L0132",
+    "date": "2026-05-13",
+    "description": "Bili parts - Banawe",
+    "amount": 2250.0,
+    "kind": "expense",
+    "bbox": [
+     462,
+     75,
+     495,
+     929
+    ]
+   },
+   {
+    "row_id": "L0133",
+    "date": "2026-05-14",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 1900.0,
+    "kind": "income",
+    "bbox": [
+     488,
+     75,
+     521,
+     928
+    ]
+   },
+   {
+    "row_id": "L0134",
+    "date": "2026-05-15",
+    "description": "Palit gulong x2 - Fortuner",
+    "amount": 5950.0,
+    "kind": "income",
+    "bbox": [
+     514,
+     74,
+     547,
+     928
+    ]
+   },
+   {
+    "row_id": "L0135",
+    "date": "2026-05-15",
+    "description": "Pamasahe - delivery parts",
+    "amount": 250.0,
+    "kind": "expense",
+    "bbox": [
+     540,
+     74,
+     573,
+     927
+    ]
+   },
+   {
+    "row_id": "L0136",
+    "date": "2026-05-16",
+    "description": "Fan belt - Hilux",
+    "amount": 2150.0,
+    "kind": "income",
+    "bbox": [
+     566,
+     74,
+     599,
+     927
+    ]
+   },
+   {
+    "row_id": "L0137",
+    "date": "2026-05-16",
+    "description": "Kabuuan ng linggo",
+    "amount": 11950.0,
+    "kind": "weekly_total",
+    "bbox": [
+     591,
+     73,
+     625,
+     927
+    ]
+   },
+   {
+    "row_id": "L0138",
+    "date": "2026-05-18",
+    "description": "Palit bumbilya + wiper - Vios",
+    "amount": 1700.0,
+    "kind": "income",
+    "bbox": [
+     617,
+     73,
+     650,
+     926
+    ]
+   },
+   {
+    "row_id": "L0139",
+    "date": "2026-05-20",
+    "description": "Change oil - Toyota Vios",
+    "amount": 1600.0,
+    "kind": "income",
+    "bbox": [
+     643,
+     72,
+     676,
+     926
+    ]
+   },
+   {
+    "row_id": "L0140",
+    "date": "2026-05-21",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 1600.0,
+    "kind": "income",
+    "bbox": [
+     669,
+     72,
+     702,
+     926
+    ]
+   },
+   {
+    "row_id": "L0141",
+    "date": "2026-05-22",
+    "description": "Change oil - Toyota Vios",
+    "amount": 2050.0,
+    "kind": "income",
+    "bbox": [
+     695,
+     72,
+     728,
+     925
+    ]
+   },
+   {
+    "row_id": "L0142",
+    "date": "2026-05-23",
+    "description": "Kabuuan ng linggo",
+    "amount": 6950.0,
+    "kind": "weekly_total",
+    "bbox": [
+     721,
+     71,
+     754,
+     925
+    ]
+   },
+   {
+    "row_id": "L0143",
+    "date": "2026-05-25",
+    "description": "Aircon freon - City",
+    "amount": 2200.0,
+    "kind": "income",
+    "bbox": [
+     746,
+     71,
+     779,
+     924
+    ]
+   },
+   {
+    "row_id": "L0144",
+    "date": "2026-05-26",
+    "description": "Check engine - Avanza",
+    "amount": 2200.0,
+    "kind": "income",
+    "bbox": [
+     772,
+     71,
+     805,
+     924
+    ]
+   },
+   {
+    "row_id": "L0145",
+    "date": "2026-05-27",
+    "description": "Clutch adjust - Wigo",
+    "amount": 2400.0,
+    "kind": "income",
+    "bbox": [
+     798,
+     70,
+     831,
+     924
+    ]
+   },
+   {
+    "row_id": "L0146",
+    "date": "2026-05-28",
+    "description": "Overhaul deposit - L300",
+    "amount": 5950.0,
+    "kind": "income",
+    "bbox": [
+     824,
+     70,
+     857,
+     923
+    ]
+   },
+   {
+    "row_id": "L0147",
+    "date": "2026-05-29",
+    "description": "Underchassis - Civic",
+    "amount": 2750.0,
+    "kind": "income",
+    "bbox": [
+     850,
+     69,
+     883,
+     923
+    ]
+   },
+   {
+    "row_id": "L0148",
+    "date": "2026-05-30",
+    "description": "Check engine - Avanza",
+    "amount": 2800.0,
+    "kind": "income",
+    "bbox": [
+     875,
+     69,
+     909,
+     923
+    ]
+   },
+   {
+    "row_id": "L0149",
+    "date": "2026-05-30",
+    "description": "Kabuuan ng linggo",
+    "amount": 18300.0,
+    "kind": "weekly_total",
+    "bbox": [
+     901,
+     69,
+     934,
+     922
+    ]
+   }
+  ],
+  "trap_ids": [
+   "T19"
+  ]
+ },
+ {
+  "filename": "ledger_p6.jpg",
+  "period_label": "Abril 2026",
+  "business_name_header": "Reyes Auto Repair",
+  "month": "2026-04",
+  "image_size": [
+   1300,
+   1696
+  ],
+  "income_total": 69000.0,
+  "entries": [
+   {
+    "row_id": "L0150",
+    "date": "2026-04-02",
+    "description": "Check engine - Avanza",
+    "amount": 2050.0,
+    "kind": "income",
+    "bbox": [
+     153,
+     70,
+     182,
+     929
+    ]
+   },
+   {
+    "row_id": "L0151",
+    "date": "2026-04-03",
+    "description": "Radiator flush - Adventure",
+    "amount": 2850.0,
+    "kind": "income",
+    "bbox": [
+     179,
+     70,
+     208,
+     929
+    ]
+   },
+   {
+    "row_id": "L0152",
+    "date": "2026-04-04",
+    "description": "Fan belt - Hilux",
+    "amount": 2200.0,
+    "kind": "income",
+    "bbox": [
+     205,
+     70,
+     234,
+     929
+    ]
+   },
+   {
+    "row_id": "L0153",
+    "date": "2026-04-06",
+    "description": "Radiator flush - Adventure",
+    "amount": 2250.0,
+    "kind": "income",
+    "bbox": [
+     231,
+     71,
+     260,
+     929
+    ]
+   },
+   {
+    "row_id": "L0154",
+    "date": "2026-04-07",
+    "description": "Aircon cleaning - Innova",
+    "amount": 2600.0,
+    "kind": "income",
+    "bbox": [
+     257,
+     71,
+     286,
+     929
+    ]
+   },
+   {
+    "row_id": "L0155",
+    "date": "2026-04-07",
+    "description": "Kabuuan ng linggo",
+    "amount": 11950.0,
+    "kind": "weekly_total",
+    "bbox": [
+     283,
+     71,
+     312,
+     930
+    ]
+   },
+   {
+    "row_id": "L0156",
+    "date": "2026-04-09",
+    "description": "Check engine - Avanza",
+    "amount": 2350.0,
+    "kind": "income",
+    "bbox": [
+     308,
+     71,
+     338,
+     930
+    ]
+   },
+   {
+    "row_id": "L0157",
+    "date": "2026-04-10",
+    "description": "Clutch adjust - Wigo",
+    "amount": 1900.0,
+    "kind": "income",
+    "bbox": [
+     334,
+     71,
+     364,
+     930
+    ]
+   },
+   {
+    "row_id": "L0158",
+    "date": "2026-04-11",
+    "description": "Change oil + filter - Raize",
+    "amount": 2300.0,
+    "kind": "income",
+    "bbox": [
+     360,
+     71,
+     390,
+     930
+    ]
+   },
+   {
+    "row_id": "L0159",
+    "date": "2026-04-13",
+    "description": "Underchassis - Civic",
+    "amount": 3300.0,
+    "kind": "income",
+    "bbox": [
+     386,
+     72,
+     416,
+     930
+    ]
+   },
+   {
+    "row_id": "L0160",
+    "date": "2026-04-14",
+    "description": "Tubig + yelo",
+    "amount": 400.0,
+    "kind": "expense",
+    "bbox": [
+     412,
+     72,
+     442,
+     930
+    ]
+   },
+   {
+    "row_id": "L0161",
+    "date": "2026-04-14",
+    "description": "Kabuuan ng linggo",
+    "amount": 9850.0,
+    "kind": "weekly_total",
+    "bbox": [
+     438,
+     72,
+     467,
+     931
+    ]
+   },
+   {
+    "row_id": "L0162",
+    "date": "2026-04-16",
+    "description": "Wheel alignment - Montero",
+    "amount": 1900.0,
+    "kind": "income",
+    "bbox": [
+     464,
+     72,
+     493,
+     931
+    ]
+   },
+   {
+    "row_id": "L0163",
+    "date": "2026-04-17",
+    "description": "Overhaul deposit - L300",
+    "amount": 5200.0,
+    "kind": "income",
+    "bbox": [
+     490,
+     72,
+     519,
+     931
+    ]
+   },
+   {
+    "row_id": "L0164",
+    "date": "2026-04-17",
+    "description": "Bili parts - Banawe",
+    "amount": 2250.0,
+    "kind": "expense",
+    "bbox": [
+     516,
+     72,
+     545,
+     931
+    ]
+   },
+   {
+    "row_id": "L0165",
+    "date": "2026-04-18",
+    "description": "Alternator repair - Crosswind",
+    "amount": 5000.0,
+    "kind": "income",
+    "bbox": [
+     542,
+     73,
+     571,
+     931
+    ]
+   },
+   {
+    "row_id": "L0166",
+    "date": "2026-04-19",
+    "description": "Suspension bushing - Innova",
+    "amount": 4650.0,
+    "kind": "income",
+    "bbox": [
+     568,
+     73,
+     597,
+     931
+    ]
+   },
+   {
+    "row_id": "L0167",
+    "date": "2026-04-21",
+    "description": "Palit gulong x2 - Fortuner",
+    "amount": 5850.0,
+    "kind": "income",
+    "bbox": [
+     594,
+     73,
+     623,
+     932
+    ]
+   },
+   {
+    "row_id": "L0168",
+    "date": "2026-04-21",
+    "description": "Kabuuan ng linggo",
+    "amount": 22600.0,
+    "kind": "weekly_total",
+    "bbox": [
+     620,
+     73,
+     649,
+     932
+    ]
+   },
+   {
+    "row_id": "L0169",
+    "date": "2026-04-23",
+    "description": "Underchassis - Civic",
+    "amount": 3150.0,
+    "kind": "income",
+    "bbox": [
+     646,
+     73,
+     675,
+     932
+    ]
+   },
+   {
+    "row_id": "L0170",
+    "date": "2026-04-24",
+    "description": "Battery replace - Hyundai Accent",
+    "amount": 4850.0,
+    "kind": "income",
+    "bbox": [
+     672,
+     73,
+     701,
+     932
+    ]
+   },
+   {
+    "row_id": "L0171",
+    "date": "2026-04-25",
+    "description": "Palit gulong x2 - Fortuner",
+    "amount": 4650.0,
+    "kind": "income",
+    "bbox": [
+     698,
+     74,
+     727,
+     932
+    ]
+   },
+   {
+    "row_id": "L0172",
+    "date": "2026-04-26",
+    "description": "Check engine - Avanza",
+    "amount": 3000.0,
+    "kind": "income",
+    "bbox": [
+     724,
+     74,
+     753,
+     932
+    ]
+   },
+   {
+    "row_id": "L0173",
+    "date": "2026-04-26",
+    "description": "Kuryente - Meralco (cash)",
+    "amount": 2350.0,
+    "kind": "expense",
+    "bbox": [
+     750,
+     74,
+     779,
+     933
+    ]
+   },
+   {
+    "row_id": "L0174",
+    "date": "2026-04-27",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 1750.0,
+    "kind": "income",
+    "bbox": [
+     775,
+     74,
+     805,
+     933
+    ]
+   },
+   {
+    "row_id": "L0175",
+    "date": "2026-04-27",
+    "description": "Bili sandpaper, grease",
+    "amount": 800.0,
+    "kind": "expense",
+    "bbox": [
+     801,
+     74,
+     831,
+     933
+    ]
+   },
+   {
+    "row_id": "L0176",
+    "date": "2026-04-28",
+    "description": "Palit gulong x2 - Fortuner",
+    "amount": 4850.0,
+    "kind": "income",
+    "bbox": [
+     827,
+     74,
+     857,
+     933
+    ]
+   },
+   {
+    "row_id": "L0177",
+    "date": "2026-04-28",
+    "description": "Kabuuan ng linggo",
+    "amount": 22250.0,
+    "kind": "weekly_total",
+    "bbox": [
+     853,
+     75,
+     883,
+     933
+    ]
+   },
+   {
+    "row_id": "L0178",
+    "date": "2026-04-30",
+    "description": "Check engine - Avanza",
+    "amount": 2350.0,
+    "kind": "income",
+    "bbox": [
+     879,
+     75,
+     908,
+     933
+    ]
+   },
+   {
+    "row_id": "L0179",
+    "date": "2026-04-30",
+    "description": "Kabuuan ng linggo",
+    "amount": 2350.0,
+    "kind": "weekly_total",
+    "bbox": [
+     905,
+     75,
+     934,
+     934
+    ]
+   }
+  ],
+  "trap_ids": [
+   "T15"
+  ],
+  "duplicate_of": "ledger_p3.jpg"
+ },
+ {
+  "filename": "ledger_p7.jpg",
+  "period_label": "Hunyo 2026",
+  "business_name_header": "Reyes Auto Repair",
+  "month": "2026-06",
+  "image_size": [
+   1304,
+   1700
+  ],
+  "income_total": 46200.0,
+  "entries": [
+   {
+    "row_id": "L0180",
+    "date": "2026-06-01",
+    "description": "Clutch adjust - Wigo",
+    "amount": 1650.0,
+    "kind": "income",
+    "bbox": [
+     153,
+     77,
+     184,
+     933
+    ]
+   },
+   {
+    "row_id": "L0181",
+    "date": "2026-06-03",
+    "description": "Palit bumbilya + wiper - Vios",
+    "amount": 1650.0,
+    "kind": "income",
+    "bbox": [
+     179,
+     77,
+     210,
+     933
+    ]
+   },
+   {
+    "row_id": "L0182",
+    "date": "2026-06-05",
+    "description": "Langis 4L x5 (gastos)",
+    "amount": 2050.0,
+    "kind": "expense",
+    "bbox": [
+     204,
+     76,
+     236,
+     932
+    ]
+   },
+   {
+    "row_id": "L0183",
+    "date": "2026-06-06",
+    "description": "Change oil - Toyota Vios",
+    "amount": 1600.0,
+    "kind": "income",
+    "bbox": [
+     230,
+     76,
+     261,
+     932
+    ]
+   },
+   {
+    "row_id": "L0184",
+    "date": "2026-06-06",
+    "description": "Kabuuan ng linggo",
+    "amount": 4900.0,
+    "kind": "weekly_total",
+    "bbox": [
+     256,
+     76,
+     287,
+     932
+    ]
+   },
+   {
+    "row_id": "L0185",
+    "date": "2026-06-08",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 1650.0,
+    "kind": "income",
+    "bbox": [
+     282,
+     76,
+     313,
+     932
+    ]
+   },
+   {
+    "row_id": "L0186",
+    "date": "2026-06-08",
+    "description": "Tubig + yelo",
+    "amount": 400.0,
+    "kind": "expense",
+    "bbox": [
+     308,
+     75,
+     339,
+     931
+    ]
+   },
+   {
+    "row_id": "L0187",
+    "date": "2026-06-09",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 1700.0,
+    "kind": "income",
+    "bbox": [
+     334,
+     75,
+     365,
+     931
+    ]
+   },
+   {
+    "row_id": "L0188",
+    "date": "2026-06-10",
+    "description": "Aircon cleaning - Innova",
+    "amount": 3000.0,
+    "kind": "income",
+    "bbox": [
+     360,
+     75,
+     391,
+     931
+    ]
+   },
+   {
+    "row_id": "L0189",
+    "date": "2026-06-13",
+    "description": "Palit bumbilya + wiper - Vios",
+    "amount": 1850.0,
+    "kind": "income",
+    "bbox": [
+     386,
+     75,
+     417,
+     931
+    ]
+   },
+   {
+    "row_id": "L0190",
+    "date": "2026-06-13",
+    "description": "Langis 4L x5 (gastos)",
+    "amount": 2400.0,
+    "kind": "expense",
+    "bbox": [
+     412,
+     74,
+     443,
+     930
+    ]
+   },
+   {
+    "row_id": "L0191",
+    "date": "2026-06-13",
+    "description": "Kabuuan ng linggo",
+    "amount": 8200.0,
+    "kind": "weekly_total",
+    "bbox": [
+     437,
+     74,
+     468,
+     930
+    ]
+   },
+   {
+    "row_id": "L0192",
+    "date": "2026-06-15",
+    "description": "Overhaul deposit - L300",
+    "amount": 5650.0,
+    "kind": "income",
+    "bbox": [
+     463,
+     74,
+     494,
+     930
+    ]
+   },
+   {
+    "row_id": "L0193",
+    "date": "2026-06-16",
+    "description": "Change oil - Toyota Vios",
+    "amount": 2100.0,
+    "kind": "income",
+    "bbox": [
+     489,
+     73,
+     520,
+     930
+    ]
+   },
+   {
+    "row_id": "L0194",
+    "date": "2026-06-18",
+    "description": "Wheel alignment - Montero",
+    "amount": 1850.0,
+    "kind": "income",
+    "bbox": [
+     515,
+     73,
+     546,
+     929
+    ]
+   },
+   {
+    "row_id": "L0195",
+    "date": "2026-06-19",
+    "description": "Wheel alignment - Montero",
+    "amount": 1750.0,
+    "kind": "income",
+    "bbox": [
+     541,
+     73,
+     572,
+     929
+    ]
+   },
+   {
+    "row_id": "L0196",
+    "date": "2026-06-19",
+    "description": "Sweldo ni Boy",
+    "amount": 4400.0,
+    "kind": "expense",
+    "bbox": [
+     567,
+     73,
+     598,
+     929
+    ]
+   },
+   {
+    "row_id": "L0197",
+    "date": "2026-06-20",
+    "description": "Kabuuan ng linggo",
+    "amount": 11350.0,
+    "kind": "weekly_total",
+    "bbox": [
+     593,
+     72,
+     624,
+     928
+    ]
+   },
+   {
+    "row_id": "L0198",
+    "date": "2026-06-22",
+    "description": "Suspension bushing - Innova",
+    "amount": 4750.0,
+    "kind": "income",
+    "bbox": [
+     619,
+     72,
+     650,
+     928
+    ]
+   },
+   {
+    "row_id": "L0199",
+    "date": "2026-06-25",
+    "description": "Underchassis - Civic",
+    "amount": 3150.0,
+    "kind": "income",
+    "bbox": [
+     644,
+     72,
+     676,
+     928
+    ]
+   },
+   {
+    "row_id": "L0200",
+    "date": "2026-06-26",
+    "description": "Change oil + filter - Raize",
+    "amount": 2200.0,
+    "kind": "income",
+    "bbox": [
+     670,
+     72,
+     701,
+     928
+    ]
+   },
+   {
+    "row_id": "L0201",
+    "date": "2026-06-27",
+    "description": "Overhaul deposit - L300",
+    "amount": 5950.0,
+    "kind": "income",
+    "bbox": [
+     696,
+     71,
+     727,
+     927
+    ]
+   },
+   {
+    "row_id": "L0202",
+    "date": "2026-06-27",
+    "description": "Kabuuan ng linggo",
+    "amount": 16050.0,
+    "kind": "weekly_total",
+    "bbox": [
+     722,
+     71,
+     753,
+     927
+    ]
+   },
+   {
+    "row_id": "L0203",
+    "date": "2026-06-29",
+    "description": "Tune up - Mitsubishi Mirage",
+    "amount": 2650.0,
+    "kind": "income",
+    "bbox": [
+     748,
+     71,
+     779,
+     927
+    ]
+   },
+   {
+    "row_id": "L0204",
+    "date": "2026-06-30",
+    "description": "Aircon cleaning - Innova",
+    "amount": 3050.0,
+    "kind": "income",
+    "bbox": [
+     774,
+     71,
+     805,
+     927
+    ]
+   },
+   {
+    "row_id": "L0205",
+    "date": "2026-06-30",
+    "description": "Kabuuan ng linggo",
+    "amount": 5700.0,
+    "kind": "weekly_total",
+    "bbox": [
+     800,
+     70,
+     831,
+     926
+    ]
+   }
+  ],
+  "trap_ids": [
+   "T19"
+  ]
+ },
+ {
+  "filename": "ledger_p8.jpg",
+  "period_label": "Buod Enero-Hunyo 2026",
+  "business_name_header": "Reyes Auto Repair",
+  "month": null,
+  "image_size": [
+   1298,
+   1696
+  ],
+  "income_total": 0,
+  "entries": [
+   {
+    "row_id": "L0206",
+    "date": "2026-01-31",
+    "description": "Enero",
+    "amount": 77250.0,
+    "kind": "monthly_total",
+    "bbox": [
+     153,
+     155,
+     182,
+     934
+    ],
+    "income": 78400.0,
+    "expense": 1150.0
+   },
+   {
+    "row_id": "L0207",
+    "date": "2026-02-28",
+    "description": "Pebrero",
+    "amount": 61000.0,
+    "kind": "monthly_total",
+    "bbox": [
+     179,
+     155,
+     208,
+     933
+    ],
+    "income": 68600.0,
+    "expense": 7600.0
+   },
+   {
+    "row_id": "L0208",
+    "date": "2026-03-31",
+    "description": "Marso",
+    "amount": 63200.0,
+    "kind": "monthly_total",
+    "bbox": [
+     205,
+     155,
+     234,
+     933
+    ],
+    "income": 69000.0,
+    "expense": 5800.0
+   },
+   {
+    "row_id": "L0209",
+    "date": "2026-04-30",
+    "description": "Abril",
+    "amount": 57500.0,
+    "kind": "monthly_total",
+    "bbox": [
+     231,
+     155,
+     260,
+     933
+    ],
+    "income": 61950.0,
+    "expense": 4450.0
+   },
+   {
+    "row_id": "L0210",
+    "date": "2026-05-31",
+    "description": "Mayo",
+    "amount": 51900.0,
+    "kind": "monthly_total",
+    "bbox": [
+     257,
+     155,
+     286,
+     933
+    ],
+    "income": 55150.0,
+    "expense": 3250.0
+   },
+   {
+    "row_id": "L0211",
+    "date": "2026-06-30",
+    "description": "Hunyo",
+    "amount": 36950.0,
+    "kind": "monthly_total",
+    "bbox": [
+     283,
+     154,
+     312,
+     933
+    ],
+    "income": 46200.0,
+    "expense": 9250.0
+   }
+  ],
+  "trap_ids": []
+ }
+]

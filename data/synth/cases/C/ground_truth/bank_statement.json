@@ -1,0 +1,2028 @@
+{
+ "account_holder": "RAMON REYES",
+ "bank_name": "Metro Pacific Savings Bank (synthetic)",
+ "account_masked": "0045-****-**-6610",
+ "currency": "PHP",
+ "period_start": "2026-01-01",
+ "period_end": "2026-06-30",
+ "opening_balance": 46786.21,
+ "closing_balance": 56954.31,
+ "opening_balance_bbox": [
+  276,
+  60,
+  295,
+  940
+ ],
+ "opening_balance_page": 1,
+ "closing_balance_bbox": [
+  650,
+  60,
+  669,
+  940
+ ],
+ "closing_balance_page": 4,
+ "pages": 4,
+ "months_covered": [
+  "2026-01",
+  "2026-02",
+  "2026-05",
+  "2026-06"
+ ],
+ "sections": [
+  {
+   "label": "2026-01",
+   "opening_balance": 46786.21,
+   "closing_balance": 55122.79,
+   "opening_bbox": [
+    276,
+    60,
+    295,
+    940
+   ],
+   "opening_page": 1,
+   "closing_bbox": [
+    755,
+    60,
+    773,
+    940
+   ],
+   "closing_page": 1
+  },
+  {
+   "label": "2026-02",
+   "opening_balance": 55122.79,
+   "closing_balance": 48950.0,
+   "opening_bbox": [
+    172,
+    60,
+    190,
+    940
+   ],
+   "opening_page": 2,
+   "closing_bbox": [
+    650,
+    60,
+    669,
+    940
+   ],
+   "closing_page": 2
+  },
+  {
+   "label": "2026-05",
+   "opening_balance": 61400.0,
+   "closing_balance": 52069.73,
+   "opening_bbox": [
+    172,
+    60,
+    190,
+    940
+   ],
+   "opening_page": 3,
+   "closing_bbox": [
+    669,
+    60,
+    687,
+    940
+   ],
+   "closing_page": 3
+  },
+  {
+   "label": "2026-06",
+   "opening_balance": 52069.73,
+   "closing_balance": 56954.31,
+   "opening_bbox": [
+    172,
+    60,
+    190,
+    940
+   ],
+   "opening_page": 4,
+   "closing_bbox": [
+    650,
+    60,
+    669,
+    940
+   ],
+   "closing_page": 4
+  }
+ ],
+ "balance_breaks": [
+  {
+   "row_id": "T0051",
+   "date": "2026-05-01",
+   "expected_balance": 45950.0,
+   "shown_balance": 58400.0,
+   "difference": 12450.0,
+   "trap_ids": [
+    "T18",
+    "T16"
+   ]
+  }
+ ],
+ "transactions": [
+  {
+   "row_id": "T0001",
+   "date": "2026-01-02",
+   "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+   "counterparty": "JUAN DELA CRUZ",
+   "debit": 3000.0,
+   "credit": 0,
+   "balance_after": 43786.21,
+   "page": 1,
+   "bbox": [
+    295,
+    60,
+    313,
+    940
+   ],
+   "ref": "MP26010202174",
+   "trap_ids": [
+    "T18"
+   ]
+  },
+  {
+   "row_id": "T0002",
+   "date": "2026-01-02",
+   "description": "ATM WITHDRAWAL - MPSB ATM QUIAPO",
+   "counterparty": null,
+   "debit": 5500.0,
+   "credit": 0,
+   "balance_after": 38286.21,
+   "page": 1,
+   "bbox": [
+    313,
+    60,
+    331,
+    940
+   ],
+   "ref": "MP26010222618",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0003",
+   "date": "2026-01-05",
+   "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 4250.0,
+   "balance_after": 42536.21,
+   "page": 1,
+   "bbox": [
+    331,
+    60,
+    350,
+    940
+   ],
+   "ref": "MP26010590630",
+   "trap_ids": [
+    "T19"
+   ]
+  },
+  {
+   "row_id": "T0004",
+   "date": "2026-01-08",
+   "description": "SMARTLINK POSTPAID PLAN",
+   "counterparty": "SMARTLINK",
+   "debit": 999.0,
+   "credit": 0,
+   "balance_after": 41537.21,
+   "page": 1,
+   "bbox": [
+    350,
+    60,
+    368,
+    940
+   ],
+   "ref": "MP26010822900",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0005",
+   "date": "2026-01-09",
+   "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+   "counterparty": "JUAN DELA CRUZ",
+   "debit": 3000.0,
+   "credit": 0,
+   "balance_after": 38537.21,
+   "page": 1,
+   "bbox": [
+    368,
+    60,
+    387,
+    940
+   ],
+   "ref": "MP26010979423",
+   "trap_ids": [
+    "T18"
+   ]
+  },
+  {
+   "row_id": "T0006",
+   "date": "2026-01-10",
+   "description": "BDO AUTO LOAN PAYMENT - 4411xxxx",
+   "counterparty": "BDO AUTO LOAN",
+   "debit": 14800.0,
+   "credit": 0,
+   "balance_after": 23737.21,
+   "page": 1,
+   "bbox": [
+    387,
+    60,
+    405,
+    940
+   ],
+   "ref": "MP26011018864",
+   "trap_ids": [
+    "T17"
+   ]
+  },
+  {
+   "row_id": "T0007",
+   "date": "2026-01-12",
+   "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 17550.0,
+   "balance_after": 41287.21,
+   "page": 1,
+   "bbox": [
+    405,
+    60,
+    423,
+    940
+   ],
+   "ref": "MP26011257754",
+   "trap_ids": [
+    "T19"
+   ]
+  },
+  {
+   "row_id": "T0008",
+   "date": "2026-01-12",
+   "description": "GCASH TRANSFER FROM LIZA GARCIA",
+   "counterparty": "LIZA GARCIA",
+   "debit": 0,
+   "credit": 1400.0,
+   "balance_after": 42687.21,
+   "page": 1,
+   "bbox": [
+    423,
+    60,
+    442,
+    940
+   ],
+   "ref": "MP26011204416",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0009",
+   "date": "2026-01-14",
+   "description": "DEBIT CARD PURCHASE - AUTOPARTS PLUS BANAWE",
+   "counterparty": "AUTOPARTS PLUS",
+   "debit": 5100.0,
+   "credit": 0,
+   "balance_after": 37587.21,
+   "page": 1,
+   "bbox": [
+    442,
+    60,
+    460,
+    940
+   ],
+   "ref": "MP26011445197",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0010",
+   "date": "2026-01-15",
+   "description": "INSTAPAY FROM MARK VILLANUEVA - CAR REPAIR",
+   "counterparty": "MARK VILLANUEVA",
+   "debit": 0,
+   "credit": 5200.0,
+   "balance_after": 42787.21,
+   "page": 1,
+   "bbox": [
+    460,
+    60,
+    479,
+    940
+   ],
+   "ref": "MP26011591628",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0011",
+   "date": "2026-01-16",
+   "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+   "counterparty": "JUAN DELA CRUZ",
+   "debit": 3000.0,
+   "credit": 0,
+   "balance_after": 39787.21,
+   "page": 1,
+   "bbox": [
+    479,
+    60,
+    497,
+    940
+   ],
+   "ref": "MP26011637979",
+   "trap_ids": [
+    "T18"
+   ]
+  },
+  {
+   "row_id": "T0012",
+   "date": "2026-01-17",
+   "description": "GCASH TRANSFER FROM JOSE RAMOS",
+   "counterparty": "JOSE RAMOS",
+   "debit": 0,
+   "credit": 3750.0,
+   "balance_after": 43537.21,
+   "page": 1,
+   "bbox": [
+    497,
+    60,
+    516,
+    940
+   ],
+   "ref": "MP26011765021",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0013",
+   "date": "2026-01-19",
+   "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 19400.0,
+   "balance_after": 62937.21,
+   "page": 1,
+   "bbox": [
+    516,
+    60,
+    534,
+    940
+   ],
+   "ref": "MP26011938643",
+   "trap_ids": [
+    "T19"
+   ]
+  },
+  {
+   "row_id": "T0014",
+   "date": "2026-01-20",
+   "description": "MERALCO BILL PAYMENT",
+   "counterparty": "MERALCO",
+   "debit": 3343.94,
+   "credit": 0,
+   "balance_after": 59593.27,
+   "page": 1,
+   "bbox": [
+    534,
+    60,
+    552,
+    940
+   ],
+   "ref": "MP26012027459",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0015",
+   "date": "2026-01-21",
+   "description": "DEBIT CARD PURCHASE - AUTOPARTS PLUS BANAWE",
+   "counterparty": "AUTOPARTS PLUS",
+   "debit": 5840.0,
+   "credit": 0,
+   "balance_after": 53753.27,
+   "page": 1,
+   "bbox": [
+    552,
+    60,
+    571,
+    940
+   ],
+   "ref": "MP26012100427",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0016",
+   "date": "2026-01-21",
+   "description": "INSTAPAY TO MARIA REYES",
+   "counterparty": "MARIA REYES",
+   "debit": 3500.0,
+   "credit": 0,
+   "balance_after": 50253.27,
+   "page": 1,
+   "bbox": [
+    571,
+    60,
+    589,
+    940
+   ],
+   "ref": "MP26012119342",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0017",
+   "date": "2026-01-21",
+   "description": "MAYNILAD BILL PAYMENT",
+   "counterparty": "MAYNILAD",
+   "debit": 434.26,
+   "credit": 0,
+   "balance_after": 49819.01,
+   "page": 1,
+   "bbox": [
+    589,
+    60,
+    608,
+    940
+   ],
+   "ref": "MP26012144284",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0018",
+   "date": "2026-01-22",
+   "description": "FUND TRANSFER TO LUBRICANTS TRADING CORP",
+   "counterparty": "LUBRICANTS TRADING CORP",
+   "debit": 5300.0,
+   "credit": 0,
+   "balance_after": 44519.01,
+   "page": 1,
+   "bbox": [
+    608,
+    60,
+    626,
+    940
+   ],
+   "ref": "MP26012208601",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0019",
+   "date": "2026-01-23",
+   "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+   "counterparty": "JUAN DELA CRUZ",
+   "debit": 3000.0,
+   "credit": 0,
+   "balance_after": 41519.01,
+   "page": 1,
+   "bbox": [
+    626,
+    60,
+    644,
+    940
+   ],
+   "ref": "MP26012386611",
+   "trap_ids": [
+    "T18"
+   ]
+  },
+  {
+   "row_id": "T0020",
+   "date": "2026-01-24",
+   "description": "ATM WITHDRAWAL - MPSB ATM QUIAPO",
+   "counterparty": null,
+   "debit": 6500.0,
+   "credit": 0,
+   "balance_after": 35019.01,
+   "page": 1,
+   "bbox": [
+    644,
+    60,
+    663,
+    940
+   ],
+   "ref": "MP26012465199",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0021",
+   "date": "2026-01-26",
+   "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 20950.0,
+   "balance_after": 55969.01,
+   "page": 1,
+   "bbox": [
+    663,
+    60,
+    681,
+    940
+   ],
+   "ref": "MP26012638786",
+   "trap_ids": [
+    "T19"
+   ]
+  },
+  {
+   "row_id": "T0022",
+   "date": "2026-01-27",
+   "description": "GCASH TRANSFER FROM PAOLO CRUZ",
+   "counterparty": "PAOLO CRUZ",
+   "debit": 0,
+   "credit": 2150.0,
+   "balance_after": 58119.01,
+   "page": 1,
+   "bbox": [
+    681,
+    60,
+    700,
+    940
+   ],
+   "ref": "MP26012772086",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0023",
+   "date": "2026-01-30",
+   "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+   "counterparty": "JUAN DELA CRUZ",
+   "debit": 3000.0,
+   "credit": 0,
+   "balance_after": 55119.01,
+   "page": 1,
+   "bbox": [
+    700,
+    60,
+    718,
+    940
+   ],
+   "ref": "MP26013053348",
+   "trap_ids": [
+    "T18"
+   ]
+  },
+  {
+   "row_id": "T0024",
+   "date": "2026-01-31",
+   "description": "INTEREST CREDIT",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 4.72,
+   "balance_after": 55123.73,
+   "page": 1,
+   "bbox": [
+    718,
+    60,
+    736,
+    940
+   ],
+   "ref": "MP26013168043",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0025",
+   "date": "2026-01-31",
+   "description": "WITHHOLDING TAX ON INTEREST",
+   "counterparty": null,
+   "debit": 0.94,
+   "credit": 0,
+   "balance_after": 55122.79,
+   "page": 1,
+   "bbox": [
+    736,
+    60,
+    755,
+    940
+   ],
+   "ref": "MP26013118391",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0026",
+   "date": "2026-02-02",
+   "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 16250.0,
+   "balance_after": 71372.79,
+   "page": 2,
+   "bbox": [
+    190,
+    60,
+    208,
+    940
+   ],
+   "ref": "MP26020242323",
+   "trap_ids": [
+    "T19"
+   ]
+  },
+  {
+   "row_id": "T0027",
+   "date": "2026-02-06",
+   "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+   "counterparty": "JUAN DELA CRUZ",
+   "debit": 3000.0,
+   "credit": 0,
+   "balance_after": 68372.79,
+   "page": 2,
+   "bbox": [
+    208,
+    60,
+    227,
+    940
+   ],
+   "ref": "MP26020669867",
+   "trap_ids": [
+    "T18"
+   ]
+  },
+  {
+   "row_id": "T0028",
+   "date": "2026-02-06",
+   "description": "ATM WITHDRAWAL - MPSB ATM QUIAPO",
+   "counterparty": null,
+   "debit": 5000.0,
+   "credit": 0,
+   "balance_after": 63372.79,
+   "page": 2,
+   "bbox": [
+    227,
+    60,
+    245,
+    940
+   ],
+   "ref": "MP26020663701",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0029",
+   "date": "2026-02-06",
+   "description": "SMARTLINK POSTPAID PLAN",
+   "counterparty": "SMARTLINK",
+   "debit": 999.0,
+   "credit": 0,
+   "balance_after": 62373.79,
+   "page": 2,
+   "bbox": [
+    245,
+    60,
+    264,
+    940
+   ],
+   "ref": "MP26020622272",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0030",
+   "date": "2026-02-09",
+   "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 16150.0,
+   "balance_after": 78523.79,
+   "page": 2,
+   "bbox": [
+    264,
+    60,
+    282,
+    940
+   ],
+   "ref": "MP26020959845",
+   "trap_ids": [
+    "T19"
+   ]
+  },
+  {
+   "row_id": "T0031",
+   "date": "2026-02-09",
+   "description": "INSTAPAY FROM RICO BAUTISTA - CAR REPAIR",
+   "counterparty": "RICO BAUTISTA",
+   "debit": 0,
+   "credit": 2650.0,
+   "balance_after": 81173.79,
+   "page": 2,
+   "bbox": [
+    282,
+    60,
+    301,
+    940
+   ],
+   "ref": "MP26020938585",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0032",
+   "date": "2026-02-10",
+   "description": "BDO AUTO LOAN PAYMENT - 4411xxxx",
+   "counterparty": "BDO AUTO LOAN",
+   "debit": 14800.0,
+   "credit": 0,
+   "balance_after": 66373.79,
+   "page": 2,
+   "bbox": [
+    301,
+    60,
+    319,
+    940
+   ],
+   "ref": "MP26021063552",
+   "trap_ids": [
+    "T17"
+   ]
+  },
+  {
+   "row_id": "T0033",
+   "date": "2026-02-12",
+   "description": "GCASH TRANSFER FROM JOSE RAMOS",
+   "counterparty": "JOSE RAMOS",
+   "debit": 0,
+   "credit": 5350.0,
+   "balance_after": 71723.79,
+   "page": 2,
+   "bbox": [
+    319,
+    60,
+    337,
+    940
+   ],
+   "ref": "MP26021287213",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0034",
+   "date": "2026-02-13",
+   "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+   "counterparty": "JUAN DELA CRUZ",
+   "debit": 3000.0,
+   "credit": 0,
+   "balance_after": 68723.79,
+   "page": 2,
+   "bbox": [
+    337,
+    60,
+    356,
+    940
+   ],
+   "ref": "MP26021322952",
+   "trap_ids": [
+    "T18"
+   ]
+  },
+  {
+   "row_id": "T0035",
+   "date": "2026-02-16",
+   "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 13400.0,
+   "balance_after": 82123.79,
+   "page": 2,
+   "bbox": [
+    356,
+    60,
+    374,
+    940
+   ],
+   "ref": "MP26021606827",
+   "trap_ids": [
+    "T19"
+   ]
+  },
+  {
+   "row_id": "T0036",
+   "date": "2026-02-18",
+   "description": "DEBIT CARD PURCHASE - AUTOPARTS PLUS BANAWE",
+   "counterparty": "AUTOPARTS PLUS",
+   "debit": 2640.0,
+   "credit": 0,
+   "balance_after": 79483.79,
+   "page": 2,
+   "bbox": [
+    374,
+    60,
+    393,
+    940
+   ],
+   "ref": "MP26021898404",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0037",
+   "date": "2026-02-18",
+   "description": "MERALCO BILL PAYMENT",
+   "counterparty": "MERALCO",
+   "debit": 2102.3,
+   "credit": 0,
+   "balance_after": 77381.49,
+   "page": 2,
+   "bbox": [
+    393,
+    60,
+    411,
+    940
+   ],
+   "ref": "MP26021825062",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0038",
+   "date": "2026-02-20",
+   "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+   "counterparty": "JUAN DELA CRUZ",
+   "debit": 3000.0,
+   "credit": 0,
+   "balance_after": 74381.49,
+   "page": 2,
+   "bbox": [
+    411,
+    60,
+    429,
+    940
+   ],
+   "ref": "MP26022023948",
+   "trap_ids": [
+    "T18"
+   ]
+  },
+  {
+   "row_id": "T0039",
+   "date": "2026-02-22",
+   "description": "MAYNILAD BILL PAYMENT",
+   "counterparty": "MAYNILAD",
+   "debit": 514.07,
+   "credit": 0,
+   "balance_after": 73867.42,
+   "page": 2,
+   "bbox": [
+    429,
+    60,
+    448,
+    940
+   ],
+   "ref": "MP26022266016",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0040",
+   "date": "2026-02-23",
+   "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 15250.0,
+   "balance_after": 89117.42,
+   "page": 2,
+   "bbox": [
+    448,
+    60,
+    466,
+    940
+   ],
+   "ref": "MP26022392273",
+   "trap_ids": [
+    "T19"
+   ]
+  },
+  {
+   "row_id": "T0041",
+   "date": "2026-02-23",
+   "description": "GCASH TRANSFER FROM MARK VILLANUEVA",
+   "counterparty": "MARK VILLANUEVA",
+   "debit": 0,
+   "credit": 1600.0,
+   "balance_after": 90717.42,
+   "page": 2,
+   "bbox": [
+    466,
+    60,
+    485,
+    940
+   ],
+   "ref": "MP26022320855",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0042",
+   "date": "2026-02-24",
+   "description": "DEBIT CARD PURCHASE - AUTOPARTS PLUS BANAWE",
+   "counterparty": "AUTOPARTS PLUS",
+   "debit": 8240.0,
+   "credit": 0,
+   "balance_after": 82477.42,
+   "page": 2,
+   "bbox": [
+    485,
+    60,
+    503,
+    940
+   ],
+   "ref": "MP26022401350",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0043",
+   "date": "2026-02-24",
+   "description": "FUND TRANSFER TO LUBRICANTS TRADING CORP",
+   "counterparty": "LUBRICANTS TRADING CORP",
+   "debit": 6450.0,
+   "credit": 0,
+   "balance_after": 76027.42,
+   "page": 2,
+   "bbox": [
+    503,
+    60,
+    521,
+    940
+   ],
+   "ref": "MP26022444245",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0044",
+   "date": "2026-02-24",
+   "description": "ATM WITHDRAWAL - MPSB ATM QUIAPO",
+   "counterparty": null,
+   "debit": 8000.0,
+   "credit": 0,
+   "balance_after": 68027.42,
+   "page": 2,
+   "bbox": [
+    521,
+    60,
+    540,
+    940
+   ],
+   "ref": "MP26022499551",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0045",
+   "date": "2026-02-25",
+   "description": "DEBIT CARD PURCHASE - AUTOPARTS PLUS BANAWE",
+   "counterparty": "AUTOPARTS PLUS",
+   "debit": 8580.0,
+   "credit": 0,
+   "balance_after": 59447.42,
+   "page": 2,
+   "bbox": [
+    540,
+    60,
+    558,
+    940
+   ],
+   "ref": "MP26022553085",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0046",
+   "date": "2026-02-26",
+   "description": "ATM WITHDRAWAL - MPSB ATM QUIAPO",
+   "counterparty": null,
+   "debit": 5500.0,
+   "credit": 0,
+   "balance_after": 53947.42,
+   "page": 2,
+   "bbox": [
+    558,
+    60,
+    577,
+    940
+   ],
+   "ref": "MP26022663446",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0047",
+   "date": "2026-02-27",
+   "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+   "counterparty": "JUAN DELA CRUZ",
+   "debit": 3000.0,
+   "credit": 0,
+   "balance_after": 50947.42,
+   "page": 2,
+   "bbox": [
+    577,
+    60,
+    595,
+    940
+   ],
+   "ref": "MP26022773279",
+   "trap_ids": [
+    "T18"
+   ]
+  },
+  {
+   "row_id": "T0048",
+   "date": "2026-02-28",
+   "description": "INSTAPAY TO MARIA REYES",
+   "counterparty": "MARIA REYES",
+   "debit": 2000.0,
+   "credit": 0,
+   "balance_after": 48947.42,
+   "page": 2,
+   "bbox": [
+    595,
+    60,
+    614,
+    940
+   ],
+   "ref": "MP26022829840",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0049",
+   "date": "2026-02-28",
+   "description": "INTEREST CREDIT",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 3.22,
+   "balance_after": 48950.64,
+   "page": 2,
+   "bbox": [
+    614,
+    60,
+    632,
+    940
+   ],
+   "ref": "MP26022837188",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0050",
+   "date": "2026-02-28",
+   "description": "WITHHOLDING TAX ON INTEREST",
+   "counterparty": null,
+   "debit": 0.64,
+   "credit": 0,
+   "balance_after": 48950.0,
+   "page": 2,
+   "bbox": [
+    632,
+    60,
+    650,
+    940
+   ],
+   "ref": "MP26022847414",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0051",
+   "date": "2026-05-01",
+   "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+   "counterparty": "JUAN DELA CRUZ",
+   "debit": 3000.0,
+   "credit": 0,
+   "balance_after": 58400.0,
+   "page": 3,
+   "bbox": [
+    190,
+    60,
+    208,
+    940
+   ],
+   "ref": "MP26050159537",
+   "trap_ids": [
+    "T18",
+    "T16"
+   ]
+  },
+  {
+   "row_id": "T0052",
+   "date": "2026-05-04",
+   "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 18050.0,
+   "balance_after": 76450.0,
+   "page": 3,
+   "bbox": [
+    208,
+    60,
+    227,
+    940
+   ],
+   "ref": "MP26050490320",
+   "trap_ids": [
+    "T19"
+   ]
+  },
+  {
+   "row_id": "T0053",
+   "date": "2026-05-08",
+   "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+   "counterparty": "JUAN DELA CRUZ",
+   "debit": 3000.0,
+   "credit": 0,
+   "balance_after": 73450.0,
+   "page": 3,
+   "bbox": [
+    227,
+    60,
+    245,
+    940
+   ],
+   "ref": "MP26050856590",
+   "trap_ids": [
+    "T18"
+   ]
+  },
+  {
+   "row_id": "T0054",
+   "date": "2026-05-09",
+   "description": "SMARTLINK POSTPAID PLAN",
+   "counterparty": "SMARTLINK",
+   "debit": 999.0,
+   "credit": 0,
+   "balance_after": 72451.0,
+   "page": 3,
+   "bbox": [
+    245,
+    60,
+    264,
+    940
+   ],
+   "ref": "MP26050979261",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0055",
+   "date": "2026-05-10",
+   "description": "BDO AUTO LOAN PAYMENT - 4411xxxx",
+   "counterparty": "BDO AUTO LOAN",
+   "debit": 14800.0,
+   "credit": 0,
+   "balance_after": 57651.0,
+   "page": 3,
+   "bbox": [
+    264,
+    60,
+    282,
+    940
+   ],
+   "ref": "MP26051035098",
+   "trap_ids": [
+    "T17"
+   ]
+  },
+  {
+   "row_id": "T0056",
+   "date": "2026-05-11",
+   "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 13850.0,
+   "balance_after": 71501.0,
+   "page": 3,
+   "bbox": [
+    282,
+    60,
+    301,
+    940
+   ],
+   "ref": "MP26051161268",
+   "trap_ids": [
+    "T19"
+   ]
+  },
+  {
+   "row_id": "T0057",
+   "date": "2026-05-13",
+   "description": "DEBIT CARD PURCHASE - AUTOPARTS PLUS BANAWE",
+   "counterparty": "AUTOPARTS PLUS",
+   "debit": 7090.0,
+   "credit": 0,
+   "balance_after": 64411.0,
+   "page": 3,
+   "bbox": [
+    301,
+    60,
+    319,
+    940
+   ],
+   "ref": "MP26051365236",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0058",
+   "date": "2026-05-15",
+   "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+   "counterparty": "JUAN DELA CRUZ",
+   "debit": 3000.0,
+   "credit": 0,
+   "balance_after": 61411.0,
+   "page": 3,
+   "bbox": [
+    319,
+    60,
+    337,
+    940
+   ],
+   "ref": "MP26051524763",
+   "trap_ids": [
+    "T18"
+   ]
+  },
+  {
+   "row_id": "T0059",
+   "date": "2026-05-18",
+   "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 11950.0,
+   "balance_after": 73361.0,
+   "page": 3,
+   "bbox": [
+    337,
+    60,
+    356,
+    940
+   ],
+   "ref": "MP26051806281",
+   "trap_ids": [
+    "T19"
+   ]
+  },
+  {
+   "row_id": "T0060",
+   "date": "2026-05-18",
+   "description": "GCASH TRANSFER FROM JOSE RAMOS",
+   "counterparty": "JOSE RAMOS",
+   "debit": 0,
+   "credit": 3400.0,
+   "balance_after": 76761.0,
+   "page": 3,
+   "bbox": [
+    356,
+    60,
+    374,
+    940
+   ],
+   "ref": "MP26051841588",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0061",
+   "date": "2026-05-20",
+   "description": "DEBIT CARD PURCHASE - AUTOPARTS PLUS BANAWE",
+   "counterparty": "AUTOPARTS PLUS",
+   "debit": 8380.0,
+   "credit": 0,
+   "balance_after": 68381.0,
+   "page": 3,
+   "bbox": [
+    374,
+    60,
+    393,
+    940
+   ],
+   "ref": "MP26052088969",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0062",
+   "date": "2026-05-20",
+   "description": "MERALCO BILL PAYMENT",
+   "counterparty": "MERALCO",
+   "debit": 3209.88,
+   "credit": 0,
+   "balance_after": 65171.12,
+   "page": 3,
+   "bbox": [
+    393,
+    60,
+    411,
+    940
+   ],
+   "ref": "MP26052084038",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0063",
+   "date": "2026-05-21",
+   "description": "MAYNILAD BILL PAYMENT",
+   "counterparty": "MAYNILAD",
+   "debit": 474.76,
+   "credit": 0,
+   "balance_after": 64696.36,
+   "page": 3,
+   "bbox": [
+    411,
+    60,
+    429,
+    940
+   ],
+   "ref": "MP26052135864",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0064",
+   "date": "2026-05-22",
+   "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+   "counterparty": "JUAN DELA CRUZ",
+   "debit": 3000.0,
+   "credit": 0,
+   "balance_after": 61696.36,
+   "page": 3,
+   "bbox": [
+    429,
+    60,
+    448,
+    940
+   ],
+   "ref": "MP26052268412",
+   "trap_ids": [
+    "T18"
+   ]
+  },
+  {
+   "row_id": "T0065",
+   "date": "2026-05-23",
+   "description": "FUND TRANSFER TO LUBRICANTS TRADING CORP",
+   "counterparty": "LUBRICANTS TRADING CORP",
+   "debit": 5250.0,
+   "credit": 0,
+   "balance_after": 56446.36,
+   "page": 3,
+   "bbox": [
+    448,
+    60,
+    466,
+    940
+   ],
+   "ref": "MP26052315532",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0066",
+   "date": "2026-05-25",
+   "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 6950.0,
+   "balance_after": 63396.36,
+   "page": 3,
+   "bbox": [
+    466,
+    60,
+    485,
+    940
+   ],
+   "ref": "MP26052503216",
+   "trap_ids": [
+    "T19"
+   ]
+  },
+  {
+   "row_id": "T0067",
+   "date": "2026-05-25",
+   "description": "ATM WITHDRAWAL - MPSB ATM QUIAPO",
+   "counterparty": null,
+   "debit": 6000.0,
+   "credit": 0,
+   "balance_after": 57396.36,
+   "page": 3,
+   "bbox": [
+    485,
+    60,
+    503,
+    940
+   ],
+   "ref": "MP26052542325",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0068",
+   "date": "2026-05-26",
+   "description": "INSTAPAY FROM GRACE TAN - CAR REPAIR",
+   "counterparty": "GRACE TAN",
+   "debit": 0,
+   "credit": 6250.0,
+   "balance_after": 63646.36,
+   "page": 3,
+   "bbox": [
+    503,
+    60,
+    521,
+    940
+   ],
+   "ref": "MP26052624442",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0069",
+   "date": "2026-05-27",
+   "description": "ATM WITHDRAWAL - MPSB ATM QUIAPO",
+   "counterparty": null,
+   "debit": 3500.0,
+   "credit": 0,
+   "balance_after": 60146.36,
+   "page": 3,
+   "bbox": [
+    521,
+    60,
+    540,
+    940
+   ],
+   "ref": "MP26052749928",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0070",
+   "date": "2026-05-28",
+   "description": "GCASH TRANSFER FROM RICO BAUTISTA",
+   "counterparty": "RICO BAUTISTA",
+   "debit": 0,
+   "credit": 3800.0,
+   "balance_after": 63946.36,
+   "page": 3,
+   "bbox": [
+    540,
+    60,
+    558,
+    940
+   ],
+   "ref": "MP26052801721",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0071",
+   "date": "2026-05-28",
+   "description": "INSTAPAY TO MARIA REYES",
+   "counterparty": "MARIA REYES",
+   "debit": 3500.0,
+   "credit": 0,
+   "balance_after": 60446.36,
+   "page": 3,
+   "bbox": [
+    558,
+    60,
+    577,
+    940
+   ],
+   "ref": "MP26052892389",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0072",
+   "date": "2026-05-29",
+   "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+   "counterparty": "JUAN DELA CRUZ",
+   "debit": 3000.0,
+   "credit": 0,
+   "balance_after": 57446.36,
+   "page": 3,
+   "bbox": [
+    577,
+    60,
+    595,
+    940
+   ],
+   "ref": "MP26052916666",
+   "trap_ids": [
+    "T18"
+   ]
+  },
+  {
+   "row_id": "T0073",
+   "date": "2026-05-29",
+   "description": "DEBIT CARD PURCHASE - AUTOPARTS PLUS BANAWE",
+   "counterparty": "AUTOPARTS PLUS",
+   "debit": 8980.0,
+   "credit": 0,
+   "balance_after": 48466.36,
+   "page": 3,
+   "bbox": [
+    595,
+    60,
+    614,
+    940
+   ],
+   "ref": "MP26052996245",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0074",
+   "date": "2026-05-30",
+   "description": "GCASH TRANSFER FROM CARLA MENDOZA",
+   "counterparty": "CARLA MENDOZA",
+   "debit": 0,
+   "credit": 3600.0,
+   "balance_after": 52066.36,
+   "page": 3,
+   "bbox": [
+    614,
+    60,
+    632,
+    940
+   ],
+   "ref": "MP26053076442",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0075",
+   "date": "2026-05-31",
+   "description": "INTEREST CREDIT",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 4.21,
+   "balance_after": 52070.57,
+   "page": 3,
+   "bbox": [
+    632,
+    60,
+    650,
+    940
+   ],
+   "ref": "MP26053191088",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0076",
+   "date": "2026-05-31",
+   "description": "WITHHOLDING TAX ON INTEREST",
+   "counterparty": null,
+   "debit": 0.84,
+   "credit": 0,
+   "balance_after": 52069.73,
+   "page": 3,
+   "bbox": [
+    650,
+    60,
+    669,
+    940
+   ],
+   "ref": "MP26053117041",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0077",
+   "date": "2026-06-01",
+   "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 18300.0,
+   "balance_after": 70369.73,
+   "page": 4,
+   "bbox": [
+    190,
+    60,
+    208,
+    940
+   ],
+   "ref": "MP26060102255",
+   "trap_ids": [
+    "T19"
+   ]
+  },
+  {
+   "row_id": "T0078",
+   "date": "2026-06-04",
+   "description": "SMARTLINK POSTPAID PLAN",
+   "counterparty": "SMARTLINK",
+   "debit": 999.0,
+   "credit": 0,
+   "balance_after": 69370.73,
+   "page": 4,
+   "bbox": [
+    208,
+    60,
+    227,
+    940
+   ],
+   "ref": "MP26060437206",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0079",
+   "date": "2026-06-05",
+   "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+   "counterparty": "JUAN DELA CRUZ",
+   "debit": 3000.0,
+   "credit": 0,
+   "balance_after": 66370.73,
+   "page": 4,
+   "bbox": [
+    227,
+    60,
+    245,
+    940
+   ],
+   "ref": "MP26060563881",
+   "trap_ids": [
+    "T18"
+   ]
+  },
+  {
+   "row_id": "T0080",
+   "date": "2026-06-08",
+   "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 4900.0,
+   "balance_after": 71270.73,
+   "page": 4,
+   "bbox": [
+    245,
+    60,
+    264,
+    940
+   ],
+   "ref": "MP26060831346",
+   "trap_ids": [
+    "T19"
+   ]
+  },
+  {
+   "row_id": "T0081",
+   "date": "2026-06-09",
+   "description": "DEBIT CARD PURCHASE - AUTOPARTS PLUS BANAWE",
+   "counterparty": "AUTOPARTS PLUS",
+   "debit": 5170.0,
+   "credit": 0,
+   "balance_after": 66100.73,
+   "page": 4,
+   "bbox": [
+    264,
+    60,
+    282,
+    940
+   ],
+   "ref": "MP26060916351",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0082",
+   "date": "2026-06-10",
+   "description": "BDO AUTO LOAN PAYMENT - 4411xxxx",
+   "counterparty": "BDO AUTO LOAN",
+   "debit": 14800.0,
+   "credit": 0,
+   "balance_after": 51300.73,
+   "page": 4,
+   "bbox": [
+    282,
+    60,
+    301,
+    940
+   ],
+   "ref": "MP26061032260",
+   "trap_ids": [
+    "T17"
+   ]
+  },
+  {
+   "row_id": "T0083",
+   "date": "2026-06-11",
+   "description": "GCASH TRANSFER FROM LIZA GARCIA",
+   "counterparty": "LIZA GARCIA",
+   "debit": 0,
+   "credit": 5050.0,
+   "balance_after": 56350.73,
+   "page": 4,
+   "bbox": [
+    301,
+    60,
+    319,
+    940
+   ],
+   "ref": "MP26061111796",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0084",
+   "date": "2026-06-11",
+   "description": "DEBIT CARD PURCHASE - AUTOPARTS PLUS BANAWE",
+   "counterparty": "AUTOPARTS PLUS",
+   "debit": 5000.0,
+   "credit": 0,
+   "balance_after": 51350.73,
+   "page": 4,
+   "bbox": [
+    319,
+    60,
+    337,
+    940
+   ],
+   "ref": "MP26061175368",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0085",
+   "date": "2026-06-12",
+   "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+   "counterparty": "JUAN DELA CRUZ",
+   "debit": 3000.0,
+   "credit": 0,
+   "balance_after": 48350.73,
+   "page": 4,
+   "bbox": [
+    337,
+    60,
+    356,
+    940
+   ],
+   "ref": "MP26061244441",
+   "trap_ids": [
+    "T18"
+   ]
+  },
+  {
+   "row_id": "T0086",
+   "date": "2026-06-14",
+   "description": "ATM WITHDRAWAL - MPSB ATM QUIAPO",
+   "counterparty": null,
+   "debit": 6000.0,
+   "credit": 0,
+   "balance_after": 42350.73,
+   "page": 4,
+   "bbox": [
+    356,
+    60,
+    374,
+    940
+   ],
+   "ref": "MP26061411647",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0087",
+   "date": "2026-06-15",
+   "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 8200.0,
+   "balance_after": 50550.73,
+   "page": 4,
+   "bbox": [
+    374,
+    60,
+    393,
+    940
+   ],
+   "ref": "MP26061583431",
+   "trap_ids": [
+    "T19"
+   ]
+  },
+  {
+   "row_id": "T0088",
+   "date": "2026-06-15",
+   "description": "GCASH TRANSFER FROM JOSE RAMOS",
+   "counterparty": "JOSE RAMOS",
+   "debit": 0,
+   "credit": 1350.0,
+   "balance_after": 51900.73,
+   "page": 4,
+   "bbox": [
+    393,
+    60,
+    411,
+    940
+   ],
+   "ref": "MP26061527122",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0089",
+   "date": "2026-06-15",
+   "description": "INSTAPAY FROM MARK VILLANUEVA - CAR REPAIR",
+   "counterparty": "MARK VILLANUEVA",
+   "debit": 0,
+   "credit": 4900.0,
+   "balance_after": 56800.73,
+   "page": 4,
+   "bbox": [
+    411,
+    60,
+    429,
+    940
+   ],
+   "ref": "MP26061564127",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0090",
+   "date": "2026-06-15",
+   "description": "DEBIT CARD PURCHASE - AUTOPARTS PLUS BANAWE",
+   "counterparty": "AUTOPARTS PLUS",
+   "debit": 7030.0,
+   "credit": 0,
+   "balance_after": 49770.73,
+   "page": 4,
+   "bbox": [
+    429,
+    60,
+    448,
+    940
+   ],
+   "ref": "MP26061582577",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0091",
+   "date": "2026-06-16",
+   "description": "INSTAPAY TO MARIA REYES",
+   "counterparty": "MARIA REYES",
+   "debit": 2000.0,
+   "credit": 0,
+   "balance_after": 47770.73,
+   "page": 4,
+   "bbox": [
+    448,
+    60,
+    466,
+    940
+   ],
+   "ref": "MP26061607153",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0092",
+   "date": "2026-06-19",
+   "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+   "counterparty": "JUAN DELA CRUZ",
+   "debit": 3000.0,
+   "credit": 0,
+   "balance_after": 44770.73,
+   "page": 4,
+   "bbox": [
+    466,
+    60,
+    485,
+    940
+   ],
+   "ref": "MP26061958625",
+   "trap_ids": [
+    "T18"
+   ]
+  },
+  {
+   "row_id": "T0093",
+   "date": "2026-06-19",
+   "description": "MAYNILAD BILL PAYMENT",
+   "counterparty": "MAYNILAD",
+   "debit": 504.16,
+   "credit": 0,
+   "balance_after": 44266.57,
+   "page": 4,
+   "bbox": [
+    485,
+    60,
+    503,
+    940
+   ],
+   "ref": "MP26061949755",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0094",
+   "date": "2026-06-20",
+   "description": "MERALCO BILL PAYMENT",
+   "counterparty": "MERALCO",
+   "debit": 2165.11,
+   "credit": 0,
+   "balance_after": 42101.46,
+   "page": 4,
+   "bbox": [
+    503,
+    60,
+    521,
+    940
+   ],
+   "ref": "MP26062021091",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0095",
+   "date": "2026-06-22",
+   "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 11350.0,
+   "balance_after": 53451.46,
+   "page": 4,
+   "bbox": [
+    521,
+    60,
+    540,
+    940
+   ],
+   "ref": "MP26062274847",
+   "trap_ids": [
+    "T19"
+   ]
+  },
+  {
+   "row_id": "T0096",
+   "date": "2026-06-22",
+   "description": "FUND TRANSFER TO LUBRICANTS TRADING CORP",
+   "counterparty": "LUBRICANTS TRADING CORP",
+   "debit": 4050.0,
+   "credit": 0,
+   "balance_after": 49401.46,
+   "page": 4,
+   "bbox": [
+    540,
+    60,
+    558,
+    940
+   ],
+   "ref": "MP26062243004",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0097",
+   "date": "2026-06-24",
+   "description": "ATM WITHDRAWAL - MPSB ATM QUIAPO",
+   "counterparty": null,
+   "debit": 5500.0,
+   "credit": 0,
+   "balance_after": 43901.46,
+   "page": 4,
+   "bbox": [
+    558,
+    60,
+    577,
+    940
+   ],
+   "ref": "MP26062407538",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0098",
+   "date": "2026-06-26",
+   "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+   "counterparty": "JUAN DELA CRUZ",
+   "debit": 3000.0,
+   "credit": 0,
+   "balance_after": 40901.46,
+   "page": 4,
+   "bbox": [
+    577,
+    60,
+    595,
+    940
+   ],
+   "ref": "MP26062664066",
+   "trap_ids": [
+    "T18"
+   ]
+  },
+  {
+   "row_id": "T0099",
+   "date": "2026-06-29",
+   "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 16050.0,
+   "balance_after": 56951.46,
+   "page": 4,
+   "bbox": [
+    595,
+    60,
+    614,
+    940
+   ],
+   "ref": "MP26062970835",
+   "trap_ids": [
+    "T19"
+   ]
+  },
+  {
+   "row_id": "T0100",
+   "date": "2026-06-30",
+   "description": "INTEREST CREDIT",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 3.56,
+   "balance_after": 56955.02,
+   "page": 4,
+   "bbox": [
+    614,
+    60,
+    632,
+    940
+   ],
+   "ref": "MP26063026982",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0101",
+   "date": "2026-06-30",
+   "description": "WITHHOLDING TAX ON INTEREST",
+   "counterparty": null,
+   "debit": 0.71,
+   "credit": 0,
+   "balance_after": 56954.31,
+   "page": 4,
+   "bbox": [
+    632,
+    60,
+    650,
+    940
+   ],
+   "ref": "MP26063096593",
+   "trap_ids": []
+  }
+ ],
+ "months_missing": [
+  "2026-03",
+  "2026-04"
+ ],
+ "planted": {
+  "T16": "header period Jan-Jun 2026, but March and April pages are absent; May BALANCE FORWARD 61,400.00 != Feb ENDING BALANCE 48,950.00"
+ }
+}

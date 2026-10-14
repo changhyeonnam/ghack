@@ -1,0 +1,151 @@
+/* Print stylesheet: prints only the memo column as a paper credit memo.
+   Figure chips become plain values with footnote markers; a Sources list is appended. */
+@media print {
+  @page {
+    margin: 18mm 16mm;
+  }
+  html,
+  body,
+  #root,
+  .app,
+  .workbench,
+  .wb-grid,
+  .wb-center,
+  .tab-panel,
+  .memo-layout {
+    display: block !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    background: #fff !important;
+    color: #000 !important;
+  }
+  .topbar,
+  .case-header-right,
+  .stats-strip,
+  .rail,
+  .wb-right,
+  .drawer-scrim,
+  .tabs,
+  .toast-stack,
+  .evidence,
+  .hint-row,
+  .screen-only,
+  .fig-pop,
+  .fig-chip-icon,
+  .fig-card-meta,
+  .back-link,
+  .tag,
+  .modal-scrim {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .fig-fn.print-only {
+    display: inline !important;
+  }
+  .case-header {
+    border: 0;
+    padding: 0 0 6mm;
+    margin-bottom: 6mm;
+    border-bottom: 1px solid #000;
+  }
+  .case-header-row {
+    min-height: 0;
+  }
+  .case-title {
+    font-size: 11pt;
+    white-space: normal;
+  }
+  .case-sub {
+    white-space: normal;
+    color: #444;
+  }
+  .tab-panel {
+    padding: 0 !important;
+  }
+  .memo {
+    max-width: none;
+    font-size: 10.5pt;
+    line-height: 1.55;
+  }
+  .memo-headline {
+    font-size: 18pt;
+  }
+  .memo-byline,
+  .memo-kicker,
+  .memo-footer {
+    color: #444;
+  }
+  .memo-meta-print {
+    font-size: 9pt;
+    color: #444;
+    margin-top: 4pt;
+  }
+  .seal {
+    border: 1px solid #000;
+    background: none !important;
+    color: #000 !important;
+  }
+  .rec-banner {
+    break-inside: avoid;
+    background: none !important;
+    border: 1px solid #000;
+    border-left-width: 4px;
+  }
+  .badge {
+    background: none !important;
+    border: 1px solid currentColor;
+  }
+  .key-figures {
+    break-inside: avoid;
+  }
+  .fig-card {
+    border: 1px solid #999;
+    background: none !important;
+    box-shadow: none;
+  }
+  .memo-section {
+    break-inside: avoid;
+  }
+  .fig-chip {
+    color: #000 !important;
+    background: none !important;
+    border-bottom: 1px dotted #666;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+  }
+  .fig-fn {
+    font-size: 7pt;
+    color: #444;
+    margin-left: 1px;
+    line-height: 0;
+  }
+  .memo-list li .icon {
+    color: #000;
+  }
+  .memo-sources {
+    margin-top: 8mm;
+    padding-top: 4mm;
+    border-top: 1px solid #000;
+    break-before: auto;
+  }
+  .memo-sources-list {
+    padding-left: 14pt;
+    font-size: 8.5pt;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    gap: 2pt;
+  }
+  .memo-src-label {
+    font-weight: 600;
+  }
+  .memo-src-refs {
+    color: #444;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}

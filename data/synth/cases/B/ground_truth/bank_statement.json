@@ -1,0 +1,3740 @@
+{
+ "account_holder": "NGUYEN THI LINH",
+ "bank_name": "Ngan Hang So Saigon Mekong (synthetic)",
+ "account_masked": "0071 **** **** 3392",
+ "currency": "VND",
+ "period_start": "2025-12-01",
+ "period_end": "2026-05-31",
+ "opening_balance": 38000000,
+ "closing_balance": 138270707,
+ "opening_balance_bbox": [
+  239,
+  60,
+  258,
+  940
+ ],
+ "opening_balance_page": 1,
+ "closing_balance_bbox": [
+  853,
+  60,
+  871,
+  940
+ ],
+ "closing_balance_page": 5,
+ "pages": 5,
+ "months_covered": [
+  "2025-12",
+  "2026-01",
+  "2026-02",
+  "2026-03",
+  "2026-04",
+  "2026-05"
+ ],
+ "sections": [
+  {
+   "label": "2025-12",
+   "opening_balance": 38000000,
+   "closing_balance": 138270707,
+   "opening_bbox": [
+    239,
+    60,
+    258,
+    940
+   ],
+   "opening_page": 1,
+   "closing_bbox": [
+    853,
+    60,
+    871,
+    940
+   ],
+   "closing_page": 5
+  }
+ ],
+ "balance_breaks": [
+  {
+   "row_id": "T0080",
+   "date": "2026-02-17",
+   "expected_balance": 73224095,
+   "shown_balance": 54724095,
+   "difference": -18500000,
+   "trap_ids": [
+    "T11"
+   ]
+  },
+  {
+   "row_id": "T0136",
+   "date": "2026-04-07",
+   "expected_balance": 89317468,
+   "shown_balance": 82117468,
+   "difference": -7200000,
+   "trap_ids": [
+    "T12"
+   ]
+  }
+ ],
+ "transactions": [
+  {
+   "row_id": "T0001",
+   "date": "2025-12-02",
+   "description": "TIEN THUE NHA T12/2025 - NGUYEN THI MAI",
+   "counterparty": "NGUYEN THI MAI (CHU NHA)",
+   "debit": 6500000,
+   "credit": 0,
+   "balance_after": 31500000,
+   "page": 1,
+   "bbox": [
+    258,
+    60,
+    276,
+    940
+   ],
+   "ref": "SGMK25120253155",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0002",
+   "date": "2025-12-03",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 5200000,
+   "balance_after": 36700000,
+   "page": 1,
+   "bbox": [
+    276,
+    60,
+    295,
+    940
+   ],
+   "ref": "SGMK25120398039",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0003",
+   "date": "2025-12-04",
+   "description": "CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG",
+   "counterparty": "XUONG MAY MINH ANH",
+   "debit": 9700000,
+   "credit": 0,
+   "balance_after": 27000000,
+   "page": 1,
+   "bbox": [
+    295,
+    60,
+    313,
+    940
+   ],
+   "ref": "SGMK25120452192",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0004",
+   "date": "2025-12-05",
+   "description": "CHUYEN DEN FE CREDIT - TRA GOP",
+   "counterparty": "FE CREDIT",
+   "debit": 3250000,
+   "credit": 0,
+   "balance_after": 23750000,
+   "page": 1,
+   "bbox": [
+    313,
+    60,
+    331,
+    940
+   ],
+   "ref": "SGMK25120511059",
+   "trap_ids": [
+    "T13"
+   ]
+  },
+  {
+   "row_id": "T0005",
+   "date": "2025-12-06",
+   "description": "THANH TOAN DON HANG - VO QUOC BAO",
+   "counterparty": "VO QUOC BAO",
+   "debit": 0,
+   "credit": 3540000,
+   "balance_after": 27290000,
+   "page": 1,
+   "bbox": [
+    331,
+    60,
+    350,
+    940
+   ],
+   "ref": "SGMK25120668840",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0006",
+   "date": "2025-12-06",
+   "description": "THANH TOAN QR - CUA HANG VPP",
+   "counterparty": null,
+   "debit": 412000,
+   "credit": 0,
+   "balance_after": 26878000,
+   "page": 1,
+   "bbox": [
+    350,
+    60,
+    368,
+    940
+   ],
+   "ref": "SGMK25120601478",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0007",
+   "date": "2025-12-07",
+   "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 0712",
+   "counterparty": "SHOPEE VIETNAM",
+   "debit": 0,
+   "credit": 10946000,
+   "balance_after": 37824000,
+   "page": 1,
+   "bbox": [
+    368,
+    60,
+    387,
+    940
+   ],
+   "ref": "SGMK25120762019",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0008",
+   "date": "2025-12-07",
+   "description": "THANH TOAN GHN EXPRESS - CUOC VC",
+   "counterparty": "GHN EXPRESS",
+   "debit": 1388000,
+   "credit": 0,
+   "balance_after": 36436000,
+   "page": 1,
+   "bbox": [
+    387,
+    60,
+    405,
+    940
+   ],
+   "ref": "SGMK25120799376",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0009",
+   "date": "2025-12-07",
+   "description": "TIEN DIEN EVNHCMC - MA KH PE0100xxxx",
+   "counterparty": "EVNHCMC",
+   "debit": 1395000,
+   "credit": 0,
+   "balance_after": 35041000,
+   "page": 1,
+   "bbox": [
+    405,
+    60,
+    423,
+    940
+   ],
+   "ref": "SGMK25120786159",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0010",
+   "date": "2025-12-08",
+   "description": "RUT TIEN ATM - ATM SGMK Q.TAN BINH",
+   "counterparty": null,
+   "debit": 2500000,
+   "credit": 0,
+   "balance_after": 32541000,
+   "page": 1,
+   "bbox": [
+    423,
+    60,
+    442,
+    940
+   ],
+   "ref": "SGMK25120898407",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0011",
+   "date": "2025-12-10",
+   "description": "GRAB - THANH TOAN THE",
+   "counterparty": null,
+   "debit": 403000,
+   "credit": 0,
+   "balance_after": 32138000,
+   "page": 1,
+   "bbox": [
+    442,
+    60,
+    460,
+    940
+   ],
+   "ref": "SGMK25121040251",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0012",
+   "date": "2025-12-10",
+   "description": "TIEN NUOC SAWACO",
+   "counterparty": "SAWACO",
+   "debit": 202000,
+   "credit": 0,
+   "balance_after": 31936000,
+   "page": 1,
+   "bbox": [
+    460,
+    60,
+    479,
+    940
+   ],
+   "ref": "SGMK25121089102",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0013",
+   "date": "2025-12-12",
+   "description": "THANH TOAN DON HANG - TRAN THI HOA",
+   "counterparty": "TRAN THI HOA",
+   "debit": 0,
+   "credit": 960000,
+   "balance_after": 32896000,
+   "page": 1,
+   "bbox": [
+    479,
+    60,
+    497,
+    940
+   ],
+   "ref": "SGMK25121290635",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0014",
+   "date": "2025-12-13",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 3300000,
+   "balance_after": 36196000,
+   "page": 1,
+   "bbox": [
+    497,
+    60,
+    516,
+    940
+   ],
+   "ref": "SGMK25121328270",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0015",
+   "date": "2025-12-13",
+   "description": "THANH TOAN DON HANG - NGO THI KIM",
+   "counterparty": "NGO THI KIM",
+   "debit": 0,
+   "credit": 4140000,
+   "balance_after": 40336000,
+   "page": 1,
+   "bbox": [
+    516,
+    60,
+    534,
+    940
+   ],
+   "ref": "SGMK25121321684",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0016",
+   "date": "2025-12-14",
+   "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 1412",
+   "counterparty": "SHOPEE VIETNAM",
+   "debit": 0,
+   "credit": 11824000,
+   "balance_after": 52160000,
+   "page": 1,
+   "bbox": [
+    534,
+    60,
+    552,
+    940
+   ],
+   "ref": "SGMK25121483709",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0017",
+   "date": "2025-12-14",
+   "description": "INTERNET CAP QUANG - THANH TOAN",
+   "counterparty": "ISP",
+   "debit": 250000,
+   "credit": 0,
+   "balance_after": 51910000,
+   "page": 1,
+   "bbox": [
+    552,
+    60,
+    571,
+    940
+   ],
+   "ref": "SGMK25121447534",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0018",
+   "date": "2025-12-16",
+   "description": "SHOPEE ADS - NAP TIEN QUANG CAO",
+   "counterparty": "SHOPEE ADS",
+   "debit": 2900000,
+   "credit": 0,
+   "balance_after": 49010000,
+   "page": 1,
+   "bbox": [
+    571,
+    60,
+    589,
+    940
+   ],
+   "ref": "SGMK25121672710",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0019",
+   "date": "2025-12-18",
+   "description": "THANH TOAN GHN EXPRESS - CUOC VC",
+   "counterparty": "GHN EXPRESS",
+   "debit": 2031000,
+   "credit": 0,
+   "balance_after": 46979000,
+   "page": 1,
+   "bbox": [
+    589,
+    60,
+    608,
+    940
+   ],
+   "ref": "SGMK25121875402",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0020",
+   "date": "2025-12-19",
+   "description": "THANH TOAN J&T EXPRESS - CUOC VC",
+   "counterparty": "J&T EXPRESS",
+   "debit": 1562000,
+   "credit": 0,
+   "balance_after": 45417000,
+   "page": 1,
+   "bbox": [
+    608,
+    60,
+    626,
+    940
+   ],
+   "ref": "SGMK25121915350",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0021",
+   "date": "2025-12-21",
+   "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 2112",
+   "counterparty": "SHOPEE VIETNAM",
+   "debit": 0,
+   "credit": 9689000,
+   "balance_after": 55106000,
+   "page": 1,
+   "bbox": [
+    626,
+    60,
+    644,
+    940
+   ],
+   "ref": "SGMK25122174631",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0022",
+   "date": "2025-12-21",
+   "description": "SPAYLATER THANH TOAN",
+   "counterparty": "SPAYLATER",
+   "debit": 1480000,
+   "credit": 0,
+   "balance_after": 53626000,
+   "page": 1,
+   "bbox": [
+    644,
+    60,
+    663,
+    940
+   ],
+   "ref": "SGMK25122170149",
+   "trap_ids": [
+    "T14"
+   ]
+  },
+  {
+   "row_id": "T0023",
+   "date": "2025-12-21",
+   "description": "SHOPEE ADS - NAP TIEN QUANG CAO",
+   "counterparty": "SHOPEE ADS",
+   "debit": 2400000,
+   "credit": 0,
+   "balance_after": 51226000,
+   "page": 1,
+   "bbox": [
+    663,
+    60,
+    681,
+    940
+   ],
+   "ref": "SGMK25122197423",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0024",
+   "date": "2025-12-22",
+   "description": "CUOC DI DONG VINATEL",
+   "counterparty": "VINATEL",
+   "debit": 280000,
+   "credit": 0,
+   "balance_after": 50946000,
+   "page": 1,
+   "bbox": [
+    681,
+    60,
+    700,
+    940
+   ],
+   "ref": "SGMK25122251341",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0025",
+   "date": "2025-12-24",
+   "description": "RUT TIEN ATM - ATM SGMK Q.TAN BINH",
+   "counterparty": null,
+   "debit": 4000000,
+   "credit": 0,
+   "balance_after": 46946000,
+   "page": 1,
+   "bbox": [
+    700,
+    60,
+    718,
+    940
+   ],
+   "ref": "SGMK25122473752",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0026",
+   "date": "2025-12-25",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 4610000,
+   "balance_after": 51556000,
+   "page": 1,
+   "bbox": [
+    718,
+    60,
+    736,
+    940
+   ],
+   "ref": "SGMK25122583697",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0027",
+   "date": "2025-12-26",
+   "description": "THANH TOAN NCC VAI - CHO TAN BINH",
+   "counterparty": "NCC VAI TAN BINH",
+   "debit": 9300000,
+   "credit": 0,
+   "balance_after": 42256000,
+   "page": 1,
+   "bbox": [
+    736,
+    60,
+    755,
+    940
+   ],
+   "ref": "SGMK25122663665",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0028",
+   "date": "2025-12-27",
+   "description": "THANH TOAN QR - CUA HANG VPP",
+   "counterparty": null,
+   "debit": 609000,
+   "credit": 0,
+   "balance_after": 41647000,
+   "page": 1,
+   "bbox": [
+    755,
+    60,
+    773,
+    940
+   ],
+   "ref": "SGMK25122732209",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0029",
+   "date": "2025-12-28",
+   "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 2812",
+   "counterparty": "SHOPEE VIETNAM",
+   "debit": 0,
+   "credit": 8509000,
+   "balance_after": 50156000,
+   "page": 1,
+   "bbox": [
+    773,
+    60,
+    792,
+    940
+   ],
+   "ref": "SGMK25122845257",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0030",
+   "date": "2025-12-29",
+   "description": "CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG",
+   "counterparty": "XUONG MAY MINH ANH",
+   "debit": 7285965,
+   "credit": 0,
+   "balance_after": 42870035,
+   "page": 1,
+   "bbox": [
+    792,
+    60,
+    810,
+    940
+   ],
+   "ref": "SGMK25122941337",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0031",
+   "date": "2025-12-31",
+   "description": "PHI DICH VU SMS BANKING",
+   "counterparty": null,
+   "debit": 11000,
+   "credit": 0,
+   "balance_after": 42859035,
+   "page": 1,
+   "bbox": [
+    810,
+    60,
+    828,
+    940
+   ],
+   "ref": "SGMK25123131290",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0032",
+   "date": "2026-01-02",
+   "description": "TIEN THUE NHA T01/2026 - NGUYEN THI MAI",
+   "counterparty": "NGUYEN THI MAI (CHU NHA)",
+   "debit": 6500000,
+   "credit": 0,
+   "balance_after": 36359035,
+   "page": 2,
+   "bbox": [
+    135,
+    60,
+    153,
+    940
+   ],
+   "ref": "SGMK26010263366",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0033",
+   "date": "2026-01-05",
+   "description": "CHUYEN DEN FE CREDIT - TRA GOP",
+   "counterparty": "FE CREDIT",
+   "debit": 3250000,
+   "credit": 0,
+   "balance_after": 33109035,
+   "page": 2,
+   "bbox": [
+    153,
+    60,
+    172,
+    940
+   ],
+   "ref": "SGMK26010586983",
+   "trap_ids": [
+    "T13"
+   ]
+  },
+  {
+   "row_id": "T0034",
+   "date": "2026-01-06",
+   "description": "THANH TOAN DON HANG - HOANG VAN NAM",
+   "counterparty": "HOANG VAN NAM",
+   "debit": 0,
+   "credit": 1450000,
+   "balance_after": 34559035,
+   "page": 2,
+   "bbox": [
+    172,
+    60,
+    190,
+    940
+   ],
+   "ref": "SGMK26010608424",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0035",
+   "date": "2026-01-08",
+   "description": "TIEN DIEN EVNHCMC - MA KH PE0100xxxx",
+   "counterparty": "EVNHCMC",
+   "debit": 917000,
+   "credit": 0,
+   "balance_after": 33642035,
+   "page": 2,
+   "bbox": [
+    190,
+    60,
+    208,
+    940
+   ],
+   "ref": "SGMK26010832913",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0036",
+   "date": "2026-01-09",
+   "description": "CHUYEN TIEN TU NGUYEN THI LINH - VCB",
+   "counterparty": "NGUYEN THI LINH (VCB)",
+   "debit": 0,
+   "credit": 24000000,
+   "balance_after": 57642035,
+   "page": 2,
+   "bbox": [
+    208,
+    60,
+    227,
+    940
+   ],
+   "ref": "SGMK26010953206",
+   "trap_ids": [
+    "T04"
+   ]
+  },
+  {
+   "row_id": "T0037",
+   "date": "2026-01-10",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 4200000,
+   "balance_after": 61842035,
+   "page": 2,
+   "bbox": [
+    227,
+    60,
+    245,
+    940
+   ],
+   "ref": "SGMK26011079761",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0038",
+   "date": "2026-01-10",
+   "description": "THANH TOAN QR - CUA HANG VPP",
+   "counterparty": null,
+   "debit": 319000,
+   "credit": 0,
+   "balance_after": 61523035,
+   "page": 2,
+   "bbox": [
+    245,
+    60,
+    264,
+    940
+   ],
+   "ref": "SGMK26011093263",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0039",
+   "date": "2026-01-13",
+   "description": "RUT TIEN ATM - ATM SGMK Q.TAN BINH",
+   "counterparty": null,
+   "debit": 5000000,
+   "credit": 0,
+   "balance_after": 56523035,
+   "page": 2,
+   "bbox": [
+    264,
+    60,
+    282,
+    940
+   ],
+   "ref": "SGMK26011362857",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0040",
+   "date": "2026-01-13",
+   "description": "THANH TOAN GHN EXPRESS - CUOC VC",
+   "counterparty": "GHN EXPRESS",
+   "debit": 1594000,
+   "credit": 0,
+   "balance_after": 54929035,
+   "page": 2,
+   "bbox": [
+    282,
+    60,
+    301,
+    940
+   ],
+   "ref": "SGMK26011309436",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0041",
+   "date": "2026-01-14",
+   "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 1401",
+   "counterparty": "SHOPEE VIETNAM",
+   "debit": 0,
+   "credit": 16614000,
+   "balance_after": 71543035,
+   "page": 2,
+   "bbox": [
+    301,
+    60,
+    319,
+    940
+   ],
+   "ref": "SGMK26011422279",
+   "trap_ids": [
+    "T01"
+   ]
+  },
+  {
+   "row_id": "T0042",
+   "date": "2026-01-14",
+   "description": "SHOPEE ADS - NAP TIEN QUANG CAO",
+   "counterparty": "SHOPEE ADS",
+   "debit": 2500000,
+   "credit": 0,
+   "balance_after": 69043035,
+   "page": 2,
+   "bbox": [
+    319,
+    60,
+    337,
+    940
+   ],
+   "ref": "SGMK26011422727",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0043",
+   "date": "2026-01-14",
+   "description": "THANH TOAN GHN EXPRESS - CUOC VC",
+   "counterparty": "GHN EXPRESS",
+   "debit": 834000,
+   "credit": 0,
+   "balance_after": 68209035,
+   "page": 2,
+   "bbox": [
+    337,
+    60,
+    356,
+    940
+   ],
+   "ref": "SGMK26011459087",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0044",
+   "date": "2026-01-15",
+   "description": "CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG",
+   "counterparty": "XUONG MAY MINH ANH",
+   "debit": 14700000,
+   "credit": 0,
+   "balance_after": 53509035,
+   "page": 2,
+   "bbox": [
+    356,
+    60,
+    374,
+    940
+   ],
+   "ref": "SGMK26011541810",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0045",
+   "date": "2026-01-17",
+   "description": "TIEN NUOC SAWACO",
+   "counterparty": "SAWACO",
+   "debit": 268000,
+   "credit": 0,
+   "balance_after": 53241035,
+   "page": 2,
+   "bbox": [
+    374,
+    60,
+    393,
+    940
+   ],
+   "ref": "SGMK26011747765",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0046",
+   "date": "2026-01-18",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 3300000,
+   "balance_after": 56541035,
+   "page": 2,
+   "bbox": [
+    393,
+    60,
+    411,
+    940
+   ],
+   "ref": "SGMK26011814724",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0047",
+   "date": "2026-01-19",
+   "description": "SPAYLATER THANH TOAN",
+   "counterparty": "SPAYLATER",
+   "debit": 1480000,
+   "credit": 0,
+   "balance_after": 55061035,
+   "page": 2,
+   "bbox": [
+    411,
+    60,
+    429,
+    940
+   ],
+   "ref": "SGMK26011984907",
+   "trap_ids": [
+    "T14"
+   ]
+  },
+  {
+   "row_id": "T0048",
+   "date": "2026-01-19",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 2800000,
+   "balance_after": 57861035,
+   "page": 2,
+   "bbox": [
+    429,
+    60,
+    448,
+    940
+   ],
+   "ref": "SGMK26011995625",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0049",
+   "date": "2026-01-19",
+   "description": "THANH TOAN DON HANG - LE MINH TUAN",
+   "counterparty": "LE MINH TUAN",
+   "debit": 0,
+   "credit": 4040000,
+   "balance_after": 61901035,
+   "page": 2,
+   "bbox": [
+    448,
+    60,
+    466,
+    940
+   ],
+   "ref": "SGMK26011945129",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0050",
+   "date": "2026-01-19",
+   "description": "INTERNET CAP QUANG - THANH TOAN",
+   "counterparty": "ISP",
+   "debit": 250000,
+   "credit": 0,
+   "balance_after": 61651035,
+   "page": 2,
+   "bbox": [
+    466,
+    60,
+    485,
+    940
+   ],
+   "ref": "SGMK26011922893",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0051",
+   "date": "2026-01-20",
+   "description": "THANH TOAN J&T EXPRESS - CUOC VC",
+   "counterparty": "J&T EXPRESS",
+   "debit": 2551000,
+   "credit": 0,
+   "balance_after": 59100035,
+   "page": 2,
+   "bbox": [
+    485,
+    60,
+    503,
+    940
+   ],
+   "ref": "SGMK26012029751",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0052",
+   "date": "2026-01-20",
+   "description": "THANH TOAN QR - SIEU THI COOP",
+   "counterparty": null,
+   "debit": 485000,
+   "credit": 0,
+   "balance_after": 58615035,
+   "page": 2,
+   "bbox": [
+    503,
+    60,
+    521,
+    940
+   ],
+   "ref": "SGMK26012034504",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0053",
+   "date": "2026-01-21",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 4400000,
+   "balance_after": 63015035,
+   "page": 2,
+   "bbox": [
+    521,
+    60,
+    540,
+    940
+   ],
+   "ref": "SGMK26012135168",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0054",
+   "date": "2026-01-21",
+   "description": "THANH TOAN DON HANG - NGO THI KIM",
+   "counterparty": "NGO THI KIM",
+   "debit": 0,
+   "credit": 3600000,
+   "balance_after": 66615035,
+   "page": 2,
+   "bbox": [
+    540,
+    60,
+    558,
+    940
+   ],
+   "ref": "SGMK26012110882",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0055",
+   "date": "2026-01-24",
+   "description": "RUT TIEN ATM - ATM SGMK Q.TAN BINH",
+   "counterparty": null,
+   "debit": 2500000,
+   "credit": 0,
+   "balance_after": 64115035,
+   "page": 2,
+   "bbox": [
+    558,
+    60,
+    577,
+    940
+   ],
+   "ref": "SGMK26012438570",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0056",
+   "date": "2026-01-25",
+   "description": "SHOPEE ADS - NAP TIEN QUANG CAO",
+   "counterparty": "SHOPEE ADS",
+   "debit": 2300000,
+   "credit": 0,
+   "balance_after": 61815035,
+   "page": 2,
+   "bbox": [
+    577,
+    60,
+    595,
+    940
+   ],
+   "ref": "SGMK26012597770",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0057",
+   "date": "2026-01-26",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 2650000,
+   "balance_after": 64465035,
+   "page": 2,
+   "bbox": [
+    595,
+    60,
+    614,
+    940
+   ],
+   "ref": "SGMK26012689380",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0058",
+   "date": "2026-01-27",
+   "description": "THANH TOAN NCC VAI - CHO TAN BINH",
+   "counterparty": "NCC VAI TAN BINH",
+   "debit": 10500000,
+   "credit": 0,
+   "balance_after": 53965035,
+   "page": 2,
+   "bbox": [
+    614,
+    60,
+    632,
+    940
+   ],
+   "ref": "SGMK26012715727",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0059",
+   "date": "2026-01-27",
+   "description": "CUOC DI DONG VINATEL",
+   "counterparty": "VINATEL",
+   "debit": 259000,
+   "credit": 0,
+   "balance_after": 53706035,
+   "page": 2,
+   "bbox": [
+    632,
+    60,
+    650,
+    940
+   ],
+   "ref": "SGMK26012775969",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0060",
+   "date": "2026-01-28",
+   "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 2801",
+   "counterparty": "SHOPEE VIETNAM",
+   "debit": 0,
+   "credit": 27531000,
+   "balance_after": 81237035,
+   "page": 2,
+   "bbox": [
+    650,
+    60,
+    669,
+    940
+   ],
+   "ref": "SGMK26012818498",
+   "trap_ids": [
+    "T01"
+   ]
+  },
+  {
+   "row_id": "T0061",
+   "date": "2026-01-28",
+   "description": "CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG",
+   "counterparty": "XUONG MAY MINH ANH",
+   "debit": 13447940,
+   "credit": 0,
+   "balance_after": 67789095,
+   "page": 2,
+   "bbox": [
+    669,
+    60,
+    687,
+    940
+   ],
+   "ref": "SGMK26012896686",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0062",
+   "date": "2026-01-29",
+   "description": "THANH TOAN DON HANG - TRAN THI HOA",
+   "counterparty": "TRAN THI HOA",
+   "debit": 0,
+   "credit": 3170000,
+   "balance_after": 70959095,
+   "page": 2,
+   "bbox": [
+    687,
+    60,
+    706,
+    940
+   ],
+   "ref": "SGMK26012974991",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0063",
+   "date": "2026-01-31",
+   "description": "PHI DICH VU SMS BANKING",
+   "counterparty": null,
+   "debit": 11000,
+   "credit": 0,
+   "balance_after": 70948095,
+   "page": 2,
+   "bbox": [
+    706,
+    60,
+    724,
+    940
+   ],
+   "ref": "SGMK26013192420",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0064",
+   "date": "2026-02-02",
+   "description": "TIEN THUE NHA T02/2026 - NGUYEN THI MAI",
+   "counterparty": "NGUYEN THI MAI (CHU NHA)",
+   "debit": 6500000,
+   "credit": 0,
+   "balance_after": 64448095,
+   "page": 2,
+   "bbox": [
+    724,
+    60,
+    742,
+    940
+   ],
+   "ref": "SGMK26020263620",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0065",
+   "date": "2026-02-04",
+   "description": "THANH TOAN GHN EXPRESS - CUOC VC",
+   "counterparty": "GHN EXPRESS",
+   "debit": 2483000,
+   "credit": 0,
+   "balance_after": 61965095,
+   "page": 2,
+   "bbox": [
+    742,
+    60,
+    761,
+    940
+   ],
+   "ref": "SGMK26020451159",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0066",
+   "date": "2026-02-05",
+   "description": "CHUYEN DEN FE CREDIT - TRA GOP",
+   "counterparty": "FE CREDIT",
+   "debit": 3250000,
+   "credit": 0,
+   "balance_after": 58715095,
+   "page": 2,
+   "bbox": [
+    761,
+    60,
+    779,
+    940
+   ],
+   "ref": "SGMK26020514543",
+   "trap_ids": [
+    "T13"
+   ]
+  },
+  {
+   "row_id": "T0067",
+   "date": "2026-02-05",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 3800000,
+   "balance_after": 62515095,
+   "page": 2,
+   "bbox": [
+    779,
+    60,
+    798,
+    940
+   ],
+   "ref": "SGMK26020581297",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0068",
+   "date": "2026-02-06",
+   "description": "CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG",
+   "counterparty": "XUONG MAY MINH ANH",
+   "debit": 13100000,
+   "credit": 0,
+   "balance_after": 49415095,
+   "page": 2,
+   "bbox": [
+    798,
+    60,
+    816,
+    940
+   ],
+   "ref": "SGMK26020675997",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0069",
+   "date": "2026-02-06",
+   "description": "RUT TIEN ATM - ATM SGMK Q.TAN BINH",
+   "counterparty": null,
+   "debit": 3000000,
+   "credit": 0,
+   "balance_after": 46415095,
+   "page": 2,
+   "bbox": [
+    816,
+    60,
+    834,
+    940
+   ],
+   "ref": "SGMK26020643867",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0070",
+   "date": "2026-02-07",
+   "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 0702",
+   "counterparty": "SHOPEE VIETNAM",
+   "debit": 0,
+   "credit": 10856000,
+   "balance_after": 57271095,
+   "page": 2,
+   "bbox": [
+    834,
+    60,
+    853,
+    940
+   ],
+   "ref": "SGMK26020746404",
+   "trap_ids": [
+    "T01"
+   ]
+  },
+  {
+   "row_id": "T0071",
+   "date": "2026-02-07",
+   "description": "SHOPEE ADS - NAP TIEN QUANG CAO",
+   "counterparty": "SHOPEE ADS",
+   "debit": 2500000,
+   "credit": 0,
+   "balance_after": 54771095,
+   "page": 2,
+   "bbox": [
+    853,
+    60,
+    871,
+    940
+   ],
+   "ref": "SGMK26020754118",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0072",
+   "date": "2026-02-07",
+   "description": "THANH TOAN GHN EXPRESS - CUOC VC",
+   "counterparty": "GHN EXPRESS",
+   "debit": 1683000,
+   "credit": 0,
+   "balance_after": 53088095,
+   "page": 2,
+   "bbox": [
+    871,
+    60,
+    890,
+    940
+   ],
+   "ref": "SGMK26020747175",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0073",
+   "date": "2026-02-09",
+   "description": "THANH TOAN DON HANG - PHAM THU TRANG",
+   "counterparty": "PHAM THU TRANG",
+   "debit": 0,
+   "credit": 3250000,
+   "balance_after": 56338095,
+   "page": 2,
+   "bbox": [
+    890,
+    60,
+    908,
+    940
+   ],
+   "ref": "SGMK26020909225",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0074",
+   "date": "2026-02-09",
+   "description": "THANH TOAN NCC VAI - CHO TAN BINH",
+   "counterparty": "NCC VAI TAN BINH",
+   "debit": 11800000,
+   "credit": 0,
+   "balance_after": 44538095,
+   "page": 3,
+   "bbox": [
+    135,
+    60,
+    153,
+    940
+   ],
+   "ref": "SGMK26020911113",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0075",
+   "date": "2026-02-10",
+   "description": "TIEN NUOC SAWACO",
+   "counterparty": "SAWACO",
+   "debit": 165000,
+   "credit": 0,
+   "balance_after": 44373095,
+   "page": 3,
+   "bbox": [
+    153,
+    60,
+    172,
+    940
+   ],
+   "ref": "SGMK26021072101",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0076",
+   "date": "2026-02-11",
+   "description": "THANH TOAN DON HANG - VO QUOC BAO",
+   "counterparty": "VO QUOC BAO",
+   "debit": 0,
+   "credit": 3800000,
+   "balance_after": 48173095,
+   "page": 3,
+   "bbox": [
+    172,
+    60,
+    190,
+    940
+   ],
+   "ref": "SGMK26021128901",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0077",
+   "date": "2026-02-14",
+   "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 1402",
+   "counterparty": "SHOPEE VIETNAM",
+   "debit": 0,
+   "credit": 7775000,
+   "balance_after": 55948095,
+   "page": 3,
+   "bbox": [
+    190,
+    60,
+    208,
+    940
+   ],
+   "ref": "SGMK26021468276",
+   "trap_ids": [
+    "T01"
+   ]
+  },
+  {
+   "row_id": "T0078",
+   "date": "2026-02-14",
+   "description": "TIEN DIEN EVNHCMC - MA KH PE0100xxxx",
+   "counterparty": "EVNHCMC",
+   "debit": 974000,
+   "credit": 0,
+   "balance_after": 54974095,
+   "page": 3,
+   "bbox": [
+    208,
+    60,
+    227,
+    940
+   ],
+   "ref": "SGMK26021404581",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0079",
+   "date": "2026-02-15",
+   "description": "INTERNET CAP QUANG - THANH TOAN",
+   "counterparty": "ISP",
+   "debit": 250000,
+   "credit": 0,
+   "balance_after": 54724095,
+   "page": 3,
+   "bbox": [
+    227,
+    60,
+    245,
+    940
+   ],
+   "ref": "SGMK26021550835",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0080",
+   "date": "2026-02-17",
+   "description": "THANH TOAN DON HANG SI - TRAN THI HOA",
+   "counterparty": "TRAN THI HOA",
+   "debit": 0,
+   "credit": 18500000,
+   "balance_after": 54724095,
+   "page": 3,
+   "bbox": [
+    245,
+    60,
+    264,
+    940
+   ],
+   "ref": "SGMK26021747606",
+   "trap_ids": [
+    "T11"
+   ]
+  },
+  {
+   "row_id": "T0081",
+   "date": "2026-02-18",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 4500000,
+   "balance_after": 59224095,
+   "page": 3,
+   "bbox": [
+    264,
+    60,
+    282,
+    940
+   ],
+   "ref": "SGMK26021801605",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0082",
+   "date": "2026-02-20",
+   "description": "SPAYLATER THANH TOAN",
+   "counterparty": "SPAYLATER",
+   "debit": 1480000,
+   "credit": 0,
+   "balance_after": 57744095,
+   "page": 3,
+   "bbox": [
+    282,
+    60,
+    301,
+    940
+   ],
+   "ref": "SGMK26022037356",
+   "trap_ids": [
+    "T14"
+   ]
+  },
+  {
+   "row_id": "T0083",
+   "date": "2026-02-20",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 5490000,
+   "balance_after": 63234095,
+   "page": 3,
+   "bbox": [
+    301,
+    60,
+    319,
+    940
+   ],
+   "ref": "SGMK26022043922",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0084",
+   "date": "2026-02-21",
+   "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 2102",
+   "counterparty": "SHOPEE VIETNAM",
+   "debit": 0,
+   "credit": 7499000,
+   "balance_after": 70733095,
+   "page": 3,
+   "bbox": [
+    319,
+    60,
+    337,
+    940
+   ],
+   "ref": "SGMK26022105637",
+   "trap_ids": [
+    "T01"
+   ]
+  },
+  {
+   "row_id": "T0085",
+   "date": "2026-02-21",
+   "description": "THANH TOAN DON HANG - NGO THI KIM",
+   "counterparty": "NGO THI KIM",
+   "debit": 0,
+   "credit": 3360000,
+   "balance_after": 74093095,
+   "page": 3,
+   "bbox": [
+    337,
+    60,
+    356,
+    940
+   ],
+   "ref": "SGMK26022116368",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0086",
+   "date": "2026-02-24",
+   "description": "THANH TOAN DON HANG - NGO THI KIM",
+   "counterparty": "NGO THI KIM",
+   "debit": 0,
+   "credit": 3550000,
+   "balance_after": 77643095,
+   "page": 3,
+   "bbox": [
+    356,
+    60,
+    374,
+    940
+   ],
+   "ref": "SGMK26022414331",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0087",
+   "date": "2026-02-24",
+   "description": "CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG",
+   "counterparty": "XUONG MAY MINH ANH",
+   "debit": 11131736,
+   "credit": 0,
+   "balance_after": 66511359,
+   "page": 3,
+   "bbox": [
+    374,
+    60,
+    393,
+    940
+   ],
+   "ref": "SGMK26022499989",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0088",
+   "date": "2026-02-24",
+   "description": "RUT TIEN ATM - ATM SGMK Q.TAN BINH",
+   "counterparty": null,
+   "debit": 3500000,
+   "credit": 0,
+   "balance_after": 63011359,
+   "page": 3,
+   "bbox": [
+    393,
+    60,
+    411,
+    940
+   ],
+   "ref": "SGMK26022454976",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0089",
+   "date": "2026-02-24",
+   "description": "THANH TOAN J&T EXPRESS - CUOC VC",
+   "counterparty": "J&T EXPRESS",
+   "debit": 1374000,
+   "credit": 0,
+   "balance_after": 61637359,
+   "page": 3,
+   "bbox": [
+    411,
+    60,
+    429,
+    940
+   ],
+   "ref": "SGMK26022478101",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0090",
+   "date": "2026-02-26",
+   "description": "CUOC DI DONG VINATEL",
+   "counterparty": "VINATEL",
+   "debit": 314000,
+   "credit": 0,
+   "balance_after": 61323359,
+   "page": 3,
+   "bbox": [
+    429,
+    60,
+    448,
+    940
+   ],
+   "ref": "SGMK26022676085",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0091",
+   "date": "2026-02-26",
+   "description": "GRAB - THANH TOAN THE",
+   "counterparty": null,
+   "debit": 375000,
+   "credit": 0,
+   "balance_after": 60948359,
+   "page": 3,
+   "bbox": [
+    448,
+    60,
+    466,
+    940
+   ],
+   "ref": "SGMK26022634482",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0092",
+   "date": "2026-02-27",
+   "description": "THANH TOAN DON HANG - LE MINH TUAN",
+   "counterparty": "LE MINH TUAN",
+   "debit": 0,
+   "credit": 4090000,
+   "balance_after": 65038359,
+   "page": 3,
+   "bbox": [
+    466,
+    60,
+    485,
+    940
+   ],
+   "ref": "SGMK26022748399",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0093",
+   "date": "2026-02-27",
+   "description": "GRAB - THANH TOAN THE",
+   "counterparty": null,
+   "debit": 458000,
+   "credit": 0,
+   "balance_after": 64580359,
+   "page": 3,
+   "bbox": [
+    485,
+    60,
+    503,
+    940
+   ],
+   "ref": "SGMK26022779020",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0094",
+   "date": "2026-02-28",
+   "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 2802",
+   "counterparty": "SHOPEE VIETNAM",
+   "debit": 0,
+   "credit": 11058000,
+   "balance_after": 75638359,
+   "page": 3,
+   "bbox": [
+    503,
+    60,
+    521,
+    940
+   ],
+   "ref": "SGMK26022819382",
+   "trap_ids": [
+    "T01"
+   ]
+  },
+  {
+   "row_id": "T0095",
+   "date": "2026-02-28",
+   "description": "PHI DICH VU SMS BANKING",
+   "counterparty": null,
+   "debit": 11000,
+   "credit": 0,
+   "balance_after": 75627359,
+   "page": 3,
+   "bbox": [
+    521,
+    60,
+    540,
+    940
+   ],
+   "ref": "SGMK26022817533",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0096",
+   "date": "2026-03-02",
+   "description": "TIEN THUE NHA T03/2026 - NGUYEN THI MAI",
+   "counterparty": "NGUYEN THI MAI (CHU NHA)",
+   "debit": 6500000,
+   "credit": 0,
+   "balance_after": 69127359,
+   "page": 3,
+   "bbox": [
+    540,
+    60,
+    558,
+    940
+   ],
+   "ref": "SGMK26030246999",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0097",
+   "date": "2026-03-04",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 4200000,
+   "balance_after": 73327359,
+   "page": 3,
+   "bbox": [
+    558,
+    60,
+    577,
+    940
+   ],
+   "ref": "SGMK26030402533",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0098",
+   "date": "2026-03-04",
+   "description": "THANH TOAN DON HANG - LE MINH TUAN",
+   "counterparty": "LE MINH TUAN",
+   "debit": 0,
+   "credit": 990000,
+   "balance_after": 74317359,
+   "page": 3,
+   "bbox": [
+    577,
+    60,
+    595,
+    940
+   ],
+   "ref": "SGMK26030449436",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0099",
+   "date": "2026-03-05",
+   "description": "CHUYEN DEN FE CREDIT - TRA GOP",
+   "counterparty": "FE CREDIT",
+   "debit": 3250000,
+   "credit": 0,
+   "balance_after": 71067359,
+   "page": 3,
+   "bbox": [
+    595,
+    60,
+    614,
+    940
+   ],
+   "ref": "SGMK26030568220",
+   "trap_ids": [
+    "T13"
+   ]
+  },
+  {
+   "row_id": "T0100",
+   "date": "2026-03-05",
+   "description": "THANH TOAN QR - SIEU THI COOP",
+   "counterparty": null,
+   "debit": 400000,
+   "credit": 0,
+   "balance_after": 70667359,
+   "page": 3,
+   "bbox": [
+    614,
+    60,
+    632,
+    940
+   ],
+   "ref": "SGMK26030518934",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0101",
+   "date": "2026-03-07",
+   "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 0703",
+   "counterparty": "SHOPEE VIETNAM",
+   "debit": 0,
+   "credit": 12365000,
+   "balance_after": 83032359,
+   "page": 3,
+   "bbox": [
+    632,
+    60,
+    650,
+    940
+   ],
+   "ref": "SGMK26030771877",
+   "trap_ids": [
+    "T01"
+   ]
+  },
+  {
+   "row_id": "T0102",
+   "date": "2026-03-07",
+   "description": "SHOPEE ADS - NAP TIEN QUANG CAO",
+   "counterparty": "SHOPEE ADS",
+   "debit": 1600000,
+   "credit": 0,
+   "balance_after": 81432359,
+   "page": 3,
+   "bbox": [
+    650,
+    60,
+    669,
+    940
+   ],
+   "ref": "SGMK26030715926",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0103",
+   "date": "2026-03-08",
+   "description": "THANH TOAN DON HANG - VO QUOC BAO",
+   "counterparty": "VO QUOC BAO",
+   "debit": 0,
+   "credit": 4100000,
+   "balance_after": 85532359,
+   "page": 3,
+   "bbox": [
+    669,
+    60,
+    687,
+    940
+   ],
+   "ref": "SGMK26030813081",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0104",
+   "date": "2026-03-11",
+   "description": "THANH TOAN DON HANG - PHAM THU TRANG",
+   "counterparty": "PHAM THU TRANG",
+   "debit": 0,
+   "credit": 1580000,
+   "balance_after": 87112359,
+   "page": 3,
+   "bbox": [
+    687,
+    60,
+    706,
+    940
+   ],
+   "ref": "SGMK26031189860",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0105",
+   "date": "2026-03-11",
+   "description": "TIEN NUOC SAWACO",
+   "counterparty": "SAWACO",
+   "debit": 210000,
+   "credit": 0,
+   "balance_after": 86902359,
+   "page": 3,
+   "bbox": [
+    706,
+    60,
+    724,
+    940
+   ],
+   "ref": "SGMK26031174995",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0106",
+   "date": "2026-03-12",
+   "description": "THANH TOAN DON HANG - VO QUOC BAO",
+   "counterparty": "VO QUOC BAO",
+   "debit": 0,
+   "credit": 3130000,
+   "balance_after": 90032359,
+   "page": 3,
+   "bbox": [
+    724,
+    60,
+    742,
+    940
+   ],
+   "ref": "SGMK26031207732",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0107",
+   "date": "2026-03-13",
+   "description": "THANH TOAN QR - SIEU THI COOP",
+   "counterparty": null,
+   "debit": 462000,
+   "credit": 0,
+   "balance_after": 89570359,
+   "page": 3,
+   "bbox": [
+    742,
+    60,
+    761,
+    940
+   ],
+   "ref": "SGMK26031342079",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0108",
+   "date": "2026-03-14",
+   "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 1403",
+   "counterparty": "SHOPEE VIETNAM",
+   "debit": 0,
+   "credit": 11658000,
+   "balance_after": 101228359,
+   "page": 3,
+   "bbox": [
+    761,
+    60,
+    779,
+    940
+   ],
+   "ref": "SGMK26031458416",
+   "trap_ids": [
+    "T01"
+   ]
+  },
+  {
+   "row_id": "T0109",
+   "date": "2026-03-14",
+   "description": "NHAN TU NGUYEN VAN LONG - CHUYEN KHOAN",
+   "counterparty": "NGUYEN VAN LONG",
+   "debit": 0,
+   "credit": 50000000,
+   "balance_after": 151228359,
+   "page": 3,
+   "bbox": [
+    779,
+    60,
+    798,
+    940
+   ],
+   "ref": "SGMK26031474448",
+   "trap_ids": [
+    "T07"
+   ]
+  },
+  {
+   "row_id": "T0110",
+   "date": "2026-03-14",
+   "description": "TIEN DIEN EVNHCMC - MA KH PE0100xxxx",
+   "counterparty": "EVNHCMC",
+   "debit": 949000,
+   "credit": 0,
+   "balance_after": 150279359,
+   "page": 3,
+   "bbox": [
+    798,
+    60,
+    816,
+    940
+   ],
+   "ref": "SGMK26031480595",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0111",
+   "date": "2026-03-16",
+   "description": "CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG",
+   "counterparty": "XUONG MAY MINH ANH",
+   "debit": 7300000,
+   "credit": 0,
+   "balance_after": 142979359,
+   "page": 3,
+   "bbox": [
+    816,
+    60,
+    834,
+    940
+   ],
+   "ref": "SGMK26031650531",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0112",
+   "date": "2026-03-18",
+   "description": "INTERNET CAP QUANG - THANH TOAN",
+   "counterparty": "ISP",
+   "debit": 250000,
+   "credit": 0,
+   "balance_after": 142729359,
+   "page": 3,
+   "bbox": [
+    834,
+    60,
+    853,
+    940
+   ],
+   "ref": "SGMK26031864036",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0113",
+   "date": "2026-03-18",
+   "description": "THANH TOAN GHN EXPRESS - CUOC VC",
+   "counterparty": "GHN EXPRESS",
+   "debit": 2427000,
+   "credit": 0,
+   "balance_after": 140302359,
+   "page": 3,
+   "bbox": [
+    853,
+    60,
+    871,
+    940
+   ],
+   "ref": "SGMK26031803402",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0114",
+   "date": "2026-03-19",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 6600000,
+   "balance_after": 146902359,
+   "page": 3,
+   "bbox": [
+    871,
+    60,
+    890,
+    940
+   ],
+   "ref": "SGMK26031970221",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0115",
+   "date": "2026-03-19",
+   "description": "THANH TOAN NCC VAI - CHO TAN BINH",
+   "counterparty": "NCC VAI TAN BINH",
+   "debit": 13100000,
+   "credit": 0,
+   "balance_after": 133802359,
+   "page": 3,
+   "bbox": [
+    890,
+    60,
+    908,
+    940
+   ],
+   "ref": "SGMK26031906988",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0116",
+   "date": "2026-03-20",
+   "description": "SPAYLATER THANH TOAN",
+   "counterparty": "SPAYLATER",
+   "debit": 1480000,
+   "credit": 0,
+   "balance_after": 132322359,
+   "page": 4,
+   "bbox": [
+    135,
+    60,
+    153,
+    940
+   ],
+   "ref": "SGMK26032006748",
+   "trap_ids": [
+    "T14"
+   ]
+  },
+  {
+   "row_id": "T0117",
+   "date": "2026-03-20",
+   "description": "CHUYEN DEN NGUYEN VAN LONG - HOAN TRA",
+   "counterparty": "NGUYEN VAN LONG",
+   "debit": 50000000,
+   "credit": 0,
+   "balance_after": 82322359,
+   "page": 4,
+   "bbox": [
+    153,
+    60,
+    172,
+    940
+   ],
+   "ref": "SGMK26032010468",
+   "trap_ids": [
+    "T07"
+   ]
+  },
+  {
+   "row_id": "T0118",
+   "date": "2026-03-20",
+   "description": "SHOPEE ADS - NAP TIEN QUANG CAO",
+   "counterparty": "SHOPEE ADS",
+   "debit": 1800000,
+   "credit": 0,
+   "balance_after": 80522359,
+   "page": 4,
+   "bbox": [
+    172,
+    60,
+    190,
+    940
+   ],
+   "ref": "SGMK26032024463",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0119",
+   "date": "2026-03-21",
+   "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 2103",
+   "counterparty": "SHOPEE VIETNAM",
+   "debit": 0,
+   "credit": 10244000,
+   "balance_after": 90766359,
+   "page": 4,
+   "bbox": [
+    190,
+    60,
+    208,
+    940
+   ],
+   "ref": "SGMK26032198509",
+   "trap_ids": [
+    "T01"
+   ]
+  },
+  {
+   "row_id": "T0120",
+   "date": "2026-03-21",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 6750000,
+   "balance_after": 97516359,
+   "page": 4,
+   "bbox": [
+    208,
+    60,
+    227,
+    940
+   ],
+   "ref": "SGMK26032168208",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0121",
+   "date": "2026-03-22",
+   "description": "CUOC DI DONG VINATEL",
+   "counterparty": "VINATEL",
+   "debit": 271000,
+   "credit": 0,
+   "balance_after": 97245359,
+   "page": 4,
+   "bbox": [
+    227,
+    60,
+    245,
+    940
+   ],
+   "ref": "SGMK26032255931",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0122",
+   "date": "2026-03-24",
+   "description": "CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG",
+   "counterparty": "XUONG MAY MINH ANH",
+   "debit": 9700000,
+   "credit": 0,
+   "balance_after": 87545359,
+   "page": 4,
+   "bbox": [
+    245,
+    60,
+    264,
+    940
+   ],
+   "ref": "SGMK26032451179",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0123",
+   "date": "2026-03-25",
+   "description": "THANH TOAN GHN EXPRESS - CUOC VC",
+   "counterparty": "GHN EXPRESS",
+   "debit": 1723000,
+   "credit": 0,
+   "balance_after": 85822359,
+   "page": 4,
+   "bbox": [
+    264,
+    60,
+    282,
+    940
+   ],
+   "ref": "SGMK26032580950",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0124",
+   "date": "2026-03-26",
+   "description": "RUT TIEN ATM - ATM SGMK Q.TAN BINH",
+   "counterparty": null,
+   "debit": 4000000,
+   "credit": 0,
+   "balance_after": 81822359,
+   "page": 4,
+   "bbox": [
+    282,
+    60,
+    301,
+    940
+   ],
+   "ref": "SGMK26032665760",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0125",
+   "date": "2026-03-27",
+   "description": "CHUYEN TIEN TU NGUYEN THI LINH - VCB",
+   "counterparty": "NGUYEN THI LINH (VCB)",
+   "debit": 0,
+   "credit": 31000000,
+   "balance_after": 112822359,
+   "page": 4,
+   "bbox": [
+    301,
+    60,
+    319,
+    940
+   ],
+   "ref": "SGMK26032751220",
+   "trap_ids": [
+    "T05"
+   ]
+  },
+  {
+   "row_id": "T0126",
+   "date": "2026-03-28",
+   "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 2803",
+   "counterparty": "SHOPEE VIETNAM",
+   "debit": 0,
+   "credit": 12519000,
+   "balance_after": 125341359,
+   "page": 4,
+   "bbox": [
+    319,
+    60,
+    337,
+    940
+   ],
+   "ref": "SGMK26032892849",
+   "trap_ids": [
+    "T01"
+   ]
+  },
+  {
+   "row_id": "T0127",
+   "date": "2026-03-29",
+   "description": "RUT TIEN ATM - ATM SGMK Q.TAN BINH",
+   "counterparty": null,
+   "debit": 3500000,
+   "credit": 0,
+   "balance_after": 121841359,
+   "page": 4,
+   "bbox": [
+    337,
+    60,
+    356,
+    940
+   ],
+   "ref": "SGMK26032900205",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0128",
+   "date": "2026-03-30",
+   "description": "THANH TOAN NCC VAI - CHO TAN BINH",
+   "counterparty": "NCC VAI TAN BINH",
+   "debit": 9681891,
+   "credit": 0,
+   "balance_after": 112159468,
+   "page": 4,
+   "bbox": [
+    356,
+    60,
+    374,
+    940
+   ],
+   "ref": "SGMK26033067858",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0129",
+   "date": "2026-03-31",
+   "description": "THANH TOAN J&T EXPRESS - CUOC VC",
+   "counterparty": "J&T EXPRESS",
+   "debit": 2459000,
+   "credit": 0,
+   "balance_after": 109700468,
+   "page": 4,
+   "bbox": [
+    374,
+    60,
+    393,
+    940
+   ],
+   "ref": "SGMK26033142848",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0130",
+   "date": "2026-03-31",
+   "description": "PHI DICH VU SMS BANKING",
+   "counterparty": null,
+   "debit": 11000,
+   "credit": 0,
+   "balance_after": 109689468,
+   "page": 4,
+   "bbox": [
+    393,
+    60,
+    411,
+    940
+   ],
+   "ref": "SGMK26033146144",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0131",
+   "date": "2026-04-02",
+   "description": "TIEN THUE NHA T04/2026 - NGUYEN THI MAI",
+   "counterparty": "NGUYEN THI MAI (CHU NHA)",
+   "debit": 6500000,
+   "credit": 0,
+   "balance_after": 103189468,
+   "page": 4,
+   "bbox": [
+    411,
+    60,
+    429,
+    940
+   ],
+   "ref": "SGMK26040203888",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0132",
+   "date": "2026-04-03",
+   "description": "THANH TOAN DON HANG - VO QUOC BAO",
+   "counterparty": "VO QUOC BAO",
+   "debit": 0,
+   "credit": 1490000,
+   "balance_after": 104679468,
+   "page": 4,
+   "bbox": [
+    429,
+    60,
+    448,
+    940
+   ],
+   "ref": "SGMK26040378479",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0133",
+   "date": "2026-04-05",
+   "description": "CHUYEN DEN FE CREDIT - TRA GOP",
+   "counterparty": "FE CREDIT",
+   "debit": 3250000,
+   "credit": 0,
+   "balance_after": 101429468,
+   "page": 4,
+   "bbox": [
+    448,
+    60,
+    466,
+    940
+   ],
+   "ref": "SGMK26040592743",
+   "trap_ids": [
+    "T13"
+   ]
+  },
+  {
+   "row_id": "T0134",
+   "date": "2026-04-05",
+   "description": "THANH TOAN GHN EXPRESS - CUOC VC",
+   "counterparty": "GHN EXPRESS",
+   "debit": 2209000,
+   "credit": 0,
+   "balance_after": 99220468,
+   "page": 4,
+   "bbox": [
+    466,
+    60,
+    485,
+    940
+   ],
+   "ref": "SGMK26040547975",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0135",
+   "date": "2026-04-06",
+   "description": "CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG",
+   "counterparty": "XUONG MAY MINH ANH",
+   "debit": 7400000,
+   "credit": 0,
+   "balance_after": 91820468,
+   "page": 4,
+   "bbox": [
+    485,
+    60,
+    503,
+    940
+   ],
+   "ref": "SGMK26040618407",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0136",
+   "date": "2026-04-07",
+   "description": "THANH TOAN GHN EXPRESS - CUOC VC",
+   "counterparty": "GHN EXPRESS",
+   "debit": 2503000,
+   "credit": 0,
+   "balance_after": 82117468,
+   "page": 4,
+   "bbox": [
+    503,
+    60,
+    521,
+    940
+   ],
+   "ref": "SGMK26040737072",
+   "trap_ids": [
+    "T12"
+   ]
+  },
+  {
+   "row_id": "T0137",
+   "date": "2026-04-07",
+   "description": "TIEN DIEN EVNHCMC - MA KH PE0100xxxx",
+   "counterparty": "EVNHCMC",
+   "debit": 1477000,
+   "credit": 0,
+   "balance_after": 80640468,
+   "page": 4,
+   "bbox": [
+    521,
+    60,
+    540,
+    940
+   ],
+   "ref": "SGMK26040736451",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0138",
+   "date": "2026-04-08",
+   "description": "THANH TOAN NCC VAI - CHO TAN BINH",
+   "counterparty": "NCC VAI TAN BINH",
+   "debit": 9700000,
+   "credit": 0,
+   "balance_after": 70940468,
+   "page": 4,
+   "bbox": [
+    540,
+    60,
+    558,
+    940
+   ],
+   "ref": "SGMK26040881470",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0139",
+   "date": "2026-04-09",
+   "description": "SHOPEE ADS - NAP TIEN QUANG CAO",
+   "counterparty": "SHOPEE ADS",
+   "debit": 2000000,
+   "credit": 0,
+   "balance_after": 68940468,
+   "page": 4,
+   "bbox": [
+    558,
+    60,
+    577,
+    940
+   ],
+   "ref": "SGMK26040929936",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0140",
+   "date": "2026-04-11",
+   "description": "THANH TOAN DON HANG - VO QUOC BAO",
+   "counterparty": "VO QUOC BAO",
+   "debit": 0,
+   "credit": 1320000,
+   "balance_after": 70260468,
+   "page": 4,
+   "bbox": [
+    577,
+    60,
+    595,
+    940
+   ],
+   "ref": "SGMK26041111717",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0141",
+   "date": "2026-04-12",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 3900000,
+   "balance_after": 74160468,
+   "page": 4,
+   "bbox": [
+    595,
+    60,
+    614,
+    940
+   ],
+   "ref": "SGMK26041213425",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0142",
+   "date": "2026-04-12",
+   "description": "THANH TOAN DON HANG - TRAN THI HOA",
+   "counterparty": "TRAN THI HOA",
+   "debit": 0,
+   "credit": 3050000,
+   "balance_after": 77210468,
+   "page": 4,
+   "bbox": [
+    614,
+    60,
+    632,
+    940
+   ],
+   "ref": "SGMK26041269233",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0143",
+   "date": "2026-04-13",
+   "description": "THANH TOAN DON HANG - DANG NGOC ANH",
+   "counterparty": "DANG NGOC ANH",
+   "debit": 0,
+   "credit": 3090000,
+   "balance_after": 80300468,
+   "page": 4,
+   "bbox": [
+    632,
+    60,
+    650,
+    940
+   ],
+   "ref": "SGMK26041396231",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0144",
+   "date": "2026-04-14",
+   "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 1404",
+   "counterparty": "SHOPEE VIETNAM",
+   "debit": 0,
+   "credit": 24533000,
+   "balance_after": 104833468,
+   "page": 4,
+   "bbox": [
+    650,
+    60,
+    669,
+    940
+   ],
+   "ref": "SGMK26041469940",
+   "trap_ids": [
+    "T01"
+   ]
+  },
+  {
+   "row_id": "T0145",
+   "date": "2026-04-15",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 3200000,
+   "balance_after": 108033468,
+   "page": 4,
+   "bbox": [
+    669,
+    60,
+    687,
+    940
+   ],
+   "ref": "SGMK26041501648",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0146",
+   "date": "2026-04-15",
+   "description": "THANH TOAN QR - CUA HANG VPP",
+   "counterparty": null,
+   "debit": 550000,
+   "credit": 0,
+   "balance_after": 107483468,
+   "page": 4,
+   "bbox": [
+    687,
+    60,
+    706,
+    940
+   ],
+   "ref": "SGMK26041528367",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0147",
+   "date": "2026-04-16",
+   "description": "INTERNET CAP QUANG - THANH TOAN",
+   "counterparty": "ISP",
+   "debit": 250000,
+   "credit": 0,
+   "balance_after": 107233468,
+   "page": 4,
+   "bbox": [
+    706,
+    60,
+    724,
+    940
+   ],
+   "ref": "SGMK26041683252",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0148",
+   "date": "2026-04-17",
+   "description": "TIEN NUOC SAWACO",
+   "counterparty": "SAWACO",
+   "debit": 261000,
+   "credit": 0,
+   "balance_after": 106972468,
+   "page": 4,
+   "bbox": [
+    724,
+    60,
+    742,
+    940
+   ],
+   "ref": "SGMK26041748848",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0149",
+   "date": "2026-04-19",
+   "description": "SPAYLATER THANH TOAN",
+   "counterparty": "SPAYLATER",
+   "debit": 1480000,
+   "credit": 0,
+   "balance_after": 105492468,
+   "page": 4,
+   "bbox": [
+    742,
+    60,
+    761,
+    940
+   ],
+   "ref": "SGMK26041919910",
+   "trap_ids": [
+    "T14"
+   ]
+  },
+  {
+   "row_id": "T0150",
+   "date": "2026-04-19",
+   "description": "GRAB - THANH TOAN THE",
+   "counterparty": null,
+   "debit": 641000,
+   "credit": 0,
+   "balance_after": 104851468,
+   "page": 4,
+   "bbox": [
+    761,
+    60,
+    779,
+    940
+   ],
+   "ref": "SGMK26041976777",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0151",
+   "date": "2026-04-19",
+   "description": "RUT TIEN ATM - ATM SGMK Q.TAN BINH",
+   "counterparty": null,
+   "debit": 4500000,
+   "credit": 0,
+   "balance_after": 100351468,
+   "page": 4,
+   "bbox": [
+    779,
+    60,
+    798,
+    940
+   ],
+   "ref": "SGMK26041965193",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0152",
+   "date": "2026-04-20",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 3400000,
+   "balance_after": 103751468,
+   "page": 4,
+   "bbox": [
+    798,
+    60,
+    816,
+    940
+   ],
+   "ref": "SGMK26042014118",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0153",
+   "date": "2026-04-21",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 3700000,
+   "balance_after": 107451468,
+   "page": 4,
+   "bbox": [
+    816,
+    60,
+    834,
+    940
+   ],
+   "ref": "SGMK26042146263",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0154",
+   "date": "2026-04-22",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 4410000,
+   "balance_after": 111861468,
+   "page": 4,
+   "bbox": [
+    834,
+    60,
+    853,
+    940
+   ],
+   "ref": "SGMK26042228939",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0155",
+   "date": "2026-04-23",
+   "description": "THANH TOAN J&T EXPRESS - CUOC VC",
+   "counterparty": "J&T EXPRESS",
+   "debit": 2259000,
+   "credit": 0,
+   "balance_after": 109602468,
+   "page": 4,
+   "bbox": [
+    853,
+    60,
+    871,
+    940
+   ],
+   "ref": "SGMK26042365513",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0156",
+   "date": "2026-04-24",
+   "description": "CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG",
+   "counterparty": "XUONG MAY MINH ANH",
+   "debit": 9500000,
+   "credit": 0,
+   "balance_after": 100102468,
+   "page": 4,
+   "bbox": [
+    871,
+    60,
+    890,
+    940
+   ],
+   "ref": "SGMK26042410012",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0157",
+   "date": "2026-04-25",
+   "description": "CUOC DI DONG VINATEL",
+   "counterparty": "VINATEL",
+   "debit": 232000,
+   "credit": 0,
+   "balance_after": 99870468,
+   "page": 4,
+   "bbox": [
+    890,
+    60,
+    908,
+    940
+   ],
+   "ref": "SGMK26042575369",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0158",
+   "date": "2026-04-25",
+   "description": "THANH TOAN QR - CUA HANG VPP",
+   "counterparty": null,
+   "debit": 225000,
+   "credit": 0,
+   "balance_after": 99645468,
+   "page": 5,
+   "bbox": [
+    135,
+    60,
+    153,
+    940
+   ],
+   "ref": "SGMK26042531424",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0159",
+   "date": "2026-04-26",
+   "description": "SHOPEE ADS - NAP TIEN QUANG CAO",
+   "counterparty": "SHOPEE ADS",
+   "debit": 2900000,
+   "credit": 0,
+   "balance_after": 96745468,
+   "page": 5,
+   "bbox": [
+    153,
+    60,
+    172,
+    940
+   ],
+   "ref": "SGMK26042657302",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0160",
+   "date": "2026-04-27",
+   "description": "RUT TIEN ATM - ATM SGMK Q.TAN BINH",
+   "counterparty": null,
+   "debit": 4500000,
+   "credit": 0,
+   "balance_after": 92245468,
+   "page": 5,
+   "bbox": [
+    172,
+    60,
+    190,
+    940
+   ],
+   "ref": "SGMK26042763362",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0161",
+   "date": "2026-04-28",
+   "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 2804",
+   "counterparty": "SHOPEE VIETNAM",
+   "debit": 0,
+   "credit": 25998000,
+   "balance_after": 118243468,
+   "page": 5,
+   "bbox": [
+    190,
+    60,
+    208,
+    940
+   ],
+   "ref": "SGMK26042855747",
+   "trap_ids": [
+    "T01"
+   ]
+  },
+  {
+   "row_id": "T0162",
+   "date": "2026-04-29",
+   "description": "THANH TOAN NCC VAI - CHO TAN BINH",
+   "counterparty": "NCC VAI TAN BINH",
+   "debit": 10382004,
+   "credit": 0,
+   "balance_after": 107861464,
+   "page": 5,
+   "bbox": [
+    208,
+    60,
+    227,
+    940
+   ],
+   "ref": "SGMK26042977733",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0163",
+   "date": "2026-04-30",
+   "description": "PHI DICH VU SMS BANKING",
+   "counterparty": null,
+   "debit": 11000,
+   "credit": 0,
+   "balance_after": 107850464,
+   "page": 5,
+   "bbox": [
+    227,
+    60,
+    245,
+    940
+   ],
+   "ref": "SGMK26043015717",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0164",
+   "date": "2026-05-02",
+   "description": "TIEN THUE NHA T05/2026 - NGUYEN THI MAI",
+   "counterparty": "NGUYEN THI MAI (CHU NHA)",
+   "debit": 6500000,
+   "credit": 0,
+   "balance_after": 101350464,
+   "page": 5,
+   "bbox": [
+    245,
+    60,
+    264,
+    940
+   ],
+   "ref": "SGMK26050200377",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0165",
+   "date": "2026-05-03",
+   "description": "THANH TOAN DON HANG - TRAN THI HOA",
+   "counterparty": "TRAN THI HOA",
+   "debit": 0,
+   "credit": 3620000,
+   "balance_after": 104970464,
+   "page": 5,
+   "bbox": [
+    264,
+    60,
+    282,
+    940
+   ],
+   "ref": "SGMK26050305399",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0166",
+   "date": "2026-05-05",
+   "description": "CHUYEN DEN FE CREDIT - TRA GOP",
+   "counterparty": "FE CREDIT",
+   "debit": 3250000,
+   "credit": 0,
+   "balance_after": 101720464,
+   "page": 5,
+   "bbox": [
+    282,
+    60,
+    301,
+    940
+   ],
+   "ref": "SGMK26050544463",
+   "trap_ids": [
+    "T13"
+   ]
+  },
+  {
+   "row_id": "T0167",
+   "date": "2026-05-05",
+   "description": "CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG",
+   "counterparty": "XUONG MAY MINH ANH",
+   "debit": 8900000,
+   "credit": 0,
+   "balance_after": 92820464,
+   "page": 5,
+   "bbox": [
+    301,
+    60,
+    319,
+    940
+   ],
+   "ref": "SGMK26050563883",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0168",
+   "date": "2026-05-06",
+   "description": "THANH TOAN GHN EXPRESS - CUOC VC",
+   "counterparty": "GHN EXPRESS",
+   "debit": 1580000,
+   "credit": 0,
+   "balance_after": 91240464,
+   "page": 5,
+   "bbox": [
+    319,
+    60,
+    337,
+    940
+   ],
+   "ref": "SGMK26050659347",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0169",
+   "date": "2026-05-07",
+   "description": "THANH TOAN NCC VAI - CHO TAN BINH",
+   "counterparty": "NCC VAI TAN BINH",
+   "debit": 13000000,
+   "credit": 0,
+   "balance_after": 78240464,
+   "page": 5,
+   "bbox": [
+    337,
+    60,
+    356,
+    940
+   ],
+   "ref": "SGMK26050739975",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0170",
+   "date": "2026-05-07",
+   "description": "RUT TIEN ATM - ATM SGMK Q.TAN BINH",
+   "counterparty": null,
+   "debit": 4500000,
+   "credit": 0,
+   "balance_after": 73740464,
+   "page": 5,
+   "bbox": [
+    356,
+    60,
+    374,
+    940
+   ],
+   "ref": "SGMK26050797073",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0171",
+   "date": "2026-05-07",
+   "description": "THANH TOAN GHN EXPRESS - CUOC VC",
+   "counterparty": "GHN EXPRESS",
+   "debit": 1808000,
+   "credit": 0,
+   "balance_after": 71932464,
+   "page": 5,
+   "bbox": [
+    374,
+    60,
+    393,
+    940
+   ],
+   "ref": "SGMK26050704753",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0172",
+   "date": "2026-05-08",
+   "description": "CHUYEN TIEN TU NGUYEN THI LINH - VCB",
+   "counterparty": "NGUYEN THI LINH (VCB)",
+   "debit": 0,
+   "credit": 27500000,
+   "balance_after": 99432464,
+   "page": 5,
+   "bbox": [
+    393,
+    60,
+    411,
+    940
+   ],
+   "ref": "SGMK26050832734",
+   "trap_ids": [
+    "T06"
+   ]
+  },
+  {
+   "row_id": "T0173",
+   "date": "2026-05-09",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 4800000,
+   "balance_after": 104232464,
+   "page": 5,
+   "bbox": [
+    411,
+    60,
+    429,
+    940
+   ],
+   "ref": "SGMK26050982052",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0174",
+   "date": "2026-05-10",
+   "description": "TIEN DIEN EVNHCMC - MA KH PE0100xxxx",
+   "counterparty": "EVNHCMC",
+   "debit": 1101000,
+   "credit": 0,
+   "balance_after": 103131464,
+   "page": 5,
+   "bbox": [
+    429,
+    60,
+    448,
+    940
+   ],
+   "ref": "SGMK26051001313",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0175",
+   "date": "2026-05-11",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 2800000,
+   "balance_after": 105931464,
+   "page": 5,
+   "bbox": [
+    448,
+    60,
+    466,
+    940
+   ],
+   "ref": "SGMK26051144340",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0176",
+   "date": "2026-05-11",
+   "description": "TIEN NUOC SAWACO",
+   "counterparty": "SAWACO",
+   "debit": 277000,
+   "credit": 0,
+   "balance_after": 105654464,
+   "page": 5,
+   "bbox": [
+    466,
+    60,
+    485,
+    940
+   ],
+   "ref": "SGMK26051124239",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0177",
+   "date": "2026-05-12",
+   "description": "THANH TOAN DON HANG - DANG NGOC ANH",
+   "counterparty": "DANG NGOC ANH",
+   "debit": 0,
+   "credit": 1600000,
+   "balance_after": 107254464,
+   "page": 5,
+   "bbox": [
+    485,
+    60,
+    503,
+    940
+   ],
+   "ref": "SGMK26051227264",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0178",
+   "date": "2026-05-12",
+   "description": "THANH TOAN QR - SIEU THI COOP",
+   "counterparty": null,
+   "debit": 650000,
+   "credit": 0,
+   "balance_after": 106604464,
+   "page": 5,
+   "bbox": [
+    503,
+    60,
+    521,
+    940
+   ],
+   "ref": "SGMK26051277467",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0179",
+   "date": "2026-05-14",
+   "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 1405",
+   "counterparty": "SHOPEE VIETNAM",
+   "debit": 0,
+   "credit": 26718000,
+   "balance_after": 133322464,
+   "page": 5,
+   "bbox": [
+    521,
+    60,
+    540,
+    940
+   ],
+   "ref": "SGMK26051422837",
+   "trap_ids": [
+    "T01"
+   ]
+  },
+  {
+   "row_id": "T0180",
+   "date": "2026-05-14",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 2800000,
+   "balance_after": 136122464,
+   "page": 5,
+   "bbox": [
+    540,
+    60,
+    558,
+    940
+   ],
+   "ref": "SGMK26051443708",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0181",
+   "date": "2026-05-17",
+   "description": "THANH TOAN DON HANG - HOANG VAN NAM",
+   "counterparty": "HOANG VAN NAM",
+   "debit": 0,
+   "credit": 1050000,
+   "balance_after": 137172464,
+   "page": 5,
+   "bbox": [
+    558,
+    60,
+    577,
+    940
+   ],
+   "ref": "SGMK26051756316",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0182",
+   "date": "2026-05-17",
+   "description": "INTERNET CAP QUANG - THANH TOAN",
+   "counterparty": "ISP",
+   "debit": 250000,
+   "credit": 0,
+   "balance_after": 136922464,
+   "page": 5,
+   "bbox": [
+    577,
+    60,
+    595,
+    940
+   ],
+   "ref": "SGMK26051701496",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0183",
+   "date": "2026-05-18",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 4400000,
+   "balance_after": 141322464,
+   "page": 5,
+   "bbox": [
+    595,
+    60,
+    614,
+    940
+   ],
+   "ref": "SGMK26051874947",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0184",
+   "date": "2026-05-18",
+   "description": "CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG",
+   "counterparty": "XUONG MAY MINH ANH",
+   "debit": 9100000,
+   "credit": 0,
+   "balance_after": 132222464,
+   "page": 5,
+   "bbox": [
+    614,
+    60,
+    632,
+    940
+   ],
+   "ref": "SGMK26051878419",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0185",
+   "date": "2026-05-19",
+   "description": "NOP TIEN MAT - PGD TAN BINH",
+   "counterparty": null,
+   "debit": 0,
+   "credit": 2470000,
+   "balance_after": 134692464,
+   "page": 5,
+   "bbox": [
+    632,
+    60,
+    650,
+    940
+   ],
+   "ref": "SGMK26051954735",
+   "trap_ids": [
+    "T03"
+   ]
+  },
+  {
+   "row_id": "T0186",
+   "date": "2026-05-19",
+   "description": "THANH TOAN J&T EXPRESS - CUOC VC",
+   "counterparty": "J&T EXPRESS",
+   "debit": 1567000,
+   "credit": 0,
+   "balance_after": 133125464,
+   "page": 5,
+   "bbox": [
+    650,
+    60,
+    669,
+    940
+   ],
+   "ref": "SGMK26051944491",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0187",
+   "date": "2026-05-21",
+   "description": "SPAYLATER THANH TOAN",
+   "counterparty": "SPAYLATER",
+   "debit": 1480000,
+   "credit": 0,
+   "balance_after": 131645464,
+   "page": 5,
+   "bbox": [
+    669,
+    60,
+    687,
+    940
+   ],
+   "ref": "SGMK26052170687",
+   "trap_ids": [
+    "T14"
+   ]
+  },
+  {
+   "row_id": "T0188",
+   "date": "2026-05-21",
+   "description": "RUT TIEN ATM - ATM SGMK Q.TAN BINH",
+   "counterparty": null,
+   "debit": 3500000,
+   "credit": 0,
+   "balance_after": 128145464,
+   "page": 5,
+   "bbox": [
+    687,
+    60,
+    706,
+    940
+   ],
+   "ref": "SGMK26052173919",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0189",
+   "date": "2026-05-22",
+   "description": "CUOC DI DONG VINATEL",
+   "counterparty": "VINATEL",
+   "debit": 320000,
+   "credit": 0,
+   "balance_after": 127825464,
+   "page": 5,
+   "bbox": [
+    706,
+    60,
+    724,
+    940
+   ],
+   "ref": "SGMK26052272642",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0190",
+   "date": "2026-05-22",
+   "description": "SHOPEE ADS - NAP TIEN QUANG CAO",
+   "counterparty": "SHOPEE ADS",
+   "debit": 2200000,
+   "credit": 0,
+   "balance_after": 125625464,
+   "page": 5,
+   "bbox": [
+    724,
+    60,
+    742,
+    940
+   ],
+   "ref": "SGMK26052217617",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0191",
+   "date": "2026-05-24",
+   "description": "GRAB - THANH TOAN THE",
+   "counterparty": null,
+   "debit": 564000,
+   "credit": 0,
+   "balance_after": 125061464,
+   "page": 5,
+   "bbox": [
+    742,
+    60,
+    761,
+    940
+   ],
+   "ref": "SGMK26052409075",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0192",
+   "date": "2026-05-25",
+   "description": "SHOPEE ADS - NAP TIEN QUANG CAO",
+   "counterparty": "SHOPEE ADS",
+   "debit": 3200000,
+   "credit": 0,
+   "balance_after": 121861464,
+   "page": 5,
+   "bbox": [
+    761,
+    60,
+    779,
+    940
+   ],
+   "ref": "SGMK26052558274",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0193",
+   "date": "2026-05-26",
+   "description": "THANH TOAN QR - CUA HANG VPP",
+   "counterparty": null,
+   "debit": 537000,
+   "credit": 0,
+   "balance_after": 121324464,
+   "page": 5,
+   "bbox": [
+    779,
+    60,
+    798,
+    940
+   ],
+   "ref": "SGMK26052621974",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0194",
+   "date": "2026-05-27",
+   "description": "THANH TOAN NCC VAI - CHO TAN BINH",
+   "counterparty": "NCC VAI TAN BINH",
+   "debit": 9348757,
+   "credit": 0,
+   "balance_after": 111975707,
+   "page": 5,
+   "bbox": [
+    798,
+    60,
+    816,
+    940
+   ],
+   "ref": "SGMK26052758660",
+   "trap_ids": []
+  },
+  {
+   "row_id": "T0195",
+   "date": "2026-05-28",
+   "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 2805",
+   "counterparty": "SHOPEE VIETNAM",
+   "debit": 0,
+   "credit": 26306000,
+   "balance_after": 138281707,
+   "page": 5,
+   "bbox": [
+    816,
+    60,
+    834,
+    940
+   ],
+   "ref": "SGMK26052833962",
+   "trap_ids": [
+    "T01"
+   ]
+  },
+  {
+   "row_id": "T0196",
+   "date": "2026-05-31",
+   "description": "PHI DICH VU SMS BANKING",
+   "counterparty": null,
+   "debit": 11000,
+   "credit": 0,
+   "balance_after": 138270707,
+   "page": 5,
+   "bbox": [
+    834,
+    60,
+    853,
+    940
+   ],
+   "ref": "SGMK26053169187",
+   "trap_ids": []
+  }
+ ],
+ "planted": {
+  "T11": "row dated 2026-02-17 with credit 18,500,000 whose balance_after equals the previous row",
+  "T12": "row in April whose balance_after is 7,200,000 lower than prev + credit - debit",
+  "monthly_shopee_payout_totals": {
+   "2025-12": 40968000,
+   "2026-01": 44145000,
+   "2026-02": 37188000,
+   "2026-03": 46786000,
+   "2026-04": 50531000,
+   "2026-05": 53024000
+  },
+  "monthly_cod_deposit_totals": {
+   "2025-12": 13110000,
+   "2026-01": 17350000,
+   "2026-02": 13790000,
+   "2026-03": 17550000,
+   "2026-04": 18610000,
+   "2026-05": 17270000
+  }
+ }
+}

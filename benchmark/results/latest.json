@@ -1,0 +1,341 @@
+{
+ "generated_at": "2026-10-14T11:11:36+00:00",
+ "summary": {
+  "mode": "mock",
+  "model_flash": "gemini-3.8-flash",
+  "model_pro": "gemini-3.8-flash",
+  "traps_total": 20,
+  "traps_caught": 19,
+  "trap_recall": 0.95,
+  "baseline_traps_caught": 0,
+  "baseline_trap_recall": 0.0,
+  "clean_case_objections": 0,
+  "false_positive_share": 0.0,
+  "unsourced_numbers": 0,
+  "baseline_unsourced_numbers": 6,
+  "avg_seconds": 4.5,
+  "avg_cost_usd": 0.0,
+  "extraction_row_accuracy": 1.0,
+  "evidence_link_accuracy": 1.0
+ },
+ "cases": [
+  {
+   "case": "A",
+   "name": "Warung Ibu Sari",
+   "expected_outcome": "approve",
+   "recommendation": "approve",
+   "n_documents": 18,
+   "seconds": 5.0,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "llm_calls": 22,
+   "cached_calls": 0,
+   "n_figures": 32,
+   "unsourced_numbers": 0,
+   "n_objections": 0,
+   "objections": [],
+   "traps_total": 0,
+   "traps_caught": 0,
+   "trap_hits": {},
+   "extraction": {
+    "gt_rows": 184,
+    "rows_matched": 184,
+    "row_accuracy": 1.0,
+    "evidence_link_accuracy": 1.0
+   },
+   "baseline": {
+    "recommendation": "approve",
+    "traps_caught": 0,
+    "trap_hits": {},
+    "n_concerns": 1,
+    "unsourced_numbers": 2,
+    "n_figures": 1,
+    "seconds": 0.0,
+    "cost_usd": 0.0,
+    "tokens": 0
+   }
+  },
+  {
+   "case": "B",
+   "name": "Linh Fashion Online",
+   "expected_outcome": "approve_with_conditions",
+   "recommendation": "approve_with_conditions",
+   "n_documents": 14,
+   "seconds": 2.9,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "llm_calls": 18,
+   "cached_calls": 0,
+   "n_figures": 36,
+   "unsourced_numbers": 0,
+   "n_objections": 12,
+   "objections": [
+    {
+     "id": "O01",
+     "q": "Q1",
+     "severity": "critical",
+     "title": "Marketplace sales and bank payouts are the same money"
+    },
+    {
+     "id": "O02",
+     "q": "Q4",
+     "severity": "critical",
+     "title": "ghn_receipt_02.jpg and ghn_receipt_05.jpg are the same image"
+    },
+    {
+     "id": "O03",
+     "q": "Q6",
+     "severity": "critical",
+     "title": "Running balance breaks at row T0080"
+    },
+    {
+     "id": "O04",
+     "q": "Q6",
+     "severity": "critical",
+     "title": "Running balance breaks at row T0136"
+    },
+    {
+     "id": "O05",
+     "q": "Q3",
+     "severity": "high",
+     "title": "Credit of 24,000,000 on 2026-01-09 comes from the applicant's own account"
+    },
+    {
+     "id": "O06",
+     "q": "Q3",
+     "severity": "high",
+     "title": "Credit of 31,000,000 on 2026-03-27 comes from the applicant's own account"
+    },
+    {
+     "id": "O07",
+     "q": "Q3",
+     "severity": "high",
+     "title": "Credit of 27,500,000 on 2026-05-08 comes from the applicant's own account"
+    },
+    {
+     "id": "O08",
+     "q": "Q3",
+     "severity": "high",
+     "title": "50,000,000 received on 2026-03-14 was sent back within two weeks"
+    },
+    {
+     "id": "O09",
+     "q": "Q11",
+     "severity": "medium",
+     "title": "Inconsistent business name across documents"
+    },
+    {
+     "id": "O10",
+     "q": "Q5",
+     "severity": "medium",
+     "title": "Document periods do not line up"
+    },
+    {
+     "id": "O11",
+     "q": "Q7",
+     "severity": "medium",
+     "title": "Recurring transfer to FE CREDIT looks like loan repayment"
+    },
+    {
+     "id": "O12",
+     "q": "Q7",
+     "severity": "medium",
+     "title": "Recurring transfer to SPAYLATER looks like loan repayment"
+    }
+   ],
+   "traps_total": 14,
+   "traps_caught": 13,
+   "trap_hits": {
+    "T01": [
+     "O01"
+    ],
+    "T02": [
+     "O01"
+    ],
+    "T03": [],
+    "T04": [
+     "O05",
+     "O06",
+     "O07"
+    ],
+    "T05": [
+     "O05",
+     "O06",
+     "O07"
+    ],
+    "T06": [
+     "O05",
+     "O06",
+     "O07"
+    ],
+    "T07": [
+     "O08"
+    ],
+    "T08": [
+     "O02"
+    ],
+    "T09": [
+     "O09"
+    ],
+    "T10": [
+     "O10"
+    ],
+    "T11": [
+     "O03",
+     "O04"
+    ],
+    "T12": [
+     "O03",
+     "O04"
+    ],
+    "T13": [
+     "O11",
+     "O12"
+    ],
+    "T14": [
+     "O11",
+     "O12"
+    ]
+   },
+   "extraction": {
+    "gt_rows": 196,
+    "rows_matched": 196,
+    "row_accuracy": 1.0,
+    "evidence_link_accuracy": 1.0
+   },
+   "baseline": {
+    "recommendation": "approve",
+    "traps_caught": 0,
+    "trap_hits": {
+     "T01": [],
+     "T02": [],
+     "T03": [],
+     "T04": [],
+     "T05": [],
+     "T06": [],
+     "T07": [],
+     "T08": [],
+     "T09": [],
+     "T10": [],
+     "T11": [],
+     "T12": [],
+     "T13": [],
+     "T14": []
+    },
+    "n_concerns": 1,
+    "unsourced_numbers": 2,
+    "n_figures": 1,
+    "seconds": 0.0,
+    "cost_usd": 0.0,
+    "tokens": 0
+   }
+  },
+  {
+   "case": "C",
+   "name": "Reyes Auto Repair",
+   "expected_outcome": "request_more_documents",
+   "recommendation": "request_more_documents",
+   "n_documents": 11,
+   "seconds": 5.7,
+   "cost_usd": 0.0,
+   "tokens": 0,
+   "llm_calls": 15,
+   "cached_calls": 0,
+   "n_figures": 27,
+   "unsourced_numbers": 0,
+   "n_objections": 7,
+   "objections": [
+    {
+     "id": "O01",
+     "q": "Q4",
+     "severity": "critical",
+     "title": "premises_02.jpg was already filed in past case PAST-2025-0471"
+    },
+    {
+     "id": "O02",
+     "q": "Q6",
+     "severity": "critical",
+     "title": "Running balance breaks at row T0051"
+    },
+    {
+     "id": "O03",
+     "q": "Q1",
+     "severity": "high",
+     "title": "Ledger cash income is the same cash later deposited"
+    },
+    {
+     "id": "O04",
+     "q": "Q4",
+     "severity": "high",
+     "title": "ledger_p3.jpg and ledger_p6.jpg are the same image"
+    },
+    {
+     "id": "O05",
+     "q": "Q5",
+     "severity": "high",
+     "title": "No statement rows for 2026-03, 2026-04"
+    },
+    {
+     "id": "O06",
+     "q": "Q7",
+     "severity": "high",
+     "title": "Recurring transfer to BDO AUTO LOAN looks like loan repayment"
+    },
+    {
+     "id": "O07",
+     "q": "Q5",
+     "severity": "medium",
+     "title": "Document periods do not line up"
+    }
+   ],
+   "traps_total": 6,
+   "traps_caught": 6,
+   "trap_hits": {
+    "T15": [
+     "O01",
+     "O04"
+    ],
+    "T16": [
+     "O02",
+     "O05"
+    ],
+    "T17": [
+     "O06"
+    ],
+    "T18": [
+     "O06"
+    ],
+    "T19": [
+     "O03"
+    ],
+    "T20": [
+     "O01"
+    ]
+   },
+   "extraction": {
+    "gt_rows": 101,
+    "rows_matched": 101,
+    "row_accuracy": 1.0,
+    "evidence_link_accuracy": 1.0
+   },
+   "baseline": {
+    "recommendation": "approve",
+    "traps_caught": 0,
+    "trap_hits": {
+     "T15": [],
+     "T16": [],
+     "T17": [],
+     "T18": [],
+     "T19": [],
+     "T20": []
+    },
+    "n_concerns": 1,
+    "unsourced_numbers": 2,
+    "n_figures": 1,
+    "seconds": 0.0,
+    "cost_usd": 0.0,
+    "tokens": 0
+   }
+  }
+ ]
+}

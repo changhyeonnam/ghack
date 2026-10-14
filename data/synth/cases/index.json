@@ -1,0 +1,53 @@
+{
+ "seed": 7,
+ "cases": [
+  {
+   "case_id": "A",
+   "name": "Warung Ibu Sari",
+   "expected_outcome": "approve",
+   "documents": 18,
+   "traps": [],
+   "manifest": "A/manifest.json"
+  },
+  {
+   "case_id": "B",
+   "name": "Linh Fashion Online",
+   "expected_outcome": "approve_with_conditions",
+   "documents": 14,
+   "traps": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T05",
+    "T06",
+    "T07",
+    "T08",
+    "T09",
+    "T10",
+    "T11",
+    "T12",
+    "T13",
+    "T14"
+   ],
+   "manifest": "B/manifest.json"
+  },
+  {
+   "case_id": "C",
+   "name": "Reyes Auto Repair",
+   "expected_outcome": "request_more_documents",
+   "documents": 11,
+   "traps": [
+    "T15",
+    "T16",
+    "T17",
+    "T18",
+    "T19",
+    "T20"
+   ],
+   "manifest": "C/manifest.json"
+  }
+ ],
+ "traps_file": "../traps.json",
+ "synthetic": true
+}

@@ -1,0 +1,107 @@
+{
+ "case_id": "C",
+ "name": "Reyes Auto Repair",
+ "business_name": "Reyes Auto Repair",
+ "sector": "motor vehicle repair",
+ "country": "PH",
+ "city": "Manila",
+ "language": "tl+en",
+ "currency": "PHP",
+ "requested_amount": 250000,
+ "expected_outcome": "request_more_documents",
+ "account_holder": "RAMON REYES",
+ "bank_name": "Metro Pacific Savings Bank (synthetic)",
+ "notes": "Incomplete-documents case: carries T15-T20 (ledger page reuse, missing statement months, hidden debt, ledger/deposit double count, reused premises photo).",
+ "documents": [
+  {
+   "filename": "bank_statement_2026_partial.pdf",
+   "doc_type": "bank_statement",
+   "pages": 4,
+   "ground_truth": "ground_truth/bank_statement.json",
+   "description": "Statement with header period Jan-Jun 2026; only Jan, Feb, May, Jun pages present"
+  },
+  {
+   "filename": "ledger_p1.jpg",
+   "doc_type": "handwritten_ledger",
+   "pages": 1,
+   "ground_truth": "ground_truth/ledger.json",
+   "description": "handwritten ledger page - Enero 2026"
+  },
+  {
+   "filename": "ledger_p2.jpg",
+   "doc_type": "handwritten_ledger",
+   "pages": 1,
+   "ground_truth": "ground_truth/ledger.json",
+   "description": "handwritten ledger page - Pebrero 2026"
+  },
+  {
+   "filename": "ledger_p3.jpg",
+   "doc_type": "handwritten_ledger",
+   "pages": 1,
+   "ground_truth": "ground_truth/ledger.json",
+   "description": "handwritten ledger page - Marso 2026"
+  },
+  {
+   "filename": "ledger_p4.jpg",
+   "doc_type": "handwritten_ledger",
+   "pages": 1,
+   "ground_truth": "ground_truth/ledger.json",
+   "description": "handwritten ledger page - Abril 2026"
+  },
+  {
+   "filename": "ledger_p5.jpg",
+   "doc_type": "handwritten_ledger",
+   "pages": 1,
+   "ground_truth": "ground_truth/ledger.json",
+   "description": "handwritten ledger page - Mayo 2026"
+  },
+  {
+   "filename": "ledger_p6.jpg",
+   "doc_type": "handwritten_ledger",
+   "pages": 1,
+   "ground_truth": "ground_truth/ledger.json",
+   "description": "handwritten ledger page - Abril 2026"
+  },
+  {
+   "filename": "ledger_p7.jpg",
+   "doc_type": "handwritten_ledger",
+   "pages": 1,
+   "ground_truth": "ground_truth/ledger.json",
+   "description": "handwritten ledger page - Hunyo 2026"
+  },
+  {
+   "filename": "ledger_p8.jpg",
+   "doc_type": "handwritten_ledger",
+   "pages": 1,
+   "ground_truth": "ground_truth/ledger.json",
+   "description": "handwritten ledger page - Buod Enero-Hunyo 2026"
+  },
+  {
+   "filename": "premises_01.jpg",
+   "doc_type": "premises_photo",
+   "pages": 1,
+   "ground_truth": null,
+   "description": "shop front with signage"
+  },
+  {
+   "filename": "premises_02.jpg",
+   "doc_type": "premises_photo",
+   "pages": 1,
+   "ground_truth": null,
+   "description": "workshop interior"
+  }
+ ],
+ "traps": [
+  "T15",
+  "T16",
+  "T17",
+  "T18",
+  "T19",
+  "T20"
+ ],
+ "generated_with": {
+  "generator": "data/synth/generate.py",
+  "seed": 7,
+  "synthetic": true
+ }
+}

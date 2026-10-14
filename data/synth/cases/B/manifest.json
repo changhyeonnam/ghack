@@ -1,0 +1,136 @@
+{
+ "case_id": "B",
+ "name": "Linh Fashion Online",
+ "business_name": "Linh Fashion Official",
+ "sector": "online apparel retail (Shopee seller)",
+ "country": "VN",
+ "city": "Ho Chi Minh City",
+ "language": "vi",
+ "currency": "VND",
+ "requested_amount": 150000000,
+ "expected_outcome": "approve_with_conditions",
+ "account_holder": "NGUYEN THI LINH",
+ "bank_name": "Ngan Hang So Saigon Mekong (synthetic)",
+ "notes": "Trap case: carries T01-T14 (double counting, round trips, document reuse, period/balance breaks, hidden debt).",
+ "documents": [
+  {
+   "filename": "bank_statement_2025-12_2026-05.pdf",
+   "doc_type": "bank_statement",
+   "pages": 5,
+   "ground_truth": "ground_truth/bank_statement.json",
+   "description": "6-month mobile banking statement, Dec 2025-May 2026"
+  },
+  {
+   "filename": "shopee_dashboard_2026-01.png",
+   "doc_type": "seller_dashboard",
+   "pages": 1,
+   "ground_truth": "ground_truth/dashboards.json",
+   "description": "Shopee seller centre capture for 2026-01"
+  },
+  {
+   "filename": "shopee_dashboard_2026-02.png",
+   "doc_type": "seller_dashboard",
+   "pages": 1,
+   "ground_truth": "ground_truth/dashboards.json",
+   "description": "Shopee seller centre capture for 2026-02"
+  },
+  {
+   "filename": "shopee_dashboard_2026-03.png",
+   "doc_type": "seller_dashboard",
+   "pages": 1,
+   "ground_truth": "ground_truth/dashboards.json",
+   "description": "Shopee seller centre capture for 2026-03"
+  },
+  {
+   "filename": "shopee_dashboard_2026-04.png",
+   "doc_type": "seller_dashboard",
+   "pages": 1,
+   "ground_truth": "ground_truth/dashboards.json",
+   "description": "Shopee seller centre capture for 2026-04"
+  },
+  {
+   "filename": "shopee_dashboard_2026-05.png",
+   "doc_type": "seller_dashboard",
+   "pages": 1,
+   "ground_truth": "ground_truth/dashboards.json",
+   "description": "Shopee seller centre capture for 2026-05"
+  },
+  {
+   "filename": "shopee_dashboard_2026-06.png",
+   "doc_type": "seller_dashboard",
+   "pages": 1,
+   "ground_truth": "ground_truth/dashboards.json",
+   "description": "Shopee seller centre capture for 2026-06"
+  },
+  {
+   "filename": "ghn_receipt_01.jpg",
+   "doc_type": "logistics_receipt",
+   "pages": 1,
+   "ground_truth": "ground_truth/receipts.json",
+   "description": "GHN drop-off receipt GHN-2187"
+  },
+  {
+   "filename": "ghn_receipt_02.jpg",
+   "doc_type": "logistics_receipt",
+   "pages": 1,
+   "ground_truth": "ground_truth/receipts.json",
+   "description": "GHN drop-off receipt GHN-2231"
+  },
+  {
+   "filename": "ghn_receipt_03.jpg",
+   "doc_type": "logistics_receipt",
+   "pages": 1,
+   "ground_truth": "ground_truth/receipts.json",
+   "description": "GHN drop-off receipt GHN-2305"
+  },
+  {
+   "filename": "ghn_receipt_04.jpg",
+   "doc_type": "logistics_receipt",
+   "pages": 1,
+   "ground_truth": "ground_truth/receipts.json",
+   "description": "GHN drop-off receipt GHN-2378"
+  },
+  {
+   "filename": "ghn_receipt_05.jpg",
+   "doc_type": "logistics_receipt",
+   "pages": 1,
+   "ground_truth": "ground_truth/receipts.json",
+   "description": "GHN drop-off receipt GHN-2231"
+  },
+  {
+   "filename": "jt_receipt_01.jpg",
+   "doc_type": "logistics_receipt",
+   "pages": 1,
+   "ground_truth": "ground_truth/receipts.json",
+   "description": "J&T drop-off receipt JT-77109"
+  },
+  {
+   "filename": "premises_01.jpg",
+   "doc_type": "premises_photo",
+   "pages": 1,
+   "ground_truth": null,
+   "description": "home stock room"
+  }
+ ],
+ "traps": [
+  "T01",
+  "T02",
+  "T03",
+  "T04",
+  "T05",
+  "T06",
+  "T07",
+  "T08",
+  "T09",
+  "T10",
+  "T11",
+  "T12",
+  "T13",
+  "T14"
+ ],
+ "generated_with": {
+  "generator": "data/synth/generate.py",
+  "seed": 7,
+  "synthetic": true
+ }
+}
