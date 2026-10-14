@@ -156,17 +156,65 @@ for sh in s.shapes:
                     r.text = ""
                 p.runs[0].font.size = Pt(16)
 
+# Redesigned slides (big numbers, cards, hero screenshots) inside the official template.
+MONO = "Courier New"
+
+def eyebrow(slide, text, y=1.22):
+    tb(slide, 0.3, y, 9.4, 0.3, [{"t": text.upper(), "size": 9, "bold": True, "color": TEAL}])
+
+def headline(slide, text, y=1.5, size=19, h=0.75):
+    tb(slide, 0.3, y, 9.4, h, [{"t": text, "size": size, "bold": True, "color": INK}])
+
+def bignum(slide, x, y, w, text, size=30, color=INK):
+    tb(slide, x, y, w, size / 72 * 1.3, [{"t": text, "size": size, "bold": True, "color": color}], margin=0.0)
+
 # ---------- Slide 2: Why this matters ----------
 s = S[2]
 set_title(s, "Why this matters")
-picture(s, f"{IMG}/problem_chain.png", 0.3, 1.25, w=9.4)
-tb(s, 0.3, 5.2, 9.4, 0.3, [{"t": "Sources: IFC MSME Finance · FiinGroup via Viet Nam News (Aug 2026) · ADB Asia SME Monitor 2025 · Bank Indonesia (Aug 2026) · VCCI 2025 via VTV (May 2026)", "size": 7.5, "italic": True, "color": GREY}])
+eyebrow(s, "Southeast Asia's small businesses run the economy but cannot borrow")
+# left hero number
+tb(s, 0.3, 1.45, 4.3, 1.5, [{"t": "8.8%", "size": 96, "bold": True, "color": AMBER}], margin=0.0)
+tb(s, 0.3, 3.05, 4.3, 0.7, [{"t": "of Vietnam's 914,000 SMEs have a bank loan.", "size": 17, "bold": True, "color": INK}], margin=0.0)
+tb(s, 0.3, 3.75, 4.3, 0.8, [{"t": "Large enterprises: 47.1%. The same small firms employ most of the region.", "size": 12.5, "color": GREY}], margin=0.0)
+# mini bar comparison
+card(s, 0.32, 4.55, 4.26, 0.62, fill=PANEL, line=LINE)
+card(s, 0.45, 4.64, 3.6 * 0.471, 0.18, fill=TEAL, line=None, radius=0.1)
+tb(s, 0.45 + 3.6 * 0.471 + 0.05, 4.6, 1.6, 0.26, [{"t": "47.1% large firms", "size": 9, "color": TXT}], margin=0.0)
+card(s, 0.45, 4.9, 3.6 * 0.088, 0.18, fill=AMBER, line=None, radius=0.1)
+tb(s, 0.45 + 3.6 * 0.088 + 0.05, 4.86, 1.6, 0.26, [{"t": "8.8% SMEs", "size": 9, "bold": True, "color": TXT}], margin=0.0)
+# right cards
+cards2 = [("75.5%", "of Vietnamese firms cannot borrow without collateral. What they have is PDFs, screenshots and paper receipts.", False),
+          ("70%", "of emerging-market MSMEs lack adequate financing. Reading their records by hand costs more than a small loan earns.", False),
+          ("The opening", "VPBank, Vietcombank and Agribank are moving from collateral to cash-flow lending. Someone still has to read the cash flow. LedgerLens makes that reading fast, sourced and auditable.", True)]
+y = 1.5
+for big, d, acc in cards2:
+    card(s, 4.9, y, 4.8, 1.12, fill=AMBER_T if acc else WHITE, line=AMBER if acc else LINE, lw=1.5 if acc else 1)
+    tb(s, 5.02, y + 0.1, 1.45, 0.95, [{"t": big, "size": 24 if not acc else 13, "bold": True, "color": INK}], anchor=MSO_ANCHOR.MIDDLE, margin=0.0)
+    tb(s, 6.5, y + 0.08, 3.1, 1.0, [{"t": d, "size": 10.5, "color": TXT}], anchor=MSO_ANCHOR.MIDDLE, margin=0.0)
+    y += 1.22
+tb(s, 0.3, 5.22, 9.4, 0.25, [{"t": "Sources: FiinGroup via Viet Nam News (Aug 2026) · VCCI Private Economic Report 2025 · IFC MSME Finance · VTV (May 2026) · ADB Asia SME Monitor 2025", "size": 7.5, "italic": True, "color": GREY}])
 
 # ---------- Slide 4: Brief about the idea ----------
 s = S[4]
 set_title(s, "Brief about the idea")
-picture(s, f"{IMG}/journey.png", 0.3, 1.3, w=9.4)
-tb(s, 0.3, 5.05, 9.4, 0.4, [{"t": [("In one sentence: ", {"bold": True, "color": INK}), ("the first credit memo where every number can be clicked back to its source, and a second AI tries to break it before a human signs.", {"italic": True})], "size": 11, "color": TXT}])
+headline(s, "LedgerLens turns a shoebox of receipts, screenshots and bank PDFs into a credit memo a bank can trust.", y=1.25, size=20, h=0.9)
+mech = [("1", "Read with evidence", "Gemini reads every document. Every value carries document id, page and bounding box. Python computes the cash flow. Unsourced numbers cannot enter the memo.", False),
+        ("2", "Challenge", "A second agent that never sees the first one's prompt runs 12 underwriting checks against the memo and raises severity-ranked objections with evidence.", True),
+        ("3", "Human signs", "The underwriter accepts or dismisses each objection and signs. Every decision is logged and re-weights the next Challenger run. The applicant gets the reasons in their own language.", False)]
+x = 0.3; cw = 2.95
+for n, t, d, acc in mech:
+    card(s, x, 2.3, cw, 2.35, fill=AMBER_T if acc else WHITE, line=AMBER if acc else LINE, lw=1.5 if acc else 1)
+    pill(s, x + 0.18, 2.48, 0.4, 0.4, n, fill=AMBER if acc else INK, size=12)
+    tb(s, x + 0.7, 2.45, cw - 0.85, 0.5, [{"t": t, "size": 16, "bold": True, "color": INK}], anchor=MSO_ANCHOR.MIDDLE, margin=0.0)
+    tb(s, x + 0.18, 3.05, cw - 0.36, 1.5, [{"t": d, "size": 11, "color": TXT}], margin=0.0)
+    if n != "3":
+        a = s.shapes.add_shape(MSO_SHAPE.RIGHT_ARROW, Inches(x + cw + 0.04), Inches(3.33), Inches(0.2), Inches(0.28))
+        a.fill.solid(); a.fill.fore_color.rgb = RGBColor(0xB9, 0xC6, 0xC3); a.line.fill.background(); a.shadow.inherit = False
+        from pptx.oxml.ns import qn as _qn
+        _st = a._element.find(_qn("p:style"))
+        if _st is not None: a._element.remove(_st)
+    x += cw + 0.275
+tb(s, 0.3, 4.85, 9.4, 0.5, [{"t": [("Not a score. A memo. ", {"bold": True, "color": INK}), ("AI does the reading and the arguing; the underwriter keeps the decision.", {})], "size": 13, "color": GREY}])
 
 # ---------- Slide 5: Opportunities ----------
 s = S[5]
@@ -175,15 +223,116 @@ for p in sh.text_frame.paragraphs[1:]:
     for r in p.runs:
         r.text = ""
 sh.height = Inches(0.5)
-picture(s, f"{IMG}/before_after.png", 0.3, 1.25, w=9.4)
-card(s, 0.3, 4.85, 9.4, 0.55, fill=AMBER_T, line=AMBER, lw=1.2)
-tb(s, 0.45, 4.88, 9.1, 0.5, [{"t": [("Why it is different: ", {"bold": True}), ("the memo is written by one agent and attacked by another, every figure is computed by code and linked to its source, and the underwriter's decisions re-rank the next run. A memo, not a score.", {})], "size": 10, "color": TXT}], anchor=MSO_ANCHOR.MIDDLE)
+headline(s, "Same documents. Read in 3 minutes. Every number defensible.", y=1.22, size=19, h=0.5)
+nums = [("45 → 3", "minutes of reading per file", False), ("11 → 0.10", "USD per case, manual review vs LedgerLens", False), ("0", "unsourced numbers in any memo", True)]
+x = 0.3
+for big, small, acc in nums:
+    card(s, x, 1.8, 3.0, 1.35, fill=AMBER_T if acc else WHITE, line=AMBER if acc else LINE, lw=1.5 if acc else 1)
+    tb(s, x + 0.18, 1.9, 2.7, 0.8, [{"t": big, "size": 38, "bold": True, "color": INK}], margin=0.0)
+    tb(s, x + 0.18, 2.72, 2.7, 0.4, [{"t": small, "size": 10.5, "color": GREY}], margin=0.0)
+    x += 3.2
+lists = [("How it is different", ["Writer and verifier are separate agents, so the memo is never graded by its author", "Figures are computed by code and linked to their source line, not generated", "Underwriter decisions re-rank the next Challenger run"]),
+         ("Who benefits", ["Small businesses with records but no credit file get assessed on cash flow, not collateral", "A declined applicant receives the reasons, in their own language", "Lenders can offer small-ticket loans that were uneconomic to underwrite"])]
+x = 0.3
+for t, items in lists:
+    card(s, x, 3.3, 4.6, 2.05, fill=WHITE, line=LINE)
+    tb(s, x + 0.18, 3.38, 4.3, 0.4, [{"t": t, "size": 13.5, "bold": True, "color": INK}], margin=0.0)
+    tb(s, x + 0.18, 3.8, 4.3, 1.5, [{"t": it, "size": 10.5, "bullet": True, "space_after": 4} for it in items], margin=0.0)
+    x += 4.8
 
 # ---------- Slide 6: Features ----------
 s = S[6]
 set_title(s, "List of features offered by the solution")
-picture(s, f"{IMG}/feature_pipeline.png", 0.3, 1.3, w=9.4)
-tb(s, 0.3, 5.05, 9.4, 0.35, [{"t": "Out of scope by design: credit scoring, loan pricing, core-banking integration. LedgerLens informs the decision; it does not make it.", "size": 9.5, "italic": True, "color": GREY}])
+headline(s, "Every feature hangs on one pipeline, and the pipeline ends with a person.", y=1.22, size=18, h=0.5)
+feats = [("Intake", "Multimodal intake", "PDF, screenshots, photos. Classified and quality-flagged.", False),
+         ("Extract", "Evidence-linked extraction", "Doc id, page, bbox on every value. PDF text layer verifies it.", False),
+         ("Cash flow", "Deterministic model", "Inflow, outflow, trend, volatility, debt service. Python, not the model.", False),
+         ("Analyze", "Clickable memo", "Cites catalog figures only. Click one, the source line opens.", False),
+         ("Challenge", "Battery + 12 checks", "Image hash, balance chain, dates. Ranked objections with evidence.", True),
+         ("Decide", "Underwriter workbench", "Accept or dismiss, sign. Audit log. Decisions re-weight the checks.", False),
+         ("Explain", "Letter and paper memo", "Customer letter in the local language. Memo prints with footnoted sources.", False)]
+n = len(feats); gap = 0.1; cw = (9.4 - gap * (n - 1)) / n
+x = 0.3
+# spine
+card(s, 0.3, 1.98, 9.4, 0.04, fill=INK, line=None, radius=0.0)
+for stage, t, d, acc in feats:
+    pill(s, x + 0.1, 1.86, cw - 0.2, 0.28, stage, fill=AMBER if acc else INK, color=INK if acc else WHITE, size=8.5)
+    card(s, x, 2.3, cw, 2.75, fill=AMBER_T if acc else WHITE, line=AMBER if acc else LINE, lw=1.5 if acc else 1)
+    tb(s, x + 0.1, 2.4, cw - 0.2, 0.8, [{"t": t, "size": 11.5, "bold": True, "color": INK}], margin=0.0)
+    tb(s, x + 0.1, 3.25, cw - 0.2, 1.75, [{"t": d, "size": 9.5, "color": TXT}], margin=0.0)
+    x += cw + gap
+tb(s, 0.3, 5.12, 9.4, 0.3, [{"t": [("Out of scope by design: ", {"bold": True, "color": INK}), ("credit scoring, loan pricing, core-banking integration. LedgerLens informs the decision; it does not make it.", {})], "size": 9.5, "color": GREY}])
+
+# ---------- Slide 8: Wireframes -> the moment ----------
+s = S[8]
+set_title(s, "Wireframes / Mock diagrams of the proposed solution")
+card(s, 0.3, 1.25, 9.4, 4.2, fill=INK, line=None, radius=0.04)
+tb(s, 0.5, 1.33, 6.0, 0.3, [{"t": "THE PRODUCT IN ONE INTERACTION", "size": 9, "bold": True, "color": AMBER}], margin=0.0)
+tb(s, 0.5, 1.6, 6.2, 0.6, [{"t": "Click the number. See the line.", "size": 26, "bold": True, "color": WHITE}], margin=0.0)
+_p = picture(s, f"{SHOTS}/v2_evidence_c.jpg", 0.5, 2.3, h=2.85); _p.line.color.rgb = RGBColor(0x2E, 0x5F, 0x6E); _p.line.width = Pt(0.75)
+pw = _p.width / 914400
+rx = 0.5 + pw + 0.25; rw = 9.7 - 0.2 - rx
+cards8 = [("VND 82,500,000", "Credits from the applicant's own accounts. Sum of 3 credits whose sender matches the account holder.", False),
+          ("3 sources, 1 click", "bank_statement p.2, p.4, p.5. The viewer opens the page and highlights the row.", False),
+          ("Unsourced numbers: 0", "Enforced by the output schema. A miss becomes a Challenger objection.", True)]
+y = 2.3
+for t, d, acc in cards8:
+    card(s, rx, y, rw, 0.88, fill=AMBER if acc else RGBColor(0x15, 0x50, 0x5F), line=None, radius=0.06)
+    tb(s, rx + 0.14, y + 0.07, rw - 0.28, 0.35, [{"t": t, "size": 13 if not acc else 12.5, "bold": True, "color": INK if acc else AMBER}], margin=0.0)
+    tb(s, rx + 0.14, y + 0.42, rw - 0.28, 0.5, [{"t": d, "size": 9, "color": INK if acc else RGBColor(0xBF, 0xD8, 0xD5)}], margin=0.0)
+    y += 0.985
+tb(s, 0.5, 5.2, 6.5, 0.22, [{"t": "Live prototype, case B (Linh Fashion Online): 14 documents, 130 figures, 0 unsourced, 12 objections.", "size": 8, "italic": True, "color": RGBColor(0x8F, 0xB8, 0xB3)}], margin=0.0)
+
+# ---------- Slide 10: Technologies ----------
+s = S[10]
+set_title(s, "Technologies to be used in the solution")
+headline(s, "Gemini reads, ADK orchestrates, Python computes, Cloud Run serves.", y=1.22, size=18, h=0.5)
+tech = [("Google Cloud", "Gemini 3.8 Flash", "Default for every agent. Free tier available; about USD 0.10 per case paid.", False),
+        ("Google Cloud", "Gemini 3.1 Pro", "One env var moves Extractor, Analyst and Challenger to Pro.", False),
+        ("Google Cloud", "Agent Development Kit", "Intake, 5 Extractors, Analyst, Challenger (investigator and writer), Explainer.", False),
+        ("Google Cloud", "Cloud Run + Firebase", "FastAPI backend scales to zero; React workbench on Firebase Hosting.", False),
+        ("Google Cloud", "Firestore + Storage", "Cases, extractions, memos, objections, decisions, audit, traces; documents.", False),
+        ("Python", "Deterministic tools", "Cash-flow model, balance chain, image hash, PDF text-layer cross-check, date and entity checks.", False),
+        ("Python", "LLM cache, budget cap", "Content-hash cache per model and prompt version; hard USD cap per process.", False),
+        ("Integration", "REST API", "Any loan origination system can create cases, run stages and read memos.", True)]
+cw, chh, gx, gy = 2.27, 1.55, 0.1, 0.12
+for i, (tag, name, desc, acc) in enumerate(tech):
+    r, c = divmod(i, 4)
+    x = 0.3 + c * (cw + gx); y = 1.8 + r * (chh + gy)
+    card(s, x, y, cw, chh, fill=AMBER_T if acc else WHITE, line=AMBER if acc else LINE, lw=1.5 if acc else 1)
+    tb(s, x + 0.14, y + 0.1, cw - 0.28, 0.25, [{"t": tag.upper(), "size": 7.5, "bold": True, "color": AMBER if acc or tag == "Python" else TEAL}], margin=0.0)
+    tb(s, x + 0.14, y + 0.33, cw - 0.28, 0.4, [{"t": name, "size": 11.5, "bold": True, "color": INK}], margin=0.0)
+    tb(s, x + 0.14, y + 0.72, cw - 0.28, 0.8, [{"t": desc, "size": 9, "color": GREY}], margin=0.0)
+tb(s, 0.3, 5.15, 9.4, 0.3, [{"t": "Output schema requires source {doc_id, page, bbox} on every value. No separate OCR engine: pages are rendered to images and read by Gemini.", "size": 9, "italic": True, "color": GREY}])
+
+# ---------- Slide 13: Benchmark ----------
+s = S[13]
+set_title(s, "Prototype performance report / Benchmarking")
+headline(s, "19 of 20 planted traps caught, zero unsourced numbers. A single prompt on the same documents caught none.", y=1.22, size=17, h=0.7)
+# hero numbers
+card(s, 0.3, 1.95, 4.5, 2.0, fill=AMBER_T, line=AMBER, lw=1.5)
+tb(s, 0.45, 2.0, 2.2, 0.3, [{"t": "LEDGERLENS", "size": 9, "bold": True, "color": AMBER}], margin=0.0)
+tb(s, 0.45, 2.25, 2.3, 1.2, [{"t": "19", "size": 72, "bold": True, "color": INK}], margin=0.0)
+tb(s, 0.45, 3.45, 2.2, 0.4, [{"t": "of 20 traps caught", "size": 11, "color": TXT}], margin=0.0)
+tb(s, 2.75, 2.0, 2.0, 0.3, [{"t": "SINGLE PROMPT", "size": 9, "bold": True, "color": GREY}], margin=0.0)
+tb(s, 2.75, 2.25, 2.0, 1.2, [{"t": "0", "size": 72, "bold": True, "color": RGBColor(0xB0, 0xB8, 0xBE)}], margin=0.0)
+tb(s, 2.75, 3.45, 2.0, 0.4, [{"t": "same documents, one prompt", "size": 11, "color": GREY}], margin=0.0)
+card(s, 0.3, 4.1, 2.2, 1.25, fill=WHITE, line=LINE)
+tb(s, 0.42, 4.15, 2.0, 0.6, [{"t": "0", "size": 30, "bold": True, "color": INK}], margin=0.0)
+tb(s, 0.42, 4.75, 2.0, 0.55, [{"t": "unsourced numbers (baseline: 6)", "size": 9.5, "color": GREY}], margin=0.0)
+card(s, 2.6, 4.1, 2.2, 1.25, fill=WHITE, line=LINE)
+tb(s, 2.72, 4.15, 2.0, 0.6, [{"t": "4.5 s", "size": 30, "bold": True, "color": INK}], margin=0.0)
+tb(s, 2.72, 4.75, 2.0, 0.55, [{"t": "per case, USD 0.00 on cached run", "size": 9.5, "color": GREY}], margin=0.0)
+rows = [["Metric", "Target", "Result"],
+        ["Trap recall", "≥ 16 / 20", "19 / 20"],
+        ["Unsourced numbers", "0", "0"],
+        ["Objections on clean case A", "≤ 20%", "0"],
+        ["Extraction row accuracy", "≥ 97%", "100%"],
+        ["Evidence-link accuracy", "≥ 95%", "100%"],
+        ["Time per case", "≤ 180 s", "4.5 s"]]
+table(s, 5.0, 1.95, 4.7, 2.3, rows, [2.3, 1.1, 1.3], font=9.5, bold_first_col=True)
+card(s, 5.0, 4.4, 4.7, 0.95, fill=PANEL, line=LINE)
+tb(s, 5.12, 4.44, 4.5, 0.9, [{"t": [("How measured. ", {"bold": True}), ("Run of 2026-10-14 in mock mode: full pipeline plus the deterministic Challenger battery, 3 synthetic businesses, 43 documents, answer key traps.json. Baseline is a stub in this mode; a live Gemini 3.8 Flash run replaces both before submission.", {})], "size": 8.5, "color": TXT}], margin=0.0)
 
 # ---------- Slide 6: Process flow ----------
 s = S[7]
@@ -191,34 +340,11 @@ set_title(s, "Process flow diagram")
 picture(s, f"{IMG}/process_flow.png", 0.5, 1.28, h=3.8)
 tb(s, 0.3, 5.12, 9.4, 0.3, [{"t": "Three lanes: the loan officer uploads, the agents read and challenge, the underwriter decides. Decisions flow back into the Challenger's priorities.", "size": 9.5, "italic": True, "color": GREY}])
 
-# ---------- Slide 8: Wireframes -> the underwriter's screen ----------
-s = S[8]
-set_title(s, "Wireframes / Mock diagrams of the proposed solution")
-_p = picture(s, f"{SHOTS}/v2_memo.jpg", 0.3, 1.3, w=6.3); _p.line.color.rgb = LINE; _p.line.width = Pt(0.75)
-callouts = [("1", "Recommendation up front", "Headline, conditions and figures drafted by the Analyst from catalog figures only"),
-            ("2", "Numbers link to evidence", "Click an underlined value: the source page opens with the bounding box highlighted"),
-            ("3", "Unsourced numbers: 0", "Enforced by the output schema; a miss becomes a Challenger objection"),
-            ("4", "Pipeline, cost, calls", "Five stages with timings, USD and LLM-call counters; Export prints a paper memo")]
-y = 1.3
-for n, t, d in callouts:
-    card(s, 6.85, y, 2.85, 0.95, fill=PANEL, line=LINE)
-    pill(s, 6.97, y + 0.13, 0.3, 0.3, n, fill=INK, size=9)
-    tb(s, 7.35, y + 0.09, 2.3, 0.36, [{"t": t, "size": 10.5, "bold": True, "color": INK}])
-    tb(s, 6.97, y + 0.46, 2.68, 0.46, [{"t": d, "size": 8, "color": GREY}])
-    y += 1.03
-tb(s, 0.3, 5.26, 6.5, 0.25, [{"t": "Live prototype, case B: 14 documents, 130 figures, 0 unsourced, 12 objections.", "size": 8.5, "italic": True, "color": GREY}])
-
 # ---------- Slide 8: Architecture ----------
 s = S[9]
 set_title(s, "Architecture diagram of the proposed solution")
 picture(s, f"{IMG}/architecture.png", 0.9, 1.28, h=3.95)
 
-
-# ---------- Slide 10: Technologies ----------
-s = S[10]
-set_title(s, "Technologies to be used in the solution")
-picture(s, f"{IMG}/tech_stack.png", 0.3, 1.3, w=9.4)
-tb(s, 0.3, 5.1, 9.4, 0.35, [{"t": "Output schema requires source {doc_id, page, bbox} on every value. LEDGERLENS_MODEL_PRO=gemini-3.1-pro-preview switches the heavy agents to Pro.", "size": 9.5, "italic": True, "color": GREY}])
 
 # ---------- Slide 11: Cost ----------
 s = S[11]
@@ -276,40 +402,6 @@ for f, n, t, d in shots:
     tb(s, 7.25, cy + 0.34, 2.45, 0.72, [{"t": d, "size": 8.5, "color": GREY}])
     cy += 1.06
 
-# ---------- Slide 13: Benchmark ----------
-s = S[13]
-set_title(s, "Prototype performance report / Benchmarking")
-tb(s, 0.3, 1.25, 9.4, 0.45, [{"t": "19 of 20 planted traps caught, zero unsourced numbers. A single prompt on the same documents caught none.", "size": 14, "bold": True, "color": INK}])
-from pptx.chart.data import CategoryChartData
-from pptx.enum.chart import XL_CHART_TYPE, XL_LABEL_POSITION, XL_LEGEND_POSITION
-cd = CategoryChartData()
-cd.categories = ["Planted traps caught (of 20)", "Unsourced numbers in memo"]
-cd.add_series("Single prompt", (0, 6))
-cd.add_series("LedgerLens", (19, 0))
-gf = s.shapes.add_chart(XL_CHART_TYPE.COLUMN_CLUSTERED, Inches(0.3), Inches(1.75), Inches(4.3), Inches(3.5), cd)
-ch = gf.chart; ch.has_legend = True; ch.legend.position = XL_LEGEND_POSITION.BOTTOM; ch.legend.include_in_layout = False
-ch.legend.font.size = Pt(9.5); ch.legend.font.name = FONT; ch.legend.font.color.rgb = TXT
-ch.has_title = False
-pl = ch.plots[0]; pl.has_data_labels = True; pl.gap_width = 80; pl.overlap = -10
-pl.data_labels.number_format = '0'; pl.data_labels.number_format_is_linked = False
-pl.data_labels.position = XL_LABEL_POSITION.OUTSIDE_END
-pl.data_labels.font.size = Pt(11); pl.data_labels.font.bold = True; pl.data_labels.font.color.rgb = INK; pl.data_labels.font.name = FONT
-pl.series[0].format.fill.solid(); pl.series[0].format.fill.fore_color.rgb = RGBColor(0xB0, 0xB8, 0xBE)
-pl.series[1].format.fill.solid(); pl.series[1].format.fill.fore_color.rgb = AMBER
-ca = ch.category_axis; ca.tick_labels.font.size = Pt(9.5); ca.tick_labels.font.name = FONT; ca.tick_labels.font.color.rgb = TXT; ca.format.line.color.rgb = LINE; ca.has_major_gridlines = False
-va = ch.value_axis; va.visible = False; va.has_major_gridlines = False; va.maximum_scale = 22
-rows = [["Metric", "Target", "Result"],
-        ["Trap recall", "≥ 16 / 20", "19 / 20"],
-        ["Unsourced numbers", "0", "0 (baseline 6)"],
-        ["Objections on clean case A", "≤ 20%", "0"],
-        ["Extraction row accuracy", "≥ 97%", "100%"],
-        ["Evidence-link accuracy", "≥ 95%", "100%"],
-        ["Time per case", "≤ 180 s", "4.5 s"],
-        ["Cost per case", "≤ USD 0.50", "USD 0.00"]]
-table(s, 4.85, 1.75, 4.85, 2.55, rows, [2.25, 1.1, 1.5], font=9, bold_first_col=True)
-card(s, 4.85, 4.42, 4.85, 0.9, fill=AMBER_T, line=AMBER, lw=1.2)
-tb(s, 4.98, 4.46, 4.6, 0.85, [{"t": [("How measured. ", {"bold": True}), ("Run of 2026-10-14 in mock mode: full pipeline plus the deterministic Challenger battery, no Gemini calls, 3 synthetic businesses, 43 documents, answer key traps.json. Baseline is a stub in this mode; a live Gemini 3.8 Flash run replaces both before submission.", {})], "size": 8.5, "color": TXT}])
-
 # ---------- Slide 14: Future development ----------
 s = S[14]
 set_title(s, "Additional details / Future development")
@@ -323,8 +415,8 @@ for p in sh.text_frame.paragraphs[1:]:
     for r in p.runs:
         r.text = ""
 sh.height = Inches(0.5)
-links = [("GitHub public repository", "github.com/<team>/ledgerlens", "English README, architecture, run instructions, synthetic-data notice"),
-         ("Demo video (3 minutes)", "YouTube public link", "Problem in 20 seconds, click-to-source and Challenger scenes, benchmark at 2:20"),
+links = [("GitHub public repository", "github.com/changhyeonnam/ghack", "English README, architecture, run instructions, synthetic-data notice, presentation/"),
+         ("Demo video (3 to 4 minutes)", "YouTube public link", "Problem in 20 seconds, click-to-source and Challenger scenes, benchmark near the end"),
          ("Final product", "ledgerlens-<hash>.a.run.app", "Cloud Run service, three demo cases preloaded, warm through evaluation")]
 y = 1.3
 for t, u, d in links:
