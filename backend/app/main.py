@@ -310,9 +310,12 @@ _static = get_settings().static_dir
 if _static and Path(_static).exists():
     app.mount("/assets", StaticFiles(directory=str(Path(_static) / "assets")), name="assets")
 
+    _static_root = Path(_static).resolve()
+
     @app.get("/{full_path:path}", include_in_schema=False)
     def spa(full_path: str):
-        candidate = Path(_static) / full_path
-        if full_path and candidate.is_file():
+        candidate = (_static_root / full_path).resolve()
+        # "..%2f" segments must not escape the static dir (would expose source, /etc, /proc/self/environ)
+        if full_path and candidate.is_relative_to(_static_root) and candidate.is_file():
             return FileResponse(candidate)
-        return FileResponse(Path(_static) / "index.html")
+        return FileResponse(_static_root / "index.html")

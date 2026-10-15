@@ -17,6 +17,7 @@ import pymupdf
 from ..schemas import BankStatementExtraction, SourceRef
 
 AMOUNT_CHARS = re.compile(r"[^\d]")
+CENTS_TOKEN = re.compile(r"\d[.,]\d{2}$")  # "14,800.00", "0,94": a printed decimal part
 
 
 @dataclass
@@ -25,6 +26,7 @@ class PageWords:
     height: float
     words: list[tuple[float, float, float, float, str]]  # x0, y0, x1, y1, text
     digits_index: dict[str, list[tuple[float, float, float, float]]] = field(default_factory=dict)
+    cents_index: dict[str, list[tuple[float, float, float, float]]] = field(default_factory=dict)  # tokens with 2 decimals
 
 
 def _digits(s: str) -> str:
@@ -41,6 +43,8 @@ def load_pages(pdf_bytes: bytes) -> list[PageWords]:
                 d = _digits(t)
                 if len(d) >= 3:
                     pw.digits_index.setdefault(d, []).append((x0, y0, x1, y1))
+                    if CENTS_TOKEN.search(t):
+                        pw.cents_index.setdefault(d, []).append((x0, y0, x1, y1))
             pages.append(pw)
     return pages
 
@@ -49,13 +53,21 @@ def has_text_layer(pages: list[PageWords]) -> bool:
     return sum(len(p.words) for p in pages) >= 20
 
 
-def _amount_variants(value: float) -> set[str]:
+def _amount_variants(value: float) -> tuple[Optional[str], str]:
+    """(integer digits or None, digits with two decimals). The decimal form is only matched against tokens that are
+    printed with two decimals, so 12,500 can no longer match a printed 1.250.000 (a 100x misread)."""
     i = int(round(value))
-    out = {str(i)}
-    if abs(value - i) > 1e-6:
-        out.add(str(int(round(value * 100))))      # 14800.50 -> "1480050" (printed as 14,800.50)
-    out.add(str(i) + "00")                          # 14800 printed as 14,800.00
-    return out
+    whole = str(i) if abs(value - i) < 1e-6 else None
+    cents = _digits(f"{value:.2f}")                   # 14800 -> "1480000", 14800.5 -> "1480050", 0.94 -> "094"
+    return whole, cents
+
+
+def _find_amount(pw: "PageWords", value: float) -> list[tuple[float, float, float, float]]:
+    whole, cents = _amount_variants(value)
+    boxes = list(pw.cents_index.get(cents, []))
+    if whole:
+        boxes += [b for b in pw.digits_index.get(whole, []) if b not in boxes]
+    return boxes
 
 
 def _bbox_overlaps(ref: SourceRef, box: tuple[float, float, float, float], pw: PageWords, slack: float = 0.02) -> bool:
@@ -103,8 +115,7 @@ def cross_check_statement(pdf_bytes: bytes, ex: BankStatementExtraction) -> Cros
         pw = pages[p - 1] if 1 <= p <= len(pages) else None
         found_boxes: list[tuple[float, float, float, float]] = []
         if pw and amount > 0:
-            for v in _amount_variants(amount):
-                found_boxes += pw.digits_index.get(v, [])
+            found_boxes = _find_amount(pw, amount)
         if found_boxes:
             cc.amounts_found += 1
             if any(_bbox_overlaps(t.source, b, pw) for b in found_boxes):

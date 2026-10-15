@@ -1,19 +1,24 @@
 {
- "generated_at": "2026-10-14T11:11:36+00:00",
+ "generated_at": "2026-10-15T07:15:03+00:00",
  "summary": {
-  "mode": "mock",
+  "mode": "cache_only",
   "model_flash": "gemini-3.8-flash",
   "model_pro": "gemini-3.8-flash",
   "traps_total": 20,
-  "traps_caught": 19,
-  "trap_recall": 0.95,
-  "baseline_traps_caught": 0,
-  "baseline_trap_recall": 0.0,
-  "clean_case_objections": 0,
-  "false_positive_share": 0.0,
+  "traps_caught": 16,
+  "trap_recall": 0.8,
+  "trap_recall_ci95": [
+   0.58,
+   0.92
+  ],
+  "traps_caught_lenient": 18,
+  "baseline_traps_caught": 1,
+  "baseline_trap_recall": 0.05,
+  "clean_case_objections": 1,
+  "false_positive_share": 0.045,
   "unsourced_numbers": 0,
-  "baseline_unsourced_numbers": 6,
-  "avg_seconds": 4.5,
+  "baseline_unsourced_numbers": 45,
+  "avg_seconds": 6.8,
   "avg_cost_usd": 0.0,
   "extraction_row_accuracy": 1.0,
   "evidence_link_accuracy": 1.0
@@ -23,20 +28,28 @@
    "case": "A",
    "name": "Warung Ibu Sari",
    "expected_outcome": "approve",
-   "recommendation": "approve",
+   "recommendation": "approve_with_conditions",
    "n_documents": 18,
-   "seconds": 5.0,
+   "seconds": 7.2,
    "cost_usd": 0.0,
-   "tokens": 0,
-   "llm_calls": 22,
-   "cached_calls": 0,
-   "n_figures": 32,
+   "tokens": 103102,
+   "llm_calls": 26,
+   "cached_calls": 26,
+   "n_figures": 36,
    "unsourced_numbers": 0,
-   "n_objections": 0,
-   "objections": [],
+   "n_objections": 1,
+   "objections": [
+    {
+     "id": "O01",
+     "q": "Q8",
+     "severity": "medium",
+     "title": "Submitted premises images are synthetic illustrations"
+    }
+   ],
    "traps_total": 0,
    "traps_caught": 0,
    "trap_hits": {},
+   "traps_caught_lenient": 0,
    "extraction": {
     "gt_rows": 184,
     "rows_matched": 184,
@@ -44,15 +57,15 @@
     "evidence_link_accuracy": 1.0
    },
    "baseline": {
-    "recommendation": "approve",
+    "recommendation": "approve_with_conditions",
     "traps_caught": 0,
     "trap_hits": {},
-    "n_concerns": 1,
-    "unsourced_numbers": 2,
-    "n_figures": 1,
+    "n_concerns": 2,
+    "unsourced_numbers": 13,
+    "n_figures": 7,
     "seconds": 0.0,
     "cost_usd": 0.0,
-    "tokens": 0
+    "tokens": 14932
    }
   },
   {
@@ -61,14 +74,14 @@
    "expected_outcome": "approve_with_conditions",
    "recommendation": "approve_with_conditions",
    "n_documents": 14,
-   "seconds": 2.9,
+   "seconds": 4.8,
    "cost_usd": 0.0,
-   "tokens": 0,
-   "llm_calls": 18,
-   "cached_calls": 0,
-   "n_figures": 36,
+   "tokens": 98889,
+   "llm_calls": 22,
+   "cached_calls": 22,
+   "n_figures": 51,
    "unsourced_numbers": 0,
-   "n_objections": 12,
+   "n_objections": 13,
    "objections": [
     {
      "id": "O01",
@@ -80,19 +93,19 @@
      "id": "O02",
      "q": "Q4",
      "severity": "critical",
-     "title": "ghn_receipt_02.jpg and ghn_receipt_05.jpg are the same image"
+     "title": "Duplicated Logistics Receipt With Modified Dates"
     },
     {
      "id": "O03",
      "q": "Q6",
      "severity": "critical",
-     "title": "Running balance breaks at row T0080"
+     "title": "Bank Statement Running Balance Continuity Breaks"
     },
     {
      "id": "O04",
      "q": "Q6",
      "severity": "critical",
-     "title": "Running balance breaks at row T0136"
+     "title": "Running balance breaks at row T0138"
     },
     {
      "id": "O05",
@@ -122,13 +135,13 @@
      "id": "O09",
      "q": "Q11",
      "severity": "medium",
-     "title": "Inconsistent business name across documents"
+     "title": "Shop Identity Inconsistency on March 2026 Dashboard"
     },
     {
      "id": "O10",
      "q": "Q5",
      "severity": "medium",
-     "title": "Document periods do not line up"
+     "title": "Period Misalignment Between Bank Statements and Seller Dashboards"
     },
     {
      "id": "O11",
@@ -141,31 +154,29 @@
      "q": "Q7",
      "severity": "medium",
      "title": "Recurring transfer to SPAYLATER looks like loan repayment"
+    },
+    {
+     "id": "O13",
+     "q": "Q9",
+     "severity": "medium",
+     "title": "1 extracted amounts are not in the PDF text of bank_statement_2025-12_2026-05.pdf"
     }
    ],
    "traps_total": 14,
-   "traps_caught": 13,
+   "traps_caught": 12,
    "trap_hits": {
     "T01": [
      "O01"
     ],
-    "T02": [
-     "O01"
-    ],
+    "T02": [],
     "T03": [],
     "T04": [
-     "O05",
-     "O06",
-     "O07"
+     "O05"
     ],
     "T05": [
-     "O05",
-     "O06",
-     "O07"
+     "O06"
     ],
     "T06": [
-     "O05",
-     "O06",
      "O07"
     ],
     "T07": [
@@ -181,22 +192,19 @@
      "O10"
     ],
     "T11": [
-     "O03",
-     "O04"
+     "O03"
     ],
     "T12": [
-     "O03",
      "O04"
     ],
     "T13": [
-     "O11",
-     "O12"
+     "O11"
     ],
     "T14": [
-     "O11",
      "O12"
     ]
    },
+   "traps_caught_lenient": 13,
    "extraction": {
     "gt_rows": 196,
     "rows_matched": 196,
@@ -204,7 +212,7 @@
     "evidence_link_accuracy": 1.0
    },
    "baseline": {
-    "recommendation": "approve",
+    "recommendation": "approve_with_conditions",
     "traps_caught": 0,
     "trap_hits": {
      "T01": [],
@@ -222,96 +230,97 @@
      "T13": [],
      "T14": []
     },
-    "n_concerns": 1,
-    "unsourced_numbers": 2,
-    "n_figures": 1,
+    "n_concerns": 3,
+    "unsourced_numbers": 20,
+    "n_figures": 5,
     "seconds": 0.0,
     "cost_usd": 0.0,
-    "tokens": 0
+    "tokens": 12413
    }
   },
   {
    "case": "C",
    "name": "Reyes Auto Repair",
    "expected_outcome": "request_more_documents",
-   "recommendation": "request_more_documents",
+   "recommendation": "reject",
    "n_documents": 11,
-   "seconds": 5.7,
+   "seconds": 8.3,
    "cost_usd": 0.0,
-   "tokens": 0,
-   "llm_calls": 15,
-   "cached_calls": 0,
-   "n_figures": 27,
+   "tokens": 76887,
+   "llm_calls": 18,
+   "cached_calls": 18,
+   "n_figures": 41,
    "unsourced_numbers": 0,
-   "n_objections": 7,
+   "n_objections": 8,
    "objections": [
     {
      "id": "O01",
      "q": "Q4",
      "severity": "critical",
-     "title": "premises_02.jpg was already filed in past case PAST-2025-0471"
+     "title": "Duplicated and recycled synthetic documents across ledger and premises files"
     },
     {
      "id": "O02",
-     "q": "Q6",
+     "q": "Q4",
      "severity": "critical",
-     "title": "Running balance breaks at row T0051"
+     "title": "premises_02.jpg was already filed in past case PAST-2025-0471"
     },
     {
      "id": "O03",
-     "q": "Q1",
-     "severity": "high",
-     "title": "Ledger cash income is the same cash later deposited"
+     "q": "Q6",
+     "severity": "critical",
+     "title": "Bank statement running balance discontinuity between February and May"
     },
     {
      "id": "O04",
-     "q": "Q4",
-     "severity": "high",
-     "title": "ledger_p3.jpg and ledger_p6.jpg are the same image"
-    },
-    {
-     "id": "O05",
      "q": "Q5",
      "severity": "high",
      "title": "No statement rows for 2026-03, 2026-04"
     },
     {
-     "id": "O06",
+     "id": "O05",
      "q": "Q7",
      "severity": "high",
-     "title": "Recurring transfer to BDO AUTO LOAN looks like loan repayment"
+     "title": "Undisclosed recurring loan amortization and weekly individual transfers"
+    },
+    {
+     "id": "O06",
+     "q": "Q8",
+     "severity": "high",
+     "title": "Unverifiable premises scale due to synthetic graphic renderings"
     },
     {
      "id": "O07",
+     "q": "Q11",
+     "severity": "medium",
+     "title": "Inconsistent business name across documents"
+    },
+    {
+     "id": "O08",
      "q": "Q5",
      "severity": "medium",
-     "title": "Document periods do not line up"
+     "title": "Bank statement period missing March and April relative to ledger submission"
     }
    ],
    "traps_total": 6,
-   "traps_caught": 6,
+   "traps_caught": 4,
    "trap_hits": {
     "T15": [
-     "O01",
-     "O04"
+     "O01"
     ],
     "T16": [
-     "O02",
-     "O05"
-    ],
-    "T17": [
-     "O06"
-    ],
-    "T18": [
-     "O06"
-    ],
-    "T19": [
      "O03"
     ],
+    "T17": [
+     "O05"
+    ],
+    "T18": [],
+    "T19": [],
     "T20": [
-     "O01"
+     "O02"
     ]
    },
+   "traps_caught_lenient": 5,
    "extraction": {
     "gt_rows": 101,
     "rows_matched": 101,
@@ -319,22 +328,24 @@
     "evidence_link_accuracy": 1.0
    },
    "baseline": {
-    "recommendation": "approve",
-    "traps_caught": 0,
+    "recommendation": "hold",
+    "traps_caught": 1,
     "trap_hits": {
      "T15": [],
      "T16": [],
-     "T17": [],
+     "T17": [
+      "Existing Fixed Auto Loan Obligation"
+     ],
      "T18": [],
      "T19": [],
      "T20": []
     },
-    "n_concerns": 1,
-    "unsourced_numbers": 2,
-    "n_figures": 1,
+    "n_concerns": 4,
+    "unsourced_numbers": 12,
+    "n_figures": 6,
     "seconds": 0.0,
     "cost_usd": 0.0,
-    "tokens": 0
+    "tokens": 10335
    }
   }
  ]

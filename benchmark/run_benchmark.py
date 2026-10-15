@@ -35,20 +35,65 @@ QID = re.compile(r"\bQ(1[0-2]|[1-9])\b")
 
 def fmt_amounts(a: float) -> list[str]:
     i = int(round(a))
-    return [f"{i:,}", str(i), f"{i:,.2f}", f"{i/1e6:.1f}M".replace(".0M", "M")]
+    out = [f"{i:,}", str(i), f"{i:,}".replace(",", "."), f"{i:,.2f}"]
+    if i >= 1_000_000:  # "24M", "24.5M"; never for small amounts ("0M" would match any "50M")
+        out.append(f"{i/1e6:.1f}M".replace(".0M", "M"))
+    return out
 
 
-def trap_matches(trap: dict, text: str, question_id: str | None, evidence_docs: set[str], fn_to_doc: dict[str, str]) -> bool:
+def _has_amount(text: str, a: float) -> bool:
+    # whole-number match: "3,000" must not hit "13,000" or "3,000,000"
+    return any(re.search(rf"(?<![\d.,]){re.escape(s)}(?![\d]|[.,]\d)", text) for s in fmt_amounts(a))
+
+
+def trap_matches(trap: dict, text: str, question_id: str | None, evidence_docs: set[str], fn_to_doc: dict[str, str],
+                 strict: bool = True) -> bool:
+    """strict (default, reported): the trap's identifying evidence must appear. A trap defined by amounts needs an
+    amount; one defined by files needs the document; only traps with neither fall back to keywords. lenient = the
+    original any-of rule, kept for comparison with earlier reports."""
     t = text.lower()
     m = trap["match"]
     kw = any(k.lower() in t for k in m.get("any_keywords", [])) and all(k.lower() in t for k in m.get("all_keywords", []))
-    amt = any(s in text for a in m.get("amounts", []) for s in fmt_amounts(a))
-    docs = {fn_to_doc.get(f) for f in m.get("filenames_any", [])} - {None}
-    doc_hit = bool(docs & evidence_docs) or any(f.lower() in t for f in m.get("filenames_any", []))
+    amounts = m.get("amounts") or []
+    files = m.get("filenames_any") or []
+    amt = any(_has_amount(text, a) for a in amounts)
+    docs = {fn_to_doc.get(f) for f in files} - {None}
+    doc_hit = bool(docs & evidence_docs) or any(f.lower() in t for f in files)
     q_ok = question_id is None or question_id == "CUSTOM" or question_id in trap["expected_question_ids"]
-    if question_id is None:  # baseline has no checklist: keyword or amount is enough
-        return kw or amt or doc_hit
-    return q_ok and (kw or amt or doc_hit)
+    if not strict:
+        return (kw or amt or doc_hit) if question_id is None else q_ok and (kw or amt or doc_hit)
+    if amounts:
+        ident = amt
+    elif files:
+        ident = doc_hit
+    else:
+        ident = kw
+    return q_ok and ident
+
+
+def assign_hits(traps: list[dict], items: list[tuple[str, str, str | None, set[str]]], fn_to_doc: dict[str, str],
+                strict: bool = True) -> dict[str, list[str]]:
+    """Each objection/concern counts for at most one trap (strict); traps with fewer candidates pick first."""
+    cands = {tr["id"]: [i for i, txt, q, ev in items if trap_matches(tr, txt, q, ev, fn_to_doc, strict)] for tr in traps}
+    if not strict:
+        return cands
+    used: set[str] = set()
+    hits: dict[str, list[str]] = {}
+    for tid in sorted(cands, key=lambda k: (len(cands[k]) or 99, k)):
+        free = [i for i in cands[tid] if i not in used]
+        hits[tid] = free[:1]
+        used.update(free[:1])
+    return {tr["id"]: hits[tr["id"]] for tr in traps}
+
+
+def wilson(k: int, n: int, z: float = 1.96) -> list[float] | None:
+    if not n:
+        return None
+    p = k / n
+    d = 1 + z * z / n
+    c = (p + z * z / (2 * n)) / d
+    h = z * ((p * (1 - p) / n + z * z / (4 * n * n)) ** 0.5) / d
+    return [round(c - h, 2), round(c + h, 2)]
 
 
 def count_unsourced_baseline(out: dict) -> int:
@@ -126,25 +171,24 @@ async def main() -> None:
         ch = ChallengeResult.model_validate(repo.get_artifact(cid, "challenge"))
         exs = [DocumentExtraction.model_validate(x) for x in repo.get_artifact(cid, "extractions")["items"]]
         case_traps = [t for t in traps if t["case_id"] == sid]
-        hits = {}
-        for tr in case_traps:
-            hit = [o.id for o in ch.objections if trap_matches(tr, f"{o.title} {o.claim} {o.tool_evidence or ''}", o.question_id, {r.doc_id for r in o.evidence_refs}, fn_to_doc)]
-            hits[tr["id"]] = hit
+        items = [(o.id, f"{o.title} {o.claim} {o.tool_evidence or ''}", o.question_id, {r.doc_id for r in o.evidence_refs}) for o in ch.objections]
+        hits = assign_hits(case_traps, items, fn_to_doc)
+        lenient_hits = assign_hits(case_traps, items, fn_to_doc, strict=False)
         unsourced = len(memo.unsourced_numerals) + len(memo.unresolved_figure_ids) + sum(1 for f in memo.figures if not f.is_sourced())
         acc = extraction_accuracy(exs, case, gt, manifest)
         row = {"case": sid, "name": case.name, "expected_outcome": manifest.get("expected_outcome"), "recommendation": memo.draft.recommendation,
                "n_documents": len(case.documents), "seconds": elapsed, "cost_usd": case.stats.total_cost_usd, "tokens": case.stats.total_tokens,
                "llm_calls": case.stats.n_llm_calls, "cached_calls": case.stats.n_cached_calls, "n_figures": len(memo.figures), "unsourced_numbers": unsourced,
                "n_objections": len(ch.objections), "objections": [{"id": o.id, "q": o.question_id, "severity": o.severity.value, "title": o.title} for o in ch.objections],
-               "traps_total": len(case_traps), "traps_caught": sum(1 for v in hits.values() if v), "trap_hits": hits, "extraction": acc}
+               "traps_total": len(case_traps), "traps_caught": sum(1 for v in hits.values() if v), "trap_hits": hits,
+               "traps_caught_lenient": sum(1 for v in lenient_hits.values() if v), "extraction": acc}
         print(f"  recommendation={memo.draft.recommendation} objections={len(ch.objections)} traps {row['traps_caught']}/{len(case_traps)} unsourced={unsourced} "
               f"cost=${case.stats.total_cost_usd:.3f} time={elapsed}s extraction={acc}")
         if not args.no_baseline:
             t1 = time.time()
             base = await run_baseline(case, repo=repo, settings=settings, mock_context=pipe.mock_context(case))
-            bhits = {}
-            for tr in case_traps:
-                bhits[tr["id"]] = [c["title"] for c in base.get("concerns", []) if trap_matches(tr, f"{c['title']} {c['claim']}", None, set(), fn_to_doc)]
+            bitems = [(c["title"], f"{c['title']} {c['claim']}", None, set()) for c in base.get("concerns", [])]
+            bhits = assign_hits(case_traps, bitems, fn_to_doc)
             row["baseline"] = {"recommendation": base.get("recommendation"), "traps_caught": sum(1 for v in bhits.values() if v), "trap_hits": bhits,
                                "n_concerns": len(base.get("concerns", [])), "unsourced_numbers": count_unsourced_baseline(base), "n_figures": len(base.get("figures", [])),
                                "seconds": round(time.time() - t1, 1), "cost_usd": base["_usage"]["cost_usd"], "tokens": base["_usage"]["input_tokens"] + base["_usage"]["output_tokens"] + base["_usage"]["thinking_tokens"]}
@@ -160,6 +204,7 @@ async def main() -> None:
     all_obj = sum(r["n_objections"] for r in results) or 1
     summary = {"mode": settings.resolved_llm_mode, "model_flash": settings.model_flash, "model_pro": settings.model_pro, "traps_total": total_traps, "traps_caught": caught,
                "trap_recall": round(caught / total_traps, 3) if total_traps else None,
+               "trap_recall_ci95": wilson(caught, total_traps), "traps_caught_lenient": sum(r.get("traps_caught_lenient", 0) for r in trap_rows),
                "baseline_traps_caught": b_caught if not args.no_baseline else None, "baseline_trap_recall": round(b_caught / total_traps, 3) if total_traps and not args.no_baseline else None,
                "clean_case_objections": sum(r["n_objections"] for r in clean), "false_positive_share": round(sum(r["n_objections"] for r in clean) / all_obj, 3),
                "unsourced_numbers": sum(r["unsourced_numbers"] for r in results), "baseline_unsourced_numbers": sum(r.get("baseline", {}).get("unsourced_numbers", 0) for r in results) if not args.no_baseline else None,
@@ -179,6 +224,10 @@ async def main() -> None:
             "battery only, so this measures the pipeline and the tools, not the model. The baseline row is a stub in this mode. Re-run with "
             "GOOGLE_API_KEY set for the real numbers.") if summary["mode"] == "mock" else ""
     md = [f"# LedgerLens benchmark ({summary['mode']}, {summary['model_pro']})", "", f"Generated {out['generated_at']}", "", note, "",
+          "Scoring is strict: an objection counts for a trap only if it carries the trap's identifying evidence (amount or "
+          "document; keywords only for traps defined by neither) under an expected checklist question, and each objection "
+          f"counts for at most one trap. The earlier any-keyword rule would give {summary['traps_caught_lenient']}/{total_traps}. "
+          f"95% Wilson interval for recall: {summary['trap_recall_ci95']}. Synthetic data, n = 3 businesses.", "",
           "| Metric | LedgerLens | Single-prompt baseline | Target |", "|---|---|---|---|",
           f"| Trap recall | {caught}/{total_traps} ({summary['trap_recall']}) | {summary['baseline_traps_caught']}/{total_traps} ({summary['baseline_trap_recall']}) | >= 16/20 |",
           f"| Unsourced numbers | {summary['unsourced_numbers']} | {summary['baseline_unsourced_numbers']} | 0 |",

@@ -138,10 +138,22 @@ def _covers(llm: Objection, rule: Objection) -> bool:
 
 
 def merge_objections(llm: list[Objection], rules: list[Objection]) -> list[Objection]:
+    """Tool-proven findings must surface: an LLM objection may absorb at most one rule objection, and when it does it
+    takes the higher severity and the tool's evidence. Otherwise the rule objection is added as is."""
     merged = list(llm)
+    absorbed: set[int] = set()
     for r in rules:
-        if not any(_covers(o, r) for o in merged):
+        cover = next((o for o in llm if id(o) not in absorbed and _covers(o, r)), None)
+        if cover is None:
             merged.append(r)
+            continue
+        absorbed.add(id(cover))
+        if SEV_ORDER.get(r.severity, 9) < SEV_ORDER.get(cover.severity, 9):
+            cover.severity = r.severity
+        have = {(e.doc_id, e.page) for e in cover.evidence_refs}
+        cover.evidence_refs += [e for e in r.evidence_refs if (e.doc_id, e.page) not in have]
+        if r.tool_evidence and r.tool_evidence not in (cover.tool_evidence or ""):
+            cover.tool_evidence = ((cover.tool_evidence + " | ") if cover.tool_evidence else "") + r.tool_evidence
     merged.sort(key=lambda o: (SEV_ORDER.get(o.severity, 9), o.question_id))
     for i, o in enumerate(merged, 1):
         o.id = f"O{i:02d}"
