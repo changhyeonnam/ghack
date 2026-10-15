@@ -23,6 +23,7 @@ from pydantic import BaseModel
 
 from ..config import Settings
 from ..llm import mock_llm  # noqa: F401  (registers the mock model with ADK)
+from ..llm import image_ids
 from ..llm.mock_llm import MOCK_CONTEXT
 from ..llm.pricing import estimate_cost_usd
 from ..schemas import AgentTrace, utcnow_iso
@@ -115,8 +116,13 @@ def build_llm_agent(spec: AgentSpec, settings: Settings, mock: bool) -> LlmAgent
     return LlmAgent(**kwargs)
 
 
-def cache_key(spec: AgentSpec, parts: list[types.Part], extra: Optional[dict[str, Any]] = None) -> str:
+def cache_key(spec: AgentSpec, parts: list[types.Part], extra: Optional[dict[str, Any]] = None, portable: bool = True) -> str:
+    """Content hash of the call. portable=True identifies rendered images by their source document and view (see
+    llm/image_ids.py) so a cache built on one OS replays on another; portable=False is the original byte-hash key,
+    still read as a fallback so caches built before this change keep working."""
     h = hashlib.sha256()
+    if portable:
+        h.update(b"v2")
     h.update(spec.model.encode())
     h.update(spec.prompt_version.encode())
     h.update(spec.instruction.encode())
@@ -126,7 +132,8 @@ def cache_key(spec: AgentSpec, parts: list[types.Part], extra: Optional[dict[str
         if p.text:
             h.update(b"T" + p.text.encode())
         elif p.inline_data and p.inline_data.data:
-            h.update(b"B" + hashlib.sha256(p.inline_data.data).digest())
+            ident = image_ids.identity_of(p.inline_data.data) if portable else None
+            h.update(b"I" + ident.encode() if ident else b"B" + hashlib.sha256(p.inline_data.data).digest())
     if extra:
         h.update(json.dumps(extra, sort_keys=True, default=str).encode())
     return h.hexdigest()[:40]
@@ -196,6 +203,11 @@ async def run_agent(spec: AgentSpec, parts: list[types.Part], *, settings: Setti
 
     if use_cache and settings.llm_cache_enabled and not mock:
         hit = repo.cache_get(key)
+        if not hit:
+            legacy = cache_key(spec, parts, cache_extra, portable=False)
+            hit = repo.cache_get(legacy)
+            if hit:  # migrate an entry cached under the byte-hash key
+                repo.cache_put(key, hit)
         if hit:
             res = AgentResult(text=hit.get("text", ""), parsed=hit.get("parsed"), cached=True, model=spec.model,
                               input_tokens=hit.get("input_tokens", 0), output_tokens=hit.get("output_tokens", 0),
@@ -205,7 +217,8 @@ async def run_agent(spec: AgentSpec, parts: list[types.Part], *, settings: Setti
                                       started_at=utcnow_iso(), duration_ms=res.duration_ms, input_tokens=res.input_tokens,
                                       output_tokens=res.output_tokens, thinking_tokens=res.thinking_tokens, cost_usd=0.0, cached=True))
             return res
-    if mode == "cache_only":
+    live_ok = {a.strip() for a in settings.live_agents_in_cache_only.split(",") if a.strip()}
+    if mode == "cache_only" and spec.name.split(":")[0] not in live_ok:
         raise CacheMiss(f"LLM cache miss for {spec.name} while running in cache_only mode")
     if not mock and _spent_usd >= settings.budget_cap_usd:
         raise BudgetExceeded(f"Budget cap of USD {settings.budget_cap_usd} reached in this process; refusing to call Gemini")
@@ -268,12 +281,17 @@ async def run_sequence(specs: list[AgentSpec], parts: list[types.Part], *, setti
     global _spent_usd
     mode = settings.resolved_llm_mode
     mock = mode == "mock"
-    key = cache_key(AgentSpec(name="+".join(s.name for s in specs), instruction="\n".join(s.instruction for s in specs),
-                              prompt_version="+".join(s.prompt_version for s in specs), model="+".join(s.model for s in specs),
-                              output_schema=specs[-1].output_schema), parts, cache_extra)
+    seq_spec = AgentSpec(name="+".join(s.name for s in specs), instruction="\n".join(s.instruction for s in specs),
+                         prompt_version="+".join(s.prompt_version for s in specs), model="+".join(s.model for s in specs),
+                         output_schema=specs[-1].output_schema)
+    key = cache_key(seq_spec, parts, cache_extra)
     started = time.time()
     if settings.llm_cache_enabled and not mock:
         hit = repo.cache_get(key)
+        if not hit:
+            hit = repo.cache_get(cache_key(seq_spec, parts, cache_extra, portable=False))
+            if hit:  # migrate an entry cached under the byte-hash key
+                repo.cache_put(key, hit)
         if hit:
             out = []
             for s, r in zip(specs, hit["results"]):
