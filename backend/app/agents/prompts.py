@@ -4,6 +4,7 @@ from __future__ import annotations
 PROMPT_VERSIONS = {
     "intake": "intake-v1.0",
     "extractor": "extractor-v1.1",
+    "extractor_page": "extractor-page-v1.0",
     "analyst": "analyst-v1.3",
     "challenger_investigator": "challenger-inv-v1.1",
     "challenger_writer": "challenger-writer-v1.1",
@@ -60,6 +61,13 @@ Specific rules for bank statements
 - Fill account_holder, bank_name, masked account number, address, currency, period_start/period_end (ISO) from the
   header, and opening/closing balance with their own bbox if printed.
 """.strip()
+
+EXTRACTOR_BANK_PAGE = EXTRACTOR_BANK + """
+- You are given ONE page of a longer statement. Extract only the rows printed on this page, with `page` set to this page
+  number. Number rows T0001, T0002, ... within the page (they are renumbered when pages are merged).
+- Header fields (bank, holder, account, currency, period, opening/closing balance): fill them only if printed on this
+  page, otherwise null. Never guess them from other pages.
+""".rstrip()
 
 EXTRACTOR_DASHBOARD = f"""
 You are the Extractor agent of LedgerLens. Extract the KPIs from this e-commerce seller dashboard screenshot.
