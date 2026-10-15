@@ -10,6 +10,7 @@ from google.genai import types
 from PIL import Image
 
 from ..config import Settings
+from ..llm import image_ids
 from ..schemas import Case, DocumentExtraction, DocumentMeta, Figure, Memo, SourceRef
 from ..storage import Repository
 from ..tools.documents import pages_for_llm, thumbnail
@@ -46,6 +47,7 @@ def page_parts(repo: Repository, case: Case, d: DocumentMeta, settings: Settings
             repo.put_blob(f"cases/{case.id}/llm/{d.doc_id}/p{lp.page}.jpg", lp.data, "image/jpeg")
             rendered.append(lp.data)
     for p, data in enumerate(rendered, 1):
+        image_ids.register(data, f"{d.sha256}:page{p}:w{settings.llm_page_max_width}")
         parts.append(types.Part.from_text(text=f"doc_id={d.doc_id} page={p} of {len(rendered)}"))
         parts.append(types.Part.from_bytes(data=data, mime_type="image/jpeg"))
     return parts
@@ -57,6 +59,7 @@ def thumbnail_part(repo: Repository, case: Case, d: DocumentMeta) -> list[types.
     if b is None:
         b = thumbnail(load_doc_bytes(repo, d), d.mime_type)
         repo.put_blob(key, b, "image/jpeg")
+    image_ids.register(b, f"{d.sha256}:thumb")
     return [types.Part.from_text(text=f"doc_id={d.doc_id} filename={d.filename} pages={d.pages}"), types.Part.from_bytes(data=b, mime_type="image/jpeg")]
 
 
