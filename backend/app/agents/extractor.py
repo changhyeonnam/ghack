@@ -10,8 +10,8 @@ from pydantic import BaseModel
 
 from ..config import Settings
 from ..schemas import (
-    BankStatementExtraction, Case, DocType, DocumentExtraction, DocumentMeta, LedgerExtraction, PremisesExtraction,
-    ReceiptExtraction, SellerDashboardExtraction, TextLayerCheck,
+    BankStatementExtraction, Case, DocType, DocumentExtraction, DocumentMeta, LedgerExtraction, MoneyField, PremisesExtraction,
+    ReceiptExtraction, SellerDashboardExtraction, TextLayerCheck, Transaction,
 )
 from ..storage import Repository
 from . import prompts
@@ -20,6 +20,39 @@ from .common import case_facts, load_doc_bytes, page_parts
 from .runner import AgentSpec, run_agent
 
 log = logging.getLogger("ledgerlens.extractor")
+
+
+class BankStatementPage(BaseModel):
+    """One page of a statement: header fields are optional because continuation pages do not print them."""
+    bank_name: Optional[str] = None
+    account_holder: Optional[str] = None
+    account_number_masked: Optional[str] = None
+    address: Optional[str] = None
+    currency: Optional[str] = None
+    period_start: Optional[str] = None
+    period_end: Optional[str] = None
+    opening_balance: Optional[MoneyField] = None
+    closing_balance: Optional[MoneyField] = None
+    transactions: list[Transaction] = []
+
+
+def merge_statement_pages(pages: list[dict[str, Any]], default_currency: str) -> dict[str, Any]:
+    """Pages in order -> one statement: first non-null header field, opening balance from the first page that prints
+    it, closing from the last, rows concatenated and renumbered T0001.. across pages."""
+    out: dict[str, Any] = {}
+    for k in ("bank_name", "account_holder", "account_number_masked", "address", "currency", "period_start", "period_end"):
+        out[k] = next((p.get(k) for p in pages if p.get(k)), None)
+    out["opening_balance"] = next((p["opening_balance"] for p in pages if p.get("opening_balance")), None)
+    out["closing_balance"] = next((p["closing_balance"] for p in reversed(pages) if p.get("closing_balance")), None)
+    rows = [dict(t) for p in pages for t in (p.get("transactions") or [])]
+    for i, t in enumerate(rows, 1):
+        t["row_id"] = f"T{i:04d}"
+    out["transactions"] = rows
+    dates = sorted(t["date"] for t in rows if t.get("date"))
+    out["currency"] = out["currency"] or default_currency
+    out["period_start"] = out["period_start"] or (dates[0] if dates else "")
+    out["period_end"] = out["period_end"] or (dates[-1] if dates else "")
+    return out
 
 SPECS: dict[DocType, tuple[str, type[BaseModel], str]] = {
     DocType.bank_statement: (prompts.EXTRACTOR_BANK, BankStatementExtraction, "bank_statement"),
@@ -78,12 +111,34 @@ async def extract_document(case: Case, doc: DocumentMeta, *, repo: Repository, s
     model = settings.model_pro if dtype in (DocType.bank_statement, DocType.handwritten_ledger) else settings.model_flash
     spec = AgentSpec(name=f"extractor:{dtype.value}", instruction=instruction, prompt_version=prompts.PROMPT_VERSIONS["extractor"], model=model,
                      output_schema=schema, description=f"Extracts {dtype.value} documents")
-    parts: list[types.Part] = [types.Part.from_text(text=case_facts(case)),
-                               types.Part.from_text(text=f"Document {doc.doc_id} ({doc.filename}), classified as {dtype.value}, {doc.pages} page(s). Extract it.")]
-    parts += page_parts(repo, case, doc, settings)
+    head = [types.Part.from_text(text=case_facts(case))]
+    all_pages = page_parts(repo, case, doc, settings)  # [label, image] per page
     ctx = {**mock_context, "doc": doc.model_dump(mode="json"), "doc_type": dtype.value}
-    res = await run_agent(spec, parts, settings=settings, repo=repo, case_id=case.id, mock_context=ctx)
-    parsed = dict(res.parsed or {})
+    if field == "bank_statement" and doc.pages > 1 and settings.resolved_llm_mode != "mock":
+        # One call per page, in parallel: a whole statement in one structured call (180+ rows, each with a bbox)
+        # runs past the timeout. Pages are short, cache independently and fail independently.
+        page_spec = AgentSpec(name=f"extractor:{dtype.value}:page", instruction=prompts.EXTRACTOR_BANK_PAGE,
+                              prompt_version=prompts.PROMPT_VERSIONS["extractor_page"], model=model, output_schema=BankStatementPage,
+                              description="Extracts one bank statement page")
+
+        async def one_page(p: int) -> dict[str, Any]:
+            parts = head + [types.Part.from_text(text=f"Document {doc.doc_id} ({doc.filename}), bank statement, page {p} of {doc.pages}. "
+                                                      "Extract this page.")] + all_pages[2 * (p - 1): 2 * p]
+            r = await run_agent(page_spec, parts, settings=settings, repo=repo, case_id=case.id, mock_context=ctx)
+            pg = dict(r.parsed or {})
+            _sanitize_refs(pg, doc)
+            for t in pg.get("transactions") or []:
+                if isinstance(t.get("source"), dict):
+                    t["source"]["page"] = p  # the model only saw this page
+            return pg
+
+        pages = await asyncio.gather(*(one_page(p) for p in range(1, doc.pages + 1)))
+        parsed = merge_statement_pages(list(pages), case.currency)
+    else:
+        parts = head + [types.Part.from_text(text=f"Document {doc.doc_id} ({doc.filename}), classified as {dtype.value}, {doc.pages} page(s). Extract it.")]
+        parts += all_pages
+        res = await run_agent(spec, parts, settings=settings, repo=repo, case_id=case.id, mock_context=ctx)
+        parsed = dict(res.parsed or {})
     _sanitize_refs(parsed, doc)
     if field == "bank_statement":
         _dedupe_row_ids(parsed, "transactions", "T")

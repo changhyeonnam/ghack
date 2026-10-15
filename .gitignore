@@ -9,3 +9,5 @@ data/runtime/
 .DS_Store
 benchmark/results/*.tmp
 data/runtime_benchmark/
+data/runtime_live/
+benchmark/*.log
