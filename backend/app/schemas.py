@@ -618,6 +618,8 @@ class Case(BaseModel):
     is_demo: bool = False
     demo_expected_outcome: Optional[str] = None
     tags: list[str] = Field(default_factory=list)
+    # Browser workspace that owns the case (X-LedgerLens-Workspace). None = shared/legacy case.
+    workspace: Optional[str] = None
 
     def stage(self, name: StageName) -> StageStatus:
         for s in self.stages:

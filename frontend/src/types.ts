@@ -520,6 +520,7 @@ export interface Case {
   decision: Decision | null
   objection_resolutions: ObjectionResolution[]
   is_demo: boolean
+  workspace?: string | null
   demo_expected_outcome: string | null
   tags: string[]
 }

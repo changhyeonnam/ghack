@@ -76,8 +76,10 @@ class Pipeline:
         return [DocumentExtraction.model_validate(x) for x in (data or {}).get("items", [])]
 
     # ------------------------------------------------------------------ cases & documents
-    def create_case(self, body: CaseCreate, *, is_demo: bool = False, tags: Optional[list[str]] = None, expected: Optional[str] = None) -> Case:
-        case = Case(id=uuid.uuid4().hex[:10], **body.model_dump(), is_demo=is_demo, tags=tags or [], demo_expected_outcome=expected)
+    def create_case(self, body: CaseCreate, *, is_demo: bool = False, tags: Optional[list[str]] = None, expected: Optional[str] = None,
+                    workspace: Optional[str] = None) -> Case:
+        case = Case(id=uuid.uuid4().hex[:10], **body.model_dump(), is_demo=is_demo, tags=tags or [], demo_expected_outcome=expected,
+                    workspace=workspace)
         self.repo.save_case(case)
         self.audit(case.id, "system", "case_created", name=case.name, business=case.business_name)
         return case
@@ -272,7 +274,13 @@ class Pipeline:
         return letter
 
     # ------------------------------------------------------------------ demo data
-    def seed_demo_cases(self, force: bool = False) -> list[str]:
+    def list_cases(self, workspace: Optional[str] = None) -> list[Case]:
+        """A workspace sees only its own cases; without one, only shared (workspace-less) cases."""
+        return [c for c in self.repo.list_cases() if c.workspace == workspace]
+
+    def seed_demo_cases(self, force: bool = False, workspace: Optional[str] = None) -> list[str]:
+        """Demo cases per workspace, so one judge signing case B does not lock it for the next. LLM cache keys do not
+        include the case id, so a workspace's copies replay the cached run at no Gemini cost."""
         self.ground_truth().refresh()
         manifests = self.ground_truth().manifests
         past = load_past_index(str(self.settings.synth_dir))
@@ -286,7 +294,7 @@ class Pipeline:
                         pass
             self.repo.save_global("past_case_index", {"items": past})
         created: list[str] = []
-        existing = {next((t for t in c.tags if t.startswith("synthetic:")), None): c for c in self.repo.list_cases() if c.is_demo}
+        existing = {next((t for t in c.tags if t.startswith("synthetic:")), None): c for c in self.list_cases(workspace) if c.is_demo}
         for sid, m in manifests.items():
             tag = f"synthetic:{sid}"
             if tag in existing and not force:
@@ -297,7 +305,7 @@ class Pipeline:
             lang = str(m.get("language", "en")).replace("+", "/").split("/")[0].strip() or "en"
             body = CaseCreate(name=m["name"], business_name=m["business_name"], sector=m.get("sector", ""), country=m.get("country", ""), language=lang,
                               currency=m.get("currency", "USD"), requested_amount=m.get("requested_amount"))
-            case = self.create_case(body, is_demo=True, tags=["synthetic", tag], expected=m.get("expected_outcome"))
+            case = self.create_case(body, is_demo=True, tags=["synthetic", tag], expected=m.get("expected_outcome"), workspace=workspace)
             for d in m["documents"]:
                 p = Path(m["_dir"]) / "docs" / d["filename"]
                 if p.exists():

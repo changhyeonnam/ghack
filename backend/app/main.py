@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import logging
+import re
 from contextlib import asynccontextmanager
 from pathlib import Path
 from typing import Optional
@@ -107,14 +108,24 @@ def health(s: Settings = Depends(settings_dep)):
 
 
 # ---------------------------------------------------------------- cases
+_WORKSPACE_RE = re.compile(r"^[A-Za-z0-9_-]{8,64}$")
+
+
+def workspace_dep(x_ledgerlens_workspace: Optional[str] = Header(default=None)) -> Optional[str]:
+    """Per-browser workspace id sent by the frontend; invalid values are ignored (shared space)."""
+    if x_ledgerlens_workspace and _WORKSPACE_RE.match(x_ledgerlens_workspace):
+        return x_ledgerlens_workspace
+    return None
+
+
 @app.get("/api/cases", response_model=list[Case])
-def list_cases(p: Pipeline = Depends(pipe)):
-    return p.repo.list_cases()
+def list_cases(p: Pipeline = Depends(pipe), ws: Optional[str] = Depends(workspace_dep)):
+    return p.list_cases(ws)
 
 
 @app.post("/api/cases", response_model=Case)
-def create_case(body: CaseCreate, p: Pipeline = Depends(pipe)):
-    return p.create_case(body)
+def create_case(body: CaseCreate, p: Pipeline = Depends(pipe), ws: Optional[str] = Depends(workspace_dep)):
+    return p.create_case(body, workspace=ws)
 
 
 @app.get("/api/cases/{case_id}", response_model=Case)
@@ -274,8 +285,11 @@ def priorities(p: Pipeline = Depends(pipe)):
 def benchmark_latest(p: Pipeline = Depends(pipe)):
     data = p.repo.get_global("benchmark_latest")
     if not data:
-        bench_file = Path(__file__).resolve().parents[2] / "benchmark" / "results" / "latest.json"
-        if bench_file.exists():
+        here = Path(__file__).resolve()
+        # repo checkout: <root>/backend/app/main.py; container: /app/app/main.py with results copied to /app/benchmark
+        bench_file = next((d / "benchmark" / "results" / "latest.json" for d in (here.parents[2], here.parents[1])
+                           if (d / "benchmark" / "results" / "latest.json").exists()), None)
+        if bench_file:
             import json
             return json.loads(bench_file.read_text("utf-8"))
         raise HTTPException(404, "no benchmark run yet")
@@ -283,10 +297,12 @@ def benchmark_latest(p: Pipeline = Depends(pipe)):
 
 
 @app.post("/api/demo/seed")
-def seed(force: bool = False, x_admin_token: Optional[str] = Header(default=None), p: Pipeline = Depends(pipe), s: Settings = Depends(settings_dep)):
-    if s.admin_token and x_admin_token != s.admin_token:
+def seed(force: bool = False, x_admin_token: Optional[str] = Header(default=None), p: Pipeline = Depends(pipe), s: Settings = Depends(settings_dep),
+         ws: Optional[str] = Depends(workspace_dep)):
+    # A workspace may (re)seed only its own demo copies; touching the shared cases still needs the admin token.
+    if ws is None and s.admin_token and x_admin_token != s.admin_token:
         raise HTTPException(403, "admin token required")
-    return {"cases": p.seed_demo_cases(force=force)}
+    return {"cases": p.seed_demo_cases(force=force, workspace=ws)}
 
 
 # ---------------------------------------------------------------- static frontend (optional)
