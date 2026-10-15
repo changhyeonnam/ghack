@@ -31,8 +31,35 @@ export class ApiError extends Error {
   }
 }
 
+// Each browser gets its own copy of the demo cases, so one reviewer signing a case does not lock it for the next.
+const WORKSPACE_KEY = 'ledgerlens.workspace'
+let memoryWorkspace = ''
+
+function newWorkspaceId(): string {
+  const bytes = new Uint8Array(12)
+  crypto.getRandomValues(bytes)
+  return Array.from(bytes, (b) => b.toString(16).padStart(2, '0')).join('')
+}
+
+export function workspaceId(): string {
+  try {
+    let id = localStorage.getItem(WORKSPACE_KEY)
+    if (!id) {
+      id = newWorkspaceId()
+      localStorage.setItem(WORKSPACE_KEY, id)
+    }
+    return id
+  } catch {
+    // Storage blocked (private mode, sandbox): keep one id for this page load.
+    memoryWorkspace ||= newWorkspaceId()
+    return memoryWorkspace
+  }
+}
+
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
-  const res = await fetch(path, init)
+  const headers = new Headers(init?.headers)
+  headers.set('X-LedgerLens-Workspace', workspaceId())
+  const res = await fetch(path, { ...init, headers })
   if (!res.ok) {
     let detail = `${res.status} ${res.statusText}`
     try {
@@ -112,7 +139,7 @@ export const generateLetter = (caseId: string, body: LetterRequest) =>
 // ---- Feedback loop & misc ----
 export const getFeedbackPriorities = () => request<FeedbackPriorities>('/api/feedback/priorities')
 export const getBenchmark = () => request<Benchmark>('/api/benchmark/latest')
-export const seedDemo = () => json<{ cases: string[] }>('/api/demo/seed', 'POST')
+export const seedDemo = (force = false) => json<{ cases: string[] }>(`/api/demo/seed${force ? '?force=true' : ''}`, 'POST')
 
 /** Resolve an optional artifact: returns null on 404 ("not ready"), rethrows anything else. */
 export async function optional<T>(p: Promise<T>): Promise<T | null> {
