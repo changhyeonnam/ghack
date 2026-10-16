@@ -215,7 +215,7 @@ export default function CaseList() {
           <EmptyState
             icon="layers"
             title="No cases yet"
-            hint="Create a case and upload the applicant's documents, or load the three synthetic demo cases to explore the workbench."
+            hint="Create a case and upload the applicant's documents, or load the three demo cases to explore the workbench."
             action={
               <>
                 <button className="btn btn-secondary" onClick={() => onSeed()} disabled={seeding}>
@@ -310,8 +310,8 @@ function CaseRow({ c, severity, onOpen }: { c: Case; severity: SeverityCounts | 
             <div className="applicant-name">
               {c.name}
               {c.is_demo ? (
-                <span className="tag tag-demo tip" data-tip="Synthetic dataset generated for the demo; not a real applicant">
-                  Synthetic
+                <span className="tag tag-demo tip" data-tip="Demo case prepared for this showcase; not a real applicant">
+                  Demo
                 </span>
               ) : null}
             </div>
@@ -341,7 +341,7 @@ function CaseRow({ c, severity, onOpen }: { c: Case; severity: SeverityCounts | 
         {c.decision ? (
           <RecommendationBadge value={c.decision.outcome} />
         ) : c.demo_expected_outcome ? (
-          <span className="muted small tip" data-tip="Expected outcome encoded in the synthetic dataset">
+          <span className="muted small tip" data-tip="Expected outcome defined for this demo case">
             Expected: {recommendationLabel(c.demo_expected_outcome)}
           </span>
         ) : (

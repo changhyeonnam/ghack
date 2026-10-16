@@ -13,7 +13,7 @@ from ..storage import Repository
 from ..tools.checks import find_unsourced_numerals
 from ..tools.sector_benchmark import lookup_sector_benchmark
 from . import prompts
-from .common import FIG_TOKEN, case_facts, catalog_text, extraction_digest, inventory_text
+from .common import DEMO_DATASET_NOTE, FIG_TOKEN, case_facts, catalog_text, extraction_digest, inventory_text
 from .runner import AgentSpec, CacheMiss, run_agent
 
 log = logging.getLogger("ledgerlens.analyst")
@@ -82,12 +82,14 @@ async def run_analyst(case: Case, *, cashflow: CashflowSummary, extractions: lis
     parts: list[types.Part] = [
         types.Part.from_text(text=case_facts(case)),
         types.Part.from_text(text=inventory_text(case)),
-        types.Part.from_text(text=extraction_digest(extractions, docs)),
+        types.Part.from_text(text=extraction_digest(extractions, docs, demo=case.is_demo)),
         types.Part.from_text(text=cashflow_text(cashflow)),
         types.Part.from_text(text=bench_txt),
         types.Part.from_text(text=catalog_text(cashflow.figures)),
         types.Part.from_text(text="Draft the memo now. Remember: no digits in prose, only {fig:ID} tokens from the catalog."),
     ]
+    if case.is_demo:
+        parts.insert(0, types.Part.from_text(text=DEMO_DATASET_NOTE))
     spec = AgentSpec(name="analyst", instruction=prompts.ANALYST, prompt_version=prompts.PROMPT_VERSIONS["analyst"], model=settings.model_pro,
                      output_schema=MemoDraft, description="Drafts the evidence-linked credit memo")
     signals = {

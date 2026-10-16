@@ -146,8 +146,9 @@ def entity_consistency(extractions: list[DocumentExtraction], intake: Optional[I
     all_names = {"application": business_name, **names}
     app_tokens = _tokens(business_name)
     bad = {k: v for k, v in names.items() if app_tokens and not (_tokens(v) & app_tokens)}
-    out.append(EntityCheck(field="business_name", values=all_names, consistent=not bad,
-                           note=None if not bad else "Documents whose business name shares no token with the application: " + ", ".join(bad)))
+    # when inconsistent, list only the application and the mismatching documents (the matching ones are noise)
+    out.append(EntityCheck(field="business_name", values={"application": business_name, **bad} if bad else all_names, consistent=not bad,
+                           note=None if not bad else "Business name on these documents shares no word with the application"))
     if holders:
         holder_tokens = set().union(*[_tokens(h) for h in holders.values()])
         related = bool(holder_tokens & app_tokens) or any(_tokens(v) & holder_tokens for v in names.values())
@@ -185,11 +186,13 @@ def reconcile_payouts(cf: CashflowSummary) -> Optional[PayoutReconciliation]:
 
 
 def reconcile_cash(cf: CashflowSummary) -> Optional[CashReconciliation]:
-    src = cf.ledger_income_total + cf.receipts_sales_total
+    # compare like with like: ledger months the statement covers, duplicate pages removed
+    ledger = cf.ledger_income_comparable or cf.ledger_income_total
+    src = ledger + cf.receipts_sales_total
     if src <= 0 and cf.cash_deposit_total <= 0:
         return None
     risk = src > 0 and cf.cash_deposit_total > 0 and 0.4 <= cf.cash_deposit_total / src <= 1.6
-    return CashReconciliation(ledger_income=cf.ledger_income_total, receipts_sales=cf.receipts_sales_total, bank_cash_deposits=cf.cash_deposit_total, double_count_risk=risk)
+    return CashReconciliation(ledger_income=ledger, receipts_sales=cf.receipts_sales_total, bank_cash_deposits=cf.cash_deposit_total, double_count_risk=risk)
 
 
 # ---------------------------------------------------------------------------

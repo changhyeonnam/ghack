@@ -176,7 +176,15 @@ const FLAG_ICON: Record<QualityFlag, IconName> = {
   other: 'info',
 }
 
-export function QualityFlagIcons({ flags }: { flags: QualityFlag[] }) {
+// Dataset watermarks are a property of the demo documents, not a finding about the applicant: not shown.
+const HIDDEN_FLAGS = new Set<QualityFlag>(['synthetic_watermark'])
+
+export function visibleFlags(flags: QualityFlag[]): QualityFlag[] {
+  return flags.filter((f) => !HIDDEN_FLAGS.has(f))
+}
+
+export function QualityFlagIcons({ flags: all }: { flags: QualityFlag[] }) {
+  const flags = visibleFlags(all)
   if (flags.length === 0) return null
   return (
     <span className="flag-icons">
