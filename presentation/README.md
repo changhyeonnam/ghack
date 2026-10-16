@@ -14,5 +14,5 @@ soffice --headless --convert-to pdf ../LedgerLens_AI_Builder_Cup_Submission.pptx
 ```
 
 - `build/shots/v2_*.jpg` are prototype screenshots (light theme). Replace with fresh captures under the same names and rebuild.
-- Benchmark numbers (slide 13) are typed in `build_deck.py`; update them from `benchmark/results/REPORT.md` after the live Gemini run.
-- Links slide (14) and team slide (1) are filled in at submission.
+- Benchmark numbers (slide 12) are typed in `build_deck.py` from the live run in `benchmark/results/LIVE_RUN_2026-10-15.md` and `REPORT.md`.
+- Video and app links: set `VIDEO_URL` and `APP_URL` at the top of `build_deck.py` and rebuild.
