@@ -7,8 +7,9 @@ from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
 import copy, os
 
 # Submission links: fill these in before the final build.
-VIDEO_URL = "TBD"  # public YouTube link to the demo video (under 3 minutes, official FAQ)
-APP_URL = "ledgerlens-api-629502893425.asia-southeast1.run.app"    # Cloud Run URL of the public demo
+VIDEO_URL = "https://www.youtube.com/watch?v=MBwsG0QQAUM"  # public YouTube link to the demo video (under 3 minutes)
+APP_URL = "https://ledgerlens-api-629502893425.asia-southeast1.run.app"  # Cloud Run URL of the public demo
+REPO_URL = "https://github.com/changhyeonnam/ghack"
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 IMG = HERE + "/img"
@@ -176,7 +177,7 @@ def bignum(slide, x, y, w, text, size=30, color=INK):
 s = S[2]
 set_title(s, "Why this matters")
 eyebrow(s, "The problem", y=1.18)
-headline(s, "Banks are ready to lend on cash flow. But manual review costs too much, and numbers from a basic AI prompt cannot be traced to a page.", y=1.4, size=16.5, h=0.72)
+headline(s, "Only 8.8% of Vietnam's SMEs have a bank loan. Cash-flow lending stalls: manual review costs too much, and basic AI cannot trace its numbers.", y=1.4, size=16.5, h=0.72)
 # persona
 card(s, 0.3, 2.25, 2.95, 3.0, fill=PANEL, line=LINE)
 tb(s, 0.45, 2.33, 2.7, 0.3, [{"t": "MEET LINH", "size": 8.5, "bold": True, "color": TEAL}], margin=0.0)
@@ -441,17 +442,23 @@ for p in sh.text_frame.paragraphs[1:]:
     for r in p.runs:
         r.text = ""
 sh.height = Inches(0.5)
-links = [("GitHub public repository", "github.com/changhyeonnam/ghack", "English README, architecture, run instructions, synthetic-data notice, presentation/"),
-         ("Demo video (2 min 59 s)", VIDEO_URL, "Problem, how it works, one case end to end (click-to-source, Challenger, decision, letter), benchmark"),
-         ("Final product", APP_URL, "Cloud Run, live Gemini within a fixed AI budget (on-screen notice when reached). Each browser gets its own copy of the three demo cases, which replay the recorded live run in seconds; visitors' cases are shared read-only. No login")]
+links = [("GitHub repository", REPO_URL, ["github.com/changhyeonnam/ghack"],
+          "Start with the README: what LedgerLens does, the architecture, how to run it locally (no API key needed) and the benchmark. All demo data is synthetic."),
+         ("Demo video (2 min 59 s)", VIDEO_URL, ["youtube.com/watch?v=MBwsG0QQAUM"],
+          "A three-minute walkthrough: the problem, how it works, one loan file from upload to signed decision, and the benchmark. English narration and subtitles."),
+         ("Live app", APP_URL, ["ledgerlens-api-629502893425", ".asia-southeast1.run.app"],
+          "No login. Click Load demo cases, open Reyes Auto Repair and press Run all remaining, then click any number in the memo. New uploads run live Gemini within a fixed budget.")]
 y = 1.3
-for t, u, d in links:
+for t, url, shown, d in links:
     card(s, 0.3, y, 9.4, 1.2, fill=PANEL, line=LINE)
     tb(s, 0.5, y + 0.15, 3.4, 0.5, [{"t": t, "size": 15, "bold": True, "color": INK}])
-    tb(s, 0.5, y + 0.65, 3.4, 0.45, [{"t": u, "size": 12, "color": TEAL}])
+    box = tb(s, 0.5, y + 0.6, 3.5, 0.5, [{"t": line, "size": 11.5, "color": TEAL} for line in shown])
+    for para in box.text_frame.paragraphs:  # clickable in the PDF and in PowerPoint
+        for r in para.runs:
+            r.hyperlink.address = url
     tb(s, 4.1, y + 0.15, 5.4, 0.95, [{"t": d, "size": 11.5, "color": GREY}], anchor=MSO_ANCHOR.MIDDLE)
     y += 1.33
-tb(s, 0.3, 5.3, 9.4, 0.25, [{"t": "Links are inserted at submission on 18 October 2026.", "size": 10, "italic": True, "color": GREY}])
+tb(s, 0.3, 5.3, 9.4, 0.25, [{"t": "All three links are public, and the app stays online through judging.", "size": 10, "italic": True, "color": GREY}])
 
 # ---------- Slide 16: Appendix, Challenger checks ----------
 s = S[16]
