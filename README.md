@@ -15,7 +15,7 @@ signs the decision; the decision feeds back into the Challenger's priorities. AI
 
 ![LedgerLens demo](docs/media/ledgerlens_demo.gif)
 
-Full-resolution recording: [docs/media/ledgerlens_demo.mp4](docs/media/ledgerlens_demo.mp4) (40 s, offline demo mode on the synthetic case *Linh Fashion Online*: run the pipeline, click a memo figure to jump to its source row, accept and dismiss Challenger objections, sign the decision, generate the Vietnamese customer letter, review the audit trail).
+Full-resolution recording: [docs/media/ledgerlens_demo.mp4](docs/media/ledgerlens_demo.mp4) (40 s, recorded in offline demo mode before the live run, on the synthetic case *Linh Fashion Online*: run the pipeline, click a memo figure to jump to its source row, accept and dismiss Challenger objections, sign the decision, generate the Vietnamese customer letter, review the audit trail).
 
 | | |
 |---|---|
@@ -91,8 +91,8 @@ Open the app, click **Load demo cases** (each browser gets its own copy; **Reset
 ## Cost (budget mode)
 
 Everything defaults to **Gemini 3.8 Flash** (free tier available; paid USD 0.75 / 3.75 per 1M tokens) and the whole case
-is cached after the first run. A full run of a 20-document case is roughly 60-90k input and 15-25k output tokens, i.e. about
-**USD 0.10 per case** on paid Flash, USD 0 on the free tier. Cloud Run scales to zero (free tier covers the evaluation
+is cached after the first run. The live run on 2026-10-15 measured 77-103k tokens and about 2 minutes per cold case, i.e.
+**USD 0.26-0.31 per case** on paid Flash and USD 0 on a cached re-run or the free tier. Cloud Run scales to zero (free tier covers the evaluation
 traffic), Firestore and Cloud Storage stay far inside their free quotas. `LEDGERLENS_BUDGET_CAP_USD` (default 5) makes the
 service refuse further Gemini calls once the process has spent that much. Setting `MIN_INSTANCES=1` to avoid cold starts
 costs ~USD 10+/month and is therefore **off** by default.

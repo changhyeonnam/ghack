@@ -223,8 +223,8 @@ for p in sh.text_frame.paragraphs[1:]:
     for r in p.runs:
         r.text = ""
 sh.height = Inches(0.5)
-headline(s, "Same documents. Read in 3 minutes. Every number defensible.", y=1.22, size=19, h=0.5)
-nums = [("45 → 3", "minutes of reading per file", False), ("11 → 0.10", "USD per case, manual review vs LedgerLens", False), ("0", "unsourced numbers in any memo", True)]
+headline(s, "Same documents. Read in about 2 minutes. Every number defensible.", y=1.22, size=19, h=0.5)
+nums = [("45 → 2", "minutes per file, manual estimate vs measured run", False), ("11 → 0.31", "USD per case, manual estimate vs measured run", False), ("0", "unsourced numbers in any memo", True)]
 x = 0.3
 for big, small, acc in nums:
     card(s, x, 1.8, 3.0, 1.35, fill=AMBER_T if acc else WHITE, line=AMBER if acc else LINE, lw=1.5 if acc else 1)
@@ -290,7 +290,7 @@ for i, (t, d) in enumerate(steps8):
 s = S[10]
 set_title(s, "Technologies to be used in the solution")
 headline(s, "Gemini reads, ADK orchestrates, Python computes, Cloud Run serves.", y=1.22, size=18, h=0.5)
-tech = [("Google Cloud", "Gemini 3.8 Flash", "Default for every agent. Free tier available; about USD 0.10 per case paid.", False),
+tech = [("Google Cloud", "Gemini 3.8 Flash", "Default for every agent. Measured USD 0.26-0.31 per cold case; free tier available.", False),
         ("Google Cloud", "Gemini 3.1 Pro", "One env var moves Extractor, Analyst and Challenger to Pro.", False),
         ("Google Cloud", "Agent Development Kit", "Intake, 5 Extractors, Analyst, Challenger (investigator and writer), Explainer.", False),
         ("Google Cloud", "Cloud Run + Firebase", "FastAPI backend scales to zero; React workbench on Firebase Hosting.", False),
@@ -311,31 +311,31 @@ tb(s, 0.3, 5.15, 9.4, 0.3, [{"t": "Output schema requires source {doc_id, page, 
 # ---------- Slide 13: Benchmark ----------
 s = S[13]
 set_title(s, "Prototype performance report / Benchmarking")
-headline(s, "19 of 20 planted traps caught, zero unsourced numbers. A single prompt on the same documents caught none.", y=1.22, size=17, h=0.7)
+headline(s, "16 of 20 planted traps caught, zero unsourced numbers. A single prompt on the same documents caught 1 and left 45 numbers unsourced.", y=1.22, size=17, h=0.7)
 # hero numbers
 card(s, 0.3, 1.95, 4.5, 2.0, fill=AMBER_T, line=AMBER, lw=1.5)
 tb(s, 0.45, 2.0, 2.2, 0.3, [{"t": "LEDGERLENS", "size": 9, "bold": True, "color": AMBER}], margin=0.0)
-tb(s, 0.45, 2.25, 2.3, 1.2, [{"t": "19", "size": 72, "bold": True, "color": INK}], margin=0.0)
+tb(s, 0.45, 2.25, 2.3, 1.2, [{"t": "16", "size": 72, "bold": True, "color": INK}], margin=0.0)
 tb(s, 0.45, 3.45, 2.2, 0.4, [{"t": "of 20 traps caught", "size": 11, "color": TXT}], margin=0.0)
 tb(s, 2.75, 2.0, 2.0, 0.3, [{"t": "SINGLE PROMPT", "size": 9, "bold": True, "color": GREY}], margin=0.0)
-tb(s, 2.75, 2.25, 2.0, 1.2, [{"t": "0", "size": 72, "bold": True, "color": RGBColor(0xB0, 0xB8, 0xBE)}], margin=0.0)
+tb(s, 2.75, 2.25, 2.0, 1.2, [{"t": "1", "size": 72, "bold": True, "color": RGBColor(0xB0, 0xB8, 0xBE)}], margin=0.0)
 tb(s, 2.75, 3.45, 2.0, 0.4, [{"t": "same documents, one prompt", "size": 11, "color": GREY}], margin=0.0)
 card(s, 0.3, 4.1, 2.2, 1.25, fill=WHITE, line=LINE)
 tb(s, 0.42, 4.15, 2.0, 0.6, [{"t": "0", "size": 30, "bold": True, "color": INK}], margin=0.0)
-tb(s, 0.42, 4.75, 2.0, 0.55, [{"t": "unsourced numbers (baseline: 6)", "size": 9.5, "color": GREY}], margin=0.0)
+tb(s, 0.42, 4.75, 2.0, 0.55, [{"t": "unsourced numbers (baseline: 45)", "size": 9.5, "color": GREY}], margin=0.0)
 card(s, 2.6, 4.1, 2.2, 1.25, fill=WHITE, line=LINE)
-tb(s, 2.72, 4.15, 2.0, 0.6, [{"t": "4.5 s", "size": 30, "bold": True, "color": INK}], margin=0.0)
-tb(s, 2.72, 4.75, 2.0, 0.55, [{"t": "per case, USD 0.00 on cached run", "size": 9.5, "color": GREY}], margin=0.0)
+tb(s, 2.72, 4.15, 2.0, 0.6, [{"t": "~2 min", "size": 30, "bold": True, "color": INK}], margin=0.0)
+tb(s, 2.72, 4.75, 2.0, 0.55, [{"t": "per cold case, USD 0.26-0.31; cached re-run free", "size": 9.5, "color": GREY}], margin=0.0)
 rows = [["Metric", "Target", "Result"],
-        ["Trap recall", "≥ 16 / 20", "19 / 20"],
+        ["Trap recall", "≥ 16 / 20", "16 / 20"],
         ["Unsourced numbers", "0", "0"],
-        ["Objections on clean case A", "≤ 20%", "0"],
-        ["Extraction row accuracy", "≥ 97%", "100%"],
+        ["Objections on clean case A", "≤ 20%", "1 (4.5%)"],
+        ["Extraction row accuracy", "≥ 97%", "100% (481/481)"],
         ["Evidence-link accuracy", "≥ 95%", "100%"],
-        ["Time per case", "≤ 180 s", "4.5 s"]]
+        ["Time per case", "≤ 180 s", "~130 s"]]
 table(s, 5.0, 1.95, 4.7, 2.3, rows, [2.3, 1.1, 1.3], font=9.5, bold_first_col=True)
 card(s, 5.0, 4.4, 4.7, 0.95, fill=PANEL, line=LINE)
-tb(s, 5.12, 4.44, 4.5, 0.9, [{"t": [("How measured. ", {"bold": True}), ("Run of 2026-10-14 in mock mode: full pipeline plus the deterministic Challenger battery, 3 synthetic businesses, 43 documents, answer key traps.json. Baseline is a stub in this mode; a live Gemini 3.8 Flash run replaces both before submission.", {})], "size": 8.5, "color": TXT}], margin=0.0)
+tb(s, 5.12, 4.44, 4.5, 0.9, [{"t": [("How measured. ", {"bold": True}), ("Live Gemini 3.8 Flash run, 2026-10-15. 3 synthetic businesses, 43 born-digital documents, 20 traps. Strict scoring: amount or document under an expected question (95% CI 0.58-0.92). Missed T02, T03, T18, T19. Scanned documents will extract below 100%.", {})], "size": 8.5, "color": TXT}], margin=0.0)
 
 # ---------- Slide 6: Process flow ----------
 s = S[7]
@@ -352,18 +352,18 @@ picture(s, f"{IMG}/architecture.png", 0.9, 1.28, h=3.95)
 # ---------- Slide 11: Cost ----------
 s = S[11]
 set_title(s, "Estimated implementation cost")
-tb(s, 0.3, 1.25, 9.4, 0.45, [{"t": "Cheap enough for small loans: about USD 0.10 per case on Flash, zero on a re-run", "size": 14, "bold": True, "color": INK}])
+tb(s, 0.3, 1.25, 9.4, 0.45, [{"t": "Cheap enough for small loans: USD 0.26-0.31 per case measured on Flash, zero on a cached re-run", "size": 14, "bold": True, "color": INK}])
 from pptx.chart.data import CategoryChartData
 from pptx.enum.chart import XL_CHART_TYPE, XL_LABEL_POSITION
 cd = CategoryChartData()
-cd.categories = ["Manual review (45 min at USD 15/h)", "LedgerLens, Gemini 3.1 Pro upgrade", "LedgerLens, Gemini 3.8 Flash default", "LedgerLens, cached re-run"]
-cd.add_series("USD per case", (11.25, 0.40, 0.10, 0.0))
+cd.categories = ["Manual review (45 min at USD 15/h)", "Single prompt (catches 1 of 20 traps)", "LedgerLens, Gemini 3.8 Flash, measured", "LedgerLens, cached re-run"]
+cd.add_series("USD per case", (11.25, 0.015, 0.31, 0.0))
 gf = s.shapes.add_chart(XL_CHART_TYPE.BAR_CLUSTERED, Inches(0.3), Inches(1.75), Inches(5.7), Inches(3.5), cd)
 ch = gf.chart; ch.has_legend = False; ch.has_title = True
 ch.chart_title.text_frame.text = "Cost per case, USD"
 tp = ch.chart_title.text_frame.paragraphs[0]; tp.runs[0].font.size = Pt(10.5); tp.runs[0].font.bold = True; tp.runs[0].font.color.rgb = INK; tp.runs[0].font.name = FONT
 pl = ch.plots[0]; pl.has_data_labels = True; pl.gap_width = 55
-pl.data_labels.number_format = '0.00'; pl.data_labels.number_format_is_linked = False
+pl.data_labels.number_format = '0.00#'; pl.data_labels.number_format_is_linked = False
 pl.data_labels.position = XL_LABEL_POSITION.OUTSIDE_END
 pl.data_labels.font.size = Pt(10.5); pl.data_labels.font.bold = True; pl.data_labels.font.color.rgb = INK; pl.data_labels.font.name = FONT
 ser = pl.series[0]; ser.format.fill.solid(); ser.format.fill.fore_color.rgb = TEAL
@@ -375,7 +375,7 @@ va = ch.value_axis; va.visible = False; va.has_major_gridlines = False; va.maxim
 rows = [["Assumption", "Value"],
         ["Gemini 3.8 Flash list price", "USD 0.75 / 3.75 per 1M tokens"],
         ["Gemini 3.1 Pro list price", "USD 2.00 / 12.00 per 1M tokens"],
-        ["Tokens per 20-document case", "60-90k input, 15-25k output"],
+        ["Tokens per case (measured)", "77-103k for 11-18 documents"],
         ["Hosting", "Cloud Run scales to zero; Firestore and Storage in free tier"],
         ["Guardrail", "Budget-cap env var stops Gemini calls once spent"],
         ["Build", "2 engineers, 4 days, free tier and trial credits"]]
