@@ -34,9 +34,10 @@ export class ApiError extends Error {
 /** Fired when the API reports that live AI analysis is paused (budget cap or provider billing limit). */
 export const AI_LIMIT_EVENT = 'ledgerlens:ai-limit'
 
-/** True when the case was created in another browser and shared with everyone (read-only here). */
+/** True when the case was created in another browser and shared with everyone (read-only here). The API never
+ * returns workspace ids, only "you" or "shared". */
 export function isSharedFromOthers(c: { workspace?: string | null }): boolean {
-  return Boolean(c.workspace) && c.workspace !== workspaceId()
+  return c.workspace === 'shared'
 }
 
 // Each browser gets its own copy of the demo cases, so one reviewer signing a case does not lock it for the next.

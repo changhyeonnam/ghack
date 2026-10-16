@@ -122,6 +122,13 @@ def workspace_dep(x_ledgerlens_workspace: Optional[str] = Header(default=None)) 
     return None
 
 
+def _out(case: Case, ws: Optional[str]) -> Case:
+    """Never return a workspace id: it works like a password for the owner's cases. Clients only learn whether a
+    case is theirs ("you") or was shared by another visitor ("shared")."""
+    tag = None if not case.workspace else ("you" if case.workspace == ws else "shared")
+    return case.model_copy(update={"workspace": tag})
+
+
 def _owned_case(p: Pipeline, case_id: str, ws: Optional[str]) -> Case:
     """Cases shared by other visitors are read-only: only the creating workspace may change them."""
     c = _case_or_404(p, case_id)
@@ -132,17 +139,17 @@ def _owned_case(p: Pipeline, case_id: str, ws: Optional[str]) -> Case:
 
 @app.get("/api/cases", response_model=list[Case])
 def list_cases(p: Pipeline = Depends(pipe), ws: Optional[str] = Depends(workspace_dep)):
-    return p.list_cases(ws)
+    return [_out(c, ws) for c in p.list_cases(ws)]
 
 
 @app.post("/api/cases", response_model=Case)
 def create_case(body: CaseCreate, p: Pipeline = Depends(pipe), ws: Optional[str] = Depends(workspace_dep)):
-    return p.create_case(body, workspace=ws)
+    return _out(p.create_case(body, workspace=ws), ws)
 
 
 @app.get("/api/cases/{case_id}", response_model=Case)
-def get_case(case_id: str, p: Pipeline = Depends(pipe)):
-    return _case_or_404(p, case_id)
+def get_case(case_id: str, p: Pipeline = Depends(pipe), ws: Optional[str] = Depends(workspace_dep)):
+    return _out(_case_or_404(p, case_id), ws)
 
 
 @app.delete("/api/cases/{case_id}")
@@ -165,7 +172,7 @@ async def upload_documents(case_id: str, files: list[UploadFile] = File(...), p:
         st.status = "pending"
     p.repo.save_case(case)
     p.audit(case.id, "system", "documents_uploaded", files=[f.filename for f in files])
-    return case
+    return _out(case, ws)
 
 
 @app.delete("/api/cases/{case_id}/documents/{doc_id}", response_model=Case)
@@ -175,7 +182,7 @@ def delete_document(case_id: str, doc_id: str, p: Pipeline = Depends(pipe), ws: 
     for st in case.stages:
         st.status = "pending"
     p.repo.save_case(case)
-    return case
+    return _out(case, ws)
 
 
 @app.get("/api/cases/{case_id}/documents/{doc_id}/file")
@@ -214,12 +221,12 @@ def document_page(case_id: str, doc_id: str, page: int, scale: int = Query(1, ge
 async def run(case_id: str, stage: str = Query("all"), p: Pipeline = Depends(pipe), ws: Optional[str] = Depends(workspace_dep)):
     _owned_case(p, case_id, ws)
     if stage == "all":
-        return await p.run_all(case_id)
+        return _out(await p.run_all(case_id), ws)
     try:
         st = StageName(stage)
     except ValueError:
         raise HTTPException(400, f"unknown stage {stage}")
-    return await p.run_stage(case_id, st)
+    return _out(await p.run_stage(case_id, st), ws)
 
 
 # ---------------------------------------------------------------- artifacts
@@ -269,13 +276,13 @@ def get_traces(case_id: str, p: Pipeline = Depends(pipe)):
 @app.post("/api/cases/{case_id}/objections/{objection_id}/resolution", response_model=Case)
 def resolve(case_id: str, objection_id: str, body: ResolutionBody, p: Pipeline = Depends(pipe), ws: Optional[str] = Depends(workspace_dep)):
     case = _owned_case(p, case_id, ws)
-    return p.resolve_objection(case, objection_id, body.status, body.note, body.by)
+    return _out(p.resolve_objection(case, objection_id, body.status, body.note, body.by), ws)
 
 
 @app.post("/api/cases/{case_id}/decision", response_model=Case)
 def decide(case_id: str, body: DecisionBody, p: Pipeline = Depends(pipe), ws: Optional[str] = Depends(workspace_dep)):
     case = _owned_case(p, case_id, ws)
-    return p.sign_decision(case, Decision(case_id=case.id, outcome=body.outcome, conditions=body.conditions, rationale=body.rationale, underwriter=body.underwriter))
+    return _out(p.sign_decision(case, Decision(case_id=case.id, outcome=body.outcome, conditions=body.conditions, rationale=body.rationale, underwriter=body.underwriter)), ws)
 
 
 @app.post("/api/cases/{case_id}/letter")
