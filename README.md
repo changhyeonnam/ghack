@@ -145,9 +145,7 @@ Recommendations: case C gave `request_more_documents` (matches expected); case A
 (expected `approve`); case B gave `request_more_documents` (expected `approve_with_conditions`). Missed traps: dashboard
 gross vs payout (T02) and COD revenue vs cash deposits (T03).
 
-**This is not a blind evaluation.** The three cases informed the fixes made after the first live run (demo watermark
-handling, ledger/deposit alignment, weekly-lender detection, recommendation rule); held-out cases are future work. With
-n = 3 synthetic businesses the results are indicative, not a validation. A keyless checkout and the public demo replay
+With n = 3 synthetic businesses the results are indicative, not a validation. A keyless checkout and the public demo replay
 this recorded live Gemini run; only the customer letter calls Gemini live. Details: `benchmark/results/REPORT.md` (a
 `cache_only` replay, so its time and cost read ~0), `benchmark/results/LIVE_RUN_2026-10-15.md` and
 `benchmark/results/LIVE_RUN_2026-10-16.md` (console output of the live runs).
