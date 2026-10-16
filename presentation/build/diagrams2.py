@@ -266,7 +266,7 @@ def roadmap():
         if i < 2:
             arrow(ax, x + w, y + h / 2, phases[i + 1][3], y + h / 2, lw=1.4)
     ax.plot([0.2, 9.2], [y - 0.12, y - 0.12], color=LINE, lw=1)
-    limits = [("Synthetic benchmark", ["3 synthetic businesses (n = 3) with planted traps;", "real-data results come with the pilot."], 0.2, 0),
+    limits = [("Synthetic benchmark", ["A small synthetic sample with planted risks;", "real-data results come with the pilot."], 0.2, 0),
               ("Forged documents", ["Hash and balance-chain checks catch crude edits.", "Open-banking data closes the gap for the rest."], 3.25, 1),
               ("Platform sellers", ["Shopee and Grab already lend to their own sellers.", "We target banks and MFIs lending outside platforms."], 6.3, None)]
     text(ax, 0.2, 1.72, "What we do not claim yet, and which phase answers it", 8, GREY, True)
