@@ -162,8 +162,10 @@ def merge_objections(llm: list[Objection], rules: list[Objection]) -> list[Objec
             cover.severity = r.severity
         have = {(e.doc_id, e.page) for e in cover.evidence_refs}
         cover.evidence_refs += [e for e in r.evidence_refs if (e.doc_id, e.page) not in have]
-        if r.tool_evidence and r.tool_evidence not in (cover.tool_evidence or ""):
-            cover.tool_evidence = ((cover.tool_evidence + " | ") if cover.tool_evidence else "") + r.tool_evidence
+        # keep the specific tool finding (amount, date, row) visible inside the broader LLM objection
+        finding = f"{r.title} [{r.tool_evidence}]" if r.tool_evidence else r.title
+        if finding not in (cover.tool_evidence or ""):
+            cover.tool_evidence = ((cover.tool_evidence + " | ") if cover.tool_evidence else "") + finding
     merged.sort(key=lambda o: (SEV_ORDER.get(o.severity, 9), o.question_id))
     for i, o in enumerate(merged, 1):
         o.id = f"O{i:02d}"

@@ -119,3 +119,12 @@ def test_entity_check_lists_only_mismatching_documents():
            DocumentExtraction(doc_id="D11", doc_type=DocType.premises_photo, premises=PremisesExtraction(signage_text="SERVICE BAY 2"))]
     res = [e for e in checks.entity_consistency(exs, None, "Reyes Auto Repair", "PH", "PHP") if e.field == "business_name"][0]
     assert not res.consistent and set(res.values) == {"application", "D11"}
+
+
+def test_absorbed_rule_finding_stays_visible_in_the_llm_objection():
+    ref = SourceRef(doc_id="D01", page=1)
+    llm = [_obj("Q3", Severity.high, "Self-transfers across rows T0037, T0126", [ref])]
+    rule = _obj("Q3", Severity.high, "Credit of 24,000,000 on 2026-02-12 comes from the applicant's own account", [ref],
+                "self-transfer detector T0037")
+    out = merge_objections(llm, [rule])
+    assert len(out) == 1 and "24,000,000" in out[0].tool_evidence and "T0037" in out[0].tool_evidence
