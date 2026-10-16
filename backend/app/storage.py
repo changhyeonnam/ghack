@@ -33,6 +33,9 @@ class Repository(ABC):
     def put_blob(self, path: str, data: bytes, content_type: str = "application/octet-stream") -> None: ...
     @abstractmethod
     def get_blob(self, path: str) -> Optional[bytes]: ...
+
+    def has_blob(self, path: str) -> bool:
+        return self.get_blob(path) is not None
     @abstractmethod
     def delete_blob_prefix(self, prefix: str) -> None: ...
 
@@ -242,6 +245,9 @@ class GcpRepository(Repository):
     def put_blob(self, path: str, data: bytes, content_type: str = "application/octet-stream") -> None:
         self.bucket.blob(path).upload_from_string(data, content_type=content_type)
 
+    def has_blob(self, path: str) -> bool:
+        return self.bucket.blob(path).exists()  # metadata only; no download
+
     def get_blob(self, path: str) -> Optional[bytes]:
         blob = self.bucket.blob(path)
         if not blob.exists():
@@ -261,20 +267,20 @@ class GcpRepository(Repository):
         if len(raw.encode("utf-8")) > self.SPILL_BYTES:
             path = f"cases/{case_id}/artifacts/{name}.json"
             self.put_blob(path, raw.encode("utf-8"), "application/json")
-            self._art_ref(case_id, name).set({"__gcs__": path})
+            self._art_ref(case_id, name).set({"gcs_blob": path})
         else:
-            self._art_ref(case_id, name).set({"__json__": raw})
+            self._art_ref(case_id, name).set({"json_blob": raw})
 
     def get_artifact(self, case_id: str, name: str) -> Optional[dict[str, Any]]:
         snap = self._art_ref(case_id, name).get()
         if not snap.exists:
             return None
         d = snap.to_dict() or {}
-        if "__gcs__" in d:
-            raw = self.get_blob(d["__gcs__"])
+        if "gcs_blob" in d:
+            raw = self.get_blob(d["gcs_blob"])
             return json.loads(raw) if raw else None
-        if "__json__" in d:
-            return json.loads(d["__json__"])
+        if "json_blob" in d:
+            return json.loads(d["json_blob"])
         return d
 
     def delete_artifact(self, case_id: str, name: str) -> None:
@@ -301,29 +307,29 @@ class GcpRepository(Repository):
         if not snap.exists:
             return None
         d = snap.to_dict() or {}
-        if "__gcs__" in d:
-            raw = self.get_blob(d["__gcs__"])
+        if "gcs_blob" in d:
+            raw = self.get_blob(d["gcs_blob"])
             return json.loads(raw) if raw else None
-        return json.loads(d["__json__"]) if "__json__" in d else d
+        return json.loads(d["json_blob"]) if "json_blob" in d else d
 
     def cache_put(self, key: str, value: dict[str, Any]) -> None:
         raw = json.dumps(value, ensure_ascii=False)
         if len(raw.encode("utf-8")) > self.SPILL_BYTES:
             path = f"llm_cache/{key}.json"
             self.put_blob(path, raw.encode("utf-8"), "application/json")
-            self._col("llm_cache").document(key).set({"__gcs__": path})
+            self._col("llm_cache").document(key).set({"gcs_blob": path})
         else:
-            self._col("llm_cache").document(key).set({"__json__": raw})
+            self._col("llm_cache").document(key).set({"json_blob": raw})
 
     def get_global(self, name: str) -> Optional[dict[str, Any]]:
         snap = self._col("global").document(name).get()
         if not snap.exists:
             return None
         d = snap.to_dict() or {}
-        return json.loads(d["__json__"]) if "__json__" in d else d
+        return json.loads(d["json_blob"]) if "json_blob" in d else d
 
     def save_global(self, name: str, data: dict[str, Any]) -> None:
-        self._col("global").document(name).set({"__json__": json.dumps(data, ensure_ascii=False)})
+        self._col("global").document(name).set({"json_blob": json.dumps(data, ensure_ascii=False)})
 
     def get_spend(self) -> float:
         snap = self._col("global").document("ai_spend_counter").get()

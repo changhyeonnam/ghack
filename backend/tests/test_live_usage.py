@@ -37,6 +37,9 @@ def test_provider_limit_is_recognised_and_remembered(tmp_path):
     s, repo = _repo(tmp_path)
     err = RuntimeError("402 RESOURCE_EXHAUSTED. Your prepayment credits are depleted.")
     assert budget.is_provider_limit_error(err) and not budget.is_provider_limit_error(RuntimeError("503 UNAVAILABLE high demand"))
+    per_minute = RuntimeError("429 RESOURCE_EXHAUSTED. You exceeded your current quota. Quota exceeded for metric: "
+                              "generate_requests_per_model, quotaId: GenerateRequestsPerMinutePerProjectPerModel. Please retry in 6.8s.")
+    assert not budget.is_provider_limit_error(per_minute)  # rate limit: retry, do not pause for an hour
     budget.record_provider_limit(repo, err)
     st = budget.state(repo, s)
     assert st["exhausted"] and st["reason"] == "provider_limit"
@@ -66,3 +69,11 @@ def test_analysed_cases_are_shared_read_only(client):  # noqa: F811
     r = client.post(f"/api/cases/{cid}/run?stage=all", headers=ws2)
     assert r.status_code == 403 and "read-only" in r.json()["detail"]                # not runnable by others
     assert client.delete(f"/api/cases/{cid}", headers=ws2).status_code == 403
+
+
+def test_firestore_field_names_are_not_reserved():
+    """Firestore rejects field names matching __.*__ (400 "field name __json__ is reserved")."""
+    import re
+    from pathlib import Path
+    src = (Path(__file__).resolve().parents[1] / "app" / "storage.py").read_text()
+    assert not re.findall(r'["\']__\w+__["\']', src)

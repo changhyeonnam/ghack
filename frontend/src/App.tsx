@@ -31,6 +31,10 @@ export default function App() {
           }
         />
       </Routes>
+      <footer className="site-foot">
+        Demo cases use generated documents (synthetic data); no real customer data. Live AI analysis runs on Gemini within a
+        fixed budget; cases analysed by visitors are shared read-only. LedgerLens drafts and challenges; a human decides.
+      </footer>
     </div>
   )
 }

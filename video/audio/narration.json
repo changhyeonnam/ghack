@@ -1,0 +1,23 @@
+{
+ "_note": "Spoken narration per clip (ids match the video timeline). Edit and re-run tts_gemini.py; unchanged clips come from the cache.",
+ "S1a": "In Vietnam, only eight point eight percent of the country's 914,000 small and medium businesses have a bank loan.",
+ "S1b": "seventy five point five percent of Vietnamese firms cannot borrow without collateral.",
+ "S1c": "What they do have is evidence: banking statements, handwritten ledgers, photos of the shop. LedgerLens turns that evidence into a credit memo an underwriter can check.",
+ "S2a": "From the portfolio of demo businesses, we open Reyes Auto Repair, a repair shop in the Philippines asking for 250,000 pesos.",
+ "S2b": "The case holds eleven raw documents: a four-page bank statement, eight handwritten ledger pages, and two shop photos.",
+ "S3a": "One click runs the pipeline.",
+ "S3b": "Extractor agents, built with Google's Agent Development Kit, read every page with Gemini three point eight Flash, and return each value with its page and bounding box. Then plain Python, not the model, computes the cash flow. The Analyst drafts the memo, and an independent Challenger tries to break it. Here, it replays our cached live run.",
+ "S4a": "Every number in this memo is a link. Monthly outflow on loan-like transfers: 27,790 pesos. The panel shows sixteen sources, each boxed on the statement.",
+ "S4b": "Figures inside the text work the same way: this 14,800 peso BDO auto loan payment. Every number links to a document, a page, and a box.",
+ "S5a": "The Challenger never sees the Analyst's prompt. It runs deterministic checks, then investigates with tools. Nine objections, three of them critical.",
+ "S5b": "This shop photo is a byte-identical match to a photo filed by a previous applicant. And the same ledger page was photographed twice, with the month changed. Accept.",
+ "S5c": "This second objection repeats the photo finding, so I dismiss it.",
+ "S5d": "Two statement months are missing, and the running balance breaks. Accept.",
+ "S5e": "It also flags weekly GCash transfers to a likely informal lender, the BDO auto loan, and ledger cash that is the same money as the deposits, not extra revenue.",
+ "S6a": "I request more documents, keep the listed conditions, and sign.",
+ "S6c": "The audit trail keeps every stage, agent call, and human action.",
+ "S6b": "Gemini then writes a plain-language letter to the applicant, in Filipino.",
+ "S7a": "We tested three demo businesses with twenty planted traps, in a live Gemini three point eight Flash run with strict scoring. LedgerLens caught eighteen of twenty. A single prompt on the same documents caught three, and wrote sixty-two unsourced numbers. LedgerLens wrote zero. A cold run takes about two minutes and about twenty-eight cents per case. A cached re-run costs nothing.",
+ "S7b": "Humans decide. AI shows its work.",
+ "S1d": "Three steps: read with evidence, challenge, and a human signs."
+}

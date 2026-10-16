@@ -89,11 +89,11 @@ def architecture():
         ax.text(x + 0.15, y + h - 0.2, label, fontsize=8.5, fontweight="bold", color=INK, va="center")
 
     # Frontend
-    container(0.2, 3.1, 9.0, 0.8, "Frontend  ·  Firebase Hosting (React + Vite)")
+    container(0.2, 3.1, 9.0, 0.8, "Frontend  ·  React + Vite, served by Cloud Run")
     box(ax, 0.5, 3.17, 2.0, 0.45, "Portfolio · New case")
     box(ax, 2.8, 3.17, 6.2, 0.45, "Workbench: memo · evidence viewer with bbox highlight · objections · decision · audit · export", tsize=6.4)
     # Backend
-    container(0.2, 0.95, 9.0, 1.95, "Backend  ·  Cloud Run (Python FastAPI + ADK)  ·  scales to zero, cache_only mode for the public demo")
+    container(0.2, 0.95, 9.0, 1.95, "Backend  ·  Cloud Run (Python FastAPI + ADK)  ·  scales to zero, live Gemini within a budget; recorded runs replay free")
     box(ax, 0.5, 2.2, 1.9, 0.42, "REST API")
     box(ax, 2.7, 2.2, 2.3, 0.42, "ADK Orchestrator", fill=TINT, edge=TEAL, lw=1.8)
     agents = [("Intake", "Gemini 3.8 Flash"), ("Extractor x5", "Flash, Pro optional"), ("Analyst", "Flash, Pro optional"),

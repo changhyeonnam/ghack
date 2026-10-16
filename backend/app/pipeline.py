@@ -6,6 +6,7 @@ later stage automatically runs missing prerequisites.
 from __future__ import annotations
 
 import asyncio
+import functools
 import json
 import logging
 import mimetypes
@@ -33,6 +34,15 @@ from .tools.documents import page_count, phash16_of_file, phash_pages, sha256_he
 
 log = logging.getLogger("ledgerlens.pipeline")
 STAGE_ORDER = [StageName.intake, StageName.extract, StageName.cashflow, StageName.analyze, StageName.challenge]
+
+
+@functools.lru_cache(maxsize=512)
+def _doc_facts_cached(sha: str, mime: str, data: bytes) -> tuple[int, tuple[str, ...]]:
+    return page_count(data, mime), tuple(phash_pages(data, mime))
+
+
+def _doc_facts(sha: str, data: bytes, mime: str) -> tuple[int, tuple[str, ...]]:
+    return _doc_facts_cached(sha, mime, data)
 
 
 class PipelineError(RuntimeError):
@@ -96,10 +106,15 @@ class Pipeline:
         while any(d.doc_id == doc_id for d in case.documents):
             n += 1
             doc_id = f"D{n:02d}"
-        path = f"cases/{case.id}/docs/{doc_id}/{Path(filename).name}"
-        self.repo.put_blob(path, data, mime)
-        meta = DocumentMeta(doc_id=doc_id, filename=Path(filename).name, mime_type=mime, size_bytes=len(data), pages=page_count(data, mime),
-                            sha256=sha256_hex(data), storage_path=path, page_hashes=phash_pages(data, mime))
+        sha = sha256_hex(data)
+        # Content-addressed: identical files (every browser's copy of a demo case) share one stored blob, and the page
+        # count / perceptual hashes are computed once per process.
+        path = f"docs/{sha}/{Path(filename).name}"
+        if not self.repo.has_blob(path):
+            self.repo.put_blob(path, data, mime)
+        pages, hashes = _doc_facts(sha, data, mime)
+        meta = DocumentMeta(doc_id=doc_id, filename=Path(filename).name, mime_type=mime, size_bytes=len(data), pages=pages,
+                            sha256=sha, storage_path=path, page_hashes=list(hashes))
         case.documents.append(meta)
         case.status = "documents_uploaded" if case.status == "draft" else case.status
         case.updated_at = utcnow_iso()
