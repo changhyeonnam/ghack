@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { errorMessage, getChallenge, listCases, optional, seedDemo } from '../api'
+import { errorMessage, getChallenge, isSharedFromOthers, listCases, optional, seedDemo } from '../api'
 import { EmptyState, RecommendationBadge, Skeleton, Spinner, StageDots, StatusBadge, recommendationLabel } from '../components/Badges'
 import { Icon } from '../components/Icons'
 import { useToast } from '../components/Toast'
@@ -312,6 +312,11 @@ function CaseRow({ c, severity, onOpen }: { c: Case; severity: SeverityCounts | 
               {c.is_demo ? (
                 <span className="tag tag-demo tip" data-tip="Demo case prepared for this showcase; not a real applicant">
                   Demo
+                </span>
+              ) : null}
+              {isSharedFromOthers(c) ? (
+                <span className="tag tag-shared tip" data-tip="Analysed by another visitor; you can open it read-only">
+                  Shared
                 </span>
               ) : null}
             </div>

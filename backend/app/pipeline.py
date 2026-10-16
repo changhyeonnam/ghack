@@ -19,6 +19,7 @@ from .agents.challenger import run_challenger
 from .agents.explainer import run_explainer
 from .agents.extractor import run_extraction
 from .agents.intake import run_intake
+from .agents.runner import BudgetExceeded, CacheMiss
 from .config import Settings
 from .feedback import compute_priorities, load_priorities
 from .llm.groundtruth import GroundTruth, load_manifests, load_past_index
@@ -169,6 +170,8 @@ class Pipeline:
             self.audit(case.id, "system", f"stage_{stage.value}_failed", error=st.error)
             self._refresh_stats(case, time.time() - t0, traces_before)
             self.repo.save_case(case)
+            if isinstance(e, (BudgetExceeded, CacheMiss)):
+                raise  # surfaced as 402/503 so the UI can show the AI-limit notice
             raise PipelineError(st.error) from e
         new_traces = self.repo.list_traces(case.id)[traces_before:]
         st.cached = bool(new_traces) and all(t.cached for t in new_traces)
@@ -274,8 +277,16 @@ class Pipeline:
         return letter
 
     # ------------------------------------------------------------------ demo data
+    SHAREABLE_STATUSES = ("memo_ready", "challenged", "decided")
+
     def list_cases(self, workspace: Optional[str] = None) -> list[Case]:
-        """A workspace sees only its own cases; without one, only shared (workspace-less) cases."""
+        """A workspace sees its own cases plus analysed cases other visitors chose to share (never their demo copies)."""
+        own = [c for c in self.repo.list_cases() if c.workspace == workspace]
+        others = [c for c in self.repo.list_cases()
+                  if c.workspace != workspace and c.workspace and c.shared and not c.is_demo and c.status in self.SHAREABLE_STATUSES]
+        return own + others
+
+    def own_cases(self, workspace: Optional[str]) -> list[Case]:
         return [c for c in self.repo.list_cases() if c.workspace == workspace]
 
     def seed_demo_cases(self, force: bool = False, workspace: Optional[str] = None) -> list[str]:
@@ -294,7 +305,7 @@ class Pipeline:
                         pass
             self.repo.save_global("past_case_index", {"items": past})
         created: list[str] = []
-        existing = {next((t for t in c.tags if t.startswith("synthetic:")), None): c for c in self.list_cases(workspace) if c.is_demo}
+        existing = {next((t for t in c.tags if t.startswith("synthetic:")), None): c for c in self.own_cases(workspace) if c.is_demo}
         for sid, m in manifests.items():
             tag = f"synthetic:{sid}"
             if tag in existing and not force:

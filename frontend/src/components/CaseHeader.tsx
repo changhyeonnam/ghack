@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { countryFlag, countryName, formatCompact, formatCost, formatDateTime, formatDuration, formatTokens } from '../format'
+import { isSharedFromOthers } from '../api'
 import type { Case, ChallengeResult, Memo } from '../types'
 import { RecommendationBadge, StatusBadge } from './Badges'
 import { Icon } from './Icons'
@@ -48,6 +49,11 @@ export function CaseHeader({ kase, memo, challenge, onExportMemo, onOpenViewer }
             {kase.is_demo ? (
               <span className="tag tag-demo tip" data-tip="Demo case prepared for this showcase; not a real applicant">
                 Demo
+              </span>
+            ) : null}
+            {isSharedFromOthers(kase) ? (
+              <span className="tag tag-shared tip" data-tip="Analysed by another visitor. Read-only: you can explore it but not re-run or sign it.">
+                Shared · read-only
               </span>
             ) : null}
           </div>
