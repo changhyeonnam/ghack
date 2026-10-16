@@ -77,11 +77,12 @@ export default function CaseList() {
     }
   }, [cases, severities])
 
-  async function onSeed() {
+  async function onSeed(force = false) {
+    if (force && !window.confirm('Reset the three demo cases to their unprocessed state? Your decisions on them will be discarded.')) return
     setSeeding(true)
     try {
-      const res = await seedDemo()
-      toast.success(`Loaded ${res.cases.length} demo case${res.cases.length === 1 ? '' : 's'}`)
+      const res = await seedDemo(force)
+      toast.success(`${force ? 'Reset' : 'Loaded'} ${res.cases.length} demo case${res.cases.length === 1 ? '' : 's'}`)
       await refresh()
     } catch (e) {
       toast.error(`Demo seed failed: ${errorMessage(e)}`)
@@ -146,9 +147,14 @@ export default function CaseList() {
           <p className="page-sub">Applications under review. Every memo number traces back to a document; a challenger agent contests it before you sign.</p>
         </div>
         <div className="page-actions">
-          <button className="btn btn-secondary" onClick={onSeed} disabled={seeding}>
+          <button className="btn btn-secondary" onClick={() => onSeed()} disabled={seeding}>
             {seeding ? <Spinner small /> : <Icon name="layers" />} Load demo cases
           </button>
+          {(cases ?? []).some((c) => c.is_demo) && (
+            <button className="btn btn-secondary" onClick={() => onSeed(true)} disabled={seeding} title="Restore the demo cases to their unprocessed state">
+              Reset demo
+            </button>
+          )}
           <button className="btn btn-primary" onClick={() => navigate('/cases/new')}>
             <Icon name="plus" /> New case
           </button>
@@ -212,7 +218,7 @@ export default function CaseList() {
             hint="Create a case and upload the applicant's documents, or load the three synthetic demo cases to explore the workbench."
             action={
               <>
-                <button className="btn btn-secondary" onClick={onSeed} disabled={seeding}>
+                <button className="btn btn-secondary" onClick={() => onSeed()} disabled={seeding}>
                   {seeding ? <Spinner small /> : null} Load demo cases
                 </button>
                 <button className="btn btn-primary" onClick={() => navigate('/cases/new')}>
