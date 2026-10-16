@@ -111,6 +111,9 @@ def recompute_balances(extractions: Iterable[DocumentExtraction], tolerance_rati
         prev: Optional[float] = bs.opening_balance.value if bs.opening_balance else None
         for tx in bs.transactions:
             if tx.balance_after is None:
+                # statements that print a balance only once per day: carry the running balance forward
+                if prev is not None:
+                    prev = prev + (tx.credit or 0) - (tx.debit or 0)
                 continue
             if prev is not None:
                 expected = prev + (tx.credit or 0) - (tx.debit or 0)
@@ -133,9 +136,10 @@ def recompute_balances(extractions: Iterable[DocumentExtraction], tolerance_rati
 # Classification
 # ---------------------------------------------------------------------------
 def classify_rows(rows: list[Row], holder_names: list[str]) -> None:
-    holder_tokens: set[str] = set()
-    for n in holder_names:
-        holder_tokens |= _tokens(n)
+    # A self-transfer needs every name token of one holder ("NGUYEN THI LINH"), not just a shared family name:
+    # "NGUYEN THI HOA" is a different person.
+    holder_sets = [t for t in (_tokens(n) for n in holder_names) if t]
+    holder_tokens: set[str] = set().union(*holder_sets) if holder_sets else set()
     by_cp_amount: dict[tuple[str, float], list[Row]] = defaultdict(list)
     for r in rows:
         text = f"{r.tx.description} {r.tx.counterparty or ''}"
@@ -149,7 +153,7 @@ def classify_rows(rows: list[Row], holder_names: list[str]) -> None:
         if LENDER_RE.search(text) and r.tx.debit > 0:
             r.tags.add("lender")
         cp_tokens = _tokens(r.tx.counterparty) or (_tokens(text) if TRANSFER_WORDS_RE.search(text) else set())
-        if r.tx.credit > 0 and holder_tokens and len(cp_tokens & holder_tokens) >= min(2, len(holder_tokens)):
+        if r.tx.credit > 0 and any(hs <= cp_tokens for hs in holder_sets):
             r.tags.add("self_transfer")
         key_cp = " ".join(sorted(cp_tokens)) if cp_tokens else _norm(r.tx.description)
         amt = r.tx.credit if r.tx.credit > 0 else r.tx.debit
