@@ -198,7 +198,7 @@ def document_page(case_id: str, doc_id: str, page: int, scale: int = Query(1, ge
         raise HTTPException(404, "document not found")
     if page < 1 or page > max(1, d.pages):
         raise HTTPException(404, "page out of range")
-    key = f"cases/{case_id}/renders/{doc_id}/p{page}_s{scale}.png"
+    key = f"renders/{d.sha256}/p{page}_s{scale}_dpi{s.page_render_dpi}.png"  # shared across copies of the same file
     png = p.repo.get_blob(key)
     if png is None:
         data = p.repo.get_blob(d.storage_path)

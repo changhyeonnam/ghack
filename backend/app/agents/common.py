@@ -40,6 +40,11 @@ def load_doc_bytes(repo: Repository, d: DocumentMeta) -> bytes:
     return data
 
 
+def _render_key(d: DocumentMeta, settings: Settings, name: str) -> str:
+    """Page renders are stored by source content, so every copy of the same document reuses them."""
+    return f"llm_pages/{d.sha256}/w{settings.llm_page_max_width}/{name}"
+
+
 def page_parts(repo: Repository, case: Case, d: DocumentMeta, settings: Settings) -> list[types.Part]:
     """Label + JPEG for every page of a document, cached as blobs so re-runs do not re-render."""
     parts: list[types.Part] = []
@@ -47,7 +52,7 @@ def page_parts(repo: Repository, case: Case, d: DocumentMeta, settings: Settings
     rendered: list[bytes] = []
     missing = False
     for p in range(1, n + 1):
-        b = repo.get_blob(f"cases/{case.id}/llm/{d.doc_id}/p{p}.jpg")
+        b = repo.get_blob(_render_key(d, settings, f"p{p}.jpg"))
         if b is None:
             missing = True
             break
@@ -55,7 +60,7 @@ def page_parts(repo: Repository, case: Case, d: DocumentMeta, settings: Settings
     if missing:
         rendered = []
         for lp in pages_for_llm(load_doc_bytes(repo, d), d.mime_type, max_width=settings.llm_page_max_width):
-            repo.put_blob(f"cases/{case.id}/llm/{d.doc_id}/p{lp.page}.jpg", lp.data, "image/jpeg")
+            repo.put_blob(_render_key(d, settings, f"p{lp.page}.jpg"), lp.data, "image/jpeg")
             rendered.append(lp.data)
     for p, data in enumerate(rendered, 1):
         image_ids.register(data, f"{d.sha256}:page{p}:w{settings.llm_page_max_width}")
@@ -65,7 +70,7 @@ def page_parts(repo: Repository, case: Case, d: DocumentMeta, settings: Settings
 
 
 def thumbnail_part(repo: Repository, case: Case, d: DocumentMeta) -> list[types.Part]:
-    key = f"cases/{case.id}/llm/{d.doc_id}/thumb.jpg"
+    key = f"llm_pages/{d.sha256}/thumb.jpg"  # shared by every case holding the same file
     b = repo.get_blob(key)
     if b is None:
         b = thumbnail(load_doc_bytes(repo, d), d.mime_type)

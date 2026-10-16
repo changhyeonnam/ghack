@@ -33,6 +33,9 @@ class Repository(ABC):
     def put_blob(self, path: str, data: bytes, content_type: str = "application/octet-stream") -> None: ...
     @abstractmethod
     def get_blob(self, path: str) -> Optional[bytes]: ...
+
+    def has_blob(self, path: str) -> bool:
+        return self.get_blob(path) is not None
     @abstractmethod
     def delete_blob_prefix(self, prefix: str) -> None: ...
 
@@ -241,6 +244,9 @@ class GcpRepository(Repository):
     # blobs
     def put_blob(self, path: str, data: bytes, content_type: str = "application/octet-stream") -> None:
         self.bucket.blob(path).upload_from_string(data, content_type=content_type)
+
+    def has_blob(self, path: str) -> bool:
+        return self.bucket.blob(path).exists()  # metadata only; no download
 
     def get_blob(self, path: str) -> Optional[bytes]:
         blob = self.bucket.blob(path)
