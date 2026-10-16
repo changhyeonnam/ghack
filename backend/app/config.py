@@ -50,7 +50,8 @@ class Settings(BaseSettings):
     llm_timeout_seconds: int = 180
     llm_max_retries: int = 2
     # Hard stop: refuse to spend more than this in one process lifetime (USD).
-    budget_cap_usd: float = 5.0
+    budget_cap_usd: float = 5.0  # total across restarts and instances (persisted in the repository)
+    provider_limit_cooldown_s: int = 3600  # after Gemini reports the key's credits/quota exhausted
     # In cache_only mode these agents may still call Gemini on a cache miss. The Explainer's letter depends on each
     # reviewer's own signed decision, so it can never be pre-cached; it is one short Flash call per letter.
     live_agents_in_cache_only: str = "explainer"

@@ -32,8 +32,8 @@ from ..storage import Repository
 log = logging.getLogger("ledgerlens.agents")
 
 
-class BudgetExceeded(RuntimeError):
-    pass
+from ..llm import budget
+from ..llm.budget import BudgetExceeded  # noqa: F401  (re-exported for callers)
 
 
 class CacheMiss(RuntimeError):
@@ -234,8 +234,8 @@ async def run_agent(spec: AgentSpec, parts: list[types.Part], *, settings: Setti
         raise CacheMiss(f"LLM cache miss for {spec.name} while running in cache_only mode")
     if mode == "cache_only" and not (settings.google_api_key or settings.use_vertexai):
         raise CacheMiss(f"{spec.name} needs a live Gemini call; set GOOGLE_API_KEY (this replay has no key)")
-    if not mock and _spent_usd >= settings.budget_cap_usd:
-        raise BudgetExceeded(f"Budget cap of USD {settings.budget_cap_usd} reached in this process; refusing to call Gemini")
+    if not mock:
+        budget.check(repo, settings)
 
     agent = build_llm_agent(spec, settings, mock)
     token = MOCK_CONTEXT.set({**(mock_context or {}), "agent": spec.name}) if mock else None
@@ -248,6 +248,9 @@ async def run_agent(spec: AgentSpec, parts: list[types.Part], *, settings: Setti
             except Exception as e:  # retry transient failures
                 last_err = e
                 log.warning("agent %s attempt %d failed: %s", spec.name, attempt + 1, e)
+                if not mock and budget.is_provider_limit_error(e):  # credits/quota gone: retrying cannot help
+                    budget.record_provider_limit(repo, e)
+                    budget.check(repo, settings)
                 if attempt >= settings.llm_max_retries or mock:
                     raise
                 msg = str(e)
@@ -273,6 +276,8 @@ async def run_agent(spec: AgentSpec, parts: list[types.Part], *, settings: Setti
     cost = 0.0 if mock else estimate_cost_usd(spec.model, usage["in"], usage["out"], usage["think"])
     async with _spent_lock:
         _spent_usd += cost
+    if cost:
+        repo.add_spend(cost)
     res = AgentResult(text=text, parsed=parsed, input_tokens=usage["in"], output_tokens=usage["out"], thinking_tokens=usage["think"],
                       cost_usd=cost, cached=False, duration_ms=int((time.time() - started) * 1000), model=agent.model if isinstance(agent.model, str) else spec.model,
                       state={k: v for k, v in state.items() if isinstance(v, (str, int, float, dict, list))})
@@ -311,8 +316,8 @@ async def run_sequence(specs: list[AgentSpec], parts: list[types.Part], *, setti
             return out
     if mode == "cache_only":
         raise CacheMiss(f"LLM cache miss for {specs[0].name} sequence while running in cache_only mode")
-    if not mock and _spent_usd >= settings.budget_cap_usd:
-        raise BudgetExceeded(f"Budget cap of USD {settings.budget_cap_usd} reached")
+    if not mock:
+        budget.check(repo, settings)
 
     agents = []
     for i, s in enumerate(specs):
@@ -325,12 +330,19 @@ async def run_sequence(specs: list[AgentSpec], parts: list[types.Part], *, setti
     token = MOCK_CONTEXT.set({**(mock_context or {}), "agent": specs[0].name}) if mock else None
     try:
         finals, state, usage = await asyncio.wait_for(_run_adk(seq, parts, settings.app_name), timeout=settings.llm_timeout_seconds * 2)
+    except Exception as e:
+        if not mock and budget.is_provider_limit_error(e):
+            budget.record_provider_limit(repo, e)
+            budget.check(repo, settings)
+        raise
     finally:
         if token is not None:
             MOCK_CONTEXT.reset(token)
     cost = 0.0 if mock else estimate_cost_usd(specs[-1].model, usage["in"], usage["out"], usage["think"])
     async with _spent_lock:
         _spent_usd += cost
+    if cost:
+        repo.add_spend(cost)
     dur = int((time.time() - started) * 1000)
     for i, (s, a) in enumerate(zip(specs, agents)):
         text = finals.get(a.name, "")
