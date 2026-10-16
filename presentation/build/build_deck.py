@@ -7,7 +7,7 @@ from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
 import copy, os
 
 # Submission links: fill these in before the final build.
-VIDEO_URL = "TBD"  # public YouTube link to the demo video (3-4 minutes)
+VIDEO_URL = "TBD"  # public YouTube link to the demo video (under 3 minutes, official FAQ)
 APP_URL = "ledgerlens-api-629502893425.asia-southeast1.run.app"    # Cloud Run URL of the public demo
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -172,77 +172,93 @@ def headline(slide, text, y=1.5, size=19, h=0.75):
 def bignum(slide, x, y, w, text, size=30, color=INK):
     tb(slide, x, y, w, size / 72 * 1.3, [{"t": text, "size": size, "bold": True, "color": color}], margin=0.0)
 
-# ---------- Slide 2: Why this matters ----------
+# ---------- Slide 2: Why this matters (the problem) ----------
 s = S[2]
 set_title(s, "Why this matters")
-eyebrow(s, "Southeast Asia's small businesses run the economy but cannot borrow")
-# left hero number
-tb(s, 0.3, 1.45, 4.3, 1.5, [{"t": "8.8%", "size": 96, "bold": True, "color": AMBER}], margin=0.0)
-tb(s, 0.3, 3.05, 4.3, 0.7, [{"t": "of Vietnam's 914,000 SMEs have a bank loan.", "size": 17, "bold": True, "color": INK}], margin=0.0)
-tb(s, 0.3, 3.75, 4.3, 0.8, [{"t": "Large enterprises: 47.1%. The same small firms employ most of the region.", "size": 12.5, "color": GREY}], margin=0.0)
-# mini bar comparison
-card(s, 0.32, 4.55, 4.26, 0.62, fill=PANEL, line=LINE)
-card(s, 0.45, 4.64, 3.6 * 0.471, 0.18, fill=TEAL, line=None, radius=0.1)
-tb(s, 0.45 + 3.6 * 0.471 + 0.05, 4.6, 1.6, 0.26, [{"t": "47.1% large firms", "size": 9, "color": TXT}], margin=0.0)
-card(s, 0.45, 4.9, 3.6 * 0.088, 0.18, fill=AMBER, line=None, radius=0.1)
-tb(s, 0.45 + 3.6 * 0.088 + 0.05, 4.86, 1.6, 0.26, [{"t": "8.8% SMEs", "size": 9, "bold": True, "color": TXT}], margin=0.0)
-# right cards
-cards2 = [("75.5%", "of Vietnamese firms cannot borrow without collateral. What they have is PDFs, screenshots and paper receipts.", False),
-          ("70%", "of emerging-market MSMEs lack adequate financing. Reading their records by hand costs more than a small loan earns.", False),
-          ("The opening", "VPBank, Vietcombank and Agribank are moving from collateral to cash-flow lending. Someone still has to read the cash flow. LedgerLens makes that reading fast, sourced and auditable.", True)]
-y = 1.5
-for big, d, acc in cards2:
-    card(s, 4.9, y, 4.8, 1.12, fill=AMBER_T if acc else WHITE, line=AMBER if acc else LINE, lw=1.5 if acc else 1)
-    tb(s, 5.02, y + 0.1, 1.45, 0.95, [{"t": big, "size": 24 if not acc else 13, "bold": True, "color": INK}], anchor=MSO_ANCHOR.MIDDLE, margin=0.0)
-    tb(s, 6.5, y + 0.08, 3.1, 1.0, [{"t": d, "size": 10.5, "color": TXT}], anchor=MSO_ANCHOR.MIDDLE, margin=0.0)
-    y += 1.22
-tb(s, 0.3, 5.22, 9.4, 0.25, [{"t": "Sources: FiinGroup via Viet Nam News (Aug 2026) · VCCI Private Economic Report 2025 · IFC MSME Finance · VTV (May 2026) · ADB Asia SME Monitor 2025", "size": 7.5, "italic": True, "color": GREY}])
+eyebrow(s, "The problem", y=1.18)
+headline(s, "Banks are ready to lend on cash flow, but reading the records by hand costs too much, and the numbers a plain AI writes cannot be traced back to a page.", y=1.4, size=16.5, h=0.72)
+# persona
+card(s, 0.3, 2.25, 2.95, 3.0, fill=PANEL, line=LINE)
+tb(s, 0.45, 2.33, 2.7, 0.3, [{"t": "MEET LINH", "size": 8.5, "bold": True, "color": TEAL}], margin=0.0)
+tb(s, 0.45, 2.58, 2.7, 0.45, [{"t": "Shopee seller, Vietnam", "size": 14, "bold": True, "color": INK}], margin=0.0)
+tb(s, 0.45, 3.02, 2.65, 1.45, [
+    {"t": "Asks for VND 150M of working capital. Her sales are real.", "size": 10, "color": TXT, "space_after": 5},
+    {"t": "She brings 14 documents: a bank statement PDF, monthly Shopee dashboard screenshots, supplier receipts, photos of the shop.", "size": 10, "color": TXT}], margin=0.0)
+card(s, 0.45, 4.24, 2.65, 0.76, fill=AMBER_T, line=AMBER, lw=1.2)
+tb(s, 0.57, 4.26, 2.45, 0.72, [{"t": "No credit file. No collateral.", "size": 11, "bold": True, "color": INK, "space_after": 2},
+                              {"t": "Today her file is declined, or priced blind.", "size": 9.5, "color": RED}], anchor=MSO_ANCHOR.MIDDLE, margin=0.0)
+tb(s, 0.45, 5.06, 2.7, 0.18, [{"t": "Synthetic demo case B", "size": 7, "italic": True, "color": GREY}], margin=0.0)
+# causal chain
+chain = [("8.8%", "of Vietnam's SMEs have a bank loan; large firms: 47.1%. Without a credit file or collateral, small firms are declined.", False),
+         ("75.5%", "of Vietnamese firms cannot borrow without collateral, so banks are moving to cash-flow lending (VPBank, Vietcombank, Agribank).", False),
+         ("~45 min", "to read and verify one file by hand. For a small loan, the reading costs more than the loan earns.", False),
+         ("77%", "of the numbers in a memo written by a single Gemini prompt point to no page, so the underwriter has to find each one again. That prompt also caught only 15% of the planted risks.", True)]
+x0 = 3.45; rh = 0.69; gy = 0.08; y = 2.25
+card(s, x0 + 0.2, 2.45, 0.03, 4 * rh + 3 * gy - 0.4, fill=LINE, line=None, radius=0.0)
+for i, (big, d, acc) in enumerate(chain):
+    pill(s, x0 + 0.05, y + rh / 2 - 0.17, 0.34, 0.34, str(i + 1), fill=AMBER if acc else INK, color=INK if acc else WHITE, size=10)
+    card(s, x0 + 0.52, y, 9.7 - x0 - 0.52, rh, fill=AMBER_T if acc else WHITE, line=AMBER if acc else LINE, lw=1.4 if acc else 1)
+    tb(s, x0 + 0.65, y + 0.04, 1.2, rh - 0.08, [{"t": big, "size": 20, "bold": True, "color": INK}], anchor=MSO_ANCHOR.MIDDLE, margin=0.0)
+    tb(s, x0 + 1.9, y + 0.04, 9.6 - x0 - 1.9, rh - 0.08, [{"t": d, "size": 9.5, "color": TXT}], anchor=MSO_ANCHOR.MIDDLE, margin=0.0)
+    y += rh + gy
+tb(s, 0.3, 5.28, 9.4, 0.22, [{"t": "Sources: 1 FiinGroup via Viet Nam News (Aug 2026) · 2 VCCI 2025 via VTV (May 2026) · 3 team estimate; ADB Asia SME Monitor 2025 · 4 our live benchmark, gemini-3.8-flash", "size": 7, "italic": True, "color": GREY}], margin=0.0)
 
-# ---------- Slide 4: Brief about the idea ----------
+# ---------- Slide 4: Brief about the idea (the solution) ----------
 s = S[4]
 set_title(s, "Brief about the idea")
-headline(s, "LedgerLens turns a shoebox of receipts, screenshots and bank PDFs into a credit memo a bank can trust.", y=1.25, size=20, h=0.9)
-mech = [("1", "Read with evidence", "Gemini reads every document. Every value carries document id, page and bounding box. Python computes the cash flow. A memo with unsourced numbers is rejected and regenerated.", False),
-        ("2", "Challenge", "A second agent that never sees the first one's prompt runs 12 underwriting checks against the memo and raises severity-ranked objections with evidence.", True),
-        ("3", "Human signs", "The underwriter accepts or dismisses each objection and signs. Every decision is logged and re-weights the next Challenger run. The applicant gets the reasons in their own language.", False)]
+eyebrow(s, "The solution", y=1.18)
+headline(s, "LedgerLens reads the shoebox, shows its work, and argues against itself before a human signs.", y=1.4, size=18, h=0.7)
+mech = [("1", "Read with evidence", "Answers: reading cost",
+         "Gemini reads every page. Each value carries document, page and bounding box. Python computes the cash flow. A memo with an unsourced number is rejected and regenerated.",
+         "14 documents, every figure sourced to a page and box, in about 2 minutes.", False),
+        ("2", "Challenge", "Answers: AI trust",
+         "A separate agent that never sees the writer's prompt runs deterministic checks and 12 underwriting questions, then ranks objections with evidence.",
+         "Flags a reused receipt photo and VND 82.5M of own-account transfers counted as income.", True),
+        ("3", "Human signs", "Keeps: accountability",
+         "The underwriter accepts or dismisses each objection and signs. Every agent call is logged; decisions re-weight the next run.",
+         "Linh gets the decision and the conditions to meet, in Vietnamese.", False)]
 x = 0.3; cw = 2.95
-for n, t, d, acc in mech:
-    card(s, x, 2.3, cw, 2.35, fill=AMBER_T if acc else WHITE, line=AMBER if acc else LINE, lw=1.5 if acc else 1)
-    pill(s, x + 0.18, 2.48, 0.4, 0.4, n, fill=AMBER if acc else INK, size=12)
-    tb(s, x + 0.7, 2.45, cw - 0.85, 0.5, [{"t": t, "size": 16, "bold": True, "color": INK}], anchor=MSO_ANCHOR.MIDDLE, margin=0.0)
-    tb(s, x + 0.18, 3.05, cw - 0.36, 1.5, [{"t": d, "size": 11, "color": TXT}], margin=0.0)
+for n, t, tag, d, case, acc in mech:
+    card(s, x, 2.2, cw, 2.75, fill=AMBER_T if acc else WHITE, line=AMBER if acc else LINE, lw=1.5 if acc else 1)
+    pill(s, x + 0.16, 2.33, 0.38, 0.38, n, fill=AMBER if acc else INK, color=INK if acc else WHITE, size=11)
+    tb(s, x + 0.64, 2.3, cw - 0.75, 0.3, [{"t": t, "size": 14, "bold": True, "color": INK}], margin=0.0)
+    tb(s, x + 0.64, 2.56, cw - 0.75, 0.2, [{"t": tag.upper(), "size": 7.5, "bold": True, "color": AMBER if acc else TEAL}], margin=0.0)
+    tb(s, x + 0.16, 2.88, cw - 0.32, 1.25, [{"t": d, "size": 9.5, "color": TXT}], margin=0.0)
+    card(s, x + 0.12, 4.12, cw - 0.24, 0.72, fill=WHITE if acc else TINT, line=None, radius=0.08)
+    tb(s, x + 0.22, 4.15, cw - 0.44, 0.67, [{"t": [("In Linh's file: ", {"bold": True, "color": INK}), (case, {})], "size": 9, "color": TXT}], anchor=MSO_ANCHOR.MIDDLE, margin=0.0)
     if n != "3":
-        a = s.shapes.add_shape(MSO_SHAPE.RIGHT_ARROW, Inches(x + cw + 0.04), Inches(3.33), Inches(0.2), Inches(0.28))
+        a = s.shapes.add_shape(MSO_SHAPE.RIGHT_ARROW, Inches(x + cw + 0.04), Inches(3.4), Inches(0.2), Inches(0.28))
         a.fill.solid(); a.fill.fore_color.rgb = RGBColor(0xB9, 0xC6, 0xC3); a.line.fill.background(); a.shadow.inherit = False
         from pptx.oxml.ns import qn as _qn
         _st = a._element.find(_qn("p:style"))
         if _st is not None: a._element.remove(_st)
     x += cw + 0.275
-tb(s, 0.3, 4.85, 9.4, 0.5, [{"t": [("Not a score. A memo. ", {"bold": True, "color": INK}), ("AI does the reading and the arguing; the underwriter keeps the decision.", {})], "size": 13, "color": GREY}])
+tb(s, 0.3, 5.05, 9.4, 0.4, [{"t": [("Grounded only in the applicant's documents. ", {"bold": True, "color": INK}), ("Guardrails: output schema, deterministic checks, a second agent, a human signature.", {})], "size": 10.5, "color": GREY}], margin=0.0)
 
-# ---------- Slide 5: Opportunities ----------
+# ---------- Slide 5: Opportunities (the impact) ----------
 s = S[5]
 sh = set_title(s, "Opportunities")
 for p in sh.text_frame.paragraphs[1:]:
     for r in p.runs:
         r.text = ""
 sh.height = Inches(0.5)
-headline(s, "Same documents. About 2 minutes per file. Every number defensible.", y=1.22, size=19, h=0.5)
-nums = [("~2 min", "per file, end to end (measured, live Gemini)", False), ("~0.28", "USD per case on a cold run; USD 0 on a cached re-run", False), ("0 vs 62", "unsourced numbers in the memo: LedgerLens vs a single prompt", True)]
-x = 0.3
-for big, small, acc in nums:
-    card(s, x, 1.8, 3.0, 1.35, fill=AMBER_T if acc else WHITE, line=AMBER if acc else LINE, lw=1.5 if acc else 1)
-    tb(s, x + 0.18, 1.9, 2.7, 0.8, [{"t": big, "size": 38, "bold": True, "color": INK}], margin=0.0)
-    tb(s, x + 0.18, 2.72, 2.7, 0.4, [{"t": small, "size": 10.5, "color": GREY}], margin=0.0)
-    x += 3.2
-lists = [("How it is different", ["Writer and verifier are separate agents, so the memo is never graded by its author", "Figures are computed by code and linked to their source line, not generated", "Underwriter decisions re-rank the next Challenger run"]),
-         ("Who benefits", ["Small businesses with records but no credit file get assessed on cash flow, not collateral", "A declined applicant receives the reasons, in their own language", "Lenders can offer small-ticket loans that were uneconomic to underwrite"])]
-x = 0.3
-for t, items in lists:
-    card(s, x, 3.3, 4.6, 2.05, fill=WHITE, line=LINE)
-    tb(s, x + 0.18, 3.38, 4.3, 0.4, [{"t": t, "size": 13.5, "bold": True, "color": INK}], margin=0.0)
-    tb(s, x + 0.18, 3.8, 4.3, 1.5, [{"t": it, "size": 10.5, "bullet": True, "space_after": 4} for it in items], margin=0.0)
-    x += 4.8
+eyebrow(s, "Expected impact", y=1.18)
+headline(s, "What changes, and for whom.", y=1.4, size=19, h=0.45)
+cols = [("For the lender", "45 → 2", "minutes per file", "USD ~11 → 0.28 per case. Small-ticket loans become worth underwriting.", False),
+        ("For the small business", "Cash flow", "not collateral, decides the loan", "Assessed on the records she already has. A no comes with reasons, in her own language.", False),
+        ("For risk and audit", "77% → 0%", "of memo numbers with no page", "Every figure points to a page and box, so nothing is re-checked by hand. Planted risks caught: 90% vs 15%.", True)]
+x = 0.3; cw = 3.0
+for who, big, unit, d, acc in cols:
+    card(s, x, 1.95, cw, 2.05, fill=AMBER_T if acc else WHITE, line=AMBER if acc else LINE, lw=1.5 if acc else 1)
+    pill(s, x + 0.16, 2.07, 1.85, 0.28, who, fill=AMBER if acc else INK, color=INK if acc else WHITE, size=8.5)
+    tb(s, x + 0.16, 2.45, cw - 0.3, 0.7, [{"t": big, "size": 32, "bold": True, "color": INK}], margin=0.0)
+    tb(s, x + 0.16, 3.12, cw - 0.3, 0.3, [{"t": unit, "size": 10.5, "bold": True, "color": TEAL}], margin=0.0)
+    tb(s, x + 0.16, 3.45, cw - 0.3, 0.75, [{"t": d, "size": 9.5, "color": TXT}], margin=0.0)
+    x += cw + 0.2
+card(s, 0.3, 4.15, 9.4, 0.55, fill=INK, line=None, radius=0.08)
+tb(s, 0.45, 4.17, 9.1, 0.51, [{"t": [("USP   ", {"bold": True, "color": AMBER}), ("The writer and the verifier are separate agents · numbers are computed by code, never generated · every number clicks back to its source line · decisions re-weight the checks", {"color": WHITE})], "size": 9.5}], anchor=MSO_ANCHOR.MIDDLE, margin=0.0)
+tb(s, 0.3, 4.82, 9.4, 0.4, [{"t": [("Back to the 8.8%: ", {"bold": True, "color": INK}), ("when reading a file costs cents and minutes instead of an hour, the loans banks decline today become worth making.", {})], "size": 11, "color": GREY}], margin=0.0)
+tb(s, 0.3, 5.3, 9.4, 0.2, [{"t": "Manual baseline (45 min at USD 15/h) is a team estimate. A number counts as untraceable when no document and page stand behind it; correctness was not measured. Live gemini-3.8-flash on a small synthetic sample.", "size": 7, "italic": True, "color": GREY}], margin=0.0)
 
 # ---------- Slide 6: Features ----------
 s = S[6]
@@ -296,7 +312,7 @@ set_title(s, "Technologies to be used in the solution")
 headline(s, "Gemini reads, ADK orchestrates, Python computes, Cloud Run serves.", y=1.22, size=18, h=0.5)
 tech = [("Google Cloud", "Gemini 3.8 Flash", "Default for every agent. Measured USD 0.26-0.31 per cold case; USD 0 cached.", False),
         ("Google Cloud", "Gemini 3.1 Pro", "One env var moves Extractor, Analyst and Challenger to Pro.", False),
-        ("Google Cloud", "Agent Development Kit", "Intake, 5 Extractors, Analyst, Challenger (investigator and writer), Explainer.", False),
+        ("Google Cloud", "ADK on Cloud Run", "Agent Platform: Intake, 5 Extractors, Analyst, Challenger (investigator, writer), Explainer.", False),
         ("Google Cloud", "Cloud Run", "One service: FastAPI, the ADK agents and the React workbench; scales to zero.", False),
         ("Google Cloud", "Firestore + Storage", "Cases, extractions, memos, objections, decisions, audit, traces; documents.", False),
         ("Python", "Deterministic tools", "Cash-flow model, balance chain, image hash, PDF text-layer cross-check, date and entity checks.", False),
@@ -310,37 +326,37 @@ for i, (tag, name, desc, acc) in enumerate(tech):
     tb(s, x + 0.14, y + 0.1, cw - 0.28, 0.25, [{"t": tag.upper(), "size": 7.5, "bold": True, "color": AMBER if acc or tag == "Python" else TEAL}], margin=0.0)
     tb(s, x + 0.14, y + 0.33, cw - 0.28, 0.4, [{"t": name, "size": 11.5, "bold": True, "color": INK}], margin=0.0)
     tb(s, x + 0.14, y + 0.72, cw - 0.28, 0.8, [{"t": desc, "size": 9, "color": GREY}], margin=0.0)
-tb(s, 0.3, 5.15, 9.4, 0.3, [{"t": "Output schema requires source {doc_id, page, bbox} on every value. No separate OCR engine: pages are rendered to images and read by Gemini.", "size": 9, "italic": True, "color": GREY}])
+tb(s, 0.3, 5.15, 9.4, 0.3, [{"t": "Grounding: only the applicant's documents; every value must carry source {doc_id, page, bbox}. No separate OCR: Gemini reads rendered pages.", "size": 9, "italic": True, "color": GREY}])
 
 # ---------- Slide 13: Benchmark ----------
 s = S[13]
 set_title(s, "Prototype performance report / Benchmarking")
-headline(s, "18 of 20 planted traps caught on live Gemini output; a single prompt on the same documents caught 3.", y=1.22, size=17, h=0.7)
+headline(s, "LedgerLens caught 90% of the planted risks on live Gemini output; a single prompt on the same documents caught 15%.", y=1.22, size=17, h=0.7)
 # hero numbers
 card(s, 0.3, 1.95, 4.5, 2.0, fill=AMBER_T, line=AMBER, lw=1.5)
 tb(s, 0.45, 2.0, 2.2, 0.3, [{"t": "LEDGERLENS", "size": 9, "bold": True, "color": AMBER}], margin=0.0)
-tb(s, 0.45, 2.25, 2.3, 1.2, [{"t": "18", "size": 72, "bold": True, "color": INK}], margin=0.0)
-tb(s, 0.45, 3.4, 2.2, 0.5, [{"t": "of 20 traps caught", "size": 11, "color": TXT}, {"t": "95% Wilson CI 0.70-0.97", "size": 8.5, "color": GREY}], margin=0.0)
+tb(s, 0.45, 2.4, 2.3, 1.0, [{"t": "90%", "size": 60, "bold": True, "color": INK}], margin=0.0)
+tb(s, 0.45, 3.4, 2.2, 0.5, [{"t": "of planted risks caught", "size": 11, "color": TXT}, {"t": "small synthetic sample, read as indicative", "size": 8.5, "color": GREY}], margin=0.0)
 tb(s, 2.75, 2.0, 2.0, 0.3, [{"t": "SINGLE PROMPT", "size": 9, "bold": True, "color": GREY}], margin=0.0)
-tb(s, 2.75, 2.25, 2.0, 1.2, [{"t": "3", "size": 72, "bold": True, "color": RGBColor(0xB0, 0xB8, 0xBE)}], margin=0.0)
-tb(s, 2.75, 3.4, 2.0, 0.5, [{"t": "of 20, same documents", "size": 11, "color": GREY}, {"t": "and same model", "size": 8.5, "color": GREY}], margin=0.0)
+tb(s, 2.75, 2.4, 2.0, 1.0, [{"t": "15%", "size": 60, "bold": True, "color": RGBColor(0xB0, 0xB8, 0xBE)}], margin=0.0)
+tb(s, 2.75, 3.4, 2.0, 0.5, [{"t": "same documents", "size": 11, "color": GREY}, {"t": "and same model", "size": 8.5, "color": GREY}], margin=0.0)
 card(s, 0.3, 4.1, 2.2, 1.25, fill=WHITE, line=LINE)
-tb(s, 0.42, 4.15, 2.0, 0.6, [{"t": "0", "size": 30, "bold": True, "color": INK}], margin=0.0)
-tb(s, 0.42, 4.75, 2.0, 0.55, [{"t": "unsourced numbers in the memo (single prompt: 62)", "size": 9.5, "color": GREY}], margin=0.0)
+tb(s, 0.42, 4.15, 2.0, 0.6, [{"t": "100%", "size": 30, "bold": True, "color": INK}], margin=0.0)
+tb(s, 0.42, 4.75, 2.0, 0.55, [{"t": "of memo numbers trace to a page (single prompt: 23%)", "size": 9.5, "color": GREY}], margin=0.0)
 card(s, 2.6, 4.1, 2.2, 1.25, fill=WHITE, line=LINE)
 tb(s, 2.72, 4.15, 2.0, 0.6, [{"t": "~2 min", "size": 30, "bold": True, "color": INK}], margin=0.0)
 tb(s, 2.72, 4.75, 2.0, 0.55, [{"t": "per case cold, USD 0.26-0.31; cached re-run USD 0", "size": 9.5, "color": GREY}], margin=0.0)
 rows = [["Metric", "Target", "Result"],
-        ["Trap recall (strict)", "≥ 16 / 20", "18 / 20"],
-        ["Unsourced numbers", "0", "0 (single prompt: 62)"],
-        ["Objections on clean case A", "≤ 20%", "0"],
-        ["Extraction row accuracy*", "≥ 97%", "100% (481 / 481)"],
+        ["Risks caught (strict)", "≥ 80%", "90% (single prompt: 15%)"],
+        ["Traceable numbers", "100%", "100% (single prompt: 23%)"],
+        ["Objections on clean case A", "≤ 20%", "none"],
+        ["Extraction row accuracy*", "≥ 97%", "100%"],
         ["Evidence-link accuracy*", "≥ 95%", "100%"],
         ["Time per case (cold)", "≤ 180 s", "~2 min"],
         ["Cost per case (cold)", "≤ USD 0.50", "USD 0.26-0.31"]]
-table(s, 5.0, 1.95, 4.7, 2.25, rows, [2.0, 1.0, 1.7], font=9, bold_first_col=True)
+table(s, 5.0, 1.95, 4.7, 2.25, rows, [1.85, 0.8, 2.05], font=9, bold_first_col=True)
 card(s, 5.0, 4.28, 4.7, 1.12, fill=PANEL, line=LINE)
-tb(s, 5.1, 4.31, 4.52, 1.08, [{"t": [("How measured. ", {"bold": True}), ("Live gemini-3.8-flash runs, 2026-10-15/16: 3 synthetic businesses, 43 documents, 20 planted traps. Strict scoring: an objection counts only if it carries the trap's identifying amount or document, one objection per trap. ", {}), ("n = 3 synthetic businesses with team-planted traps, so read as indicative. Missed: dashboard gross vs payout, COD vs cash deposits. Recommendation matched on C; A gave approve_with_conditions (expected approve), B request_more_documents (expected approve_with_conditions). *Clean born-digital synthetic PDFs; real scans will be lower.", {})], "size": 7.5, "color": TXT}], margin=0.0)
+tb(s, 5.1, 4.31, 4.52, 1.08, [{"t": [("How measured. ", {"bold": True}), ("Live gemini-3.8-flash runs, 2026-10-15/16, on three synthetic businesses with team-planted risks. Strict scoring: an objection counts only if it carries the risk's identifying amount or document, one objection per risk. ", {}), ("Traceable = a memo number with a document and page behind it; correctness not measured. The sample is small, so read every percentage as indicative. Missed: dashboard gross vs payout, COD vs cash deposits. Recommendation matched on C; A gave approve_with_conditions (expected approve), B request_more_documents (expected approve_with_conditions). *Clean born-digital synthetic PDFs; real scans will be lower.", {})], "size": 7.5, "color": TXT}], margin=0.0)
 
 # ---------- Slide 6: Process flow ----------
 s = S[7]
