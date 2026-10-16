@@ -101,6 +101,8 @@ class Pipeline:
             raise PipelineError(f"Unsupported file type for {filename}")
         if len(data) > self.settings.max_upload_mb * 1024 * 1024:
             raise PipelineError(f"{filename} exceeds {self.settings.max_upload_mb} MB")
+        if len(case.documents) >= self.settings.max_documents_per_case:
+            raise PipelineError(f"A case holds at most {self.settings.max_documents_per_case} documents")
         n = len(case.documents) + 1
         doc_id = f"D{n:02d}"
         while any(d.doc_id == doc_id for d in case.documents):
@@ -110,9 +112,11 @@ class Pipeline:
         # Content-addressed: identical files (every browser's copy of a demo case) share one stored blob, and the page
         # count / perceptual hashes are computed once per process.
         path = f"docs/{sha}/{Path(filename).name}"
+        pages, hashes = _doc_facts(sha, data, mime)
+        if pages > self.settings.max_pages_per_document:
+            raise PipelineError(f"{filename} has {pages} pages; the limit is {self.settings.max_pages_per_document}")
         if not self.repo.has_blob(path):
             self.repo.put_blob(path, data, mime)
-        pages, hashes = _doc_facts(sha, data, mime)
         meta = DocumentMeta(doc_id=doc_id, filename=Path(filename).name, mime_type=mime, size_bytes=len(data), pages=pages,
                             sha256=sha, storage_path=path, page_hashes=list(hashes))
         case.documents.append(meta)

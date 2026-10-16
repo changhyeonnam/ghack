@@ -447,7 +447,7 @@ links = [("GitHub repository", REPO_URL, ["github.com/changhyeonnam/ghack"],
          ("Demo video (2 min 59 s)", VIDEO_URL, ["youtube.com/watch?v=MBwsG0QQAUM"],
           "A three-minute walkthrough: the problem, how it works, one loan file from upload to signed decision, and the benchmark. English narration and subtitles."),
          ("Live app", APP_URL, ["ledgerlens-api-629502893425", ".asia-southeast1.run.app"],
-          "No login. Click Load demo cases, open Reyes Auto Repair and press Run all remaining, then click any number in the memo. New uploads run live Gemini within a fixed budget.")]
+          "No login; the three demo cases are ready. Open Reyes Auto Repair, press Run all remaining, then click any number in the memo. New uploads run live Gemini within a fixed budget.")]
 y = 1.3
 for t, url, shown, d in links:
     card(s, 0.3, y, 9.4, 1.2, fill=PANEL, line=LINE)

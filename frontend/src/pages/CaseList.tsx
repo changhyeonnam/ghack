@@ -35,7 +35,13 @@ export default function CaseList() {
 
   const refresh = useCallback(async () => {
     try {
-      setCases(await listCases())
+      let list = await listCases()
+      // First visit from this browser: prepare its own copy of the three demo cases so there is something to open.
+      if (!list.some((c) => c.is_demo && c.workspace === 'you')) {
+        await seedDemo()
+        list = await listCases()
+      }
+      setCases(list)
     } catch (e) {
       toast.error(`Could not load cases: ${errorMessage(e)}`)
     } finally {

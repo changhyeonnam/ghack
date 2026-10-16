@@ -58,6 +58,8 @@ class Settings(BaseSettings):
 
     # --- documents ---------------------------------------------------------
     max_upload_mb: int = 20
+    max_pages_per_document: int = 30  # bounds live Gemini cost per upload
+    max_documents_per_case: int = 40
     page_render_dpi: int = 110
     llm_page_max_width: int = 1200
     synth_dir: Path = REPO_ROOT / "data" / "synth"

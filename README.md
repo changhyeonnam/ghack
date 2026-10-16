@@ -2,6 +2,9 @@
 
 **The first credit memo with a clickable source for every number and a second AI that challenges it before a human signs.**
 
+**Live app:** https://ledgerlens-api-629502893425.asia-southeast1.run.app (no login; the three demo cases load automatically)
+· **Demo video:** https://www.youtube.com/watch?v=MBwsG0QQAUM
+
 LedgerLens is a team of loan-underwriting agents for thin-file micro and small businesses in Southeast Asia. It reads
 the unstructured records these businesses already have (mobile-banking statement PDFs, Shopee seller-dashboard
 screenshots, paper receipts, handwritten ledgers, shop photos) with Gemini's multimodal models, drafts a credit memo
@@ -79,7 +82,7 @@ cd backend && .venv/bin/python -m pytest -q
 backend/.venv/bin/python benchmark/run_benchmark.py
 ```
 
-Open the app, click **Load demo cases** (each browser gets its own copy; **Reset demo** restores it), open *Linh Fashion Online* (case B), press **Run all**, then click any number in the memo.
+Open the app: the three demo cases load automatically (each browser gets its own copy; **Reset demo** restores it). Open *Linh Fashion Online* (case B), press **Run all**, then click any number in the memo.
 
 ### LLM modes
 | `LEDGERLENS_LLM_MODE` | Behavior |
@@ -116,8 +119,8 @@ LEDGERLENS_STORAGE=gcp GOOGLE_CLOUD_PROJECT=$PROJECT_ID LEDGERLENS_GCS_BUCKET=$P
 
 ## Public demo: getting started, limits and cold starts
 
-- **Try it without an account:** open the link, click **Load demo cases**, open *Reyes Auto Repair* and press
-  **Run all remaining**. Each browser gets its own copy of the three demo cases (**Reset demo** restores them).
+- **Try it without an account:** open the link; the three demo cases are already in the portfolio. Open *Reyes Auto
+  Repair* and press **Run all remaining**. Each browser gets its own copy (**Reset demo** restores them).
 - **Your own documents:** **New case** uploads PDFs or photos and runs live Gemini. Upload generated or anonymized
   documents only. Cases are shared read-only with other visitors once analyzed (uncheck the box to keep one private).
 - **AI budget:** live Gemini spend is capped (`LEDGERLENS_BUDGET_CAP_USD`, persisted in Firestore across instances).
