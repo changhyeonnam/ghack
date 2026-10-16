@@ -1,0 +1,131 @@
+{
+ "results": [
+  {
+   "text": "### Challenger Adversarial Investigation\n\n**Q1: Double counting between bank statement and seller dashboards / ledger / receipts**\n- **Verdict:** PASS (Memo handled correctly)\n- **Evidence:** The credit memo explicitly avoids double-counting cash revenue by treating ledger income as the underlying cash generating source for bank cash deposits, noting that cash deposits total 232,800 PHP against comparable ledger income of 248,350 PHP, calculating unbanked ledger income at only 15,550 PHP [CF.off_ledger_income_estimate]. It does not aggregate ledger revenue directly on top of bank deposits for its core monthly cash flow figures.\n- **Tools used:** `recompute_figure` (CF.avg_monthly_business_inflow).\n\n---\n\n**Q2: Month-to-month swings explained by sector seasonality, or by one-off inflows**\n- **Verdict:** PASS\n- **Evidence:** Active statement months show remarkably stable top-line business inflows: Jan (74,655 PHP), Feb (70,653 PHP), May (67,854 PHP), and Jun (70,104 PHP), resulting in a very low coefficient of variation of 0.035 [CF.inflow_volatility_cv]. There are no suspicious large one-off credit spikes distorting cash flow.\n\n---\n\n**Q3: Large credits from applicant's own accounts or round-trips with family/friends**\n- **Verdict:** PASS\n- **Evidence:** Automated checks and statement analysis identify 0 self-transfers (sender = Ramon Reyes) and 0 round-trips within 14 days. Bank credits consist consistently of over-the-counter cash deposits (e.g. T0013: 19,400 PHP; T0021: 20,950 PHP).\n\n---\n\n**Q4: Receipt / ledger / premises images duplicated within this case or reused from a past case**\n- **Verdict:** OBJECTION (Critical)\n- **Evidence:**\n  1. **Cross-case duplication:** Document D11 (`premises_02.jpg`, labeled \"SERVICE BAY 2\") is an exact duplicate (perceptual hamming distance 0) of file `premises.jpg` from past case `PAST-2025-0471`. The memo completely failed to detect or disclose this cross-case image reuse.\n  2. **Internal ledger duplication / tampering:** Automated checks and tool verification confirmed document D07 (`ledger_p6.jpg`, Abril 2026) is near-identical (hamming distance 2) to document D04 (`ledger_p3.jpg`, Marso 2026), duplicating 25 line entries and 69,000 PHP total income under an altered month heading.\n- **Tools used:** `image_similarity(D04, D07)` returned hamming distance 2; automated cross-case checks flagged D11 match to PAST-2025-0471.\n\n---\n\n**Q5: Seller-dashboard (or ledger) period matches bank-statement period**\n- **Verdict:** OBJECTION (Medium)\n- **Evidence:** The ledger documents span January through June 2026 continuously (D02 to D09), whereas bank statement D01 completely omits March and April 2026 (CF.months_missing_count = 2). The memo acknowledges this missing period.\n- **Tools used:** `date_crosscheck(D01, D02)`.\n\n---\n\n**Q6: Continuous running balance (previous balance + credit - debit = balance)**\n- **Verdict:** OBJECTION (Critical)\n- **Evidence:** Running balance test on bank statement D01 broke at row T0051 dated 2026-05-01 (Doc D01 page 3, bbox [196, 63, 206, 934]). Prior balance at closing 2026-02-28 was 48,950.00 PHP [CF.m.2026-02.closing_balance]. Following debit T0051 (3,000.00 PHP to Juan Dela Cruz), expected balance was 45,950.00 PHP, but reported balance jumped to 58,400.00 PHP—an unexplained positive discontinuity of +12,450.00 PHP. This confirms unrecorded rows or balance fabrication between February and May.\n- **Tools used:** `recompute_balance_chain(D01)` confirmed expected 45,950 vs reported 58,400 (diff +12,450).\n\n---\n\n**Q7: Recurring transfers that look like undisclosed loan repayments**\n- **Verdict:** PASS (Memo handled correctly)\n- **Evidence:** The memo accurately captures and highlights:\n  1. BDO Auto Loan debits of 14,800.00 PHP every month on day 10 (rows T0006, T0032, T0055, T0082).\n  2. Weekly transfers of 3,000.00 PHP to Juan Dela Cruz via GCash (18 occurrences across 4 months, e.g. T0001, T0005, T0011, T0019, T0023, T0027).\n  These are correctly categorized as recurring debt service obligations totaling 27,790 PHP/month [CF.recurring_debt_service_monthly].\n- **Tools used:** `lookup_transactions(\"JUAN DELA CRUZ\")` confirmed 18 weekly debits of 3,000 PHP.\n\n---\n\n**Q8: Premises photo plausibly matches claimed scale of revenue**\n- **Verdict:** PASS (Plausibility), but compromised by Q4\n- **Evidence:** Premises photo D10 shows an active independent garage with oil change, brakes, and underchassis service signage and basic inventory, consistent with monthly revenue of ~70,000 PHP. However, authenticity is fatally undermined by D11 being reused from a prior loan case.\n\n---\n\n**Q9: Source references for every number in the memo**\n- **Verdict:** PASS\n- **Evidence:** Figure catalog verification shows zero unsourced numerals in memo prose and zero unsourced catalog figure IDs.\n\n---\n\n**Q10: Inflow abnormally concentrated at month-end (window dressing)**\n- **Verdict:** PASS\n- **Evidence:** Month-end concentration stands at only 9.0% [CF.end_of_month_concentration], with deposits distributed across weekly branch visits rather than last-minute artificial spikes.\n\n---\n\n**Q11: Business name, account holder, and address consistency**\n- **Verdict:** PASS\n- **Evidence:** Application business name is Reyes Auto Repair; bank statement D01 account holder is Ramon Reyes (sole proprietorship match); ledger headers read \"Reyes Auto Repair\"; exterior signage on D10 displays \"REYES AUTO REPAIR\". The automated flag regarding D11 signage reading \"SERVICE BAY 2\" is an internal workshop bay marker, not a conflicting business name.\n\n---\n\n**Q12: Language and currency consistency**\n- **Verdict:** PASS\n- **Evidence:** Currency is uniformly Philippine Peso (PHP). Languages are English (statement D01, signage D10/D11) and Tagalog (handwritten ledger D02–D09), exactly matching standard commercial documentation in the Philippines.\n\n---\n\n### Overall Assessment\nWhile the credit memo correctly identifies the missing 2-month banking gap (March–April 2026), the running balance continuity break (+12,450 PHP at T0051), and internal ledger duplication (D04 vs D07), it severely underestimates the overall fraud risk by recommending `request_more_documents` instead of outright rejection or immediate referral to fraud investigation. Most critically, the memo missed an undeniable cross-case fraud signal: premises image D11 is an exact perceptual duplicate (hamming distance 0) stolen from past case `PAST-2025-0471`. When combined with the altered header on duplicate ledger sheet D07 and the artificial balance leap of 12,450 PHP between statements, this file exhibits clear indicators of synthetic and tampered application materials. The application should not proceed as a simple document request; it requires immediate escalation to fraud review.",
+   "parsed": null
+  },
+  {
+   "text": "{\n  \"objections\": [\n    {\n      \"id\": \"OBJ-1\",\n      \"question_id\": \"Q4\",\n      \"severity\": \"critical\",\n      \"title\": \"Cross-case premises image reuse and internal ledger duplication\",\n      \"claim\": \"Premises photo D11 is an exact perceptual match (hamming distance 0) to premises.jpg from past case PAST-2025-0471, and ledger document D07 is a near-identical duplicate (hamming distance 2) of March document D04 with an altered April header duplicating 69,000 PHP of income.\",\n      \"evidence_refs\": [\n        {\n          \"doc_id\": \"D11\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"premises_02.jpg\"\n        },\n        {\n          \"doc_id\": \"D04\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"ledger_p3.jpg\"\n        },\n        {\n          \"doc_id\": \"D07\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"ledger_p6.jpg\"\n        }\n      ],\n      \"figure_ids\": [\n        \"DOC.D07.income_total\",\n        \"CF.ledger_income_total\",\n        \"CF.ledger_income_comparable\"\n      ],\n      \"tool_evidence\": \"image_similarity(D04, D07) returned hamming distance 2; automated check matched D11 to PAST-2025-0471 with hamming distance 0\",\n      \"suggested_action\": \"Reject the application or escalate immediately to the Special Investigations Unit / Fraud Risk team due to synthetic cross-case documentation and fabricated ledger records.\",\n      \"financial_impact\": 69000.0\n    },\n    {\n      \"id\": \"OBJ-2\",\n      \"question_id\": \"Q6\",\n      \"severity\": \"critical\",\n      \"title\": \"Running balance continuity break across statement gap\",\n      \"claim\": \"Bank statement D01 experiences a balance break at row T0051 on 2026-05-01 where the expected balance following the February closing balance of 48,950.00 PHP minus debit T0051 (3,000.00 PHP) should be 45,950.00 PHP, but is reported as 58,400.00 PHP (+12,450.00 PHP difference).\",\n      \"evidence_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 3,\n          \"bbox\": {\n            \"ymin\": 196,\n            \"xmin\": 63,\n            \"ymax\": 206,\n            \"xmax\": 934\n          },\n          \"snippet\": \"05/01/2026 MP26050159537 GCASH TRANSFER TO JUAN DELA CRUZ 3,000.00 58,400.00\"\n        },\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 2,\n          \"bbox\": {\n            \"ymin\": 636,\n            \"xmin\": 64,\n            \"ymax\": 647,\n            \"xmax\": 935\n          },\n          \"snippet\": \"02/28/2026 MP26022847414 WITHHOLDING TAX ON INTEREST 0.64 48,950.00\"\n        }\n      ],\n      \"figure_ids\": [\n        \"CF.m.2026-02.closing_balance\"\n      ],\n      \"tool_evidence\": \"recompute_balance_chain(D01) flagged row T0051 with expected 45950.0 and reported 58400.0 (+12450.0 PHP difference)\",\n      \"suggested_action\": \"Require unbroken original bank statements for March and April 2026 and verify whether intermediate transaction records were deliberately omitted or fabricated.\",\n      \"financial_impact\": 12450.0\n    },\n    {\n      \"id\": \"OBJ-3\",\n      \"question_id\": \"Q5\",\n      \"severity\": \"medium\",\n      \"title\": \"Ledger and bank statement reporting periods do not align\",\n      \"claim\": \"Handwritten ledger submissions D02 through D09 cover all six months from January through June 2026, whereas bank statement D01 omits all transaction records for March and April 2026.\",\n      \"evidence_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"bank_statement_2026_partial.pdf\"\n        },\n        {\n          \"doc_id\": \"D02\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"ledger_p1.jpg\"\n        }\n      ],\n      \"figure_ids\": [\n        \"CF.months_covered\",\n        \"CF.months_missing_count\"\n      ],\n      \"tool_evidence\": \"date_crosscheck(D01, D02) and automated period check identified missing months 2026-03 and 2026-04 in D01\",\n      \"suggested_action\": \"Obtain official complete bank statements covering March and April 2026 to reconcile against submitted ledger entries.\",\n      \"financial_impact\": null\n    }\n  ],\n  \"questions_checked\": [\n    \"Q1\",\n    \"Q2\",\n    \"Q3\",\n    \"Q4\",\n    \"Q5\",\n    \"Q6\",\n    \"Q7\",\n    \"Q8\",\n    \"Q9\",\n    \"Q10\",\n    \"Q11\",\n    \"Q12\"\n  ],\n  \"overall_assessment\": \"The credit memo correctly highlights missing statement periods for March and April 2026 and internal ledger duplication in D07, but fails to identify that premises photo D11 is an exact duplicate reused from past case PAST-2025-0471. Combined with an unexplained 12,450 PHP balance jump at row T0051 and altered header duplication of March figures into April, this file presents severe integrity and fraud flags. The recommendation should be escalated from a standard document request to immediate fraud referral and potential rejection.\"\n}",
+   "parsed": {
+    "objections": [
+     {
+      "id": "OBJ-1",
+      "question_id": "Q4",
+      "severity": "critical",
+      "title": "Cross-case premises image reuse and internal ledger duplication",
+      "claim": "Premises photo D11 is an exact perceptual match (hamming distance 0) to premises.jpg from past case PAST-2025-0471, and ledger document D07 is a near-identical duplicate (hamming distance 2) of March document D04 with an altered April header duplicating 69,000 PHP of income.",
+      "evidence_refs": [
+       {
+        "doc_id": "D11",
+        "page": 1,
+        "bbox": null,
+        "snippet": "premises_02.jpg"
+       },
+       {
+        "doc_id": "D04",
+        "page": 1,
+        "bbox": null,
+        "snippet": "ledger_p3.jpg"
+       },
+       {
+        "doc_id": "D07",
+        "page": 1,
+        "bbox": null,
+        "snippet": "ledger_p6.jpg"
+       }
+      ],
+      "figure_ids": [
+       "DOC.D07.income_total",
+       "CF.ledger_income_total",
+       "CF.ledger_income_comparable"
+      ],
+      "tool_evidence": "image_similarity(D04, D07) returned hamming distance 2; automated check matched D11 to PAST-2025-0471 with hamming distance 0",
+      "suggested_action": "Reject the application or escalate immediately to the Special Investigations Unit / Fraud Risk team due to synthetic cross-case documentation and fabricated ledger records.",
+      "financial_impact": 69000.0
+     },
+     {
+      "id": "OBJ-2",
+      "question_id": "Q6",
+      "severity": "critical",
+      "title": "Running balance continuity break across statement gap",
+      "claim": "Bank statement D01 experiences a balance break at row T0051 on 2026-05-01 where the expected balance following the February closing balance of 48,950.00 PHP minus debit T0051 (3,000.00 PHP) should be 45,950.00 PHP, but is reported as 58,400.00 PHP (+12,450.00 PHP difference).",
+      "evidence_refs": [
+       {
+        "doc_id": "D01",
+        "page": 3,
+        "bbox": {
+         "ymin": 196,
+         "xmin": 63,
+         "ymax": 206,
+         "xmax": 934
+        },
+        "snippet": "05/01/2026 MP26050159537 GCASH TRANSFER TO JUAN DELA CRUZ 3,000.00 58,400.00"
+       },
+       {
+        "doc_id": "D01",
+        "page": 2,
+        "bbox": {
+         "ymin": 636,
+         "xmin": 64,
+         "ymax": 647,
+         "xmax": 935
+        },
+        "snippet": "02/28/2026 MP26022847414 WITHHOLDING TAX ON INTEREST 0.64 48,950.00"
+       }
+      ],
+      "figure_ids": [
+       "CF.m.2026-02.closing_balance"
+      ],
+      "tool_evidence": "recompute_balance_chain(D01) flagged row T0051 with expected 45950.0 and reported 58400.0 (+12450.0 PHP difference)",
+      "suggested_action": "Require unbroken original bank statements for March and April 2026 and verify whether intermediate transaction records were deliberately omitted or fabricated.",
+      "financial_impact": 12450.0
+     },
+     {
+      "id": "OBJ-3",
+      "question_id": "Q5",
+      "severity": "medium",
+      "title": "Ledger and bank statement reporting periods do not align",
+      "claim": "Handwritten ledger submissions D02 through D09 cover all six months from January through June 2026, whereas bank statement D01 omits all transaction records for March and April 2026.",
+      "evidence_refs": [
+       {
+        "doc_id": "D01",
+        "page": 1,
+        "bbox": null,
+        "snippet": "bank_statement_2026_partial.pdf"
+       },
+       {
+        "doc_id": "D02",
+        "page": 1,
+        "bbox": null,
+        "snippet": "ledger_p1.jpg"
+       }
+      ],
+      "figure_ids": [
+       "CF.months_covered",
+       "CF.months_missing_count"
+      ],
+      "tool_evidence": "date_crosscheck(D01, D02) and automated period check identified missing months 2026-03 and 2026-04 in D01",
+      "suggested_action": "Obtain official complete bank statements covering March and April 2026 to reconcile against submitted ledger entries.",
+      "financial_impact": null
+     }
+    ],
+    "questions_checked": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12"
+    ],
+    "overall_assessment": "The credit memo correctly highlights missing statement periods for March and April 2026 and internal ledger duplication in D07, but fails to identify that premises photo D11 is an exact duplicate reused from past case PAST-2025-0471. Combined with an unexplained 12,450 PHP balance jump at row T0051 and altered header duplication of March figures into April, this file presents severe integrity and fraud flags. The recommendation should be escalated from a standard document request to immediate fraud referral and potential rejection."
+   }
+  }
+ ],
+ "cached_at": "2026-10-16T06:19:21+00:00"
+}

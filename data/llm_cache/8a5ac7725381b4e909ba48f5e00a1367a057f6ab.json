@@ -1,0 +1,121 @@
+{
+ "text": "{\n  \"merchant\": \"TOKO TELUR PAK YANTO\",\n  \"date\": \"2026-05-25\",\n  \"receipt_number\": \"086\",\n  \"currency\": \"IDR\",\n  \"total\": {\n    \"value\": 635000,\n    \"source\": {\n      \"doc_id\": \"D14\",\n      \"page\": 1,\n      \"bbox\": {\n        \"ymin\": 760,\n        \"xmin\": 730,\n        \"ymax\": 785,\n        \"xmax\": 894\n      },\n      \"snippet\": \"635.000\"\n    }\n  },\n  \"items\": [\n    {\n      \"description\": \"Telur bebek 1 tray\",\n      \"amount\": 255000,\n      \"source\": {\n        \"doc_id\": \"D14\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 288,\n          \"xmin\": 765,\n          \"ymax\": 309,\n          \"xmax\": 896\n        },\n        \"snippet\": \"255.000\"\n      }\n    },\n    {\n      \"description\": \"Telur puyuh 1kg\",\n      \"amount\": 380000,\n      \"source\": {\n        \"doc_id\": \"D14\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 339,\n          \"xmin\": 761,\n          \"ymax\": 359,\n          \"xmax\": 888\n        },\n        \"snippet\": \"380.000\"\n      }\n    }\n  ],\n  \"payment_method\": null,\n  \"direction\": \"purchase\",\n  \"handwritten\": true\n}",
+ "parsed": {
+  "merchant": "TOKO TELUR PAK YANTO",
+  "date": "2026-05-25",
+  "receipt_number": "086",
+  "currency": "IDR",
+  "total": {
+   "value": 635000.0,
+   "source": {
+    "doc_id": "D14",
+    "page": 1,
+    "bbox": {
+     "ymin": 760,
+     "xmin": 730,
+     "ymax": 785,
+     "xmax": 894
+    },
+    "snippet": "635.000"
+   }
+  },
+  "items": [
+   {
+    "description": "Telur bebek 1 tray",
+    "amount": 255000.0,
+    "source": {
+     "doc_id": "D14",
+     "page": 1,
+     "bbox": {
+      "ymin": 288,
+      "xmin": 765,
+      "ymax": 309,
+      "xmax": 896
+     },
+     "snippet": "255.000"
+    }
+   },
+   {
+    "description": "Telur puyuh 1kg",
+    "amount": 380000.0,
+    "source": {
+     "doc_id": "D14",
+     "page": 1,
+     "bbox": {
+      "ymin": 339,
+      "xmin": 761,
+      "ymax": 359,
+      "xmax": 888
+     },
+     "snippet": "380.000"
+    }
+   }
+  ],
+  "payment_method": null,
+  "direction": "purchase",
+  "handwritten": true
+ },
+ "state": {
+  "output": {
+   "merchant": "TOKO TELUR PAK YANTO",
+   "date": "2026-05-25",
+   "receipt_number": "086",
+   "currency": "IDR",
+   "total": {
+    "value": 635000.0,
+    "source": {
+     "doc_id": "D14",
+     "page": 1,
+     "bbox": {
+      "ymin": 760,
+      "xmin": 730,
+      "ymax": 785,
+      "xmax": 894
+     },
+     "snippet": "635.000"
+    }
+   },
+   "items": [
+    {
+     "description": "Telur bebek 1 tray",
+     "amount": 255000.0,
+     "source": {
+      "doc_id": "D14",
+      "page": 1,
+      "bbox": {
+       "ymin": 288,
+       "xmin": 765,
+       "ymax": 309,
+       "xmax": 896
+      },
+      "snippet": "255.000"
+     }
+    },
+    {
+     "description": "Telur puyuh 1kg",
+     "amount": 380000.0,
+     "source": {
+      "doc_id": "D14",
+      "page": 1,
+      "bbox": {
+       "ymin": 339,
+       "xmin": 761,
+       "ymax": 359,
+       "xmax": 888
+      },
+      "snippet": "380.000"
+     }
+    }
+   ],
+   "direction": "purchase",
+   "handwritten": true
+  }
+ },
+ "input_tokens": 958,
+ "output_tokens": 450,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:receipt",
+ "cached_at": "2026-10-15T06:47:11+00:00"
+}

@@ -1,0 +1,927 @@
+{
+ "text": "{\"business_name_header\":\"Reyes Auto Repair\",\"address_header\":null,\"currency\":\"PHP\",\"period_label\":\"Enero 2026\",\"entries\":[{\"row_id\":\"L0001\",\"date\":\"2026-01-02\",\"description\":\"Check engine - Avanza\",\"amount\":2400,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":156,\"xmin\":97,\"ymax\":186,\"xmax\":932},\"snippet\":\"2 Check engine - Avanza 2,400\"}},{\"row_id\":\"L0002\",\"date\":\"2026-01-03\",\"description\":\"Change oil - Toyota Vios\",\"amount\":1850,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":186,\"xmin\":97,\"ymax\":211,\"xmax\":932},\"snippet\":\"3 Change oil - Toyota Vios 1,850\"}},{\"row_id\":\"L0003\",\"date\":\"2026-01-05\",\"description\":\"Alternator repair - Crosswind\",\"amount\":4500,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":235,\"xmin\":97,\"ymax\":260,\"xmax\":929},\"snippet\":\"5 Alternator repair - Crosswind 4,500\"}},{\"row_id\":\"L0004\",\"date\":\"2026-01-07\",\"description\":\"Battery replace - Hyundai Accent\",\"amount\":5850,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":262,\"xmin\":97,\"ymax\":287,\"xmax\":930},\"snippet\":\"7 Battery replace - Hyundai Accent 5,850\"}},{\"row_id\":\"L0005\",\"date\":\"2026-01-08\",\"description\":\"Check engine - Avanza\",\"amount\":2050,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":288,\"xmin\":97,\"ymax\":313,\"xmax\":931},\"snippet\":\"8 Check engine - Avanza 2,050\"}},{\"row_id\":\"L0006\",\"date\":\"2026-01-08\",\"description\":\"Pamasahe - delivery parts\",\"amount\":250,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":313,\"xmin\":97,\"ymax\":338,\"xmax\":930},\"snippet\":\"8 Pamasahe - delivery parts -250\"}},{\"row_id\":\"L0007\",\"date\":\"2026-01-09\",\"description\":\"Clutch adjust - Wigo\",\"amount\":2000,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":339,\"xmin\":97,\"ymax\":362,\"xmax\":930},\"snippet\":\"9 Clutch adjust - Wigo 2,000\"}},{\"row_id\":\"L0008\",\"date\":\"2026-01-10\",\"description\":\"Brake pads - Honda City\",\"amount\":3150,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":364,\"xmin\":97,\"ymax\":388,\"xmax\":928},\"snippet\":\"10 Brake pads - Honda City 3,150\"}},{\"row_id\":\"L0009\",\"date\":\"2026-01-12\",\"description\":\"Palit shock absorber - Xpander\",\"amount\":5400,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":416,\"xmin\":93,\"ymax\":441,\"xmax\":931},\"snippet\":\"12 Palit shock absorber - Xpander 5,400\"}},{\"row_id\":\"L0010\",\"date\":\"2026-01-14\",\"description\":\"Palit shock absorber - Xpander\",\"amount\":4850,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":441,\"xmin\":93,\"ymax\":466,\"xmax\":927},\"snippet\":\"14 Palit shock absorber - Xpander 4,850\"}},{\"row_id\":\"L0011\",\"date\":\"2026-01-15\",\"description\":\"Wheel alignment - Montero\",\"amount\":1650,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":468,\"xmin\":93,\"ymax\":492,\"xmax\":927},\"snippet\":\"15 Wheel alignment - Montero 1,650\"}},{\"row_id\":\"L0012\",\"date\":\"2026-01-15\",\"description\":\"Bayad welding gas\",\"amount\":900,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":493,\"xmin\":93,\"ymax\":519,\"xmax\":927},\"snippet\":\"15 Bayad welding gas -900\"}},{\"row_id\":\"L0013\",\"date\":\"2026-01-16\",\"description\":\"Overhaul deposit - L300\",\"amount\":5150,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":520,\"xmin\":93,\"ymax\":544,\"xmax\":925},\"snippet\":\"16 Overhaul deposit - L300 5,150\"}},{\"row_id\":\"L0014\",\"date\":\"2026-01-17\",\"description\":\"Clutch adjust - Wigo\",\"amount\":2350,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":545,\"xmin\":93,\"ymax\":570,\"xmax\":925},\"snippet\":\"17 Clutch adjust - Wigo 2,350\"}},{\"row_id\":\"L0015\",\"date\":\"2026-01-19\",\"description\":\"Palit brake fluid - Mirage\",\"amount\":2100,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":598,\"xmin\":89,\"ymax\":623,\"xmax\":925},\"snippet\":\"19 Palit brake fluid - Mirage 2,100\"}},{\"row_id\":\"L0016\",\"date\":\"2026-01-20\",\"description\":\"Brake pads - Honda City\",\"amount\":3750,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":623,\"xmin\":89,\"ymax\":647,\"xmax\":924},\"snippet\":\"20 Brake pads - Honda City 3,750\"}},{\"row_id\":\"L0017\",\"date\":\"2026-01-21\",\"description\":\"Palit gulong x2 - Fortuner\",\"amount\":5000,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":649,\"xmin\":89,\"ymax\":673,\"xmax\":922},\"snippet\":\"21 Palit gulong x2 - Fortuner 5,000\"}},{\"row_id\":\"L0018\",\"date\":\"2026-01-22\",\"description\":\"Aircon freon - City\",\"amount\":2250,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":674,\"xmin\":89,\"ymax\":698,\"xmax\":923},\"snippet\":\"22 Aircon freon - City 2,250\"}},{\"row_id\":\"L0019\",\"date\":\"2026-01-23\",\"description\":\"Clutch adjust - Wigo\",\"amount\":2000,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":699,\"xmin\":89,\"ymax\":724,\"xmax\":922},\"snippet\":\"23 Clutch adjust - Wigo 2,000\"}},{\"row_id\":\"L0020\",\"date\":\"2026-01-24\",\"description\":\"Overhaul deposit - L300\",\"amount\":5850,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":725,\"xmin\":89,\"ymax\":749,\"xmax\":921},\"snippet\":\"24 Overhaul deposit - L300 5,850\"}},{\"row_id\":\"L0021\",\"date\":\"2026-01-27\",\"description\":\"Overhaul deposit - L300\",\"amount\":6000,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":777,\"xmin\":83,\"ymax\":801,\"xmax\":921},\"snippet\":\"27 Overhaul deposit - L300 6,000\"}},{\"row_id\":\"L0022\",\"date\":\"2026-01-28\",\"description\":\"Palit bumbilya + wiper - Vios\",\"amount\":1750,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":803,\"xmin\":83,\"ymax\":827,\"xmax\":918},\"snippet\":\"28 Palit bumbilya + wiper - Vios 1,750\"}},{\"row_id\":\"L0023\",\"date\":\"2026-01-29\",\"description\":\"Wheel alignment - Montero\",\"amount\":2200,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":829,\"xmin\":83,\"ymax\":853,\"xmax\":919},\"snippet\":\"29 Wheel alignment - Montero 2,200\"}},{\"row_id\":\"L0024\",\"date\":\"2026-01-30\",\"description\":\"Aircon freon - City\",\"amount\":2700,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":853,\"xmin\":83,\"ymax\":877,\"xmax\":919},\"snippet\":\"30 Aircon freon - City 2,700\"}},{\"row_id\":\"L0025\",\"date\":\"2026-01-31\",\"description\":\"Brake pads - Honda City\",\"amount\":3600,\"kind\":\"income\",\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":879,\"xmin\":83,\"ymax\":903,\"xmax\":918},\"snippet\":\"31 Brake pads - Honda City 3,600\"}}]}",
+ "parsed": {
+  "business_name_header": "Reyes Auto Repair",
+  "address_header": null,
+  "currency": "PHP",
+  "period_label": "Enero 2026",
+  "entries": [
+   {
+    "row_id": "L0001",
+    "date": "2026-01-02",
+    "description": "Check engine - Avanza",
+    "amount": 2400.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 156,
+      "xmin": 97,
+      "ymax": 186,
+      "xmax": 932
+     },
+     "snippet": "2 Check engine - Avanza 2,400"
+    }
+   },
+   {
+    "row_id": "L0002",
+    "date": "2026-01-03",
+    "description": "Change oil - Toyota Vios",
+    "amount": 1850.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 186,
+      "xmin": 97,
+      "ymax": 211,
+      "xmax": 932
+     },
+     "snippet": "3 Change oil - Toyota Vios 1,850"
+    }
+   },
+   {
+    "row_id": "L0003",
+    "date": "2026-01-05",
+    "description": "Alternator repair - Crosswind",
+    "amount": 4500.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 235,
+      "xmin": 97,
+      "ymax": 260,
+      "xmax": 929
+     },
+     "snippet": "5 Alternator repair - Crosswind 4,500"
+    }
+   },
+   {
+    "row_id": "L0004",
+    "date": "2026-01-07",
+    "description": "Battery replace - Hyundai Accent",
+    "amount": 5850.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 262,
+      "xmin": 97,
+      "ymax": 287,
+      "xmax": 930
+     },
+     "snippet": "7 Battery replace - Hyundai Accent 5,850"
+    }
+   },
+   {
+    "row_id": "L0005",
+    "date": "2026-01-08",
+    "description": "Check engine - Avanza",
+    "amount": 2050.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 288,
+      "xmin": 97,
+      "ymax": 313,
+      "xmax": 931
+     },
+     "snippet": "8 Check engine - Avanza 2,050"
+    }
+   },
+   {
+    "row_id": "L0006",
+    "date": "2026-01-08",
+    "description": "Pamasahe - delivery parts",
+    "amount": 250.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 313,
+      "xmin": 97,
+      "ymax": 338,
+      "xmax": 930
+     },
+     "snippet": "8 Pamasahe - delivery parts -250"
+    }
+   },
+   {
+    "row_id": "L0007",
+    "date": "2026-01-09",
+    "description": "Clutch adjust - Wigo",
+    "amount": 2000.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 339,
+      "xmin": 97,
+      "ymax": 362,
+      "xmax": 930
+     },
+     "snippet": "9 Clutch adjust - Wigo 2,000"
+    }
+   },
+   {
+    "row_id": "L0008",
+    "date": "2026-01-10",
+    "description": "Brake pads - Honda City",
+    "amount": 3150.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 364,
+      "xmin": 97,
+      "ymax": 388,
+      "xmax": 928
+     },
+     "snippet": "10 Brake pads - Honda City 3,150"
+    }
+   },
+   {
+    "row_id": "L0009",
+    "date": "2026-01-12",
+    "description": "Palit shock absorber - Xpander",
+    "amount": 5400.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 416,
+      "xmin": 93,
+      "ymax": 441,
+      "xmax": 931
+     },
+     "snippet": "12 Palit shock absorber - Xpander 5,400"
+    }
+   },
+   {
+    "row_id": "L0010",
+    "date": "2026-01-14",
+    "description": "Palit shock absorber - Xpander",
+    "amount": 4850.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 441,
+      "xmin": 93,
+      "ymax": 466,
+      "xmax": 927
+     },
+     "snippet": "14 Palit shock absorber - Xpander 4,850"
+    }
+   },
+   {
+    "row_id": "L0011",
+    "date": "2026-01-15",
+    "description": "Wheel alignment - Montero",
+    "amount": 1650.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 468,
+      "xmin": 93,
+      "ymax": 492,
+      "xmax": 927
+     },
+     "snippet": "15 Wheel alignment - Montero 1,650"
+    }
+   },
+   {
+    "row_id": "L0012",
+    "date": "2026-01-15",
+    "description": "Bayad welding gas",
+    "amount": 900.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 493,
+      "xmin": 93,
+      "ymax": 519,
+      "xmax": 927
+     },
+     "snippet": "15 Bayad welding gas -900"
+    }
+   },
+   {
+    "row_id": "L0013",
+    "date": "2026-01-16",
+    "description": "Overhaul deposit - L300",
+    "amount": 5150.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 520,
+      "xmin": 93,
+      "ymax": 544,
+      "xmax": 925
+     },
+     "snippet": "16 Overhaul deposit - L300 5,150"
+    }
+   },
+   {
+    "row_id": "L0014",
+    "date": "2026-01-17",
+    "description": "Clutch adjust - Wigo",
+    "amount": 2350.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 545,
+      "xmin": 93,
+      "ymax": 570,
+      "xmax": 925
+     },
+     "snippet": "17 Clutch adjust - Wigo 2,350"
+    }
+   },
+   {
+    "row_id": "L0015",
+    "date": "2026-01-19",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 2100.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 598,
+      "xmin": 89,
+      "ymax": 623,
+      "xmax": 925
+     },
+     "snippet": "19 Palit brake fluid - Mirage 2,100"
+    }
+   },
+   {
+    "row_id": "L0016",
+    "date": "2026-01-20",
+    "description": "Brake pads - Honda City",
+    "amount": 3750.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 623,
+      "xmin": 89,
+      "ymax": 647,
+      "xmax": 924
+     },
+     "snippet": "20 Brake pads - Honda City 3,750"
+    }
+   },
+   {
+    "row_id": "L0017",
+    "date": "2026-01-21",
+    "description": "Palit gulong x2 - Fortuner",
+    "amount": 5000.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 649,
+      "xmin": 89,
+      "ymax": 673,
+      "xmax": 922
+     },
+     "snippet": "21 Palit gulong x2 - Fortuner 5,000"
+    }
+   },
+   {
+    "row_id": "L0018",
+    "date": "2026-01-22",
+    "description": "Aircon freon - City",
+    "amount": 2250.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 674,
+      "xmin": 89,
+      "ymax": 698,
+      "xmax": 923
+     },
+     "snippet": "22 Aircon freon - City 2,250"
+    }
+   },
+   {
+    "row_id": "L0019",
+    "date": "2026-01-23",
+    "description": "Clutch adjust - Wigo",
+    "amount": 2000.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 699,
+      "xmin": 89,
+      "ymax": 724,
+      "xmax": 922
+     },
+     "snippet": "23 Clutch adjust - Wigo 2,000"
+    }
+   },
+   {
+    "row_id": "L0020",
+    "date": "2026-01-24",
+    "description": "Overhaul deposit - L300",
+    "amount": 5850.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 725,
+      "xmin": 89,
+      "ymax": 749,
+      "xmax": 921
+     },
+     "snippet": "24 Overhaul deposit - L300 5,850"
+    }
+   },
+   {
+    "row_id": "L0021",
+    "date": "2026-01-27",
+    "description": "Overhaul deposit - L300",
+    "amount": 6000.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 777,
+      "xmin": 83,
+      "ymax": 801,
+      "xmax": 921
+     },
+     "snippet": "27 Overhaul deposit - L300 6,000"
+    }
+   },
+   {
+    "row_id": "L0022",
+    "date": "2026-01-28",
+    "description": "Palit bumbilya + wiper - Vios",
+    "amount": 1750.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 803,
+      "xmin": 83,
+      "ymax": 827,
+      "xmax": 918
+     },
+     "snippet": "28 Palit bumbilya + wiper - Vios 1,750"
+    }
+   },
+   {
+    "row_id": "L0023",
+    "date": "2026-01-29",
+    "description": "Wheel alignment - Montero",
+    "amount": 2200.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 829,
+      "xmin": 83,
+      "ymax": 853,
+      "xmax": 919
+     },
+     "snippet": "29 Wheel alignment - Montero 2,200"
+    }
+   },
+   {
+    "row_id": "L0024",
+    "date": "2026-01-30",
+    "description": "Aircon freon - City",
+    "amount": 2700.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 853,
+      "xmin": 83,
+      "ymax": 877,
+      "xmax": 919
+     },
+     "snippet": "30 Aircon freon - City 2,700"
+    }
+   },
+   {
+    "row_id": "L0025",
+    "date": "2026-01-31",
+    "description": "Brake pads - Honda City",
+    "amount": 3600.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 879,
+      "xmin": 83,
+      "ymax": 903,
+      "xmax": 918
+     },
+     "snippet": "31 Brake pads - Honda City 3,600"
+    }
+   }
+  ]
+ },
+ "state": {
+  "output": {
+   "business_name_header": "Reyes Auto Repair",
+   "currency": "PHP",
+   "period_label": "Enero 2026",
+   "entries": [
+    {
+     "row_id": "L0001",
+     "date": "2026-01-02",
+     "description": "Check engine - Avanza",
+     "amount": 2400.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 156,
+       "xmin": 97,
+       "ymax": 186,
+       "xmax": 932
+      },
+      "snippet": "2 Check engine - Avanza 2,400"
+     }
+    },
+    {
+     "row_id": "L0002",
+     "date": "2026-01-03",
+     "description": "Change oil - Toyota Vios",
+     "amount": 1850.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 186,
+       "xmin": 97,
+       "ymax": 211,
+       "xmax": 932
+      },
+      "snippet": "3 Change oil - Toyota Vios 1,850"
+     }
+    },
+    {
+     "row_id": "L0003",
+     "date": "2026-01-05",
+     "description": "Alternator repair - Crosswind",
+     "amount": 4500.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 235,
+       "xmin": 97,
+       "ymax": 260,
+       "xmax": 929
+      },
+      "snippet": "5 Alternator repair - Crosswind 4,500"
+     }
+    },
+    {
+     "row_id": "L0004",
+     "date": "2026-01-07",
+     "description": "Battery replace - Hyundai Accent",
+     "amount": 5850.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 262,
+       "xmin": 97,
+       "ymax": 287,
+       "xmax": 930
+      },
+      "snippet": "7 Battery replace - Hyundai Accent 5,850"
+     }
+    },
+    {
+     "row_id": "L0005",
+     "date": "2026-01-08",
+     "description": "Check engine - Avanza",
+     "amount": 2050.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 288,
+       "xmin": 97,
+       "ymax": 313,
+       "xmax": 931
+      },
+      "snippet": "8 Check engine - Avanza 2,050"
+     }
+    },
+    {
+     "row_id": "L0006",
+     "date": "2026-01-08",
+     "description": "Pamasahe - delivery parts",
+     "amount": 250.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 313,
+       "xmin": 97,
+       "ymax": 338,
+       "xmax": 930
+      },
+      "snippet": "8 Pamasahe - delivery parts -250"
+     }
+    },
+    {
+     "row_id": "L0007",
+     "date": "2026-01-09",
+     "description": "Clutch adjust - Wigo",
+     "amount": 2000.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 339,
+       "xmin": 97,
+       "ymax": 362,
+       "xmax": 930
+      },
+      "snippet": "9 Clutch adjust - Wigo 2,000"
+     }
+    },
+    {
+     "row_id": "L0008",
+     "date": "2026-01-10",
+     "description": "Brake pads - Honda City",
+     "amount": 3150.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 364,
+       "xmin": 97,
+       "ymax": 388,
+       "xmax": 928
+      },
+      "snippet": "10 Brake pads - Honda City 3,150"
+     }
+    },
+    {
+     "row_id": "L0009",
+     "date": "2026-01-12",
+     "description": "Palit shock absorber - Xpander",
+     "amount": 5400.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 416,
+       "xmin": 93,
+       "ymax": 441,
+       "xmax": 931
+      },
+      "snippet": "12 Palit shock absorber - Xpander 5,400"
+     }
+    },
+    {
+     "row_id": "L0010",
+     "date": "2026-01-14",
+     "description": "Palit shock absorber - Xpander",
+     "amount": 4850.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 441,
+       "xmin": 93,
+       "ymax": 466,
+       "xmax": 927
+      },
+      "snippet": "14 Palit shock absorber - Xpander 4,850"
+     }
+    },
+    {
+     "row_id": "L0011",
+     "date": "2026-01-15",
+     "description": "Wheel alignment - Montero",
+     "amount": 1650.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 468,
+       "xmin": 93,
+       "ymax": 492,
+       "xmax": 927
+      },
+      "snippet": "15 Wheel alignment - Montero 1,650"
+     }
+    },
+    {
+     "row_id": "L0012",
+     "date": "2026-01-15",
+     "description": "Bayad welding gas",
+     "amount": 900.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 493,
+       "xmin": 93,
+       "ymax": 519,
+       "xmax": 927
+      },
+      "snippet": "15 Bayad welding gas -900"
+     }
+    },
+    {
+     "row_id": "L0013",
+     "date": "2026-01-16",
+     "description": "Overhaul deposit - L300",
+     "amount": 5150.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 520,
+       "xmin": 93,
+       "ymax": 544,
+       "xmax": 925
+      },
+      "snippet": "16 Overhaul deposit - L300 5,150"
+     }
+    },
+    {
+     "row_id": "L0014",
+     "date": "2026-01-17",
+     "description": "Clutch adjust - Wigo",
+     "amount": 2350.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 545,
+       "xmin": 93,
+       "ymax": 570,
+       "xmax": 925
+      },
+      "snippet": "17 Clutch adjust - Wigo 2,350"
+     }
+    },
+    {
+     "row_id": "L0015",
+     "date": "2026-01-19",
+     "description": "Palit brake fluid - Mirage",
+     "amount": 2100.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 598,
+       "xmin": 89,
+       "ymax": 623,
+       "xmax": 925
+      },
+      "snippet": "19 Palit brake fluid - Mirage 2,100"
+     }
+    },
+    {
+     "row_id": "L0016",
+     "date": "2026-01-20",
+     "description": "Brake pads - Honda City",
+     "amount": 3750.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 623,
+       "xmin": 89,
+       "ymax": 647,
+       "xmax": 924
+      },
+      "snippet": "20 Brake pads - Honda City 3,750"
+     }
+    },
+    {
+     "row_id": "L0017",
+     "date": "2026-01-21",
+     "description": "Palit gulong x2 - Fortuner",
+     "amount": 5000.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 649,
+       "xmin": 89,
+       "ymax": 673,
+       "xmax": 922
+      },
+      "snippet": "21 Palit gulong x2 - Fortuner 5,000"
+     }
+    },
+    {
+     "row_id": "L0018",
+     "date": "2026-01-22",
+     "description": "Aircon freon - City",
+     "amount": 2250.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 674,
+       "xmin": 89,
+       "ymax": 698,
+       "xmax": 923
+      },
+      "snippet": "22 Aircon freon - City 2,250"
+     }
+    },
+    {
+     "row_id": "L0019",
+     "date": "2026-01-23",
+     "description": "Clutch adjust - Wigo",
+     "amount": 2000.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 699,
+       "xmin": 89,
+       "ymax": 724,
+       "xmax": 922
+      },
+      "snippet": "23 Clutch adjust - Wigo 2,000"
+     }
+    },
+    {
+     "row_id": "L0020",
+     "date": "2026-01-24",
+     "description": "Overhaul deposit - L300",
+     "amount": 5850.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 725,
+       "xmin": 89,
+       "ymax": 749,
+       "xmax": 921
+      },
+      "snippet": "24 Overhaul deposit - L300 5,850"
+     }
+    },
+    {
+     "row_id": "L0021",
+     "date": "2026-01-27",
+     "description": "Overhaul deposit - L300",
+     "amount": 6000.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 777,
+       "xmin": 83,
+       "ymax": 801,
+       "xmax": 921
+      },
+      "snippet": "27 Overhaul deposit - L300 6,000"
+     }
+    },
+    {
+     "row_id": "L0022",
+     "date": "2026-01-28",
+     "description": "Palit bumbilya + wiper - Vios",
+     "amount": 1750.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 803,
+       "xmin": 83,
+       "ymax": 827,
+       "xmax": 918
+      },
+      "snippet": "28 Palit bumbilya + wiper - Vios 1,750"
+     }
+    },
+    {
+     "row_id": "L0023",
+     "date": "2026-01-29",
+     "description": "Wheel alignment - Montero",
+     "amount": 2200.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 829,
+       "xmin": 83,
+       "ymax": 853,
+       "xmax": 919
+      },
+      "snippet": "29 Wheel alignment - Montero 2,200"
+     }
+    },
+    {
+     "row_id": "L0024",
+     "date": "2026-01-30",
+     "description": "Aircon freon - City",
+     "amount": 2700.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 853,
+       "xmin": 83,
+       "ymax": 877,
+       "xmax": 919
+      },
+      "snippet": "30 Aircon freon - City 2,700"
+     }
+    },
+    {
+     "row_id": "L0025",
+     "date": "2026-01-31",
+     "description": "Brake pads - Honda City",
+     "amount": 3600.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 879,
+       "xmin": 83,
+       "ymax": 903,
+       "xmax": 918
+      },
+      "snippet": "31 Brake pads - Honda City 3,600"
+     }
+    }
+   ]
+  }
+ },
+ "input_tokens": 976,
+ "output_tokens": 2561,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:handwritten_ledger",
+ "cached_at": "2026-10-15T07:06:42+00:00"
+}

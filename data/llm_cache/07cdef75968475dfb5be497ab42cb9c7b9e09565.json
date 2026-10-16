@@ -1,0 +1,151 @@
+{
+ "text": "{\n  \"merchant\": \"WARUNG SAYUR BU TINI\",\n  \"date\": \"2026-03-30\",\n  \"receipt_number\": \"027\",\n  \"currency\": \"IDR\",\n  \"total\": {\n    \"value\": 460000.0,\n    \"source\": {\n      \"doc_id\": \"D09\",\n      \"page\": 1,\n      \"bbox\": {\n        \"ymin\": 753,\n        \"xmin\": 762,\n        \"ymax\": 782,\n        \"xmax\": 923\n      },\n      \"snippet\": \"460.000\"\n    }\n  },\n  \"items\": [\n    {\n      \"description\": \"Tomat 1kg\",\n      \"amount\": 28000.0,\n      \"source\": {\n        \"doc_id\": \"D09\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 264,\n          \"xmin\": 248,\n          \"ymax\": 296,\n          \"xmax\": 873\n        },\n        \"snippet\": \"Tomat 1kg 14.000 28.000\"\n      }\n    },\n    {\n      \"description\": \"Kentang 1kg\",\n      \"amount\": 72000.0,\n      \"source\": {\n        \"doc_id\": \"D09\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 320,\n          \"xmin\": 243,\n          \"ymax\": 351,\n          \"xmax\": 873\n        },\n        \"snippet\": \"Kentang 1kg 18.000 72.000\"\n      }\n    },\n    {\n      \"description\": \"Bawang putih 1kg\",\n      \"amount\": 360000.0,\n      \"source\": {\n        \"doc_id\": \"D09\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 381,\n          \"xmin\": 247,\n          \"ymax\": 409,\n          \"xmax\": 894\n        },\n        \"snippet\": \"Bawang putih 1kg 36.000 360.000\"\n      }\n    }\n  ],\n  \"payment_method\": null,\n  \"direction\": \"purchase\",\n  \"handwritten\": true\n}",
+ "parsed": {
+  "merchant": "WARUNG SAYUR BU TINI",
+  "date": "2026-03-30",
+  "receipt_number": "027",
+  "currency": "IDR",
+  "total": {
+   "value": 460000.0,
+   "source": {
+    "doc_id": "D09",
+    "page": 1,
+    "bbox": {
+     "ymin": 753,
+     "xmin": 762,
+     "ymax": 782,
+     "xmax": 923
+    },
+    "snippet": "460.000"
+   }
+  },
+  "items": [
+   {
+    "description": "Tomat 1kg",
+    "amount": 28000.0,
+    "source": {
+     "doc_id": "D09",
+     "page": 1,
+     "bbox": {
+      "ymin": 264,
+      "xmin": 248,
+      "ymax": 296,
+      "xmax": 873
+     },
+     "snippet": "Tomat 1kg 14.000 28.000"
+    }
+   },
+   {
+    "description": "Kentang 1kg",
+    "amount": 72000.0,
+    "source": {
+     "doc_id": "D09",
+     "page": 1,
+     "bbox": {
+      "ymin": 320,
+      "xmin": 243,
+      "ymax": 351,
+      "xmax": 873
+     },
+     "snippet": "Kentang 1kg 18.000 72.000"
+    }
+   },
+   {
+    "description": "Bawang putih 1kg",
+    "amount": 360000.0,
+    "source": {
+     "doc_id": "D09",
+     "page": 1,
+     "bbox": {
+      "ymin": 381,
+      "xmin": 247,
+      "ymax": 409,
+      "xmax": 894
+     },
+     "snippet": "Bawang putih 1kg 36.000 360.000"
+    }
+   }
+  ],
+  "payment_method": null,
+  "direction": "purchase",
+  "handwritten": true
+ },
+ "state": {
+  "output": {
+   "merchant": "WARUNG SAYUR BU TINI",
+   "date": "2026-03-30",
+   "receipt_number": "027",
+   "currency": "IDR",
+   "total": {
+    "value": 460000.0,
+    "source": {
+     "doc_id": "D09",
+     "page": 1,
+     "bbox": {
+      "ymin": 753,
+      "xmin": 762,
+      "ymax": 782,
+      "xmax": 923
+     },
+     "snippet": "460.000"
+    }
+   },
+   "items": [
+    {
+     "description": "Tomat 1kg",
+     "amount": 28000.0,
+     "source": {
+      "doc_id": "D09",
+      "page": 1,
+      "bbox": {
+       "ymin": 264,
+       "xmin": 248,
+       "ymax": 296,
+       "xmax": 873
+      },
+      "snippet": "Tomat 1kg 14.000 28.000"
+     }
+    },
+    {
+     "description": "Kentang 1kg",
+     "amount": 72000.0,
+     "source": {
+      "doc_id": "D09",
+      "page": 1,
+      "bbox": {
+       "ymin": 320,
+       "xmin": 243,
+       "ymax": 351,
+       "xmax": 873
+      },
+      "snippet": "Kentang 1kg 18.000 72.000"
+     }
+    },
+    {
+     "description": "Bawang putih 1kg",
+     "amount": 360000.0,
+     "source": {
+      "doc_id": "D09",
+      "page": 1,
+      "bbox": {
+       "ymin": 381,
+       "xmin": 247,
+       "ymax": 409,
+       "xmax": 894
+      },
+      "snippet": "Bawang putih 1kg 36.000 360.000"
+     }
+    }
+   ],
+   "direction": "purchase",
+   "handwritten": true
+  }
+ },
+ "input_tokens": 932,
+ "output_tokens": 612,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:receipt",
+ "cached_at": "2026-10-15T06:46:52+00:00"
+}

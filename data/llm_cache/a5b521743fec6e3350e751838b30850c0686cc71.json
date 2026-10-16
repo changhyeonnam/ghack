@@ -1,0 +1,139 @@
+{
+ "text": "{\n  \"signage_text\": \"REYES AUTO REPAIR\\nChange Oil • Brakes • Aircon • Tune-up • Underchassis\",\n  \"business_type_guess\": \"motor vehicle repair shop / auto repair garage\",\n  \"apparent_size\": \"small\",\n  \"inventory_level\": \"sparse\",\n  \"observations\": [\n    {\n      \"text\": \"Signage clearly identifies the business as REYES AUTO REPAIR offering oil change, brakes, aircon, tune-up, and underchassis services.\",\n      \"source\": {\n        \"doc_id\": \"D10\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 194,\n          \"xmin\": 126,\n          \"ymax\": 331,\n          \"xmax\": 728\n        },\n        \"snippet\": \"REYES AUTO REPAIR\\nChange Oil • Brakes • Aircon • Tune-up • Underchassis\"\n      }\n    },\n    {\n      \"text\": \"The image is a synthetic illustration / graphic rendering rather than a real photograph of an actual physical premises.\",\n      \"source\": {\n        \"doc_id\": \"D10\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 956,\n          \"xmin\": 792,\n          \"ymax\": 993,\n          \"xmax\": 996\n        },\n        \"snippet\": \"SYNTHETIC · FOR DEMO\"\n      }\n    },\n    {\n      \"text\": \"Illustration depicts a single-bay service garage with a hydraulic car lift holding a red vehicle.\",\n      \"source\": {\n        \"doc_id\": \"D10\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 349,\n          \"xmin\": 252,\n          \"ymax\": 558,\n          \"xmax\": 605\n        },\n        \"snippet\": null\n      }\n    },\n    {\n      \"text\": \"Depiction shows basic automotive supplies including stacked tires and an oil dispenser cabinet outside the service bay.\",\n      \"source\": {\n        \"doc_id\": \"D10\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 418,\n          \"xmin\": 771,\n          \"ymax\": 612,\n          \"xmax\": 901\n        },\n        \"snippet\": \"OIL\"\n      }\n    }\n  ]\n}",
+ "parsed": {
+  "signage_text": "REYES AUTO REPAIR\nChange Oil • Brakes • Aircon • Tune-up • Underchassis",
+  "business_type_guess": "motor vehicle repair shop / auto repair garage",
+  "apparent_size": "small",
+  "inventory_level": "sparse",
+  "observations": [
+   {
+    "text": "Signage clearly identifies the business as REYES AUTO REPAIR offering oil change, brakes, aircon, tune-up, and underchassis services.",
+    "source": {
+     "doc_id": "D10",
+     "page": 1,
+     "bbox": {
+      "ymin": 194,
+      "xmin": 126,
+      "ymax": 331,
+      "xmax": 728
+     },
+     "snippet": "REYES AUTO REPAIR\nChange Oil • Brakes • Aircon • Tune-up • Underchassis"
+    }
+   },
+   {
+    "text": "The image is a synthetic illustration / graphic rendering rather than a real photograph of an actual physical premises.",
+    "source": {
+     "doc_id": "D10",
+     "page": 1,
+     "bbox": {
+      "ymin": 956,
+      "xmin": 792,
+      "ymax": 993,
+      "xmax": 996
+     },
+     "snippet": "SYNTHETIC · FOR DEMO"
+    }
+   },
+   {
+    "text": "Illustration depicts a single-bay service garage with a hydraulic car lift holding a red vehicle.",
+    "source": {
+     "doc_id": "D10",
+     "page": 1,
+     "bbox": {
+      "ymin": 349,
+      "xmin": 252,
+      "ymax": 558,
+      "xmax": 605
+     },
+     "snippet": null
+    }
+   },
+   {
+    "text": "Depiction shows basic automotive supplies including stacked tires and an oil dispenser cabinet outside the service bay.",
+    "source": {
+     "doc_id": "D10",
+     "page": 1,
+     "bbox": {
+      "ymin": 418,
+      "xmin": 771,
+      "ymax": 612,
+      "xmax": 901
+     },
+     "snippet": "OIL"
+    }
+   }
+  ]
+ },
+ "state": {
+  "output": {
+   "signage_text": "REYES AUTO REPAIR\nChange Oil • Brakes • Aircon • Tune-up • Underchassis",
+   "business_type_guess": "motor vehicle repair shop / auto repair garage",
+   "apparent_size": "small",
+   "inventory_level": "sparse",
+   "observations": [
+    {
+     "text": "Signage clearly identifies the business as REYES AUTO REPAIR offering oil change, brakes, aircon, tune-up, and underchassis services.",
+     "source": {
+      "doc_id": "D10",
+      "page": 1,
+      "bbox": {
+       "ymin": 194,
+       "xmin": 126,
+       "ymax": 331,
+       "xmax": 728
+      },
+      "snippet": "REYES AUTO REPAIR\nChange Oil • Brakes • Aircon • Tune-up • Underchassis"
+     }
+    },
+    {
+     "text": "The image is a synthetic illustration / graphic rendering rather than a real photograph of an actual physical premises.",
+     "source": {
+      "doc_id": "D10",
+      "page": 1,
+      "bbox": {
+       "ymin": 956,
+       "xmin": 792,
+       "ymax": 993,
+       "xmax": 996
+      },
+      "snippet": "SYNTHETIC · FOR DEMO"
+     }
+    },
+    {
+     "text": "Illustration depicts a single-bay service garage with a hydraulic car lift holding a red vehicle.",
+     "source": {
+      "doc_id": "D10",
+      "page": 1,
+      "bbox": {
+       "ymin": 349,
+       "xmin": 252,
+       "ymax": 558,
+       "xmax": 605
+      }
+     }
+    },
+    {
+     "text": "Depiction shows basic automotive supplies including stacked tires and an oil dispenser cabinet outside the service bay.",
+     "source": {
+      "doc_id": "D10",
+      "page": 1,
+      "bbox": {
+       "ymin": 418,
+       "xmin": 771,
+       "ymax": 612,
+       "xmax": 901
+      },
+      "snippet": "OIL"
+     }
+    }
+   ]
+  }
+ },
+ "input_tokens": 952,
+ "output_tokens": 586,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:premises_photo",
+ "cached_at": "2026-10-15T07:07:25+00:00"
+}

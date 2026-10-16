@@ -18,8 +18,8 @@ from ..tools import checks
 from ..tools.cashflow import recompute_balances
 from ..tools.documents import phash_distance
 from . import prompts
-from .common import case_facts, catalog_text, extraction_digest, inventory_text, ref_dict, render_memo_text
-from .runner import AgentSpec, run_sequence
+from .common import DEMO_DATASET_NOTE, case_facts, catalog_text, extraction_digest, inventory_text, ref_dict, render_memo_text
+from .runner import AgentSpec, CacheMiss, run_sequence
 
 SEV_ORDER = {Severity.critical: 0, Severity.high: 1, Severity.medium: 2, Severity.low: 3}
 
@@ -118,6 +118,9 @@ def rule_based_objections(tf: ToolFindings, cf: CashflowSummary, docs: dict[str,
     return out
 
 
+_MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+
 def _covers(llm: Objection, rule: Objection) -> bool:
     if llm.question_id != rule.question_id:
         return False
@@ -125,6 +128,13 @@ def _covers(llm: Objection, rule: Objection) -> bool:
         return True
     if rule.question_id in ("Q1", "Q9", "Q10"):
         return True
+    # rules without document refs (e.g. missing statement months) match on the months they name
+    months = set(re.findall(r"\b20\d\d-\d\d\b", rule.title + " " + rule.claim))
+    if months and not rule.evidence_refs:
+        txt_months = llm.claim + " " + llm.title
+        names = {m: _MONTH_NAMES[int(m[5:7]) - 1] for m in months}
+        if all(m in txt_months or names[m] in txt_months for m in months):
+            return True
     rule_docs = {r.doc_id for r in rule.evidence_refs}
     llm_docs = {r.doc_id for r in llm.evidence_refs}
     rows = set(re.findall(r"\b[TL]\d{4}\b", rule.claim + " " + (rule.tool_evidence or "")))
@@ -152,8 +162,10 @@ def merge_objections(llm: list[Objection], rules: list[Objection]) -> list[Objec
             cover.severity = r.severity
         have = {(e.doc_id, e.page) for e in cover.evidence_refs}
         cover.evidence_refs += [e for e in r.evidence_refs if (e.doc_id, e.page) not in have]
-        if r.tool_evidence and r.tool_evidence not in (cover.tool_evidence or ""):
-            cover.tool_evidence = ((cover.tool_evidence + " | ") if cover.tool_evidence else "") + r.tool_evidence
+        # keep the specific tool finding (amount, date, row) visible inside the broader LLM objection
+        finding = f"{r.title} [{r.tool_evidence}]" if r.tool_evidence else r.title
+        if finding not in (cover.tool_evidence or ""):
+            cover.tool_evidence = ((cover.tool_evidence + " | ") if cover.tool_evidence else "") + finding
     merged.sort(key=lambda o: (SEV_ORDER.get(o.severity, 9), o.question_id))
     for i, o in enumerate(merged, 1):
         o.id = f"O{i:02d}"
@@ -262,12 +274,14 @@ async def run_challenger(case: Case, *, memo: Memo, cashflow: CashflowSummary, e
         types.Part.from_text(text=inventory_text(case)),
         types.Part.from_text(text="CREDIT MEMO UNDER REVIEW (figure values rendered; ids in brackets)\n" + render_memo_text(memo)),
         types.Part.from_text(text=catalog_text(used_fig + [f for f in cashflow.figures if f.id.startswith(("CF.", "APP.")) and f not in used_fig], max_rows=120)),
-        types.Part.from_text(text=extraction_digest(extractions, docs)),
+        types.Part.from_text(text=extraction_digest(extractions, docs, demo=case.is_demo)),
         types.Part.from_text(text="AUTOMATED CHECKS (deterministic, already run)\n" + digest),
         types.Part.from_text(text="EVIDENCE REFS you may copy (row_id or doc_id -> ref)\n" + "\n".join(f"{k}: {v}" for k, v in list(ref_block.items())[:80])),
         types.Part.from_text(text=priorities_text(priorities)),
         types.Part.from_text(text="Investigate now. Use the tools to verify. Then the reporting step will format objections."),
     ]
+    if case.is_demo:
+        parts.insert(0, types.Part.from_text(text=DEMO_DATASET_NOTE))
     inv = AgentSpec(name="challenger_investigator", instruction=prompts.CHALLENGER_INVESTIGATOR, prompt_version=prompts.PROMPT_VERSIONS["challenger_investigator"],
                     model=settings.model_pro, tools=[lookup_transactions, recompute_balance_chain, image_similarity, date_crosscheck, recompute_figure],
                     description="Adversarially investigates the memo with tools")
@@ -275,8 +289,17 @@ async def run_challenger(case: Case, *, memo: Memo, cashflow: CashflowSummary, e
                     model=settings.model_pro, output_schema=ChallengeDraft, description="Formats objections")
     rb_draft = ChallengeDraft(objections=rules, questions_checked=[f"Q{i}" for i in range(1, 13)], overall_assessment="Rule-based objections from the deterministic battery.")
     ctx = {**mock_context, "extra": {"digest": digest, "rule_based_challenge": rb_draft.model_dump(mode="json")}}
-    results = await run_sequence([inv, wri], parts, settings=settings, repo=repo, case_id=case.id, mock_context=ctx,
-                                 cache_extra={"memo_version": memo.version, "prompt_versions": [inv.prompt_version, wri.prompt_version]})
+    extra = {"memo_version": memo.version, "prompt_versions": [inv.prompt_version, wri.prompt_version]}
+    try:
+        results = await run_sequence([inv, wri], parts, settings=settings, repo=repo, case_id=case.id, mock_context=ctx, cache_extra=extra)
+    except CacheMiss:
+        # cache_only replay: signed decisions change the feedback priorities (shared across workspaces), so the recorded
+        # run no longer matches. Replay it with the priorities it was recorded with rather than failing the stage.
+        if settings.resolved_llm_mode != "cache_only" or not priorities or priorities.n_decisions == 0:
+            raise
+        prio_idx = next(i for i, p in enumerate(parts) if (p.text or "").startswith("UNDERWRITER FEEDBACK PRIORITIES"))
+        parts[prio_idx] = types.Part.from_text(text=priorities_text(None))
+        results = await run_sequence([inv, wri], parts, settings=settings, repo=repo, case_id=case.id, mock_context=ctx, cache_extra=extra)
     notes = results[0].text
     draft = ChallengeDraft.model_validate(results[1].parsed)
     valid_docs = set(docs)

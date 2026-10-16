@@ -1,0 +1,372 @@
+{
+ "text": "{\n  \"headline\": \"Credit Assessment for Warung Ibu Sari: Micro Grocery Retail Working Capital Facility of IDR 25M Recommended for Approval with Standard Conditions\",\n  \"sections\": [\n    {\n      \"heading\": \"Business Overview\",\n      \"paragraphs\": [\n        \"Warung Ibu Sari is a neighborhood grocery and daily essentials store (sembako) operated by Sari Dewi in Kebayoran Lama, South Jakarta, Indonesia. The business retails staple food items, packaged snacks, beverages, household supplies, LPG gas cylinders, and gallon water refill services.\",\n        \"Physical inspection via provided premises photographs confirms an established storefront display with prominent signage, organized shelving of goods, an active QRIS digital payment setup, and associated utility inventory (gas cylinders and gallon containers).\"\n      ]\n    },\n    {\n      \"heading\": \"Cash Flow\",\n      \"paragraphs\": [\n        \"The applicant maintains an active commercial bank account at Bank Nusantara Digital (Account No. 1120 **** **** 7781). Over the 6-month period from January 1, 2026 to June 30, 2026, the account recorded healthy operational throughput, beginning with an opening balance of IDR 10,550,000 and ending with a closing balance of IDR 21,878,054.\",\n        \"Cash inflows are consistent and frequent, driven by daily digital QRIS settlement credits ranging from IDR 700k to IDR 1.9M alongside regular cash deposits (setor tunai) between IDR 2.45M and IDR 3.8M per deposit. Monthly operational outflows predominantly support recurring wholesale stock replenishment (TRF ke Grosir Sembako Barokah, Toko Grosir Makmur, CV Sumber Rejeki), kiosk rent, and utilities.\"\n      ]\n    },\n    {\n      \"heading\": \"Revenue Quality\",\n      \"paragraphs\": [\n        \"Revenue exhibits strong granular diversity with negligible concentration risk. Collections are split between electronic QRIS settlements from foot-traffic consumers and recurring bank transfers from local catering/pesanan sembako clients (such as Hendra Kusuma, Agus Prasetyo, and Siti Aminah).\",\n        \"Supporting procurement receipts from primary distributors (e.g., CV Sumber Rejeki, Toko Grosir Makmur, Grosir Sembako Barokah) tie directly into outgoing wire transfers documented on the bank statement, verifying authentic daily business turnover.\"\n      ]\n    },\n    {\n      \"heading\": \"Obligations\",\n      \"paragraphs\": [\n        \"The business has a fixed monthly rental obligation of IDR 2,500,000 paid to H. Mahmud for kiosk rent ('Sewa Kios'), reliably serviced on the 1st of each calendar month. Utility expenses (PLN electricity, PDAM water, and NusNET internet) average approximately IDR 750,000 to IDR 800,000 monthly.\",\n        \"No formal debt service obligations or outstanding borrowing liabilities were identified on the bank statements. The proposed loan of IDR 25,000,000 represents roughly one month of cash accumulation and is comfortably serviceable given the business's current positive operating margins.\"\n      ]\n    },\n    {\n      \"heading\": \"Document Quality\",\n      \"paragraphs\": [\n        \"Bank statements are complete, sequential across 5 pages, and demonstrate continuous transaction logs with matching running balances. Cross-referencing between supplier receipts (D02, D03, D05, D06, D08, D12) and electronic debit transfers confirms matching transaction values and supplier counterparty names.\",\n        \"All submitted documentation carries standard synthetic demonstration watermarks per testing environment protocols, but internal ledger integrity is consistent.\"\n      ]\n    },\n    {\n      \"heading\": \"Recommendation\",\n      \"paragraphs\": [\n        \"Recommend Approval with Conditions for the requested working capital facility of IDR 25,000,000. The business demonstrates sound liquidity, positive net cash accumulation (+IDR 11.3M over 6 months), and reliable revenue execution.\",\n        \"Conditions of approval include establishing automatic direct debit repayment aligned with post-weekend cash settlement dates and quarterly verification of bank turnover.\"\n      ]\n    }\n  ],\n  \"figures\": [\n    {\n      \"label\": \"Opening Account Balance (01/01/2026)\",\n      \"value\": 10550000,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 150,\n            \"xmin\": 670,\n            \"ymax\": 162,\n            \"xmax\": 772\n          },\n          \"snippet\": \"IDR 10.550.000\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Closing Account Balance (30/06/2026)\",\n      \"value\": 21878054,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 165,\n            \"xmin\": 670,\n            \"ymax\": 178,\n            \"xmax\": 772\n          },\n          \"snippet\": \"IDR 21.878.054\"\n        },\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 5,\n          \"bbox\": {\n            \"ymin\": 617,\n            \"xmin\": 870,\n            \"ymax\": 630,\n            \"xmax\": 935\n          },\n          \"snippet\": \"21.878.054\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Monthly Kiosk Rent\",\n      \"value\": 2500000,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 271,\n            \"xmin\": 630,\n            \"ymax\": 284,\n            \"xmax\": 700\n          },\n          \"snippet\": \"2.500.000\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Receipt GSB-1452 Total (Grosir Sembako Barokah)\",\n      \"value\": 729000,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D02\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 648,\n            \"xmin\": 750,\n            \"ymax\": 662,\n            \"xmax\": 885\n          },\n          \"snippet\": \"729.000\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Receipt SR-0618 Total (CV Sumber Rejeki)\",\n      \"value\": 780000,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D03\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 560,\n            \"xmin\": 750,\n            \"ymax\": 574,\n            \"xmax\": 880\n          },\n          \"snippet\": \"780.000\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Receipt TGM-1006 Total (Toko Grosir Makmur)\",\n      \"value\": 1259000,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D05\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 620,\n            \"xmin\": 700,\n            \"ymax\": 634,\n            \"xmax\": 875\n          },\n          \"snippet\": \"1.259.000\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Requested Loan Facility Amount\",\n      \"value\": 25000000,\n      \"source_refs\": []\n    }\n  ],\n  \"recommendation\": \"approve_with_conditions\",\n  \"concerns\": [\n    {\n      \"title\": \"Cash Dip in Early April 2026\",\n      \"claim\": \"Account balance dropped to IDR 1,621,529 on 12/04/2026 following consecutive large inventory stock transfers totaling over IDR 19.6M in early April.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"title\": \"Informal Cash-Based Supply Purchases\",\n      \"claim\": \"Certain receipts (e.g., LPG and egg purchases) are settled via cash and informal handwritten invoices, requiring reliance on physical receipts rather than automated bank tracking.\",\n      \"severity\": \"low\"\n    }\n  ]\n}",
+ "parsed": {
+  "headline": "Credit Assessment for Warung Ibu Sari: Micro Grocery Retail Working Capital Facility of IDR 25M Recommended for Approval with Standard Conditions",
+  "sections": [
+   {
+    "heading": "Business Overview",
+    "paragraphs": [
+     "Warung Ibu Sari is a neighborhood grocery and daily essentials store (sembako) operated by Sari Dewi in Kebayoran Lama, South Jakarta, Indonesia. The business retails staple food items, packaged snacks, beverages, household supplies, LPG gas cylinders, and gallon water refill services.",
+     "Physical inspection via provided premises photographs confirms an established storefront display with prominent signage, organized shelving of goods, an active QRIS digital payment setup, and associated utility inventory (gas cylinders and gallon containers)."
+    ]
+   },
+   {
+    "heading": "Cash Flow",
+    "paragraphs": [
+     "The applicant maintains an active commercial bank account at Bank Nusantara Digital (Account No. 1120 **** **** 7781). Over the 6-month period from January 1, 2026 to June 30, 2026, the account recorded healthy operational throughput, beginning with an opening balance of IDR 10,550,000 and ending with a closing balance of IDR 21,878,054.",
+     "Cash inflows are consistent and frequent, driven by daily digital QRIS settlement credits ranging from IDR 700k to IDR 1.9M alongside regular cash deposits (setor tunai) between IDR 2.45M and IDR 3.8M per deposit. Monthly operational outflows predominantly support recurring wholesale stock replenishment (TRF ke Grosir Sembako Barokah, Toko Grosir Makmur, CV Sumber Rejeki), kiosk rent, and utilities."
+    ]
+   },
+   {
+    "heading": "Revenue Quality",
+    "paragraphs": [
+     "Revenue exhibits strong granular diversity with negligible concentration risk. Collections are split between electronic QRIS settlements from foot-traffic consumers and recurring bank transfers from local catering/pesanan sembako clients (such as Hendra Kusuma, Agus Prasetyo, and Siti Aminah).",
+     "Supporting procurement receipts from primary distributors (e.g., CV Sumber Rejeki, Toko Grosir Makmur, Grosir Sembako Barokah) tie directly into outgoing wire transfers documented on the bank statement, verifying authentic daily business turnover."
+    ]
+   },
+   {
+    "heading": "Obligations",
+    "paragraphs": [
+     "The business has a fixed monthly rental obligation of IDR 2,500,000 paid to H. Mahmud for kiosk rent ('Sewa Kios'), reliably serviced on the 1st of each calendar month. Utility expenses (PLN electricity, PDAM water, and NusNET internet) average approximately IDR 750,000 to IDR 800,000 monthly.",
+     "No formal debt service obligations or outstanding borrowing liabilities were identified on the bank statements. The proposed loan of IDR 25,000,000 represents roughly one month of cash accumulation and is comfortably serviceable given the business's current positive operating margins."
+    ]
+   },
+   {
+    "heading": "Document Quality",
+    "paragraphs": [
+     "Bank statements are complete, sequential across 5 pages, and demonstrate continuous transaction logs with matching running balances. Cross-referencing between supplier receipts (D02, D03, D05, D06, D08, D12) and electronic debit transfers confirms matching transaction values and supplier counterparty names.",
+     "All submitted documentation carries standard synthetic demonstration watermarks per testing environment protocols, but internal ledger integrity is consistent."
+    ]
+   },
+   {
+    "heading": "Recommendation",
+    "paragraphs": [
+     "Recommend Approval with Conditions for the requested working capital facility of IDR 25,000,000. The business demonstrates sound liquidity, positive net cash accumulation (+IDR 11.3M over 6 months), and reliable revenue execution.",
+     "Conditions of approval include establishing automatic direct debit repayment aligned with post-weekend cash settlement dates and quarterly verification of bank turnover."
+    ]
+   }
+  ],
+  "figures": [
+   {
+    "label": "Opening Account Balance (01/01/2026)",
+    "value": 10550000.0,
+    "source_refs": [
+     {
+      "doc_id": "D01",
+      "page": 1,
+      "bbox": {
+       "ymin": 150,
+       "xmin": 670,
+       "ymax": 162,
+       "xmax": 772
+      },
+      "snippet": "IDR 10.550.000"
+     }
+    ]
+   },
+   {
+    "label": "Closing Account Balance (30/06/2026)",
+    "value": 21878054.0,
+    "source_refs": [
+     {
+      "doc_id": "D01",
+      "page": 1,
+      "bbox": {
+       "ymin": 165,
+       "xmin": 670,
+       "ymax": 178,
+       "xmax": 772
+      },
+      "snippet": "IDR 21.878.054"
+     },
+     {
+      "doc_id": "D01",
+      "page": 5,
+      "bbox": {
+       "ymin": 617,
+       "xmin": 870,
+       "ymax": 630,
+       "xmax": 935
+      },
+      "snippet": "21.878.054"
+     }
+    ]
+   },
+   {
+    "label": "Monthly Kiosk Rent",
+    "value": 2500000.0,
+    "source_refs": [
+     {
+      "doc_id": "D01",
+      "page": 1,
+      "bbox": {
+       "ymin": 271,
+       "xmin": 630,
+       "ymax": 284,
+       "xmax": 700
+      },
+      "snippet": "2.500.000"
+     }
+    ]
+   },
+   {
+    "label": "Receipt GSB-1452 Total (Grosir Sembako Barokah)",
+    "value": 729000.0,
+    "source_refs": [
+     {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 648,
+       "xmin": 750,
+       "ymax": 662,
+       "xmax": 885
+      },
+      "snippet": "729.000"
+     }
+    ]
+   },
+   {
+    "label": "Receipt SR-0618 Total (CV Sumber Rejeki)",
+    "value": 780000.0,
+    "source_refs": [
+     {
+      "doc_id": "D03",
+      "page": 1,
+      "bbox": {
+       "ymin": 560,
+       "xmin": 750,
+       "ymax": 574,
+       "xmax": 880
+      },
+      "snippet": "780.000"
+     }
+    ]
+   },
+   {
+    "label": "Receipt TGM-1006 Total (Toko Grosir Makmur)",
+    "value": 1259000.0,
+    "source_refs": [
+     {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 620,
+       "xmin": 700,
+       "ymax": 634,
+       "xmax": 875
+      },
+      "snippet": "1.259.000"
+     }
+    ]
+   },
+   {
+    "label": "Requested Loan Facility Amount",
+    "value": 25000000.0,
+    "source_refs": []
+   }
+  ],
+  "recommendation": "approve_with_conditions",
+  "concerns": [
+   {
+    "title": "Cash Dip in Early April 2026",
+    "claim": "Account balance dropped to IDR 1,621,529 on 12/04/2026 following consecutive large inventory stock transfers totaling over IDR 19.6M in early April.",
+    "severity": "medium"
+   },
+   {
+    "title": "Informal Cash-Based Supply Purchases",
+    "claim": "Certain receipts (e.g., LPG and egg purchases) are settled via cash and informal handwritten invoices, requiring reliance on physical receipts rather than automated bank tracking.",
+    "severity": "low"
+   }
+  ]
+ },
+ "state": {
+  "output": {
+   "headline": "Credit Assessment for Warung Ibu Sari: Micro Grocery Retail Working Capital Facility of IDR 25M Recommended for Approval with Standard Conditions",
+   "sections": [
+    {
+     "heading": "Business Overview",
+     "paragraphs": [
+      "Warung Ibu Sari is a neighborhood grocery and daily essentials store (sembako) operated by Sari Dewi in Kebayoran Lama, South Jakarta, Indonesia. The business retails staple food items, packaged snacks, beverages, household supplies, LPG gas cylinders, and gallon water refill services.",
+      "Physical inspection via provided premises photographs confirms an established storefront display with prominent signage, organized shelving of goods, an active QRIS digital payment setup, and associated utility inventory (gas cylinders and gallon containers)."
+     ]
+    },
+    {
+     "heading": "Cash Flow",
+     "paragraphs": [
+      "The applicant maintains an active commercial bank account at Bank Nusantara Digital (Account No. 1120 **** **** 7781). Over the 6-month period from January 1, 2026 to June 30, 2026, the account recorded healthy operational throughput, beginning with an opening balance of IDR 10,550,000 and ending with a closing balance of IDR 21,878,054.",
+      "Cash inflows are consistent and frequent, driven by daily digital QRIS settlement credits ranging from IDR 700k to IDR 1.9M alongside regular cash deposits (setor tunai) between IDR 2.45M and IDR 3.8M per deposit. Monthly operational outflows predominantly support recurring wholesale stock replenishment (TRF ke Grosir Sembako Barokah, Toko Grosir Makmur, CV Sumber Rejeki), kiosk rent, and utilities."
+     ]
+    },
+    {
+     "heading": "Revenue Quality",
+     "paragraphs": [
+      "Revenue exhibits strong granular diversity with negligible concentration risk. Collections are split between electronic QRIS settlements from foot-traffic consumers and recurring bank transfers from local catering/pesanan sembako clients (such as Hendra Kusuma, Agus Prasetyo, and Siti Aminah).",
+      "Supporting procurement receipts from primary distributors (e.g., CV Sumber Rejeki, Toko Grosir Makmur, Grosir Sembako Barokah) tie directly into outgoing wire transfers documented on the bank statement, verifying authentic daily business turnover."
+     ]
+    },
+    {
+     "heading": "Obligations",
+     "paragraphs": [
+      "The business has a fixed monthly rental obligation of IDR 2,500,000 paid to H. Mahmud for kiosk rent ('Sewa Kios'), reliably serviced on the 1st of each calendar month. Utility expenses (PLN electricity, PDAM water, and NusNET internet) average approximately IDR 750,000 to IDR 800,000 monthly.",
+      "No formal debt service obligations or outstanding borrowing liabilities were identified on the bank statements. The proposed loan of IDR 25,000,000 represents roughly one month of cash accumulation and is comfortably serviceable given the business's current positive operating margins."
+     ]
+    },
+    {
+     "heading": "Document Quality",
+     "paragraphs": [
+      "Bank statements are complete, sequential across 5 pages, and demonstrate continuous transaction logs with matching running balances. Cross-referencing between supplier receipts (D02, D03, D05, D06, D08, D12) and electronic debit transfers confirms matching transaction values and supplier counterparty names.",
+      "All submitted documentation carries standard synthetic demonstration watermarks per testing environment protocols, but internal ledger integrity is consistent."
+     ]
+    },
+    {
+     "heading": "Recommendation",
+     "paragraphs": [
+      "Recommend Approval with Conditions for the requested working capital facility of IDR 25,000,000. The business demonstrates sound liquidity, positive net cash accumulation (+IDR 11.3M over 6 months), and reliable revenue execution.",
+      "Conditions of approval include establishing automatic direct debit repayment aligned with post-weekend cash settlement dates and quarterly verification of bank turnover."
+     ]
+    }
+   ],
+   "figures": [
+    {
+     "label": "Opening Account Balance (01/01/2026)",
+     "value": 10550000.0,
+     "source_refs": [
+      {
+       "doc_id": "D01",
+       "page": 1,
+       "bbox": {
+        "ymin": 150,
+        "xmin": 670,
+        "ymax": 162,
+        "xmax": 772
+       },
+       "snippet": "IDR 10.550.000"
+      }
+     ]
+    },
+    {
+     "label": "Closing Account Balance (30/06/2026)",
+     "value": 21878054.0,
+     "source_refs": [
+      {
+       "doc_id": "D01",
+       "page": 1,
+       "bbox": {
+        "ymin": 165,
+        "xmin": 670,
+        "ymax": 178,
+        "xmax": 772
+       },
+       "snippet": "IDR 21.878.054"
+      },
+      {
+       "doc_id": "D01",
+       "page": 5,
+       "bbox": {
+        "ymin": 617,
+        "xmin": 870,
+        "ymax": 630,
+        "xmax": 935
+       },
+       "snippet": "21.878.054"
+      }
+     ]
+    },
+    {
+     "label": "Monthly Kiosk Rent",
+     "value": 2500000.0,
+     "source_refs": [
+      {
+       "doc_id": "D01",
+       "page": 1,
+       "bbox": {
+        "ymin": 271,
+        "xmin": 630,
+        "ymax": 284,
+        "xmax": 700
+       },
+       "snippet": "2.500.000"
+      }
+     ]
+    },
+    {
+     "label": "Receipt GSB-1452 Total (Grosir Sembako Barokah)",
+     "value": 729000.0,
+     "source_refs": [
+      {
+       "doc_id": "D02",
+       "page": 1,
+       "bbox": {
+        "ymin": 648,
+        "xmin": 750,
+        "ymax": 662,
+        "xmax": 885
+       },
+       "snippet": "729.000"
+      }
+     ]
+    },
+    {
+     "label": "Receipt SR-0618 Total (CV Sumber Rejeki)",
+     "value": 780000.0,
+     "source_refs": [
+      {
+       "doc_id": "D03",
+       "page": 1,
+       "bbox": {
+        "ymin": 560,
+        "xmin": 750,
+        "ymax": 574,
+        "xmax": 880
+       },
+       "snippet": "780.000"
+      }
+     ]
+    },
+    {
+     "label": "Receipt TGM-1006 Total (Toko Grosir Makmur)",
+     "value": 1259000.0,
+     "source_refs": [
+      {
+       "doc_id": "D05",
+       "page": 1,
+       "bbox": {
+        "ymin": 620,
+        "xmin": 700,
+        "ymax": 634,
+        "xmax": 875
+       },
+       "snippet": "1.259.000"
+      }
+     ]
+    },
+    {
+     "label": "Requested Loan Facility Amount",
+     "value": 25000000.0,
+     "source_refs": []
+    }
+   ],
+   "recommendation": "approve_with_conditions",
+   "concerns": [
+    {
+     "title": "Cash Dip in Early April 2026",
+     "claim": "Account balance dropped to IDR 1,621,529 on 12/04/2026 following consecutive large inventory stock transfers totaling over IDR 19.6M in early April.",
+     "severity": "medium"
+    },
+    {
+     "title": "Informal Cash-Based Supply Purchases",
+     "claim": "Certain receipts (e.g., LPG and egg purchases) are settled via cash and informal handwritten invoices, requiring reliance on physical receipts rather than automated bank tracking.",
+     "severity": "low"
+    }
+   ]
+  }
+ },
+ "input_tokens": 12822,
+ "output_tokens": 2110,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "baseline-single-prompt-v1.0",
+ "agent": "baseline",
+ "cached_at": "2026-10-15T07:03:45+00:00"
+}

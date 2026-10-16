@@ -1,0 +1,253 @@
+{
+ "results": [
+  {
+   "text": "### Challenger Investigation Notes\n\n---\n\n#### Q1: Revenue Double Counting\n- **Verdict**: PASS (with observation)\n- **Evidence & Findings**: The memo explicitly distinguishes Shopee platform payouts (272,642,000 VND [CF.platform_payout_total]) deposited into the bank account from gross dashboard figures (317,100,000 VND [CF.dashboard_gross_sales_total]) and cash deposits (97,680,000 VND [CF.cash_deposit_total]). The cash reconciliation correctly shows 0 VND in off-ledger income double counting. The automated reconciliation ratio (0.565) reflects the fact that gross dashboard sales exceed net bank disbursements (net of Shopee commission, seller fees, voucher deductions, and payment timing differences), rather than double counting bank inflows with dashboard totals.\n\n---\n\n#### Q2: Month-to-Month Swings & Inflows\n- **Verdict**: PASS\n- **Evidence & Findings**: Underlying business inflows show moderate stability across the 6-month period (normalized monthly business inflow ranging between 62,718,000 VND and 87,528,000 VND, volatility CV of 0.097 [CF.inflow_volatility_cv], trend 2.61% [CF.revenue_trend_pct]). The spike in headline inflow in March 2026 (155,136,000 VND [CF.m.2026-03.inflow]) is fully explained and stripped out in the memo as non-business items (a 50,000,000 VND round-trip transfer from Nguyen Van Long and a 31,000,000 VND self-transfer from the owner).\n\n---\n\n#### Q3: Self-Transfers & Round-Trips\n- **Verdict**: OBJECTION (Severity: HIGH)\n- **Evidence & Findings**: Bank statement D01 contains 3 own-account transfers totaling 82,500,000 VND [CF.self_transfer_total] (`T0037`: 24,000,000 VND on 2026-01-09; `T0126`: 31,000,000 VND on 2026-03-27; `T0173`: 27,500,000 VND on 2026-05-08) from \"NGUYEN THI LINH - VCB\". Additionally, there is 1 round-trip transaction of 50,000,000 VND [CF.round_trip_total] (`T0110` received on 2026-03-14 from NGUYEN VAN LONG, returned in full on 2026-03-20 via `T0118` \"CHUYEN DEN NGUYEN VAN LONG - HOAN TRA\"). While the credit memo correctly normalized these out of business inflow, their presence represents artificial inflation of headline account liquidity.\n\n---\n\n#### Q4: Duplicate / Reused Images\n- **Verdict**: OBJECTION (Severity: CRITICAL)\n- **Evidence & Findings**: Tool execution `image_similarity(D09, D12)` returned a Hamming distance of 0 (identical image content). Receipt D12 (GHN Express) duplicates invoice number `GHN-2231` and amount `159,000 VND` from receipt D09, and bears an impossible forward date (2026-11-03). This represents a fabricated/reused document within the application file.\n\n---\n\n#### Q5: Dashboard vs. Statement Period Coverage\n- **Verdict**: OBJECTION (Severity: MEDIUM)\n- **Evidence & Findings**: Bank statement D01 spans 2025-12-01 to 2026-05-31 (December 2025 through May 2026). However, the Shopee seller dashboards provided (D02 to D07) cover January 2026 through June 2026. The file lacks a December 2025 Shopee dashboard to corroborate December banking payouts, and lacks a June 2026 bank statement to corroborate the June 2026 dashboard performance (D07: 61,650,000 VND gross sales [DOC.D07.gross_sales]).\n\n---\n\n#### Q6: Running Balance Continuity\n- **Verdict**: OBJECTION (Severity: CRITICAL)\n- **Evidence & Findings**: Running `recompute_balance_chain(D01)` confirmed 2 balance breaks in statement D01:\n  1. Row `T0081` (2026-02-17, page 3): previous balance 54,724,095 + credit 18,500,000 should equal 73,224,095 VND, but the statement reports a closing balance of 54,724,095 VND (unexplained break of -18,500,000 VND).\n  2. Row `T0138` (2026-04-07, page 4): expected balance 87,840,468 VND, but reported balance is 80,640,468 VND (unexplained break of -7,200,000 VND).\n  These breaks strongly indicate edited statements or unlisted/deleted debit transactions.\n\n---\n\n#### Q7: Undisclosed Debt / Recurring Transfers\n- **Verdict**: OBJECTION (Severity: HIGH)\n- **Evidence & Findings**: Statement D01 exhibits ongoing undisclosed debt obligations:\n  - FE CREDIT: 3,250,000 VND monthly (`CF.recurring.1.amount`, 6 occurrences on day 5 of each month: rows `T0005`, `T0034`, `T0067`, `T0100`, `T0134`, `T0167`).\n  - Shopee SPAYLATER: 1,480,000 VND monthly (`CF.recurring.2.amount`, 6 occurrences around day 21: rows `T0023`, `T0048`, `T0083`, `T0117`, `T0150`, `T0188`).\n  Total recurring debt service is 4,730,000 VND/month [CF.recurring_debt_service_monthly]. Note: The recurring payment of 6,500,000 VND to Nguyen Thi Mai (`T0002`, `T0033`, etc.) is explicitly rent (\"TIEN THUE NHA\"), which the memo accurately separates from formal debt service.\n\n---\n\n#### Q8: Premises Scale Plausibility\n- **Verdict**: PASS\n- **Evidence & Findings**: Document D14 (premises_01.jpg) depicts branded signage (\"Linh Fashion\"), clothing inventory racks, packaging materials, cartons marked for couriers (J&T), and a laptop packing station. This setup is entirely consistent with a micro-scale online retail operation generating 45M–60M VND in monthly gross sales (~300–400 orders per month).\n\n---\n\n#### Q9: Sourced Memo Numbers\n- **Verdict**: PASS\n- **Evidence & Findings**: Automated checks and verification confirm 0 unsourced figures in the memo, and 0 unsourced numerals in the prose. All cash flow figures, ratios, and transaction values map directly to documented or derived figure IDs.\n\n---\n\n#### Q10: Month-End Inflow Concentration (Window Dressing)\n- **Verdict**: PASS\n- **Evidence & Findings**: Month-end inflow concentration during the final 5 days of each month is 0.263 [CF.end_of_month_concentration] (26.3%), which is well within normal operational bounds for e-commerce sellers experiencing bi-weekly Shopee payouts and regular courier settlements.\n\n---\n\n#### Q11: Entity Consistency Across Documents\n- **Verdict**: OBJECTION (Severity: MEDIUM)\n- **Evidence & Findings**: While the applicant name \"NGUYEN THI LINH\" matches statement D01, and \"Linh Fashion Official\" is consistent across application and dashboards D02, D03, D05, D06, and D07, dashboard D04 (March 2026) displays a discrepant store name \"Linh Fashion VN\" with a significantly lower follower count (9,800 vs. 12,900 in Feb and 13,600 in Apr).\n\n---\n\n#### Q12: Language and Currency Consistency\n- **Verdict**: PASS\n- **Evidence & Findings**: All documents (D01–D14) are consistently denominated in VND and written in Vietnamese (vi), matching the applicant's declared operational location in Vietnam.\n\n---\n\n### Overall Assessment\nThe applicant operates an active online micro-retail apparel business, but the credit file is compromised by critical document integrity issues and severe leverage constraints. Crucially, bank statement D01 fails balance continuity verification with two distinct balance breaks totaling -25,700,000 VND (row `T0081` for -18.5M VND and row `T0138` for -7.2M VND), indicating row deletion or statement tampering. Furthermore, logistics receipt D12 is an identical duplicate of D09 bearing an impossible future date (2026-11-03), dashboard D04 originates from a differently named store (\"Linh Fashion VN\"), and significant self-transfers (82.5M VND) and round-trips (50.0M VND) inflate headline cash. Paired with active unhedged micro-debt repayments (FE Credit and SPayLater) and a requested loan amount (150,000,000 VND) that is nearly 7x sustainable repayment capacity, the application should not be approved in its current state.",
+   "parsed": null
+  },
+  {
+   "text": "{\n  \"objections\": [\n    {\n      \"id\": \"OBJ-01\",\n      \"question_id\": \"Q6\",\n      \"severity\": \"critical\",\n      \"title\": \"Bank statement running balance discontinuity\",\n      \"claim\": \"Bank statement D01 fails balance continuity at row T0081 on 2026-02-17 (expected 73,224,095 VND, reported 54,724,095 VND, discrepancy -18,500,000 VND) and at row T0138 on 2026-04-07 (expected 87,840,468 VND, reported 80,640,468 VND, discrepancy -7,200,000 VND).\",\n      \"evidence_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 3,\n          \"bbox\": {\n            \"ymin\": 251,\n            \"xmin\": 67,\n            \"ymax\": 262,\n            \"xmax\": 932\n          },\n          \"snippet\": \"17/02/2026 SGMK26021747606 THANH TOAN DON HANG SI - TRAN THI HOA 18.500.000 54.724.095\"\n        },\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 4,\n          \"bbox\": {\n            \"ymin\": 530,\n            \"xmin\": 62,\n            \"ymax\": 542,\n            \"xmax\": 935\n          },\n          \"snippet\": \"07/04/2026 SGMK26040736451 TIEN DIEN EVNHCMC - MA KH PE0100xxxx 1.477.000 80.640.468\"\n        }\n      ],\n      \"figure_ids\": [\n        \"DOC.D01.closing_balance\"\n      ],\n      \"tool_evidence\": \"recompute_balance_chain\",\n      \"suggested_action\": \"Require an original, official digital bank statement directly from Ngan Hang So Saigon Mekong to verify whether entries were omitted or altered.\",\n      \"financial_impact\": 25700000.0\n    },\n    {\n      \"id\": \"OBJ-02\",\n      \"question_id\": \"Q4\",\n      \"severity\": \"critical\",\n      \"title\": \"Duplicated logistics receipt with future date\",\n      \"claim\": \"Logistics receipt D12 is an exact duplicate image of receipt D09 (hamming distance 0), sharing receipt number GHN-2231 and amount 159,000 VND, while bearing an invalid future date of 2026-11-03.\",\n      \"evidence_refs\": [\n        {\n          \"doc_id\": \"D09\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"ghn_receipt_02.jpg\"\n        },\n        {\n          \"doc_id\": \"D12\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"ghn_receipt_05.jpg\"\n        }\n      ],\n      \"figure_ids\": [\n        \"DOC.D12.total\",\n        \"CF.receipts_purchases_total\",\n        \"CF.receipts_count\"\n      ],\n      \"tool_evidence\": \"image_similarity\",\n      \"suggested_action\": \"Reject document D12, exclude 159,000 VND from verified logistics expenses, and investigate potential document fabrication.\",\n      \"financial_impact\": 159000.0\n    },\n    {\n      \"id\": \"OBJ-03\",\n      \"question_id\": \"Q3\",\n      \"severity\": \"high\",\n      \"title\": \"Non-operational self-transfers and round-trip credits\",\n      \"claim\": \"Inflows include 82,500,000 VND in self-transfers from the applicant's VCB account across rows T0037, T0126, and T0173, as well as a 50,000,000 VND round-trip credit in row T0110 from Nguyen Van Long returned in full via row T0118.\",\n      \"evidence_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 2,\n          \"bbox\": {\n            \"ymin\": 212,\n            \"xmin\": 60,\n            \"ymax\": 226,\n            \"xmax\": 939\n          },\n          \"snippet\": \"09/01/2026 SGMK26010953206 CHUYEN TIEN TU NGUYEN THI LINH - VCB 24.000.000 57.642.035\"\n        },\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 4,\n          \"bbox\": {\n            \"ymin\": 306,\n            \"xmin\": 62,\n            \"ymax\": 318,\n            \"xmax\": 935\n          },\n          \"snippet\": \"27/03/2026 SGMK26032751220 CHUYEN TIEN TU NGUYEN THI LINH - VCB 31.000.000 112.822.359\"\n        },\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 5,\n          \"bbox\": {\n            \"ymin\": 397,\n            \"xmin\": 62,\n            \"ymax\": 411,\n            \"xmax\": 935\n          },\n          \"snippet\": \"08/05/2026 SGMK26050832734 CHUYEN TIEN TU NGUYEN THI LINH - VCB 27.500.000 99.432.464\"\n        },\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 3,\n          \"bbox\": {\n            \"ymin\": 787,\n            \"xmin\": 67,\n            \"ymax\": 798,\n            \"xmax\": 932\n          },\n          \"snippet\": \"14/03/2026 SGMK26031474448 NHAN TU NGUYEN VAN LONG - CHUYEN KHOAN 50.000.000 151.228.359\"\n        }\n      ],\n      \"figure_ids\": [\n        \"CF.self_transfer_count\",\n        \"CF.self_transfer_total\",\n        \"CF.round_trip_total\",\n        \"CF.avg_monthly_business_inflow\"\n      ],\n      \"tool_evidence\": \"lookup_transactions\",\n      \"suggested_action\": \"Exclude the 132,500,000 VND of non-operational transfers from qualifying revenue calculations when assessing debt capacity.\",\n      \"financial_impact\": 132500000.0\n    },\n    {\n      \"id\": \"OBJ-04\",\n      \"question_id\": \"Q7\",\n      \"severity\": \"high\",\n      \"title\": \"Undisclosed recurring consumer loan repayments\",\n      \"claim\": \"Statement D01 reveals recurring monthly debt service totaling 4,730,000 VND across all six months, consisting of 3,250,000 VND to FE CREDIT (rows T0005, T0034, T0067, T0100, T0134, T0167) and 1,480,000 VND to SPAYLATER (rows T0023, T0048, T0083, T0117, T0150, T0188).\",\n      \"evidence_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 318,\n            \"xmin\": 65,\n            \"ymax\": 328,\n            \"xmax\": 934\n          },\n          \"snippet\": \"05/12/2025 SGMK25120511059 CHUYEN DEN FE CREDIT - TRA GOP 3.250.000 23.750.000\"\n        },\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 649,\n            \"xmin\": 65,\n            \"ymax\": 659,\n            \"xmax\": 934\n          },\n          \"snippet\": \"21/12/2025 SGMK25122170149 SPAYLATER THANH TOAN 1.480.000 53.626.000\"\n        }\n      ],\n      \"figure_ids\": [\n        \"CF.recurring_debt_service_monthly\",\n        \"CF.recurring.1.amount\",\n        \"CF.recurring.2.amount\",\n        \"CF.suggested_capacity\",\n        \"CF.request_to_capacity\"\n      ],\n      \"tool_evidence\": \"recompute_figure\",\n      \"suggested_action\": \"Factor the 4,730,000 VND monthly debt commitment into Fixed Charge Coverage Ratio calculations and request formal loan disclosure statements.\",\n      \"financial_impact\": 28380000.0\n    },\n    {\n      \"id\": \"OBJ-05\",\n      \"question_id\": \"Q5\",\n      \"severity\": \"medium\",\n      \"title\": \"Mismatch between dashboard reporting and bank statement coverage\",\n      \"claim\": \"Bank statement D01 covers 2025-12 through 2026-05, whereas Shopee dashboards D02 through D07 cover 2026-01 through 2026-06, leaving December 2025 marketplace performance uncorroborated by a dashboard and June 2026 dashboard gross sales of 61,650,000 VND without matching bank statements.\",\n      \"evidence_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"bank_statement_2025-12_2026-05.pdf\"\n        },\n        {\n          \"doc_id\": \"D07\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"shopee_dashboard_2026-06.png\"\n        }\n      ],\n      \"figure_ids\": [\n        \"DOC.D07.gross_sales\",\n        \"CF.months_covered\"\n      ],\n      \"tool_evidence\": \"date_crosscheck\",\n      \"suggested_action\": \"Request the official bank statement for June 2026 and the Shopee dashboard extract for December 2025 to achieve full period reconciliation.\",\n      \"financial_impact\": null\n    },\n    {\n      \"id\": \"OBJ-06\",\n      \"question_id\": \"Q11\",\n      \"severity\": \"medium\",\n      \"title\": \"Discrepant seller shop name on March dashboard\",\n      \"claim\": \"Seller dashboard D04 for March 2026 shows shop name 'Linh Fashion VN' with 9,800 followers, whereas dashboards D02, D03, D05, D06, D07, and the loan application show 'Linh Fashion Official' with over 12,000 to 14,200 followers.\",\n      \"evidence_refs\": [\n        {\n          \"doc_id\": \"D04\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"shopee_dashboard_2026-03.png\"\n        },\n        {\n          \"doc_id\": \"D05\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"shopee_dashboard_2026-04.png\"\n        }\n      ],\n      \"figure_ids\": [],\n      \"tool_evidence\": null,\n      \"suggested_action\": \"Require the applicant to clarify whether 'Linh Fashion VN' is an affiliate store or secondary account and provide store account management proof.\",\n      \"financial_impact\": null\n    }\n  ],\n  \"questions_checked\": [\n    \"Q1\",\n    \"Q2\",\n    \"Q3\",\n    \"Q4\",\n    \"Q5\",\n    \"Q6\",\n    \"Q7\",\n    \"Q8\",\n    \"Q9\",\n    \"Q10\",\n    \"Q11\",\n    \"Q12\"\n  ],\n  \"overall_assessment\": \"The application exhibits severe evidentiary and integrity deficiencies, highlighted by two distinct running balance breaks in bank statement D01 totaling -25,700,000 VND and a duplicated logistics invoice (D12 duplicating D09) bearing an impossible future date. Furthermore, headline cash flow is substantially inflated by 82,500,000 VND of owner self-transfers and a 50,000,000 VND round-trip credit, while ongoing debt repayments to FE Credit and SPayLater consume 4,730,000 VND monthly. The requested facility of 150,000,000 VND is nearly seven times the applicant's unencumbered capacity; underwriting should defer approval until fresh bank records and document authentications are provided.\"\n}",
+   "parsed": {
+    "objections": [
+     {
+      "id": "OBJ-01",
+      "question_id": "Q6",
+      "severity": "critical",
+      "title": "Bank statement running balance discontinuity",
+      "claim": "Bank statement D01 fails balance continuity at row T0081 on 2026-02-17 (expected 73,224,095 VND, reported 54,724,095 VND, discrepancy -18,500,000 VND) and at row T0138 on 2026-04-07 (expected 87,840,468 VND, reported 80,640,468 VND, discrepancy -7,200,000 VND).",
+      "evidence_refs": [
+       {
+        "doc_id": "D01",
+        "page": 3,
+        "bbox": {
+         "ymin": 251,
+         "xmin": 67,
+         "ymax": 262,
+         "xmax": 932
+        },
+        "snippet": "17/02/2026 SGMK26021747606 THANH TOAN DON HANG SI - TRAN THI HOA 18.500.000 54.724.095"
+       },
+       {
+        "doc_id": "D01",
+        "page": 4,
+        "bbox": {
+         "ymin": 530,
+         "xmin": 62,
+         "ymax": 542,
+         "xmax": 935
+        },
+        "snippet": "07/04/2026 SGMK26040736451 TIEN DIEN EVNHCMC - MA KH PE0100xxxx 1.477.000 80.640.468"
+       }
+      ],
+      "figure_ids": [
+       "DOC.D01.closing_balance"
+      ],
+      "tool_evidence": "recompute_balance_chain",
+      "suggested_action": "Require an original, official digital bank statement directly from Ngan Hang So Saigon Mekong to verify whether entries were omitted or altered.",
+      "financial_impact": 25700000.0
+     },
+     {
+      "id": "OBJ-02",
+      "question_id": "Q4",
+      "severity": "critical",
+      "title": "Duplicated logistics receipt with future date",
+      "claim": "Logistics receipt D12 is an exact duplicate image of receipt D09 (hamming distance 0), sharing receipt number GHN-2231 and amount 159,000 VND, while bearing an invalid future date of 2026-11-03.",
+      "evidence_refs": [
+       {
+        "doc_id": "D09",
+        "page": 1,
+        "bbox": null,
+        "snippet": "ghn_receipt_02.jpg"
+       },
+       {
+        "doc_id": "D12",
+        "page": 1,
+        "bbox": null,
+        "snippet": "ghn_receipt_05.jpg"
+       }
+      ],
+      "figure_ids": [
+       "DOC.D12.total",
+       "CF.receipts_purchases_total",
+       "CF.receipts_count"
+      ],
+      "tool_evidence": "image_similarity",
+      "suggested_action": "Reject document D12, exclude 159,000 VND from verified logistics expenses, and investigate potential document fabrication.",
+      "financial_impact": 159000.0
+     },
+     {
+      "id": "OBJ-03",
+      "question_id": "Q3",
+      "severity": "high",
+      "title": "Non-operational self-transfers and round-trip credits",
+      "claim": "Inflows include 82,500,000 VND in self-transfers from the applicant's VCB account across rows T0037, T0126, and T0173, as well as a 50,000,000 VND round-trip credit in row T0110 from Nguyen Van Long returned in full via row T0118.",
+      "evidence_refs": [
+       {
+        "doc_id": "D01",
+        "page": 2,
+        "bbox": {
+         "ymin": 212,
+         "xmin": 60,
+         "ymax": 226,
+         "xmax": 939
+        },
+        "snippet": "09/01/2026 SGMK26010953206 CHUYEN TIEN TU NGUYEN THI LINH - VCB 24.000.000 57.642.035"
+       },
+       {
+        "doc_id": "D01",
+        "page": 4,
+        "bbox": {
+         "ymin": 306,
+         "xmin": 62,
+         "ymax": 318,
+         "xmax": 935
+        },
+        "snippet": "27/03/2026 SGMK26032751220 CHUYEN TIEN TU NGUYEN THI LINH - VCB 31.000.000 112.822.359"
+       },
+       {
+        "doc_id": "D01",
+        "page": 5,
+        "bbox": {
+         "ymin": 397,
+         "xmin": 62,
+         "ymax": 411,
+         "xmax": 935
+        },
+        "snippet": "08/05/2026 SGMK26050832734 CHUYEN TIEN TU NGUYEN THI LINH - VCB 27.500.000 99.432.464"
+       },
+       {
+        "doc_id": "D01",
+        "page": 3,
+        "bbox": {
+         "ymin": 787,
+         "xmin": 67,
+         "ymax": 798,
+         "xmax": 932
+        },
+        "snippet": "14/03/2026 SGMK26031474448 NHAN TU NGUYEN VAN LONG - CHUYEN KHOAN 50.000.000 151.228.359"
+       }
+      ],
+      "figure_ids": [
+       "CF.self_transfer_count",
+       "CF.self_transfer_total",
+       "CF.round_trip_total",
+       "CF.avg_monthly_business_inflow"
+      ],
+      "tool_evidence": "lookup_transactions",
+      "suggested_action": "Exclude the 132,500,000 VND of non-operational transfers from qualifying revenue calculations when assessing debt capacity.",
+      "financial_impact": 132500000.0
+     },
+     {
+      "id": "OBJ-04",
+      "question_id": "Q7",
+      "severity": "high",
+      "title": "Undisclosed recurring consumer loan repayments",
+      "claim": "Statement D01 reveals recurring monthly debt service totaling 4,730,000 VND across all six months, consisting of 3,250,000 VND to FE CREDIT (rows T0005, T0034, T0067, T0100, T0134, T0167) and 1,480,000 VND to SPAYLATER (rows T0023, T0048, T0083, T0117, T0150, T0188).",
+      "evidence_refs": [
+       {
+        "doc_id": "D01",
+        "page": 1,
+        "bbox": {
+         "ymin": 318,
+         "xmin": 65,
+         "ymax": 328,
+         "xmax": 934
+        },
+        "snippet": "05/12/2025 SGMK25120511059 CHUYEN DEN FE CREDIT - TRA GOP 3.250.000 23.750.000"
+       },
+       {
+        "doc_id": "D01",
+        "page": 1,
+        "bbox": {
+         "ymin": 649,
+         "xmin": 65,
+         "ymax": 659,
+         "xmax": 934
+        },
+        "snippet": "21/12/2025 SGMK25122170149 SPAYLATER THANH TOAN 1.480.000 53.626.000"
+       }
+      ],
+      "figure_ids": [
+       "CF.recurring_debt_service_monthly",
+       "CF.recurring.1.amount",
+       "CF.recurring.2.amount",
+       "CF.suggested_capacity",
+       "CF.request_to_capacity"
+      ],
+      "tool_evidence": "recompute_figure",
+      "suggested_action": "Factor the 4,730,000 VND monthly debt commitment into Fixed Charge Coverage Ratio calculations and request formal loan disclosure statements.",
+      "financial_impact": 28380000.0
+     },
+     {
+      "id": "OBJ-05",
+      "question_id": "Q5",
+      "severity": "medium",
+      "title": "Mismatch between dashboard reporting and bank statement coverage",
+      "claim": "Bank statement D01 covers 2025-12 through 2026-05, whereas Shopee dashboards D02 through D07 cover 2026-01 through 2026-06, leaving December 2025 marketplace performance uncorroborated by a dashboard and June 2026 dashboard gross sales of 61,650,000 VND without matching bank statements.",
+      "evidence_refs": [
+       {
+        "doc_id": "D01",
+        "page": 1,
+        "bbox": null,
+        "snippet": "bank_statement_2025-12_2026-05.pdf"
+       },
+       {
+        "doc_id": "D07",
+        "page": 1,
+        "bbox": null,
+        "snippet": "shopee_dashboard_2026-06.png"
+       }
+      ],
+      "figure_ids": [
+       "DOC.D07.gross_sales",
+       "CF.months_covered"
+      ],
+      "tool_evidence": "date_crosscheck",
+      "suggested_action": "Request the official bank statement for June 2026 and the Shopee dashboard extract for December 2025 to achieve full period reconciliation.",
+      "financial_impact": null
+     },
+     {
+      "id": "OBJ-06",
+      "question_id": "Q11",
+      "severity": "medium",
+      "title": "Discrepant seller shop name on March dashboard",
+      "claim": "Seller dashboard D04 for March 2026 shows shop name 'Linh Fashion VN' with 9,800 followers, whereas dashboards D02, D03, D05, D06, D07, and the loan application show 'Linh Fashion Official' with over 12,000 to 14,200 followers.",
+      "evidence_refs": [
+       {
+        "doc_id": "D04",
+        "page": 1,
+        "bbox": null,
+        "snippet": "shopee_dashboard_2026-03.png"
+       },
+       {
+        "doc_id": "D05",
+        "page": 1,
+        "bbox": null,
+        "snippet": "shopee_dashboard_2026-04.png"
+       }
+      ],
+      "figure_ids": [],
+      "tool_evidence": null,
+      "suggested_action": "Require the applicant to clarify whether 'Linh Fashion VN' is an affiliate store or secondary account and provide store account management proof.",
+      "financial_impact": null
+     }
+    ],
+    "questions_checked": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12"
+    ],
+    "overall_assessment": "The application exhibits severe evidentiary and integrity deficiencies, highlighted by two distinct running balance breaks in bank statement D01 totaling -25,700,000 VND and a duplicated logistics invoice (D12 duplicating D09) bearing an impossible future date. Furthermore, headline cash flow is substantially inflated by 82,500,000 VND of owner self-transfers and a 50,000,000 VND round-trip credit, while ongoing debt repayments to FE Credit and SPayLater consume 4,730,000 VND monthly. The requested facility of 150,000,000 VND is nearly seven times the applicant's unencumbered capacity; underwriting should defer approval until fresh bank records and document authentications are provided."
+   }
+  }
+ ],
+ "cached_at": "2026-10-16T06:18:01+00:00"
+}

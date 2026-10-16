@@ -1,0 +1,182 @@
+{
+ "text": "{\n  \"merchant\": \"TOKO GROSIR MAKMUR\",\n  \"date\": \"2026-03-21\",\n  \"receipt_number\": \"TGM-1044\",\n  \"currency\": \"IDR\",\n  \"total\": {\n    \"value\": 892000.0,\n    \"source\": {\n      \"doc_id\": \"D08\",\n      \"page\": 1,\n      \"bbox\": {\n        \"ymin\": 597,\n        \"xmin\": 732,\n        \"ymax\": 618,\n        \"xmax\": 863\n      },\n      \"snippet\": \"892.000\"\n    }\n  },\n  \"items\": [\n    {\n      \"description\": \"Cabai Rawit 1kg\",\n      \"amount\": 195000.0,\n      \"source\": {\n        \"doc_id\": \"D08\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 384,\n          \"xmin\": 744,\n          \"ymax\": 403,\n          \"xmax\": 877\n        },\n        \"snippet\": \"195.000\"\n      }\n    },\n    {\n      \"description\": \"Susu Kental Manis 1 dus\",\n      \"amount\": 460000.0,\n      \"source\": {\n        \"doc_id\": \"D08\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 438,\n          \"xmin\": 741,\n          \"ymax\": 457,\n          \"xmax\": 875\n        },\n        \"snippet\": \"460.000\"\n      }\n    },\n    {\n      \"description\": \"Sabun Mandi 1 lusin\",\n      \"amount\": 192000.0,\n      \"source\": {\n        \"doc_id\": \"D08\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 490,\n          \"xmin\": 741,\n          \"ymax\": 510,\n          \"xmax\": 870\n        },\n        \"snippet\": \"192.000\"\n      }\n    },\n    {\n      \"description\": \"Garam 1kg\",\n      \"amount\": 45000.0,\n      \"source\": {\n        \"doc_id\": \"D08\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 546,\n          \"xmin\": 757,\n          \"ymax\": 564,\n          \"xmax\": 866\n        },\n        \"snippet\": \"45.000\"\n      }\n    }\n  ],\n  \"payment_method\": \"TRANSFER\",\n  \"direction\": \"purchase\",\n  \"handwritten\": false\n}",
+ "parsed": {
+  "merchant": "TOKO GROSIR MAKMUR",
+  "date": "2026-03-21",
+  "receipt_number": "TGM-1044",
+  "currency": "IDR",
+  "total": {
+   "value": 892000.0,
+   "source": {
+    "doc_id": "D08",
+    "page": 1,
+    "bbox": {
+     "ymin": 597,
+     "xmin": 732,
+     "ymax": 618,
+     "xmax": 863
+    },
+    "snippet": "892.000"
+   }
+  },
+  "items": [
+   {
+    "description": "Cabai Rawit 1kg",
+    "amount": 195000.0,
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 384,
+      "xmin": 744,
+      "ymax": 403,
+      "xmax": 877
+     },
+     "snippet": "195.000"
+    }
+   },
+   {
+    "description": "Susu Kental Manis 1 dus",
+    "amount": 460000.0,
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 438,
+      "xmin": 741,
+      "ymax": 457,
+      "xmax": 875
+     },
+     "snippet": "460.000"
+    }
+   },
+   {
+    "description": "Sabun Mandi 1 lusin",
+    "amount": 192000.0,
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 490,
+      "xmin": 741,
+      "ymax": 510,
+      "xmax": 870
+     },
+     "snippet": "192.000"
+    }
+   },
+   {
+    "description": "Garam 1kg",
+    "amount": 45000.0,
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 546,
+      "xmin": 757,
+      "ymax": 564,
+      "xmax": 866
+     },
+     "snippet": "45.000"
+    }
+   }
+  ],
+  "payment_method": "TRANSFER",
+  "direction": "purchase",
+  "handwritten": false
+ },
+ "state": {
+  "output": {
+   "merchant": "TOKO GROSIR MAKMUR",
+   "date": "2026-03-21",
+   "receipt_number": "TGM-1044",
+   "currency": "IDR",
+   "total": {
+    "value": 892000.0,
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 597,
+      "xmin": 732,
+      "ymax": 618,
+      "xmax": 863
+     },
+     "snippet": "892.000"
+    }
+   },
+   "items": [
+    {
+     "description": "Cabai Rawit 1kg",
+     "amount": 195000.0,
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 384,
+       "xmin": 744,
+       "ymax": 403,
+       "xmax": 877
+      },
+      "snippet": "195.000"
+     }
+    },
+    {
+     "description": "Susu Kental Manis 1 dus",
+     "amount": 460000.0,
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 438,
+       "xmin": 741,
+       "ymax": 457,
+       "xmax": 875
+      },
+      "snippet": "460.000"
+     }
+    },
+    {
+     "description": "Sabun Mandi 1 lusin",
+     "amount": 192000.0,
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 490,
+       "xmin": 741,
+       "ymax": 510,
+       "xmax": 870
+      },
+      "snippet": "192.000"
+     }
+    },
+    {
+     "description": "Garam 1kg",
+     "amount": 45000.0,
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 546,
+       "xmin": 757,
+       "ymax": 564,
+       "xmax": 866
+      },
+      "snippet": "45.000"
+     }
+    }
+   ],
+   "payment_method": "TRANSFER",
+   "direction": "purchase",
+   "handwritten": false
+  }
+ },
+ "input_tokens": 963,
+ "output_tokens": 711,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:receipt",
+ "cached_at": "2026-10-15T06:46:52+00:00"
+}

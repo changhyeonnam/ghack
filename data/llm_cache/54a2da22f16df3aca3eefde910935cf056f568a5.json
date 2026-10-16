@@ -1,0 +1,382 @@
+{
+ "text": "{\n  \"headline\": \"Credit Assessment for Reyes Auto Repair - Request for PHP 250,000 Loan\",\n  \"sections\": [\n    {\n      \"heading\": \"Business overview\",\n      \"paragraphs\": [\n        \"Reyes Auto Repair is an automotive maintenance and repair business operated by Ramon Reyes in the Philippines. The shop offers mechanical repairs, parts replacement (brakes, wipers, batteries, shock absorbers), change oil, aircon services, and underchassis work as evidenced by handwritten shop ledgers and premises documentation.\",\n        \"The applicant is requesting a credit facility of PHP 250,000 to support operations and working capital.\"\n      ]\n    },\n    {\n      \"heading\": \"Cash flow\",\n      \"paragraphs\": [\n        \"Bank account records at Metro Pacific Savings Bank reflect recurring inflows consisting of cash branch deposits and electronic payments (InstaPay/GCash) from customers, alongside typical operational debits for parts purchases (Autoparts Plus Bana), lubricants, utilities, and regular weekly/semi-weekly personal or helper transfers.\",\n        \"The ending balance across recorded statement periods shows stability, closing at PHP 56,954.31 as of June 30, 2026, slightly above the opening forward balance of PHP 46,786.21 on January 1, 2026. However, monthly net operating cash flows remain modest relative to a PHP 250,000 principal.\"\n      ]\n    },\n    {\n      \"heading\": \"Revenue quality\",\n      \"paragraphs\": [\n        \"The business maintains a detailed manual recording system for daily vehicle repair orders. The summary ledger reflects total gross revenue of PHP 379,300 over the six-month period from January to June 2026, averaging approximately PHP 63,217 per month.\",\n        \"Revenues demonstrate a gradual downward trend from PHP 78,400 in January 2026 to PHP 46,200 in June 2026, requiring monitoring of top-line stability.\"\n      ]\n    },\n    {\n      \"heading\": \"Obligations\",\n      \"paragraphs\": [\n        \"Review of bank debits identifies an ongoing fixed loan obligation labeled 'BDO AUTO LOAN PAYMENT' of PHP 14,800.00 debited monthly on or around the 10th of each month (January, February, May, June).\",\n        \"Utility bills such as Meralco (electricity) and Maynilad (water), as well as Smartlink postpaid telecommunication plans, are consistently settled.\"\n      ]\n    },\n    {\n      \"heading\": \"Document quality\",\n      \"paragraphs\": [\n        \"The submitted bank statement is partial, covering months January, February, May, and June 2026, but missing March and April 2026. Furthermore, ledger document D07 is a duplicate page of D04 (March 2026 mislabeled as April 2026), although D05 correctly provides April 2026 records.\",\n        \"The premises photos provided (D10, D11) appear to be digital illustrations or synthetic mockups rather than authentic on-site photographs.\"\n      ]\n    },\n    {\n      \"heading\": \"Recommendation\",\n      \"paragraphs\": [\n        \"A hold is placed on the loan request of PHP 250,000. The requested loan amount is excessive relative to the business's current debt-service capacity (monthly revenue averaging ~PHP 63,200 with an existing monthly auto loan debt service of PHP 14,800).\",\n        \"Additionally, the applicant must provide the missing bank statements for March and April 2026 and genuine photographic verification of the physical repair shop before reconsideration.\"\n      ]\n    }\n  ],\n  \"figures\": [\n    {\n      \"label\": \"Total 6-Month Gross Revenue (Ledger)\",\n      \"value\": 379300,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D09\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 348,\n            \"xmin\": 651,\n            \"ymax\": 366,\n            \"xmax\": 756\n          },\n          \"snippet\": \"379,300\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Bank Balance Forward (01/01/2026)\",\n      \"value\": 46786.21,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 149,\n            \"xmin\": 673,\n            \"ymax\": 158,\n            \"xmax\": 772\n          },\n          \"snippet\": \"PHP 46,786.21\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Ending Bank Balance (06/30/2026)\",\n      \"value\": 56954.31,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 164,\n            \"xmin\": 673,\n            \"ymax\": 174,\n            \"xmax\": 772\n          },\n          \"snippet\": \"PHP 56,954.31\"\n        },\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 4,\n          \"bbox\": {\n            \"ymin\": 656,\n            \"xmin\": 866,\n            \"ymax\": 665,\n            \"xmax\": 934\n          },\n          \"snippet\": \"56,954.31\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Monthly Auto Loan Payment\",\n      \"value\": 14800,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 393,\n            \"xmin\": 632,\n            \"ymax\": 402,\n            \"xmax\": 699\n          },\n          \"snippet\": \"14,800.00\"\n        }\n      ]\n    },\n    {\n      \"label\": \"January 2026 Total Ledger Revenue\",\n      \"value\": 78400,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D09\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 168,\n            \"xmin\": 472,\n            \"ymax\": 180,\n            \"xmax\": 544\n          },\n          \"snippet\": \"78,400\"\n        }\n      ]\n    },\n    {\n      \"label\": \"June 2026 Total Ledger Revenue\",\n      \"value\": 46200,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D09\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 303,\n            \"xmin\": 471,\n            \"ymax\": 317,\n            \"xmax\": 543\n          },\n          \"snippet\": \"46,200\"\n        }\n      ]\n    }\n  ],\n  \"recommendation\": \"hold\",\n  \"concerns\": [\n    {\n      \"title\": \"Missing Bank Statement Pages (March and April 2026)\",\n      \"claim\": \"The bank statement skips from February 2026 directly to May 2026, leaving a two-month gap in verifiable banking transactions.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"title\": \"Synthetic / Illustrated Premises Photos\",\n      \"claim\": \"Premises documentation consists of graphical vector illustrations rather than real on-site operational photos.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"title\": \"Existing Fixed Auto Loan Obligation\",\n      \"claim\": \"The business has an active monthly BDO auto loan installment of PHP 14,800, which takes up a material portion of monthly net earnings.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"title\": \"Declining Revenue Trend\",\n      \"claim\": \"Monthly recorded revenue decreased from PHP 78,400 in January 2026 to PHP 46,200 in June 2026.\",\n      \"severity\": \"medium\"\n    }\n  ]\n}",
+ "parsed": {
+  "headline": "Credit Assessment for Reyes Auto Repair - Request for PHP 250,000 Loan",
+  "sections": [
+   {
+    "heading": "Business overview",
+    "paragraphs": [
+     "Reyes Auto Repair is an automotive maintenance and repair business operated by Ramon Reyes in the Philippines. The shop offers mechanical repairs, parts replacement (brakes, wipers, batteries, shock absorbers), change oil, aircon services, and underchassis work as evidenced by handwritten shop ledgers and premises documentation.",
+     "The applicant is requesting a credit facility of PHP 250,000 to support operations and working capital."
+    ]
+   },
+   {
+    "heading": "Cash flow",
+    "paragraphs": [
+     "Bank account records at Metro Pacific Savings Bank reflect recurring inflows consisting of cash branch deposits and electronic payments (InstaPay/GCash) from customers, alongside typical operational debits for parts purchases (Autoparts Plus Bana), lubricants, utilities, and regular weekly/semi-weekly personal or helper transfers.",
+     "The ending balance across recorded statement periods shows stability, closing at PHP 56,954.31 as of June 30, 2026, slightly above the opening forward balance of PHP 46,786.21 on January 1, 2026. However, monthly net operating cash flows remain modest relative to a PHP 250,000 principal."
+    ]
+   },
+   {
+    "heading": "Revenue quality",
+    "paragraphs": [
+     "The business maintains a detailed manual recording system for daily vehicle repair orders. The summary ledger reflects total gross revenue of PHP 379,300 over the six-month period from January to June 2026, averaging approximately PHP 63,217 per month.",
+     "Revenues demonstrate a gradual downward trend from PHP 78,400 in January 2026 to PHP 46,200 in June 2026, requiring monitoring of top-line stability."
+    ]
+   },
+   {
+    "heading": "Obligations",
+    "paragraphs": [
+     "Review of bank debits identifies an ongoing fixed loan obligation labeled 'BDO AUTO LOAN PAYMENT' of PHP 14,800.00 debited monthly on or around the 10th of each month (January, February, May, June).",
+     "Utility bills such as Meralco (electricity) and Maynilad (water), as well as Smartlink postpaid telecommunication plans, are consistently settled."
+    ]
+   },
+   {
+    "heading": "Document quality",
+    "paragraphs": [
+     "The submitted bank statement is partial, covering months January, February, May, and June 2026, but missing March and April 2026. Furthermore, ledger document D07 is a duplicate page of D04 (March 2026 mislabeled as April 2026), although D05 correctly provides April 2026 records.",
+     "The premises photos provided (D10, D11) appear to be digital illustrations or synthetic mockups rather than authentic on-site photographs."
+    ]
+   },
+   {
+    "heading": "Recommendation",
+    "paragraphs": [
+     "A hold is placed on the loan request of PHP 250,000. The requested loan amount is excessive relative to the business's current debt-service capacity (monthly revenue averaging ~PHP 63,200 with an existing monthly auto loan debt service of PHP 14,800).",
+     "Additionally, the applicant must provide the missing bank statements for March and April 2026 and genuine photographic verification of the physical repair shop before reconsideration."
+    ]
+   }
+  ],
+  "figures": [
+   {
+    "label": "Total 6-Month Gross Revenue (Ledger)",
+    "value": 379300.0,
+    "source_refs": [
+     {
+      "doc_id": "D09",
+      "page": 1,
+      "bbox": {
+       "ymin": 348,
+       "xmin": 651,
+       "ymax": 366,
+       "xmax": 756
+      },
+      "snippet": "379,300"
+     }
+    ]
+   },
+   {
+    "label": "Bank Balance Forward (01/01/2026)",
+    "value": 46786.21,
+    "source_refs": [
+     {
+      "doc_id": "D01",
+      "page": 1,
+      "bbox": {
+       "ymin": 149,
+       "xmin": 673,
+       "ymax": 158,
+       "xmax": 772
+      },
+      "snippet": "PHP 46,786.21"
+     }
+    ]
+   },
+   {
+    "label": "Ending Bank Balance (06/30/2026)",
+    "value": 56954.31,
+    "source_refs": [
+     {
+      "doc_id": "D01",
+      "page": 1,
+      "bbox": {
+       "ymin": 164,
+       "xmin": 673,
+       "ymax": 174,
+       "xmax": 772
+      },
+      "snippet": "PHP 56,954.31"
+     },
+     {
+      "doc_id": "D01",
+      "page": 4,
+      "bbox": {
+       "ymin": 656,
+       "xmin": 866,
+       "ymax": 665,
+       "xmax": 934
+      },
+      "snippet": "56,954.31"
+     }
+    ]
+   },
+   {
+    "label": "Monthly Auto Loan Payment",
+    "value": 14800.0,
+    "source_refs": [
+     {
+      "doc_id": "D01",
+      "page": 1,
+      "bbox": {
+       "ymin": 393,
+       "xmin": 632,
+       "ymax": 402,
+       "xmax": 699
+      },
+      "snippet": "14,800.00"
+     }
+    ]
+   },
+   {
+    "label": "January 2026 Total Ledger Revenue",
+    "value": 78400.0,
+    "source_refs": [
+     {
+      "doc_id": "D09",
+      "page": 1,
+      "bbox": {
+       "ymin": 168,
+       "xmin": 472,
+       "ymax": 180,
+       "xmax": 544
+      },
+      "snippet": "78,400"
+     }
+    ]
+   },
+   {
+    "label": "June 2026 Total Ledger Revenue",
+    "value": 46200.0,
+    "source_refs": [
+     {
+      "doc_id": "D09",
+      "page": 1,
+      "bbox": {
+       "ymin": 303,
+       "xmin": 471,
+       "ymax": 317,
+       "xmax": 543
+      },
+      "snippet": "46,200"
+     }
+    ]
+   }
+  ],
+  "recommendation": "hold",
+  "concerns": [
+   {
+    "title": "Missing Bank Statement Pages (March and April 2026)",
+    "claim": "The bank statement skips from February 2026 directly to May 2026, leaving a two-month gap in verifiable banking transactions.",
+    "severity": "high"
+   },
+   {
+    "title": "Synthetic / Illustrated Premises Photos",
+    "claim": "Premises documentation consists of graphical vector illustrations rather than real on-site operational photos.",
+    "severity": "high"
+   },
+   {
+    "title": "Existing Fixed Auto Loan Obligation",
+    "claim": "The business has an active monthly BDO auto loan installment of PHP 14,800, which takes up a material portion of monthly net earnings.",
+    "severity": "medium"
+   },
+   {
+    "title": "Declining Revenue Trend",
+    "claim": "Monthly recorded revenue decreased from PHP 78,400 in January 2026 to PHP 46,200 in June 2026.",
+    "severity": "medium"
+   }
+  ]
+ },
+ "state": {
+  "output": {
+   "headline": "Credit Assessment for Reyes Auto Repair - Request for PHP 250,000 Loan",
+   "sections": [
+    {
+     "heading": "Business overview",
+     "paragraphs": [
+      "Reyes Auto Repair is an automotive maintenance and repair business operated by Ramon Reyes in the Philippines. The shop offers mechanical repairs, parts replacement (brakes, wipers, batteries, shock absorbers), change oil, aircon services, and underchassis work as evidenced by handwritten shop ledgers and premises documentation.",
+      "The applicant is requesting a credit facility of PHP 250,000 to support operations and working capital."
+     ]
+    },
+    {
+     "heading": "Cash flow",
+     "paragraphs": [
+      "Bank account records at Metro Pacific Savings Bank reflect recurring inflows consisting of cash branch deposits and electronic payments (InstaPay/GCash) from customers, alongside typical operational debits for parts purchases (Autoparts Plus Bana), lubricants, utilities, and regular weekly/semi-weekly personal or helper transfers.",
+      "The ending balance across recorded statement periods shows stability, closing at PHP 56,954.31 as of June 30, 2026, slightly above the opening forward balance of PHP 46,786.21 on January 1, 2026. However, monthly net operating cash flows remain modest relative to a PHP 250,000 principal."
+     ]
+    },
+    {
+     "heading": "Revenue quality",
+     "paragraphs": [
+      "The business maintains a detailed manual recording system for daily vehicle repair orders. The summary ledger reflects total gross revenue of PHP 379,300 over the six-month period from January to June 2026, averaging approximately PHP 63,217 per month.",
+      "Revenues demonstrate a gradual downward trend from PHP 78,400 in January 2026 to PHP 46,200 in June 2026, requiring monitoring of top-line stability."
+     ]
+    },
+    {
+     "heading": "Obligations",
+     "paragraphs": [
+      "Review of bank debits identifies an ongoing fixed loan obligation labeled 'BDO AUTO LOAN PAYMENT' of PHP 14,800.00 debited monthly on or around the 10th of each month (January, February, May, June).",
+      "Utility bills such as Meralco (electricity) and Maynilad (water), as well as Smartlink postpaid telecommunication plans, are consistently settled."
+     ]
+    },
+    {
+     "heading": "Document quality",
+     "paragraphs": [
+      "The submitted bank statement is partial, covering months January, February, May, and June 2026, but missing March and April 2026. Furthermore, ledger document D07 is a duplicate page of D04 (March 2026 mislabeled as April 2026), although D05 correctly provides April 2026 records.",
+      "The premises photos provided (D10, D11) appear to be digital illustrations or synthetic mockups rather than authentic on-site photographs."
+     ]
+    },
+    {
+     "heading": "Recommendation",
+     "paragraphs": [
+      "A hold is placed on the loan request of PHP 250,000. The requested loan amount is excessive relative to the business's current debt-service capacity (monthly revenue averaging ~PHP 63,200 with an existing monthly auto loan debt service of PHP 14,800).",
+      "Additionally, the applicant must provide the missing bank statements for March and April 2026 and genuine photographic verification of the physical repair shop before reconsideration."
+     ]
+    }
+   ],
+   "figures": [
+    {
+     "label": "Total 6-Month Gross Revenue (Ledger)",
+     "value": 379300.0,
+     "source_refs": [
+      {
+       "doc_id": "D09",
+       "page": 1,
+       "bbox": {
+        "ymin": 348,
+        "xmin": 651,
+        "ymax": 366,
+        "xmax": 756
+       },
+       "snippet": "379,300"
+      }
+     ]
+    },
+    {
+     "label": "Bank Balance Forward (01/01/2026)",
+     "value": 46786.21,
+     "source_refs": [
+      {
+       "doc_id": "D01",
+       "page": 1,
+       "bbox": {
+        "ymin": 149,
+        "xmin": 673,
+        "ymax": 158,
+        "xmax": 772
+       },
+       "snippet": "PHP 46,786.21"
+      }
+     ]
+    },
+    {
+     "label": "Ending Bank Balance (06/30/2026)",
+     "value": 56954.31,
+     "source_refs": [
+      {
+       "doc_id": "D01",
+       "page": 1,
+       "bbox": {
+        "ymin": 164,
+        "xmin": 673,
+        "ymax": 174,
+        "xmax": 772
+       },
+       "snippet": "PHP 56,954.31"
+      },
+      {
+       "doc_id": "D01",
+       "page": 4,
+       "bbox": {
+        "ymin": 656,
+        "xmin": 866,
+        "ymax": 665,
+        "xmax": 934
+       },
+       "snippet": "56,954.31"
+      }
+     ]
+    },
+    {
+     "label": "Monthly Auto Loan Payment",
+     "value": 14800.0,
+     "source_refs": [
+      {
+       "doc_id": "D01",
+       "page": 1,
+       "bbox": {
+        "ymin": 393,
+        "xmin": 632,
+        "ymax": 402,
+        "xmax": 699
+       },
+       "snippet": "14,800.00"
+      }
+     ]
+    },
+    {
+     "label": "January 2026 Total Ledger Revenue",
+     "value": 78400.0,
+     "source_refs": [
+      {
+       "doc_id": "D09",
+       "page": 1,
+       "bbox": {
+        "ymin": 168,
+        "xmin": 472,
+        "ymax": 180,
+        "xmax": 544
+       },
+       "snippet": "78,400"
+      }
+     ]
+    },
+    {
+     "label": "June 2026 Total Ledger Revenue",
+     "value": 46200.0,
+     "source_refs": [
+      {
+       "doc_id": "D09",
+       "page": 1,
+       "bbox": {
+        "ymin": 303,
+        "xmin": 471,
+        "ymax": 317,
+        "xmax": 543
+       },
+       "snippet": "46,200"
+      }
+     ]
+    }
+   ],
+   "recommendation": "hold",
+   "concerns": [
+    {
+     "title": "Missing Bank Statement Pages (March and April 2026)",
+     "claim": "The bank statement skips from February 2026 directly to May 2026, leaving a two-month gap in verifiable banking transactions.",
+     "severity": "high"
+    },
+    {
+     "title": "Synthetic / Illustrated Premises Photos",
+     "claim": "Premises documentation consists of graphical vector illustrations rather than real on-site operational photos.",
+     "severity": "high"
+    },
+    {
+     "title": "Existing Fixed Auto Loan Obligation",
+     "claim": "The business has an active monthly BDO auto loan installment of PHP 14,800, which takes up a material portion of monthly net earnings.",
+     "severity": "medium"
+    },
+    {
+     "title": "Declining Revenue Trend",
+     "claim": "Monthly recorded revenue decreased from PHP 78,400 in January 2026 to PHP 46,200 in June 2026.",
+     "severity": "medium"
+    }
+   ]
+  }
+ },
+ "input_tokens": 8290,
+ "output_tokens": 2045,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "baseline-single-prompt-v1.0",
+ "agent": "baseline",
+ "cached_at": "2026-10-15T07:08:35+00:00"
+}

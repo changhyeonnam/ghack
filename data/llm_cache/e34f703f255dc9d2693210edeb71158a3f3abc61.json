@@ -1,0 +1,262 @@
+{
+ "text": "{\n  \"headline\": \"Online apparel merchant Linh Fashion Official demonstrates steady marketplace sales and positive cash accumulation but carries non-operating balance inflation and existing consumer debt.\",\n  \"sections\": [\n    {\n      \"heading\": \"Business overview\",\n      \"paragraphs\": [\n        \"Linh Fashion Official operates an online apparel retail business on the Shopee platform in Vietnam. Premises photographs from document D14 verify an active operating base showing branded signage, garment display racks, packaged parcels prepared for courier transit, and operational shipping supplies.\",\n        \"The business requests an uncollateralized facility of {fig:APP.requested_amount} to finance operational scale. Operations are evidenced by bank statements from Ngan Hang So Saigon Mekong under the name of Nguyen Thi Linh covering December 2025 through May 2026, alongside monthly platform seller dashboards.\"\n      ],\n      \"figure_ids\": [\n        \"APP.requested_amount\"\n      ]\n    },\n    {\n      \"heading\": \"Cash flow\",\n      \"paragraphs\": [\n        \"Across the six-month evaluated banking history in document D01, total recorded inflow reached {fig:CF.total_inflow} against total outflow of {fig:CF.total_outflow}, generating an average monthly net cash surplus of {fig:CF.avg_monthly_net}. However, operational revenue is notably lower than total inflow because substantial funds stem from non-revenue movements.\",\n        \"After stripping out own-account transfers and pass-through funds, average monthly business inflow moderates to {fig:CF.avg_monthly_business_inflow}, while average monthly outflow stands at {fig:CF.avg_monthly_outflow}. The business maintains a steady trajectory with a positive monthly inflow growth rate of {fig:CF.revenue_trend_pct} and low revenue volatility of {fig:CF.inflow_volatility_cv}.\",\n        \"Bank balances closed positively across every reviewed cycle, increasing from an initial opening balance of {fig:DOC.D01.opening_balance} to a period close of {fig:DOC.D01.closing_balance} in May 2026. Month-end concentration remains controlled, with the final five days of the month accounting for a portion of {fig:CF.end_of_month_concentration} of total inflows.\"\n      ],\n      \"figure_ids\": [\n        \"CF.total_inflow\",\n        \"CF.total_outflow\",\n        \"CF.avg_monthly_net\",\n        \"CF.avg_monthly_business_inflow\",\n        \"CF.avg_monthly_outflow\",\n        \"CF.revenue_trend_pct\",\n        \"CF.inflow_volatility_cv\",\n        \"DOC.D01.opening_balance\",\n        \"DOC.D01.closing_balance\",\n        \"CF.end_of_month_concentration\"\n      ]\n    },\n    {\n      \"heading\": \"Revenue quality and concentration\",\n      \"paragraphs\": [\n        \"Operating revenue is derived predominantly through Shopee digital payouts, which supplied {fig:CF.platform_payout_total} across eighteen disbursements into the primary bank account. Cash deposits contributed {fig:CF.cash_deposit_total} across twenty-four transactions, aligning with COD collections documented on platform dashboards.\",\n        \"Monthly platform seller dashboards from January 2026 through June 2026 reflect sustained retail demand. Monthly gross sales progressed from {fig:DOC.D02.gross_sales} in January 2026, passing {fig:DOC.D04.gross_sales} in March 2026, and reaching {fig:DOC.D07.gross_sales} by June 2026. Cumulative dashboard gross sales reached {fig:CF.dashboard_gross_sales_total}.\",\n        \"Total non-business injections totaled {fig:CF.self_transfer_total} across three distinct personal deposits, including a transfer of {fig:TX.T0037} in January 2026, {fig:TX.T0126} in March 2026, and {fig:TX.T0173} in May 2026. Additionally, a rapid round-trip transaction of {fig:TX.T0110} received in March 2026 was repaid within days via transfer {fig:TX.T0118}, inflating nominal transaction velocity.\"\n      ],\n      \"figure_ids\": [\n        \"CF.platform_payout_total\",\n        \"CF.cash_deposit_total\",\n        \"DOC.D02.gross_sales\",\n        \"DOC.D04.gross_sales\",\n        \"DOC.D07.gross_sales\",\n        \"CF.dashboard_gross_sales_total\",\n        \"CF.self_transfer_total\",\n        \"TX.T0037\",\n        \"TX.T0126\",\n        \"TX.T0173\",\n        \"TX.T0110\",\n        \"TX.T0118\"\n      ]\n    },\n    {\n      \"heading\": \"Obligations and leverage\",\n      \"paragraphs\": [\n        \"Bank records confirm ongoing consumer debt service obligations totaling {fig:CF.recurring_debt_service_monthly} per month across two separate lending lines. These consist of regular payments of {fig:CF.recurring.1.amount} across six occurrences to FE CREDIT and monthly payments of {fig:CF.recurring.2.amount} across six occurrences to SPAYLATER.\",\n        \"The borrower also services a recurring transfer of {fig:CF.recurring.3.amount} monthly to Nguyen Thi Mai, alongside periodic utility fees of {fig:CF.recurring.4.amount} for SMS banking. Regular inventory procurement disbursements are made to apparel suppliers, including payments to Xuong May Minh Anh such as {fig:TX.T0045} and Cho Tan Binh fabric suppliers such as {fig:TX.T0116}.\",\n        \"Assessed three-month net operational cash flow indicates an illustrative repayment capacity of {fig:CF.suggested_capacity}. Consequently, the applicant's requested loan of {fig:APP.requested_amount} represents an excessive leverage multiple of {fig:CF.request_to_capacity} relative to its demonstrated debt service capacity.\"\n      ],\n      \"figure_ids\": [\n        \"CF.recurring_debt_service_monthly\",\n        \"CF.recurring.1.amount\",\n        \"CF.recurring.2.amount\",\n        \"CF.recurring.3.amount\",\n        \"CF.recurring.4.amount\",\n        \"TX.T0045\",\n        \"TX.T0116\",\n        \"CF.suggested_capacity\",\n        \"APP.requested_amount\",\n        \"CF.request_to_capacity\"\n      ]\n    },\n    {\n      \"heading\": \"Document quality and coverage\",\n      \"paragraphs\": [\n        \"The application includes six consecutive months of complete bank statements from December 2025 through May 2026 with no missing calendar periods. Six consecutive monthly Shopee seller dashboards covering January 2026 through June 2026 corroborate digital shop activity and order metrics.\",\n        \"Document discrepancies are present among the supporting documentation. A naming mismatch exists between the applicant profile and dashboard D04, which displays the shop name Linh Fashion VN rather than Linh Fashion Official. Furthermore, logistics receipt D12 is suspected of duplication against D09 sharing identical transaction details, while all provided files display synthetic test watermarks.\"\n      ],\n      \"figure_ids\": [\n        \"DOC.D01.closing_balance\"\n      ]\n    },\n    {\n      \"heading\": \"Recommendation\",\n      \"paragraphs\": [\n        \"It is recommended to approve with conditions a reduced credit facility rather than the requested principal. While legitimate online merchandise movement and healthy platform sales are proven, the requested sum of {fig:APP.requested_amount} is roughly seven times demonstrated illustrative capacity and unsupportable under standard serviceability thresholds.\",\n        \"Approval should be restricted to a lower facility aligned with the borrower's debt-service capacity of {fig:CF.suggested_capacity}, subject to verifying the shop naming discrepancy and confirming existing outstanding debts.\"\n      ],\n      \"figure_ids\": [\n        \"APP.requested_amount\",\n        \"CF.suggested_capacity\"\n      ]\n    }\n  ],\n  \"key_figure_ids\": [\n    \"APP.requested_amount\",\n    \"CF.avg_monthly_business_inflow\",\n    \"CF.suggested_capacity\",\n    \"CF.request_to_capacity\",\n    \"CF.self_transfer_total\",\n    \"CF.recurring_debt_service_monthly\"\n  ],\n  \"strengths\": [\n    \"Consistently growing platform sales supported by healthy Shopee order counts and ratings across six months\",\n    \"Positive net cash generation and rising closing bank balances throughout the analyzed statement history\",\n    \"Verified physical workspace with stock and shipping materials corroborating digital shop activity\"\n  ],\n  \"concerns\": [\n    \"Loan request amount represents nearly seven times the business's illustrative net repayment capacity\",\n    \"Bank statements show repeated non-operational capital injections including self-transfers and a rapid round-trip transfer\",\n    \"Active recurring debt obligations to FE CREDIT and SPAYLATER competing for monthly operating cash\",\n    \"Minor shop name inconsistency on March 2026 dashboard and duplicate logistics receipt document\"\n  ],\n  \"recommendation\": \"approve_with_conditions\",\n  \"conditions\": [\n    \"Downsize total loan amount to align with sustainable repayment capacity based on monthly net business cash flow\",\n    \"Provide written confirmation reconciling the shop name Linh Fashion VN shown on the March 2026 Shopee dashboard\",\n    \"Provide an updated credit bureau statement or repayment schedule for active obligations with FE CREDIT and SPAYLATER\",\n    \"Verify bank account ownership and replace watermarked synthetic documentation with certified bank originals\"\n  ],\n  \"rationale\": \"Linh Fashion Official demonstrates authentic retail apparel operations with positive operating margins and recurring e-commerce cash flows. However, the requested loan size is excessively leveraged against true operational debt-servicing capacity, which is further constrained by personal fund transfers and active consumer credit lines. An approval scaled down to verifiable net cash generation mitigates credit risk while accommodating business expansion.\"\n}",
+ "parsed": {
+  "headline": "Online apparel merchant Linh Fashion Official demonstrates steady marketplace sales and positive cash accumulation but carries non-operating balance inflation and existing consumer debt.",
+  "sections": [
+   {
+    "heading": "Business overview",
+    "paragraphs": [
+     "Linh Fashion Official operates an online apparel retail business on the Shopee platform in Vietnam. Premises photographs from document D14 verify an active operating base showing branded signage, garment display racks, packaged parcels prepared for courier transit, and operational shipping supplies.",
+     "The business requests an uncollateralized facility of {fig:APP.requested_amount} to finance operational scale. Operations are evidenced by bank statements from Ngan Hang So Saigon Mekong under the name of Nguyen Thi Linh covering December 2025 through May 2026, alongside monthly platform seller dashboards."
+    ],
+    "figure_ids": [
+     "APP.requested_amount"
+    ]
+   },
+   {
+    "heading": "Cash flow",
+    "paragraphs": [
+     "Across the six-month evaluated banking history in document D01, total recorded inflow reached {fig:CF.total_inflow} against total outflow of {fig:CF.total_outflow}, generating an average monthly net cash surplus of {fig:CF.avg_monthly_net}. However, operational revenue is notably lower than total inflow because substantial funds stem from non-revenue movements.",
+     "After stripping out own-account transfers and pass-through funds, average monthly business inflow moderates to {fig:CF.avg_monthly_business_inflow}, while average monthly outflow stands at {fig:CF.avg_monthly_outflow}. The business maintains a steady trajectory with a positive monthly inflow growth rate of {fig:CF.revenue_trend_pct} and low revenue volatility of {fig:CF.inflow_volatility_cv}.",
+     "Bank balances closed positively across every reviewed cycle, increasing from an initial opening balance of {fig:DOC.D01.opening_balance} to a period close of {fig:DOC.D01.closing_balance} in May 2026. Month-end concentration remains controlled, with the final five days of the month accounting for a portion of {fig:CF.end_of_month_concentration} of total inflows."
+    ],
+    "figure_ids": [
+     "CF.total_inflow",
+     "CF.total_outflow",
+     "CF.avg_monthly_net",
+     "CF.avg_monthly_business_inflow",
+     "CF.avg_monthly_outflow",
+     "CF.revenue_trend_pct",
+     "CF.inflow_volatility_cv",
+     "DOC.D01.opening_balance",
+     "DOC.D01.closing_balance",
+     "CF.end_of_month_concentration"
+    ]
+   },
+   {
+    "heading": "Revenue quality and concentration",
+    "paragraphs": [
+     "Operating revenue is derived predominantly through Shopee digital payouts, which supplied {fig:CF.platform_payout_total} across eighteen disbursements into the primary bank account. Cash deposits contributed {fig:CF.cash_deposit_total} across twenty-four transactions, aligning with COD collections documented on platform dashboards.",
+     "Monthly platform seller dashboards from January 2026 through June 2026 reflect sustained retail demand. Monthly gross sales progressed from {fig:DOC.D02.gross_sales} in January 2026, passing {fig:DOC.D04.gross_sales} in March 2026, and reaching {fig:DOC.D07.gross_sales} by June 2026. Cumulative dashboard gross sales reached {fig:CF.dashboard_gross_sales_total}.",
+     "Total non-business injections totaled {fig:CF.self_transfer_total} across three distinct personal deposits, including a transfer of {fig:TX.T0037} in January 2026, {fig:TX.T0126} in March 2026, and {fig:TX.T0173} in May 2026. Additionally, a rapid round-trip transaction of {fig:TX.T0110} received in March 2026 was repaid within days via transfer {fig:TX.T0118}, inflating nominal transaction velocity."
+    ],
+    "figure_ids": [
+     "CF.platform_payout_total",
+     "CF.cash_deposit_total",
+     "DOC.D02.gross_sales",
+     "DOC.D04.gross_sales",
+     "DOC.D07.gross_sales",
+     "CF.dashboard_gross_sales_total",
+     "CF.self_transfer_total",
+     "TX.T0037",
+     "TX.T0126",
+     "TX.T0173",
+     "TX.T0110",
+     "TX.T0118"
+    ]
+   },
+   {
+    "heading": "Obligations and leverage",
+    "paragraphs": [
+     "Bank records confirm ongoing consumer debt service obligations totaling {fig:CF.recurring_debt_service_monthly} per month across two separate lending lines. These consist of regular payments of {fig:CF.recurring.1.amount} across six occurrences to FE CREDIT and monthly payments of {fig:CF.recurring.2.amount} across six occurrences to SPAYLATER.",
+     "The borrower also services a recurring transfer of {fig:CF.recurring.3.amount} monthly to Nguyen Thi Mai, alongside periodic utility fees of {fig:CF.recurring.4.amount} for SMS banking. Regular inventory procurement disbursements are made to apparel suppliers, including payments to Xuong May Minh Anh such as {fig:TX.T0045} and Cho Tan Binh fabric suppliers such as {fig:TX.T0116}.",
+     "Assessed three-month net operational cash flow indicates an illustrative repayment capacity of {fig:CF.suggested_capacity}. Consequently, the applicant's requested loan of {fig:APP.requested_amount} represents an excessive leverage multiple of {fig:CF.request_to_capacity} relative to its demonstrated debt service capacity."
+    ],
+    "figure_ids": [
+     "CF.recurring_debt_service_monthly",
+     "CF.recurring.1.amount",
+     "CF.recurring.2.amount",
+     "CF.recurring.3.amount",
+     "CF.recurring.4.amount",
+     "TX.T0045",
+     "TX.T0116",
+     "CF.suggested_capacity",
+     "APP.requested_amount",
+     "CF.request_to_capacity"
+    ]
+   },
+   {
+    "heading": "Document quality and coverage",
+    "paragraphs": [
+     "The application includes six consecutive months of complete bank statements from December 2025 through May 2026 with no missing calendar periods. Six consecutive monthly Shopee seller dashboards covering January 2026 through June 2026 corroborate digital shop activity and order metrics.",
+     "Document discrepancies are present among the supporting documentation. A naming mismatch exists between the applicant profile and dashboard D04, which displays the shop name Linh Fashion VN rather than Linh Fashion Official. Furthermore, logistics receipt D12 is suspected of duplication against D09 sharing identical transaction details, while all provided files display synthetic test watermarks."
+    ],
+    "figure_ids": [
+     "DOC.D01.closing_balance"
+    ]
+   },
+   {
+    "heading": "Recommendation",
+    "paragraphs": [
+     "It is recommended to approve with conditions a reduced credit facility rather than the requested principal. While legitimate online merchandise movement and healthy platform sales are proven, the requested sum of {fig:APP.requested_amount} is roughly seven times demonstrated illustrative capacity and unsupportable under standard serviceability thresholds.",
+     "Approval should be restricted to a lower facility aligned with the borrower's debt-service capacity of {fig:CF.suggested_capacity}, subject to verifying the shop naming discrepancy and confirming existing outstanding debts."
+    ],
+    "figure_ids": [
+     "APP.requested_amount",
+     "CF.suggested_capacity"
+    ]
+   }
+  ],
+  "key_figure_ids": [
+   "APP.requested_amount",
+   "CF.avg_monthly_business_inflow",
+   "CF.suggested_capacity",
+   "CF.request_to_capacity",
+   "CF.self_transfer_total",
+   "CF.recurring_debt_service_monthly"
+  ],
+  "strengths": [
+   "Consistently growing platform sales supported by healthy Shopee order counts and ratings across six months",
+   "Positive net cash generation and rising closing bank balances throughout the analyzed statement history",
+   "Verified physical workspace with stock and shipping materials corroborating digital shop activity"
+  ],
+  "concerns": [
+   "Loan request amount represents nearly seven times the business's illustrative net repayment capacity",
+   "Bank statements show repeated non-operational capital injections including self-transfers and a rapid round-trip transfer",
+   "Active recurring debt obligations to FE CREDIT and SPAYLATER competing for monthly operating cash",
+   "Minor shop name inconsistency on March 2026 dashboard and duplicate logistics receipt document"
+  ],
+  "recommendation": "approve_with_conditions",
+  "conditions": [
+   "Downsize total loan amount to align with sustainable repayment capacity based on monthly net business cash flow",
+   "Provide written confirmation reconciling the shop name Linh Fashion VN shown on the March 2026 Shopee dashboard",
+   "Provide an updated credit bureau statement or repayment schedule for active obligations with FE CREDIT and SPAYLATER",
+   "Verify bank account ownership and replace watermarked synthetic documentation with certified bank originals"
+  ],
+  "rationale": "Linh Fashion Official demonstrates authentic retail apparel operations with positive operating margins and recurring e-commerce cash flows. However, the requested loan size is excessively leveraged against true operational debt-servicing capacity, which is further constrained by personal fund transfers and active consumer credit lines. An approval scaled down to verifiable net cash generation mitigates credit risk while accommodating business expansion."
+ },
+ "state": {
+  "output": {
+   "headline": "Online apparel merchant Linh Fashion Official demonstrates steady marketplace sales and positive cash accumulation but carries non-operating balance inflation and existing consumer debt.",
+   "sections": [
+    {
+     "heading": "Business overview",
+     "paragraphs": [
+      "Linh Fashion Official operates an online apparel retail business on the Shopee platform in Vietnam. Premises photographs from document D14 verify an active operating base showing branded signage, garment display racks, packaged parcels prepared for courier transit, and operational shipping supplies.",
+      "The business requests an uncollateralized facility of {fig:APP.requested_amount} to finance operational scale. Operations are evidenced by bank statements from Ngan Hang So Saigon Mekong under the name of Nguyen Thi Linh covering December 2025 through May 2026, alongside monthly platform seller dashboards."
+     ],
+     "figure_ids": [
+      "APP.requested_amount"
+     ]
+    },
+    {
+     "heading": "Cash flow",
+     "paragraphs": [
+      "Across the six-month evaluated banking history in document D01, total recorded inflow reached {fig:CF.total_inflow} against total outflow of {fig:CF.total_outflow}, generating an average monthly net cash surplus of {fig:CF.avg_monthly_net}. However, operational revenue is notably lower than total inflow because substantial funds stem from non-revenue movements.",
+      "After stripping out own-account transfers and pass-through funds, average monthly business inflow moderates to {fig:CF.avg_monthly_business_inflow}, while average monthly outflow stands at {fig:CF.avg_monthly_outflow}. The business maintains a steady trajectory with a positive monthly inflow growth rate of {fig:CF.revenue_trend_pct} and low revenue volatility of {fig:CF.inflow_volatility_cv}.",
+      "Bank balances closed positively across every reviewed cycle, increasing from an initial opening balance of {fig:DOC.D01.opening_balance} to a period close of {fig:DOC.D01.closing_balance} in May 2026. Month-end concentration remains controlled, with the final five days of the month accounting for a portion of {fig:CF.end_of_month_concentration} of total inflows."
+     ],
+     "figure_ids": [
+      "CF.total_inflow",
+      "CF.total_outflow",
+      "CF.avg_monthly_net",
+      "CF.avg_monthly_business_inflow",
+      "CF.avg_monthly_outflow",
+      "CF.revenue_trend_pct",
+      "CF.inflow_volatility_cv",
+      "DOC.D01.opening_balance",
+      "DOC.D01.closing_balance",
+      "CF.end_of_month_concentration"
+     ]
+    },
+    {
+     "heading": "Revenue quality and concentration",
+     "paragraphs": [
+      "Operating revenue is derived predominantly through Shopee digital payouts, which supplied {fig:CF.platform_payout_total} across eighteen disbursements into the primary bank account. Cash deposits contributed {fig:CF.cash_deposit_total} across twenty-four transactions, aligning with COD collections documented on platform dashboards.",
+      "Monthly platform seller dashboards from January 2026 through June 2026 reflect sustained retail demand. Monthly gross sales progressed from {fig:DOC.D02.gross_sales} in January 2026, passing {fig:DOC.D04.gross_sales} in March 2026, and reaching {fig:DOC.D07.gross_sales} by June 2026. Cumulative dashboard gross sales reached {fig:CF.dashboard_gross_sales_total}.",
+      "Total non-business injections totaled {fig:CF.self_transfer_total} across three distinct personal deposits, including a transfer of {fig:TX.T0037} in January 2026, {fig:TX.T0126} in March 2026, and {fig:TX.T0173} in May 2026. Additionally, a rapid round-trip transaction of {fig:TX.T0110} received in March 2026 was repaid within days via transfer {fig:TX.T0118}, inflating nominal transaction velocity."
+     ],
+     "figure_ids": [
+      "CF.platform_payout_total",
+      "CF.cash_deposit_total",
+      "DOC.D02.gross_sales",
+      "DOC.D04.gross_sales",
+      "DOC.D07.gross_sales",
+      "CF.dashboard_gross_sales_total",
+      "CF.self_transfer_total",
+      "TX.T0037",
+      "TX.T0126",
+      "TX.T0173",
+      "TX.T0110",
+      "TX.T0118"
+     ]
+    },
+    {
+     "heading": "Obligations and leverage",
+     "paragraphs": [
+      "Bank records confirm ongoing consumer debt service obligations totaling {fig:CF.recurring_debt_service_monthly} per month across two separate lending lines. These consist of regular payments of {fig:CF.recurring.1.amount} across six occurrences to FE CREDIT and monthly payments of {fig:CF.recurring.2.amount} across six occurrences to SPAYLATER.",
+      "The borrower also services a recurring transfer of {fig:CF.recurring.3.amount} monthly to Nguyen Thi Mai, alongside periodic utility fees of {fig:CF.recurring.4.amount} for SMS banking. Regular inventory procurement disbursements are made to apparel suppliers, including payments to Xuong May Minh Anh such as {fig:TX.T0045} and Cho Tan Binh fabric suppliers such as {fig:TX.T0116}.",
+      "Assessed three-month net operational cash flow indicates an illustrative repayment capacity of {fig:CF.suggested_capacity}. Consequently, the applicant's requested loan of {fig:APP.requested_amount} represents an excessive leverage multiple of {fig:CF.request_to_capacity} relative to its demonstrated debt service capacity."
+     ],
+     "figure_ids": [
+      "CF.recurring_debt_service_monthly",
+      "CF.recurring.1.amount",
+      "CF.recurring.2.amount",
+      "CF.recurring.3.amount",
+      "CF.recurring.4.amount",
+      "TX.T0045",
+      "TX.T0116",
+      "CF.suggested_capacity",
+      "APP.requested_amount",
+      "CF.request_to_capacity"
+     ]
+    },
+    {
+     "heading": "Document quality and coverage",
+     "paragraphs": [
+      "The application includes six consecutive months of complete bank statements from December 2025 through May 2026 with no missing calendar periods. Six consecutive monthly Shopee seller dashboards covering January 2026 through June 2026 corroborate digital shop activity and order metrics.",
+      "Document discrepancies are present among the supporting documentation. A naming mismatch exists between the applicant profile and dashboard D04, which displays the shop name Linh Fashion VN rather than Linh Fashion Official. Furthermore, logistics receipt D12 is suspected of duplication against D09 sharing identical transaction details, while all provided files display synthetic test watermarks."
+     ],
+     "figure_ids": [
+      "DOC.D01.closing_balance"
+     ]
+    },
+    {
+     "heading": "Recommendation",
+     "paragraphs": [
+      "It is recommended to approve with conditions a reduced credit facility rather than the requested principal. While legitimate online merchandise movement and healthy platform sales are proven, the requested sum of {fig:APP.requested_amount} is roughly seven times demonstrated illustrative capacity and unsupportable under standard serviceability thresholds.",
+      "Approval should be restricted to a lower facility aligned with the borrower's debt-service capacity of {fig:CF.suggested_capacity}, subject to verifying the shop naming discrepancy and confirming existing outstanding debts."
+     ],
+     "figure_ids": [
+      "APP.requested_amount",
+      "CF.suggested_capacity"
+     ]
+    }
+   ],
+   "key_figure_ids": [
+    "APP.requested_amount",
+    "CF.avg_monthly_business_inflow",
+    "CF.suggested_capacity",
+    "CF.request_to_capacity",
+    "CF.self_transfer_total",
+    "CF.recurring_debt_service_monthly"
+   ],
+   "strengths": [
+    "Consistently growing platform sales supported by healthy Shopee order counts and ratings across six months",
+    "Positive net cash generation and rising closing bank balances throughout the analyzed statement history",
+    "Verified physical workspace with stock and shipping materials corroborating digital shop activity"
+   ],
+   "concerns": [
+    "Loan request amount represents nearly seven times the business's illustrative net repayment capacity",
+    "Bank statements show repeated non-operational capital injections including self-transfers and a rapid round-trip transfer",
+    "Active recurring debt obligations to FE CREDIT and SPAYLATER competing for monthly operating cash",
+    "Minor shop name inconsistency on March 2026 dashboard and duplicate logistics receipt document"
+   ],
+   "recommendation": "approve_with_conditions",
+   "conditions": [
+    "Downsize total loan amount to align with sustainable repayment capacity based on monthly net business cash flow",
+    "Provide written confirmation reconciling the shop name Linh Fashion VN shown on the March 2026 Shopee dashboard",
+    "Provide an updated credit bureau statement or repayment schedule for active obligations with FE CREDIT and SPAYLATER",
+    "Verify bank account ownership and replace watermarked synthetic documentation with certified bank originals"
+   ],
+   "rationale": "Linh Fashion Official demonstrates authentic retail apparel operations with positive operating margins and recurring e-commerce cash flows. However, the requested loan size is excessively leveraged against true operational debt-servicing capacity, which is further constrained by personal fund transfers and active consumer credit lines. An approval scaled down to verifiable net cash generation mitigates credit risk while accommodating business expansion."
+  }
+ },
+ "input_tokens": 12862,
+ "output_tokens": 2309,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "analyst-v1.3",
+ "agent": "analyst",
+ "cached_at": "2026-10-15T07:05:18+00:00"
+}

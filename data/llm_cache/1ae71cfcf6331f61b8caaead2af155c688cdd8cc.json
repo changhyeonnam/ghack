@@ -1,0 +1,153 @@
+{
+ "results": [
+  {
+   "text": "### Q1: Revenue Double Counting\n- **Verdict**: PASS (with note).\n- **Evidence & Tool Results**: The automated check flagged `payout reconciliation` as potential double-count risk because dashboard payouts (482,713,000 VND) and dashboard gross (317,100,000 VND) exceed platform payouts credited in D01 (272,642,000 VND). However, the credit memo appropriately evaluates actual cash received via bank statements rather than stacking dashboard GMV on top of bank deposits. Bank platform payouts of 272,642,000 VND [CF.platform_payout_total] and COD cash deposits of 97,680,000 VND [CF.cash_deposit_total] are recognized directly from D01, with off-ledger income correctly marked at 0 VND [CF.off_ledger_income_estimate]. No synthetic double counting occurred in the memo's net cash flow derivation.\n\n---\n\n### Q2: Month-to-Month Swings & Inflow Composition\n- **Verdict**: PASS.\n- **Evidence & Tool Results**: Raw monthly inflows swung significantly in March 2026 (155,136,000 VND [CF.m.2026-03.inflow] vs ~78M–104M in surrounding months). The memo accurately decomposes this spike: a 50,000,000 VND pass-through round trip ([TX.T0110] on 2026-03-14 returned on 2026-03-20 via [TX.T0118]) and a 31,000,000 VND self-transfer ([TX.T0126]). Stripping these out yields an adjusted business inflow of 74,136,000 VND [CF.m.2026-03.business_inflow], showing consistent underlying operational performance (CV of 0.097 [CF.inflow_volatility_cv]).\n\n---\n\n### Q3: Self-Transfers & Round-Trips\n- **Verdict**: PASS.\n- **Evidence & Tool Results**: Non-operational personal injections and pass-through funds were explicitly detected and isolated in the credit memo:\n  - Three self-transfers from account holder Nguyen Thi Linh totaling 82,500,000 VND [CF.self_transfer_total]: [TX.T0037] (24,000,000 VND on 2026-01-09), [TX.T0126] (31,000,000 VND on 2026-03-27), and [TX.T0173] (27,500,000 VND on 2026-05-08).\n  - One round-trip transfer from Nguyen Van Long of 50,000,000 VND [TX.T0110] received on 2026-03-14 and returned on 2026-03-20 [TX.T0118].\n  These are excluded from the calculated monthly business inflow of 75,465,333 VND [CF.avg_monthly_business_inflow].\n\n---\n\n### Q4: Document Duplication & Reused Assets\n- **Verdict**: OBJECTION (Severity: HIGH).\n- **Evidence & Tool Results**: Running `image_similarity(doc_id_a='D09', doc_id_b='D12')` confirms an exact perceptual hash match (`hamming_distance: 0`, verdict: `identical`). Document D12 (`ghn_receipt_05.jpg`) reuses the exact image of D09 (`ghn_receipt_02.jpg`, receipt no GHN-2231, amount 159,000 VND) with an altered date field (2026-11-03 vs 2026-02-11). Although the memo notes D12 as a suspected duplicate, this constitutes active image falsification / resubmission within the application package.\n\n---\n\n### Q5: Period Alignment Across Documents\n- **Verdict**: OBJECTION (Severity: MEDIUM).\n- **Evidence & Tool Results**: Period mismatch exists across core document sets. Statement D01 spans 2025-12-01 to 2026-05-31 (December 2025 – May 2026). Platform seller dashboards (D02–D07) span 2026-01-01 to 2026-06-30 (January 2026 – June 2026). As a result:\n  - December 2025 bank statement activity is not verified by any Shopee seller dashboard.\n  - June 2026 dashboard activity (D07: 61,650,000 VND gross sales) has no corresponding bank statement on file.\n\n---\n\n### Q6: Running Balance Continuity\n- **Verdict**: OBJECTION (Severity: CRITICAL).\n- **Evidence & Tool Results**: Running `recompute_balance_chain(doc_id='D01')` reveals two balance continuity breaks in bank statement D01:\n  1. Row `T0081` (2026-02-17, Page 3): Reported balance is 54,724,095 VND, whereas expected continuous balance is 73,224,095 VND (unaccounted drop of -18,500,000 VND).\n  2. Row `T0138` (2026-04-07, Page 4): Reported balance is 80,640,468 VND, whereas expected continuous balance is 87,840,468 VND (unaccounted drop of -7,200,000 VND).\n  These breaks indicate omitted debit rows or manual tampering in document D01. The memo completely overlooked these critical arithmetic breaks, asserting that balances closed positively without acknowledging statement manipulation.\n\n---\n\n### Q7: Undisclosed Debt Service & Recurring Outflows\n- **Verdict**: PASS.\n- **Evidence & Tool Results**: Tool `lookup_transactions(query='FE CREDIT')` confirms 6 monthly installments of 3,250,000 VND ([TX.T0005], [TX.T0034], [TX.T0067], [TX.T0100], [TX.T0134], [TX.T0167]). SPAYLATER installments of 1,480,000 VND x 6 were also verified ([TX.T0023], [TX.T0048], [TX.T0083], [TX.T0117], [TX.T0150], [TX.T0188]). Total debt service of 4,730,000 VND [CF.recurring_debt_service_monthly] is fully captured. The memo correctly identified rent to Nguyen Thi Mai (6,500,000 VND/month) and SMS banking (11,000 VND/month) as non-debt operational expenses.\n\n---\n\n### Q8: Premises Photo Plausibility\n- **Verdict**: PASS.\n- **Evidence & Tool Results**: D14 displays physical signage matching \"Linh Fashion\", organized garment stock racks, branded logistics packaging (J&T), and a laptop workstation. This plausibly corroborates a small-scale e-commerce apparel seller generating ~50,000,000–60,000,000 VND (~$2,000–$2,400 USD) in monthly turnover.\n\n---\n\n### Q9: Sourced Numerals & Audit Trail\n- **Verdict**: PASS.\n- **Evidence & Tool Results**: The automated checks verify that all figures cited in the memo map to figure IDs with 0 unsourced figure IDs and 0 unsourced numerals in the memo prose.\n\n---\n\n### Q10: Month-End Inflow Concentration (Window Dressing)\n- **Verdict**: PASS.\n- **Evidence & Tool Results**: The share of inflows arriving in the final 5 calendar days of each month is 26.3% [CF.end_of_month_concentration]. This is normal for a consumer retail seller receiving bi-weekly/monthly marketplace disbursements and does not reflect artificial month-end window dressing.\n\n---\n\n### Q11: Entity & Naming Consistency\n- **Verdict**: OBJECTION (Severity: MEDIUM).\n- **Evidence & Tool Results**: Dashboard D04 (March 2026) displays the shop name \"Linh Fashion VN\" rather than \"Linh Fashion Official\" (which appears on D02, D03, D05, D06, D07, and the loan application). In addition, D04 records 9,800 followers, which represents an unnatural dip between February (12,900) and April (13,600), suggesting D04 may belong to an entirely different shop profile.\n\n---\n\n### Q12: Stated Location, Language, and Currency\n- **Verdict**: PASS.\n- **Evidence & Tool Results**: All 14 documents are consistently denominated in Vietnamese Dong (VND) and written in Vietnamese (`vi`), perfectly aligned with an online business registered and operating in Vietnam.\n\n---\n\n### OVERALL ASSESSMENT\nThe applicant demonstrates genuine e-commerce merchant activity supported by Shopee sales records and an authentic operating space. However, the credit memo must be rejected in its current form due to **critical document integrity failures**: bank statement D01 contains two distinct running balance breaks totaling -25,700,000 VND in missing outflows (Row T0081 on 2026-02-17 for -18.5M VND and Row T0138 on 2026-04-07 for -7.2M VND), indicating row deletion or statement falsification. Furthermore, logistics receipt D12 is an exact duplicate of D09 with altered dates, and seller dashboard D04 belongs to a different shop name (\"Linh Fashion VN\"). Underwriting cannot approve or scale a credit facility against tampered bank statements and fraudulent supporting documentation; certified, untampered original statements must be required before any credit consideration.",
+   "parsed": null
+  },
+  {
+   "text": "{\n  \"objections\": [\n    {\n      \"id\": \"OBJ-01\",\n      \"question_id\": \"Q6\",\n      \"severity\": \"critical\",\n      \"title\": \"Bank Statement Running Balance Continuity Breaks\",\n      \"claim\": \"Bank statement D01 exhibits two running balance breaks: row T0081 on 2026-02-17 shows a reported balance of 54,724,095 VND against an expected 73,224,095 VND (-18,500,000 VND), and row T0138 on 2026-04-07 shows 80,640,468 VND against an expected 87,840,468 VND (-7,200,000 VND).\",\n      \"evidence_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 3,\n          \"bbox\": {\n            \"ymin\": 251,\n            \"xmin\": 67,\n            \"ymax\": 262,\n            \"xmax\": 932\n          },\n          \"snippet\": \"17/02/2026 SGMK26021747606 THANH TOAN DON HANG SI - TRAN THI HOA 18.500.000 54.724.095\"\n        },\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 4,\n          \"bbox\": {\n            \"ymin\": 530,\n            \"xmin\": 62,\n            \"ymax\": 542,\n            \"xmax\": 935\n          },\n          \"snippet\": \"07/04/2026 SGMK26040736451 TIEN DIEN EVNHCMC - MA KH PE0100xxxx 1.477.000 80.640.468\"\n        }\n      ],\n      \"figure_ids\": [\n        \"DOC.D01.closing_balance\",\n        \"CF.total_outflow\",\n        \"CF.avg_monthly_net\"\n      ],\n      \"tool_evidence\": \"recompute_balance_chain\",\n      \"suggested_action\": \"Freeze evaluation and require certified original e-statements or direct bank API linkage to reconcile 25,700,000 VND of unexplained negative balance adjustments.\",\n      \"financial_impact\": 25700000.0\n    },\n    {\n      \"id\": \"OBJ-02\",\n      \"question_id\": \"Q4\",\n      \"severity\": \"high\",\n      \"title\": \"Duplicated Logistics Receipt With Modified Dates\",\n      \"claim\": \"Logistics receipt D12 is an exact image clone of D09 (perceptual hash distance 0), sharing receipt number GHN-2231 and an identical amount of 159,000 VND while altering the transaction date from 2026-02-11 to 2026-11-03.\",\n      \"evidence_refs\": [\n        {\n          \"doc_id\": \"D09\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"ghn_receipt_02.jpg\"\n        },\n        {\n          \"doc_id\": \"D12\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"ghn_receipt_05.jpg\"\n        }\n      ],\n      \"figure_ids\": [\n        \"CF.receipts_purchases_total\",\n        \"CF.receipts_count\"\n      ],\n      \"tool_evidence\": \"image_similarity\",\n      \"suggested_action\": \"Disqualify document D12 from verification records, exclude 159,000 VND from verified supplier purchases, and flag application for document tampering review.\",\n      \"financial_impact\": 159000.0\n    },\n    {\n      \"id\": \"OBJ-03\",\n      \"question_id\": \"Q5\",\n      \"severity\": \"medium\",\n      \"title\": \"Period Misalignment Between Bank Statements and Seller Dashboards\",\n      \"claim\": \"Bank statement D01 covers December 2025 through May 2026, whereas Shopee seller dashboards D02-D07 cover January 2026 through June 2026, leaving December 2025 bank inflows unverified by dashboard records and June 2026 sales unsupported by banking records.\",\n      \"evidence_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"bank_statement_2025-12_2026-05.pdf\"\n        },\n        {\n          \"doc_id\": \"D02\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"shopee_dashboard_2026-01.png\"\n        },\n        {\n          \"doc_id\": \"D07\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"shopee_dashboard_2026-06.png\"\n        }\n      ],\n      \"figure_ids\": [\n        \"DOC.D07.gross_sales\",\n        \"CF.m.2025-12.inflow\"\n      ],\n      \"tool_evidence\": \"date_crosscheck\",\n      \"suggested_action\": \"Request the June 2026 bank statement and the December 2025 Shopee dashboard to ensure identical reporting periods across all operational channels.\",\n      \"financial_impact\": 61650000.0\n    },\n    {\n      \"id\": \"OBJ-04\",\n      \"question_id\": \"Q11\",\n      \"severity\": \"medium\",\n      \"title\": \"Shop Identity Inconsistency on March 2026 Dashboard\",\n      \"claim\": \"March 2026 seller dashboard D04 displays the shop name 'Linh Fashion VN' and 9,800 followers, conflicting with the applicant profile 'Linh Fashion Official' and its typical follower base of 12,400 to 14,200 shown on all other dashboards.\",\n      \"evidence_refs\": [\n        {\n          \"doc_id\": \"D04\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"shopee_dashboard_2026-03.png\"\n        }\n      ],\n      \"figure_ids\": [\n        \"DOC.D04.gross_sales\"\n      ],\n      \"tool_evidence\": null,\n      \"suggested_action\": \"Require the applicant to clarify shop ownership for March 2026 and provide official platform proof of account identity or re-export the D04 dashboard directly from the primary store.\",\n      \"financial_impact\": 52310000.0\n    }\n  ],\n  \"questions_checked\": [\n    \"Q1\",\n    \"Q2\",\n    \"Q3\",\n    \"Q4\",\n    \"Q5\",\n    \"Q6\",\n    \"Q7\",\n    \"Q8\",\n    \"Q9\",\n    \"Q10\",\n    \"Q11\",\n    \"Q12\"\n  ],\n  \"overall_assessment\": \"The application exhibits critical document integrity defects that prevent approval under current terms. Bank statement D01 displays two severe running balance continuity breaks totaling 25,700,000 VND in unexplained balance drops, indicating likely transaction omission or statement alteration. Additionally, logistics receipt D12 is an exact duplicate image of D09 with a falsified date, and the March 2026 Shopee dashboard references a different store name ('Linh Fashion VN'). Underwriting must withhold credit extension until original certified bank statements and reconciled platform dashboards are provided.\"\n}",
+   "parsed": {
+    "objections": [
+     {
+      "id": "OBJ-01",
+      "question_id": "Q6",
+      "severity": "critical",
+      "title": "Bank Statement Running Balance Continuity Breaks",
+      "claim": "Bank statement D01 exhibits two running balance breaks: row T0081 on 2026-02-17 shows a reported balance of 54,724,095 VND against an expected 73,224,095 VND (-18,500,000 VND), and row T0138 on 2026-04-07 shows 80,640,468 VND against an expected 87,840,468 VND (-7,200,000 VND).",
+      "evidence_refs": [
+       {
+        "doc_id": "D01",
+        "page": 3,
+        "bbox": {
+         "ymin": 251,
+         "xmin": 67,
+         "ymax": 262,
+         "xmax": 932
+        },
+        "snippet": "17/02/2026 SGMK26021747606 THANH TOAN DON HANG SI - TRAN THI HOA 18.500.000 54.724.095"
+       },
+       {
+        "doc_id": "D01",
+        "page": 4,
+        "bbox": {
+         "ymin": 530,
+         "xmin": 62,
+         "ymax": 542,
+         "xmax": 935
+        },
+        "snippet": "07/04/2026 SGMK26040736451 TIEN DIEN EVNHCMC - MA KH PE0100xxxx 1.477.000 80.640.468"
+       }
+      ],
+      "figure_ids": [
+       "DOC.D01.closing_balance",
+       "CF.total_outflow",
+       "CF.avg_monthly_net"
+      ],
+      "tool_evidence": "recompute_balance_chain",
+      "suggested_action": "Freeze evaluation and require certified original e-statements or direct bank API linkage to reconcile 25,700,000 VND of unexplained negative balance adjustments.",
+      "financial_impact": 25700000.0
+     },
+     {
+      "id": "OBJ-02",
+      "question_id": "Q4",
+      "severity": "high",
+      "title": "Duplicated Logistics Receipt With Modified Dates",
+      "claim": "Logistics receipt D12 is an exact image clone of D09 (perceptual hash distance 0), sharing receipt number GHN-2231 and an identical amount of 159,000 VND while altering the transaction date from 2026-02-11 to 2026-11-03.",
+      "evidence_refs": [
+       {
+        "doc_id": "D09",
+        "page": 1,
+        "bbox": null,
+        "snippet": "ghn_receipt_02.jpg"
+       },
+       {
+        "doc_id": "D12",
+        "page": 1,
+        "bbox": null,
+        "snippet": "ghn_receipt_05.jpg"
+       }
+      ],
+      "figure_ids": [
+       "CF.receipts_purchases_total",
+       "CF.receipts_count"
+      ],
+      "tool_evidence": "image_similarity",
+      "suggested_action": "Disqualify document D12 from verification records, exclude 159,000 VND from verified supplier purchases, and flag application for document tampering review.",
+      "financial_impact": 159000.0
+     },
+     {
+      "id": "OBJ-03",
+      "question_id": "Q5",
+      "severity": "medium",
+      "title": "Period Misalignment Between Bank Statements and Seller Dashboards",
+      "claim": "Bank statement D01 covers December 2025 through May 2026, whereas Shopee seller dashboards D02-D07 cover January 2026 through June 2026, leaving December 2025 bank inflows unverified by dashboard records and June 2026 sales unsupported by banking records.",
+      "evidence_refs": [
+       {
+        "doc_id": "D01",
+        "page": 1,
+        "bbox": null,
+        "snippet": "bank_statement_2025-12_2026-05.pdf"
+       },
+       {
+        "doc_id": "D02",
+        "page": 1,
+        "bbox": null,
+        "snippet": "shopee_dashboard_2026-01.png"
+       },
+       {
+        "doc_id": "D07",
+        "page": 1,
+        "bbox": null,
+        "snippet": "shopee_dashboard_2026-06.png"
+       }
+      ],
+      "figure_ids": [
+       "DOC.D07.gross_sales",
+       "CF.m.2025-12.inflow"
+      ],
+      "tool_evidence": "date_crosscheck",
+      "suggested_action": "Request the June 2026 bank statement and the December 2025 Shopee dashboard to ensure identical reporting periods across all operational channels.",
+      "financial_impact": 61650000.0
+     },
+     {
+      "id": "OBJ-04",
+      "question_id": "Q11",
+      "severity": "medium",
+      "title": "Shop Identity Inconsistency on March 2026 Dashboard",
+      "claim": "March 2026 seller dashboard D04 displays the shop name 'Linh Fashion VN' and 9,800 followers, conflicting with the applicant profile 'Linh Fashion Official' and its typical follower base of 12,400 to 14,200 shown on all other dashboards.",
+      "evidence_refs": [
+       {
+        "doc_id": "D04",
+        "page": 1,
+        "bbox": null,
+        "snippet": "shopee_dashboard_2026-03.png"
+       }
+      ],
+      "figure_ids": [
+       "DOC.D04.gross_sales"
+      ],
+      "tool_evidence": null,
+      "suggested_action": "Require the applicant to clarify shop ownership for March 2026 and provide official platform proof of account identity or re-export the D04 dashboard directly from the primary store.",
+      "financial_impact": 52310000.0
+     }
+    ],
+    "questions_checked": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12"
+    ],
+    "overall_assessment": "The application exhibits critical document integrity defects that prevent approval under current terms. Bank statement D01 displays two severe running balance continuity breaks totaling 25,700,000 VND in unexplained balance drops, indicating likely transaction omission or statement alteration. Additionally, logistics receipt D12 is an exact duplicate image of D09 with a falsified date, and the March 2026 Shopee dashboard references a different store name ('Linh Fashion VN'). Underwriting must withhold credit extension until original certified bank statements and reconciled platform dashboards are provided."
+   }
+  }
+ ],
+ "cached_at": "2026-10-15T07:05:54+00:00"
+}

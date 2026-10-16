@@ -1,0 +1,276 @@
+{
+ "text": "{\n  \"headline\": \"Credit Assessment Memo: Warung Ibu Sari - Working Capital Loan Application of IDR 25,000,000\",\n  \"sections\": [\n    {\n      \"heading\": \"Business overview\",\n      \"paragraphs\": [\n        \"Warung Ibu Sari is a grocery and daily goods retail business (sembako, drinks, cooking gas, gallon water) operated by Sari Dewi in Kebayoran Lama, South Jakarta.\",\n        \"Physical verification photos (D17, D18) show an active storefront with organized shelving, inventory, gas canisters, water gallons, and QRIS payment acceptance capabilities.\",\n        \"The business requests an IDR 25,000,000 loan for inventory expansion and general working capital.\"\n      ]\n    },\n    {\n      \"heading\": \"Cash flow\",\n      \"paragraphs\": [\n        \"The 6-month bank statement (January to June 2026) reflects steady cash flow activity. The opening balance on January 1, 2026, was IDR 10,550,000 and the closing balance on June 30, 2026, reached IDR 21,878,054.\",\n        \"The account shows regular cash deposits (Setor Tunai) ranging between IDR 2,400,000 and IDR 3,800,000 multiple times a month, alongside continuous QRIS digital settlements and direct transfers from repeat customers.\",\n        \"Operating expenses including rent (Sewa Kios Bulan at IDR 2,500,000 per month paid regularly to H. Mahmud), utilities (PLN electricity, PDAM water, and internet wifi), and substantial wholesale supplier payments are well-supported by operating inflows.\"\n      ]\n    },\n    {\n      \"heading\": \"Revenue quality\",\n      \"paragraphs\": [\n        \"Revenues are diversified across daily in-store cash transactions deposited periodically at Bank Nusantara Digital branches, frequent QRIS settlement credits (typically IDR 800,000 to IDR 1,900,000 daily), and recurring customer bulk orders (e.g., Hendra Kusuma, Budi Santoso, Agus Prasetyo, Siti Aminah, Rina Wulandari).\",\n        \"The sales velocity is consistent throughout the 6-month period, demonstrating an established local consumer base in the Kebayoran Lama market vicinity.\"\n      ]\n    },\n    {\n      \"heading\": \"Obligations\",\n      \"paragraphs\": [\n        \"The business has recurring rental obligations of IDR 2,500,000 due at the start of each month, paid without fail to H. Mahmud.\",\n        \"No formal debt service obligations or outstanding bank loans are observed on the bank statements. Occasional low balances occurred following large supplier payments (e.g., dipping to IDR 307,029 on April 9, 2026, after an IDR 10.3M inventory replenishment), but quickly recovered via incoming revenue.\"\n      ]\n    },\n    {\n      \"heading\": \"Document quality\",\n      \"paragraphs\": [\n        \"The bank statement (D01) exhibits unbroken balance continuity across all 5 pages and 6 months.\",\n        \"The receipts provided (D02 to D16) cross-reference directly with bank statement transfer debits (e.g., D02 GSB-1452 IDR 729,000 on 22/01/2026; D03 SR-0618 IDR 780,000 on 10/01/2026; D05 TGM-1006 IDR 1,259,000 on 26/02/2026; D06 TGM-1023 IDR 2,215,000 on 06/02/2026; D08 TGM-1044 IDR 892,000 on 21/03/2026; D12 SR-0638 IDR 708,000 on 13/05/2026) as well as regular cash operational purchases.\",\n        \"Premises photos confirm the presence of the business signage and QRIS payment setup.\"\n      ]\n    },\n    {\n      \"heading\": \"Recommendation\",\n      \"paragraphs\": [\n        \"Approval is recommended for the requested facility of IDR 25,000,000.\",\n        \"The business generates healthy monthly turnover sufficient to comfortably service an installment amortized over 6 to 12 months, backed by stable liquidity and verified trading suppliers.\"\n      ]\n    }\n  ],\n  \"figures\": [\n    {\n      \"label\": \"Opening Account Balance (01/01/2026)\",\n      \"value\": 10550000,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 150,\n            \"xmin\": 673,\n            \"ymax\": 162,\n            \"xmax\": 767\n          },\n          \"snippet\": \"IDR 10.550.000\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Closing Account Balance (30/06/2026)\",\n      \"value\": 21878054,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 165,\n            \"xmin\": 673,\n            \"ymax\": 176,\n            \"xmax\": 767\n          },\n          \"snippet\": \"IDR 21.878.054\"\n        },\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 5,\n          \"bbox\": {\n            \"ymin\": 654,\n            \"xmin\": 863,\n            \"ymax\": 667,\n            \"xmax\": 934\n          },\n          \"snippet\": \"21.878.054\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Monthly Kiosk Rent\",\n      \"value\": 2500000,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 272,\n            \"xmin\": 628,\n            \"ymax\": 283,\n            \"xmax\": 698\n          },\n          \"snippet\": \"2.500.000\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Loan Amount Requested\",\n      \"value\": 25000000,\n      \"source_refs\": []\n    }\n  ],\n  \"recommendation\": \"approve\",\n  \"concerns\": [\n    {\n      \"title\": \"Occasional Intra-Month Liquidity Dips\",\n      \"claim\": \"Account balance occasionally dropped to low amounts (e.g., IDR 307,029 on 09/04/2026) following bulk inventory restocks.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"title\": \"High Working Capital Outlays\",\n      \"claim\": \"Large single-day supplier transfers (exceeding IDR 10M-12M) place short-term pressure on available cash reserves.\",\n      \"severity\": \"low\"\n    }\n  ]\n}",
+ "parsed": {
+  "headline": "Credit Assessment Memo: Warung Ibu Sari - Working Capital Loan Application of IDR 25,000,000",
+  "sections": [
+   {
+    "heading": "Business overview",
+    "paragraphs": [
+     "Warung Ibu Sari is a grocery and daily goods retail business (sembako, drinks, cooking gas, gallon water) operated by Sari Dewi in Kebayoran Lama, South Jakarta.",
+     "Physical verification photos (D17, D18) show an active storefront with organized shelving, inventory, gas canisters, water gallons, and QRIS payment acceptance capabilities.",
+     "The business requests an IDR 25,000,000 loan for inventory expansion and general working capital."
+    ]
+   },
+   {
+    "heading": "Cash flow",
+    "paragraphs": [
+     "The 6-month bank statement (January to June 2026) reflects steady cash flow activity. The opening balance on January 1, 2026, was IDR 10,550,000 and the closing balance on June 30, 2026, reached IDR 21,878,054.",
+     "The account shows regular cash deposits (Setor Tunai) ranging between IDR 2,400,000 and IDR 3,800,000 multiple times a month, alongside continuous QRIS digital settlements and direct transfers from repeat customers.",
+     "Operating expenses including rent (Sewa Kios Bulan at IDR 2,500,000 per month paid regularly to H. Mahmud), utilities (PLN electricity, PDAM water, and internet wifi), and substantial wholesale supplier payments are well-supported by operating inflows."
+    ]
+   },
+   {
+    "heading": "Revenue quality",
+    "paragraphs": [
+     "Revenues are diversified across daily in-store cash transactions deposited periodically at Bank Nusantara Digital branches, frequent QRIS settlement credits (typically IDR 800,000 to IDR 1,900,000 daily), and recurring customer bulk orders (e.g., Hendra Kusuma, Budi Santoso, Agus Prasetyo, Siti Aminah, Rina Wulandari).",
+     "The sales velocity is consistent throughout the 6-month period, demonstrating an established local consumer base in the Kebayoran Lama market vicinity."
+    ]
+   },
+   {
+    "heading": "Obligations",
+    "paragraphs": [
+     "The business has recurring rental obligations of IDR 2,500,000 due at the start of each month, paid without fail to H. Mahmud.",
+     "No formal debt service obligations or outstanding bank loans are observed on the bank statements. Occasional low balances occurred following large supplier payments (e.g., dipping to IDR 307,029 on April 9, 2026, after an IDR 10.3M inventory replenishment), but quickly recovered via incoming revenue."
+    ]
+   },
+   {
+    "heading": "Document quality",
+    "paragraphs": [
+     "The bank statement (D01) exhibits unbroken balance continuity across all 5 pages and 6 months.",
+     "The receipts provided (D02 to D16) cross-reference directly with bank statement transfer debits (e.g., D02 GSB-1452 IDR 729,000 on 22/01/2026; D03 SR-0618 IDR 780,000 on 10/01/2026; D05 TGM-1006 IDR 1,259,000 on 26/02/2026; D06 TGM-1023 IDR 2,215,000 on 06/02/2026; D08 TGM-1044 IDR 892,000 on 21/03/2026; D12 SR-0638 IDR 708,000 on 13/05/2026) as well as regular cash operational purchases.",
+     "Premises photos confirm the presence of the business signage and QRIS payment setup."
+    ]
+   },
+   {
+    "heading": "Recommendation",
+    "paragraphs": [
+     "Approval is recommended for the requested facility of IDR 25,000,000.",
+     "The business generates healthy monthly turnover sufficient to comfortably service an installment amortized over 6 to 12 months, backed by stable liquidity and verified trading suppliers."
+    ]
+   }
+  ],
+  "figures": [
+   {
+    "label": "Opening Account Balance (01/01/2026)",
+    "value": 10550000.0,
+    "source_refs": [
+     {
+      "doc_id": "D01",
+      "page": 1,
+      "bbox": {
+       "ymin": 150,
+       "xmin": 673,
+       "ymax": 162,
+       "xmax": 767
+      },
+      "snippet": "IDR 10.550.000"
+     }
+    ]
+   },
+   {
+    "label": "Closing Account Balance (30/06/2026)",
+    "value": 21878054.0,
+    "source_refs": [
+     {
+      "doc_id": "D01",
+      "page": 1,
+      "bbox": {
+       "ymin": 165,
+       "xmin": 673,
+       "ymax": 176,
+       "xmax": 767
+      },
+      "snippet": "IDR 21.878.054"
+     },
+     {
+      "doc_id": "D01",
+      "page": 5,
+      "bbox": {
+       "ymin": 654,
+       "xmin": 863,
+       "ymax": 667,
+       "xmax": 934
+      },
+      "snippet": "21.878.054"
+     }
+    ]
+   },
+   {
+    "label": "Monthly Kiosk Rent",
+    "value": 2500000.0,
+    "source_refs": [
+     {
+      "doc_id": "D01",
+      "page": 1,
+      "bbox": {
+       "ymin": 272,
+       "xmin": 628,
+       "ymax": 283,
+       "xmax": 698
+      },
+      "snippet": "2.500.000"
+     }
+    ]
+   },
+   {
+    "label": "Loan Amount Requested",
+    "value": 25000000.0,
+    "source_refs": []
+   }
+  ],
+  "recommendation": "approve",
+  "concerns": [
+   {
+    "title": "Occasional Intra-Month Liquidity Dips",
+    "claim": "Account balance occasionally dropped to low amounts (e.g., IDR 307,029 on 09/04/2026) following bulk inventory restocks.",
+    "severity": "medium"
+   },
+   {
+    "title": "High Working Capital Outlays",
+    "claim": "Large single-day supplier transfers (exceeding IDR 10M-12M) place short-term pressure on available cash reserves.",
+    "severity": "low"
+   }
+  ]
+ },
+ "state": {
+  "output": {
+   "headline": "Credit Assessment Memo: Warung Ibu Sari - Working Capital Loan Application of IDR 25,000,000",
+   "sections": [
+    {
+     "heading": "Business overview",
+     "paragraphs": [
+      "Warung Ibu Sari is a grocery and daily goods retail business (sembako, drinks, cooking gas, gallon water) operated by Sari Dewi in Kebayoran Lama, South Jakarta.",
+      "Physical verification photos (D17, D18) show an active storefront with organized shelving, inventory, gas canisters, water gallons, and QRIS payment acceptance capabilities.",
+      "The business requests an IDR 25,000,000 loan for inventory expansion and general working capital."
+     ]
+    },
+    {
+     "heading": "Cash flow",
+     "paragraphs": [
+      "The 6-month bank statement (January to June 2026) reflects steady cash flow activity. The opening balance on January 1, 2026, was IDR 10,550,000 and the closing balance on June 30, 2026, reached IDR 21,878,054.",
+      "The account shows regular cash deposits (Setor Tunai) ranging between IDR 2,400,000 and IDR 3,800,000 multiple times a month, alongside continuous QRIS digital settlements and direct transfers from repeat customers.",
+      "Operating expenses including rent (Sewa Kios Bulan at IDR 2,500,000 per month paid regularly to H. Mahmud), utilities (PLN electricity, PDAM water, and internet wifi), and substantial wholesale supplier payments are well-supported by operating inflows."
+     ]
+    },
+    {
+     "heading": "Revenue quality",
+     "paragraphs": [
+      "Revenues are diversified across daily in-store cash transactions deposited periodically at Bank Nusantara Digital branches, frequent QRIS settlement credits (typically IDR 800,000 to IDR 1,900,000 daily), and recurring customer bulk orders (e.g., Hendra Kusuma, Budi Santoso, Agus Prasetyo, Siti Aminah, Rina Wulandari).",
+      "The sales velocity is consistent throughout the 6-month period, demonstrating an established local consumer base in the Kebayoran Lama market vicinity."
+     ]
+    },
+    {
+     "heading": "Obligations",
+     "paragraphs": [
+      "The business has recurring rental obligations of IDR 2,500,000 due at the start of each month, paid without fail to H. Mahmud.",
+      "No formal debt service obligations or outstanding bank loans are observed on the bank statements. Occasional low balances occurred following large supplier payments (e.g., dipping to IDR 307,029 on April 9, 2026, after an IDR 10.3M inventory replenishment), but quickly recovered via incoming revenue."
+     ]
+    },
+    {
+     "heading": "Document quality",
+     "paragraphs": [
+      "The bank statement (D01) exhibits unbroken balance continuity across all 5 pages and 6 months.",
+      "The receipts provided (D02 to D16) cross-reference directly with bank statement transfer debits (e.g., D02 GSB-1452 IDR 729,000 on 22/01/2026; D03 SR-0618 IDR 780,000 on 10/01/2026; D05 TGM-1006 IDR 1,259,000 on 26/02/2026; D06 TGM-1023 IDR 2,215,000 on 06/02/2026; D08 TGM-1044 IDR 892,000 on 21/03/2026; D12 SR-0638 IDR 708,000 on 13/05/2026) as well as regular cash operational purchases.",
+      "Premises photos confirm the presence of the business signage and QRIS payment setup."
+     ]
+    },
+    {
+     "heading": "Recommendation",
+     "paragraphs": [
+      "Approval is recommended for the requested facility of IDR 25,000,000.",
+      "The business generates healthy monthly turnover sufficient to comfortably service an installment amortized over 6 to 12 months, backed by stable liquidity and verified trading suppliers."
+     ]
+    }
+   ],
+   "figures": [
+    {
+     "label": "Opening Account Balance (01/01/2026)",
+     "value": 10550000.0,
+     "source_refs": [
+      {
+       "doc_id": "D01",
+       "page": 1,
+       "bbox": {
+        "ymin": 150,
+        "xmin": 673,
+        "ymax": 162,
+        "xmax": 767
+       },
+       "snippet": "IDR 10.550.000"
+      }
+     ]
+    },
+    {
+     "label": "Closing Account Balance (30/06/2026)",
+     "value": 21878054.0,
+     "source_refs": [
+      {
+       "doc_id": "D01",
+       "page": 1,
+       "bbox": {
+        "ymin": 165,
+        "xmin": 673,
+        "ymax": 176,
+        "xmax": 767
+       },
+       "snippet": "IDR 21.878.054"
+      },
+      {
+       "doc_id": "D01",
+       "page": 5,
+       "bbox": {
+        "ymin": 654,
+        "xmin": 863,
+        "ymax": 667,
+        "xmax": 934
+       },
+       "snippet": "21.878.054"
+      }
+     ]
+    },
+    {
+     "label": "Monthly Kiosk Rent",
+     "value": 2500000.0,
+     "source_refs": [
+      {
+       "doc_id": "D01",
+       "page": 1,
+       "bbox": {
+        "ymin": 272,
+        "xmin": 628,
+        "ymax": 283,
+        "xmax": 698
+       },
+       "snippet": "2.500.000"
+      }
+     ]
+    },
+    {
+     "label": "Loan Amount Requested",
+     "value": 25000000.0,
+     "source_refs": []
+    }
+   ],
+   "recommendation": "approve",
+   "concerns": [
+    {
+     "title": "Occasional Intra-Month Liquidity Dips",
+     "claim": "Account balance occasionally dropped to low amounts (e.g., IDR 307,029 on 09/04/2026) following bulk inventory restocks.",
+     "severity": "medium"
+    },
+    {
+     "title": "High Working Capital Outlays",
+     "claim": "Large single-day supplier transfers (exceeding IDR 10M-12M) place short-term pressure on available cash reserves.",
+     "severity": "low"
+    }
+   ]
+  }
+ },
+ "input_tokens": 12783,
+ "output_tokens": 1804,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "baseline-single-prompt-v1.0",
+ "agent": "baseline",
+ "cached_at": "2026-10-16T06:16:51+00:00"
+}

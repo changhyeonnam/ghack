@@ -1,0 +1,318 @@
+{
+ "text": "{\n  \"headline\": \"Credit Assessment Memo: Linh Fashion Official (150,000,000 VND Working Capital Facility)\",\n  \"sections\": [\n    {\n      \"heading\": \"Business overview\",\n      \"paragraphs\": [\n        \"Linh Fashion Official operates an online apparel retail business in Vietnam, primarily selling women's and casual garments (such as cotton t-shirts, vintage floral dresses, and wide-leg jeans) through the Shopee e-commerce platform under seller store Linh Fashion Official.\",\n        \"Physical dispatch operations and storage are conducted from Tan Binh District, Ho Chi Minh City, as corroborated by local shipping documentation and rental payments recorded across bank statements.\"\n      ]\n    },\n    {\n      \"heading\": \"Cash flow\",\n      \"paragraphs\": [\n        \"Analysis of the primary bank statement (Ngan Hang So Saigon Mekong, account holder Nguyen Thi Linh) for the 6-month period from December 1, 2025 to May 31, 2026 demonstrates consistent bi-weekly payouts from Shopee ranging between 7,499,000 VND and 27,531,000 VND per disbursement.\",\n        \"Monthly platform net payouts credited to the bank account averaged approximately 40M to 53M VND, supporting operational inventory payments to fabric and garment suppliers (Xuong May Minh Anh and Cho Tan Binh), logistics fees (GHN Express and J&T Express), and advertising outlays.\",\n        \"Closing bank balance stood at 138,270,707 VND as of May 31, 2026, demonstrating stable liquidity maintenance.\"\n      ]\n    },\n    {\n      \"heading\": \"Revenue quality\",\n      \"paragraphs\": [\n        \"Platform dashboard reports for January through June 2026 show steady top-line growth. Monthly gross sales expanded from 48,650,000 VND (334 orders) in January to 61,650,000 VND (414 orders) in June.\",\n        \"Store feedback metrics remain high with ratings around 4.8 to 4.9 out of 5.0 and follower count growing from 12,400 to over 14,200. COD sales comprise a manageable portion of total value (~30% to 36%), indicating solid pre-paid and digital settlement proportions.\"\n      ]\n    },\n    {\n      \"heading\": \"Obligations\",\n      \"paragraphs\": [\n        \"Existing debt obligations observed in the bank statement include fixed monthly installments of 3,250,000 VND paid to FE Credit (recorded on the 5th of each month) and regular SPayLater installment debits of 1,480,000 VND on the 19th-21st of each month.\",\n        \"Recurring operational overhead includes monthly premises rent of 6,500,000 VND to Nguyen Thi Mai and utility charges (electricity, water, internet) averaging around 2,000,000 VND monthly.\"\n      ]\n    },\n    {\n      \"heading\": \"Document quality\",\n      \"paragraphs\": [\n        \"The financial bank statements and monthly Shopee seller analytics show strong consistency across transaction timestamps, payout figures, and order velocity.\",\n        \"However, receipt D12 is an exact duplicate of D09 (same receipt number GHN-2231, identical package tracking IDs, and amounts) with only the month altered from 11/02/2026 to 11/03/2026, indicating an artificial or altered delivery voucher. In addition, premises photo D14 appears to be an illustrative graphic rather than an authentic physical site photograph.\"\n      ]\n    },\n    {\n      \"heading\": \"Recommendation\",\n      \"paragraphs\": [\n        \"An approval with conditions is recommended. Although the business demonstrates adequate cash turnover and genuine platform revenues capable of servicing the 150,000,000 VND loan, document discrepancies in offline shipping vouchers require clarification.\",\n        \"Disbursement should be conditioned on: (1) verification of the applicant's official Shopee API integration or live portal audit, and (2) on-site physical inspection or submission of genuine geo-tagged site photographs.\"\n      ]\n    }\n  ],\n  \"figures\": [\n    {\n      \"label\": \"Closing Bank Balance (31/05/2026)\",\n      \"value\": 138270707,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 172,\n            \"xmin\": 673,\n            \"ymax\": 184,\n            \"xmax\": 782\n          },\n          \"snippet\": \"VND 138.270.707\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Shopee Gross Sales (January 2026)\",\n      \"value\": 48650000,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D02\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 266,\n            \"xmin\": 149,\n            \"ymax\": 286,\n            \"xmax\": 254\n          },\n          \"snippet\": \"₫48.650.000\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Shopee Gross Sales (June 2026)\",\n      \"value\": 61650000,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D07\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 266,\n            \"xmin\": 149,\n            \"ymax\": 286,\n            \"xmax\": 253\n          },\n          \"snippet\": \"₫61.650.000\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Monthly Premises Rent\",\n      \"value\": 6500000,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 277,\n            \"xmin\": 632,\n            \"ymax\": 286,\n            \"xmax\": 698\n          },\n          \"snippet\": \"6.500.000\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Monthly FE Credit Installment\",\n      \"value\": 3250000,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 338,\n            \"xmin\": 632,\n            \"ymax\": 348,\n            \"xmax\": 699\n          },\n          \"snippet\": \"3.250.000\"\n        }\n      ]\n    }\n  ],\n  \"recommendation\": \"approve_with_conditions\",\n  \"concerns\": [\n    {\n      \"title\": \"Altered Logistics Receipt Document\",\n      \"claim\": \"Logistics receipt D12 shares identical waybill numbers, weights, and fee subtotals as receipt D09, with only the date modified, suggesting document manipulation.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"title\": \"Synthetic / Illustrated Premises Photo\",\n      \"claim\": \"The submitted photo of the business premises (D14) appears to be an illustration/vector graphic rather than an authentic photographic record of inventory and workspace.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"title\": \"Existing Fixed Debt Obligations\",\n      \"claim\": \"The borrower maintains ongoing consumer finance obligations (FE Credit) and platform debt (SPayLater) totaling approximately 4.73M VND per month.\",\n      \"severity\": \"low\"\n    }\n  ]\n}",
+ "parsed": {
+  "headline": "Credit Assessment Memo: Linh Fashion Official (150,000,000 VND Working Capital Facility)",
+  "sections": [
+   {
+    "heading": "Business overview",
+    "paragraphs": [
+     "Linh Fashion Official operates an online apparel retail business in Vietnam, primarily selling women's and casual garments (such as cotton t-shirts, vintage floral dresses, and wide-leg jeans) through the Shopee e-commerce platform under seller store Linh Fashion Official.",
+     "Physical dispatch operations and storage are conducted from Tan Binh District, Ho Chi Minh City, as corroborated by local shipping documentation and rental payments recorded across bank statements."
+    ]
+   },
+   {
+    "heading": "Cash flow",
+    "paragraphs": [
+     "Analysis of the primary bank statement (Ngan Hang So Saigon Mekong, account holder Nguyen Thi Linh) for the 6-month period from December 1, 2025 to May 31, 2026 demonstrates consistent bi-weekly payouts from Shopee ranging between 7,499,000 VND and 27,531,000 VND per disbursement.",
+     "Monthly platform net payouts credited to the bank account averaged approximately 40M to 53M VND, supporting operational inventory payments to fabric and garment suppliers (Xuong May Minh Anh and Cho Tan Binh), logistics fees (GHN Express and J&T Express), and advertising outlays.",
+     "Closing bank balance stood at 138,270,707 VND as of May 31, 2026, demonstrating stable liquidity maintenance."
+    ]
+   },
+   {
+    "heading": "Revenue quality",
+    "paragraphs": [
+     "Platform dashboard reports for January through June 2026 show steady top-line growth. Monthly gross sales expanded from 48,650,000 VND (334 orders) in January to 61,650,000 VND (414 orders) in June.",
+     "Store feedback metrics remain high with ratings around 4.8 to 4.9 out of 5.0 and follower count growing from 12,400 to over 14,200. COD sales comprise a manageable portion of total value (~30% to 36%), indicating solid pre-paid and digital settlement proportions."
+    ]
+   },
+   {
+    "heading": "Obligations",
+    "paragraphs": [
+     "Existing debt obligations observed in the bank statement include fixed monthly installments of 3,250,000 VND paid to FE Credit (recorded on the 5th of each month) and regular SPayLater installment debits of 1,480,000 VND on the 19th-21st of each month.",
+     "Recurring operational overhead includes monthly premises rent of 6,500,000 VND to Nguyen Thi Mai and utility charges (electricity, water, internet) averaging around 2,000,000 VND monthly."
+    ]
+   },
+   {
+    "heading": "Document quality",
+    "paragraphs": [
+     "The financial bank statements and monthly Shopee seller analytics show strong consistency across transaction timestamps, payout figures, and order velocity.",
+     "However, receipt D12 is an exact duplicate of D09 (same receipt number GHN-2231, identical package tracking IDs, and amounts) with only the month altered from 11/02/2026 to 11/03/2026, indicating an artificial or altered delivery voucher. In addition, premises photo D14 appears to be an illustrative graphic rather than an authentic physical site photograph."
+    ]
+   },
+   {
+    "heading": "Recommendation",
+    "paragraphs": [
+     "An approval with conditions is recommended. Although the business demonstrates adequate cash turnover and genuine platform revenues capable of servicing the 150,000,000 VND loan, document discrepancies in offline shipping vouchers require clarification.",
+     "Disbursement should be conditioned on: (1) verification of the applicant's official Shopee API integration or live portal audit, and (2) on-site physical inspection or submission of genuine geo-tagged site photographs."
+    ]
+   }
+  ],
+  "figures": [
+   {
+    "label": "Closing Bank Balance (31/05/2026)",
+    "value": 138270707.0,
+    "source_refs": [
+     {
+      "doc_id": "D01",
+      "page": 1,
+      "bbox": {
+       "ymin": 172,
+       "xmin": 673,
+       "ymax": 184,
+       "xmax": 782
+      },
+      "snippet": "VND 138.270.707"
+     }
+    ]
+   },
+   {
+    "label": "Shopee Gross Sales (January 2026)",
+    "value": 48650000.0,
+    "source_refs": [
+     {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 266,
+       "xmin": 149,
+       "ymax": 286,
+       "xmax": 254
+      },
+      "snippet": "₫48.650.000"
+     }
+    ]
+   },
+   {
+    "label": "Shopee Gross Sales (June 2026)",
+    "value": 61650000.0,
+    "source_refs": [
+     {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 266,
+       "xmin": 149,
+       "ymax": 286,
+       "xmax": 253
+      },
+      "snippet": "₫61.650.000"
+     }
+    ]
+   },
+   {
+    "label": "Monthly Premises Rent",
+    "value": 6500000.0,
+    "source_refs": [
+     {
+      "doc_id": "D01",
+      "page": 1,
+      "bbox": {
+       "ymin": 277,
+       "xmin": 632,
+       "ymax": 286,
+       "xmax": 698
+      },
+      "snippet": "6.500.000"
+     }
+    ]
+   },
+   {
+    "label": "Monthly FE Credit Installment",
+    "value": 3250000.0,
+    "source_refs": [
+     {
+      "doc_id": "D01",
+      "page": 1,
+      "bbox": {
+       "ymin": 338,
+       "xmin": 632,
+       "ymax": 348,
+       "xmax": 699
+      },
+      "snippet": "3.250.000"
+     }
+    ]
+   }
+  ],
+  "recommendation": "approve_with_conditions",
+  "concerns": [
+   {
+    "title": "Altered Logistics Receipt Document",
+    "claim": "Logistics receipt D12 shares identical waybill numbers, weights, and fee subtotals as receipt D09, with only the date modified, suggesting document manipulation.",
+    "severity": "high"
+   },
+   {
+    "title": "Synthetic / Illustrated Premises Photo",
+    "claim": "The submitted photo of the business premises (D14) appears to be an illustration/vector graphic rather than an authentic photographic record of inventory and workspace.",
+    "severity": "medium"
+   },
+   {
+    "title": "Existing Fixed Debt Obligations",
+    "claim": "The borrower maintains ongoing consumer finance obligations (FE Credit) and platform debt (SPayLater) totaling approximately 4.73M VND per month.",
+    "severity": "low"
+   }
+  ]
+ },
+ "state": {
+  "output": {
+   "headline": "Credit Assessment Memo: Linh Fashion Official (150,000,000 VND Working Capital Facility)",
+   "sections": [
+    {
+     "heading": "Business overview",
+     "paragraphs": [
+      "Linh Fashion Official operates an online apparel retail business in Vietnam, primarily selling women's and casual garments (such as cotton t-shirts, vintage floral dresses, and wide-leg jeans) through the Shopee e-commerce platform under seller store Linh Fashion Official.",
+      "Physical dispatch operations and storage are conducted from Tan Binh District, Ho Chi Minh City, as corroborated by local shipping documentation and rental payments recorded across bank statements."
+     ]
+    },
+    {
+     "heading": "Cash flow",
+     "paragraphs": [
+      "Analysis of the primary bank statement (Ngan Hang So Saigon Mekong, account holder Nguyen Thi Linh) for the 6-month period from December 1, 2025 to May 31, 2026 demonstrates consistent bi-weekly payouts from Shopee ranging between 7,499,000 VND and 27,531,000 VND per disbursement.",
+      "Monthly platform net payouts credited to the bank account averaged approximately 40M to 53M VND, supporting operational inventory payments to fabric and garment suppliers (Xuong May Minh Anh and Cho Tan Binh), logistics fees (GHN Express and J&T Express), and advertising outlays.",
+      "Closing bank balance stood at 138,270,707 VND as of May 31, 2026, demonstrating stable liquidity maintenance."
+     ]
+    },
+    {
+     "heading": "Revenue quality",
+     "paragraphs": [
+      "Platform dashboard reports for January through June 2026 show steady top-line growth. Monthly gross sales expanded from 48,650,000 VND (334 orders) in January to 61,650,000 VND (414 orders) in June.",
+      "Store feedback metrics remain high with ratings around 4.8 to 4.9 out of 5.0 and follower count growing from 12,400 to over 14,200. COD sales comprise a manageable portion of total value (~30% to 36%), indicating solid pre-paid and digital settlement proportions."
+     ]
+    },
+    {
+     "heading": "Obligations",
+     "paragraphs": [
+      "Existing debt obligations observed in the bank statement include fixed monthly installments of 3,250,000 VND paid to FE Credit (recorded on the 5th of each month) and regular SPayLater installment debits of 1,480,000 VND on the 19th-21st of each month.",
+      "Recurring operational overhead includes monthly premises rent of 6,500,000 VND to Nguyen Thi Mai and utility charges (electricity, water, internet) averaging around 2,000,000 VND monthly."
+     ]
+    },
+    {
+     "heading": "Document quality",
+     "paragraphs": [
+      "The financial bank statements and monthly Shopee seller analytics show strong consistency across transaction timestamps, payout figures, and order velocity.",
+      "However, receipt D12 is an exact duplicate of D09 (same receipt number GHN-2231, identical package tracking IDs, and amounts) with only the month altered from 11/02/2026 to 11/03/2026, indicating an artificial or altered delivery voucher. In addition, premises photo D14 appears to be an illustrative graphic rather than an authentic physical site photograph."
+     ]
+    },
+    {
+     "heading": "Recommendation",
+     "paragraphs": [
+      "An approval with conditions is recommended. Although the business demonstrates adequate cash turnover and genuine platform revenues capable of servicing the 150,000,000 VND loan, document discrepancies in offline shipping vouchers require clarification.",
+      "Disbursement should be conditioned on: (1) verification of the applicant's official Shopee API integration or live portal audit, and (2) on-site physical inspection or submission of genuine geo-tagged site photographs."
+     ]
+    }
+   ],
+   "figures": [
+    {
+     "label": "Closing Bank Balance (31/05/2026)",
+     "value": 138270707.0,
+     "source_refs": [
+      {
+       "doc_id": "D01",
+       "page": 1,
+       "bbox": {
+        "ymin": 172,
+        "xmin": 673,
+        "ymax": 184,
+        "xmax": 782
+       },
+       "snippet": "VND 138.270.707"
+      }
+     ]
+    },
+    {
+     "label": "Shopee Gross Sales (January 2026)",
+     "value": 48650000.0,
+     "source_refs": [
+      {
+       "doc_id": "D02",
+       "page": 1,
+       "bbox": {
+        "ymin": 266,
+        "xmin": 149,
+        "ymax": 286,
+        "xmax": 254
+       },
+       "snippet": "₫48.650.000"
+      }
+     ]
+    },
+    {
+     "label": "Shopee Gross Sales (June 2026)",
+     "value": 61650000.0,
+     "source_refs": [
+      {
+       "doc_id": "D07",
+       "page": 1,
+       "bbox": {
+        "ymin": 266,
+        "xmin": 149,
+        "ymax": 286,
+        "xmax": 253
+       },
+       "snippet": "₫61.650.000"
+      }
+     ]
+    },
+    {
+     "label": "Monthly Premises Rent",
+     "value": 6500000.0,
+     "source_refs": [
+      {
+       "doc_id": "D01",
+       "page": 1,
+       "bbox": {
+        "ymin": 277,
+        "xmin": 632,
+        "ymax": 286,
+        "xmax": 698
+       },
+       "snippet": "6.500.000"
+      }
+     ]
+    },
+    {
+     "label": "Monthly FE Credit Installment",
+     "value": 3250000.0,
+     "source_refs": [
+      {
+       "doc_id": "D01",
+       "page": 1,
+       "bbox": {
+        "ymin": 338,
+        "xmin": 632,
+        "ymax": 348,
+        "xmax": 699
+       },
+       "snippet": "3.250.000"
+      }
+     ]
+    }
+   ],
+   "recommendation": "approve_with_conditions",
+   "concerns": [
+    {
+     "title": "Altered Logistics Receipt Document",
+     "claim": "Logistics receipt D12 shares identical waybill numbers, weights, and fee subtotals as receipt D09, with only the date modified, suggesting document manipulation.",
+     "severity": "high"
+    },
+    {
+     "title": "Synthetic / Illustrated Premises Photo",
+     "claim": "The submitted photo of the business premises (D14) appears to be an illustration/vector graphic rather than an authentic photographic record of inventory and workspace.",
+     "severity": "medium"
+    },
+    {
+     "title": "Existing Fixed Debt Obligations",
+     "claim": "The borrower maintains ongoing consumer finance obligations (FE Credit) and platform debt (SPayLater) totaling approximately 4.73M VND per month.",
+     "severity": "low"
+    }
+   ]
+  }
+ },
+ "input_tokens": 10531,
+ "output_tokens": 1882,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "baseline-single-prompt-v1.0",
+ "agent": "baseline",
+ "cached_at": "2026-10-15T07:06:10+00:00"
+}

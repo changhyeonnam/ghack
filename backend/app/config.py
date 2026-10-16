@@ -60,6 +60,9 @@ class Settings(BaseSettings):
     page_render_dpi: int = 110
     llm_page_max_width: int = 1200
     synth_dir: Path = REPO_ROOT / "data" / "synth"
+    # Gemini responses from the recorded live run, shipped with the repo so a checkout without an API key replays the
+    # real results (cache_only) instead of falling back to the answer-key mock.
+    bundled_cache_dir: Path = REPO_ROOT / "data" / "llm_cache"
     demo_seed_on_startup: bool = True
 
     # --- api ---------------------------------------------------------------
@@ -70,8 +73,15 @@ class Settings(BaseSettings):
     @property
     def resolved_llm_mode(self) -> Literal["live", "cache_only", "mock"]:
         if self.llm_mode == "auto":
-            return "live" if (self.google_api_key or self.use_vertexai) else "mock"
+            if self.google_api_key or self.use_vertexai:
+                return "live"
+            return "cache_only" if self.has_bundled_cache else "mock"
         return self.llm_mode
+
+    @property
+    def has_bundled_cache(self) -> bool:
+        d = self.bundled_cache_dir
+        return bool(d) and d.is_dir() and any(d.glob("*.json"))
 
     def export_genai_env(self) -> None:
         """ADK's Gemini wrapper reads credentials from the process environment."""

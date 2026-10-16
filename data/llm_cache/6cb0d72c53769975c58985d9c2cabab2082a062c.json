@@ -1,0 +1,459 @@
+{
+ "text": "{\"business_name_header\":\"Reyes Auto Repair\",\"address_header\":null,\"currency\":\"PHP\",\"period_label\":\"Buod Enero-Hunyo 2026\",\"entries\":[{\"row_id\":\"L0001\",\"date\":\"2026-01-01\",\"description\":\"Kita Enero\",\"amount\":78400,\"kind\":\"income\",\"source\":{\"doc_id\":\"D09\",\"page\":1,\"bbox\":{\"ymin\":156,\"xmin\":166,\"ymax\":182,\"xmax\":549},\"snippet\":\"Enero 78,400\"}},{\"row_id\":\"L0002\",\"date\":\"2026-01-01\",\"description\":\"Gastos Enero\",\"amount\":1150,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D09\",\"page\":1,\"bbox\":{\"ymin\":156,\"xmin\":166,\"ymax\":183,\"xmax\":734},\"snippet\":\"Enero 1,150\"}},{\"row_id\":\"L0003\",\"date\":\"2026-02-01\",\"description\":\"Kita Pebrero\",\"amount\":68600,\"kind\":\"income\",\"source\":{\"doc_id\":\"D09\",\"page\":1,\"bbox\":{\"ymin\":184,\"xmin\":166,\"ymax\":210,\"xmax\":547},\"snippet\":\"Pebrero 68,600\"}},{\"row_id\":\"L0004\",\"date\":\"2026-02-01\",\"description\":\"Gastos Pebrero\",\"amount\":7600,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D09\",\"page\":1,\"bbox\":{\"ymin\":184,\"xmin\":166,\"ymax\":211,\"xmax\":738},\"snippet\":\"Pebrero 7,600\"}},{\"row_id\":\"L0005\",\"date\":\"2026-03-01\",\"description\":\"Kita Marso\",\"amount\":69000,\"kind\":\"income\",\"source\":{\"doc_id\":\"D09\",\"page\":1,\"bbox\":{\"ymin\":210,\"xmin\":165,\"ymax\":235,\"xmax\":547},\"snippet\":\"Marso 69,000\"}},{\"row_id\":\"L0006\",\"date\":\"2026-03-01\",\"description\":\"Gastos Marso\",\"amount\":5800,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D09\",\"page\":1,\"bbox\":{\"ymin\":211,\"xmin\":165,\"ymax\":235,\"xmax\":736},\"snippet\":\"Marso 5,800\"}},{\"row_id\":\"L0007\",\"date\":\"2026-04-01\",\"description\":\"Kita Abril\",\"amount\":61950,\"kind\":\"income\",\"source\":{\"doc_id\":\"D09\",\"page\":1,\"bbox\":{\"ymin\":235,\"xmin\":164,\"ymax\":259,\"xmax\":547},\"snippet\":\"Abril 61,950\"}},{\"row_id\":\"L0008\",\"date\":\"2026-04-01\",\"description\":\"Gastos Abril\",\"amount\":4450,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D09\",\"page\":1,\"bbox\":{\"ymin\":236,\"xmin\":164,\"ymax\":260,\"xmax\":738},\"snippet\":\"Abril 4,450\"}},{\"row_id\":\"L0009\",\"date\":\"2026-05-01\",\"description\":\"Kita Mayo\",\"amount\":55150,\"kind\":\"income\",\"source\":{\"doc_id\":\"D09\",\"page\":1,\"bbox\":{\"ymin\":261,\"xmin\":163,\"ymax\":286,\"xmax\":549},\"snippet\":\"Mayo 55,150\"}},{\"row_id\":\"L0010\",\"date\":\"2026-05-01\",\"description\":\"Gastos Mayo\",\"amount\":3250,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D09\",\"page\":1,\"bbox\":{\"ymin\":261,\"xmin\":163,\"ymax\":286,\"xmax\":738},\"snippet\":\"Mayo 3,250\"}},{\"row_id\":\"L0011\",\"date\":\"2026-06-01\",\"description\":\"Kita Hunyo\",\"amount\":46200,\"kind\":\"income\",\"source\":{\"doc_id\":\"D09\",\"page\":1,\"bbox\":{\"ymin\":288,\"xmin\":165,\"ymax\":313,\"xmax\":549},\"snippet\":\"Hunyo 46,200\"}},{\"row_id\":\"L0012\",\"date\":\"2026-06-01\",\"description\":\"Gastos Hunyo\",\"amount\":9250,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D09\",\"page\":1,\"bbox\":{\"ymin\":288,\"xmin\":165,\"ymax\":313,\"xmax\":738},\"snippet\":\"Hunyo 9,250\"}}]}",
+ "parsed": {
+  "business_name_header": "Reyes Auto Repair",
+  "address_header": null,
+  "currency": "PHP",
+  "period_label": "Buod Enero-Hunyo 2026",
+  "entries": [
+   {
+    "row_id": "L0001",
+    "date": "2026-01-01",
+    "description": "Kita Enero",
+    "amount": 78400.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D09",
+     "page": 1,
+     "bbox": {
+      "ymin": 156,
+      "xmin": 166,
+      "ymax": 182,
+      "xmax": 549
+     },
+     "snippet": "Enero 78,400"
+    }
+   },
+   {
+    "row_id": "L0002",
+    "date": "2026-01-01",
+    "description": "Gastos Enero",
+    "amount": 1150.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D09",
+     "page": 1,
+     "bbox": {
+      "ymin": 156,
+      "xmin": 166,
+      "ymax": 183,
+      "xmax": 734
+     },
+     "snippet": "Enero 1,150"
+    }
+   },
+   {
+    "row_id": "L0003",
+    "date": "2026-02-01",
+    "description": "Kita Pebrero",
+    "amount": 68600.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D09",
+     "page": 1,
+     "bbox": {
+      "ymin": 184,
+      "xmin": 166,
+      "ymax": 210,
+      "xmax": 547
+     },
+     "snippet": "Pebrero 68,600"
+    }
+   },
+   {
+    "row_id": "L0004",
+    "date": "2026-02-01",
+    "description": "Gastos Pebrero",
+    "amount": 7600.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D09",
+     "page": 1,
+     "bbox": {
+      "ymin": 184,
+      "xmin": 166,
+      "ymax": 211,
+      "xmax": 738
+     },
+     "snippet": "Pebrero 7,600"
+    }
+   },
+   {
+    "row_id": "L0005",
+    "date": "2026-03-01",
+    "description": "Kita Marso",
+    "amount": 69000.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D09",
+     "page": 1,
+     "bbox": {
+      "ymin": 210,
+      "xmin": 165,
+      "ymax": 235,
+      "xmax": 547
+     },
+     "snippet": "Marso 69,000"
+    }
+   },
+   {
+    "row_id": "L0006",
+    "date": "2026-03-01",
+    "description": "Gastos Marso",
+    "amount": 5800.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D09",
+     "page": 1,
+     "bbox": {
+      "ymin": 211,
+      "xmin": 165,
+      "ymax": 235,
+      "xmax": 736
+     },
+     "snippet": "Marso 5,800"
+    }
+   },
+   {
+    "row_id": "L0007",
+    "date": "2026-04-01",
+    "description": "Kita Abril",
+    "amount": 61950.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D09",
+     "page": 1,
+     "bbox": {
+      "ymin": 235,
+      "xmin": 164,
+      "ymax": 259,
+      "xmax": 547
+     },
+     "snippet": "Abril 61,950"
+    }
+   },
+   {
+    "row_id": "L0008",
+    "date": "2026-04-01",
+    "description": "Gastos Abril",
+    "amount": 4450.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D09",
+     "page": 1,
+     "bbox": {
+      "ymin": 236,
+      "xmin": 164,
+      "ymax": 260,
+      "xmax": 738
+     },
+     "snippet": "Abril 4,450"
+    }
+   },
+   {
+    "row_id": "L0009",
+    "date": "2026-05-01",
+    "description": "Kita Mayo",
+    "amount": 55150.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D09",
+     "page": 1,
+     "bbox": {
+      "ymin": 261,
+      "xmin": 163,
+      "ymax": 286,
+      "xmax": 549
+     },
+     "snippet": "Mayo 55,150"
+    }
+   },
+   {
+    "row_id": "L0010",
+    "date": "2026-05-01",
+    "description": "Gastos Mayo",
+    "amount": 3250.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D09",
+     "page": 1,
+     "bbox": {
+      "ymin": 261,
+      "xmin": 163,
+      "ymax": 286,
+      "xmax": 738
+     },
+     "snippet": "Mayo 3,250"
+    }
+   },
+   {
+    "row_id": "L0011",
+    "date": "2026-06-01",
+    "description": "Kita Hunyo",
+    "amount": 46200.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D09",
+     "page": 1,
+     "bbox": {
+      "ymin": 288,
+      "xmin": 165,
+      "ymax": 313,
+      "xmax": 549
+     },
+     "snippet": "Hunyo 46,200"
+    }
+   },
+   {
+    "row_id": "L0012",
+    "date": "2026-06-01",
+    "description": "Gastos Hunyo",
+    "amount": 9250.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D09",
+     "page": 1,
+     "bbox": {
+      "ymin": 288,
+      "xmin": 165,
+      "ymax": 313,
+      "xmax": 738
+     },
+     "snippet": "Hunyo 9,250"
+    }
+   }
+  ]
+ },
+ "state": {
+  "output": {
+   "business_name_header": "Reyes Auto Repair",
+   "currency": "PHP",
+   "period_label": "Buod Enero-Hunyo 2026",
+   "entries": [
+    {
+     "row_id": "L0001",
+     "date": "2026-01-01",
+     "description": "Kita Enero",
+     "amount": 78400.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D09",
+      "page": 1,
+      "bbox": {
+       "ymin": 156,
+       "xmin": 166,
+       "ymax": 182,
+       "xmax": 549
+      },
+      "snippet": "Enero 78,400"
+     }
+    },
+    {
+     "row_id": "L0002",
+     "date": "2026-01-01",
+     "description": "Gastos Enero",
+     "amount": 1150.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D09",
+      "page": 1,
+      "bbox": {
+       "ymin": 156,
+       "xmin": 166,
+       "ymax": 183,
+       "xmax": 734
+      },
+      "snippet": "Enero 1,150"
+     }
+    },
+    {
+     "row_id": "L0003",
+     "date": "2026-02-01",
+     "description": "Kita Pebrero",
+     "amount": 68600.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D09",
+      "page": 1,
+      "bbox": {
+       "ymin": 184,
+       "xmin": 166,
+       "ymax": 210,
+       "xmax": 547
+      },
+      "snippet": "Pebrero 68,600"
+     }
+    },
+    {
+     "row_id": "L0004",
+     "date": "2026-02-01",
+     "description": "Gastos Pebrero",
+     "amount": 7600.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D09",
+      "page": 1,
+      "bbox": {
+       "ymin": 184,
+       "xmin": 166,
+       "ymax": 211,
+       "xmax": 738
+      },
+      "snippet": "Pebrero 7,600"
+     }
+    },
+    {
+     "row_id": "L0005",
+     "date": "2026-03-01",
+     "description": "Kita Marso",
+     "amount": 69000.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D09",
+      "page": 1,
+      "bbox": {
+       "ymin": 210,
+       "xmin": 165,
+       "ymax": 235,
+       "xmax": 547
+      },
+      "snippet": "Marso 69,000"
+     }
+    },
+    {
+     "row_id": "L0006",
+     "date": "2026-03-01",
+     "description": "Gastos Marso",
+     "amount": 5800.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D09",
+      "page": 1,
+      "bbox": {
+       "ymin": 211,
+       "xmin": 165,
+       "ymax": 235,
+       "xmax": 736
+      },
+      "snippet": "Marso 5,800"
+     }
+    },
+    {
+     "row_id": "L0007",
+     "date": "2026-04-01",
+     "description": "Kita Abril",
+     "amount": 61950.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D09",
+      "page": 1,
+      "bbox": {
+       "ymin": 235,
+       "xmin": 164,
+       "ymax": 259,
+       "xmax": 547
+      },
+      "snippet": "Abril 61,950"
+     }
+    },
+    {
+     "row_id": "L0008",
+     "date": "2026-04-01",
+     "description": "Gastos Abril",
+     "amount": 4450.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D09",
+      "page": 1,
+      "bbox": {
+       "ymin": 236,
+       "xmin": 164,
+       "ymax": 260,
+       "xmax": 738
+      },
+      "snippet": "Abril 4,450"
+     }
+    },
+    {
+     "row_id": "L0009",
+     "date": "2026-05-01",
+     "description": "Kita Mayo",
+     "amount": 55150.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D09",
+      "page": 1,
+      "bbox": {
+       "ymin": 261,
+       "xmin": 163,
+       "ymax": 286,
+       "xmax": 549
+      },
+      "snippet": "Mayo 55,150"
+     }
+    },
+    {
+     "row_id": "L0010",
+     "date": "2026-05-01",
+     "description": "Gastos Mayo",
+     "amount": 3250.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D09",
+      "page": 1,
+      "bbox": {
+       "ymin": 261,
+       "xmin": 163,
+       "ymax": 286,
+       "xmax": 738
+      },
+      "snippet": "Mayo 3,250"
+     }
+    },
+    {
+     "row_id": "L0011",
+     "date": "2026-06-01",
+     "description": "Kita Hunyo",
+     "amount": 46200.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D09",
+      "page": 1,
+      "bbox": {
+       "ymin": 288,
+       "xmin": 165,
+       "ymax": 313,
+       "xmax": 549
+      },
+      "snippet": "Hunyo 46,200"
+     }
+    },
+    {
+     "row_id": "L0012",
+     "date": "2026-06-01",
+     "description": "Gastos Hunyo",
+     "amount": 9250.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D09",
+      "page": 1,
+      "bbox": {
+       "ymin": 288,
+       "xmin": 165,
+       "ymax": 313,
+       "xmax": 738
+      },
+      "snippet": "Hunyo 9,250"
+     }
+    }
+   ]
+  }
+ },
+ "input_tokens": 996,
+ "output_tokens": 1168,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:handwritten_ledger",
+ "cached_at": "2026-10-15T07:07:25+00:00"
+}

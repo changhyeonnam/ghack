@@ -64,7 +64,8 @@ LEDGERLENS_PLAN.md  product plan (Korean working document)
 ## Run locally
 
 ```bash
-# backend (Python 3.12). Without GOOGLE_API_KEY it runs in *mock* mode: full pipeline, answers from the synthetic answer key.
+# backend (Python 3.12). Without GOOGLE_API_KEY it replays the recorded live Gemini run from data/llm_cache (cache_only):
+# real model output, no cost; new uploads and the customer letter need a key.
 cd backend && uv venv --python 3.12 .venv && uv pip install --python .venv/bin/python -r requirements.txt
 cp ../.env.example ../.env          # add GOOGLE_API_KEY=... for live Gemini calls
 .venv/bin/uvicorn app.main:app --port 8080 --reload
@@ -83,7 +84,7 @@ Open the app, click **Load demo cases** (each browser gets its own copy; **Reset
 ### LLM modes
 | `LEDGERLENS_LLM_MODE` | Behaviour |
 |---|---|
-| `auto` (default) | live Gemini when a key is present, otherwise mock |
+| `auto` (default) | live Gemini when a key is present; otherwise replay the bundled cache (`data/llm_cache`, recorded live run) if present, else mock |
 | `live` | call Gemini; responses are cached by content hash (model + prompt version + inputs) so re-runs are free and deterministic |
 | `cache_only` | never call Gemini except for the customer letter (`LEDGERLENS_LIVE_AGENTS_IN_CACHE_ONLY=explainer`, one short Flash call per signed decision, under the budget cap); any other cache miss returns 503. Use for the public demo instance |
 | `mock` | offline; answers come from the synthetic answer key |

@@ -1,0 +1,151 @@
+{
+ "text": "{\n  \"merchant\": \"AGEN GAS & GALON PAK UDIN\",\n  \"date\": \"2026-01-16\",\n  \"receipt_number\": \"001\",\n  \"currency\": \"IDR\",\n  \"total\": {\n    \"value\": 421000.0,\n    \"source\": {\n      \"doc_id\": \"D04\",\n      \"page\": 1,\n      \"bbox\": {\n        \"ymin\": 744,\n        \"xmin\": 757,\n        \"ymax\": 786,\n        \"xmax\": 917\n      },\n      \"snippet\": \"421.000\"\n    }\n  },\n  \"items\": [\n    {\n      \"description\": \"Gas LPG 3kg\",\n      \"amount\": 176000.0,\n      \"source\": {\n        \"doc_id\": \"D04\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 262,\n          \"xmin\": 751,\n          \"ymax\": 286,\n          \"xmax\": 874\n        },\n        \"snippet\": \"176.000\"\n      }\n    },\n    {\n      \"description\": \"Galon isi ulang\",\n      \"amount\": 30000.0,\n      \"source\": {\n        \"doc_id\": \"D04\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 320,\n          \"xmin\": 754,\n          \"ymax\": 343,\n          \"xmax\": 866\n        },\n        \"snippet\": \"30.000\"\n      }\n    },\n    {\n      \"description\": \"Gas LPG 12kg\",\n      \"amount\": 215000.0,\n      \"source\": {\n        \"doc_id\": \"D04\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 372,\n          \"xmin\": 756,\n          \"ymax\": 396,\n          \"xmax\": 879\n        },\n        \"snippet\": \"215.000\"\n      }\n    }\n  ],\n  \"payment_method\": null,\n  \"direction\": \"purchase\",\n  \"handwritten\": true\n}",
+ "parsed": {
+  "merchant": "AGEN GAS & GALON PAK UDIN",
+  "date": "2026-01-16",
+  "receipt_number": "001",
+  "currency": "IDR",
+  "total": {
+   "value": 421000.0,
+   "source": {
+    "doc_id": "D04",
+    "page": 1,
+    "bbox": {
+     "ymin": 744,
+     "xmin": 757,
+     "ymax": 786,
+     "xmax": 917
+    },
+    "snippet": "421.000"
+   }
+  },
+  "items": [
+   {
+    "description": "Gas LPG 3kg",
+    "amount": 176000.0,
+    "source": {
+     "doc_id": "D04",
+     "page": 1,
+     "bbox": {
+      "ymin": 262,
+      "xmin": 751,
+      "ymax": 286,
+      "xmax": 874
+     },
+     "snippet": "176.000"
+    }
+   },
+   {
+    "description": "Galon isi ulang",
+    "amount": 30000.0,
+    "source": {
+     "doc_id": "D04",
+     "page": 1,
+     "bbox": {
+      "ymin": 320,
+      "xmin": 754,
+      "ymax": 343,
+      "xmax": 866
+     },
+     "snippet": "30.000"
+    }
+   },
+   {
+    "description": "Gas LPG 12kg",
+    "amount": 215000.0,
+    "source": {
+     "doc_id": "D04",
+     "page": 1,
+     "bbox": {
+      "ymin": 372,
+      "xmin": 756,
+      "ymax": 396,
+      "xmax": 879
+     },
+     "snippet": "215.000"
+    }
+   }
+  ],
+  "payment_method": null,
+  "direction": "purchase",
+  "handwritten": true
+ },
+ "state": {
+  "output": {
+   "merchant": "AGEN GAS & GALON PAK UDIN",
+   "date": "2026-01-16",
+   "receipt_number": "001",
+   "currency": "IDR",
+   "total": {
+    "value": 421000.0,
+    "source": {
+     "doc_id": "D04",
+     "page": 1,
+     "bbox": {
+      "ymin": 744,
+      "xmin": 757,
+      "ymax": 786,
+      "xmax": 917
+     },
+     "snippet": "421.000"
+    }
+   },
+   "items": [
+    {
+     "description": "Gas LPG 3kg",
+     "amount": 176000.0,
+     "source": {
+      "doc_id": "D04",
+      "page": 1,
+      "bbox": {
+       "ymin": 262,
+       "xmin": 751,
+       "ymax": 286,
+       "xmax": 874
+      },
+      "snippet": "176.000"
+     }
+    },
+    {
+     "description": "Galon isi ulang",
+     "amount": 30000.0,
+     "source": {
+      "doc_id": "D04",
+      "page": 1,
+      "bbox": {
+       "ymin": 320,
+       "xmin": 754,
+       "ymax": 343,
+       "xmax": 866
+      },
+      "snippet": "30.000"
+     }
+    },
+    {
+     "description": "Gas LPG 12kg",
+     "amount": 215000.0,
+     "source": {
+      "doc_id": "D04",
+      "page": 1,
+      "bbox": {
+       "ymin": 372,
+       "xmin": 756,
+       "ymax": 396,
+       "xmax": 879
+      },
+      "snippet": "215.000"
+     }
+    }
+   ],
+   "direction": "purchase",
+   "handwritten": true
+  }
+ },
+ "input_tokens": 932,
+ "output_tokens": 574,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:receipt",
+ "cached_at": "2026-10-15T06:46:35+00:00"
+}

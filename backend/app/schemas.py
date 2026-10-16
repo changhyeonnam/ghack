@@ -313,6 +313,10 @@ class CashflowSummary(BaseModel):
     receipts_purchases_total: float = 0
     receipts_sales_total: float = 0
     ledger_income_total: float = 0
+    # Ledger income restricted to months the bank statement covers, without re-photographed duplicate pages:
+    # the like-for-like basis for comparing the ledger with bank cash deposits.
+    ledger_income_comparable: float = 0
+    ledger_duplicate_doc_ids: list[str] = Field(default_factory=list)
     ledger_expense_total: float = 0
     off_ledger_income_estimate: float = 0
     suggested_capacity: float = Field(default=0, description="Illustrative: 3 x avg monthly net business cash. Not a credit score.")

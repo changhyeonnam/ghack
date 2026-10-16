@@ -63,3 +63,68 @@ def test_statement_pages_merge_header_balances_and_renumber_rows():
     assert [t["row_id"] for t in m["transactions"]] == ["T0001", "T0002", "T0003"]
     assert m["bank_name"] == "VCB" and m["currency"] == "VND" and m["opening_balance"]["value"] == 5.0 and m["closing_balance"]["value"] == 8.0
     assert (m["period_start"], m["period_end"]) == ("2026-01-02", "2026-02-01")
+
+
+def _ledger(doc_id, month, amounts, label=""):
+    from app.schemas import DocType, DocumentExtraction, LedgerEntry, LedgerExtraction
+    entries = [LedgerEntry(row_id=f"L{i:04d}", date=f"2026-{month:02d}-{(i % 27) + 1:02d}", description=f"job {i}", amount=a, kind="income",
+                           source=SourceRef(doc_id=doc_id, page=1)) for i, a in enumerate(amounts, 1)]
+    return DocumentExtraction(doc_id=doc_id, doc_type=DocType.handwritten_ledger,
+                              handwritten_ledger=LedgerExtraction(period_label=label, entries=entries))
+
+
+def test_ledger_vs_deposits_compares_like_with_like():
+    """Case C shape: 6 ledger months but only Jan/Feb in the statement, one page re-photographed with the month
+    changed, and a summary page restating monthly totals. Only Jan+Feb daily lines are comparable."""
+    from app.tools.checks import reconcile_cash
+    jan, feb, mar = [1000.0, 2000.0, 3000.0], [1500.0, 2500.0, 500.0], [700.0, 800.0, 900.0]
+    exs = [_ledger("D02", 1, jan), _ledger("D03", 2, feb), _ledger("D04", 3, mar),
+           _ledger("D07", 4, mar),  # March page photographed again as "April"
+           _ledger("D09", 1, [6000.0], "summary")]
+    summary = exs[-1].handwritten_ledger
+    summary.entries += [summary.entries[0].model_copy(update={"row_id": "L0002", "date": "2026-02-01", "amount": 4500.0}),
+                        summary.entries[0].model_copy(update={"row_id": "L0003", "date": "2026-03-01", "amount": 2400.0})]
+    bank = _statement([("2026-01-08", "CASH DEPOSIT - BRANCH", 0, 6000, None, False),
+                       ("2026-02-09", "CASH DEPOSIT - BRANCH", 0, 4500, None, False)], opening=1000.0)
+    cf = compute_cashflow([bank, *exs], "PHP", ["RAMON REYES"], 50_000)
+    assert set(cf.ledger_duplicate_doc_ids) == {"D07", "D09"}
+    assert cf.ledger_income_total == 6000 + 4500 + 2400          # three real pages, all months
+    assert cf.ledger_income_comparable == 6000 + 4500            # only statement months
+    assert cf.off_ledger_income_estimate == 0
+    assert reconcile_cash(cf).double_count_risk                  # deposits mirror the ledger: same money
+
+
+def test_weekly_transfers_survive_a_gap_of_missing_statement_months():
+    rows = []
+    for d in ["01-02", "01-09", "01-16", "01-23", "01-30", "02-06", "02-13", "02-20", "02-27", "05-01", "05-08", "05-15", "05-22"]:
+        rows.append((f"2026-{d}", "GCASH TRANSFER TO JUAN DELA CRUZ", 3000, 0, "JUAN DELA CRUZ", False))
+    rows.append(("2026-01-05", "CASH DEPOSIT", 0, 50000, None, False))
+    rows.sort(key=lambda r: r[0])
+    cf = compute_cashflow([_statement(rows)], "PHP", ["RAMON REYES"], 50_000)
+    juan = [r for r in cf.recurring_transfers if "JUAN" in r.counterparty]
+    assert juan and juan[0].likely_debt_service and juan[0].occurrences == 13
+
+
+def test_missing_months_rule_merges_with_llm_objection_naming_the_months():
+    llm = [_obj("Q5", Severity.medium, "Statement omits March and April 2026", [SourceRef(doc_id="D01", page=1)])]
+    rule = _obj("Q5", Severity.high, "No statement rows for 2026-03, 2026-04")
+    out = merge_objections(llm, [rule])
+    assert len(out) == 1 and out[0].severity == Severity.high
+
+
+def test_entity_check_lists_only_mismatching_documents():
+    from app.schemas import DocType, DocumentExtraction, PremisesExtraction
+    from app.tools import checks
+    exs = [DocumentExtraction(doc_id="D10", doc_type=DocType.premises_photo, premises=PremisesExtraction(signage_text="Reyes Auto Repair")),
+           DocumentExtraction(doc_id="D11", doc_type=DocType.premises_photo, premises=PremisesExtraction(signage_text="SERVICE BAY 2"))]
+    res = [e for e in checks.entity_consistency(exs, None, "Reyes Auto Repair", "PH", "PHP") if e.field == "business_name"][0]
+    assert not res.consistent and set(res.values) == {"application", "D11"}
+
+
+def test_absorbed_rule_finding_stays_visible_in_the_llm_objection():
+    ref = SourceRef(doc_id="D01", page=1)
+    llm = [_obj("Q3", Severity.high, "Self-transfers across rows T0037, T0126", [ref])]
+    rule = _obj("Q3", Severity.high, "Credit of 24,000,000 on 2026-02-12 comes from the applicant's own account", [ref],
+                "self-transfer detector T0037")
+    out = merge_objections(llm, [rule])
+    assert len(out) == 1 and "24,000,000" in out[0].tool_evidence and "T0037" in out[0].tool_evidence

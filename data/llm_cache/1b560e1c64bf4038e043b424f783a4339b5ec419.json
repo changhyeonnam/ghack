@@ -1,0 +1,1701 @@
+{
+ "text": "{\n  \"bank_name\": \"Ngan Hang So Saigon Mekong (synthetic)\",\n  \"account_holder\": \"NGUYEN THI LINH\",\n  \"account_number_masked\": \"0071 **** **** 3392\",\n  \"address\": null,\n  \"currency\": \"VND\",\n  \"period_start\": null,\n  \"period_end\": null,\n  \"opening_balance\": null,\n  \"closing_balance\": null,\n  \"transactions\": [\n    {\n      \"row_id\": \"T0001\",\n      \"date\": \"2026-01-02\",\n      \"description\": \"TIEN THUE NHA T01/2026 - NGUYEN THI MAI\",\n      \"counterparty\": \"NGUYEN THI MAI\",\n      \"debit\": 6500000,\n      \"credit\": 0,\n      \"balance_after\": 36359035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 137,\n          \"xmin\": 60,\n          \"ymax\": 151,\n          \"xmax\": 939\n        },\n        \"snippet\": \"02/01/2026 SGMK26010263366 TIEN THUE NHA T01/2026 - NGUYEN THI MAI 6.500.000 36.359.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0002\",\n      \"date\": \"2026-01-05\",\n      \"description\": \"CHUYEN DEN FE CREDIT - TRA GOP\",\n      \"counterparty\": \"FE CREDIT\",\n      \"debit\": 3250000,\n      \"credit\": 0,\n      \"balance_after\": 33109035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 156,\n          \"xmin\": 60,\n          \"ymax\": 170,\n          \"xmax\": 939\n        },\n        \"snippet\": \"05/01/2026 SGMK26010586983 CHUYEN DEN FE CREDIT - TRA GOP 3.250.000 33.109.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0003\",\n      \"date\": \"2026-01-06\",\n      \"description\": \"THANH TOAN DON HANG - HOANG VAN NAM\",\n      \"counterparty\": \"HOANG VAN NAM\",\n      \"debit\": 0,\n      \"credit\": 1450000,\n      \"balance_after\": 34559035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 175,\n          \"xmin\": 60,\n          \"ymax\": 188,\n          \"xmax\": 939\n        },\n        \"snippet\": \"06/01/2026 SGMK26010608424 THANH TOAN DON HANG - HOANG VAN NAM 1.450.000 34.559.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0004\",\n      \"date\": \"2026-01-08\",\n      \"description\": \"TIEN DIEN EVNHCMC - MA KH PE0100xxxx\",\n      \"counterparty\": \"EVNHCMC\",\n      \"debit\": 917000,\n      \"credit\": 0,\n      \"balance_after\": 33642035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 194,\n          \"xmin\": 60,\n          \"ymax\": 207,\n          \"xmax\": 939\n        },\n        \"snippet\": \"08/01/2026 SGMK26010832913 TIEN DIEN EVNHCMC - MA KH PE0100xxxx 917.000 33.642.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0005\",\n      \"date\": \"2026-01-09\",\n      \"description\": \"CHUYEN TIEN TU NGUYEN THI LINH - VCB\",\n      \"counterparty\": \"NGUYEN THI LINH\",\n      \"debit\": 0,\n      \"credit\": 24000000,\n      \"balance_after\": 57642035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 212,\n          \"xmin\": 60,\n          \"ymax\": 226,\n          \"xmax\": 939\n        },\n        \"snippet\": \"09/01/2026 SGMK26010953206 CHUYEN TIEN TU NGUYEN THI LINH - VCB 24.000.000 57.642.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0006\",\n      \"date\": \"2026-01-10\",\n      \"description\": \"NOP TIEN MAT - PGD TAN BINH\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 4200000,\n      \"balance_after\": 61842035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 231,\n          \"xmin\": 60,\n          \"ymax\": 244,\n          \"xmax\": 939\n        },\n        \"snippet\": \"10/01/2026 SGMK26011079761 NOP TIEN MAT - PGD TAN BINH 4.200.000 61.842.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0007\",\n      \"date\": \"2026-01-10\",\n      \"description\": \"THANH TOAN QR - CUA HANG VPP\",\n      \"counterparty\": \"CUA HANG VPP\",\n      \"debit\": 319000,\n      \"credit\": 0,\n      \"balance_after\": 61523035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 250,\n          \"xmin\": 60,\n          \"ymax\": 263,\n          \"xmax\": 939\n        },\n        \"snippet\": \"10/01/2026 SGMK26011093263 THANH TOAN QR - CUA HANG VPP 319.000 61.523.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0008\",\n      \"date\": \"2026-01-13\",\n      \"description\": \"RUT TIEN ATM - ATM SGMK Q.TAN BINH\",\n      \"counterparty\": null,\n      \"debit\": 5000000,\n      \"credit\": 0,\n      \"balance_after\": 56523035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 267,\n          \"xmin\": 60,\n          \"ymax\": 281,\n          \"xmax\": 939\n        },\n        \"snippet\": \"13/01/2026 SGMK26011362857 RUT TIEN ATM - ATM SGMK Q.TAN BINH 5.000.000 56.523.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0009\",\n      \"date\": \"2026-01-13\",\n      \"description\": \"THANH TOAN GHN EXPRESS - CUOC VC\",\n      \"counterparty\": \"GHN EXPRESS\",\n      \"debit\": 1594000,\n      \"credit\": 0,\n      \"balance_after\": 54929035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 286,\n          \"xmin\": 60,\n          \"ymax\": 299,\n          \"xmax\": 939\n        },\n        \"snippet\": \"13/01/2026 SGMK26011309436 THANH TOAN GHN EXPRESS - CUOC VC 1.594.000 54.929.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0010\",\n      \"date\": \"2026-01-14\",\n      \"description\": \"CHUYEN TIEN TU SHOPEE PAYOUT - KY 1401\",\n      \"counterparty\": \"SHOPEE\",\n      \"debit\": 0,\n      \"credit\": 16614000,\n      \"balance_after\": 71543035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 305,\n          \"xmin\": 60,\n          \"ymax\": 319,\n          \"xmax\": 939\n        },\n        \"snippet\": \"14/01/2026 SGMK26011422279 CHUYEN TIEN TU SHOPEE PAYOUT - KY 1401 16.614.000 71.543.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0011\",\n      \"date\": \"2026-01-14\",\n      \"description\": \"SHOPEE ADS - NAP TIEN QUANG CAO\",\n      \"counterparty\": \"SHOPEE\",\n      \"debit\": 2500000,\n      \"credit\": 0,\n      \"balance_after\": 69043035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 324,\n          \"xmin\": 60,\n          \"ymax\": 338,\n          \"xmax\": 939\n        },\n        \"snippet\": \"14/01/2026 SGMK26011422727 SHOPEE ADS - NAP TIEN QUANG CAO 2.500.000 69.043.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0012\",\n      \"date\": \"2026-01-14\",\n      \"description\": \"THANH TOAN GHN EXPRESS - CUOC VC\",\n      \"counterparty\": \"GHN EXPRESS\",\n      \"debit\": 834000,\n      \"credit\": 0,\n      \"balance_after\": 68209035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 343,\n          \"xmin\": 60,\n          \"ymax\": 356,\n          \"xmax\": 939\n        },\n        \"snippet\": \"14/01/2026 SGMK26011459087 THANH TOAN GHN EXPRESS - CUOC VC 834.000 68.209.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0013\",\n      \"date\": \"2026-01-15\",\n      \"description\": \"CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG\",\n      \"counterparty\": \"XUONG MAY MINH ANH\",\n      \"debit\": 14700000,\n      \"credit\": 0,\n      \"balance_after\": 53509035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 361,\n          \"xmin\": 60,\n          \"ymax\": 375,\n          \"xmax\": 939\n        },\n        \"snippet\": \"15/01/2026 SGMK26011541810 CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG 14.700.000 53.509.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0014\",\n      \"date\": \"2026-01-17\",\n      \"description\": \"TIEN NUOC SAWACO\",\n      \"counterparty\": \"SAWACO\",\n      \"debit\": 268000,\n      \"credit\": 0,\n      \"balance_after\": 53241035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 380,\n          \"xmin\": 60,\n          \"ymax\": 393,\n          \"xmax\": 939\n        },\n        \"snippet\": \"17/01/2026 SGMK26011747765 TIEN NUOC SAWACO 268.000 53.241.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0015\",\n      \"date\": \"2026-01-18\",\n      \"description\": \"NOP TIEN MAT - PGD TAN BINH\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 3300000,\n      \"balance_after\": 56541035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 399,\n          \"xmin\": 60,\n          \"ymax\": 412,\n          \"xmax\": 939\n        },\n        \"snippet\": \"18/01/2026 SGMK26011814724 NOP TIEN MAT - PGD TAN BINH 3.300.000 56.541.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0016\",\n      \"date\": \"2026-01-19\",\n      \"description\": \"SPAYLATER THANH TOAN\",\n      \"counterparty\": \"SPAYLATER\",\n      \"debit\": 1480000,\n      \"credit\": 0,\n      \"balance_after\": 55061035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 417,\n          \"xmin\": 60,\n          \"ymax\": 431,\n          \"xmax\": 939\n        },\n        \"snippet\": \"19/01/2026 SGMK26011984907 SPAYLATER THANH TOAN 1.480.000 55.061.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0017\",\n      \"date\": \"2026-01-19\",\n      \"description\": \"NOP TIEN MAT - PGD TAN BINH\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 2800000,\n      \"balance_after\": 57861035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 435,\n          \"xmin\": 60,\n          \"ymax\": 449,\n          \"xmax\": 939\n        },\n        \"snippet\": \"19/01/2026 SGMK26011995625 NOP TIEN MAT - PGD TAN BINH 2.800.000 57.861.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0018\",\n      \"date\": \"2026-01-19\",\n      \"description\": \"THANH TOAN DON HANG - LE MINH TUAN\",\n      \"counterparty\": \"LE MINH TUAN\",\n      \"debit\": 0,\n      \"credit\": 4040000,\n      \"balance_after\": 61901035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 454,\n          \"xmin\": 60,\n          \"ymax\": 468,\n          \"xmax\": 939\n        },\n        \"snippet\": \"19/01/2026 SGMK26011945129 THANH TOAN DON HANG - LE MINH TUAN 4.040.000 61.901.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0019\",\n      \"date\": \"2026-01-19\",\n      \"description\": \"INTERNET CAP QUANG - THANH TOAN\",\n      \"counterparty\": null,\n      \"debit\": 250000,\n      \"credit\": 0,\n      \"balance_after\": 61651035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 473,\n          \"xmin\": 60,\n          \"ymax\": 486,\n          \"xmax\": 939\n        },\n        \"snippet\": \"19/01/2026 SGMK26011922893 INTERNET CAP QUANG - THANH TOAN 250.000 61.651.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0020\",\n      \"date\": \"2026-01-20\",\n      \"description\": \"THANH TOAN J&T EXPRESS - CUOC VC\",\n      \"counterparty\": \"J&T EXPRESS\",\n      \"debit\": 2551000,\n      \"credit\": 0,\n      \"balance_after\": 59100035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 491,\n          \"xmin\": 60,\n          \"ymax\": 505,\n          \"xmax\": 939\n        },\n        \"snippet\": \"20/01/2026 SGMK26012029751 THANH TOAN J&T EXPRESS - CUOC VC 2.551.000 59.100.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0021\",\n      \"date\": \"2026-01-20\",\n      \"description\": \"THANH TOAN QR - SIEU THI COOP\",\n      \"counterparty\": \"SIEU THI COOP\",\n      \"debit\": 485000,\n      \"credit\": 0,\n      \"balance_after\": 58615035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 510,\n          \"xmin\": 60,\n          \"ymax\": 524,\n          \"xmax\": 939\n        },\n        \"snippet\": \"20/01/2026 SGMK26012034504 THANH TOAN QR - SIEU THI COOP 485.000 58.615.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0022\",\n      \"date\": \"2026-01-21\",\n      \"description\": \"NOP TIEN MAT - PGD TAN BINH\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 4400000,\n      \"balance_after\": 63015035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 529,\n          \"xmin\": 60,\n          \"ymax\": 542,\n          \"xmax\": 939\n        },\n        \"snippet\": \"21/01/2026 SGMK26012135168 NOP TIEN MAT - PGD TAN BINH 4.400.000 63.015.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0023\",\n      \"date\": \"2026-01-21\",\n      \"description\": \"THANH TOAN DON HANG - NGO THI KIM\",\n      \"counterparty\": \"NGO THI KIM\",\n      \"debit\": 0,\n      \"credit\": 3600000,\n      \"balance_after\": 66615035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 547,\n          \"xmin\": 60,\n          \"ymax\": 561,\n          \"xmax\": 939\n        },\n        \"snippet\": \"21/01/2026 SGMK26012110882 THANH TOAN DON HANG - NGO THI KIM 3.600.000 66.615.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0024\",\n      \"date\": \"2026-01-24\",\n      \"description\": \"RUT TIEN ATM - ATM SGMK Q.TAN BINH\",\n      \"counterparty\": null,\n      \"debit\": 2500000,\n      \"credit\": 0,\n      \"balance_after\": 64115035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 566,\n          \"xmin\": 60,\n          \"ymax\": 580,\n          \"xmax\": 939\n        },\n        \"snippet\": \"24/01/2026 SGMK26012438570 RUT TIEN ATM - ATM SGMK Q.TAN BINH 2.500.000 64.115.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0025\",\n      \"date\": \"2026-01-25\",\n      \"description\": \"SHOPEE ADS - NAP TIEN QUANG CAO\",\n      \"counterparty\": \"SHOPEE\",\n      \"debit\": 2300000,\n      \"credit\": 0,\n      \"balance_after\": 61815035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 584,\n          \"xmin\": 60,\n          \"ymax\": 598,\n          \"xmax\": 939\n        },\n        \"snippet\": \"25/01/2026 SGMK26012597770 SHOPEE ADS - NAP TIEN QUANG CAO 2.300.000 61.815.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0026\",\n      \"date\": \"2026-01-26\",\n      \"description\": \"NOP TIEN MAT - PGD TAN BINH\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 2650000,\n      \"balance_after\": 64465035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 603,\n          \"xmin\": 60,\n          \"ymax\": 617,\n          \"xmax\": 939\n        },\n        \"snippet\": \"26/01/2026 SGMK26012689380 NOP TIEN MAT - PGD TAN BINH 2.650.000 64.465.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0027\",\n      \"date\": \"2026-01-27\",\n      \"description\": \"THANH TOAN NCC VAI - CHO TAN BINH\",\n      \"counterparty\": null,\n      \"debit\": 10500000,\n      \"credit\": 0,\n      \"balance_after\": 53965035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 622,\n          \"xmin\": 60,\n          \"ymax\": 635,\n          \"xmax\": 939\n        },\n        \"snippet\": \"27/01/2026 SGMK26012715727 THANH TOAN NCC VAI - CHO TAN BINH 10.500.000 53.965.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0028\",\n      \"date\": \"2026-01-27\",\n      \"description\": \"CUOC DI DONG VINATEL\",\n      \"counterparty\": \"VINATEL\",\n      \"debit\": 259000,\n      \"credit\": 0,\n      \"balance_after\": 53706035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 640,\n          \"xmin\": 60,\n          \"ymax\": 654,\n          \"xmax\": 939\n        },\n        \"snippet\": \"27/01/2026 SGMK26012775969 CUOC DI DONG VINATEL 259.000 53.706.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0029\",\n      \"date\": \"2026-01-28\",\n      \"description\": \"CHUYEN TIEN TU SHOPEE PAYOUT - KY 2801\",\n      \"counterparty\": \"SHOPEE\",\n      \"debit\": 0,\n      \"credit\": 27531000,\n      \"balance_after\": 81237035,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 659,\n          \"xmin\": 60,\n          \"ymax\": 673,\n          \"xmax\": 939\n        },\n        \"snippet\": \"28/01/2026 SGMK26012818498 CHUYEN TIEN TU SHOPEE PAYOUT - KY 2801 27.531.000 81.237.035\"\n      }\n    },\n    {\n      \"row_id\": \"T0030\",\n      \"date\": \"2026-01-28\",\n      \"description\": \"CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG\",\n      \"counterparty\": \"XUONG MAY MINH ANH\",\n      \"debit\": 13447940,\n      \"credit\": 0,\n      \"balance_after\": 67789095,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 678,\n          \"xmin\": 60,\n          \"ymax\": 691,\n          \"xmax\": 939\n        },\n        \"snippet\": \"28/01/2026 SGMK26012896686 CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG 13.447.940 67.789.095\"\n      }\n    },\n    {\n      \"row_id\": \"T0031\",\n      \"date\": \"2026-01-29\",\n      \"description\": \"THANH TOAN DON HANG - TRAN THI HOA\",\n      \"counterparty\": \"TRAN THI HOA\",\n      \"debit\": 0,\n      \"credit\": 3170000,\n      \"balance_after\": 70959095,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 696,\n          \"xmin\": 60,\n          \"ymax\": 710,\n          \"xmax\": 939\n        },\n        \"snippet\": \"29/01/2026 SGMK26012974991 THANH TOAN DON HANG - TRAN THI HOA 3.170.000 70.959.095\"\n      }\n    },\n    {\n      \"row_id\": \"T0032\",\n      \"date\": \"2026-01-31\",\n      \"description\": \"PHI DICH VU SMS BANKING\",\n      \"counterparty\": null,\n      \"debit\": 11000,\n      \"credit\": 0,\n      \"balance_after\": 70948095,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 715,\n          \"xmin\": 60,\n          \"ymax\": 729,\n          \"xmax\": 939\n        },\n        \"snippet\": \"31/01/2026 SGMK26013192420 PHI DICH VU SMS BANKING 11.000 70.948.095\"\n      }\n    },\n    {\n      \"row_id\": \"T0033\",\n      \"date\": \"2026-02-02\",\n      \"description\": \"TIEN THUE NHA T02/2026 - NGUYEN THI MAI\",\n      \"counterparty\": \"NGUYEN THI MAI\",\n      \"debit\": 6500000,\n      \"credit\": 0,\n      \"balance_after\": 64448095,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 734,\n          \"xmin\": 60,\n          \"ymax\": 747,\n          \"xmax\": 939\n        },\n        \"snippet\": \"02/02/2026 SGMK26020263620 TIEN THUE NHA T02/2026 - NGUYEN THI MAI 6.500.000 64.448.095\"\n      }\n    },\n    {\n      \"row_id\": \"T0034\",\n      \"date\": \"2026-02-04\",\n      \"description\": \"THANH TOAN GHN EXPRESS - CUOC VC\",\n      \"counterparty\": \"GHN EXPRESS\",\n      \"debit\": 2483000,\n      \"credit\": 0,\n      \"balance_after\": 61965095,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 752,\n          \"xmin\": 60,\n          \"ymax\": 766,\n          \"xmax\": 939\n        },\n        \"snippet\": \"04/02/2026 SGMK26020451159 THANH TOAN GHN EXPRESS - CUOC VC 2.483.000 61.965.095\"\n      }\n    },\n    {\n      \"row_id\": \"T0035\",\n      \"date\": \"2026-02-05\",\n      \"description\": \"CHUYEN DEN FE CREDIT - TRA GOP\",\n      \"counterparty\": \"FE CREDIT\",\n      \"debit\": 3250000,\n      \"credit\": 0,\n      \"balance_after\": 58715095,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 771,\n          \"xmin\": 60,\n          \"ymax\": 784,\n          \"xmax\": 939\n        },\n        \"snippet\": \"05/02/2026 SGMK26020514543 CHUYEN DEN FE CREDIT - TRA GOP 3.250.000 58.715.095\"\n      }\n    },\n    {\n      \"row_id\": \"T0036\",\n      \"date\": \"2026-02-05\",\n      \"description\": \"NOP TIEN MAT - PGD TAN BINH\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 3800000,\n      \"balance_after\": 62515095,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 790,\n          \"xmin\": 60,\n          \"ymax\": 803,\n          \"xmax\": 939\n        },\n        \"snippet\": \"05/02/2026 SGMK26020581297 NOP TIEN MAT - PGD TAN BINH 3.800.000 62.515.095\"\n      }\n    },\n    {\n      \"row_id\": \"T0037\",\n      \"date\": \"2026-02-06\",\n      \"description\": \"CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG\",\n      \"counterparty\": \"XUONG MAY MINH ANH\",\n      \"debit\": 13100000,\n      \"credit\": 0,\n      \"balance_after\": 49415095,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 808,\n          \"xmin\": 60,\n          \"ymax\": 822,\n          \"xmax\": 939\n        },\n        \"snippet\": \"06/02/2026 SGMK26020675997 CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG 13.100.000 49.415.095\"\n      }\n    },\n    {\n      \"row_id\": \"T0038\",\n      \"date\": \"2026-02-06\",\n      \"description\": \"RUT TIEN ATM - ATM SGMK Q.TAN BINH\",\n      \"counterparty\": null,\n      \"debit\": 3000000,\n      \"credit\": 0,\n      \"balance_after\": 46415095,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 827,\n          \"xmin\": 60,\n          \"ymax\": 841,\n          \"xmax\": 939\n        },\n        \"snippet\": \"06/02/2026 SGMK26020643867 RUT TIEN ATM - ATM SGMK Q.TAN BINH 3.000.000 46.415.095\"\n      }\n    },\n    {\n      \"row_id\": \"T0039\",\n      \"date\": \"2026-02-07\",\n      \"description\": \"CHUYEN TIEN TU SHOPEE PAYOUT - KY 0702\",\n      \"counterparty\": \"SHOPEE\",\n      \"debit\": 0,\n      \"credit\": 10856000,\n      \"balance_after\": 57271095,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 846,\n          \"xmin\": 60,\n          \"ymax\": 859,\n          \"xmax\": 939\n        },\n        \"snippet\": \"07/02/2026 SGMK26020746404 CHUYEN TIEN TU SHOPEE PAYOUT - KY 0702 10.856.000 57.271.095\"\n      }\n    },\n    {\n      \"row_id\": \"T0040\",\n      \"date\": \"2026-02-07\",\n      \"description\": \"SHOPEE ADS - NAP TIEN QUANG CAO\",\n      \"counterparty\": \"SHOPEE\",\n      \"debit\": 2500000,\n      \"credit\": 0,\n      \"balance_after\": 54771095,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 864,\n          \"xmin\": 60,\n          \"ymax\": 878,\n          \"xmax\": 939\n        },\n        \"snippet\": \"07/02/2026 SGMK26020754118 SHOPEE ADS - NAP TIEN QUANG CAO 2.500.000 54.771.095\"\n      }\n    },\n    {\n      \"row_id\": \"T0041\",\n      \"date\": \"2026-02-07\",\n      \"description\": \"THANH TOAN GHN EXPRESS - CUOC VC\",\n      \"counterparty\": \"GHN EXPRESS\",\n      \"debit\": 1683000,\n      \"credit\": 0,\n      \"balance_after\": 53088095,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 883,\n          \"xmin\": 60,\n          \"ymax\": 896,\n          \"xmax\": 939\n        },\n        \"snippet\": \"07/02/2026 SGMK26020747175 THANH TOAN GHN EXPRESS - CUOC VC 1.683.000 53.088.095\"\n      }\n    },\n    {\n      \"row_id\": \"T0042\",\n      \"date\": \"2026-02-09\",\n      \"description\": \"THANH TOAN DON HANG - PHAM THU TRANG\",\n      \"counterparty\": \"PHAM THU TRANG\",\n      \"debit\": 0,\n      \"credit\": 3250000,\n      \"balance_after\": 56338095,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 901,\n          \"xmin\": 60,\n          \"ymax\": 915,\n          \"xmax\": 939\n        },\n        \"snippet\": \"09/02/2026 SGMK26020909225 THANH TOAN DON HANG - PHAM THU TRANG 3.250.000 56.338.095\"\n      }\n    }\n  ]\n}",
+ "parsed": {
+  "bank_name": "Ngan Hang So Saigon Mekong (synthetic)",
+  "account_holder": "NGUYEN THI LINH",
+  "account_number_masked": "0071 **** **** 3392",
+  "address": null,
+  "currency": "VND",
+  "period_start": null,
+  "period_end": null,
+  "opening_balance": null,
+  "closing_balance": null,
+  "transactions": [
+   {
+    "row_id": "T0001",
+    "date": "2026-01-02",
+    "description": "TIEN THUE NHA T01/2026 - NGUYEN THI MAI",
+    "counterparty": "NGUYEN THI MAI",
+    "debit": 6500000.0,
+    "credit": 0.0,
+    "balance_after": 36359035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 137,
+      "xmin": 60,
+      "ymax": 151,
+      "xmax": 939
+     },
+     "snippet": "02/01/2026 SGMK26010263366 TIEN THUE NHA T01/2026 - NGUYEN THI MAI 6.500.000 36.359.035"
+    }
+   },
+   {
+    "row_id": "T0002",
+    "date": "2026-01-05",
+    "description": "CHUYEN DEN FE CREDIT - TRA GOP",
+    "counterparty": "FE CREDIT",
+    "debit": 3250000.0,
+    "credit": 0.0,
+    "balance_after": 33109035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 156,
+      "xmin": 60,
+      "ymax": 170,
+      "xmax": 939
+     },
+     "snippet": "05/01/2026 SGMK26010586983 CHUYEN DEN FE CREDIT - TRA GOP 3.250.000 33.109.035"
+    }
+   },
+   {
+    "row_id": "T0003",
+    "date": "2026-01-06",
+    "description": "THANH TOAN DON HANG - HOANG VAN NAM",
+    "counterparty": "HOANG VAN NAM",
+    "debit": 0.0,
+    "credit": 1450000.0,
+    "balance_after": 34559035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 175,
+      "xmin": 60,
+      "ymax": 188,
+      "xmax": 939
+     },
+     "snippet": "06/01/2026 SGMK26010608424 THANH TOAN DON HANG - HOANG VAN NAM 1.450.000 34.559.035"
+    }
+   },
+   {
+    "row_id": "T0004",
+    "date": "2026-01-08",
+    "description": "TIEN DIEN EVNHCMC - MA KH PE0100xxxx",
+    "counterparty": "EVNHCMC",
+    "debit": 917000.0,
+    "credit": 0.0,
+    "balance_after": 33642035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 194,
+      "xmin": 60,
+      "ymax": 207,
+      "xmax": 939
+     },
+     "snippet": "08/01/2026 SGMK26010832913 TIEN DIEN EVNHCMC - MA KH PE0100xxxx 917.000 33.642.035"
+    }
+   },
+   {
+    "row_id": "T0005",
+    "date": "2026-01-09",
+    "description": "CHUYEN TIEN TU NGUYEN THI LINH - VCB",
+    "counterparty": "NGUYEN THI LINH",
+    "debit": 0.0,
+    "credit": 24000000.0,
+    "balance_after": 57642035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 212,
+      "xmin": 60,
+      "ymax": 226,
+      "xmax": 939
+     },
+     "snippet": "09/01/2026 SGMK26010953206 CHUYEN TIEN TU NGUYEN THI LINH - VCB 24.000.000 57.642.035"
+    }
+   },
+   {
+    "row_id": "T0006",
+    "date": "2026-01-10",
+    "description": "NOP TIEN MAT - PGD TAN BINH",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 4200000.0,
+    "balance_after": 61842035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 231,
+      "xmin": 60,
+      "ymax": 244,
+      "xmax": 939
+     },
+     "snippet": "10/01/2026 SGMK26011079761 NOP TIEN MAT - PGD TAN BINH 4.200.000 61.842.035"
+    }
+   },
+   {
+    "row_id": "T0007",
+    "date": "2026-01-10",
+    "description": "THANH TOAN QR - CUA HANG VPP",
+    "counterparty": "CUA HANG VPP",
+    "debit": 319000.0,
+    "credit": 0.0,
+    "balance_after": 61523035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 250,
+      "xmin": 60,
+      "ymax": 263,
+      "xmax": 939
+     },
+     "snippet": "10/01/2026 SGMK26011093263 THANH TOAN QR - CUA HANG VPP 319.000 61.523.035"
+    }
+   },
+   {
+    "row_id": "T0008",
+    "date": "2026-01-13",
+    "description": "RUT TIEN ATM - ATM SGMK Q.TAN BINH",
+    "counterparty": null,
+    "debit": 5000000.0,
+    "credit": 0.0,
+    "balance_after": 56523035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 267,
+      "xmin": 60,
+      "ymax": 281,
+      "xmax": 939
+     },
+     "snippet": "13/01/2026 SGMK26011362857 RUT TIEN ATM - ATM SGMK Q.TAN BINH 5.000.000 56.523.035"
+    }
+   },
+   {
+    "row_id": "T0009",
+    "date": "2026-01-13",
+    "description": "THANH TOAN GHN EXPRESS - CUOC VC",
+    "counterparty": "GHN EXPRESS",
+    "debit": 1594000.0,
+    "credit": 0.0,
+    "balance_after": 54929035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 286,
+      "xmin": 60,
+      "ymax": 299,
+      "xmax": 939
+     },
+     "snippet": "13/01/2026 SGMK26011309436 THANH TOAN GHN EXPRESS - CUOC VC 1.594.000 54.929.035"
+    }
+   },
+   {
+    "row_id": "T0010",
+    "date": "2026-01-14",
+    "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 1401",
+    "counterparty": "SHOPEE",
+    "debit": 0.0,
+    "credit": 16614000.0,
+    "balance_after": 71543035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 305,
+      "xmin": 60,
+      "ymax": 319,
+      "xmax": 939
+     },
+     "snippet": "14/01/2026 SGMK26011422279 CHUYEN TIEN TU SHOPEE PAYOUT - KY 1401 16.614.000 71.543.035"
+    }
+   },
+   {
+    "row_id": "T0011",
+    "date": "2026-01-14",
+    "description": "SHOPEE ADS - NAP TIEN QUANG CAO",
+    "counterparty": "SHOPEE",
+    "debit": 2500000.0,
+    "credit": 0.0,
+    "balance_after": 69043035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 324,
+      "xmin": 60,
+      "ymax": 338,
+      "xmax": 939
+     },
+     "snippet": "14/01/2026 SGMK26011422727 SHOPEE ADS - NAP TIEN QUANG CAO 2.500.000 69.043.035"
+    }
+   },
+   {
+    "row_id": "T0012",
+    "date": "2026-01-14",
+    "description": "THANH TOAN GHN EXPRESS - CUOC VC",
+    "counterparty": "GHN EXPRESS",
+    "debit": 834000.0,
+    "credit": 0.0,
+    "balance_after": 68209035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 343,
+      "xmin": 60,
+      "ymax": 356,
+      "xmax": 939
+     },
+     "snippet": "14/01/2026 SGMK26011459087 THANH TOAN GHN EXPRESS - CUOC VC 834.000 68.209.035"
+    }
+   },
+   {
+    "row_id": "T0013",
+    "date": "2026-01-15",
+    "description": "CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG",
+    "counterparty": "XUONG MAY MINH ANH",
+    "debit": 14700000.0,
+    "credit": 0.0,
+    "balance_after": 53509035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 361,
+      "xmin": 60,
+      "ymax": 375,
+      "xmax": 939
+     },
+     "snippet": "15/01/2026 SGMK26011541810 CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG 14.700.000 53.509.035"
+    }
+   },
+   {
+    "row_id": "T0014",
+    "date": "2026-01-17",
+    "description": "TIEN NUOC SAWACO",
+    "counterparty": "SAWACO",
+    "debit": 268000.0,
+    "credit": 0.0,
+    "balance_after": 53241035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 380,
+      "xmin": 60,
+      "ymax": 393,
+      "xmax": 939
+     },
+     "snippet": "17/01/2026 SGMK26011747765 TIEN NUOC SAWACO 268.000 53.241.035"
+    }
+   },
+   {
+    "row_id": "T0015",
+    "date": "2026-01-18",
+    "description": "NOP TIEN MAT - PGD TAN BINH",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 3300000.0,
+    "balance_after": 56541035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 399,
+      "xmin": 60,
+      "ymax": 412,
+      "xmax": 939
+     },
+     "snippet": "18/01/2026 SGMK26011814724 NOP TIEN MAT - PGD TAN BINH 3.300.000 56.541.035"
+    }
+   },
+   {
+    "row_id": "T0016",
+    "date": "2026-01-19",
+    "description": "SPAYLATER THANH TOAN",
+    "counterparty": "SPAYLATER",
+    "debit": 1480000.0,
+    "credit": 0.0,
+    "balance_after": 55061035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 417,
+      "xmin": 60,
+      "ymax": 431,
+      "xmax": 939
+     },
+     "snippet": "19/01/2026 SGMK26011984907 SPAYLATER THANH TOAN 1.480.000 55.061.035"
+    }
+   },
+   {
+    "row_id": "T0017",
+    "date": "2026-01-19",
+    "description": "NOP TIEN MAT - PGD TAN BINH",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 2800000.0,
+    "balance_after": 57861035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 435,
+      "xmin": 60,
+      "ymax": 449,
+      "xmax": 939
+     },
+     "snippet": "19/01/2026 SGMK26011995625 NOP TIEN MAT - PGD TAN BINH 2.800.000 57.861.035"
+    }
+   },
+   {
+    "row_id": "T0018",
+    "date": "2026-01-19",
+    "description": "THANH TOAN DON HANG - LE MINH TUAN",
+    "counterparty": "LE MINH TUAN",
+    "debit": 0.0,
+    "credit": 4040000.0,
+    "balance_after": 61901035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 454,
+      "xmin": 60,
+      "ymax": 468,
+      "xmax": 939
+     },
+     "snippet": "19/01/2026 SGMK26011945129 THANH TOAN DON HANG - LE MINH TUAN 4.040.000 61.901.035"
+    }
+   },
+   {
+    "row_id": "T0019",
+    "date": "2026-01-19",
+    "description": "INTERNET CAP QUANG - THANH TOAN",
+    "counterparty": null,
+    "debit": 250000.0,
+    "credit": 0.0,
+    "balance_after": 61651035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 473,
+      "xmin": 60,
+      "ymax": 486,
+      "xmax": 939
+     },
+     "snippet": "19/01/2026 SGMK26011922893 INTERNET CAP QUANG - THANH TOAN 250.000 61.651.035"
+    }
+   },
+   {
+    "row_id": "T0020",
+    "date": "2026-01-20",
+    "description": "THANH TOAN J&T EXPRESS - CUOC VC",
+    "counterparty": "J&T EXPRESS",
+    "debit": 2551000.0,
+    "credit": 0.0,
+    "balance_after": 59100035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 491,
+      "xmin": 60,
+      "ymax": 505,
+      "xmax": 939
+     },
+     "snippet": "20/01/2026 SGMK26012029751 THANH TOAN J&T EXPRESS - CUOC VC 2.551.000 59.100.035"
+    }
+   },
+   {
+    "row_id": "T0021",
+    "date": "2026-01-20",
+    "description": "THANH TOAN QR - SIEU THI COOP",
+    "counterparty": "SIEU THI COOP",
+    "debit": 485000.0,
+    "credit": 0.0,
+    "balance_after": 58615035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 510,
+      "xmin": 60,
+      "ymax": 524,
+      "xmax": 939
+     },
+     "snippet": "20/01/2026 SGMK26012034504 THANH TOAN QR - SIEU THI COOP 485.000 58.615.035"
+    }
+   },
+   {
+    "row_id": "T0022",
+    "date": "2026-01-21",
+    "description": "NOP TIEN MAT - PGD TAN BINH",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 4400000.0,
+    "balance_after": 63015035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 529,
+      "xmin": 60,
+      "ymax": 542,
+      "xmax": 939
+     },
+     "snippet": "21/01/2026 SGMK26012135168 NOP TIEN MAT - PGD TAN BINH 4.400.000 63.015.035"
+    }
+   },
+   {
+    "row_id": "T0023",
+    "date": "2026-01-21",
+    "description": "THANH TOAN DON HANG - NGO THI KIM",
+    "counterparty": "NGO THI KIM",
+    "debit": 0.0,
+    "credit": 3600000.0,
+    "balance_after": 66615035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 547,
+      "xmin": 60,
+      "ymax": 561,
+      "xmax": 939
+     },
+     "snippet": "21/01/2026 SGMK26012110882 THANH TOAN DON HANG - NGO THI KIM 3.600.000 66.615.035"
+    }
+   },
+   {
+    "row_id": "T0024",
+    "date": "2026-01-24",
+    "description": "RUT TIEN ATM - ATM SGMK Q.TAN BINH",
+    "counterparty": null,
+    "debit": 2500000.0,
+    "credit": 0.0,
+    "balance_after": 64115035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 566,
+      "xmin": 60,
+      "ymax": 580,
+      "xmax": 939
+     },
+     "snippet": "24/01/2026 SGMK26012438570 RUT TIEN ATM - ATM SGMK Q.TAN BINH 2.500.000 64.115.035"
+    }
+   },
+   {
+    "row_id": "T0025",
+    "date": "2026-01-25",
+    "description": "SHOPEE ADS - NAP TIEN QUANG CAO",
+    "counterparty": "SHOPEE",
+    "debit": 2300000.0,
+    "credit": 0.0,
+    "balance_after": 61815035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 584,
+      "xmin": 60,
+      "ymax": 598,
+      "xmax": 939
+     },
+     "snippet": "25/01/2026 SGMK26012597770 SHOPEE ADS - NAP TIEN QUANG CAO 2.300.000 61.815.035"
+    }
+   },
+   {
+    "row_id": "T0026",
+    "date": "2026-01-26",
+    "description": "NOP TIEN MAT - PGD TAN BINH",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 2650000.0,
+    "balance_after": 64465035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 603,
+      "xmin": 60,
+      "ymax": 617,
+      "xmax": 939
+     },
+     "snippet": "26/01/2026 SGMK26012689380 NOP TIEN MAT - PGD TAN BINH 2.650.000 64.465.035"
+    }
+   },
+   {
+    "row_id": "T0027",
+    "date": "2026-01-27",
+    "description": "THANH TOAN NCC VAI - CHO TAN BINH",
+    "counterparty": null,
+    "debit": 10500000.0,
+    "credit": 0.0,
+    "balance_after": 53965035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 622,
+      "xmin": 60,
+      "ymax": 635,
+      "xmax": 939
+     },
+     "snippet": "27/01/2026 SGMK26012715727 THANH TOAN NCC VAI - CHO TAN BINH 10.500.000 53.965.035"
+    }
+   },
+   {
+    "row_id": "T0028",
+    "date": "2026-01-27",
+    "description": "CUOC DI DONG VINATEL",
+    "counterparty": "VINATEL",
+    "debit": 259000.0,
+    "credit": 0.0,
+    "balance_after": 53706035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 640,
+      "xmin": 60,
+      "ymax": 654,
+      "xmax": 939
+     },
+     "snippet": "27/01/2026 SGMK26012775969 CUOC DI DONG VINATEL 259.000 53.706.035"
+    }
+   },
+   {
+    "row_id": "T0029",
+    "date": "2026-01-28",
+    "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 2801",
+    "counterparty": "SHOPEE",
+    "debit": 0.0,
+    "credit": 27531000.0,
+    "balance_after": 81237035.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 659,
+      "xmin": 60,
+      "ymax": 673,
+      "xmax": 939
+     },
+     "snippet": "28/01/2026 SGMK26012818498 CHUYEN TIEN TU SHOPEE PAYOUT - KY 2801 27.531.000 81.237.035"
+    }
+   },
+   {
+    "row_id": "T0030",
+    "date": "2026-01-28",
+    "description": "CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG",
+    "counterparty": "XUONG MAY MINH ANH",
+    "debit": 13447940.0,
+    "credit": 0.0,
+    "balance_after": 67789095.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 678,
+      "xmin": 60,
+      "ymax": 691,
+      "xmax": 939
+     },
+     "snippet": "28/01/2026 SGMK26012896686 CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG 13.447.940 67.789.095"
+    }
+   },
+   {
+    "row_id": "T0031",
+    "date": "2026-01-29",
+    "description": "THANH TOAN DON HANG - TRAN THI HOA",
+    "counterparty": "TRAN THI HOA",
+    "debit": 0.0,
+    "credit": 3170000.0,
+    "balance_after": 70959095.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 696,
+      "xmin": 60,
+      "ymax": 710,
+      "xmax": 939
+     },
+     "snippet": "29/01/2026 SGMK26012974991 THANH TOAN DON HANG - TRAN THI HOA 3.170.000 70.959.095"
+    }
+   },
+   {
+    "row_id": "T0032",
+    "date": "2026-01-31",
+    "description": "PHI DICH VU SMS BANKING",
+    "counterparty": null,
+    "debit": 11000.0,
+    "credit": 0.0,
+    "balance_after": 70948095.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 715,
+      "xmin": 60,
+      "ymax": 729,
+      "xmax": 939
+     },
+     "snippet": "31/01/2026 SGMK26013192420 PHI DICH VU SMS BANKING 11.000 70.948.095"
+    }
+   },
+   {
+    "row_id": "T0033",
+    "date": "2026-02-02",
+    "description": "TIEN THUE NHA T02/2026 - NGUYEN THI MAI",
+    "counterparty": "NGUYEN THI MAI",
+    "debit": 6500000.0,
+    "credit": 0.0,
+    "balance_after": 64448095.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 734,
+      "xmin": 60,
+      "ymax": 747,
+      "xmax": 939
+     },
+     "snippet": "02/02/2026 SGMK26020263620 TIEN THUE NHA T02/2026 - NGUYEN THI MAI 6.500.000 64.448.095"
+    }
+   },
+   {
+    "row_id": "T0034",
+    "date": "2026-02-04",
+    "description": "THANH TOAN GHN EXPRESS - CUOC VC",
+    "counterparty": "GHN EXPRESS",
+    "debit": 2483000.0,
+    "credit": 0.0,
+    "balance_after": 61965095.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 752,
+      "xmin": 60,
+      "ymax": 766,
+      "xmax": 939
+     },
+     "snippet": "04/02/2026 SGMK26020451159 THANH TOAN GHN EXPRESS - CUOC VC 2.483.000 61.965.095"
+    }
+   },
+   {
+    "row_id": "T0035",
+    "date": "2026-02-05",
+    "description": "CHUYEN DEN FE CREDIT - TRA GOP",
+    "counterparty": "FE CREDIT",
+    "debit": 3250000.0,
+    "credit": 0.0,
+    "balance_after": 58715095.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 771,
+      "xmin": 60,
+      "ymax": 784,
+      "xmax": 939
+     },
+     "snippet": "05/02/2026 SGMK26020514543 CHUYEN DEN FE CREDIT - TRA GOP 3.250.000 58.715.095"
+    }
+   },
+   {
+    "row_id": "T0036",
+    "date": "2026-02-05",
+    "description": "NOP TIEN MAT - PGD TAN BINH",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 3800000.0,
+    "balance_after": 62515095.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 790,
+      "xmin": 60,
+      "ymax": 803,
+      "xmax": 939
+     },
+     "snippet": "05/02/2026 SGMK26020581297 NOP TIEN MAT - PGD TAN BINH 3.800.000 62.515.095"
+    }
+   },
+   {
+    "row_id": "T0037",
+    "date": "2026-02-06",
+    "description": "CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG",
+    "counterparty": "XUONG MAY MINH ANH",
+    "debit": 13100000.0,
+    "credit": 0.0,
+    "balance_after": 49415095.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 808,
+      "xmin": 60,
+      "ymax": 822,
+      "xmax": 939
+     },
+     "snippet": "06/02/2026 SGMK26020675997 CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG 13.100.000 49.415.095"
+    }
+   },
+   {
+    "row_id": "T0038",
+    "date": "2026-02-06",
+    "description": "RUT TIEN ATM - ATM SGMK Q.TAN BINH",
+    "counterparty": null,
+    "debit": 3000000.0,
+    "credit": 0.0,
+    "balance_after": 46415095.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 827,
+      "xmin": 60,
+      "ymax": 841,
+      "xmax": 939
+     },
+     "snippet": "06/02/2026 SGMK26020643867 RUT TIEN ATM - ATM SGMK Q.TAN BINH 3.000.000 46.415.095"
+    }
+   },
+   {
+    "row_id": "T0039",
+    "date": "2026-02-07",
+    "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 0702",
+    "counterparty": "SHOPEE",
+    "debit": 0.0,
+    "credit": 10856000.0,
+    "balance_after": 57271095.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 846,
+      "xmin": 60,
+      "ymax": 859,
+      "xmax": 939
+     },
+     "snippet": "07/02/2026 SGMK26020746404 CHUYEN TIEN TU SHOPEE PAYOUT - KY 0702 10.856.000 57.271.095"
+    }
+   },
+   {
+    "row_id": "T0040",
+    "date": "2026-02-07",
+    "description": "SHOPEE ADS - NAP TIEN QUANG CAO",
+    "counterparty": "SHOPEE",
+    "debit": 2500000.0,
+    "credit": 0.0,
+    "balance_after": 54771095.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 864,
+      "xmin": 60,
+      "ymax": 878,
+      "xmax": 939
+     },
+     "snippet": "07/02/2026 SGMK26020754118 SHOPEE ADS - NAP TIEN QUANG CAO 2.500.000 54.771.095"
+    }
+   },
+   {
+    "row_id": "T0041",
+    "date": "2026-02-07",
+    "description": "THANH TOAN GHN EXPRESS - CUOC VC",
+    "counterparty": "GHN EXPRESS",
+    "debit": 1683000.0,
+    "credit": 0.0,
+    "balance_after": 53088095.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 883,
+      "xmin": 60,
+      "ymax": 896,
+      "xmax": 939
+     },
+     "snippet": "07/02/2026 SGMK26020747175 THANH TOAN GHN EXPRESS - CUOC VC 1.683.000 53.088.095"
+    }
+   },
+   {
+    "row_id": "T0042",
+    "date": "2026-02-09",
+    "description": "THANH TOAN DON HANG - PHAM THU TRANG",
+    "counterparty": "PHAM THU TRANG",
+    "debit": 0.0,
+    "credit": 3250000.0,
+    "balance_after": 56338095.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 901,
+      "xmin": 60,
+      "ymax": 915,
+      "xmax": 939
+     },
+     "snippet": "09/02/2026 SGMK26020909225 THANH TOAN DON HANG - PHAM THU TRANG 3.250.000 56.338.095"
+    }
+   }
+  ]
+ },
+ "state": {
+  "output": {
+   "bank_name": "Ngan Hang So Saigon Mekong (synthetic)",
+   "account_holder": "NGUYEN THI LINH",
+   "account_number_masked": "0071 **** **** 3392",
+   "currency": "VND",
+   "transactions": [
+    {
+     "row_id": "T0001",
+     "date": "2026-01-02",
+     "description": "TIEN THUE NHA T01/2026 - NGUYEN THI MAI",
+     "counterparty": "NGUYEN THI MAI",
+     "debit": 6500000.0,
+     "credit": 0.0,
+     "balance_after": 36359035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 137,
+       "xmin": 60,
+       "ymax": 151,
+       "xmax": 939
+      },
+      "snippet": "02/01/2026 SGMK26010263366 TIEN THUE NHA T01/2026 - NGUYEN THI MAI 6.500.000 36.359.035"
+     }
+    },
+    {
+     "row_id": "T0002",
+     "date": "2026-01-05",
+     "description": "CHUYEN DEN FE CREDIT - TRA GOP",
+     "counterparty": "FE CREDIT",
+     "debit": 3250000.0,
+     "credit": 0.0,
+     "balance_after": 33109035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 156,
+       "xmin": 60,
+       "ymax": 170,
+       "xmax": 939
+      },
+      "snippet": "05/01/2026 SGMK26010586983 CHUYEN DEN FE CREDIT - TRA GOP 3.250.000 33.109.035"
+     }
+    },
+    {
+     "row_id": "T0003",
+     "date": "2026-01-06",
+     "description": "THANH TOAN DON HANG - HOANG VAN NAM",
+     "counterparty": "HOANG VAN NAM",
+     "debit": 0.0,
+     "credit": 1450000.0,
+     "balance_after": 34559035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 175,
+       "xmin": 60,
+       "ymax": 188,
+       "xmax": 939
+      },
+      "snippet": "06/01/2026 SGMK26010608424 THANH TOAN DON HANG - HOANG VAN NAM 1.450.000 34.559.035"
+     }
+    },
+    {
+     "row_id": "T0004",
+     "date": "2026-01-08",
+     "description": "TIEN DIEN EVNHCMC - MA KH PE0100xxxx",
+     "counterparty": "EVNHCMC",
+     "debit": 917000.0,
+     "credit": 0.0,
+     "balance_after": 33642035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 194,
+       "xmin": 60,
+       "ymax": 207,
+       "xmax": 939
+      },
+      "snippet": "08/01/2026 SGMK26010832913 TIEN DIEN EVNHCMC - MA KH PE0100xxxx 917.000 33.642.035"
+     }
+    },
+    {
+     "row_id": "T0005",
+     "date": "2026-01-09",
+     "description": "CHUYEN TIEN TU NGUYEN THI LINH - VCB",
+     "counterparty": "NGUYEN THI LINH",
+     "debit": 0.0,
+     "credit": 24000000.0,
+     "balance_after": 57642035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 212,
+       "xmin": 60,
+       "ymax": 226,
+       "xmax": 939
+      },
+      "snippet": "09/01/2026 SGMK26010953206 CHUYEN TIEN TU NGUYEN THI LINH - VCB 24.000.000 57.642.035"
+     }
+    },
+    {
+     "row_id": "T0006",
+     "date": "2026-01-10",
+     "description": "NOP TIEN MAT - PGD TAN BINH",
+     "debit": 0.0,
+     "credit": 4200000.0,
+     "balance_after": 61842035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 231,
+       "xmin": 60,
+       "ymax": 244,
+       "xmax": 939
+      },
+      "snippet": "10/01/2026 SGMK26011079761 NOP TIEN MAT - PGD TAN BINH 4.200.000 61.842.035"
+     }
+    },
+    {
+     "row_id": "T0007",
+     "date": "2026-01-10",
+     "description": "THANH TOAN QR - CUA HANG VPP",
+     "counterparty": "CUA HANG VPP",
+     "debit": 319000.0,
+     "credit": 0.0,
+     "balance_after": 61523035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 250,
+       "xmin": 60,
+       "ymax": 263,
+       "xmax": 939
+      },
+      "snippet": "10/01/2026 SGMK26011093263 THANH TOAN QR - CUA HANG VPP 319.000 61.523.035"
+     }
+    },
+    {
+     "row_id": "T0008",
+     "date": "2026-01-13",
+     "description": "RUT TIEN ATM - ATM SGMK Q.TAN BINH",
+     "debit": 5000000.0,
+     "credit": 0.0,
+     "balance_after": 56523035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 267,
+       "xmin": 60,
+       "ymax": 281,
+       "xmax": 939
+      },
+      "snippet": "13/01/2026 SGMK26011362857 RUT TIEN ATM - ATM SGMK Q.TAN BINH 5.000.000 56.523.035"
+     }
+    },
+    {
+     "row_id": "T0009",
+     "date": "2026-01-13",
+     "description": "THANH TOAN GHN EXPRESS - CUOC VC",
+     "counterparty": "GHN EXPRESS",
+     "debit": 1594000.0,
+     "credit": 0.0,
+     "balance_after": 54929035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 286,
+       "xmin": 60,
+       "ymax": 299,
+       "xmax": 939
+      },
+      "snippet": "13/01/2026 SGMK26011309436 THANH TOAN GHN EXPRESS - CUOC VC 1.594.000 54.929.035"
+     }
+    },
+    {
+     "row_id": "T0010",
+     "date": "2026-01-14",
+     "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 1401",
+     "counterparty": "SHOPEE",
+     "debit": 0.0,
+     "credit": 16614000.0,
+     "balance_after": 71543035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 305,
+       "xmin": 60,
+       "ymax": 319,
+       "xmax": 939
+      },
+      "snippet": "14/01/2026 SGMK26011422279 CHUYEN TIEN TU SHOPEE PAYOUT - KY 1401 16.614.000 71.543.035"
+     }
+    },
+    {
+     "row_id": "T0011",
+     "date": "2026-01-14",
+     "description": "SHOPEE ADS - NAP TIEN QUANG CAO",
+     "counterparty": "SHOPEE",
+     "debit": 2500000.0,
+     "credit": 0.0,
+     "balance_after": 69043035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 324,
+       "xmin": 60,
+       "ymax": 338,
+       "xmax": 939
+      },
+      "snippet": "14/01/2026 SGMK26011422727 SHOPEE ADS - NAP TIEN QUANG CAO 2.500.000 69.043.035"
+     }
+    },
+    {
+     "row_id": "T0012",
+     "date": "2026-01-14",
+     "description": "THANH TOAN GHN EXPRESS - CUOC VC",
+     "counterparty": "GHN EXPRESS",
+     "debit": 834000.0,
+     "credit": 0.0,
+     "balance_after": 68209035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 343,
+       "xmin": 60,
+       "ymax": 356,
+       "xmax": 939
+      },
+      "snippet": "14/01/2026 SGMK26011459087 THANH TOAN GHN EXPRESS - CUOC VC 834.000 68.209.035"
+     }
+    },
+    {
+     "row_id": "T0013",
+     "date": "2026-01-15",
+     "description": "CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG",
+     "counterparty": "XUONG MAY MINH ANH",
+     "debit": 14700000.0,
+     "credit": 0.0,
+     "balance_after": 53509035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 361,
+       "xmin": 60,
+       "ymax": 375,
+       "xmax": 939
+      },
+      "snippet": "15/01/2026 SGMK26011541810 CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG 14.700.000 53.509.035"
+     }
+    },
+    {
+     "row_id": "T0014",
+     "date": "2026-01-17",
+     "description": "TIEN NUOC SAWACO",
+     "counterparty": "SAWACO",
+     "debit": 268000.0,
+     "credit": 0.0,
+     "balance_after": 53241035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 380,
+       "xmin": 60,
+       "ymax": 393,
+       "xmax": 939
+      },
+      "snippet": "17/01/2026 SGMK26011747765 TIEN NUOC SAWACO 268.000 53.241.035"
+     }
+    },
+    {
+     "row_id": "T0015",
+     "date": "2026-01-18",
+     "description": "NOP TIEN MAT - PGD TAN BINH",
+     "debit": 0.0,
+     "credit": 3300000.0,
+     "balance_after": 56541035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 399,
+       "xmin": 60,
+       "ymax": 412,
+       "xmax": 939
+      },
+      "snippet": "18/01/2026 SGMK26011814724 NOP TIEN MAT - PGD TAN BINH 3.300.000 56.541.035"
+     }
+    },
+    {
+     "row_id": "T0016",
+     "date": "2026-01-19",
+     "description": "SPAYLATER THANH TOAN",
+     "counterparty": "SPAYLATER",
+     "debit": 1480000.0,
+     "credit": 0.0,
+     "balance_after": 55061035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 417,
+       "xmin": 60,
+       "ymax": 431,
+       "xmax": 939
+      },
+      "snippet": "19/01/2026 SGMK26011984907 SPAYLATER THANH TOAN 1.480.000 55.061.035"
+     }
+    },
+    {
+     "row_id": "T0017",
+     "date": "2026-01-19",
+     "description": "NOP TIEN MAT - PGD TAN BINH",
+     "debit": 0.0,
+     "credit": 2800000.0,
+     "balance_after": 57861035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 435,
+       "xmin": 60,
+       "ymax": 449,
+       "xmax": 939
+      },
+      "snippet": "19/01/2026 SGMK26011995625 NOP TIEN MAT - PGD TAN BINH 2.800.000 57.861.035"
+     }
+    },
+    {
+     "row_id": "T0018",
+     "date": "2026-01-19",
+     "description": "THANH TOAN DON HANG - LE MINH TUAN",
+     "counterparty": "LE MINH TUAN",
+     "debit": 0.0,
+     "credit": 4040000.0,
+     "balance_after": 61901035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 454,
+       "xmin": 60,
+       "ymax": 468,
+       "xmax": 939
+      },
+      "snippet": "19/01/2026 SGMK26011945129 THANH TOAN DON HANG - LE MINH TUAN 4.040.000 61.901.035"
+     }
+    },
+    {
+     "row_id": "T0019",
+     "date": "2026-01-19",
+     "description": "INTERNET CAP QUANG - THANH TOAN",
+     "debit": 250000.0,
+     "credit": 0.0,
+     "balance_after": 61651035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 473,
+       "xmin": 60,
+       "ymax": 486,
+       "xmax": 939
+      },
+      "snippet": "19/01/2026 SGMK26011922893 INTERNET CAP QUANG - THANH TOAN 250.000 61.651.035"
+     }
+    },
+    {
+     "row_id": "T0020",
+     "date": "2026-01-20",
+     "description": "THANH TOAN J&T EXPRESS - CUOC VC",
+     "counterparty": "J&T EXPRESS",
+     "debit": 2551000.0,
+     "credit": 0.0,
+     "balance_after": 59100035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 491,
+       "xmin": 60,
+       "ymax": 505,
+       "xmax": 939
+      },
+      "snippet": "20/01/2026 SGMK26012029751 THANH TOAN J&T EXPRESS - CUOC VC 2.551.000 59.100.035"
+     }
+    },
+    {
+     "row_id": "T0021",
+     "date": "2026-01-20",
+     "description": "THANH TOAN QR - SIEU THI COOP",
+     "counterparty": "SIEU THI COOP",
+     "debit": 485000.0,
+     "credit": 0.0,
+     "balance_after": 58615035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 510,
+       "xmin": 60,
+       "ymax": 524,
+       "xmax": 939
+      },
+      "snippet": "20/01/2026 SGMK26012034504 THANH TOAN QR - SIEU THI COOP 485.000 58.615.035"
+     }
+    },
+    {
+     "row_id": "T0022",
+     "date": "2026-01-21",
+     "description": "NOP TIEN MAT - PGD TAN BINH",
+     "debit": 0.0,
+     "credit": 4400000.0,
+     "balance_after": 63015035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 529,
+       "xmin": 60,
+       "ymax": 542,
+       "xmax": 939
+      },
+      "snippet": "21/01/2026 SGMK26012135168 NOP TIEN MAT - PGD TAN BINH 4.400.000 63.015.035"
+     }
+    },
+    {
+     "row_id": "T0023",
+     "date": "2026-01-21",
+     "description": "THANH TOAN DON HANG - NGO THI KIM",
+     "counterparty": "NGO THI KIM",
+     "debit": 0.0,
+     "credit": 3600000.0,
+     "balance_after": 66615035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 547,
+       "xmin": 60,
+       "ymax": 561,
+       "xmax": 939
+      },
+      "snippet": "21/01/2026 SGMK26012110882 THANH TOAN DON HANG - NGO THI KIM 3.600.000 66.615.035"
+     }
+    },
+    {
+     "row_id": "T0024",
+     "date": "2026-01-24",
+     "description": "RUT TIEN ATM - ATM SGMK Q.TAN BINH",
+     "debit": 2500000.0,
+     "credit": 0.0,
+     "balance_after": 64115035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 566,
+       "xmin": 60,
+       "ymax": 580,
+       "xmax": 939
+      },
+      "snippet": "24/01/2026 SGMK26012438570 RUT TIEN ATM - ATM SGMK Q.TAN BINH 2.500.000 64.115.035"
+     }
+    },
+    {
+     "row_id": "T0025",
+     "date": "2026-01-25",
+     "description": "SHOPEE ADS - NAP TIEN QUANG CAO",
+     "counterparty": "SHOPEE",
+     "debit": 2300000.0,
+     "credit": 0.0,
+     "balance_after": 61815035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 584,
+       "xmin": 60,
+       "ymax": 598,
+       "xmax": 939
+      },
+      "snippet": "25/01/2026 SGMK26012597770 SHOPEE ADS - NAP TIEN QUANG CAO 2.300.000 61.815.035"
+     }
+    },
+    {
+     "row_id": "T0026",
+     "date": "2026-01-26",
+     "description": "NOP TIEN MAT - PGD TAN BINH",
+     "debit": 0.0,
+     "credit": 2650000.0,
+     "balance_after": 64465035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 603,
+       "xmin": 60,
+       "ymax": 617,
+       "xmax": 939
+      },
+      "snippet": "26/01/2026 SGMK26012689380 NOP TIEN MAT - PGD TAN BINH 2.650.000 64.465.035"
+     }
+    },
+    {
+     "row_id": "T0027",
+     "date": "2026-01-27",
+     "description": "THANH TOAN NCC VAI - CHO TAN BINH",
+     "debit": 10500000.0,
+     "credit": 0.0,
+     "balance_after": 53965035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 622,
+       "xmin": 60,
+       "ymax": 635,
+       "xmax": 939
+      },
+      "snippet": "27/01/2026 SGMK26012715727 THANH TOAN NCC VAI - CHO TAN BINH 10.500.000 53.965.035"
+     }
+    },
+    {
+     "row_id": "T0028",
+     "date": "2026-01-27",
+     "description": "CUOC DI DONG VINATEL",
+     "counterparty": "VINATEL",
+     "debit": 259000.0,
+     "credit": 0.0,
+     "balance_after": 53706035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 640,
+       "xmin": 60,
+       "ymax": 654,
+       "xmax": 939
+      },
+      "snippet": "27/01/2026 SGMK26012775969 CUOC DI DONG VINATEL 259.000 53.706.035"
+     }
+    },
+    {
+     "row_id": "T0029",
+     "date": "2026-01-28",
+     "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 2801",
+     "counterparty": "SHOPEE",
+     "debit": 0.0,
+     "credit": 27531000.0,
+     "balance_after": 81237035.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 659,
+       "xmin": 60,
+       "ymax": 673,
+       "xmax": 939
+      },
+      "snippet": "28/01/2026 SGMK26012818498 CHUYEN TIEN TU SHOPEE PAYOUT - KY 2801 27.531.000 81.237.035"
+     }
+    },
+    {
+     "row_id": "T0030",
+     "date": "2026-01-28",
+     "description": "CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG",
+     "counterparty": "XUONG MAY MINH ANH",
+     "debit": 13447940.0,
+     "credit": 0.0,
+     "balance_after": 67789095.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 678,
+       "xmin": 60,
+       "ymax": 691,
+       "xmax": 939
+      },
+      "snippet": "28/01/2026 SGMK26012896686 CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG 13.447.940 67.789.095"
+     }
+    },
+    {
+     "row_id": "T0031",
+     "date": "2026-01-29",
+     "description": "THANH TOAN DON HANG - TRAN THI HOA",
+     "counterparty": "TRAN THI HOA",
+     "debit": 0.0,
+     "credit": 3170000.0,
+     "balance_after": 70959095.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 696,
+       "xmin": 60,
+       "ymax": 710,
+       "xmax": 939
+      },
+      "snippet": "29/01/2026 SGMK26012974991 THANH TOAN DON HANG - TRAN THI HOA 3.170.000 70.959.095"
+     }
+    },
+    {
+     "row_id": "T0032",
+     "date": "2026-01-31",
+     "description": "PHI DICH VU SMS BANKING",
+     "debit": 11000.0,
+     "credit": 0.0,
+     "balance_after": 70948095.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 715,
+       "xmin": 60,
+       "ymax": 729,
+       "xmax": 939
+      },
+      "snippet": "31/01/2026 SGMK26013192420 PHI DICH VU SMS BANKING 11.000 70.948.095"
+     }
+    },
+    {
+     "row_id": "T0033",
+     "date": "2026-02-02",
+     "description": "TIEN THUE NHA T02/2026 - NGUYEN THI MAI",
+     "counterparty": "NGUYEN THI MAI",
+     "debit": 6500000.0,
+     "credit": 0.0,
+     "balance_after": 64448095.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 734,
+       "xmin": 60,
+       "ymax": 747,
+       "xmax": 939
+      },
+      "snippet": "02/02/2026 SGMK26020263620 TIEN THUE NHA T02/2026 - NGUYEN THI MAI 6.500.000 64.448.095"
+     }
+    },
+    {
+     "row_id": "T0034",
+     "date": "2026-02-04",
+     "description": "THANH TOAN GHN EXPRESS - CUOC VC",
+     "counterparty": "GHN EXPRESS",
+     "debit": 2483000.0,
+     "credit": 0.0,
+     "balance_after": 61965095.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 752,
+       "xmin": 60,
+       "ymax": 766,
+       "xmax": 939
+      },
+      "snippet": "04/02/2026 SGMK26020451159 THANH TOAN GHN EXPRESS - CUOC VC 2.483.000 61.965.095"
+     }
+    },
+    {
+     "row_id": "T0035",
+     "date": "2026-02-05",
+     "description": "CHUYEN DEN FE CREDIT - TRA GOP",
+     "counterparty": "FE CREDIT",
+     "debit": 3250000.0,
+     "credit": 0.0,
+     "balance_after": 58715095.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 771,
+       "xmin": 60,
+       "ymax": 784,
+       "xmax": 939
+      },
+      "snippet": "05/02/2026 SGMK26020514543 CHUYEN DEN FE CREDIT - TRA GOP 3.250.000 58.715.095"
+     }
+    },
+    {
+     "row_id": "T0036",
+     "date": "2026-02-05",
+     "description": "NOP TIEN MAT - PGD TAN BINH",
+     "debit": 0.0,
+     "credit": 3800000.0,
+     "balance_after": 62515095.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 790,
+       "xmin": 60,
+       "ymax": 803,
+       "xmax": 939
+      },
+      "snippet": "05/02/2026 SGMK26020581297 NOP TIEN MAT - PGD TAN BINH 3.800.000 62.515.095"
+     }
+    },
+    {
+     "row_id": "T0037",
+     "date": "2026-02-06",
+     "description": "CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG",
+     "counterparty": "XUONG MAY MINH ANH",
+     "debit": 13100000.0,
+     "credit": 0.0,
+     "balance_after": 49415095.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 808,
+       "xmin": 60,
+       "ymax": 822,
+       "xmax": 939
+      },
+      "snippet": "06/02/2026 SGMK26020675997 CHUYEN DEN XUONG MAY MINH ANH - TIEN HANG 13.100.000 49.415.095"
+     }
+    },
+    {
+     "row_id": "T0038",
+     "date": "2026-02-06",
+     "description": "RUT TIEN ATM - ATM SGMK Q.TAN BINH",
+     "debit": 3000000.0,
+     "credit": 0.0,
+     "balance_after": 46415095.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 827,
+       "xmin": 60,
+       "ymax": 841,
+       "xmax": 939
+      },
+      "snippet": "06/02/2026 SGMK26020643867 RUT TIEN ATM - ATM SGMK Q.TAN BINH 3.000.000 46.415.095"
+     }
+    },
+    {
+     "row_id": "T0039",
+     "date": "2026-02-07",
+     "description": "CHUYEN TIEN TU SHOPEE PAYOUT - KY 0702",
+     "counterparty": "SHOPEE",
+     "debit": 0.0,
+     "credit": 10856000.0,
+     "balance_after": 57271095.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 846,
+       "xmin": 60,
+       "ymax": 859,
+       "xmax": 939
+      },
+      "snippet": "07/02/2026 SGMK26020746404 CHUYEN TIEN TU SHOPEE PAYOUT - KY 0702 10.856.000 57.271.095"
+     }
+    },
+    {
+     "row_id": "T0040",
+     "date": "2026-02-07",
+     "description": "SHOPEE ADS - NAP TIEN QUANG CAO",
+     "counterparty": "SHOPEE",
+     "debit": 2500000.0,
+     "credit": 0.0,
+     "balance_after": 54771095.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 864,
+       "xmin": 60,
+       "ymax": 878,
+       "xmax": 939
+      },
+      "snippet": "07/02/2026 SGMK26020754118 SHOPEE ADS - NAP TIEN QUANG CAO 2.500.000 54.771.095"
+     }
+    },
+    {
+     "row_id": "T0041",
+     "date": "2026-02-07",
+     "description": "THANH TOAN GHN EXPRESS - CUOC VC",
+     "counterparty": "GHN EXPRESS",
+     "debit": 1683000.0,
+     "credit": 0.0,
+     "balance_after": 53088095.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 883,
+       "xmin": 60,
+       "ymax": 896,
+       "xmax": 939
+      },
+      "snippet": "07/02/2026 SGMK26020747175 THANH TOAN GHN EXPRESS - CUOC VC 1.683.000 53.088.095"
+     }
+    },
+    {
+     "row_id": "T0042",
+     "date": "2026-02-09",
+     "description": "THANH TOAN DON HANG - PHAM THU TRANG",
+     "counterparty": "PHAM THU TRANG",
+     "debit": 0.0,
+     "credit": 3250000.0,
+     "balance_after": 56338095.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 901,
+       "xmin": 60,
+       "ymax": 915,
+       "xmax": 939
+      },
+      "snippet": "09/02/2026 SGMK26020909225 THANH TOAN DON HANG - PHAM THU TRANG 3.250.000 56.338.095"
+     }
+    }
+   ]
+  }
+ },
+ "input_tokens": 1309,
+ "output_tokens": 10559,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-page-v1.0",
+ "agent": "extractor:bank_statement:page",
+ "cached_at": "2026-10-15T07:04:56+00:00"
+}
