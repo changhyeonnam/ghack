@@ -94,8 +94,8 @@ Open the app, click **Load demo cases** (each browser gets its own copy; **Reset
 Everything defaults to **Gemini 3.8 Flash** (list price USD 0.75 / 3.75 per 1M input / output tokens). Measured on the
 live run of 2026-10-15: a **cold run costs about USD 0.26-0.31 per case and takes about 2 minutes** end to end; the
 single-prompt baseline costs about USD 0.015 (it does no checking). Every response is cached by content hash, so a
-**cached re-run costs USD 0**. The public demo runs in `cache_only` mode: the three demo cases replay cached Gemini runs
-(USD 0) and only the customer letter calls Gemini live (about USD 0.0015 per letter). Each browser gets its own copy of
+**cached re-run costs USD 0**. The public demo (like a keyless checkout) runs in `cache_only` mode: the three demo cases replay the recorded live
+Gemini run (USD 0) and only the customer letter calls Gemini live (about USD 0.0015 per letter). Each browser gets its own copy of
 the demo cases with a **Reset demo** button. Cloud Run scales to zero (so the first request may hit a cold start);
 Firestore and Cloud Storage stay far inside their free quotas. `LEDGERLENS_BUDGET_CAP_USD` (default 5) makes the
 service refuse further Gemini calls once the process has spent that much. Setting `MIN_INSTANCES=1` to avoid cold starts
@@ -124,16 +124,16 @@ for a human decision.
 
 ## Benchmark
 
-Live run of 2026-10-15 on `gemini-3.8-flash`: 3 synthetic businesses, 43 documents, 20 planted traps
-(`data/synth/traps.json`). The baseline is one "read everything and write a memo" prompt on the same documents and model.
-Scoring is strict: an objection counts for a trap only if it carries the trap's identifying amount or document, and each
-objection counts for at most one trap.
+Live Gemini runs on `gemini-3.8-flash` (2026-10-15, re-run of the analyst, Challenger and baseline on 2026-10-16):
+3 synthetic businesses, 43 documents, 20 planted traps (`data/synth/traps.json`). The baseline is one "read everything
+and write a memo" prompt on the same documents and model. Scoring is strict: an objection counts for a trap only if it
+carries the trap's identifying amount or document, and each objection counts for at most one trap.
 
 | Metric | LedgerLens | Single-prompt baseline |
 |---|---|---|
-| Trap recall | **16/20** (95% Wilson CI 0.58-0.92) | 1/20 |
-| Unsourced numbers in the memo | **0** | 47 |
-| Objections on the clean case A | 1 (4.5% of all objections) | - |
+| Trap recall | **18/20** (95% Wilson CI 0.70-0.97) | 3/20 |
+| Unsourced numbers in the memo | **0** | 62 |
+| Objections on the clean case A | 0 | - |
 | Statement rows extracted | 481/481 (100%)* | - |
 | Evidence-link (bbox) accuracy | 100%* | - |
 | Cold run per case | about 2 min, USD 0.26-0.31 | about USD 0.015 |
@@ -141,12 +141,16 @@ objection counts for at most one trap.
 
 \* On clean, born-digital synthetic PDFs; real scans will be lower.
 
-Recommendations: case B matched the expected outcome; case A gave `approve_with_conditions` (expected `approve`); case C
-gave `reject` (expected `request_more_documents`). Missed traps: dashboard gross vs payout (T02), COD revenue vs cash
-deposits (T03), weekly transfer to an informal lender with a data gap (T18), ledger cash income vs cash deposits (T19).
-With n = 3 synthetic businesses these results are indicative, not a validation. The lenient any-keyword rule would give
-18/20. Details: `benchmark/results/REPORT.md` (a `cache_only` replay, so its time and cost read ~0) and
-`benchmark/results/LIVE_RUN_2026-10-15.md` (console output of the live run).
+Recommendations: case C gave `request_more_documents` (matches expected); case A gave `approve_with_conditions`
+(expected `approve`); case B gave `request_more_documents` (expected `approve_with_conditions`). Missed traps: dashboard
+gross vs payout (T02) and COD revenue vs cash deposits (T03).
+
+**This is not a blind evaluation.** The three cases informed the fixes made after the first live run (demo watermark
+handling, ledger/deposit alignment, weekly-lender detection, recommendation rule); held-out cases are future work. With
+n = 3 synthetic businesses the results are indicative, not a validation. A keyless checkout and the public demo replay
+this recorded live Gemini run; only the customer letter calls Gemini live. Details: `benchmark/results/REPORT.md` (a
+`cache_only` replay, so its time and cost read ~0), `benchmark/results/LIVE_RUN_2026-10-15.md` and
+`benchmark/results/LIVE_RUN_2026-10-16.md` (console output of the live runs).
 
 ## License
 

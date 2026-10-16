@@ -174,7 +174,7 @@ def before_after():
         for i in range(4):
             arrow(ax, xs[i] + W, y + 0.45, xs[i + 1], y + 0.45, lw=1.2, color=edge if edge == AMBER else LINE)
     # impact column
-    imp = [("~2 min", "per file, end to end"), ("~0.28", "USD per case, cold"), ("0 vs 47", "unsourced numbers")]
+    imp = [("~2 min", "per file, end to end"), ("~0.28", "USD per case, cold"), ("0 vs 62", "unsourced numbers")]
     yy = 2.75
     for big, small in imp:
         rbox(ax, 8.55, yy - 0.8, 0.75, 0.8, fill=TINT, edge=TEAL, lw=1.1)
@@ -266,7 +266,7 @@ def roadmap():
         if i < 2:
             arrow(ax, x + w, y + h / 2, phases[i + 1][3], y + h / 2, lw=1.4)
     ax.plot([0.2, 9.2], [y - 0.12, y - 0.12], color=LINE, lw=1)
-    limits = [("Synthetic benchmark", ["Live Gemini results on 3 synthetic businesses (n = 3).", "The pilot replaces them with real-data results."], 0.2, 0),
+    limits = [("Synthetic benchmark", ["3 synthetic businesses (n = 3) that also informed fixes;", "held-out and real-data cases come with the pilot."], 0.2, 0),
               ("Forged documents", ["Hash and balance-chain checks catch crude edits.", "Open-banking data closes the gap for the rest."], 3.25, 1),
               ("Platform sellers", ["Shopee and Grab already lend to their own sellers.", "We target banks and MFIs lending outside platforms."], 6.3, None)]
     text(ax, 0.2, 1.72, "What we do not claim yet, and which phase answers it", 8, GREY, True)
