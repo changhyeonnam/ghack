@@ -1,0 +1,165 @@
+{
+ "text": "{\n  \"signage_text\": \"SERVICE BAY 2\",\n  \"business_type_guess\": \"auto repair shop / service bay\",\n  \"apparent_size\": \"medium\",\n  \"inventory_level\": \"sparse\",\n  \"observations\": [\n    {\n      \"text\": \"Signage reads 'SERVICE BAY 2' hanging from or mounted on the wall above the bay.\",\n      \"source\": {\n        \"doc_id\": \"D11\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 70,\n          \"xmin\": 386,\n          \"ymax\": 140,\n          \"xmax\": 615\n        },\n        \"snippet\": \"SERVICE BAY 2\"\n      }\n    },\n    {\n      \"text\": \"Graphic illustration/vector art depicting an auto repair service bay with a vehicle on a lift rather than a real photographic image.\",\n      \"source\": {\n        \"doc_id\": \"D11\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 365,\n          \"xmin\": 325,\n          \"ymax\": 605,\n          \"xmax\": 737\n        },\n        \"snippet\": null\n      }\n    },\n    {\n      \"text\": \"Red tool cabinet or chest on the left side of the bay.\",\n      \"source\": {\n        \"doc_id\": \"D11\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 418,\n          \"xmin\": 43,\n          \"ymax\": 763,\n          \"xmax\": 215\n        },\n        \"snippet\": null\n      }\n    },\n    {\n      \"text\": \"Stack of spare tires/wheels depicted on the right side.\",\n      \"source\": {\n        \"doc_id\": \"D11\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 438,\n          \"xmin\": 841,\n          \"ymax\": 583,\n          \"xmax\": 953\n        },\n        \"snippet\": null\n      }\n    },\n    {\n      \"text\": \"Watermark or disclaimer text at bottom right reads 'SYNTHETIC · FOR DEMO'.\",\n      \"source\": {\n        \"doc_id\": \"D11\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 955,\n          \"xmin\": 792,\n          \"ymax\": 994,\n          \"xmax\": 995\n        },\n        \"snippet\": \"SYNTHETIC · FOR DEMO\"\n      }\n    }\n  ]\n}",
+ "parsed": {
+  "signage_text": "SERVICE BAY 2",
+  "business_type_guess": "auto repair shop / service bay",
+  "apparent_size": "medium",
+  "inventory_level": "sparse",
+  "observations": [
+   {
+    "text": "Signage reads 'SERVICE BAY 2' hanging from or mounted on the wall above the bay.",
+    "source": {
+     "doc_id": "D11",
+     "page": 1,
+     "bbox": {
+      "ymin": 70,
+      "xmin": 386,
+      "ymax": 140,
+      "xmax": 615
+     },
+     "snippet": "SERVICE BAY 2"
+    }
+   },
+   {
+    "text": "Graphic illustration/vector art depicting an auto repair service bay with a vehicle on a lift rather than a real photographic image.",
+    "source": {
+     "doc_id": "D11",
+     "page": 1,
+     "bbox": {
+      "ymin": 365,
+      "xmin": 325,
+      "ymax": 605,
+      "xmax": 737
+     },
+     "snippet": null
+    }
+   },
+   {
+    "text": "Red tool cabinet or chest on the left side of the bay.",
+    "source": {
+     "doc_id": "D11",
+     "page": 1,
+     "bbox": {
+      "ymin": 418,
+      "xmin": 43,
+      "ymax": 763,
+      "xmax": 215
+     },
+     "snippet": null
+    }
+   },
+   {
+    "text": "Stack of spare tires/wheels depicted on the right side.",
+    "source": {
+     "doc_id": "D11",
+     "page": 1,
+     "bbox": {
+      "ymin": 438,
+      "xmin": 841,
+      "ymax": 583,
+      "xmax": 953
+     },
+     "snippet": null
+    }
+   },
+   {
+    "text": "Watermark or disclaimer text at bottom right reads 'SYNTHETIC · FOR DEMO'.",
+    "source": {
+     "doc_id": "D11",
+     "page": 1,
+     "bbox": {
+      "ymin": 955,
+      "xmin": 792,
+      "ymax": 994,
+      "xmax": 995
+     },
+     "snippet": "SYNTHETIC · FOR DEMO"
+    }
+   }
+  ]
+ },
+ "state": {
+  "output": {
+   "signage_text": "SERVICE BAY 2",
+   "business_type_guess": "auto repair shop / service bay",
+   "apparent_size": "medium",
+   "inventory_level": "sparse",
+   "observations": [
+    {
+     "text": "Signage reads 'SERVICE BAY 2' hanging from or mounted on the wall above the bay.",
+     "source": {
+      "doc_id": "D11",
+      "page": 1,
+      "bbox": {
+       "ymin": 70,
+       "xmin": 386,
+       "ymax": 140,
+       "xmax": 615
+      },
+      "snippet": "SERVICE BAY 2"
+     }
+    },
+    {
+     "text": "Graphic illustration/vector art depicting an auto repair service bay with a vehicle on a lift rather than a real photographic image.",
+     "source": {
+      "doc_id": "D11",
+      "page": 1,
+      "bbox": {
+       "ymin": 365,
+       "xmin": 325,
+       "ymax": 605,
+       "xmax": 737
+      }
+     }
+    },
+    {
+     "text": "Red tool cabinet or chest on the left side of the bay.",
+     "source": {
+      "doc_id": "D11",
+      "page": 1,
+      "bbox": {
+       "ymin": 418,
+       "xmin": 43,
+       "ymax": 763,
+       "xmax": 215
+      }
+     }
+    },
+    {
+     "text": "Stack of spare tires/wheels depicted on the right side.",
+     "source": {
+      "doc_id": "D11",
+      "page": 1,
+      "bbox": {
+       "ymin": 438,
+       "xmin": 841,
+       "ymax": 583,
+       "xmax": 953
+      }
+     }
+    },
+    {
+     "text": "Watermark or disclaimer text at bottom right reads 'SYNTHETIC · FOR DEMO'.",
+     "source": {
+      "doc_id": "D11",
+      "page": 1,
+      "bbox": {
+       "ymin": 955,
+       "xmin": 792,
+       "ymax": 994,
+       "xmax": 995
+      },
+      "snippet": "SYNTHETIC · FOR DEMO"
+     }
+    }
+   ]
+  }
+ },
+ "input_tokens": 952,
+ "output_tokens": 637,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:premises_photo",
+ "cached_at": "2026-10-15T07:07:27+00:00"
+}

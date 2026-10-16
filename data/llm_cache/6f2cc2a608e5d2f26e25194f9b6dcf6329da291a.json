@@ -1,0 +1,272 @@
+{
+ "text": "{\n  \"merchant\": \"J&T EXPRESS\",\n  \"date\": \"2026-05-06\",\n  \"receipt_number\": \"JT-77109\",\n  \"currency\": \"VND\",\n  \"total\": {\n    \"value\": 200000.0,\n    \"source\": {\n      \"doc_id\": \"D13\",\n      \"page\": 1,\n      \"bbox\": {\n        \"ymin\": 634,\n        \"xmin\": 403,\n        \"ymax\": 648,\n        \"xmax\": 535\n      },\n      \"snippet\": \"200.000\"\n    }\n  },\n  \"items\": [\n    {\n      \"description\": \"JT682375A 900g\",\n      \"amount\": 30000.0,\n      \"source\": {\n        \"doc_id\": \"D13\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 412,\n          \"xmin\": 110,\n          \"ymax\": 427,\n          \"xmax\": 849\n        },\n        \"snippet\": \"JT682375A                    900        30.000\"\n      }\n    },\n    {\n      \"description\": \"JT159438A 1200g\",\n      \"amount\": 36000.0,\n      \"source\": {\n        \"doc_id\": \"D13\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 437,\n          \"xmin\": 110,\n          \"ymax\": 451,\n          \"xmax\": 849\n        },\n        \"snippet\": \"JT159438A                   1200        36.000\"\n      }\n    },\n    {\n      \"description\": \"JT296826A 500g\",\n      \"amount\": 22000.0,\n      \"source\": {\n        \"doc_id\": \"D13\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 461,\n          \"xmin\": 110,\n          \"ymax\": 476,\n          \"xmax\": 849\n        },\n        \"snippet\": \"JT296826A                    500        22.000\"\n      }\n    },\n    {\n      \"description\": \"JT557983A 900g\",\n      \"amount\": 30000.0,\n      \"source\": {\n        \"doc_id\": \"D13\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 486,\n          \"xmin\": 110,\n          \"ymax\": 500,\n          \"xmax\": 849\n        },\n        \"snippet\": \"JT557983A                    900        30.000\"\n      }\n    },\n    {\n      \"description\": \"JT823730A 900g\",\n      \"amount\": 30000.0,\n      \"source\": {\n        \"doc_id\": \"D13\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 510,\n          \"xmin\": 110,\n          \"ymax\": 525,\n          \"xmax\": 849\n        },\n        \"snippet\": \"JT823730A                    900        30.000\"\n      }\n    },\n    {\n      \"description\": \"JT391637A 450g\",\n      \"amount\": 22000.0,\n      \"source\": {\n        \"doc_id\": \"D13\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 535,\n          \"xmin\": 110,\n          \"ymax\": 549,\n          \"xmax\": 849\n        },\n        \"snippet\": \"JT391637A                    450        22.000\"\n      }\n    },\n    {\n      \"description\": \"JT290135A 900g\",\n      \"amount\": 30000.0,\n      \"source\": {\n        \"doc_id\": \"D13\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 559,\n          \"xmin\": 110,\n          \"ymax\": 574,\n          \"xmax\": 849\n        },\n        \"snippet\": \"JT290135A                    900        30.000\"\n      }\n    }\n  ],\n  \"payment_method\": \"TRU VAO VI J&T\",\n  \"direction\": \"purchase\",\n  \"handwritten\": false\n}",
+ "parsed": {
+  "merchant": "J&T EXPRESS",
+  "date": "2026-05-06",
+  "receipt_number": "JT-77109",
+  "currency": "VND",
+  "total": {
+   "value": 200000.0,
+   "source": {
+    "doc_id": "D13",
+    "page": 1,
+    "bbox": {
+     "ymin": 634,
+     "xmin": 403,
+     "ymax": 648,
+     "xmax": 535
+    },
+    "snippet": "200.000"
+   }
+  },
+  "items": [
+   {
+    "description": "JT682375A 900g",
+    "amount": 30000.0,
+    "source": {
+     "doc_id": "D13",
+     "page": 1,
+     "bbox": {
+      "ymin": 412,
+      "xmin": 110,
+      "ymax": 427,
+      "xmax": 849
+     },
+     "snippet": "JT682375A                    900        30.000"
+    }
+   },
+   {
+    "description": "JT159438A 1200g",
+    "amount": 36000.0,
+    "source": {
+     "doc_id": "D13",
+     "page": 1,
+     "bbox": {
+      "ymin": 437,
+      "xmin": 110,
+      "ymax": 451,
+      "xmax": 849
+     },
+     "snippet": "JT159438A                   1200        36.000"
+    }
+   },
+   {
+    "description": "JT296826A 500g",
+    "amount": 22000.0,
+    "source": {
+     "doc_id": "D13",
+     "page": 1,
+     "bbox": {
+      "ymin": 461,
+      "xmin": 110,
+      "ymax": 476,
+      "xmax": 849
+     },
+     "snippet": "JT296826A                    500        22.000"
+    }
+   },
+   {
+    "description": "JT557983A 900g",
+    "amount": 30000.0,
+    "source": {
+     "doc_id": "D13",
+     "page": 1,
+     "bbox": {
+      "ymin": 486,
+      "xmin": 110,
+      "ymax": 500,
+      "xmax": 849
+     },
+     "snippet": "JT557983A                    900        30.000"
+    }
+   },
+   {
+    "description": "JT823730A 900g",
+    "amount": 30000.0,
+    "source": {
+     "doc_id": "D13",
+     "page": 1,
+     "bbox": {
+      "ymin": 510,
+      "xmin": 110,
+      "ymax": 525,
+      "xmax": 849
+     },
+     "snippet": "JT823730A                    900        30.000"
+    }
+   },
+   {
+    "description": "JT391637A 450g",
+    "amount": 22000.0,
+    "source": {
+     "doc_id": "D13",
+     "page": 1,
+     "bbox": {
+      "ymin": 535,
+      "xmin": 110,
+      "ymax": 549,
+      "xmax": 849
+     },
+     "snippet": "JT391637A                    450        22.000"
+    }
+   },
+   {
+    "description": "JT290135A 900g",
+    "amount": 30000.0,
+    "source": {
+     "doc_id": "D13",
+     "page": 1,
+     "bbox": {
+      "ymin": 559,
+      "xmin": 110,
+      "ymax": 574,
+      "xmax": 849
+     },
+     "snippet": "JT290135A                    900        30.000"
+    }
+   }
+  ],
+  "payment_method": "TRU VAO VI J&T",
+  "direction": "purchase",
+  "handwritten": false
+ },
+ "state": {
+  "output": {
+   "merchant": "J&T EXPRESS",
+   "date": "2026-05-06",
+   "receipt_number": "JT-77109",
+   "currency": "VND",
+   "total": {
+    "value": 200000.0,
+    "source": {
+     "doc_id": "D13",
+     "page": 1,
+     "bbox": {
+      "ymin": 634,
+      "xmin": 403,
+      "ymax": 648,
+      "xmax": 535
+     },
+     "snippet": "200.000"
+    }
+   },
+   "items": [
+    {
+     "description": "JT682375A 900g",
+     "amount": 30000.0,
+     "source": {
+      "doc_id": "D13",
+      "page": 1,
+      "bbox": {
+       "ymin": 412,
+       "xmin": 110,
+       "ymax": 427,
+       "xmax": 849
+      },
+      "snippet": "JT682375A                    900        30.000"
+     }
+    },
+    {
+     "description": "JT159438A 1200g",
+     "amount": 36000.0,
+     "source": {
+      "doc_id": "D13",
+      "page": 1,
+      "bbox": {
+       "ymin": 437,
+       "xmin": 110,
+       "ymax": 451,
+       "xmax": 849
+      },
+      "snippet": "JT159438A                   1200        36.000"
+     }
+    },
+    {
+     "description": "JT296826A 500g",
+     "amount": 22000.0,
+     "source": {
+      "doc_id": "D13",
+      "page": 1,
+      "bbox": {
+       "ymin": 461,
+       "xmin": 110,
+       "ymax": 476,
+       "xmax": 849
+      },
+      "snippet": "JT296826A                    500        22.000"
+     }
+    },
+    {
+     "description": "JT557983A 900g",
+     "amount": 30000.0,
+     "source": {
+      "doc_id": "D13",
+      "page": 1,
+      "bbox": {
+       "ymin": 486,
+       "xmin": 110,
+       "ymax": 500,
+       "xmax": 849
+      },
+      "snippet": "JT557983A                    900        30.000"
+     }
+    },
+    {
+     "description": "JT823730A 900g",
+     "amount": 30000.0,
+     "source": {
+      "doc_id": "D13",
+      "page": 1,
+      "bbox": {
+       "ymin": 510,
+       "xmin": 110,
+       "ymax": 525,
+       "xmax": 849
+      },
+      "snippet": "JT823730A                    900        30.000"
+     }
+    },
+    {
+     "description": "JT391637A 450g",
+     "amount": 22000.0,
+     "source": {
+      "doc_id": "D13",
+      "page": 1,
+      "bbox": {
+       "ymin": 535,
+       "xmin": 110,
+       "ymax": 549,
+       "xmax": 849
+      },
+      "snippet": "JT391637A                    450        22.000"
+     }
+    },
+    {
+     "description": "JT290135A 900g",
+     "amount": 30000.0,
+     "source": {
+      "doc_id": "D13",
+      "page": 1,
+      "bbox": {
+       "ymin": 559,
+       "xmin": 110,
+       "ymax": 574,
+       "xmax": 849
+      },
+      "snippet": "JT290135A                    900        30.000"
+     }
+    }
+   ],
+   "payment_method": "TRU VAO VI J&T",
+   "direction": "purchase",
+   "handwritten": false
+  }
+ },
+ "input_tokens": 952,
+ "output_tokens": 1215,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:logistics_receipt",
+ "cached_at": "2026-10-15T07:04:52+00:00"
+}

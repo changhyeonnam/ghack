@@ -1,0 +1,464 @@
+{
+ "text": "{\n  \"documents\": [\n    {\n      \"doc_id\": \"D01\",\n      \"doc_type\": \"bank_statement\",\n      \"language\": \"id\",\n      \"currency\": \"IDR\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.99,\n      \"summary\": \"Bank Nusantara Digital account transaction statement for Sari Dewi covering January to June 2026.\"\n    },\n    {\n      \"doc_id\": \"D02\",\n      \"doc_type\": \"receipt\",\n      \"language\": \"id\",\n      \"currency\": \"IDR\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.99,\n      \"summary\": \"Purchase receipt from Grosir Sembako Barokah to Warung Ibu Sari dated 22/01/2026 for 729,000 IDR.\"\n    },\n    {\n      \"doc_id\": \"D03\",\n      \"doc_type\": \"receipt\",\n      \"language\": \"id\",\n      \"currency\": \"IDR\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.99,\n      \"summary\": \"Purchase receipt from CV Sumber Rejeki to Warung Ibu Sari dated 10/01/2026 for 780,000 IDR.\"\n    },\n    {\n      \"doc_id\": \"D04\",\n      \"doc_type\": \"receipt\",\n      \"language\": \"id\",\n      \"currency\": \"IDR\",\n      \"quality_flags\": [\"synthetic_watermark\", \"handwritten\"],\n      \"confidence\": 0.99,\n      \"summary\": \"Handwritten sales invoice from Agen Gas & Galon Pak Udin to Warung Ibu Sari dated 16/01/2026 for 421,000 IDR.\"\n    },\n    {\n      \"doc_id\": \"D05\",\n      \"doc_type\": \"receipt\",\n      \"language\": \"id\",\n      \"currency\": \"IDR\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.99,\n      \"summary\": \"Purchase receipt from Toko Grosir Makmur to Warung Ibu Sari dated 26/02/2026 for 1,259,000 IDR.\"\n    },\n    {\n      \"doc_id\": \"D06\",\n      \"doc_type\": \"receipt\",\n      \"language\": \"id\",\n      \"currency\": \"IDR\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.99,\n      \"summary\": \"Purchase receipt from Toko Grosir Makmur to Warung Ibu Sari dated 06/02/2026 for 2,215,000 IDR.\"\n    },\n    {\n      \"doc_id\": \"D07\",\n      \"doc_type\": \"receipt\",\n      \"language\": \"id\",\n      \"currency\": \"IDR\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.99,\n      \"summary\": \"Cash purchase receipt from Toko Plastik Anugerah to Warung Ibu Sari dated 16/03/2026 for 324,000 IDR.\"\n    },\n    {\n      \"doc_id\": \"D08\",\n      \"doc_type\": \"receipt\",\n      \"language\": \"id\",\n      \"currency\": \"IDR\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.99,\n      \"summary\": \"Purchase receipt from Toko Grosir Makmur to Warung Ibu Sari dated 21/03/2026 for 892,000 IDR.\"\n    },\n    {\n      \"doc_id\": \"D09\",\n      \"doc_type\": \"receipt\",\n      \"language\": \"id\",\n      \"currency\": \"IDR\",\n      \"quality_flags\": [\"synthetic_watermark\", \"handwritten\"],\n      \"confidence\": 0.99,\n      \"summary\": \"Handwritten sales note from Warung Sayur Bu Tini to Warung Ibu Sari dated 30/03/2026 for 460,000 IDR.\"\n    },\n    {\n      \"doc_id\": \"D10\",\n      \"doc_type\": \"receipt\",\n      \"language\": \"id\",\n      \"currency\": \"IDR\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.99,\n      \"summary\": \"Cash purchase receipt from Toko Grosir Makmur to Warung Ibu Sari dated 27/04/2026 for 1,249,500 IDR.\"\n    },\n    {\n      \"doc_id\": \"D11\",\n      \"doc_type\": \"receipt\",\n      \"language\": \"id\",\n      \"currency\": \"IDR\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.99,\n      \"summary\": \"Cash purchase receipt from Toko Grosir Makmur to Warung Ibu Sari dated 20/04/2026 for 1,052,000 IDR.\"\n    },\n    {\n      \"doc_id\": \"D12\",\n      \"doc_type\": \"receipt\",\n      \"language\": \"id\",\n      \"currency\": \"IDR\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.99,\n      \"summary\": \"Transfer purchase receipt from CV Sumber Rejeki to Warung Ibu Sari dated 13/05/2026 for 708,000 IDR.\"\n    },\n    {\n      \"doc_id\": \"D13\",\n      \"doc_type\": \"receipt\",\n      \"language\": \"id\",\n      \"currency\": \"IDR\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.99,\n      \"summary\": \"Cash purchase receipt from CV Sumber Rejeki to Warung Ibu Sari dated 27/05/2026 for 1,123,000 IDR.\"\n    },\n    {\n      \"doc_id\": \"D14\",\n      \"doc_type\": \"receipt\",\n      \"language\": \"id\",\n      \"currency\": \"IDR\",\n      \"quality_flags\": [\"synthetic_watermark\", \"handwritten\"],\n      \"confidence\": 0.99,\n      \"summary\": \"Handwritten receipt from Toko Telur Pak Yanto to Warung Ibu Sari dated 25/05/2026 for 635,000 IDR.\"\n    },\n    {\n      \"doc_id\": \"D15\",\n      \"doc_type\": \"receipt\",\n      \"language\": \"id\",\n      \"currency\": \"IDR\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.99,\n      \"summary\": \"Cash purchase receipt from Toko Grosir Makmur to Warung Ibu Sari dated 26/06/2026 for 1,422,000 IDR.\"\n    },\n    {\n      \"doc_id\": \"D16\",\n      \"doc_type\": \"receipt\",\n      \"language\": \"id\",\n      \"currency\": \"IDR\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.99,\n      \"summary\": \"Cash purchase receipt from CV Sumber Rejeki to Warung Ibu Sari dated 17/06/2026 for 1,161,000 IDR.\"\n    },\n    {\n      \"doc_id\": \"D17\",\n      \"doc_type\": \"premises_photo\",\n      \"language\": \"id\",\n      \"currency\": null,\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.95,\n      \"summary\": \"External storefront illustration of Warung Ibu Sari.\"\n    },\n    {\n      \"doc_id\": \"D18\",\n      \"doc_type\": \"premises_photo\",\n      \"language\": \"id\",\n      \"currency\": null,\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.95,\n      \"summary\": \"Internal counter and shelves illustration of Warung Ibu Sari showing QRIS point of sale.\"\n    }\n  ],\n  \"business_name_candidates\": [\n    \"Warung Ibu Sari\",\n    \"Grosir Sembako Barokah\",\n    \"CV Sumber Rejeki\",\n    \"Agen Gas & Galon Pak Udin\",\n    \"Toko Grosir Makmur\",\n    \"Toko Plastik Anugerah\",\n    \"Warung Sayur Bu Tini\",\n    \"Toko Telur Pak Yanto\",\n    \"Bank Nusantara Digital\"\n  ],\n  \"location_candidates\": [\n    \"KCP Kebayoran Lama, Jakarta Selatan\",\n    \"Pasar Kebayoran Lama Blok C-12\",\n    \"Jl. Raya Pondok Indah No. 21\",\n    \"Gg. Mawar III No. 5\",\n    \"Jl. Ciledug Raya No. 88, Jakarta Selatan\",\n    \"Pasar Mayestik Lt.1 No.44\",\n    \"Pasar Kebayoran Lama\",\n    \"Jl. Ciledug Raya Gg. 4\"\n  ],\n  \"notes\": \"All documents are synthetic test data marked with SYNTHETIC FOR DEMO watermarks.\"\n}",
+ "parsed": {
+  "documents": [
+   {
+    "doc_id": "D01",
+    "doc_type": "bank_statement",
+    "language": "id",
+    "currency": "IDR",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.99,
+    "summary": "Bank Nusantara Digital account transaction statement for Sari Dewi covering January to June 2026."
+   },
+   {
+    "doc_id": "D02",
+    "doc_type": "receipt",
+    "language": "id",
+    "currency": "IDR",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.99,
+    "summary": "Purchase receipt from Grosir Sembako Barokah to Warung Ibu Sari dated 22/01/2026 for 729,000 IDR."
+   },
+   {
+    "doc_id": "D03",
+    "doc_type": "receipt",
+    "language": "id",
+    "currency": "IDR",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.99,
+    "summary": "Purchase receipt from CV Sumber Rejeki to Warung Ibu Sari dated 10/01/2026 for 780,000 IDR."
+   },
+   {
+    "doc_id": "D04",
+    "doc_type": "receipt",
+    "language": "id",
+    "currency": "IDR",
+    "quality_flags": [
+     "synthetic_watermark",
+     "handwritten"
+    ],
+    "confidence": 0.99,
+    "summary": "Handwritten sales invoice from Agen Gas & Galon Pak Udin to Warung Ibu Sari dated 16/01/2026 for 421,000 IDR."
+   },
+   {
+    "doc_id": "D05",
+    "doc_type": "receipt",
+    "language": "id",
+    "currency": "IDR",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.99,
+    "summary": "Purchase receipt from Toko Grosir Makmur to Warung Ibu Sari dated 26/02/2026 for 1,259,000 IDR."
+   },
+   {
+    "doc_id": "D06",
+    "doc_type": "receipt",
+    "language": "id",
+    "currency": "IDR",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.99,
+    "summary": "Purchase receipt from Toko Grosir Makmur to Warung Ibu Sari dated 06/02/2026 for 2,215,000 IDR."
+   },
+   {
+    "doc_id": "D07",
+    "doc_type": "receipt",
+    "language": "id",
+    "currency": "IDR",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.99,
+    "summary": "Cash purchase receipt from Toko Plastik Anugerah to Warung Ibu Sari dated 16/03/2026 for 324,000 IDR."
+   },
+   {
+    "doc_id": "D08",
+    "doc_type": "receipt",
+    "language": "id",
+    "currency": "IDR",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.99,
+    "summary": "Purchase receipt from Toko Grosir Makmur to Warung Ibu Sari dated 21/03/2026 for 892,000 IDR."
+   },
+   {
+    "doc_id": "D09",
+    "doc_type": "receipt",
+    "language": "id",
+    "currency": "IDR",
+    "quality_flags": [
+     "synthetic_watermark",
+     "handwritten"
+    ],
+    "confidence": 0.99,
+    "summary": "Handwritten sales note from Warung Sayur Bu Tini to Warung Ibu Sari dated 30/03/2026 for 460,000 IDR."
+   },
+   {
+    "doc_id": "D10",
+    "doc_type": "receipt",
+    "language": "id",
+    "currency": "IDR",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.99,
+    "summary": "Cash purchase receipt from Toko Grosir Makmur to Warung Ibu Sari dated 27/04/2026 for 1,249,500 IDR."
+   },
+   {
+    "doc_id": "D11",
+    "doc_type": "receipt",
+    "language": "id",
+    "currency": "IDR",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.99,
+    "summary": "Cash purchase receipt from Toko Grosir Makmur to Warung Ibu Sari dated 20/04/2026 for 1,052,000 IDR."
+   },
+   {
+    "doc_id": "D12",
+    "doc_type": "receipt",
+    "language": "id",
+    "currency": "IDR",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.99,
+    "summary": "Transfer purchase receipt from CV Sumber Rejeki to Warung Ibu Sari dated 13/05/2026 for 708,000 IDR."
+   },
+   {
+    "doc_id": "D13",
+    "doc_type": "receipt",
+    "language": "id",
+    "currency": "IDR",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.99,
+    "summary": "Cash purchase receipt from CV Sumber Rejeki to Warung Ibu Sari dated 27/05/2026 for 1,123,000 IDR."
+   },
+   {
+    "doc_id": "D14",
+    "doc_type": "receipt",
+    "language": "id",
+    "currency": "IDR",
+    "quality_flags": [
+     "synthetic_watermark",
+     "handwritten"
+    ],
+    "confidence": 0.99,
+    "summary": "Handwritten receipt from Toko Telur Pak Yanto to Warung Ibu Sari dated 25/05/2026 for 635,000 IDR."
+   },
+   {
+    "doc_id": "D15",
+    "doc_type": "receipt",
+    "language": "id",
+    "currency": "IDR",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.99,
+    "summary": "Cash purchase receipt from Toko Grosir Makmur to Warung Ibu Sari dated 26/06/2026 for 1,422,000 IDR."
+   },
+   {
+    "doc_id": "D16",
+    "doc_type": "receipt",
+    "language": "id",
+    "currency": "IDR",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.99,
+    "summary": "Cash purchase receipt from CV Sumber Rejeki to Warung Ibu Sari dated 17/06/2026 for 1,161,000 IDR."
+   },
+   {
+    "doc_id": "D17",
+    "doc_type": "premises_photo",
+    "language": "id",
+    "currency": null,
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.95,
+    "summary": "External storefront illustration of Warung Ibu Sari."
+   },
+   {
+    "doc_id": "D18",
+    "doc_type": "premises_photo",
+    "language": "id",
+    "currency": null,
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.95,
+    "summary": "Internal counter and shelves illustration of Warung Ibu Sari showing QRIS point of sale."
+   }
+  ],
+  "business_name_candidates": [
+   "Warung Ibu Sari",
+   "Grosir Sembako Barokah",
+   "CV Sumber Rejeki",
+   "Agen Gas & Galon Pak Udin",
+   "Toko Grosir Makmur",
+   "Toko Plastik Anugerah",
+   "Warung Sayur Bu Tini",
+   "Toko Telur Pak Yanto",
+   "Bank Nusantara Digital"
+  ],
+  "location_candidates": [
+   "KCP Kebayoran Lama, Jakarta Selatan",
+   "Pasar Kebayoran Lama Blok C-12",
+   "Jl. Raya Pondok Indah No. 21",
+   "Gg. Mawar III No. 5",
+   "Jl. Ciledug Raya No. 88, Jakarta Selatan",
+   "Pasar Mayestik Lt.1 No.44",
+   "Pasar Kebayoran Lama",
+   "Jl. Ciledug Raya Gg. 4"
+  ],
+  "notes": "All documents are synthetic test data marked with SYNTHETIC FOR DEMO watermarks."
+ },
+ "state": {
+  "output": {
+   "documents": [
+    {
+     "doc_id": "D01",
+     "doc_type": "bank_statement",
+     "language": "id",
+     "currency": "IDR",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.99,
+     "summary": "Bank Nusantara Digital account transaction statement for Sari Dewi covering January to June 2026."
+    },
+    {
+     "doc_id": "D02",
+     "doc_type": "receipt",
+     "language": "id",
+     "currency": "IDR",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.99,
+     "summary": "Purchase receipt from Grosir Sembako Barokah to Warung Ibu Sari dated 22/01/2026 for 729,000 IDR."
+    },
+    {
+     "doc_id": "D03",
+     "doc_type": "receipt",
+     "language": "id",
+     "currency": "IDR",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.99,
+     "summary": "Purchase receipt from CV Sumber Rejeki to Warung Ibu Sari dated 10/01/2026 for 780,000 IDR."
+    },
+    {
+     "doc_id": "D04",
+     "doc_type": "receipt",
+     "language": "id",
+     "currency": "IDR",
+     "quality_flags": [
+      "synthetic_watermark",
+      "handwritten"
+     ],
+     "confidence": 0.99,
+     "summary": "Handwritten sales invoice from Agen Gas & Galon Pak Udin to Warung Ibu Sari dated 16/01/2026 for 421,000 IDR."
+    },
+    {
+     "doc_id": "D05",
+     "doc_type": "receipt",
+     "language": "id",
+     "currency": "IDR",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.99,
+     "summary": "Purchase receipt from Toko Grosir Makmur to Warung Ibu Sari dated 26/02/2026 for 1,259,000 IDR."
+    },
+    {
+     "doc_id": "D06",
+     "doc_type": "receipt",
+     "language": "id",
+     "currency": "IDR",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.99,
+     "summary": "Purchase receipt from Toko Grosir Makmur to Warung Ibu Sari dated 06/02/2026 for 2,215,000 IDR."
+    },
+    {
+     "doc_id": "D07",
+     "doc_type": "receipt",
+     "language": "id",
+     "currency": "IDR",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.99,
+     "summary": "Cash purchase receipt from Toko Plastik Anugerah to Warung Ibu Sari dated 16/03/2026 for 324,000 IDR."
+    },
+    {
+     "doc_id": "D08",
+     "doc_type": "receipt",
+     "language": "id",
+     "currency": "IDR",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.99,
+     "summary": "Purchase receipt from Toko Grosir Makmur to Warung Ibu Sari dated 21/03/2026 for 892,000 IDR."
+    },
+    {
+     "doc_id": "D09",
+     "doc_type": "receipt",
+     "language": "id",
+     "currency": "IDR",
+     "quality_flags": [
+      "synthetic_watermark",
+      "handwritten"
+     ],
+     "confidence": 0.99,
+     "summary": "Handwritten sales note from Warung Sayur Bu Tini to Warung Ibu Sari dated 30/03/2026 for 460,000 IDR."
+    },
+    {
+     "doc_id": "D10",
+     "doc_type": "receipt",
+     "language": "id",
+     "currency": "IDR",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.99,
+     "summary": "Cash purchase receipt from Toko Grosir Makmur to Warung Ibu Sari dated 27/04/2026 for 1,249,500 IDR."
+    },
+    {
+     "doc_id": "D11",
+     "doc_type": "receipt",
+     "language": "id",
+     "currency": "IDR",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.99,
+     "summary": "Cash purchase receipt from Toko Grosir Makmur to Warung Ibu Sari dated 20/04/2026 for 1,052,000 IDR."
+    },
+    {
+     "doc_id": "D12",
+     "doc_type": "receipt",
+     "language": "id",
+     "currency": "IDR",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.99,
+     "summary": "Transfer purchase receipt from CV Sumber Rejeki to Warung Ibu Sari dated 13/05/2026 for 708,000 IDR."
+    },
+    {
+     "doc_id": "D13",
+     "doc_type": "receipt",
+     "language": "id",
+     "currency": "IDR",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.99,
+     "summary": "Cash purchase receipt from CV Sumber Rejeki to Warung Ibu Sari dated 27/05/2026 for 1,123,000 IDR."
+    },
+    {
+     "doc_id": "D14",
+     "doc_type": "receipt",
+     "language": "id",
+     "currency": "IDR",
+     "quality_flags": [
+      "synthetic_watermark",
+      "handwritten"
+     ],
+     "confidence": 0.99,
+     "summary": "Handwritten receipt from Toko Telur Pak Yanto to Warung Ibu Sari dated 25/05/2026 for 635,000 IDR."
+    },
+    {
+     "doc_id": "D15",
+     "doc_type": "receipt",
+     "language": "id",
+     "currency": "IDR",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.99,
+     "summary": "Cash purchase receipt from Toko Grosir Makmur to Warung Ibu Sari dated 26/06/2026 for 1,422,000 IDR."
+    },
+    {
+     "doc_id": "D16",
+     "doc_type": "receipt",
+     "language": "id",
+     "currency": "IDR",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.99,
+     "summary": "Cash purchase receipt from CV Sumber Rejeki to Warung Ibu Sari dated 17/06/2026 for 1,161,000 IDR."
+    },
+    {
+     "doc_id": "D17",
+     "doc_type": "premises_photo",
+     "language": "id",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.95,
+     "summary": "External storefront illustration of Warung Ibu Sari."
+    },
+    {
+     "doc_id": "D18",
+     "doc_type": "premises_photo",
+     "language": "id",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.95,
+     "summary": "Internal counter and shelves illustration of Warung Ibu Sari showing QRIS point of sale."
+    }
+   ],
+   "business_name_candidates": [
+    "Warung Ibu Sari",
+    "Grosir Sembako Barokah",
+    "CV Sumber Rejeki",
+    "Agen Gas & Galon Pak Udin",
+    "Toko Grosir Makmur",
+    "Toko Plastik Anugerah",
+    "Warung Sayur Bu Tini",
+    "Toko Telur Pak Yanto",
+    "Bank Nusantara Digital"
+   ],
+   "location_candidates": [
+    "KCP Kebayoran Lama, Jakarta Selatan",
+    "Pasar Kebayoran Lama Blok C-12",
+    "Jl. Raya Pondok Indah No. 21",
+    "Gg. Mawar III No. 5",
+    "Jl. Ciledug Raya No. 88, Jakarta Selatan",
+    "Pasar Mayestik Lt.1 No.44",
+    "Pasar Kebayoran Lama",
+    "Jl. Ciledug Raya Gg. 4"
+   ],
+   "notes": "All documents are synthetic test data marked with SYNTHETIC FOR DEMO watermarks."
+  }
+ },
+ "input_tokens": 10409,
+ "output_tokens": 2278,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "intake-v1.0",
+ "agent": "intake",
+ "cached_at": "2026-10-15T06:46:22+00:00"
+}

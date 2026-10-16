@@ -1,0 +1,783 @@
+{
+ "text": "{\"business_name_header\":\"Reyes Auto Repair\",\"address_header\":null,\"currency\":\"PHP\",\"period_label\":\"Hunyo 2026\",\"entries\":[{\"row_id\":\"L0001\",\"date\":\"2026-06-01\",\"description\":\"Clutch adjust - Wigo\",\"amount\":1650.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D08\",\"page\":1,\"bbox\":{\"ymin\":158,\"xmin\":89,\"ymax\":182,\"xmax\":928},\"snippet\":\"1 | Clutch adjust - Wigo | 1,650\"}},{\"row_id\":\"L0002\",\"date\":\"2026-06-03\",\"description\":\"Palit bumbilya + wiper - Vios\",\"amount\":1650.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D08\",\"page\":1,\"bbox\":{\"ymin\":184,\"xmin\":89,\"ymax\":209,\"xmax\":929},\"snippet\":\"3 | Palit bumbilya + wiper - Vios | 1,650\"}},{\"row_id\":\"L0003\",\"date\":\"2026-06-05\",\"description\":\"Langis 4L x5 (gastos)\",\"amount\":2050.0,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D08\",\"page\":1,\"bbox\":{\"ymin\":210,\"xmin\":88,\"ymax\":235,\"xmax\":929},\"snippet\":\"5 | Langis 4L x5 (gastos) | -2,050\"}},{\"row_id\":\"L0004\",\"date\":\"2026-06-06\",\"description\":\"Change oil - Toyota Vios\",\"amount\":1600.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D08\",\"page\":1,\"bbox\":{\"ymin\":235,\"xmin\":89,\"ymax\":260,\"xmax\":928},\"snippet\":\"6 | Change oil - Toyota Vios | 1,600\"}},{\"row_id\":\"L0005\",\"date\":\"2026-06-08\",\"description\":\"Palit brake fluid - Mirage\",\"amount\":1650.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D08\",\"page\":1,\"bbox\":{\"ymin\":285,\"xmin\":88,\"ymax\":312,\"xmax\":929},\"snippet\":\"8 | Palit brake fluid - Mirage | 1,650\"}},{\"row_id\":\"L0006\",\"date\":\"2026-06-08\",\"description\":\"Tubig + yelo\",\"amount\":400.0,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D08\",\"page\":1,\"bbox\":{\"ymin\":312,\"xmin\":88,\"ymax\":338,\"xmax\":929},\"snippet\":\"8 | Tubig + yelo | -400\"}},{\"row_id\":\"L0007\",\"date\":\"2026-06-09\",\"description\":\"Palit brake fluid - Mirage\",\"amount\":1700.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D08\",\"page\":1,\"bbox\":{\"ymin\":338,\"xmin\":88,\"ymax\":363,\"xmax\":928},\"snippet\":\"9 | Palit brake fluid - Mirage | 1,700\"}},{\"row_id\":\"L0008\",\"date\":\"2026-06-10\",\"description\":\"Aircon cleaning - Innova\",\"amount\":3000.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D08\",\"page\":1,\"bbox\":{\"ymin\":364,\"xmin\":88,\"ymax\":391,\"xmax\":928},\"snippet\":\"10 | Aircon cleaning - Innova | 3,000\"}},{\"row_id\":\"L0009\",\"date\":\"2026-06-13\",\"description\":\"Palit bumbilya + wiper - Vios\",\"amount\":1850.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D08\",\"page\":1,\"bbox\":{\"ymin\":390,\"xmin\":88,\"ymax\":416,\"xmax\":928},\"snippet\":\"13 | Palit bumbilya + wiper - Vios | 1,850\"}},{\"row_id\":\"L0010\",\"date\":\"2026-06-13\",\"description\":\"Langis 4L x5 (gastos)\",\"amount\":2400.0,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D08\",\"page\":1,\"bbox\":{\"ymin\":416,\"xmin\":88,\"ymax\":441,\"xmax\":928},\"snippet\":\"13 | Langis 4L x5 (gastos) | -2,400\"}},{\"row_id\":\"L0011\",\"date\":\"2026-06-15\",\"description\":\"Overhaul deposit - L300\",\"amount\":5650.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D08\",\"page\":1,\"bbox\":{\"ymin\":468,\"xmin\":88,\"ymax\":494,\"xmax\":928},\"snippet\":\"15 | Overhaul deposit - L300 | 5,650\"}},{\"row_id\":\"L0012\",\"date\":\"2026-06-16\",\"description\":\"Change oil - Toyota Vios\",\"amount\":2100.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D08\",\"page\":1,\"bbox\":{\"ymin\":495,\"xmin\":88,\"ymax\":521,\"xmax\":928},\"snippet\":\"16 | Change oil - Toyota Vios | 2,100\"}},{\"row_id\":\"L0013\",\"date\":\"2026-06-18\",\"description\":\"Wheel alignment - Montero\",\"amount\":1850.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D08\",\"page\":1,\"bbox\":{\"ymin\":520,\"xmin\":88,\"ymax\":546,\"xmax\":927},\"snippet\":\"18 | Wheel alignment - Montero | 1,850\"}},{\"row_id\":\"L0014\",\"date\":\"2026-06-19\",\"description\":\"Wheel alignment - Montero\",\"amount\":1750.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D08\",\"page\":1,\"bbox\":{\"ymin\":546,\"xmin\":88,\"ymax\":572,\"xmax\":928},\"snippet\":\"19 | Wheel alignment - Montero | 1,750\"}},{\"row_id\":\"L0015\",\"date\":\"2026-06-19\",\"description\":\"Sweldo ni Boy\",\"amount\":4400.0,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D08\",\"page\":1,\"bbox\":{\"ymin\":572,\"xmin\":88,\"ymax\":597,\"xmax\":927},\"snippet\":\"19 | Sweldo ni Boy | -4,400\"}},{\"row_id\":\"L0016\",\"date\":\"2026-06-22\",\"description\":\"Suspension bushing - Innova\",\"amount\":4750.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D08\",\"page\":1,\"bbox\":{\"ymin\":624,\"xmin\":88,\"ymax\":650,\"xmax\":928},\"snippet\":\"22 | Suspension bushing - Innova | 4,750\"}},{\"row_id\":\"L0017\",\"date\":\"2026-06-25\",\"description\":\"Underchassis - Civic\",\"amount\":3150.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D08\",\"page\":1,\"bbox\":{\"ymin\":650,\"xmin\":88,\"ymax\":676,\"xmax\":928},\"snippet\":\"25 | Underchassis - Civic | 3,150\"}},{\"row_id\":\"L0018\",\"date\":\"2026-06-26\",\"description\":\"Change oil + filter - Raize\",\"amount\":2200.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D08\",\"page\":1,\"bbox\":{\"ymin\":676,\"xmin\":88,\"ymax\":702,\"xmax\":928},\"snippet\":\"26 | Change oil + filter - Raize | 2,200\"}},{\"row_id\":\"L0019\",\"date\":\"2026-06-27\",\"description\":\"Overhaul deposit - L300\",\"amount\":5950.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D08\",\"page\":1,\"bbox\":{\"ymin\":702,\"xmin\":88,\"ymax\":727,\"xmax\":928},\"snippet\":\"27 | Overhaul deposit - L300 | 5,950\"}},{\"row_id\":\"L0020\",\"date\":\"2026-06-29\",\"description\":\"Tune up - Mitsubishi Mirage\",\"amount\":2650.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D08\",\"page\":1,\"bbox\":{\"ymin\":754,\"xmin\":88,\"ymax\":779,\"xmax\":928},\"snippet\":\"29 | Tune up - Mitsubishi Mirage | 2,650\"}},{\"row_id\":\"L0021\",\"date\":\"2026-06-30\",\"description\":\"Aircon cleaning - Innova\",\"amount\":3050.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D08\",\"page\":1,\"bbox\":{\"ymin\":779,\"xmin\":88,\"ymax\":805,\"xmax\":927},\"snippet\":\"30 | Aircon cleaning - Innova | 3,050\"}}]}",
+ "parsed": {
+  "business_name_header": "Reyes Auto Repair",
+  "address_header": null,
+  "currency": "PHP",
+  "period_label": "Hunyo 2026",
+  "entries": [
+   {
+    "row_id": "L0001",
+    "date": "2026-06-01",
+    "description": "Clutch adjust - Wigo",
+    "amount": 1650.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 158,
+      "xmin": 89,
+      "ymax": 182,
+      "xmax": 928
+     },
+     "snippet": "1 | Clutch adjust - Wigo | 1,650"
+    }
+   },
+   {
+    "row_id": "L0002",
+    "date": "2026-06-03",
+    "description": "Palit bumbilya + wiper - Vios",
+    "amount": 1650.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 184,
+      "xmin": 89,
+      "ymax": 209,
+      "xmax": 929
+     },
+     "snippet": "3 | Palit bumbilya + wiper - Vios | 1,650"
+    }
+   },
+   {
+    "row_id": "L0003",
+    "date": "2026-06-05",
+    "description": "Langis 4L x5 (gastos)",
+    "amount": 2050.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 210,
+      "xmin": 88,
+      "ymax": 235,
+      "xmax": 929
+     },
+     "snippet": "5 | Langis 4L x5 (gastos) | -2,050"
+    }
+   },
+   {
+    "row_id": "L0004",
+    "date": "2026-06-06",
+    "description": "Change oil - Toyota Vios",
+    "amount": 1600.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 235,
+      "xmin": 89,
+      "ymax": 260,
+      "xmax": 928
+     },
+     "snippet": "6 | Change oil - Toyota Vios | 1,600"
+    }
+   },
+   {
+    "row_id": "L0005",
+    "date": "2026-06-08",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 1650.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 285,
+      "xmin": 88,
+      "ymax": 312,
+      "xmax": 929
+     },
+     "snippet": "8 | Palit brake fluid - Mirage | 1,650"
+    }
+   },
+   {
+    "row_id": "L0006",
+    "date": "2026-06-08",
+    "description": "Tubig + yelo",
+    "amount": 400.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 312,
+      "xmin": 88,
+      "ymax": 338,
+      "xmax": 929
+     },
+     "snippet": "8 | Tubig + yelo | -400"
+    }
+   },
+   {
+    "row_id": "L0007",
+    "date": "2026-06-09",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 1700.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 338,
+      "xmin": 88,
+      "ymax": 363,
+      "xmax": 928
+     },
+     "snippet": "9 | Palit brake fluid - Mirage | 1,700"
+    }
+   },
+   {
+    "row_id": "L0008",
+    "date": "2026-06-10",
+    "description": "Aircon cleaning - Innova",
+    "amount": 3000.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 364,
+      "xmin": 88,
+      "ymax": 391,
+      "xmax": 928
+     },
+     "snippet": "10 | Aircon cleaning - Innova | 3,000"
+    }
+   },
+   {
+    "row_id": "L0009",
+    "date": "2026-06-13",
+    "description": "Palit bumbilya + wiper - Vios",
+    "amount": 1850.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 390,
+      "xmin": 88,
+      "ymax": 416,
+      "xmax": 928
+     },
+     "snippet": "13 | Palit bumbilya + wiper - Vios | 1,850"
+    }
+   },
+   {
+    "row_id": "L0010",
+    "date": "2026-06-13",
+    "description": "Langis 4L x5 (gastos)",
+    "amount": 2400.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 416,
+      "xmin": 88,
+      "ymax": 441,
+      "xmax": 928
+     },
+     "snippet": "13 | Langis 4L x5 (gastos) | -2,400"
+    }
+   },
+   {
+    "row_id": "L0011",
+    "date": "2026-06-15",
+    "description": "Overhaul deposit - L300",
+    "amount": 5650.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 468,
+      "xmin": 88,
+      "ymax": 494,
+      "xmax": 928
+     },
+     "snippet": "15 | Overhaul deposit - L300 | 5,650"
+    }
+   },
+   {
+    "row_id": "L0012",
+    "date": "2026-06-16",
+    "description": "Change oil - Toyota Vios",
+    "amount": 2100.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 495,
+      "xmin": 88,
+      "ymax": 521,
+      "xmax": 928
+     },
+     "snippet": "16 | Change oil - Toyota Vios | 2,100"
+    }
+   },
+   {
+    "row_id": "L0013",
+    "date": "2026-06-18",
+    "description": "Wheel alignment - Montero",
+    "amount": 1850.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 520,
+      "xmin": 88,
+      "ymax": 546,
+      "xmax": 927
+     },
+     "snippet": "18 | Wheel alignment - Montero | 1,850"
+    }
+   },
+   {
+    "row_id": "L0014",
+    "date": "2026-06-19",
+    "description": "Wheel alignment - Montero",
+    "amount": 1750.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 546,
+      "xmin": 88,
+      "ymax": 572,
+      "xmax": 928
+     },
+     "snippet": "19 | Wheel alignment - Montero | 1,750"
+    }
+   },
+   {
+    "row_id": "L0015",
+    "date": "2026-06-19",
+    "description": "Sweldo ni Boy",
+    "amount": 4400.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 572,
+      "xmin": 88,
+      "ymax": 597,
+      "xmax": 927
+     },
+     "snippet": "19 | Sweldo ni Boy | -4,400"
+    }
+   },
+   {
+    "row_id": "L0016",
+    "date": "2026-06-22",
+    "description": "Suspension bushing - Innova",
+    "amount": 4750.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 624,
+      "xmin": 88,
+      "ymax": 650,
+      "xmax": 928
+     },
+     "snippet": "22 | Suspension bushing - Innova | 4,750"
+    }
+   },
+   {
+    "row_id": "L0017",
+    "date": "2026-06-25",
+    "description": "Underchassis - Civic",
+    "amount": 3150.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 650,
+      "xmin": 88,
+      "ymax": 676,
+      "xmax": 928
+     },
+     "snippet": "25 | Underchassis - Civic | 3,150"
+    }
+   },
+   {
+    "row_id": "L0018",
+    "date": "2026-06-26",
+    "description": "Change oil + filter - Raize",
+    "amount": 2200.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 676,
+      "xmin": 88,
+      "ymax": 702,
+      "xmax": 928
+     },
+     "snippet": "26 | Change oil + filter - Raize | 2,200"
+    }
+   },
+   {
+    "row_id": "L0019",
+    "date": "2026-06-27",
+    "description": "Overhaul deposit - L300",
+    "amount": 5950.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 702,
+      "xmin": 88,
+      "ymax": 727,
+      "xmax": 928
+     },
+     "snippet": "27 | Overhaul deposit - L300 | 5,950"
+    }
+   },
+   {
+    "row_id": "L0020",
+    "date": "2026-06-29",
+    "description": "Tune up - Mitsubishi Mirage",
+    "amount": 2650.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 754,
+      "xmin": 88,
+      "ymax": 779,
+      "xmax": 928
+     },
+     "snippet": "29 | Tune up - Mitsubishi Mirage | 2,650"
+    }
+   },
+   {
+    "row_id": "L0021",
+    "date": "2026-06-30",
+    "description": "Aircon cleaning - Innova",
+    "amount": 3050.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D08",
+     "page": 1,
+     "bbox": {
+      "ymin": 779,
+      "xmin": 88,
+      "ymax": 805,
+      "xmax": 927
+     },
+     "snippet": "30 | Aircon cleaning - Innova | 3,050"
+    }
+   }
+  ]
+ },
+ "state": {
+  "output": {
+   "business_name_header": "Reyes Auto Repair",
+   "currency": "PHP",
+   "period_label": "Hunyo 2026",
+   "entries": [
+    {
+     "row_id": "L0001",
+     "date": "2026-06-01",
+     "description": "Clutch adjust - Wigo",
+     "amount": 1650.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 158,
+       "xmin": 89,
+       "ymax": 182,
+       "xmax": 928
+      },
+      "snippet": "1 | Clutch adjust - Wigo | 1,650"
+     }
+    },
+    {
+     "row_id": "L0002",
+     "date": "2026-06-03",
+     "description": "Palit bumbilya + wiper - Vios",
+     "amount": 1650.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 184,
+       "xmin": 89,
+       "ymax": 209,
+       "xmax": 929
+      },
+      "snippet": "3 | Palit bumbilya + wiper - Vios | 1,650"
+     }
+    },
+    {
+     "row_id": "L0003",
+     "date": "2026-06-05",
+     "description": "Langis 4L x5 (gastos)",
+     "amount": 2050.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 210,
+       "xmin": 88,
+       "ymax": 235,
+       "xmax": 929
+      },
+      "snippet": "5 | Langis 4L x5 (gastos) | -2,050"
+     }
+    },
+    {
+     "row_id": "L0004",
+     "date": "2026-06-06",
+     "description": "Change oil - Toyota Vios",
+     "amount": 1600.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 235,
+       "xmin": 89,
+       "ymax": 260,
+       "xmax": 928
+      },
+      "snippet": "6 | Change oil - Toyota Vios | 1,600"
+     }
+    },
+    {
+     "row_id": "L0005",
+     "date": "2026-06-08",
+     "description": "Palit brake fluid - Mirage",
+     "amount": 1650.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 285,
+       "xmin": 88,
+       "ymax": 312,
+       "xmax": 929
+      },
+      "snippet": "8 | Palit brake fluid - Mirage | 1,650"
+     }
+    },
+    {
+     "row_id": "L0006",
+     "date": "2026-06-08",
+     "description": "Tubig + yelo",
+     "amount": 400.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 312,
+       "xmin": 88,
+       "ymax": 338,
+       "xmax": 929
+      },
+      "snippet": "8 | Tubig + yelo | -400"
+     }
+    },
+    {
+     "row_id": "L0007",
+     "date": "2026-06-09",
+     "description": "Palit brake fluid - Mirage",
+     "amount": 1700.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 338,
+       "xmin": 88,
+       "ymax": 363,
+       "xmax": 928
+      },
+      "snippet": "9 | Palit brake fluid - Mirage | 1,700"
+     }
+    },
+    {
+     "row_id": "L0008",
+     "date": "2026-06-10",
+     "description": "Aircon cleaning - Innova",
+     "amount": 3000.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 364,
+       "xmin": 88,
+       "ymax": 391,
+       "xmax": 928
+      },
+      "snippet": "10 | Aircon cleaning - Innova | 3,000"
+     }
+    },
+    {
+     "row_id": "L0009",
+     "date": "2026-06-13",
+     "description": "Palit bumbilya + wiper - Vios",
+     "amount": 1850.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 390,
+       "xmin": 88,
+       "ymax": 416,
+       "xmax": 928
+      },
+      "snippet": "13 | Palit bumbilya + wiper - Vios | 1,850"
+     }
+    },
+    {
+     "row_id": "L0010",
+     "date": "2026-06-13",
+     "description": "Langis 4L x5 (gastos)",
+     "amount": 2400.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 416,
+       "xmin": 88,
+       "ymax": 441,
+       "xmax": 928
+      },
+      "snippet": "13 | Langis 4L x5 (gastos) | -2,400"
+     }
+    },
+    {
+     "row_id": "L0011",
+     "date": "2026-06-15",
+     "description": "Overhaul deposit - L300",
+     "amount": 5650.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 468,
+       "xmin": 88,
+       "ymax": 494,
+       "xmax": 928
+      },
+      "snippet": "15 | Overhaul deposit - L300 | 5,650"
+     }
+    },
+    {
+     "row_id": "L0012",
+     "date": "2026-06-16",
+     "description": "Change oil - Toyota Vios",
+     "amount": 2100.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 495,
+       "xmin": 88,
+       "ymax": 521,
+       "xmax": 928
+      },
+      "snippet": "16 | Change oil - Toyota Vios | 2,100"
+     }
+    },
+    {
+     "row_id": "L0013",
+     "date": "2026-06-18",
+     "description": "Wheel alignment - Montero",
+     "amount": 1850.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 520,
+       "xmin": 88,
+       "ymax": 546,
+       "xmax": 927
+      },
+      "snippet": "18 | Wheel alignment - Montero | 1,850"
+     }
+    },
+    {
+     "row_id": "L0014",
+     "date": "2026-06-19",
+     "description": "Wheel alignment - Montero",
+     "amount": 1750.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 546,
+       "xmin": 88,
+       "ymax": 572,
+       "xmax": 928
+      },
+      "snippet": "19 | Wheel alignment - Montero | 1,750"
+     }
+    },
+    {
+     "row_id": "L0015",
+     "date": "2026-06-19",
+     "description": "Sweldo ni Boy",
+     "amount": 4400.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 572,
+       "xmin": 88,
+       "ymax": 597,
+       "xmax": 927
+      },
+      "snippet": "19 | Sweldo ni Boy | -4,400"
+     }
+    },
+    {
+     "row_id": "L0016",
+     "date": "2026-06-22",
+     "description": "Suspension bushing - Innova",
+     "amount": 4750.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 624,
+       "xmin": 88,
+       "ymax": 650,
+       "xmax": 928
+      },
+      "snippet": "22 | Suspension bushing - Innova | 4,750"
+     }
+    },
+    {
+     "row_id": "L0017",
+     "date": "2026-06-25",
+     "description": "Underchassis - Civic",
+     "amount": 3150.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 650,
+       "xmin": 88,
+       "ymax": 676,
+       "xmax": 928
+      },
+      "snippet": "25 | Underchassis - Civic | 3,150"
+     }
+    },
+    {
+     "row_id": "L0018",
+     "date": "2026-06-26",
+     "description": "Change oil + filter - Raize",
+     "amount": 2200.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 676,
+       "xmin": 88,
+       "ymax": 702,
+       "xmax": 928
+      },
+      "snippet": "26 | Change oil + filter - Raize | 2,200"
+     }
+    },
+    {
+     "row_id": "L0019",
+     "date": "2026-06-27",
+     "description": "Overhaul deposit - L300",
+     "amount": 5950.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 702,
+       "xmin": 88,
+       "ymax": 727,
+       "xmax": 928
+      },
+      "snippet": "27 | Overhaul deposit - L300 | 5,950"
+     }
+    },
+    {
+     "row_id": "L0020",
+     "date": "2026-06-29",
+     "description": "Tune up - Mitsubishi Mirage",
+     "amount": 2650.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 754,
+       "xmin": 88,
+       "ymax": 779,
+       "xmax": 928
+      },
+      "snippet": "29 | Tune up - Mitsubishi Mirage | 2,650"
+     }
+    },
+    {
+     "row_id": "L0021",
+     "date": "2026-06-30",
+     "description": "Aircon cleaning - Innova",
+     "amount": 3050.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D08",
+      "page": 1,
+      "bbox": {
+       "ymin": 779,
+       "xmin": 88,
+       "ymax": 805,
+       "xmax": 927
+      },
+      "snippet": "30 | Aircon cleaning - Innova | 3,050"
+     }
+    }
+   ]
+  }
+ },
+ "input_tokens": 996,
+ "output_tokens": 2260,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:handwritten_ledger",
+ "cached_at": "2026-10-15T07:07:20+00:00"
+}

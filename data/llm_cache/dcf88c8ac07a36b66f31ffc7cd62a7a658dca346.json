@@ -1,0 +1,1080 @@
+{
+ "text": "{\n  \"bank_name\": \"Metro Pacific Savings Bank\",\n  \"account_holder\": \"RAMON REYES\",\n  \"account_number_masked\": \"0045-****-**-6610\",\n  \"address\": null,\n  \"currency\": \"PHP\",\n  \"period_start\": \"2026-02-01\",\n  \"period_end\": \"2026-02-28\",\n  \"opening_balance\": {\n    \"value\": 55122.79,\n    \"source\": {\n      \"doc_id\": \"D01\",\n      \"page\": 2,\n      \"bbox\": {\n        \"ymin\": 177,\n        \"xmin\": 65,\n        \"ymax\": 188,\n        \"xmax\": 934\n      },\n      \"snippet\": \"02/01/2026 BALANCE FORWARD 55,122.79\"\n    }\n  },\n  \"closing_balance\": {\n    \"value\": 48950.0,\n    \"source\": {\n      \"doc_id\": \"D01\",\n      \"page\": 2,\n      \"bbox\": {\n        \"ymin\": 654,\n        \"xmin\": 65,\n        \"ymax\": 665,\n        \"xmax\": 934\n      },\n      \"snippet\": \"02/28/2026 ENDING BALANCE 48,950.00\"\n    }\n  },\n  \"transactions\": [\n    {\n      \"row_id\": \"T0001\",\n      \"date\": \"2026-02-02\",\n      \"description\": \"CASH DEPOSIT - BRANCH 0045 QUIAPO\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 16250.0,\n      \"balance_after\": 71372.79,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 194,\n          \"xmin\": 64,\n          \"ymax\": 206,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/02/2026 MP26020242323 CASH DEPOSIT - BRANCH 0045 QUIAPO 16,250.00 71,372.79\"\n      }\n    },\n    {\n      \"row_id\": \"T0002\",\n      \"date\": \"2026-02-06\",\n      \"description\": \"GCASH TRANSFER TO JUAN DELA CRUZ\",\n      \"counterparty\": \"JUAN DELA CRUZ\",\n      \"debit\": 3000.0,\n      \"credit\": 0,\n      \"balance_after\": 68372.79,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 213,\n          \"xmin\": 64,\n          \"ymax\": 224,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/06/2026 MP26020669867 GCASH TRANSFER TO JUAN DELA CRUZ 3,000.00 68,372.79\"\n      }\n    },\n    {\n      \"row_id\": \"T0003\",\n      \"date\": \"2026-02-06\",\n      \"description\": \"ATM WITHDRAWAL - MPSB ATM QUIAPO\",\n      \"counterparty\": null,\n      \"debit\": 5000.0,\n      \"credit\": 0,\n      \"balance_after\": 63372.79,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 232,\n          \"xmin\": 64,\n          \"ymax\": 242,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/06/2026 MP26020663701 ATM WITHDRAWAL - MPSB ATM QUIAPO 5,000.00 63,372.79\"\n      }\n    },\n    {\n      \"row_id\": \"T0004\",\n      \"date\": \"2026-02-06\",\n      \"description\": \"SMARTLINK POSTPAID PLAN\",\n      \"counterparty\": \"SMARTLINK\",\n      \"debit\": 999.0,\n      \"credit\": 0,\n      \"balance_after\": 62373.79,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 250,\n          \"xmin\": 64,\n          \"ymax\": 261,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/06/2026 MP26020622272 SMARTLINK POSTPAID PLAN 999.00 62,373.79\"\n      }\n    },\n    {\n      \"row_id\": \"T0005\",\n      \"date\": \"2026-02-09\",\n      \"description\": \"CASH DEPOSIT - BRANCH 0045 QUIAPO\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 16150.0,\n      \"balance_after\": 78523.79,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 269,\n          \"xmin\": 64,\n          \"ymax\": 279,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/09/2026 MP26020959845 CASH DEPOSIT - BRANCH 0045 QUIAPO 16,150.00 78,523.79\"\n      }\n    },\n    {\n      \"row_id\": \"T0006\",\n      \"date\": \"2026-02-09\",\n      \"description\": \"INSTAPAY FROM RICO BAUTISTA - CAR REPAIR\",\n      \"counterparty\": \"RICO BAUTISTA\",\n      \"debit\": 0,\n      \"credit\": 2650.0,\n      \"balance_after\": 81173.79,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 287,\n          \"xmin\": 64,\n          \"ymax\": 298,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/09/2026 MP26020938585 INSTAPAY FROM RICO BAUTISTA - CAR REPAIR 2,650.00 81,173.79\"\n      }\n    },\n    {\n      \"row_id\": \"T0007\",\n      \"date\": \"2026-02-10\",\n      \"description\": \"BDO AUTO LOAN PAYMENT - 4411xxxx\",\n      \"counterparty\": \"BDO\",\n      \"debit\": 14800.0,\n      \"credit\": 0,\n      \"balance_after\": 66373.79,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 305,\n          \"xmin\": 64,\n          \"ymax\": 317,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/10/2026 MP26021063552 BDO AUTO LOAN PAYMENT - 4411xxxx 14,800.00 66,373.79\"\n      }\n    },\n    {\n      \"row_id\": \"T0008\",\n      \"date\": \"2026-02-12\",\n      \"description\": \"GCASH TRANSFER FROM JOSE RAMOS\",\n      \"counterparty\": \"JOSE RAMOS\",\n      \"debit\": 0,\n      \"credit\": 5350.0,\n      \"balance_after\": 71723.79,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 324,\n          \"xmin\": 64,\n          \"ymax\": 335,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/12/2026 MP26021287213 GCASH TRANSFER FROM JOSE RAMOS 5,350.00 71,723.79\"\n      }\n    },\n    {\n      \"row_id\": \"T0009\",\n      \"date\": \"2026-02-13\",\n      \"description\": \"GCASH TRANSFER TO JUAN DELA CRUZ\",\n      \"counterparty\": \"JUAN DELA CRUZ\",\n      \"debit\": 3000.0,\n      \"credit\": 0,\n      \"balance_after\": 68723.79,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 342,\n          \"xmin\": 64,\n          \"ymax\": 353,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/13/2026 MP26021322952 GCASH TRANSFER TO JUAN DELA CRUZ 3,000.00 68,723.79\"\n      }\n    },\n    {\n      \"row_id\": \"T0010\",\n      \"date\": \"2026-02-16\",\n      \"description\": \"CASH DEPOSIT - BRANCH 0045 QUIAPO\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 13400.0,\n      \"balance_after\": 82123.79,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 361,\n          \"xmin\": 64,\n          \"ymax\": 371,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/16/2026 MP26021606827 CASH DEPOSIT - BRANCH 0045 QUIAPO 13,400.00 82,123.79\"\n      }\n    },\n    {\n      \"row_id\": \"T0011\",\n      \"date\": \"2026-02-18\",\n      \"description\": \"DEBIT CARD PURCHASE - AUTOPARTS PLUS BANA\",\n      \"counterparty\": \"AUTOPARTS PLUS BANA\",\n      \"debit\": 2640.0,\n      \"credit\": 0,\n      \"balance_after\": 79483.79,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 379,\n          \"xmin\": 64,\n          \"ymax\": 390,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/18/2026 MP26021898404 DEBIT CARD PURCHASE - AUTOPARTS PLUS BANA 2,640.00 79,483.79\"\n      }\n    },\n    {\n      \"row_id\": \"T0012\",\n      \"date\": \"2026-02-18\",\n      \"description\": \"MERALCO BILL PAYMENT\",\n      \"counterparty\": \"MERALCO\",\n      \"debit\": 2102.3,\n      \"credit\": 0,\n      \"balance_after\": 77381.49,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 397,\n          \"xmin\": 64,\n          \"ymax\": 408,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/18/2026 MP26021825062 MERALCO BILL PAYMENT 2,102.30 77,381.49\"\n      }\n    },\n    {\n      \"row_id\": \"T0013\",\n      \"date\": \"2026-02-20\",\n      \"description\": \"GCASH TRANSFER TO JUAN DELA CRUZ\",\n      \"counterparty\": \"JUAN DELA CRUZ\",\n      \"debit\": 3000.0,\n      \"credit\": 0,\n      \"balance_after\": 74381.49,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 416,\n          \"xmin\": 64,\n          \"ymax\": 427,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/20/2026 MP26022023948 GCASH TRANSFER TO JUAN DELA CRUZ 3,000.00 74,381.49\"\n      }\n    },\n    {\n      \"row_id\": \"T0014\",\n      \"date\": \"2026-02-22\",\n      \"description\": \"MAYNILAD BILL PAYMENT\",\n      \"counterparty\": \"MAYNILAD\",\n      \"debit\": 514.07,\n      \"credit\": 0,\n      \"balance_after\": 73867.42,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 434,\n          \"xmin\": 64,\n          \"ymax\": 445,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/22/2026 MP26022266016 MAYNILAD BILL PAYMENT 514.07 73,867.42\"\n      }\n    },\n    {\n      \"row_id\": \"T0015\",\n      \"date\": \"2026-02-23\",\n      \"description\": \"CASH DEPOSIT - BRANCH 0045 QUIAPO\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 15250.0,\n      \"balance_after\": 89117.42,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 453,\n          \"xmin\": 64,\n          \"ymax\": 464,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/23/2026 MP26022392273 CASH DEPOSIT - BRANCH 0045 QUIAPO 15,250.00 89,117.42\"\n      }\n    },\n    {\n      \"row_id\": \"T0016\",\n      \"date\": \"2026-02-23\",\n      \"description\": \"GCASH TRANSFER FROM MARK VILLANUEVA\",\n      \"counterparty\": \"MARK VILLANUEVA\",\n      \"debit\": 0,\n      \"credit\": 1600.0,\n      \"balance_after\": 90717.42,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 471,\n          \"xmin\": 64,\n          \"ymax\": 482,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/23/2026 MP26022320855 GCASH TRANSFER FROM MARK VILLANUEVA 1,600.00 90,717.42\"\n      }\n    },\n    {\n      \"row_id\": \"T0017\",\n      \"date\": \"2026-02-24\",\n      \"description\": \"DEBIT CARD PURCHASE - AUTOPARTS PLUS BANA\",\n      \"counterparty\": \"AUTOPARTS PLUS BANA\",\n      \"debit\": 8240.0,\n      \"credit\": 0,\n      \"balance_after\": 82477.42,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 489,\n          \"xmin\": 64,\n          \"ymax\": 500,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/24/2026 MP26022401350 DEBIT CARD PURCHASE - AUTOPARTS PLUS BANA 8,240.00 82,477.42\"\n      }\n    },\n    {\n      \"row_id\": \"T0018\",\n      \"date\": \"2026-02-24\",\n      \"description\": \"FUND TRANSFER TO LUBRICANTS TRADING CORP\",\n      \"counterparty\": \"LUBRICANTS TRADING CORP\",\n      \"debit\": 6450.0,\n      \"credit\": 0,\n      \"balance_after\": 76027.42,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 508,\n          \"xmin\": 64,\n          \"ymax\": 519,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/24/2026 MP26022444245 FUND TRANSFER TO LUBRICANTS TRADING CORP 6,450.00 76,027.42\"\n      }\n    },\n    {\n      \"row_id\": \"T0019\",\n      \"date\": \"2026-02-24\",\n      \"description\": \"ATM WITHDRAWAL - MPSB ATM QUIAPO\",\n      \"counterparty\": null,\n      \"debit\": 8000.0,\n      \"credit\": 0,\n      \"balance_after\": 68027.42,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 526,\n          \"xmin\": 64,\n          \"ymax\": 537,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/24/2026 MP26022499551 ATM WITHDRAWAL - MPSB ATM QUIAPO 8,000.00 68,027.42\"\n      }\n    },\n    {\n      \"row_id\": \"T0020\",\n      \"date\": \"2026-02-25\",\n      \"description\": \"DEBIT CARD PURCHASE - AUTOPARTS PLUS BANA\",\n      \"counterparty\": \"AUTOPARTS PLUS BANA\",\n      \"debit\": 8580.0,\n      \"credit\": 0,\n      \"balance_after\": 59447.42,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 544,\n          \"xmin\": 64,\n          \"ymax\": 556,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/25/2026 MP26022553085 DEBIT CARD PURCHASE - AUTOPARTS PLUS BANA 8,580.00 59,447.42\"\n      }\n    },\n    {\n      \"row_id\": \"T0021\",\n      \"date\": \"2026-02-26\",\n      \"description\": \"ATM WITHDRAWAL - MPSB ATM QUIAPO\",\n      \"counterparty\": null,\n      \"debit\": 5500.0,\n      \"credit\": 0,\n      \"balance_after\": 53947.42,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 563,\n          \"xmin\": 64,\n          \"ymax\": 574,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/26/2026 MP26022663446 ATM WITHDRAWAL - MPSB ATM QUIAPO 5,500.00 53,947.42\"\n      }\n    },\n    {\n      \"row_id\": \"T0022\",\n      \"date\": \"2026-02-27\",\n      \"description\": \"GCASH TRANSFER TO JUAN DELA CRUZ\",\n      \"counterparty\": \"JUAN DELA CRUZ\",\n      \"debit\": 3000.0,\n      \"credit\": 0,\n      \"balance_after\": 50947.42,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 581,\n          \"xmin\": 64,\n          \"ymax\": 592,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/27/2026 MP26022773279 GCASH TRANSFER TO JUAN DELA CRUZ 3,000.00 50,947.42\"\n      }\n    },\n    {\n      \"row_id\": \"T0023\",\n      \"date\": \"2026-02-28\",\n      \"description\": \"INSTAPAY TO MARIA REYES\",\n      \"counterparty\": \"MARIA REYES\",\n      \"debit\": 2000.0,\n      \"credit\": 0,\n      \"balance_after\": 48947.42,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 599,\n          \"xmin\": 64,\n          \"ymax\": 611,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/28/2026 MP26022829840 INSTAPAY TO MARIA REYES 2,000.00 48,947.42\"\n      }\n    },\n    {\n      \"row_id\": \"T0024\",\n      \"date\": \"2026-02-28\",\n      \"description\": \"INTEREST CREDIT\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 3.22,\n      \"balance_after\": 48950.64,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 618,\n          \"xmin\": 64,\n          \"ymax\": 629,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/28/2026 MP26022837188 INTEREST CREDIT 3.22 48,950.64\"\n      }\n    },\n    {\n      \"row_id\": \"T0025\",\n      \"date\": \"2026-02-28\",\n      \"description\": \"WITHHOLDING TAX ON INTEREST\",\n      \"counterparty\": null,\n      \"debit\": 0.64,\n      \"credit\": 0,\n      \"balance_after\": 48950.0,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 636,\n          \"xmin\": 64,\n          \"ymax\": 647,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/28/2026 MP26022847414 WITHHOLDING TAX ON INTEREST 0.64 48,950.00\"\n      }\n    }\n  ]\n}",
+ "parsed": {
+  "bank_name": "Metro Pacific Savings Bank",
+  "account_holder": "RAMON REYES",
+  "account_number_masked": "0045-****-**-6610",
+  "address": null,
+  "currency": "PHP",
+  "period_start": "2026-02-01",
+  "period_end": "2026-02-28",
+  "opening_balance": {
+   "value": 55122.79,
+   "source": {
+    "doc_id": "D01",
+    "page": 2,
+    "bbox": {
+     "ymin": 177,
+     "xmin": 65,
+     "ymax": 188,
+     "xmax": 934
+    },
+    "snippet": "02/01/2026 BALANCE FORWARD 55,122.79"
+   }
+  },
+  "closing_balance": {
+   "value": 48950.0,
+   "source": {
+    "doc_id": "D01",
+    "page": 2,
+    "bbox": {
+     "ymin": 654,
+     "xmin": 65,
+     "ymax": 665,
+     "xmax": 934
+    },
+    "snippet": "02/28/2026 ENDING BALANCE 48,950.00"
+   }
+  },
+  "transactions": [
+   {
+    "row_id": "T0001",
+    "date": "2026-02-02",
+    "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 16250.0,
+    "balance_after": 71372.79,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 194,
+      "xmin": 64,
+      "ymax": 206,
+      "xmax": 935
+     },
+     "snippet": "02/02/2026 MP26020242323 CASH DEPOSIT - BRANCH 0045 QUIAPO 16,250.00 71,372.79"
+    }
+   },
+   {
+    "row_id": "T0002",
+    "date": "2026-02-06",
+    "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+    "counterparty": "JUAN DELA CRUZ",
+    "debit": 3000.0,
+    "credit": 0.0,
+    "balance_after": 68372.79,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 213,
+      "xmin": 64,
+      "ymax": 224,
+      "xmax": 935
+     },
+     "snippet": "02/06/2026 MP26020669867 GCASH TRANSFER TO JUAN DELA CRUZ 3,000.00 68,372.79"
+    }
+   },
+   {
+    "row_id": "T0003",
+    "date": "2026-02-06",
+    "description": "ATM WITHDRAWAL - MPSB ATM QUIAPO",
+    "counterparty": null,
+    "debit": 5000.0,
+    "credit": 0.0,
+    "balance_after": 63372.79,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 232,
+      "xmin": 64,
+      "ymax": 242,
+      "xmax": 935
+     },
+     "snippet": "02/06/2026 MP26020663701 ATM WITHDRAWAL - MPSB ATM QUIAPO 5,000.00 63,372.79"
+    }
+   },
+   {
+    "row_id": "T0004",
+    "date": "2026-02-06",
+    "description": "SMARTLINK POSTPAID PLAN",
+    "counterparty": "SMARTLINK",
+    "debit": 999.0,
+    "credit": 0.0,
+    "balance_after": 62373.79,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 250,
+      "xmin": 64,
+      "ymax": 261,
+      "xmax": 935
+     },
+     "snippet": "02/06/2026 MP26020622272 SMARTLINK POSTPAID PLAN 999.00 62,373.79"
+    }
+   },
+   {
+    "row_id": "T0005",
+    "date": "2026-02-09",
+    "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 16150.0,
+    "balance_after": 78523.79,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 269,
+      "xmin": 64,
+      "ymax": 279,
+      "xmax": 935
+     },
+     "snippet": "02/09/2026 MP26020959845 CASH DEPOSIT - BRANCH 0045 QUIAPO 16,150.00 78,523.79"
+    }
+   },
+   {
+    "row_id": "T0006",
+    "date": "2026-02-09",
+    "description": "INSTAPAY FROM RICO BAUTISTA - CAR REPAIR",
+    "counterparty": "RICO BAUTISTA",
+    "debit": 0.0,
+    "credit": 2650.0,
+    "balance_after": 81173.79,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 287,
+      "xmin": 64,
+      "ymax": 298,
+      "xmax": 935
+     },
+     "snippet": "02/09/2026 MP26020938585 INSTAPAY FROM RICO BAUTISTA - CAR REPAIR 2,650.00 81,173.79"
+    }
+   },
+   {
+    "row_id": "T0007",
+    "date": "2026-02-10",
+    "description": "BDO AUTO LOAN PAYMENT - 4411xxxx",
+    "counterparty": "BDO",
+    "debit": 14800.0,
+    "credit": 0.0,
+    "balance_after": 66373.79,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 305,
+      "xmin": 64,
+      "ymax": 317,
+      "xmax": 935
+     },
+     "snippet": "02/10/2026 MP26021063552 BDO AUTO LOAN PAYMENT - 4411xxxx 14,800.00 66,373.79"
+    }
+   },
+   {
+    "row_id": "T0008",
+    "date": "2026-02-12",
+    "description": "GCASH TRANSFER FROM JOSE RAMOS",
+    "counterparty": "JOSE RAMOS",
+    "debit": 0.0,
+    "credit": 5350.0,
+    "balance_after": 71723.79,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 324,
+      "xmin": 64,
+      "ymax": 335,
+      "xmax": 935
+     },
+     "snippet": "02/12/2026 MP26021287213 GCASH TRANSFER FROM JOSE RAMOS 5,350.00 71,723.79"
+    }
+   },
+   {
+    "row_id": "T0009",
+    "date": "2026-02-13",
+    "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+    "counterparty": "JUAN DELA CRUZ",
+    "debit": 3000.0,
+    "credit": 0.0,
+    "balance_after": 68723.79,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 342,
+      "xmin": 64,
+      "ymax": 353,
+      "xmax": 935
+     },
+     "snippet": "02/13/2026 MP26021322952 GCASH TRANSFER TO JUAN DELA CRUZ 3,000.00 68,723.79"
+    }
+   },
+   {
+    "row_id": "T0010",
+    "date": "2026-02-16",
+    "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 13400.0,
+    "balance_after": 82123.79,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 361,
+      "xmin": 64,
+      "ymax": 371,
+      "xmax": 935
+     },
+     "snippet": "02/16/2026 MP26021606827 CASH DEPOSIT - BRANCH 0045 QUIAPO 13,400.00 82,123.79"
+    }
+   },
+   {
+    "row_id": "T0011",
+    "date": "2026-02-18",
+    "description": "DEBIT CARD PURCHASE - AUTOPARTS PLUS BANA",
+    "counterparty": "AUTOPARTS PLUS BANA",
+    "debit": 2640.0,
+    "credit": 0.0,
+    "balance_after": 79483.79,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 379,
+      "xmin": 64,
+      "ymax": 390,
+      "xmax": 935
+     },
+     "snippet": "02/18/2026 MP26021898404 DEBIT CARD PURCHASE - AUTOPARTS PLUS BANA 2,640.00 79,483.79"
+    }
+   },
+   {
+    "row_id": "T0012",
+    "date": "2026-02-18",
+    "description": "MERALCO BILL PAYMENT",
+    "counterparty": "MERALCO",
+    "debit": 2102.3,
+    "credit": 0.0,
+    "balance_after": 77381.49,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 397,
+      "xmin": 64,
+      "ymax": 408,
+      "xmax": 935
+     },
+     "snippet": "02/18/2026 MP26021825062 MERALCO BILL PAYMENT 2,102.30 77,381.49"
+    }
+   },
+   {
+    "row_id": "T0013",
+    "date": "2026-02-20",
+    "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+    "counterparty": "JUAN DELA CRUZ",
+    "debit": 3000.0,
+    "credit": 0.0,
+    "balance_after": 74381.49,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 416,
+      "xmin": 64,
+      "ymax": 427,
+      "xmax": 935
+     },
+     "snippet": "02/20/2026 MP26022023948 GCASH TRANSFER TO JUAN DELA CRUZ 3,000.00 74,381.49"
+    }
+   },
+   {
+    "row_id": "T0014",
+    "date": "2026-02-22",
+    "description": "MAYNILAD BILL PAYMENT",
+    "counterparty": "MAYNILAD",
+    "debit": 514.07,
+    "credit": 0.0,
+    "balance_after": 73867.42,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 434,
+      "xmin": 64,
+      "ymax": 445,
+      "xmax": 935
+     },
+     "snippet": "02/22/2026 MP26022266016 MAYNILAD BILL PAYMENT 514.07 73,867.42"
+    }
+   },
+   {
+    "row_id": "T0015",
+    "date": "2026-02-23",
+    "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 15250.0,
+    "balance_after": 89117.42,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 453,
+      "xmin": 64,
+      "ymax": 464,
+      "xmax": 935
+     },
+     "snippet": "02/23/2026 MP26022392273 CASH DEPOSIT - BRANCH 0045 QUIAPO 15,250.00 89,117.42"
+    }
+   },
+   {
+    "row_id": "T0016",
+    "date": "2026-02-23",
+    "description": "GCASH TRANSFER FROM MARK VILLANUEVA",
+    "counterparty": "MARK VILLANUEVA",
+    "debit": 0.0,
+    "credit": 1600.0,
+    "balance_after": 90717.42,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 471,
+      "xmin": 64,
+      "ymax": 482,
+      "xmax": 935
+     },
+     "snippet": "02/23/2026 MP26022320855 GCASH TRANSFER FROM MARK VILLANUEVA 1,600.00 90,717.42"
+    }
+   },
+   {
+    "row_id": "T0017",
+    "date": "2026-02-24",
+    "description": "DEBIT CARD PURCHASE - AUTOPARTS PLUS BANA",
+    "counterparty": "AUTOPARTS PLUS BANA",
+    "debit": 8240.0,
+    "credit": 0.0,
+    "balance_after": 82477.42,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 489,
+      "xmin": 64,
+      "ymax": 500,
+      "xmax": 935
+     },
+     "snippet": "02/24/2026 MP26022401350 DEBIT CARD PURCHASE - AUTOPARTS PLUS BANA 8,240.00 82,477.42"
+    }
+   },
+   {
+    "row_id": "T0018",
+    "date": "2026-02-24",
+    "description": "FUND TRANSFER TO LUBRICANTS TRADING CORP",
+    "counterparty": "LUBRICANTS TRADING CORP",
+    "debit": 6450.0,
+    "credit": 0.0,
+    "balance_after": 76027.42,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 508,
+      "xmin": 64,
+      "ymax": 519,
+      "xmax": 935
+     },
+     "snippet": "02/24/2026 MP26022444245 FUND TRANSFER TO LUBRICANTS TRADING CORP 6,450.00 76,027.42"
+    }
+   },
+   {
+    "row_id": "T0019",
+    "date": "2026-02-24",
+    "description": "ATM WITHDRAWAL - MPSB ATM QUIAPO",
+    "counterparty": null,
+    "debit": 8000.0,
+    "credit": 0.0,
+    "balance_after": 68027.42,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 526,
+      "xmin": 64,
+      "ymax": 537,
+      "xmax": 935
+     },
+     "snippet": "02/24/2026 MP26022499551 ATM WITHDRAWAL - MPSB ATM QUIAPO 8,000.00 68,027.42"
+    }
+   },
+   {
+    "row_id": "T0020",
+    "date": "2026-02-25",
+    "description": "DEBIT CARD PURCHASE - AUTOPARTS PLUS BANA",
+    "counterparty": "AUTOPARTS PLUS BANA",
+    "debit": 8580.0,
+    "credit": 0.0,
+    "balance_after": 59447.42,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 544,
+      "xmin": 64,
+      "ymax": 556,
+      "xmax": 935
+     },
+     "snippet": "02/25/2026 MP26022553085 DEBIT CARD PURCHASE - AUTOPARTS PLUS BANA 8,580.00 59,447.42"
+    }
+   },
+   {
+    "row_id": "T0021",
+    "date": "2026-02-26",
+    "description": "ATM WITHDRAWAL - MPSB ATM QUIAPO",
+    "counterparty": null,
+    "debit": 5500.0,
+    "credit": 0.0,
+    "balance_after": 53947.42,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 563,
+      "xmin": 64,
+      "ymax": 574,
+      "xmax": 935
+     },
+     "snippet": "02/26/2026 MP26022663446 ATM WITHDRAWAL - MPSB ATM QUIAPO 5,500.00 53,947.42"
+    }
+   },
+   {
+    "row_id": "T0022",
+    "date": "2026-02-27",
+    "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+    "counterparty": "JUAN DELA CRUZ",
+    "debit": 3000.0,
+    "credit": 0.0,
+    "balance_after": 50947.42,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 581,
+      "xmin": 64,
+      "ymax": 592,
+      "xmax": 935
+     },
+     "snippet": "02/27/2026 MP26022773279 GCASH TRANSFER TO JUAN DELA CRUZ 3,000.00 50,947.42"
+    }
+   },
+   {
+    "row_id": "T0023",
+    "date": "2026-02-28",
+    "description": "INSTAPAY TO MARIA REYES",
+    "counterparty": "MARIA REYES",
+    "debit": 2000.0,
+    "credit": 0.0,
+    "balance_after": 48947.42,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 599,
+      "xmin": 64,
+      "ymax": 611,
+      "xmax": 935
+     },
+     "snippet": "02/28/2026 MP26022829840 INSTAPAY TO MARIA REYES 2,000.00 48,947.42"
+    }
+   },
+   {
+    "row_id": "T0024",
+    "date": "2026-02-28",
+    "description": "INTEREST CREDIT",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 3.22,
+    "balance_after": 48950.64,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 618,
+      "xmin": 64,
+      "ymax": 629,
+      "xmax": 935
+     },
+     "snippet": "02/28/2026 MP26022837188 INTEREST CREDIT 3.22 48,950.64"
+    }
+   },
+   {
+    "row_id": "T0025",
+    "date": "2026-02-28",
+    "description": "WITHHOLDING TAX ON INTEREST",
+    "counterparty": null,
+    "debit": 0.64,
+    "credit": 0.0,
+    "balance_after": 48950.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 636,
+      "xmin": 64,
+      "ymax": 647,
+      "xmax": 935
+     },
+     "snippet": "02/28/2026 MP26022847414 WITHHOLDING TAX ON INTEREST 0.64 48,950.00"
+    }
+   }
+  ]
+ },
+ "state": {
+  "output": {
+   "bank_name": "Metro Pacific Savings Bank",
+   "account_holder": "RAMON REYES",
+   "account_number_masked": "0045-****-**-6610",
+   "currency": "PHP",
+   "period_start": "2026-02-01",
+   "period_end": "2026-02-28",
+   "opening_balance": {
+    "value": 55122.79,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 177,
+      "xmin": 65,
+      "ymax": 188,
+      "xmax": 934
+     },
+     "snippet": "02/01/2026 BALANCE FORWARD 55,122.79"
+    }
+   },
+   "closing_balance": {
+    "value": 48950.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 654,
+      "xmin": 65,
+      "ymax": 665,
+      "xmax": 934
+     },
+     "snippet": "02/28/2026 ENDING BALANCE 48,950.00"
+    }
+   },
+   "transactions": [
+    {
+     "row_id": "T0001",
+     "date": "2026-02-02",
+     "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+     "debit": 0.0,
+     "credit": 16250.0,
+     "balance_after": 71372.79,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 194,
+       "xmin": 64,
+       "ymax": 206,
+       "xmax": 935
+      },
+      "snippet": "02/02/2026 MP26020242323 CASH DEPOSIT - BRANCH 0045 QUIAPO 16,250.00 71,372.79"
+     }
+    },
+    {
+     "row_id": "T0002",
+     "date": "2026-02-06",
+     "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+     "counterparty": "JUAN DELA CRUZ",
+     "debit": 3000.0,
+     "credit": 0.0,
+     "balance_after": 68372.79,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 213,
+       "xmin": 64,
+       "ymax": 224,
+       "xmax": 935
+      },
+      "snippet": "02/06/2026 MP26020669867 GCASH TRANSFER TO JUAN DELA CRUZ 3,000.00 68,372.79"
+     }
+    },
+    {
+     "row_id": "T0003",
+     "date": "2026-02-06",
+     "description": "ATM WITHDRAWAL - MPSB ATM QUIAPO",
+     "debit": 5000.0,
+     "credit": 0.0,
+     "balance_after": 63372.79,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 232,
+       "xmin": 64,
+       "ymax": 242,
+       "xmax": 935
+      },
+      "snippet": "02/06/2026 MP26020663701 ATM WITHDRAWAL - MPSB ATM QUIAPO 5,000.00 63,372.79"
+     }
+    },
+    {
+     "row_id": "T0004",
+     "date": "2026-02-06",
+     "description": "SMARTLINK POSTPAID PLAN",
+     "counterparty": "SMARTLINK",
+     "debit": 999.0,
+     "credit": 0.0,
+     "balance_after": 62373.79,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 250,
+       "xmin": 64,
+       "ymax": 261,
+       "xmax": 935
+      },
+      "snippet": "02/06/2026 MP26020622272 SMARTLINK POSTPAID PLAN 999.00 62,373.79"
+     }
+    },
+    {
+     "row_id": "T0005",
+     "date": "2026-02-09",
+     "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+     "debit": 0.0,
+     "credit": 16150.0,
+     "balance_after": 78523.79,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 269,
+       "xmin": 64,
+       "ymax": 279,
+       "xmax": 935
+      },
+      "snippet": "02/09/2026 MP26020959845 CASH DEPOSIT - BRANCH 0045 QUIAPO 16,150.00 78,523.79"
+     }
+    },
+    {
+     "row_id": "T0006",
+     "date": "2026-02-09",
+     "description": "INSTAPAY FROM RICO BAUTISTA - CAR REPAIR",
+     "counterparty": "RICO BAUTISTA",
+     "debit": 0.0,
+     "credit": 2650.0,
+     "balance_after": 81173.79,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 287,
+       "xmin": 64,
+       "ymax": 298,
+       "xmax": 935
+      },
+      "snippet": "02/09/2026 MP26020938585 INSTAPAY FROM RICO BAUTISTA - CAR REPAIR 2,650.00 81,173.79"
+     }
+    },
+    {
+     "row_id": "T0007",
+     "date": "2026-02-10",
+     "description": "BDO AUTO LOAN PAYMENT - 4411xxxx",
+     "counterparty": "BDO",
+     "debit": 14800.0,
+     "credit": 0.0,
+     "balance_after": 66373.79,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 305,
+       "xmin": 64,
+       "ymax": 317,
+       "xmax": 935
+      },
+      "snippet": "02/10/2026 MP26021063552 BDO AUTO LOAN PAYMENT - 4411xxxx 14,800.00 66,373.79"
+     }
+    },
+    {
+     "row_id": "T0008",
+     "date": "2026-02-12",
+     "description": "GCASH TRANSFER FROM JOSE RAMOS",
+     "counterparty": "JOSE RAMOS",
+     "debit": 0.0,
+     "credit": 5350.0,
+     "balance_after": 71723.79,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 324,
+       "xmin": 64,
+       "ymax": 335,
+       "xmax": 935
+      },
+      "snippet": "02/12/2026 MP26021287213 GCASH TRANSFER FROM JOSE RAMOS 5,350.00 71,723.79"
+     }
+    },
+    {
+     "row_id": "T0009",
+     "date": "2026-02-13",
+     "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+     "counterparty": "JUAN DELA CRUZ",
+     "debit": 3000.0,
+     "credit": 0.0,
+     "balance_after": 68723.79,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 342,
+       "xmin": 64,
+       "ymax": 353,
+       "xmax": 935
+      },
+      "snippet": "02/13/2026 MP26021322952 GCASH TRANSFER TO JUAN DELA CRUZ 3,000.00 68,723.79"
+     }
+    },
+    {
+     "row_id": "T0010",
+     "date": "2026-02-16",
+     "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+     "debit": 0.0,
+     "credit": 13400.0,
+     "balance_after": 82123.79,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 361,
+       "xmin": 64,
+       "ymax": 371,
+       "xmax": 935
+      },
+      "snippet": "02/16/2026 MP26021606827 CASH DEPOSIT - BRANCH 0045 QUIAPO 13,400.00 82,123.79"
+     }
+    },
+    {
+     "row_id": "T0011",
+     "date": "2026-02-18",
+     "description": "DEBIT CARD PURCHASE - AUTOPARTS PLUS BANA",
+     "counterparty": "AUTOPARTS PLUS BANA",
+     "debit": 2640.0,
+     "credit": 0.0,
+     "balance_after": 79483.79,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 379,
+       "xmin": 64,
+       "ymax": 390,
+       "xmax": 935
+      },
+      "snippet": "02/18/2026 MP26021898404 DEBIT CARD PURCHASE - AUTOPARTS PLUS BANA 2,640.00 79,483.79"
+     }
+    },
+    {
+     "row_id": "T0012",
+     "date": "2026-02-18",
+     "description": "MERALCO BILL PAYMENT",
+     "counterparty": "MERALCO",
+     "debit": 2102.3,
+     "credit": 0.0,
+     "balance_after": 77381.49,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 397,
+       "xmin": 64,
+       "ymax": 408,
+       "xmax": 935
+      },
+      "snippet": "02/18/2026 MP26021825062 MERALCO BILL PAYMENT 2,102.30 77,381.49"
+     }
+    },
+    {
+     "row_id": "T0013",
+     "date": "2026-02-20",
+     "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+     "counterparty": "JUAN DELA CRUZ",
+     "debit": 3000.0,
+     "credit": 0.0,
+     "balance_after": 74381.49,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 416,
+       "xmin": 64,
+       "ymax": 427,
+       "xmax": 935
+      },
+      "snippet": "02/20/2026 MP26022023948 GCASH TRANSFER TO JUAN DELA CRUZ 3,000.00 74,381.49"
+     }
+    },
+    {
+     "row_id": "T0014",
+     "date": "2026-02-22",
+     "description": "MAYNILAD BILL PAYMENT",
+     "counterparty": "MAYNILAD",
+     "debit": 514.07,
+     "credit": 0.0,
+     "balance_after": 73867.42,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 434,
+       "xmin": 64,
+       "ymax": 445,
+       "xmax": 935
+      },
+      "snippet": "02/22/2026 MP26022266016 MAYNILAD BILL PAYMENT 514.07 73,867.42"
+     }
+    },
+    {
+     "row_id": "T0015",
+     "date": "2026-02-23",
+     "description": "CASH DEPOSIT - BRANCH 0045 QUIAPO",
+     "debit": 0.0,
+     "credit": 15250.0,
+     "balance_after": 89117.42,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 453,
+       "xmin": 64,
+       "ymax": 464,
+       "xmax": 935
+      },
+      "snippet": "02/23/2026 MP26022392273 CASH DEPOSIT - BRANCH 0045 QUIAPO 15,250.00 89,117.42"
+     }
+    },
+    {
+     "row_id": "T0016",
+     "date": "2026-02-23",
+     "description": "GCASH TRANSFER FROM MARK VILLANUEVA",
+     "counterparty": "MARK VILLANUEVA",
+     "debit": 0.0,
+     "credit": 1600.0,
+     "balance_after": 90717.42,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 471,
+       "xmin": 64,
+       "ymax": 482,
+       "xmax": 935
+      },
+      "snippet": "02/23/2026 MP26022320855 GCASH TRANSFER FROM MARK VILLANUEVA 1,600.00 90,717.42"
+     }
+    },
+    {
+     "row_id": "T0017",
+     "date": "2026-02-24",
+     "description": "DEBIT CARD PURCHASE - AUTOPARTS PLUS BANA",
+     "counterparty": "AUTOPARTS PLUS BANA",
+     "debit": 8240.0,
+     "credit": 0.0,
+     "balance_after": 82477.42,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 489,
+       "xmin": 64,
+       "ymax": 500,
+       "xmax": 935
+      },
+      "snippet": "02/24/2026 MP26022401350 DEBIT CARD PURCHASE - AUTOPARTS PLUS BANA 8,240.00 82,477.42"
+     }
+    },
+    {
+     "row_id": "T0018",
+     "date": "2026-02-24",
+     "description": "FUND TRANSFER TO LUBRICANTS TRADING CORP",
+     "counterparty": "LUBRICANTS TRADING CORP",
+     "debit": 6450.0,
+     "credit": 0.0,
+     "balance_after": 76027.42,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 508,
+       "xmin": 64,
+       "ymax": 519,
+       "xmax": 935
+      },
+      "snippet": "02/24/2026 MP26022444245 FUND TRANSFER TO LUBRICANTS TRADING CORP 6,450.00 76,027.42"
+     }
+    },
+    {
+     "row_id": "T0019",
+     "date": "2026-02-24",
+     "description": "ATM WITHDRAWAL - MPSB ATM QUIAPO",
+     "debit": 8000.0,
+     "credit": 0.0,
+     "balance_after": 68027.42,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 526,
+       "xmin": 64,
+       "ymax": 537,
+       "xmax": 935
+      },
+      "snippet": "02/24/2026 MP26022499551 ATM WITHDRAWAL - MPSB ATM QUIAPO 8,000.00 68,027.42"
+     }
+    },
+    {
+     "row_id": "T0020",
+     "date": "2026-02-25",
+     "description": "DEBIT CARD PURCHASE - AUTOPARTS PLUS BANA",
+     "counterparty": "AUTOPARTS PLUS BANA",
+     "debit": 8580.0,
+     "credit": 0.0,
+     "balance_after": 59447.42,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 544,
+       "xmin": 64,
+       "ymax": 556,
+       "xmax": 935
+      },
+      "snippet": "02/25/2026 MP26022553085 DEBIT CARD PURCHASE - AUTOPARTS PLUS BANA 8,580.00 59,447.42"
+     }
+    },
+    {
+     "row_id": "T0021",
+     "date": "2026-02-26",
+     "description": "ATM WITHDRAWAL - MPSB ATM QUIAPO",
+     "debit": 5500.0,
+     "credit": 0.0,
+     "balance_after": 53947.42,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 563,
+       "xmin": 64,
+       "ymax": 574,
+       "xmax": 935
+      },
+      "snippet": "02/26/2026 MP26022663446 ATM WITHDRAWAL - MPSB ATM QUIAPO 5,500.00 53,947.42"
+     }
+    },
+    {
+     "row_id": "T0022",
+     "date": "2026-02-27",
+     "description": "GCASH TRANSFER TO JUAN DELA CRUZ",
+     "counterparty": "JUAN DELA CRUZ",
+     "debit": 3000.0,
+     "credit": 0.0,
+     "balance_after": 50947.42,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 581,
+       "xmin": 64,
+       "ymax": 592,
+       "xmax": 935
+      },
+      "snippet": "02/27/2026 MP26022773279 GCASH TRANSFER TO JUAN DELA CRUZ 3,000.00 50,947.42"
+     }
+    },
+    {
+     "row_id": "T0023",
+     "date": "2026-02-28",
+     "description": "INSTAPAY TO MARIA REYES",
+     "counterparty": "MARIA REYES",
+     "debit": 2000.0,
+     "credit": 0.0,
+     "balance_after": 48947.42,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 599,
+       "xmin": 64,
+       "ymax": 611,
+       "xmax": 935
+      },
+      "snippet": "02/28/2026 MP26022829840 INSTAPAY TO MARIA REYES 2,000.00 48,947.42"
+     }
+    },
+    {
+     "row_id": "T0024",
+     "date": "2026-02-28",
+     "description": "INTEREST CREDIT",
+     "debit": 0.0,
+     "credit": 3.22,
+     "balance_after": 48950.64,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 618,
+       "xmin": 64,
+       "ymax": 629,
+       "xmax": 935
+      },
+      "snippet": "02/28/2026 MP26022837188 INTEREST CREDIT 3.22 48,950.64"
+     }
+    },
+    {
+     "row_id": "T0025",
+     "date": "2026-02-28",
+     "description": "WITHHOLDING TAX ON INTEREST",
+     "debit": 0.64,
+     "credit": 0.0,
+     "balance_after": 48950.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 636,
+       "xmin": 64,
+       "ymax": 647,
+       "xmax": 935
+      },
+      "snippet": "02/28/2026 MP26022847414 WITHHOLDING TAX ON INTEREST 0.64 48,950.00"
+     }
+    }
+   ]
+  }
+ },
+ "input_tokens": 1291,
+ "output_tokens": 6291,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-page-v1.0",
+ "agent": "extractor:bank_statement:page",
+ "cached_at": "2026-10-15T07:07:01+00:00"
+}

@@ -27,8 +27,14 @@ def test_cache_only_refuses_ordinary_agents(tmp_path):
 
 def test_cache_only_lets_the_explainer_through_to_the_budget_check(tmp_path):
     s = _settings(tmp_path, budget_cap_usd=0.0)  # cap 0: proves it got past the cache-only gate without calling Gemini
+    s.google_api_key = "test-key"
     with pytest.raises(BudgetExceeded):
         _run(AgentSpec(name="explainer", instruction="x", prompt_version="v", model="gemini-3.8-flash"), s)
+
+
+def test_cache_only_without_a_key_reports_that_the_letter_needs_one(tmp_path):
+    with pytest.raises(CacheMiss, match="GOOGLE_API_KEY"):
+        _run(AgentSpec(name="explainer", instruction="x", prompt_version="v", model="gemini-3.8-flash"), _settings(tmp_path))
 
 
 def test_portable_cache_key_ignores_renderer_bytes():

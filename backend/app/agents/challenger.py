@@ -19,7 +19,7 @@ from ..tools.cashflow import recompute_balances
 from ..tools.documents import phash_distance
 from . import prompts
 from .common import DEMO_DATASET_NOTE, case_facts, catalog_text, extraction_digest, inventory_text, ref_dict, render_memo_text
-from .runner import AgentSpec, run_sequence
+from .runner import AgentSpec, CacheMiss, run_sequence
 
 SEV_ORDER = {Severity.critical: 0, Severity.high: 1, Severity.medium: 2, Severity.low: 3}
 
@@ -287,8 +287,17 @@ async def run_challenger(case: Case, *, memo: Memo, cashflow: CashflowSummary, e
                     model=settings.model_pro, output_schema=ChallengeDraft, description="Formats objections")
     rb_draft = ChallengeDraft(objections=rules, questions_checked=[f"Q{i}" for i in range(1, 13)], overall_assessment="Rule-based objections from the deterministic battery.")
     ctx = {**mock_context, "extra": {"digest": digest, "rule_based_challenge": rb_draft.model_dump(mode="json")}}
-    results = await run_sequence([inv, wri], parts, settings=settings, repo=repo, case_id=case.id, mock_context=ctx,
-                                 cache_extra={"memo_version": memo.version, "prompt_versions": [inv.prompt_version, wri.prompt_version]})
+    extra = {"memo_version": memo.version, "prompt_versions": [inv.prompt_version, wri.prompt_version]}
+    try:
+        results = await run_sequence([inv, wri], parts, settings=settings, repo=repo, case_id=case.id, mock_context=ctx, cache_extra=extra)
+    except CacheMiss:
+        # cache_only replay: signed decisions change the feedback priorities (shared across workspaces), so the recorded
+        # run no longer matches. Replay it with the priorities it was recorded with rather than failing the stage.
+        if settings.resolved_llm_mode != "cache_only" or not priorities or priorities.n_decisions == 0:
+            raise
+        prio_idx = next(i for i, p in enumerate(parts) if (p.text or "").startswith("UNDERWRITER FEEDBACK PRIORITIES"))
+        parts[prio_idx] = types.Part.from_text(text=priorities_text(None))
+        results = await run_sequence([inv, wri], parts, settings=settings, repo=repo, case_id=case.id, mock_context=ctx, cache_extra=extra)
     notes = results[0].text
     draft = ChallengeDraft.model_validate(results[1].parsed)
     valid_docs = set(docs)

@@ -1,0 +1,212 @@
+{
+ "text": "{\n  \"merchant\": \"CV SUMBER REJEKI\",\n  \"date\": \"2026-05-27\",\n  \"receipt_number\": \"SR-0678\",\n  \"currency\": \"IDR\",\n  \"total\": {\n    \"value\": 1123000,\n    \"source\": {\n      \"doc_id\": \"D13\",\n      \"page\": 1,\n      \"bbox\": {\n        \"ymin\": 607,\n        \"xmin\": 707,\n        \"ymax\": 628,\n        \"xmax\": 883\n      },\n      \"snippet\": \"1.123.000\"\n    }\n  },\n  \"items\": [\n    {\n      \"description\": \"Bawang Merah 1kg\",\n      \"amount\": 152000,\n      \"source\": {\n        \"doc_id\": \"D13\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 349,\n          \"xmin\": 737,\n          \"ymax\": 369,\n          \"xmax\": 873\n        },\n        \"snippet\": \"152.000\"\n      }\n    },\n    {\n      \"description\": \"Gula Pasir 1kg\",\n      \"amount\": 35000,\n      \"source\": {\n        \"doc_id\": \"D13\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 402,\n          \"xmin\": 757,\n          \"ymax\": 420,\n          \"xmax\": 876\n        },\n        \"snippet\": \"35.000\"\n      }\n    },\n    {\n      \"description\": \"Tisu 1 dus\",\n      \"amount\": 430000,\n      \"source\": {\n        \"doc_id\": \"D13\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 453,\n          \"xmin\": 739,\n          \"ymax\": 472,\n          \"xmax\": 878\n        },\n        \"snippet\": \"430.000\"\n      }\n    },\n    {\n      \"description\": \"Mie Instan 1 dus (40)\",\n      \"amount\": 336000,\n      \"source\": {\n        \"doc_id\": \"D13\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 504,\n          \"xmin\": 743,\n          \"ymax\": 523,\n          \"xmax\": 879\n        },\n        \"snippet\": \"336.000\"\n      }\n    },\n    {\n      \"description\": \"Minyak Goreng 2L\",\n      \"amount\": 170000,\n      \"source\": {\n        \"doc_id\": \"D13\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 556,\n          \"xmin\": 744,\n          \"ymax\": 575,\n          \"xmax\": 880\n        },\n        \"snippet\": \"170.000\"\n      }\n    }\n  ],\n  \"payment_method\": \"TUNAI\",\n  \"direction\": \"purchase\",\n  \"handwritten\": false\n}",
+ "parsed": {
+  "merchant": "CV SUMBER REJEKI",
+  "date": "2026-05-27",
+  "receipt_number": "SR-0678",
+  "currency": "IDR",
+  "total": {
+   "value": 1123000.0,
+   "source": {
+    "doc_id": "D13",
+    "page": 1,
+    "bbox": {
+     "ymin": 607,
+     "xmin": 707,
+     "ymax": 628,
+     "xmax": 883
+    },
+    "snippet": "1.123.000"
+   }
+  },
+  "items": [
+   {
+    "description": "Bawang Merah 1kg",
+    "amount": 152000.0,
+    "source": {
+     "doc_id": "D13",
+     "page": 1,
+     "bbox": {
+      "ymin": 349,
+      "xmin": 737,
+      "ymax": 369,
+      "xmax": 873
+     },
+     "snippet": "152.000"
+    }
+   },
+   {
+    "description": "Gula Pasir 1kg",
+    "amount": 35000.0,
+    "source": {
+     "doc_id": "D13",
+     "page": 1,
+     "bbox": {
+      "ymin": 402,
+      "xmin": 757,
+      "ymax": 420,
+      "xmax": 876
+     },
+     "snippet": "35.000"
+    }
+   },
+   {
+    "description": "Tisu 1 dus",
+    "amount": 430000.0,
+    "source": {
+     "doc_id": "D13",
+     "page": 1,
+     "bbox": {
+      "ymin": 453,
+      "xmin": 739,
+      "ymax": 472,
+      "xmax": 878
+     },
+     "snippet": "430.000"
+    }
+   },
+   {
+    "description": "Mie Instan 1 dus (40)",
+    "amount": 336000.0,
+    "source": {
+     "doc_id": "D13",
+     "page": 1,
+     "bbox": {
+      "ymin": 504,
+      "xmin": 743,
+      "ymax": 523,
+      "xmax": 879
+     },
+     "snippet": "336.000"
+    }
+   },
+   {
+    "description": "Minyak Goreng 2L",
+    "amount": 170000.0,
+    "source": {
+     "doc_id": "D13",
+     "page": 1,
+     "bbox": {
+      "ymin": 556,
+      "xmin": 744,
+      "ymax": 575,
+      "xmax": 880
+     },
+     "snippet": "170.000"
+    }
+   }
+  ],
+  "payment_method": "TUNAI",
+  "direction": "purchase",
+  "handwritten": false
+ },
+ "state": {
+  "output": {
+   "merchant": "CV SUMBER REJEKI",
+   "date": "2026-05-27",
+   "receipt_number": "SR-0678",
+   "currency": "IDR",
+   "total": {
+    "value": 1123000.0,
+    "source": {
+     "doc_id": "D13",
+     "page": 1,
+     "bbox": {
+      "ymin": 607,
+      "xmin": 707,
+      "ymax": 628,
+      "xmax": 883
+     },
+     "snippet": "1.123.000"
+    }
+   },
+   "items": [
+    {
+     "description": "Bawang Merah 1kg",
+     "amount": 152000.0,
+     "source": {
+      "doc_id": "D13",
+      "page": 1,
+      "bbox": {
+       "ymin": 349,
+       "xmin": 737,
+       "ymax": 369,
+       "xmax": 873
+      },
+      "snippet": "152.000"
+     }
+    },
+    {
+     "description": "Gula Pasir 1kg",
+     "amount": 35000.0,
+     "source": {
+      "doc_id": "D13",
+      "page": 1,
+      "bbox": {
+       "ymin": 402,
+       "xmin": 757,
+       "ymax": 420,
+       "xmax": 876
+      },
+      "snippet": "35.000"
+     }
+    },
+    {
+     "description": "Tisu 1 dus",
+     "amount": 430000.0,
+     "source": {
+      "doc_id": "D13",
+      "page": 1,
+      "bbox": {
+       "ymin": 453,
+       "xmin": 739,
+       "ymax": 472,
+       "xmax": 878
+      },
+      "snippet": "430.000"
+     }
+    },
+    {
+     "description": "Mie Instan 1 dus (40)",
+     "amount": 336000.0,
+     "source": {
+      "doc_id": "D13",
+      "page": 1,
+      "bbox": {
+       "ymin": 504,
+       "xmin": 743,
+       "ymax": 523,
+       "xmax": 879
+      },
+      "snippet": "336.000"
+     }
+    },
+    {
+     "description": "Minyak Goreng 2L",
+     "amount": 170000.0,
+     "source": {
+      "doc_id": "D13",
+      "page": 1,
+      "bbox": {
+       "ymin": 556,
+       "xmin": 744,
+       "ymax": 575,
+       "xmax": 880
+      },
+      "snippet": "170.000"
+     }
+    }
+   ],
+   "payment_method": "TUNAI",
+   "direction": "purchase",
+   "handwritten": false
+  }
+ },
+ "input_tokens": 952,
+ "output_tokens": 828,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:receipt",
+ "cached_at": "2026-10-15T06:47:09+00:00"
+}

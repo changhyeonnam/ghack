@@ -1,0 +1,242 @@
+{
+ "text": "{\n  \"headline\": \"Reyes Auto Repair shows ongoing operational activity but presents missing bank statement periods and duplicate ledger documentation requiring additional verification.\",\n  \"sections\": [\n    {\n      \"heading\": \"Business overview\",\n      \"paragraphs\": [\n        \"Reyes Auto Repair is an independent automotive repair and maintenance workshop operating in the Philippines. Premises documentation confirms an established workshop with physical signage listing oil change, brakes, air conditioning, and tune-up services alongside dedicated service bays and spare parts inventory.\",\n        \"The applicant seeks a commercial loan of {fig:APP.requested_amount} to support working capital and business operations. Operating records span from January through June of twenty twenty-six across bank records and Tagalog handwritten daybooks.\"\n      ],\n      \"figure_ids\": [\n        \"APP.requested_amount\"\n      ]\n    },\n    {\n      \"heading\": \"Cash flow\",\n      \"paragraphs\": [\n        \"Across the active statement months, bank deposits reflect an average monthly business inflow of {fig:CF.avg_monthly_business_inflow} against an average monthly outflow of {fig:CF.avg_monthly_outflow}, yielding a slightly negative average monthly net cash flow of {fig:CF.avg_monthly_net}. Monthly business inflows stood at {fig:CF.m.2026-01.business_inflow} in January, {fig:CF.m.2026-02.business_inflow} in February, {fig:CF.m.2026-05.business_inflow} in May, and {fig:CF.m.2026-06.business_inflow} in June.\",\n        \"Net operating cash generation was uneven, showing positive margins of {fig:CF.m.2026-01.net} in January and {fig:CF.m.2026-06.net} in June, but deficits of {fig:CF.m.2026-02.net} in February and {fig:CF.m.2026-05.net} in May. Because of missing transaction data in intermediate months and tight operating margins, the computed repayment capacity sits at {fig:CF.suggested_capacity}.\"\n      ],\n      \"figure_ids\": [\n        \"CF.avg_monthly_business_inflow\",\n        \"CF.avg_monthly_outflow\",\n        \"CF.avg_monthly_net\",\n        \"CF.m.2026-01.business_inflow\",\n        \"CF.m.2026-02.business_inflow\",\n        \"CF.m.2026-05.business_inflow\",\n        \"CF.m.2026-06.business_inflow\",\n        \"CF.m.2026-01.net\",\n        \"CF.m.2026-06.net\",\n        \"CF.m.2026-02.net\",\n        \"CF.m.2026-05.net\",\n        \"CF.suggested_capacity\"\n      ]\n    },\n    {\n      \"heading\": \"Revenue quality and concentration\",\n      \"paragraphs\": [\n        \"Bank deposits are primarily cash-based, totaling {fig:CF.cash_deposit_total} in counter transactions, including recurring branch credits such as {fig:TX.T0021} and {fig:TX.T0013}. Cash revenue recorded in the handwritten ledger reached {fig:CF.ledger_income_total}, with {fig:CF.ledger_income_comparable} corresponding to active banking months.\",\n        \"The business exhibits minimal monthly revenue volatility with a coefficient of variation of {fig:CF.inflow_volatility_cv} and limited month-end concentration at {fig:CF.end_of_month_concentration}. Unbanked ledger income is estimated at {fig:CF.off_ledger_income_estimate}, indicating that the vast majority of workshop cash receipts are regularly channeled into the bank account.\"\n      ],\n      \"figure_ids\": [\n        \"CF.cash_deposit_total\",\n        \"TX.T0021\",\n        \"TX.T0013\",\n        \"CF.ledger_income_total\",\n        \"CF.ledger_income_comparable\",\n        \"CF.inflow_volatility_cv\",\n        \"CF.end_of_month_concentration\",\n        \"CF.off_ledger_income_estimate\"\n      ]\n    },\n    {\n      \"heading\": \"Obligations and leverage\",\n      \"paragraphs\": [\n        \"The account reflects significant ongoing debt service commitments, with estimated recurring monthly loan outflows of {fig:CF.recurring_debt_service_monthly}. This includes regular auto loan debits to BDO of {fig:CF.recurring.1.amount} observed across the statement period, such as {fig:TX.T0006}.\",\n        \"Additionally, multiple recurring transfers of {fig:CF.recurring.2.amount} are made monthly to an individual counterparty, which function as recurring financing or informal obligations. Periodic inventory debits to auto supply stores, such as {fig:TX.T0073}, form the primary trade operational expenses.\"\n      ],\n      \"figure_ids\": [\n        \"CF.recurring_debt_service_monthly\",\n        \"CF.recurring.1.amount\",\n        \"TX.T0006\",\n        \"CF.recurring.2.amount\",\n        \"TX.T0073\"\n      ]\n    },\n    {\n      \"heading\": \"Document quality and coverage\",\n      \"paragraphs\": [\n        \"A critical documentation gap exists in bank statement document D01: while the statement period is titled January through June of twenty twenty-six, it spans {fig:CF.months_covered} of activity and omits {fig:CF.months_missing_count}, specifically March and April of twenty twenty-six. This creates an unverified gap in the formal balance chain between February's closing balance of {fig:CF.m.2026-02.closing_balance} and May's starting transactions.\",\n        \"Furthermore, handwritten ledger records show integrity concerns. Document D07 is an apparent duplicated submission duplicating the ledger entries and income total of {fig:DOC.D07.income_total} from March document D04 under an altered April header. These discrepancies prevent full cash flow reconciliation.\"\n      ],\n      \"figure_ids\": [\n        \"CF.months_covered\",\n        \"CF.months_missing_count\",\n        \"CF.m.2026-02.closing_balance\",\n        \"DOC.D07.income_total\"\n      ]\n    },\n    {\n      \"heading\": \"Recommendation\",\n      \"paragraphs\": [\n        \"It is recommended to request more documents before rendering a credit decision on the requested facility of {fig:APP.requested_amount}. The applicant must provide complete bank statements for March and April of twenty twenty-six to verify true cash generation and balance continuity.\",\n        \"The applicant must also provide original physical ledger pages for April of twenty twenty-six and clarify the duplicate entry submission in document D07. Any indication of intentional record duplication or tampering must be escalated for formal fraud review.\"\n      ],\n      \"figure_ids\": [\n        \"APP.requested_amount\"\n      ]\n    }\n  ],\n  \"key_figure_ids\": [\n    \"APP.requested_amount\",\n    \"CF.avg_monthly_business_inflow\",\n    \"CF.avg_monthly_net\",\n    \"CF.recurring_debt_service_monthly\",\n    \"CF.months_missing_count\",\n    \"CF.cash_deposit_total\"\n  ],\n  \"strengths\": [\n    \"Consistent and verifiable workshop trade deposits totaling {fig:CF.cash_deposit_total} across active months.\",\n    \"Strong physical footprint confirmed by shopfront and service bay premises photos.\",\n    \"Low revenue volatility across documented active banking periods.\"\n  ],\n  \"concerns\": [\n    \"Missing transaction activity for March and April twenty twenty-six in the submitted bank statement file.\",\n    \"Suspected duplication and header alteration in handwritten ledger document D07 duplicating March figures.\",\n    \"Substantial recurring debt obligations of {fig:CF.recurring_debt_service_monthly} resulting in negative net operating cash flow.\"\n  ],\n  \"recommendation\": \"request_more_documents\",\n  \"conditions\": [\n    \"Submission of complete, original bank statements from Metro Pacific Savings Bank covering March and April twenty twenty-six.\",\n    \"Provision of original ledger entries for April twenty twenty-six along with written clarification regarding the duplicate page submitted in document D07.\",\n    \"Satisfactory fraud team review verifying the authenticity of ledger records.\"\n  ],\n  \"rationale\": \"While Reyes Auto Repair shows steady operational revenue during the months provided, a formal underwriting decision cannot be made due to missing bank statement periods for March and April twenty twenty-six and a suspected duplicate ledger page. Complete records are required to confirm true net cash flow and ensure document integrity.\"\n}",
+ "parsed": {
+  "headline": "Reyes Auto Repair shows ongoing operational activity but presents missing bank statement periods and duplicate ledger documentation requiring additional verification.",
+  "sections": [
+   {
+    "heading": "Business overview",
+    "paragraphs": [
+     "Reyes Auto Repair is an independent automotive repair and maintenance workshop operating in the Philippines. Premises documentation confirms an established workshop with physical signage listing oil change, brakes, air conditioning, and tune-up services alongside dedicated service bays and spare parts inventory.",
+     "The applicant seeks a commercial loan of {fig:APP.requested_amount} to support working capital and business operations. Operating records span from January through June of twenty twenty-six across bank records and Tagalog handwritten daybooks."
+    ],
+    "figure_ids": [
+     "APP.requested_amount"
+    ]
+   },
+   {
+    "heading": "Cash flow",
+    "paragraphs": [
+     "Across the active statement months, bank deposits reflect an average monthly business inflow of {fig:CF.avg_monthly_business_inflow} against an average monthly outflow of {fig:CF.avg_monthly_outflow}, yielding a slightly negative average monthly net cash flow of {fig:CF.avg_monthly_net}. Monthly business inflows stood at {fig:CF.m.2026-01.business_inflow} in January, {fig:CF.m.2026-02.business_inflow} in February, {fig:CF.m.2026-05.business_inflow} in May, and {fig:CF.m.2026-06.business_inflow} in June.",
+     "Net operating cash generation was uneven, showing positive margins of {fig:CF.m.2026-01.net} in January and {fig:CF.m.2026-06.net} in June, but deficits of {fig:CF.m.2026-02.net} in February and {fig:CF.m.2026-05.net} in May. Because of missing transaction data in intermediate months and tight operating margins, the computed repayment capacity sits at {fig:CF.suggested_capacity}."
+    ],
+    "figure_ids": [
+     "CF.avg_monthly_business_inflow",
+     "CF.avg_monthly_outflow",
+     "CF.avg_monthly_net",
+     "CF.m.2026-01.business_inflow",
+     "CF.m.2026-02.business_inflow",
+     "CF.m.2026-05.business_inflow",
+     "CF.m.2026-06.business_inflow",
+     "CF.m.2026-01.net",
+     "CF.m.2026-06.net",
+     "CF.m.2026-02.net",
+     "CF.m.2026-05.net",
+     "CF.suggested_capacity"
+    ]
+   },
+   {
+    "heading": "Revenue quality and concentration",
+    "paragraphs": [
+     "Bank deposits are primarily cash-based, totaling {fig:CF.cash_deposit_total} in counter transactions, including recurring branch credits such as {fig:TX.T0021} and {fig:TX.T0013}. Cash revenue recorded in the handwritten ledger reached {fig:CF.ledger_income_total}, with {fig:CF.ledger_income_comparable} corresponding to active banking months.",
+     "The business exhibits minimal monthly revenue volatility with a coefficient of variation of {fig:CF.inflow_volatility_cv} and limited month-end concentration at {fig:CF.end_of_month_concentration}. Unbanked ledger income is estimated at {fig:CF.off_ledger_income_estimate}, indicating that the vast majority of workshop cash receipts are regularly channeled into the bank account."
+    ],
+    "figure_ids": [
+     "CF.cash_deposit_total",
+     "TX.T0021",
+     "TX.T0013",
+     "CF.ledger_income_total",
+     "CF.ledger_income_comparable",
+     "CF.inflow_volatility_cv",
+     "CF.end_of_month_concentration",
+     "CF.off_ledger_income_estimate"
+    ]
+   },
+   {
+    "heading": "Obligations and leverage",
+    "paragraphs": [
+     "The account reflects significant ongoing debt service commitments, with estimated recurring monthly loan outflows of {fig:CF.recurring_debt_service_monthly}. This includes regular auto loan debits to BDO of {fig:CF.recurring.1.amount} observed across the statement period, such as {fig:TX.T0006}.",
+     "Additionally, multiple recurring transfers of {fig:CF.recurring.2.amount} are made monthly to an individual counterparty, which function as recurring financing or informal obligations. Periodic inventory debits to auto supply stores, such as {fig:TX.T0073}, form the primary trade operational expenses."
+    ],
+    "figure_ids": [
+     "CF.recurring_debt_service_monthly",
+     "CF.recurring.1.amount",
+     "TX.T0006",
+     "CF.recurring.2.amount",
+     "TX.T0073"
+    ]
+   },
+   {
+    "heading": "Document quality and coverage",
+    "paragraphs": [
+     "A critical documentation gap exists in bank statement document D01: while the statement period is titled January through June of twenty twenty-six, it spans {fig:CF.months_covered} of activity and omits {fig:CF.months_missing_count}, specifically March and April of twenty twenty-six. This creates an unverified gap in the formal balance chain between February's closing balance of {fig:CF.m.2026-02.closing_balance} and May's starting transactions.",
+     "Furthermore, handwritten ledger records show integrity concerns. Document D07 is an apparent duplicated submission duplicating the ledger entries and income total of {fig:DOC.D07.income_total} from March document D04 under an altered April header. These discrepancies prevent full cash flow reconciliation."
+    ],
+    "figure_ids": [
+     "CF.months_covered",
+     "CF.months_missing_count",
+     "CF.m.2026-02.closing_balance",
+     "DOC.D07.income_total"
+    ]
+   },
+   {
+    "heading": "Recommendation",
+    "paragraphs": [
+     "It is recommended to request more documents before rendering a credit decision on the requested facility of {fig:APP.requested_amount}. The applicant must provide complete bank statements for March and April of twenty twenty-six to verify true cash generation and balance continuity.",
+     "The applicant must also provide original physical ledger pages for April of twenty twenty-six and clarify the duplicate entry submission in document D07. Any indication of intentional record duplication or tampering must be escalated for formal fraud review."
+    ],
+    "figure_ids": [
+     "APP.requested_amount"
+    ]
+   }
+  ],
+  "key_figure_ids": [
+   "APP.requested_amount",
+   "CF.avg_monthly_business_inflow",
+   "CF.avg_monthly_net",
+   "CF.recurring_debt_service_monthly",
+   "CF.months_missing_count",
+   "CF.cash_deposit_total"
+  ],
+  "strengths": [
+   "Consistent and verifiable workshop trade deposits totaling {fig:CF.cash_deposit_total} across active months.",
+   "Strong physical footprint confirmed by shopfront and service bay premises photos.",
+   "Low revenue volatility across documented active banking periods."
+  ],
+  "concerns": [
+   "Missing transaction activity for March and April twenty twenty-six in the submitted bank statement file.",
+   "Suspected duplication and header alteration in handwritten ledger document D07 duplicating March figures.",
+   "Substantial recurring debt obligations of {fig:CF.recurring_debt_service_monthly} resulting in negative net operating cash flow."
+  ],
+  "recommendation": "request_more_documents",
+  "conditions": [
+   "Submission of complete, original bank statements from Metro Pacific Savings Bank covering March and April twenty twenty-six.",
+   "Provision of original ledger entries for April twenty twenty-six along with written clarification regarding the duplicate page submitted in document D07.",
+   "Satisfactory fraud team review verifying the authenticity of ledger records."
+  ],
+  "rationale": "While Reyes Auto Repair shows steady operational revenue during the months provided, a formal underwriting decision cannot be made due to missing bank statement periods for March and April twenty twenty-six and a suspected duplicate ledger page. Complete records are required to confirm true net cash flow and ensure document integrity."
+ },
+ "state": {
+  "output": {
+   "headline": "Reyes Auto Repair shows ongoing operational activity but presents missing bank statement periods and duplicate ledger documentation requiring additional verification.",
+   "sections": [
+    {
+     "heading": "Business overview",
+     "paragraphs": [
+      "Reyes Auto Repair is an independent automotive repair and maintenance workshop operating in the Philippines. Premises documentation confirms an established workshop with physical signage listing oil change, brakes, air conditioning, and tune-up services alongside dedicated service bays and spare parts inventory.",
+      "The applicant seeks a commercial loan of {fig:APP.requested_amount} to support working capital and business operations. Operating records span from January through June of twenty twenty-six across bank records and Tagalog handwritten daybooks."
+     ],
+     "figure_ids": [
+      "APP.requested_amount"
+     ]
+    },
+    {
+     "heading": "Cash flow",
+     "paragraphs": [
+      "Across the active statement months, bank deposits reflect an average monthly business inflow of {fig:CF.avg_monthly_business_inflow} against an average monthly outflow of {fig:CF.avg_monthly_outflow}, yielding a slightly negative average monthly net cash flow of {fig:CF.avg_monthly_net}. Monthly business inflows stood at {fig:CF.m.2026-01.business_inflow} in January, {fig:CF.m.2026-02.business_inflow} in February, {fig:CF.m.2026-05.business_inflow} in May, and {fig:CF.m.2026-06.business_inflow} in June.",
+      "Net operating cash generation was uneven, showing positive margins of {fig:CF.m.2026-01.net} in January and {fig:CF.m.2026-06.net} in June, but deficits of {fig:CF.m.2026-02.net} in February and {fig:CF.m.2026-05.net} in May. Because of missing transaction data in intermediate months and tight operating margins, the computed repayment capacity sits at {fig:CF.suggested_capacity}."
+     ],
+     "figure_ids": [
+      "CF.avg_monthly_business_inflow",
+      "CF.avg_monthly_outflow",
+      "CF.avg_monthly_net",
+      "CF.m.2026-01.business_inflow",
+      "CF.m.2026-02.business_inflow",
+      "CF.m.2026-05.business_inflow",
+      "CF.m.2026-06.business_inflow",
+      "CF.m.2026-01.net",
+      "CF.m.2026-06.net",
+      "CF.m.2026-02.net",
+      "CF.m.2026-05.net",
+      "CF.suggested_capacity"
+     ]
+    },
+    {
+     "heading": "Revenue quality and concentration",
+     "paragraphs": [
+      "Bank deposits are primarily cash-based, totaling {fig:CF.cash_deposit_total} in counter transactions, including recurring branch credits such as {fig:TX.T0021} and {fig:TX.T0013}. Cash revenue recorded in the handwritten ledger reached {fig:CF.ledger_income_total}, with {fig:CF.ledger_income_comparable} corresponding to active banking months.",
+      "The business exhibits minimal monthly revenue volatility with a coefficient of variation of {fig:CF.inflow_volatility_cv} and limited month-end concentration at {fig:CF.end_of_month_concentration}. Unbanked ledger income is estimated at {fig:CF.off_ledger_income_estimate}, indicating that the vast majority of workshop cash receipts are regularly channeled into the bank account."
+     ],
+     "figure_ids": [
+      "CF.cash_deposit_total",
+      "TX.T0021",
+      "TX.T0013",
+      "CF.ledger_income_total",
+      "CF.ledger_income_comparable",
+      "CF.inflow_volatility_cv",
+      "CF.end_of_month_concentration",
+      "CF.off_ledger_income_estimate"
+     ]
+    },
+    {
+     "heading": "Obligations and leverage",
+     "paragraphs": [
+      "The account reflects significant ongoing debt service commitments, with estimated recurring monthly loan outflows of {fig:CF.recurring_debt_service_monthly}. This includes regular auto loan debits to BDO of {fig:CF.recurring.1.amount} observed across the statement period, such as {fig:TX.T0006}.",
+      "Additionally, multiple recurring transfers of {fig:CF.recurring.2.amount} are made monthly to an individual counterparty, which function as recurring financing or informal obligations. Periodic inventory debits to auto supply stores, such as {fig:TX.T0073}, form the primary trade operational expenses."
+     ],
+     "figure_ids": [
+      "CF.recurring_debt_service_monthly",
+      "CF.recurring.1.amount",
+      "TX.T0006",
+      "CF.recurring.2.amount",
+      "TX.T0073"
+     ]
+    },
+    {
+     "heading": "Document quality and coverage",
+     "paragraphs": [
+      "A critical documentation gap exists in bank statement document D01: while the statement period is titled January through June of twenty twenty-six, it spans {fig:CF.months_covered} of activity and omits {fig:CF.months_missing_count}, specifically March and April of twenty twenty-six. This creates an unverified gap in the formal balance chain between February's closing balance of {fig:CF.m.2026-02.closing_balance} and May's starting transactions.",
+      "Furthermore, handwritten ledger records show integrity concerns. Document D07 is an apparent duplicated submission duplicating the ledger entries and income total of {fig:DOC.D07.income_total} from March document D04 under an altered April header. These discrepancies prevent full cash flow reconciliation."
+     ],
+     "figure_ids": [
+      "CF.months_covered",
+      "CF.months_missing_count",
+      "CF.m.2026-02.closing_balance",
+      "DOC.D07.income_total"
+     ]
+    },
+    {
+     "heading": "Recommendation",
+     "paragraphs": [
+      "It is recommended to request more documents before rendering a credit decision on the requested facility of {fig:APP.requested_amount}. The applicant must provide complete bank statements for March and April of twenty twenty-six to verify true cash generation and balance continuity.",
+      "The applicant must also provide original physical ledger pages for April of twenty twenty-six and clarify the duplicate entry submission in document D07. Any indication of intentional record duplication or tampering must be escalated for formal fraud review."
+     ],
+     "figure_ids": [
+      "APP.requested_amount"
+     ]
+    }
+   ],
+   "key_figure_ids": [
+    "APP.requested_amount",
+    "CF.avg_monthly_business_inflow",
+    "CF.avg_monthly_net",
+    "CF.recurring_debt_service_monthly",
+    "CF.months_missing_count",
+    "CF.cash_deposit_total"
+   ],
+   "strengths": [
+    "Consistent and verifiable workshop trade deposits totaling {fig:CF.cash_deposit_total} across active months.",
+    "Strong physical footprint confirmed by shopfront and service bay premises photos.",
+    "Low revenue volatility across documented active banking periods."
+   ],
+   "concerns": [
+    "Missing transaction activity for March and April twenty twenty-six in the submitted bank statement file.",
+    "Suspected duplication and header alteration in handwritten ledger document D07 duplicating March figures.",
+    "Substantial recurring debt obligations of {fig:CF.recurring_debt_service_monthly} resulting in negative net operating cash flow."
+   ],
+   "recommendation": "request_more_documents",
+   "conditions": [
+    "Submission of complete, original bank statements from Metro Pacific Savings Bank covering March and April twenty twenty-six.",
+    "Provision of original ledger entries for April twenty twenty-six along with written clarification regarding the duplicate page submitted in document D07.",
+    "Satisfactory fraud team review verifying the authenticity of ledger records."
+   ],
+   "rationale": "While Reyes Auto Repair shows steady operational revenue during the months provided, a formal underwriting decision cannot be made due to missing bank statement periods for March and April twenty twenty-six and a suspected duplicate ledger page. Complete records are required to confirm true net cash flow and ensure document integrity."
+  }
+ },
+ "input_tokens": 7296,
+ "output_tokens": 2044,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "analyst-v1.4",
+ "agent": "analyst",
+ "cached_at": "2026-10-16T06:18:46+00:00"
+}
