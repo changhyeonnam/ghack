@@ -15,3 +15,5 @@ benchmark/*.log
 # motion graphics renders
 video/motion/out/
 video/motion/node_modules/
+video/captions/out/
+video/audio/out/
