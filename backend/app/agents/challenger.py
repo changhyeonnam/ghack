@@ -277,7 +277,9 @@ async def run_challenger(case: Case, *, memo: Memo, cashflow: CashflowSummary, e
         types.Part.from_text(text=extraction_digest(extractions, docs, demo=case.is_demo)),
         types.Part.from_text(text="AUTOMATED CHECKS (deterministic, already run)\n" + digest),
         types.Part.from_text(text="EVIDENCE REFS you may copy (row_id or doc_id -> ref)\n" + "\n".join(f"{k}: {v}" for k, v in list(ref_block.items())[:80])),
-        types.Part.from_text(text=priorities_text(priorities)),
+        # Demo cases always replay the recorded Challenger run: shared feedback from other visitors' decisions would
+        # otherwise change the prompt, miss the cache and call Gemini for every visitor. Uploaded cases use it.
+        types.Part.from_text(text=priorities_text(None if case.is_demo else priorities)),
         types.Part.from_text(text="Investigate now. Use the tools to verify. Then the reporting step will format objections."),
     ]
     if case.is_demo:

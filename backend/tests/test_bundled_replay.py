@@ -41,3 +41,13 @@ def test_keyless_checkout_replays_the_live_run_and_survives_shared_feedback(repl
     b = _case(c, ws2, "Reyes Auto Repair")
     r2 = c.post(f"/api/cases/{b}/run?stage=all", headers=ws2).json()
     assert r2["status"] == "challenged", r2
+
+
+def test_demo_challenge_ignores_shared_feedback_priorities():
+    from app.agents import challenger
+    from app.schemas import FeedbackPriorities
+    import inspect
+    src = inspect.getsource(challenger.run_challenger)
+    assert "None if case.is_demo else priorities" in src
+    fp = FeedbackPriorities(n_decisions=3, priorities=[])
+    assert challenger.priorities_text(None) != challenger.priorities_text(fp) or not fp.priorities
