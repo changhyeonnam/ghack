@@ -1,0 +1,152 @@
+{
+ "text": "{\n  \"merchant\": \"TOKO PLASTIK ANUGERAH\",\n  \"date\": \"2026-03-16\",\n  \"receipt_number\": \"TPA-0632\",\n  \"currency\": \"IDR\",\n  \"total\": {\n    \"value\": 324000,\n    \"source\": {\n      \"doc_id\": \"D07\",\n      \"page\": 1,\n      \"bbox\": {\n        \"ymin\": 562,\n        \"xmin\": 750,\n        \"ymax\": 579,\n        \"xmax\": 879\n      },\n      \"snippet\": \"324.000\"\n    }\n  },\n  \"items\": [\n    {\n      \"description\": \"Minuman Botol 1 krat\",\n      \"amount\": 288000,\n      \"source\": {\n        \"doc_id\": \"D07\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 390,\n          \"xmin\": 741,\n          \"ymax\": 409,\n          \"xmax\": 870\n        },\n        \"snippet\": \"288.000\"\n      }\n    },\n    {\n      \"description\": \"Kecap Manis 600ml\",\n      \"amount\": 24000,\n      \"source\": {\n        \"doc_id\": \"D07\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 448,\n          \"xmin\": 763,\n          \"ymax\": 465,\n          \"xmax\": 872\n        },\n        \"snippet\": \"24.000\"\n      }\n    },\n    {\n      \"description\": \"Kopi Sachet 1 renceng\",\n      \"amount\": 12000,\n      \"source\": {\n        \"doc_id\": \"D07\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 504,\n          \"xmin\": 766,\n          \"ymax\": 522,\n          \"xmax\": 875\n        },\n        \"snippet\": \"12.000\"\n      }\n    }\n  ],\n  \"payment_method\": \"TUNAI\",\n  \"direction\": \"purchase\",\n  \"handwritten\": false\n}",
+ "parsed": {
+  "merchant": "TOKO PLASTIK ANUGERAH",
+  "date": "2026-03-16",
+  "receipt_number": "TPA-0632",
+  "currency": "IDR",
+  "total": {
+   "value": 324000.0,
+   "source": {
+    "doc_id": "D07",
+    "page": 1,
+    "bbox": {
+     "ymin": 562,
+     "xmin": 750,
+     "ymax": 579,
+     "xmax": 879
+    },
+    "snippet": "324.000"
+   }
+  },
+  "items": [
+   {
+    "description": "Minuman Botol 1 krat",
+    "amount": 288000.0,
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 390,
+      "xmin": 741,
+      "ymax": 409,
+      "xmax": 870
+     },
+     "snippet": "288.000"
+    }
+   },
+   {
+    "description": "Kecap Manis 600ml",
+    "amount": 24000.0,
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 448,
+      "xmin": 763,
+      "ymax": 465,
+      "xmax": 872
+     },
+     "snippet": "24.000"
+    }
+   },
+   {
+    "description": "Kopi Sachet 1 renceng",
+    "amount": 12000.0,
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 504,
+      "xmin": 766,
+      "ymax": 522,
+      "xmax": 875
+     },
+     "snippet": "12.000"
+    }
+   }
+  ],
+  "payment_method": "TUNAI",
+  "direction": "purchase",
+  "handwritten": false
+ },
+ "state": {
+  "output": {
+   "merchant": "TOKO PLASTIK ANUGERAH",
+   "date": "2026-03-16",
+   "receipt_number": "TPA-0632",
+   "currency": "IDR",
+   "total": {
+    "value": 324000.0,
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 562,
+      "xmin": 750,
+      "ymax": 579,
+      "xmax": 879
+     },
+     "snippet": "324.000"
+    }
+   },
+   "items": [
+    {
+     "description": "Minuman Botol 1 krat",
+     "amount": 288000.0,
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 390,
+       "xmin": 741,
+       "ymax": 409,
+       "xmax": 870
+      },
+      "snippet": "288.000"
+     }
+    },
+    {
+     "description": "Kecap Manis 600ml",
+     "amount": 24000.0,
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 448,
+       "xmin": 763,
+       "ymax": 465,
+       "xmax": 872
+      },
+      "snippet": "24.000"
+     }
+    },
+    {
+     "description": "Kopi Sachet 1 renceng",
+     "amount": 12000.0,
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 504,
+       "xmin": 766,
+       "ymax": 522,
+       "xmax": 875
+      },
+      "snippet": "12.000"
+     }
+    }
+   ],
+   "payment_method": "TUNAI",
+   "direction": "purchase",
+   "handwritten": false
+  }
+ },
+ "input_tokens": 944,
+ "output_tokens": 582,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:receipt",
+ "cached_at": "2026-10-15T06:46:46+00:00"
+}

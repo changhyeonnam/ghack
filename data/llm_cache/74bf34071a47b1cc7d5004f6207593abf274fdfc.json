@@ -1,0 +1,272 @@
+{
+ "text": "{\n  \"merchant\": \"CV SUMBER REJEKI\",\n  \"date\": \"2026-06-17\",\n  \"receipt_number\": \"SR-0698\",\n  \"currency\": \"IDR\",\n  \"total\": {\n    \"value\": 1161000.0,\n    \"source\": {\n      \"doc_id\": \"D16\",\n      \"page\": 1,\n      \"bbox\": {\n        \"ymin\": 651,\n        \"xmin\": 677,\n        \"ymax\": 677,\n        \"xmax\": 851\n      },\n      \"snippet\": \"1.161.000\"\n    }\n  },\n  \"items\": [\n    {\n      \"description\": \"Kantong Plastik 1 pak\",\n      \"amount\": 75000.0,\n      \"source\": {\n        \"doc_id\": \"D16\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 331,\n          \"xmin\": 765,\n          \"ymax\": 351,\n          \"xmax\": 872\n        },\n        \"snippet\": \"75.000\"\n      }\n    },\n    {\n      \"description\": \"Garam 1kg\",\n      \"amount\": 54000.0,\n      \"source\": {\n        \"doc_id\": \"D16\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 376,\n          \"xmin\": 762,\n          \"ymax\": 396,\n          \"xmax\": 869\n        },\n        \"snippet\": \"54.000\"\n      }\n    },\n    {\n      \"description\": \"Pasta Gigi 1 lusin\",\n      \"amount\": 192000.0,\n      \"source\": {\n        \"doc_id\": \"D16\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 421,\n          \"xmin\": 737,\n          \"ymax\": 444,\n          \"xmax\": 868\n        },\n        \"snippet\": \"192.000\"\n      }\n    },\n    {\n      \"description\": \"Kopi Sachet 1 renceng\",\n      \"amount\": 12000.0,\n      \"source\": {\n        \"doc_id\": \"D16\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 469,\n          \"xmin\": 755,\n          \"ymax\": 489,\n          \"xmax\": 865\n        },\n        \"snippet\": \"12.000\"\n      }\n    },\n    {\n      \"description\": \"Kecap Manis 600ml\",\n      \"amount\": 48000.0,\n      \"source\": {\n        \"doc_id\": \"D16\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 516,\n          \"xmin\": 749,\n          \"ymax\": 535,\n          \"xmax\": 862\n        },\n        \"snippet\": \"48.000\"\n      }\n    },\n    {\n      \"description\": \"Cabai Rawit 1kg\",\n      \"amount\": 390000.0,\n      \"source\": {\n        \"doc_id\": \"D16\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 560,\n          \"xmin\": 725,\n          \"ymax\": 583,\n          \"xmax\": 858\n        },\n        \"snippet\": \"390.000\"\n      }\n    },\n    {\n      \"description\": \"Biskuit 1 dus\",\n      \"amount\": 390000.0,\n      \"source\": {\n        \"doc_id\": \"D16\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 606,\n          \"xmin\": 726,\n          \"ymax\": 629,\n          \"xmax\": 855\n        },\n        \"snippet\": \"390.000\"\n      }\n    }\n  ],\n  \"payment_method\": \"TUNAI\",\n  \"direction\": \"purchase\",\n  \"handwritten\": false\n}",
+ "parsed": {
+  "merchant": "CV SUMBER REJEKI",
+  "date": "2026-06-17",
+  "receipt_number": "SR-0698",
+  "currency": "IDR",
+  "total": {
+   "value": 1161000.0,
+   "source": {
+    "doc_id": "D16",
+    "page": 1,
+    "bbox": {
+     "ymin": 651,
+     "xmin": 677,
+     "ymax": 677,
+     "xmax": 851
+    },
+    "snippet": "1.161.000"
+   }
+  },
+  "items": [
+   {
+    "description": "Kantong Plastik 1 pak",
+    "amount": 75000.0,
+    "source": {
+     "doc_id": "D16",
+     "page": 1,
+     "bbox": {
+      "ymin": 331,
+      "xmin": 765,
+      "ymax": 351,
+      "xmax": 872
+     },
+     "snippet": "75.000"
+    }
+   },
+   {
+    "description": "Garam 1kg",
+    "amount": 54000.0,
+    "source": {
+     "doc_id": "D16",
+     "page": 1,
+     "bbox": {
+      "ymin": 376,
+      "xmin": 762,
+      "ymax": 396,
+      "xmax": 869
+     },
+     "snippet": "54.000"
+    }
+   },
+   {
+    "description": "Pasta Gigi 1 lusin",
+    "amount": 192000.0,
+    "source": {
+     "doc_id": "D16",
+     "page": 1,
+     "bbox": {
+      "ymin": 421,
+      "xmin": 737,
+      "ymax": 444,
+      "xmax": 868
+     },
+     "snippet": "192.000"
+    }
+   },
+   {
+    "description": "Kopi Sachet 1 renceng",
+    "amount": 12000.0,
+    "source": {
+     "doc_id": "D16",
+     "page": 1,
+     "bbox": {
+      "ymin": 469,
+      "xmin": 755,
+      "ymax": 489,
+      "xmax": 865
+     },
+     "snippet": "12.000"
+    }
+   },
+   {
+    "description": "Kecap Manis 600ml",
+    "amount": 48000.0,
+    "source": {
+     "doc_id": "D16",
+     "page": 1,
+     "bbox": {
+      "ymin": 516,
+      "xmin": 749,
+      "ymax": 535,
+      "xmax": 862
+     },
+     "snippet": "48.000"
+    }
+   },
+   {
+    "description": "Cabai Rawit 1kg",
+    "amount": 390000.0,
+    "source": {
+     "doc_id": "D16",
+     "page": 1,
+     "bbox": {
+      "ymin": 560,
+      "xmin": 725,
+      "ymax": 583,
+      "xmax": 858
+     },
+     "snippet": "390.000"
+    }
+   },
+   {
+    "description": "Biskuit 1 dus",
+    "amount": 390000.0,
+    "source": {
+     "doc_id": "D16",
+     "page": 1,
+     "bbox": {
+      "ymin": 606,
+      "xmin": 726,
+      "ymax": 629,
+      "xmax": 855
+     },
+     "snippet": "390.000"
+    }
+   }
+  ],
+  "payment_method": "TUNAI",
+  "direction": "purchase",
+  "handwritten": false
+ },
+ "state": {
+  "output": {
+   "merchant": "CV SUMBER REJEKI",
+   "date": "2026-06-17",
+   "receipt_number": "SR-0698",
+   "currency": "IDR",
+   "total": {
+    "value": 1161000.0,
+    "source": {
+     "doc_id": "D16",
+     "page": 1,
+     "bbox": {
+      "ymin": 651,
+      "xmin": 677,
+      "ymax": 677,
+      "xmax": 851
+     },
+     "snippet": "1.161.000"
+    }
+   },
+   "items": [
+    {
+     "description": "Kantong Plastik 1 pak",
+     "amount": 75000.0,
+     "source": {
+      "doc_id": "D16",
+      "page": 1,
+      "bbox": {
+       "ymin": 331,
+       "xmin": 765,
+       "ymax": 351,
+       "xmax": 872
+      },
+      "snippet": "75.000"
+     }
+    },
+    {
+     "description": "Garam 1kg",
+     "amount": 54000.0,
+     "source": {
+      "doc_id": "D16",
+      "page": 1,
+      "bbox": {
+       "ymin": 376,
+       "xmin": 762,
+       "ymax": 396,
+       "xmax": 869
+      },
+      "snippet": "54.000"
+     }
+    },
+    {
+     "description": "Pasta Gigi 1 lusin",
+     "amount": 192000.0,
+     "source": {
+      "doc_id": "D16",
+      "page": 1,
+      "bbox": {
+       "ymin": 421,
+       "xmin": 737,
+       "ymax": 444,
+       "xmax": 868
+      },
+      "snippet": "192.000"
+     }
+    },
+    {
+     "description": "Kopi Sachet 1 renceng",
+     "amount": 12000.0,
+     "source": {
+      "doc_id": "D16",
+      "page": 1,
+      "bbox": {
+       "ymin": 469,
+       "xmin": 755,
+       "ymax": 489,
+       "xmax": 865
+      },
+      "snippet": "12.000"
+     }
+    },
+    {
+     "description": "Kecap Manis 600ml",
+     "amount": 48000.0,
+     "source": {
+      "doc_id": "D16",
+      "page": 1,
+      "bbox": {
+       "ymin": 516,
+       "xmin": 749,
+       "ymax": 535,
+       "xmax": 862
+      },
+      "snippet": "48.000"
+     }
+    },
+    {
+     "description": "Cabai Rawit 1kg",
+     "amount": 390000.0,
+     "source": {
+      "doc_id": "D16",
+      "page": 1,
+      "bbox": {
+       "ymin": 560,
+       "xmin": 725,
+       "ymax": 583,
+       "xmax": 858
+      },
+      "snippet": "390.000"
+     }
+    },
+    {
+     "description": "Biskuit 1 dus",
+     "amount": 390000.0,
+     "source": {
+      "doc_id": "D16",
+      "page": 1,
+      "bbox": {
+       "ymin": 606,
+       "xmin": 726,
+       "ymax": 629,
+       "xmax": 855
+      },
+      "snippet": "390.000"
+     }
+    }
+   ],
+   "payment_method": "TUNAI",
+   "direction": "purchase",
+   "handwritten": false
+  }
+ },
+ "input_tokens": 939,
+ "output_tokens": 1085,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:receipt",
+ "cached_at": "2026-10-15T06:47:21+00:00"
+}

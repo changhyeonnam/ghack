@@ -16,7 +16,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY backend/app ./app
 COPY data/synth ./data/synth
 COPY benchmark/results ./benchmark/results
+COPY data/llm_cache ./data/llm_cache
 COPY --from=web /web/dist ./static
-ENV LEDGERLENS_STATIC_DIR=/app/static LEDGERLENS_SYNTH_DIR=/app/data/synth LEDGERLENS_LOCAL_DATA_DIR=/tmp/ledgerlens
+ENV LEDGERLENS_STATIC_DIR=/app/static LEDGERLENS_SYNTH_DIR=/app/data/synth LEDGERLENS_BUNDLED_CACHE_DIR=/app/data/llm_cache LEDGERLENS_LOCAL_DATA_DIR=/tmp/ledgerlens
 EXPOSE 8080
 CMD exec uvicorn app.main:app --host 0.0.0.0 --port ${PORT} --workers 1

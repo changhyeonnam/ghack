@@ -1,0 +1,152 @@
+{
+ "text": "{\n  \"merchant\": \"CV SUMBER REJEKI\",\n  \"date\": \"2026-01-10\",\n  \"receipt_number\": \"SR-0618\",\n  \"currency\": \"IDR\",\n  \"total\": {\n    \"value\": 780000.0,\n    \"source\": {\n      \"doc_id\": \"D03\",\n      \"page\": 1,\n      \"bbox\": {\n        \"ymin\": 575,\n        \"xmin\": 750,\n        \"ymax\": 591,\n        \"xmax\": 880\n      },\n      \"snippet\": \"780.000\"\n    }\n  },\n  \"items\": [\n    {\n      \"description\": \"Pasta Gigi 1 lusin\",\n      \"amount\": 480000.0,\n      \"source\": {\n        \"doc_id\": \"D03\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 401,\n          \"xmin\": 754,\n          \"ymax\": 418,\n          \"xmax\": 884\n        },\n        \"snippet\": \"480.000\"\n      }\n    },\n    {\n      \"description\": \"Sabun Mandi 1 lusin\",\n      \"amount\": 240000.0,\n      \"source\": {\n        \"doc_id\": \"D03\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 458,\n          \"xmin\": 752,\n          \"ymax\": 474,\n          \"xmax\": 883\n        },\n        \"snippet\": \"240.000\"\n      }\n    },\n    {\n      \"description\": \"Kopi Sachet 1 renceng\",\n      \"amount\": 60000.0,\n      \"source\": {\n        \"doc_id\": \"D03\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 516,\n          \"xmin\": 771,\n          \"ymax\": 532,\n          \"xmax\": 881\n        },\n        \"snippet\": \"60.000\"\n      }\n    }\n  ],\n  \"payment_method\": \"TRANSFER\",\n  \"direction\": \"purchase\",\n  \"handwritten\": false\n}",
+ "parsed": {
+  "merchant": "CV SUMBER REJEKI",
+  "date": "2026-01-10",
+  "receipt_number": "SR-0618",
+  "currency": "IDR",
+  "total": {
+   "value": 780000.0,
+   "source": {
+    "doc_id": "D03",
+    "page": 1,
+    "bbox": {
+     "ymin": 575,
+     "xmin": 750,
+     "ymax": 591,
+     "xmax": 880
+    },
+    "snippet": "780.000"
+   }
+  },
+  "items": [
+   {
+    "description": "Pasta Gigi 1 lusin",
+    "amount": 480000.0,
+    "source": {
+     "doc_id": "D03",
+     "page": 1,
+     "bbox": {
+      "ymin": 401,
+      "xmin": 754,
+      "ymax": 418,
+      "xmax": 884
+     },
+     "snippet": "480.000"
+    }
+   },
+   {
+    "description": "Sabun Mandi 1 lusin",
+    "amount": 240000.0,
+    "source": {
+     "doc_id": "D03",
+     "page": 1,
+     "bbox": {
+      "ymin": 458,
+      "xmin": 752,
+      "ymax": 474,
+      "xmax": 883
+     },
+     "snippet": "240.000"
+    }
+   },
+   {
+    "description": "Kopi Sachet 1 renceng",
+    "amount": 60000.0,
+    "source": {
+     "doc_id": "D03",
+     "page": 1,
+     "bbox": {
+      "ymin": 516,
+      "xmin": 771,
+      "ymax": 532,
+      "xmax": 881
+     },
+     "snippet": "60.000"
+    }
+   }
+  ],
+  "payment_method": "TRANSFER",
+  "direction": "purchase",
+  "handwritten": false
+ },
+ "state": {
+  "output": {
+   "merchant": "CV SUMBER REJEKI",
+   "date": "2026-01-10",
+   "receipt_number": "SR-0618",
+   "currency": "IDR",
+   "total": {
+    "value": 780000.0,
+    "source": {
+     "doc_id": "D03",
+     "page": 1,
+     "bbox": {
+      "ymin": 575,
+      "xmin": 750,
+      "ymax": 591,
+      "xmax": 880
+     },
+     "snippet": "780.000"
+    }
+   },
+   "items": [
+    {
+     "description": "Pasta Gigi 1 lusin",
+     "amount": 480000.0,
+     "source": {
+      "doc_id": "D03",
+      "page": 1,
+      "bbox": {
+       "ymin": 401,
+       "xmin": 754,
+       "ymax": 418,
+       "xmax": 884
+      },
+      "snippet": "480.000"
+     }
+    },
+    {
+     "description": "Sabun Mandi 1 lusin",
+     "amount": 240000.0,
+     "source": {
+      "doc_id": "D03",
+      "page": 1,
+      "bbox": {
+       "ymin": 458,
+       "xmin": 752,
+       "ymax": 474,
+       "xmax": 883
+      },
+      "snippet": "240.000"
+     }
+    },
+    {
+     "description": "Kopi Sachet 1 renceng",
+     "amount": 60000.0,
+     "source": {
+      "doc_id": "D03",
+      "page": 1,
+      "bbox": {
+       "ymin": 516,
+       "xmin": 771,
+       "ymax": 532,
+       "xmax": 881
+      },
+      "snippet": "60.000"
+     }
+    }
+   ],
+   "payment_method": "TRANSFER",
+   "direction": "purchase",
+   "handwritten": false
+  }
+ },
+ "input_tokens": 944,
+ "output_tokens": 584,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:receipt",
+ "cached_at": "2026-10-15T06:46:29+00:00"
+}

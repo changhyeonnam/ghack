@@ -1,0 +1,230 @@
+{
+ "text": "{\n  \"headline\": \"The application cannot be approved due to negative cash flow, missing bank statements, duplicate ledger filings, and synthetic premises photos.\",\n  \"sections\": [\n    {\n      \"heading\": \"Business overview\",\n      \"paragraphs\": [\n        \"Reyes Auto Repair operates in the automotive repair sector in the Philippines. The applicant is seeking a term loan of {fig:APP.requested_amount} to finance operations. The document set presents handwritten Tagalog ledgers covering the first half of the year alongside bank statements and workshop photos.\",\n        \"Operational evidence raises notable concerns. While business records depict steady vehicle servicing activity, the submitted site documentation contains synthetic illustrations rather than actual premises photographs. Verifiable physical operations cannot be confirmed from the file alone.\"\n      ],\n      \"figure_ids\": [\n        \"APP.requested_amount\"\n      ]\n    },\n    {\n      \"heading\": \"Cash flow\",\n      \"paragraphs\": [\n        \"Bank records from Metro Pacific Savings Bank reflect total inflows of {fig:CF.total_inflow} against total outflows of {fig:CF.total_outflow} across active months. This results in an average monthly net burn of {fig:CF.avg_monthly_net}, yielding an illustrative repayment capacity of {fig:CF.suggested_capacity}.\",\n        \"Individual active months exhibit recurrent cash deficits. While January closed positive at {fig:CF.m.2026-01.net} and June at {fig:CF.m.2026-06.net}, February and May posted negative net cash flows of {fig:CF.m.2026-02.net} and {fig:CF.m.2026-05.net} respectively. The business maintains slim closing liquidity, ending June at {fig:CF.m.2026-06.closing_balance}.\"\n      ],\n      \"figure_ids\": [\n        \"CF.total_inflow\",\n        \"CF.total_outflow\",\n        \"CF.avg_monthly_net\",\n        \"CF.suggested_capacity\",\n        \"CF.m.2026-01.net\",\n        \"CF.m.2026-06.net\",\n        \"CF.m.2026-02.net\",\n        \"CF.m.2026-05.net\",\n        \"CF.m.2026-06.closing_balance\"\n      ]\n    },\n    {\n      \"heading\": \"Revenue quality and concentration\",\n      \"paragraphs\": [\n        \"Average monthly business deposits stand at {fig:CF.avg_monthly_business_inflow}, trending downward at {fig:CF.revenue_trend_pct}. Bank credits consist predominantly of over-the-counter branch cash deposits totalling {fig:CF.cash_deposit_total}, consistent with retail garage trade, including transactions such as {fig:TX.T0021} and {fig:TX.T0013}.\",\n        \"There is a material divergence between cash banked and internal books. Handwritten ledgers report cumulative revenue of {fig:CF.ledger_income_total}, implying estimated unbanked collections of {fig:CF.off_ledger_income_estimate}. Documented banking flows do not validate this higher earnings volume.\"\n      ],\n      \"figure_ids\": [\n        \"CF.avg_monthly_business_inflow\",\n        \"CF.revenue_trend_pct\",\n        \"CF.cash_deposit_total\",\n        \"TX.T0021\",\n        \"TX.T0013\",\n        \"CF.ledger_income_total\",\n        \"CF.off_ledger_income_estimate\"\n      ]\n    },\n    {\n      \"heading\": \"Obligations and leverage\",\n      \"paragraphs\": [\n        \"Bank debits show an ongoing debt commitment to Banco de Oro of {fig:CF.recurring_debt_service_monthly} per month, appearing consistently across statement cycles. Examples include monthly loan deductions such as {fig:TX.T0006} and {fig:TX.T0082}.\",\n        \"Operating disbursements are concentrated in recurring auto parts procurement, including card charges such as {fig:TX.T0073} and {fig:TX.T0045}. Given regular vehicle loan amortization and operating debits, current business net margins leave no surplus capacity to service additional borrowing of {fig:APP.requested_amount}.\"\n      ],\n      \"figure_ids\": [\n        \"CF.recurring_debt_service_monthly\",\n        \"TX.T0006\",\n        \"TX.T0082\",\n        \"TX.T0073\",\n        \"TX.T0045\",\n        \"APP.requested_amount\"\n      ]\n    },\n    {\n      \"heading\": \"Document quality and coverage\",\n      \"paragraphs\": [\n        \"Documentation coverage is compromised. Bank statement D01 spans a six-month window but omits transactions entirely for March and April, leaving {fig:CF.months_missing_count} unaccounted for and creating an unverified balance break between February's closing of {fig:CF.m.2026-02.closing_balance} and May's balance.\",\n        \"Furthermore, ledger submission D07 duplicates the April recording found in D04 under different dates, and premises photographs D10 and D11 are synthetic graphic renderings bearing demo watermarks rather than genuine photographic proof of a physical repair facility.\"\n      ],\n      \"figure_ids\": [\n        \"CF.months_missing_count\",\n        \"CF.m.2026-02.closing_balance\"\n      ]\n    },\n    {\n      \"heading\": \"Recommendation\",\n      \"paragraphs\": [\n        \"The loan request is recommended for rejection. The borrower operates at a net monthly cash deficit of {fig:CF.avg_monthly_net}, already carries existing debt obligations of {fig:CF.recurring_debt_service_monthly}, and shows zero calculated repayment headroom.\",\n        \"Severe document deficiencies—specifically missing bank statement periods, duplicated ledger submissions, and synthetic premise images—preclude safe credit underwriting.\"\n      ],\n      \"figure_ids\": [\n        \"CF.avg_monthly_net\",\n        \"CF.recurring_debt_service_monthly\"\n      ]\n    }\n  ],\n  \"key_figure_ids\": [\n    \"APP.requested_amount\",\n    \"CF.avg_monthly_business_inflow\",\n    \"CF.avg_monthly_net\",\n    \"CF.suggested_capacity\",\n    \"CF.recurring_debt_service_monthly\",\n    \"CF.months_missing_count\"\n  ],\n  \"strengths\": [\n    \"Consistent weekly cash deposits into the bank account during active months\",\n    \"Active trading records matching standard automotive repair job rates\"\n  ],\n  \"concerns\": [\n    \"Negative average monthly net cash flow with zero indicated repayment headroom\",\n    \"Missing bank statement transactions for March and April 2026 with an unresolved balance break\",\n    \"Existing vehicle loan debt service consumes a significant portion of operating cash\",\n    \"Substantial discrepancy between ledger-reported revenue and verified bank deposits\",\n    \"Submitted shop premise photos are synthetic demo illustrations rather than actual business location photos\",\n    \"Duplicate handwritten ledger pages submitted for April 2026\"\n  ],\n  \"recommendation\": \"reject\",\n  \"conditions\": [],\n  \"rationale\": \"The borrower demonstrates negative monthly cash flow on bank records, maintains an ongoing monthly vehicle debt commitment, and presents no available repayment buffer for the requested loan. Moreover, the file suffers from missing statement periods, duplicate records, and synthetic shop photos.\"\n}",
+ "parsed": {
+  "headline": "The application cannot be approved due to negative cash flow, missing bank statements, duplicate ledger filings, and synthetic premises photos.",
+  "sections": [
+   {
+    "heading": "Business overview",
+    "paragraphs": [
+     "Reyes Auto Repair operates in the automotive repair sector in the Philippines. The applicant is seeking a term loan of {fig:APP.requested_amount} to finance operations. The document set presents handwritten Tagalog ledgers covering the first half of the year alongside bank statements and workshop photos.",
+     "Operational evidence raises notable concerns. While business records depict steady vehicle servicing activity, the submitted site documentation contains synthetic illustrations rather than actual premises photographs. Verifiable physical operations cannot be confirmed from the file alone."
+    ],
+    "figure_ids": [
+     "APP.requested_amount"
+    ]
+   },
+   {
+    "heading": "Cash flow",
+    "paragraphs": [
+     "Bank records from Metro Pacific Savings Bank reflect total inflows of {fig:CF.total_inflow} against total outflows of {fig:CF.total_outflow} across active months. This results in an average monthly net burn of {fig:CF.avg_monthly_net}, yielding an illustrative repayment capacity of {fig:CF.suggested_capacity}.",
+     "Individual active months exhibit recurrent cash deficits. While January closed positive at {fig:CF.m.2026-01.net} and June at {fig:CF.m.2026-06.net}, February and May posted negative net cash flows of {fig:CF.m.2026-02.net} and {fig:CF.m.2026-05.net} respectively. The business maintains slim closing liquidity, ending June at {fig:CF.m.2026-06.closing_balance}."
+    ],
+    "figure_ids": [
+     "CF.total_inflow",
+     "CF.total_outflow",
+     "CF.avg_monthly_net",
+     "CF.suggested_capacity",
+     "CF.m.2026-01.net",
+     "CF.m.2026-06.net",
+     "CF.m.2026-02.net",
+     "CF.m.2026-05.net",
+     "CF.m.2026-06.closing_balance"
+    ]
+   },
+   {
+    "heading": "Revenue quality and concentration",
+    "paragraphs": [
+     "Average monthly business deposits stand at {fig:CF.avg_monthly_business_inflow}, trending downward at {fig:CF.revenue_trend_pct}. Bank credits consist predominantly of over-the-counter branch cash deposits totalling {fig:CF.cash_deposit_total}, consistent with retail garage trade, including transactions such as {fig:TX.T0021} and {fig:TX.T0013}.",
+     "There is a material divergence between cash banked and internal books. Handwritten ledgers report cumulative revenue of {fig:CF.ledger_income_total}, implying estimated unbanked collections of {fig:CF.off_ledger_income_estimate}. Documented banking flows do not validate this higher earnings volume."
+    ],
+    "figure_ids": [
+     "CF.avg_monthly_business_inflow",
+     "CF.revenue_trend_pct",
+     "CF.cash_deposit_total",
+     "TX.T0021",
+     "TX.T0013",
+     "CF.ledger_income_total",
+     "CF.off_ledger_income_estimate"
+    ]
+   },
+   {
+    "heading": "Obligations and leverage",
+    "paragraphs": [
+     "Bank debits show an ongoing debt commitment to Banco de Oro of {fig:CF.recurring_debt_service_monthly} per month, appearing consistently across statement cycles. Examples include monthly loan deductions such as {fig:TX.T0006} and {fig:TX.T0082}.",
+     "Operating disbursements are concentrated in recurring auto parts procurement, including card charges such as {fig:TX.T0073} and {fig:TX.T0045}. Given regular vehicle loan amortization and operating debits, current business net margins leave no surplus capacity to service additional borrowing of {fig:APP.requested_amount}."
+    ],
+    "figure_ids": [
+     "CF.recurring_debt_service_monthly",
+     "TX.T0006",
+     "TX.T0082",
+     "TX.T0073",
+     "TX.T0045",
+     "APP.requested_amount"
+    ]
+   },
+   {
+    "heading": "Document quality and coverage",
+    "paragraphs": [
+     "Documentation coverage is compromised. Bank statement D01 spans a six-month window but omits transactions entirely for March and April, leaving {fig:CF.months_missing_count} unaccounted for and creating an unverified balance break between February's closing of {fig:CF.m.2026-02.closing_balance} and May's balance.",
+     "Furthermore, ledger submission D07 duplicates the April recording found in D04 under different dates, and premises photographs D10 and D11 are synthetic graphic renderings bearing demo watermarks rather than genuine photographic proof of a physical repair facility."
+    ],
+    "figure_ids": [
+     "CF.months_missing_count",
+     "CF.m.2026-02.closing_balance"
+    ]
+   },
+   {
+    "heading": "Recommendation",
+    "paragraphs": [
+     "The loan request is recommended for rejection. The borrower operates at a net monthly cash deficit of {fig:CF.avg_monthly_net}, already carries existing debt obligations of {fig:CF.recurring_debt_service_monthly}, and shows zero calculated repayment headroom.",
+     "Severe document deficiencies—specifically missing bank statement periods, duplicated ledger submissions, and synthetic premise images—preclude safe credit underwriting."
+    ],
+    "figure_ids": [
+     "CF.avg_monthly_net",
+     "CF.recurring_debt_service_monthly"
+    ]
+   }
+  ],
+  "key_figure_ids": [
+   "APP.requested_amount",
+   "CF.avg_monthly_business_inflow",
+   "CF.avg_monthly_net",
+   "CF.suggested_capacity",
+   "CF.recurring_debt_service_monthly",
+   "CF.months_missing_count"
+  ],
+  "strengths": [
+   "Consistent weekly cash deposits into the bank account during active months",
+   "Active trading records matching standard automotive repair job rates"
+  ],
+  "concerns": [
+   "Negative average monthly net cash flow with zero indicated repayment headroom",
+   "Missing bank statement transactions for March and April 2026 with an unresolved balance break",
+   "Existing vehicle loan debt service consumes a significant portion of operating cash",
+   "Substantial discrepancy between ledger-reported revenue and verified bank deposits",
+   "Submitted shop premise photos are synthetic demo illustrations rather than actual business location photos",
+   "Duplicate handwritten ledger pages submitted for April 2026"
+  ],
+  "recommendation": "reject",
+  "conditions": [],
+  "rationale": "The borrower demonstrates negative monthly cash flow on bank records, maintains an ongoing monthly vehicle debt commitment, and presents no available repayment buffer for the requested loan. Moreover, the file suffers from missing statement periods, duplicate records, and synthetic shop photos."
+ },
+ "state": {
+  "output": {
+   "headline": "The application cannot be approved due to negative cash flow, missing bank statements, duplicate ledger filings, and synthetic premises photos.",
+   "sections": [
+    {
+     "heading": "Business overview",
+     "paragraphs": [
+      "Reyes Auto Repair operates in the automotive repair sector in the Philippines. The applicant is seeking a term loan of {fig:APP.requested_amount} to finance operations. The document set presents handwritten Tagalog ledgers covering the first half of the year alongside bank statements and workshop photos.",
+      "Operational evidence raises notable concerns. While business records depict steady vehicle servicing activity, the submitted site documentation contains synthetic illustrations rather than actual premises photographs. Verifiable physical operations cannot be confirmed from the file alone."
+     ],
+     "figure_ids": [
+      "APP.requested_amount"
+     ]
+    },
+    {
+     "heading": "Cash flow",
+     "paragraphs": [
+      "Bank records from Metro Pacific Savings Bank reflect total inflows of {fig:CF.total_inflow} against total outflows of {fig:CF.total_outflow} across active months. This results in an average monthly net burn of {fig:CF.avg_monthly_net}, yielding an illustrative repayment capacity of {fig:CF.suggested_capacity}.",
+      "Individual active months exhibit recurrent cash deficits. While January closed positive at {fig:CF.m.2026-01.net} and June at {fig:CF.m.2026-06.net}, February and May posted negative net cash flows of {fig:CF.m.2026-02.net} and {fig:CF.m.2026-05.net} respectively. The business maintains slim closing liquidity, ending June at {fig:CF.m.2026-06.closing_balance}."
+     ],
+     "figure_ids": [
+      "CF.total_inflow",
+      "CF.total_outflow",
+      "CF.avg_monthly_net",
+      "CF.suggested_capacity",
+      "CF.m.2026-01.net",
+      "CF.m.2026-06.net",
+      "CF.m.2026-02.net",
+      "CF.m.2026-05.net",
+      "CF.m.2026-06.closing_balance"
+     ]
+    },
+    {
+     "heading": "Revenue quality and concentration",
+     "paragraphs": [
+      "Average monthly business deposits stand at {fig:CF.avg_monthly_business_inflow}, trending downward at {fig:CF.revenue_trend_pct}. Bank credits consist predominantly of over-the-counter branch cash deposits totalling {fig:CF.cash_deposit_total}, consistent with retail garage trade, including transactions such as {fig:TX.T0021} and {fig:TX.T0013}.",
+      "There is a material divergence between cash banked and internal books. Handwritten ledgers report cumulative revenue of {fig:CF.ledger_income_total}, implying estimated unbanked collections of {fig:CF.off_ledger_income_estimate}. Documented banking flows do not validate this higher earnings volume."
+     ],
+     "figure_ids": [
+      "CF.avg_monthly_business_inflow",
+      "CF.revenue_trend_pct",
+      "CF.cash_deposit_total",
+      "TX.T0021",
+      "TX.T0013",
+      "CF.ledger_income_total",
+      "CF.off_ledger_income_estimate"
+     ]
+    },
+    {
+     "heading": "Obligations and leverage",
+     "paragraphs": [
+      "Bank debits show an ongoing debt commitment to Banco de Oro of {fig:CF.recurring_debt_service_monthly} per month, appearing consistently across statement cycles. Examples include monthly loan deductions such as {fig:TX.T0006} and {fig:TX.T0082}.",
+      "Operating disbursements are concentrated in recurring auto parts procurement, including card charges such as {fig:TX.T0073} and {fig:TX.T0045}. Given regular vehicle loan amortization and operating debits, current business net margins leave no surplus capacity to service additional borrowing of {fig:APP.requested_amount}."
+     ],
+     "figure_ids": [
+      "CF.recurring_debt_service_monthly",
+      "TX.T0006",
+      "TX.T0082",
+      "TX.T0073",
+      "TX.T0045",
+      "APP.requested_amount"
+     ]
+    },
+    {
+     "heading": "Document quality and coverage",
+     "paragraphs": [
+      "Documentation coverage is compromised. Bank statement D01 spans a six-month window but omits transactions entirely for March and April, leaving {fig:CF.months_missing_count} unaccounted for and creating an unverified balance break between February's closing of {fig:CF.m.2026-02.closing_balance} and May's balance.",
+      "Furthermore, ledger submission D07 duplicates the April recording found in D04 under different dates, and premises photographs D10 and D11 are synthetic graphic renderings bearing demo watermarks rather than genuine photographic proof of a physical repair facility."
+     ],
+     "figure_ids": [
+      "CF.months_missing_count",
+      "CF.m.2026-02.closing_balance"
+     ]
+    },
+    {
+     "heading": "Recommendation",
+     "paragraphs": [
+      "The loan request is recommended for rejection. The borrower operates at a net monthly cash deficit of {fig:CF.avg_monthly_net}, already carries existing debt obligations of {fig:CF.recurring_debt_service_monthly}, and shows zero calculated repayment headroom.",
+      "Severe document deficiencies—specifically missing bank statement periods, duplicated ledger submissions, and synthetic premise images—preclude safe credit underwriting."
+     ],
+     "figure_ids": [
+      "CF.avg_monthly_net",
+      "CF.recurring_debt_service_monthly"
+     ]
+    }
+   ],
+   "key_figure_ids": [
+    "APP.requested_amount",
+    "CF.avg_monthly_business_inflow",
+    "CF.avg_monthly_net",
+    "CF.suggested_capacity",
+    "CF.recurring_debt_service_monthly",
+    "CF.months_missing_count"
+   ],
+   "strengths": [
+    "Consistent weekly cash deposits into the bank account during active months",
+    "Active trading records matching standard automotive repair job rates"
+   ],
+   "concerns": [
+    "Negative average monthly net cash flow with zero indicated repayment headroom",
+    "Missing bank statement transactions for March and April 2026 with an unresolved balance break",
+    "Existing vehicle loan debt service consumes a significant portion of operating cash",
+    "Substantial discrepancy between ledger-reported revenue and verified bank deposits",
+    "Submitted shop premise photos are synthetic demo illustrations rather than actual business location photos",
+    "Duplicate handwritten ledger pages submitted for April 2026"
+   ],
+   "recommendation": "reject",
+   "conditions": [],
+   "rationale": "The borrower demonstrates negative monthly cash flow on bank records, maintains an ongoing monthly vehicle debt commitment, and presents no available repayment buffer for the requested loan. Moreover, the file suffers from missing statement periods, duplicate records, and synthetic shop photos."
+  }
+ },
+ "input_tokens": 7031,
+ "output_tokens": 1732,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "analyst-v1.3",
+ "agent": "analyst",
+ "cached_at": "2026-10-15T07:07:41+00:00"
+}

@@ -1,0 +1,520 @@
+{
+ "text": "{\n  \"headline\": \"Credit Assessment for Linh Fashion Official - Small Business Loan Application\",\n  \"sections\": [\n    {\n      \"heading\": \"Business overview\",\n      \"paragraphs\": [\n        \"Linh Fashion Official is an online apparel retail shop primarily operating on the Shopee platform, managed by Nguyen Thi Linh and based in Tan Binh District, Ho Chi Minh City.\",\n        \"The applicant has requested a working capital facility of 150,000,000 VND to support ongoing inventory purchases and logistics expenses.\"\n      ]\n    },\n    {\n      \"heading\": \"Cash flow\",\n      \"paragraphs\": [\n        \"The submitted 6-month bank statement (D01) reflects consistent operational inflows, primarily consisting of bi-weekly Shopee payouts ranging from 7.4M VND to 27.5M VND per payout, supplemented by retail cash collections and transfers.\",\n        \"The account maintained an opening balance of 38,000,000 VND on 01/12/2025 and closed at 138,270,707 VND on 31/05/2026, showing net positive cash accumulation over the six-month evaluation period.\"\n      ]\n    },\n    {\n      \"heading\": \"Revenue quality\",\n      \"paragraphs\": [\n        \"Shopee seller dashboard reports from January through June 2026 demonstrate steady gross sales expanding from 48,650,000 VND in January to 61,650,000 VND in June.\",\n        \"Payout amounts recorded in the Shopee seller analytics align directly with incoming credits labeled 'CHUYEN TIEN TU SHOPEE PAYOUT' in the primary bank statement, verifying consistent settlement.\"\n      ]\n    },\n    {\n      \"heading\": \"Obligations\",\n      \"paragraphs\": [\n        \"The applicant services fixed debt commitments via monthly consumer loan repayments of 3,250,000 VND to FE Credit ('CHUYEN DEN FE CREDIT - TRA GOP') and monthly SPayLater settlements of approximately 1,480,000 VND.\",\n        \"Operating fixed costs include premises rent of 6,500,000 VND monthly paid to Nguyen Thi Mai, recurring fabric vendor purchases ('THANH TOAN NCC VAI - CHO TAN BINH'), and regular payments to apparel workshops ('CHUYEN DEN XUONG MAY MINH ANH').\"\n      ]\n    },\n    {\n      \"heading\": \"Document quality\",\n      \"paragraphs\": [\n        \"A critical document integrity discrepancy was identified: shipping receipt D12 is a duplicate of D09 (same receipt number GHN-2231, same tracking codes, weight, staff code NV0502, and amount 159,000 VND), with only the month changed from 11/02/2026 to 11/03/2026.\",\n        \"Additionally, dashboard D04 (March 2026) displays the shop name as 'Linh Fashion VN' and reflects a lower follower count (9,800) compared to D03 (12,900 followers in February 2026), indicating inconsistent documentation across months.\"\n      ]\n    },\n    {\n      \"heading\": \"Recommendation\",\n      \"paragraphs\": [\n        \"Due to document manipulation detected in the logistics documentation (tampered date on duplicate receipt GHN-2231) and inconsistencies in seller dashboard records, the application is rejected under standard underwriting integrity policies.\",\n        \"Should the applicant provide fully audited platform logs and explanations for manipulated proofs, reconsideration may only proceed under strict collateralization.\"\n      ]\n    }\n  ],\n  \"figures\": [\n    {\n      \"label\": \"Opening Bank Balance (01/12/2025)\",\n      \"value\": 38000000,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 159,\n            \"xmin\": 673,\n            \"ymax\": 172,\n            \"xmax\": 780\n          },\n          \"snippet\": \"VND 38.000.000\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Closing Bank Balance (31/05/2026)\",\n      \"value\": 138270707,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 175,\n            \"xmin\": 673,\n            \"ymax\": 187,\n            \"xmax\": 782\n          },\n          \"snippet\": \"VND 138.270.707\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Shopee Gross Sales (Jan 2026)\",\n      \"value\": 48650000,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D02\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 262,\n            \"xmin\": 151,\n            \"ymax\": 291,\n            \"xmax\": 254\n          },\n          \"snippet\": \"₫48.650.000\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Shopee Total Payout (Jan 2026)\",\n      \"value\": 44145000,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D02\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 264,\n            \"xmin\": 435,\n            \"ymax\": 290,\n            \"xmax\": 538\n          },\n          \"snippet\": \"₫44.145.000\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Shopee Gross Sales (Feb 2026)\",\n      \"value\": 40780000,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D03\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 264,\n            \"xmin\": 151,\n            \"ymax\": 291,\n            \"xmax\": 254\n          },\n          \"snippet\": \"₫40.780.000\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Shopee Gross Sales (Mar 2026)\",\n      \"value\": 52310000,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D04\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 264,\n            \"xmin\": 151,\n            \"ymax\": 291,\n            \"xmax\": 254\n          },\n          \"snippet\": \"₫52.310.000\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Shopee Gross Sales (Apr 2026)\",\n      \"value\": 55240000,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D05\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 264,\n            \"xmin\": 151,\n            \"ymax\": 291,\n            \"xmax\": 254\n          },\n          \"snippet\": \"₫55.240.000\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Shopee Gross Sales (May 2026)\",\n      \"value\": 58470000,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D06\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 264,\n            \"xmin\": 151,\n            \"ymax\": 291,\n            \"xmax\": 254\n          },\n          \"snippet\": \"₫58.470.000\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Shopee Gross Sales (Jun 2026)\",\n      \"value\": 61650000,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D07\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 264,\n            \"xmin\": 151,\n            \"ymax\": 291,\n            \"xmax\": 254\n          },\n          \"snippet\": \"₫61.650.000\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Monthly Rental Expense\",\n      \"value\": 6500000,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 281,\n            \"xmin\": 632,\n            \"ymax\": 291,\n            \"xmax\": 699\n          },\n          \"snippet\": \"6.500.000\"\n        }\n      ]\n    },\n    {\n      \"label\": \"Monthly FE Credit Installment\",\n      \"value\": 3250000,\n      \"source_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 339,\n            \"xmin\": 633,\n            \"ymax\": 349,\n            \"xmax\": 699\n          },\n          \"snippet\": \"3.250.000\"\n        }\n      ]\n    }\n  ],\n  \"recommendation\": \"reject\",\n  \"concerns\": [\n    {\n      \"title\": \"Altered and Duplicate Shipping Receipt\",\n      \"claim\": \"Document D12 is an identical duplicate of D09 (receipt GHN-2231 with identical airway bills, weights, total fee of 159,000 VND, and cashier NV0502), where the date has been altered from 11/02/2026 to 11/03/2026.\",\n      \"severity\": \"critical\"\n    },\n    {\n      \"title\": \"Inconsistent Seller Profile Information\",\n      \"claim\": \"Document D04 displays the shop title 'Linh Fashion VN' and an unexplained dip to 9,800 followers, conflicting with 'Linh Fashion Official' and 12,900 to 14,200 followers across the other dashboard submissions.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"title\": \"Substantial Unsecured Loan Request Relative to Turnover\",\n      \"claim\": \"The requested facility of 150,000,000 VND exceeds 2.5 times the monthly gross sales (averaging ~53,000,000 VND), representing high leverage for an uncollateralized facility.\",\n      \"severity\": \"medium\"\n    }\n  ]\n}",
+ "parsed": {
+  "headline": "Credit Assessment for Linh Fashion Official - Small Business Loan Application",
+  "sections": [
+   {
+    "heading": "Business overview",
+    "paragraphs": [
+     "Linh Fashion Official is an online apparel retail shop primarily operating on the Shopee platform, managed by Nguyen Thi Linh and based in Tan Binh District, Ho Chi Minh City.",
+     "The applicant has requested a working capital facility of 150,000,000 VND to support ongoing inventory purchases and logistics expenses."
+    ]
+   },
+   {
+    "heading": "Cash flow",
+    "paragraphs": [
+     "The submitted 6-month bank statement (D01) reflects consistent operational inflows, primarily consisting of bi-weekly Shopee payouts ranging from 7.4M VND to 27.5M VND per payout, supplemented by retail cash collections and transfers.",
+     "The account maintained an opening balance of 38,000,000 VND on 01/12/2025 and closed at 138,270,707 VND on 31/05/2026, showing net positive cash accumulation over the six-month evaluation period."
+    ]
+   },
+   {
+    "heading": "Revenue quality",
+    "paragraphs": [
+     "Shopee seller dashboard reports from January through June 2026 demonstrate steady gross sales expanding from 48,650,000 VND in January to 61,650,000 VND in June.",
+     "Payout amounts recorded in the Shopee seller analytics align directly with incoming credits labeled 'CHUYEN TIEN TU SHOPEE PAYOUT' in the primary bank statement, verifying consistent settlement."
+    ]
+   },
+   {
+    "heading": "Obligations",
+    "paragraphs": [
+     "The applicant services fixed debt commitments via monthly consumer loan repayments of 3,250,000 VND to FE Credit ('CHUYEN DEN FE CREDIT - TRA GOP') and monthly SPayLater settlements of approximately 1,480,000 VND.",
+     "Operating fixed costs include premises rent of 6,500,000 VND monthly paid to Nguyen Thi Mai, recurring fabric vendor purchases ('THANH TOAN NCC VAI - CHO TAN BINH'), and regular payments to apparel workshops ('CHUYEN DEN XUONG MAY MINH ANH')."
+    ]
+   },
+   {
+    "heading": "Document quality",
+    "paragraphs": [
+     "A critical document integrity discrepancy was identified: shipping receipt D12 is a duplicate of D09 (same receipt number GHN-2231, same tracking codes, weight, staff code NV0502, and amount 159,000 VND), with only the month changed from 11/02/2026 to 11/03/2026.",
+     "Additionally, dashboard D04 (March 2026) displays the shop name as 'Linh Fashion VN' and reflects a lower follower count (9,800) compared to D03 (12,900 followers in February 2026), indicating inconsistent documentation across months."
+    ]
+   },
+   {
+    "heading": "Recommendation",
+    "paragraphs": [
+     "Due to document manipulation detected in the logistics documentation (tampered date on duplicate receipt GHN-2231) and inconsistencies in seller dashboard records, the application is rejected under standard underwriting integrity policies.",
+     "Should the applicant provide fully audited platform logs and explanations for manipulated proofs, reconsideration may only proceed under strict collateralization."
+    ]
+   }
+  ],
+  "figures": [
+   {
+    "label": "Opening Bank Balance (01/12/2025)",
+    "value": 38000000.0,
+    "source_refs": [
+     {
+      "doc_id": "D01",
+      "page": 1,
+      "bbox": {
+       "ymin": 159,
+       "xmin": 673,
+       "ymax": 172,
+       "xmax": 780
+      },
+      "snippet": "VND 38.000.000"
+     }
+    ]
+   },
+   {
+    "label": "Closing Bank Balance (31/05/2026)",
+    "value": 138270707.0,
+    "source_refs": [
+     {
+      "doc_id": "D01",
+      "page": 1,
+      "bbox": {
+       "ymin": 175,
+       "xmin": 673,
+       "ymax": 187,
+       "xmax": 782
+      },
+      "snippet": "VND 138.270.707"
+     }
+    ]
+   },
+   {
+    "label": "Shopee Gross Sales (Jan 2026)",
+    "value": 48650000.0,
+    "source_refs": [
+     {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 262,
+       "xmin": 151,
+       "ymax": 291,
+       "xmax": 254
+      },
+      "snippet": "₫48.650.000"
+     }
+    ]
+   },
+   {
+    "label": "Shopee Total Payout (Jan 2026)",
+    "value": 44145000.0,
+    "source_refs": [
+     {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 264,
+       "xmin": 435,
+       "ymax": 290,
+       "xmax": 538
+      },
+      "snippet": "₫44.145.000"
+     }
+    ]
+   },
+   {
+    "label": "Shopee Gross Sales (Feb 2026)",
+    "value": 40780000.0,
+    "source_refs": [
+     {
+      "doc_id": "D03",
+      "page": 1,
+      "bbox": {
+       "ymin": 264,
+       "xmin": 151,
+       "ymax": 291,
+       "xmax": 254
+      },
+      "snippet": "₫40.780.000"
+     }
+    ]
+   },
+   {
+    "label": "Shopee Gross Sales (Mar 2026)",
+    "value": 52310000.0,
+    "source_refs": [
+     {
+      "doc_id": "D04",
+      "page": 1,
+      "bbox": {
+       "ymin": 264,
+       "xmin": 151,
+       "ymax": 291,
+       "xmax": 254
+      },
+      "snippet": "₫52.310.000"
+     }
+    ]
+   },
+   {
+    "label": "Shopee Gross Sales (Apr 2026)",
+    "value": 55240000.0,
+    "source_refs": [
+     {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 264,
+       "xmin": 151,
+       "ymax": 291,
+       "xmax": 254
+      },
+      "snippet": "₫55.240.000"
+     }
+    ]
+   },
+   {
+    "label": "Shopee Gross Sales (May 2026)",
+    "value": 58470000.0,
+    "source_refs": [
+     {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 264,
+       "xmin": 151,
+       "ymax": 291,
+       "xmax": 254
+      },
+      "snippet": "₫58.470.000"
+     }
+    ]
+   },
+   {
+    "label": "Shopee Gross Sales (Jun 2026)",
+    "value": 61650000.0,
+    "source_refs": [
+     {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 264,
+       "xmin": 151,
+       "ymax": 291,
+       "xmax": 254
+      },
+      "snippet": "₫61.650.000"
+     }
+    ]
+   },
+   {
+    "label": "Monthly Rental Expense",
+    "value": 6500000.0,
+    "source_refs": [
+     {
+      "doc_id": "D01",
+      "page": 1,
+      "bbox": {
+       "ymin": 281,
+       "xmin": 632,
+       "ymax": 291,
+       "xmax": 699
+      },
+      "snippet": "6.500.000"
+     }
+    ]
+   },
+   {
+    "label": "Monthly FE Credit Installment",
+    "value": 3250000.0,
+    "source_refs": [
+     {
+      "doc_id": "D01",
+      "page": 1,
+      "bbox": {
+       "ymin": 339,
+       "xmin": 633,
+       "ymax": 349,
+       "xmax": 699
+      },
+      "snippet": "3.250.000"
+     }
+    ]
+   }
+  ],
+  "recommendation": "reject",
+  "concerns": [
+   {
+    "title": "Altered and Duplicate Shipping Receipt",
+    "claim": "Document D12 is an identical duplicate of D09 (receipt GHN-2231 with identical airway bills, weights, total fee of 159,000 VND, and cashier NV0502), where the date has been altered from 11/02/2026 to 11/03/2026.",
+    "severity": "critical"
+   },
+   {
+    "title": "Inconsistent Seller Profile Information",
+    "claim": "Document D04 displays the shop title 'Linh Fashion VN' and an unexplained dip to 9,800 followers, conflicting with 'Linh Fashion Official' and 12,900 to 14,200 followers across the other dashboard submissions.",
+    "severity": "high"
+   },
+   {
+    "title": "Substantial Unsecured Loan Request Relative to Turnover",
+    "claim": "The requested facility of 150,000,000 VND exceeds 2.5 times the monthly gross sales (averaging ~53,000,000 VND), representing high leverage for an uncollateralized facility.",
+    "severity": "medium"
+   }
+  ]
+ },
+ "state": {
+  "output": {
+   "headline": "Credit Assessment for Linh Fashion Official - Small Business Loan Application",
+   "sections": [
+    {
+     "heading": "Business overview",
+     "paragraphs": [
+      "Linh Fashion Official is an online apparel retail shop primarily operating on the Shopee platform, managed by Nguyen Thi Linh and based in Tan Binh District, Ho Chi Minh City.",
+      "The applicant has requested a working capital facility of 150,000,000 VND to support ongoing inventory purchases and logistics expenses."
+     ]
+    },
+    {
+     "heading": "Cash flow",
+     "paragraphs": [
+      "The submitted 6-month bank statement (D01) reflects consistent operational inflows, primarily consisting of bi-weekly Shopee payouts ranging from 7.4M VND to 27.5M VND per payout, supplemented by retail cash collections and transfers.",
+      "The account maintained an opening balance of 38,000,000 VND on 01/12/2025 and closed at 138,270,707 VND on 31/05/2026, showing net positive cash accumulation over the six-month evaluation period."
+     ]
+    },
+    {
+     "heading": "Revenue quality",
+     "paragraphs": [
+      "Shopee seller dashboard reports from January through June 2026 demonstrate steady gross sales expanding from 48,650,000 VND in January to 61,650,000 VND in June.",
+      "Payout amounts recorded in the Shopee seller analytics align directly with incoming credits labeled 'CHUYEN TIEN TU SHOPEE PAYOUT' in the primary bank statement, verifying consistent settlement."
+     ]
+    },
+    {
+     "heading": "Obligations",
+     "paragraphs": [
+      "The applicant services fixed debt commitments via monthly consumer loan repayments of 3,250,000 VND to FE Credit ('CHUYEN DEN FE CREDIT - TRA GOP') and monthly SPayLater settlements of approximately 1,480,000 VND.",
+      "Operating fixed costs include premises rent of 6,500,000 VND monthly paid to Nguyen Thi Mai, recurring fabric vendor purchases ('THANH TOAN NCC VAI - CHO TAN BINH'), and regular payments to apparel workshops ('CHUYEN DEN XUONG MAY MINH ANH')."
+     ]
+    },
+    {
+     "heading": "Document quality",
+     "paragraphs": [
+      "A critical document integrity discrepancy was identified: shipping receipt D12 is a duplicate of D09 (same receipt number GHN-2231, same tracking codes, weight, staff code NV0502, and amount 159,000 VND), with only the month changed from 11/02/2026 to 11/03/2026.",
+      "Additionally, dashboard D04 (March 2026) displays the shop name as 'Linh Fashion VN' and reflects a lower follower count (9,800) compared to D03 (12,900 followers in February 2026), indicating inconsistent documentation across months."
+     ]
+    },
+    {
+     "heading": "Recommendation",
+     "paragraphs": [
+      "Due to document manipulation detected in the logistics documentation (tampered date on duplicate receipt GHN-2231) and inconsistencies in seller dashboard records, the application is rejected under standard underwriting integrity policies.",
+      "Should the applicant provide fully audited platform logs and explanations for manipulated proofs, reconsideration may only proceed under strict collateralization."
+     ]
+    }
+   ],
+   "figures": [
+    {
+     "label": "Opening Bank Balance (01/12/2025)",
+     "value": 38000000.0,
+     "source_refs": [
+      {
+       "doc_id": "D01",
+       "page": 1,
+       "bbox": {
+        "ymin": 159,
+        "xmin": 673,
+        "ymax": 172,
+        "xmax": 780
+       },
+       "snippet": "VND 38.000.000"
+      }
+     ]
+    },
+    {
+     "label": "Closing Bank Balance (31/05/2026)",
+     "value": 138270707.0,
+     "source_refs": [
+      {
+       "doc_id": "D01",
+       "page": 1,
+       "bbox": {
+        "ymin": 175,
+        "xmin": 673,
+        "ymax": 187,
+        "xmax": 782
+       },
+       "snippet": "VND 138.270.707"
+      }
+     ]
+    },
+    {
+     "label": "Shopee Gross Sales (Jan 2026)",
+     "value": 48650000.0,
+     "source_refs": [
+      {
+       "doc_id": "D02",
+       "page": 1,
+       "bbox": {
+        "ymin": 262,
+        "xmin": 151,
+        "ymax": 291,
+        "xmax": 254
+       },
+       "snippet": "₫48.650.000"
+      }
+     ]
+    },
+    {
+     "label": "Shopee Total Payout (Jan 2026)",
+     "value": 44145000.0,
+     "source_refs": [
+      {
+       "doc_id": "D02",
+       "page": 1,
+       "bbox": {
+        "ymin": 264,
+        "xmin": 435,
+        "ymax": 290,
+        "xmax": 538
+       },
+       "snippet": "₫44.145.000"
+      }
+     ]
+    },
+    {
+     "label": "Shopee Gross Sales (Feb 2026)",
+     "value": 40780000.0,
+     "source_refs": [
+      {
+       "doc_id": "D03",
+       "page": 1,
+       "bbox": {
+        "ymin": 264,
+        "xmin": 151,
+        "ymax": 291,
+        "xmax": 254
+       },
+       "snippet": "₫40.780.000"
+      }
+     ]
+    },
+    {
+     "label": "Shopee Gross Sales (Mar 2026)",
+     "value": 52310000.0,
+     "source_refs": [
+      {
+       "doc_id": "D04",
+       "page": 1,
+       "bbox": {
+        "ymin": 264,
+        "xmin": 151,
+        "ymax": 291,
+        "xmax": 254
+       },
+       "snippet": "₫52.310.000"
+      }
+     ]
+    },
+    {
+     "label": "Shopee Gross Sales (Apr 2026)",
+     "value": 55240000.0,
+     "source_refs": [
+      {
+       "doc_id": "D05",
+       "page": 1,
+       "bbox": {
+        "ymin": 264,
+        "xmin": 151,
+        "ymax": 291,
+        "xmax": 254
+       },
+       "snippet": "₫55.240.000"
+      }
+     ]
+    },
+    {
+     "label": "Shopee Gross Sales (May 2026)",
+     "value": 58470000.0,
+     "source_refs": [
+      {
+       "doc_id": "D06",
+       "page": 1,
+       "bbox": {
+        "ymin": 264,
+        "xmin": 151,
+        "ymax": 291,
+        "xmax": 254
+       },
+       "snippet": "₫58.470.000"
+      }
+     ]
+    },
+    {
+     "label": "Shopee Gross Sales (Jun 2026)",
+     "value": 61650000.0,
+     "source_refs": [
+      {
+       "doc_id": "D07",
+       "page": 1,
+       "bbox": {
+        "ymin": 264,
+        "xmin": 151,
+        "ymax": 291,
+        "xmax": 254
+       },
+       "snippet": "₫61.650.000"
+      }
+     ]
+    },
+    {
+     "label": "Monthly Rental Expense",
+     "value": 6500000.0,
+     "source_refs": [
+      {
+       "doc_id": "D01",
+       "page": 1,
+       "bbox": {
+        "ymin": 281,
+        "xmin": 632,
+        "ymax": 291,
+        "xmax": 699
+       },
+       "snippet": "6.500.000"
+      }
+     ]
+    },
+    {
+     "label": "Monthly FE Credit Installment",
+     "value": 3250000.0,
+     "source_refs": [
+      {
+       "doc_id": "D01",
+       "page": 1,
+       "bbox": {
+        "ymin": 339,
+        "xmin": 633,
+        "ymax": 349,
+        "xmax": 699
+       },
+       "snippet": "3.250.000"
+      }
+     ]
+    }
+   ],
+   "recommendation": "reject",
+   "concerns": [
+    {
+     "title": "Altered and Duplicate Shipping Receipt",
+     "claim": "Document D12 is an identical duplicate of D09 (receipt GHN-2231 with identical airway bills, weights, total fee of 159,000 VND, and cashier NV0502), where the date has been altered from 11/02/2026 to 11/03/2026.",
+     "severity": "critical"
+    },
+    {
+     "title": "Inconsistent Seller Profile Information",
+     "claim": "Document D04 displays the shop title 'Linh Fashion VN' and an unexplained dip to 9,800 followers, conflicting with 'Linh Fashion Official' and 12,900 to 14,200 followers across the other dashboard submissions.",
+     "severity": "high"
+    },
+    {
+     "title": "Substantial Unsecured Loan Request Relative to Turnover",
+     "claim": "The requested facility of 150,000,000 VND exceeds 2.5 times the monthly gross sales (averaging ~53,000,000 VND), representing high leverage for an uncollateralized facility.",
+     "severity": "medium"
+    }
+   ]
+  }
+ },
+ "input_tokens": 10516,
+ "output_tokens": 2705,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "baseline-single-prompt-v1.0",
+ "agent": "baseline",
+ "cached_at": "2026-10-16T06:18:22+00:00"
+}

@@ -1,0 +1,329 @@
+{
+ "text": "{\"platform\":\"Shopee\",\"shop_name\":\"Linh Fashion Official\",\"period_start\":\"2026-01-01\",\"period_end\":\"2026-01-31\",\"data_as_of\":\"01/02/2026 08:57 (GMT+7)\",\"currency\":\"VND\",\"metrics\":[{\"key\":\"gross_sales\",\"label\":\"Doanh số • Gross sales\",\"value\":48650000,\"period_label\":null,\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":263,\"xmin\":149,\"ymax\":291,\"xmax\":253},\"snippet\":\"₫48.650.000\"}},{\"key\":\"orders\",\"label\":\"Đơn hàng • Orders\",\"value\":334,\"period_label\":null,\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":263,\"xmin\":291,\"ymax\":291,\"xmax\":323},\"snippet\":\"334\"}},{\"key\":\"payout\",\"label\":\"Thanh toán • Total payout\",\"value\":44145000,\"period_label\":null,\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":264,\"xmin\":434,\"ymax\":290,\"xmax\":539},\"snippet\":\"₫44.145.000\"}},{\"key\":\"other\",\"label\":\"Đơn COD • COD orders value\",\"value\":17350000,\"period_label\":null,\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":264,\"xmin\":575,\"ymax\":290,\"xmax\":680},\"snippet\":\"₫17.350.000\"}},{\"key\":\"followers\",\"label\":\"Người theo dõi • Followers\",\"value\":12400,\"period_label\":null,\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":265,\"xmin\":718,\"ymax\":291,\"xmax\":778},\"snippet\":\"12.400\"}},{\"key\":\"rating\",\"label\":\"Đánh giá shop • Shop rating\",\"value\":4.9,\"period_label\":null,\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":265,\"xmin\":861,\"ymax\":291,\"xmax\":889},\"snippet\":\"4.9\"}},{\"key\":\"visitors\",\"label\":\"Lượt truy cập / Visitors\",\"value\":9352,\"period_label\":null,\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":582,\"xmin\":807,\"ymax\":599,\"xmax\":832},\"snippet\":\"9.352\"}},{\"key\":\"conversion_rate\",\"label\":\"Tỷ lệ chuyển đổi / Conversion\",\"value\":3.57,\"period_label\":null,\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":612,\"xmin\":837,\"ymax\":627,\"xmax\":863},\"snippet\":\"3.57%\"}},{\"key\":\"other\",\"label\":\"Đơn COD / COD orders\",\"value\":119,\"period_label\":null,\"source\":{\"doc_id\":\"D02\",\"page\":1,\"bbox\":{\"ymin\":641,\"xmin\":814,\"ymax\":657,\"xmax\":830},\"snippet\":\"119\"}}]}",
+ "parsed": {
+  "platform": "Shopee",
+  "shop_name": "Linh Fashion Official",
+  "period_start": "2026-01-01",
+  "period_end": "2026-01-31",
+  "data_as_of": "01/02/2026 08:57 (GMT+7)",
+  "currency": "VND",
+  "metrics": [
+   {
+    "key": "gross_sales",
+    "label": "Doanh số • Gross sales",
+    "value": 48650000.0,
+    "period_label": null,
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 263,
+      "xmin": 149,
+      "ymax": 291,
+      "xmax": 253
+     },
+     "snippet": "₫48.650.000"
+    }
+   },
+   {
+    "key": "orders",
+    "label": "Đơn hàng • Orders",
+    "value": 334.0,
+    "period_label": null,
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 263,
+      "xmin": 291,
+      "ymax": 291,
+      "xmax": 323
+     },
+     "snippet": "334"
+    }
+   },
+   {
+    "key": "payout",
+    "label": "Thanh toán • Total payout",
+    "value": 44145000.0,
+    "period_label": null,
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 264,
+      "xmin": 434,
+      "ymax": 290,
+      "xmax": 539
+     },
+     "snippet": "₫44.145.000"
+    }
+   },
+   {
+    "key": "other",
+    "label": "Đơn COD • COD orders value",
+    "value": 17350000.0,
+    "period_label": null,
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 264,
+      "xmin": 575,
+      "ymax": 290,
+      "xmax": 680
+     },
+     "snippet": "₫17.350.000"
+    }
+   },
+   {
+    "key": "followers",
+    "label": "Người theo dõi • Followers",
+    "value": 12400.0,
+    "period_label": null,
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 265,
+      "xmin": 718,
+      "ymax": 291,
+      "xmax": 778
+     },
+     "snippet": "12.400"
+    }
+   },
+   {
+    "key": "rating",
+    "label": "Đánh giá shop • Shop rating",
+    "value": 4.9,
+    "period_label": null,
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 265,
+      "xmin": 861,
+      "ymax": 291,
+      "xmax": 889
+     },
+     "snippet": "4.9"
+    }
+   },
+   {
+    "key": "visitors",
+    "label": "Lượt truy cập / Visitors",
+    "value": 9352.0,
+    "period_label": null,
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 582,
+      "xmin": 807,
+      "ymax": 599,
+      "xmax": 832
+     },
+     "snippet": "9.352"
+    }
+   },
+   {
+    "key": "conversion_rate",
+    "label": "Tỷ lệ chuyển đổi / Conversion",
+    "value": 3.57,
+    "period_label": null,
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 612,
+      "xmin": 837,
+      "ymax": 627,
+      "xmax": 863
+     },
+     "snippet": "3.57%"
+    }
+   },
+   {
+    "key": "other",
+    "label": "Đơn COD / COD orders",
+    "value": 119.0,
+    "period_label": null,
+    "source": {
+     "doc_id": "D02",
+     "page": 1,
+     "bbox": {
+      "ymin": 641,
+      "xmin": 814,
+      "ymax": 657,
+      "xmax": 830
+     },
+     "snippet": "119"
+    }
+   }
+  ]
+ },
+ "state": {
+  "output": {
+   "platform": "Shopee",
+   "shop_name": "Linh Fashion Official",
+   "period_start": "2026-01-01",
+   "period_end": "2026-01-31",
+   "data_as_of": "01/02/2026 08:57 (GMT+7)",
+   "currency": "VND",
+   "metrics": [
+    {
+     "key": "gross_sales",
+     "label": "Doanh số • Gross sales",
+     "value": 48650000.0,
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 263,
+       "xmin": 149,
+       "ymax": 291,
+       "xmax": 253
+      },
+      "snippet": "₫48.650.000"
+     }
+    },
+    {
+     "key": "orders",
+     "label": "Đơn hàng • Orders",
+     "value": 334.0,
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 263,
+       "xmin": 291,
+       "ymax": 291,
+       "xmax": 323
+      },
+      "snippet": "334"
+     }
+    },
+    {
+     "key": "payout",
+     "label": "Thanh toán • Total payout",
+     "value": 44145000.0,
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 264,
+       "xmin": 434,
+       "ymax": 290,
+       "xmax": 539
+      },
+      "snippet": "₫44.145.000"
+     }
+    },
+    {
+     "key": "other",
+     "label": "Đơn COD • COD orders value",
+     "value": 17350000.0,
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 264,
+       "xmin": 575,
+       "ymax": 290,
+       "xmax": 680
+      },
+      "snippet": "₫17.350.000"
+     }
+    },
+    {
+     "key": "followers",
+     "label": "Người theo dõi • Followers",
+     "value": 12400.0,
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 265,
+       "xmin": 718,
+       "ymax": 291,
+       "xmax": 778
+      },
+      "snippet": "12.400"
+     }
+    },
+    {
+     "key": "rating",
+     "label": "Đánh giá shop • Shop rating",
+     "value": 4.9,
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 265,
+       "xmin": 861,
+       "ymax": 291,
+       "xmax": 889
+      },
+      "snippet": "4.9"
+     }
+    },
+    {
+     "key": "visitors",
+     "label": "Lượt truy cập / Visitors",
+     "value": 9352.0,
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 582,
+       "xmin": 807,
+       "ymax": 599,
+       "xmax": 832
+      },
+      "snippet": "9.352"
+     }
+    },
+    {
+     "key": "conversion_rate",
+     "label": "Tỷ lệ chuyển đổi / Conversion",
+     "value": 3.57,
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 612,
+       "xmin": 837,
+       "ymax": 627,
+       "xmax": 863
+      },
+      "snippet": "3.57%"
+     }
+    },
+    {
+     "key": "other",
+     "label": "Đơn COD / COD orders",
+     "value": 119.0,
+     "source": {
+      "doc_id": "D02",
+      "page": 1,
+      "bbox": {
+       "ymin": 641,
+       "xmin": 814,
+       "ymax": 657,
+       "xmax": 830
+      },
+      "snippet": "119"
+     }
+    }
+   ]
+  }
+ },
+ "input_tokens": 1045,
+ "output_tokens": 791,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:seller_dashboard",
+ "cached_at": "2026-10-15T07:04:08+00:00"
+}

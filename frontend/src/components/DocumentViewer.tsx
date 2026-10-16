@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type KeyboardEvent } from 'react'
 import { documentFileUrl, documentPageUrl } from '../api'
 import { docTypeLabel, humanize, languageName } from '../format'
-import { DocIcon, EmptyState, Kbd, QualityFlagIcons, Spinner } from './Badges'
+import { DocIcon, EmptyState, Kbd, QualityFlagIcons, Spinner, visibleFlags } from './Badges'
 import { Icon } from './Icons'
 import { useViewer } from './viewerContext'
 
@@ -254,7 +254,7 @@ export function DocumentViewer() {
                 </span>
               </>
             ) : null}
-            {doc.quality_flags.length > 0 ? (
+            {visibleFlags(doc.quality_flags).length > 0 ? (
               <>
                 <span className="doc-meta-sep" aria-hidden="true" />
                 <QualityFlagIcons flags={doc.quality_flags} />

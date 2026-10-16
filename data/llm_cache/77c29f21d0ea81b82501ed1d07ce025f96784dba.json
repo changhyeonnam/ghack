@@ -1,0 +1,927 @@
+{
+ "text": "{\"business_name_header\":\"Reyes Auto Repair\",\"address_header\":null,\"currency\":\"PHP\",\"period_label\":\"Mayo 2026\",\"entries\":[{\"row_id\":\"L0001\",\"date\":\"2026-05-02\",\"description\":\"Brake pads - Honda City\",\"amount\":4100,\"kind\":\"income\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":159,\"xmin\":97,\"ymax\":184,\"xmax\":926},\"snippet\":\"2 | Brake pads - Honda City | 4,100\"}},{\"row_id\":\"L0002\",\"date\":\"2026-05-04\",\"description\":\"Tune up - Mitsubishi Mirage\",\"amount\":3250,\"kind\":\"income\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":210,\"xmin\":95,\"ymax\":235,\"xmax\":927},\"snippet\":\"4 | Tune up - Mitsubishi Mirage | 3,250\"}},{\"row_id\":\"L0003\",\"date\":\"2026-05-05\",\"description\":\"Change oil + filter - Raize\",\"amount\":2100,\"kind\":\"income\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":235,\"xmin\":95,\"ymax\":260,\"xmax\":927},\"snippet\":\"5 | Change oil + filter - Raize | 2,100\"}},{\"row_id\":\"L0004\",\"date\":\"2026-05-06\",\"description\":\"Change oil + filter - Raize\",\"amount\":2550,\"kind\":\"income\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":262,\"xmin\":95,\"ymax\":287,\"xmax\":926},\"snippet\":\"6 | Change oil + filter - Raize | 2,550\"}},{\"row_id\":\"L0005\",\"date\":\"2026-05-07\",\"description\":\"Change oil - Toyota Vios\",\"amount\":1950,\"kind\":\"income\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":287,\"xmin\":93,\"ymax\":313,\"xmax\":924},\"snippet\":\"7 | Change oil - Toyota Vios | 1,950\"}},{\"row_id\":\"L0006\",\"date\":\"2026-05-07\",\"description\":\"Tubig + yelo\",\"amount\":300,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":313,\"xmin\":94,\"ymax\":338,\"xmax\":924},\"snippet\":\"7 | Tubig + yelo | -300\"}},{\"row_id\":\"L0007\",\"date\":\"2026-05-08\",\"description\":\"Radiator flush - Adventure\",\"amount\":2150,\"kind\":\"income\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":338,\"xmin\":93,\"ymax\":363,\"xmax\":924},\"snippet\":\"8 | Radiator flush - Adventure | 2,150\"}},{\"row_id\":\"L0008\",\"date\":\"2026-05-08\",\"description\":\"Pamasahe - delivery parts\",\"amount\":450,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":364,\"xmin\":92,\"ymax\":389,\"xmax\":925},\"snippet\":\"8 | Pamasahe - delivery parts | -450\"}},{\"row_id\":\"L0009\",\"date\":\"2026-05-09\",\"description\":\"Palit bumbilya + wiper - Vios\",\"amount\":1850,\"kind\":\"income\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":390,\"xmin\":91,\"ymax\":415,\"xmax\":923},\"snippet\":\"9 | Palit bumbilya + wiper - Vios | 1,850\"}},{\"row_id\":\"L0010\",\"date\":\"2026-05-13\",\"description\":\"Palit brake fluid - Mirage\",\"amount\":1950,\"kind\":\"income\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":443,\"xmin\":92,\"ymax\":468,\"xmax\":925},\"snippet\":\"13 | Palit brake fluid - Mirage | 1,950\"}},{\"row_id\":\"L0011\",\"date\":\"2026-05-13\",\"description\":\"Bili parts - Banawe\",\"amount\":2250,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":468,\"xmin\":92,\"ymax\":494,\"xmax\":923},\"snippet\":\"13 | Bili parts - Banawe | -2,250\"}},{\"row_id\":\"L0012\",\"date\":\"2026-05-14\",\"description\":\"Palit brake fluid - Mirage\",\"amount\":1900,\"kind\":\"income\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":495,\"xmin\":91,\"ymax\":520,\"xmax\":924},\"snippet\":\"14 | Palit brake fluid - Mirage | 1,900\"}},{\"row_id\":\"L0013\",\"date\":\"2026-05-15\",\"description\":\"Palit gulong x2 - Fortuner\",\"amount\":5950,\"kind\":\"income\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":520,\"xmin\":91,\"ymax\":546,\"xmax\":922},\"snippet\":\"15 | Palit gulong x2 - Fortuner | 5,950\"}},{\"row_id\":\"L0014\",\"date\":\"2026-05-15\",\"description\":\"Pamasahe - delivery parts\",\"amount\":250,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":546,\"xmin\":91,\"ymax\":571,\"xmax\":923},\"snippet\":\"15 | Pamasahe - delivery parts | -250\"}},{\"row_id\":\"L0015\",\"date\":\"2026-05-16\",\"description\":\"Fan belt - Hilux\",\"amount\":2150,\"kind\":\"income\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":571,\"xmin\":93,\"ymax\":597,\"xmax\":923},\"snippet\":\"16 | Fan belt - Hilux | 2,150\"}},{\"row_id\":\"L0016\",\"date\":\"2026-05-18\",\"description\":\"Palit bumbilya + wiper - Vios\",\"amount\":1700,\"kind\":\"income\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":625,\"xmin\":89,\"ymax\":651,\"xmax\":921},\"snippet\":\"18 | Palit bumbilya + wiper - Vios | 1,700\"}},{\"row_id\":\"L0017\",\"date\":\"2026-05-20\",\"description\":\"Change oil - Toyota Vios\",\"amount\":1600,\"kind\":\"income\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":650,\"xmin\":90,\"ymax\":676,\"xmax\":921},\"snippet\":\"20 | Change oil - Toyota Vios | 1,600\"}},{\"row_id\":\"L0018\",\"date\":\"2026-05-21\",\"description\":\"Palit brake fluid - Mirage\",\"amount\":1600,\"kind\":\"income\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":676,\"xmin\":91,\"ymax\":702,\"xmax\":921},\"snippet\":\"21 | Palit brake fluid - Mirage | 1,600\"}},{\"row_id\":\"L0019\",\"date\":\"2026-05-22\",\"description\":\"Change oil - Toyota Vios\",\"amount\":2050,\"kind\":\"income\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":701,\"xmin\":91,\"ymax\":727,\"xmax\":920},\"snippet\":\"22 | Change oil - Toyota Vios | 2,050\"}},{\"row_id\":\"L0020\",\"date\":\"2026-05-25\",\"description\":\"Aircon freon - City\",\"amount\":2200,\"kind\":\"income\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":754,\"xmin\":89,\"ymax\":780,\"xmax\":921},\"snippet\":\"25 | Aircon freon - City | 2,200\"}},{\"row_id\":\"L0021\",\"date\":\"2026-05-26\",\"description\":\"Check engine - Avanza\",\"amount\":2200,\"kind\":\"income\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":779,\"xmin\":88,\"ymax\":805,\"xmax\":918},\"snippet\":\"26 | Check engine - Avanza | 2,200\"}},{\"row_id\":\"L0022\",\"date\":\"2026-05-27\",\"description\":\"Clutch adjust - Wigo\",\"amount\":2400,\"kind\":\"income\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":805,\"xmin\":89,\"ymax\":831,\"xmax\":920},\"snippet\":\"27 | Clutch adjust - Wigo | 2,400\"}},{\"row_id\":\"L0023\",\"date\":\"2026-05-28\",\"description\":\"Overhaul deposit - L300\",\"amount\":5950,\"kind\":\"income\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":830,\"xmin\":87,\"ymax\":856,\"xmax\":919},\"snippet\":\"28 | Overhaul deposit - L300 | 5,950\"}},{\"row_id\":\"L0024\",\"date\":\"2026-05-29\",\"description\":\"Underchassis - Civic\",\"amount\":2750,\"kind\":\"income\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":856,\"xmin\":87,\"ymax\":882,\"xmax\":917},\"snippet\":\"29 | Underchassis - Civic | 2,750\"}},{\"row_id\":\"L0025\",\"date\":\"2026-05-30\",\"description\":\"Check engine - Avanza\",\"amount\":2800,\"kind\":\"income\",\"source\":{\"doc_id\":\"D06\",\"page\":1,\"bbox\":{\"ymin\":882,\"xmin\":87,\"ymax\":908,\"xmax\":916},\"snippet\":\"30 | Check engine - Avanza | 2,800\"}}]}",
+ "parsed": {
+  "business_name_header": "Reyes Auto Repair",
+  "address_header": null,
+  "currency": "PHP",
+  "period_label": "Mayo 2026",
+  "entries": [
+   {
+    "row_id": "L0001",
+    "date": "2026-05-02",
+    "description": "Brake pads - Honda City",
+    "amount": 4100.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 159,
+      "xmin": 97,
+      "ymax": 184,
+      "xmax": 926
+     },
+     "snippet": "2 | Brake pads - Honda City | 4,100"
+    }
+   },
+   {
+    "row_id": "L0002",
+    "date": "2026-05-04",
+    "description": "Tune up - Mitsubishi Mirage",
+    "amount": 3250.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 210,
+      "xmin": 95,
+      "ymax": 235,
+      "xmax": 927
+     },
+     "snippet": "4 | Tune up - Mitsubishi Mirage | 3,250"
+    }
+   },
+   {
+    "row_id": "L0003",
+    "date": "2026-05-05",
+    "description": "Change oil + filter - Raize",
+    "amount": 2100.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 235,
+      "xmin": 95,
+      "ymax": 260,
+      "xmax": 927
+     },
+     "snippet": "5 | Change oil + filter - Raize | 2,100"
+    }
+   },
+   {
+    "row_id": "L0004",
+    "date": "2026-05-06",
+    "description": "Change oil + filter - Raize",
+    "amount": 2550.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 262,
+      "xmin": 95,
+      "ymax": 287,
+      "xmax": 926
+     },
+     "snippet": "6 | Change oil + filter - Raize | 2,550"
+    }
+   },
+   {
+    "row_id": "L0005",
+    "date": "2026-05-07",
+    "description": "Change oil - Toyota Vios",
+    "amount": 1950.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 287,
+      "xmin": 93,
+      "ymax": 313,
+      "xmax": 924
+     },
+     "snippet": "7 | Change oil - Toyota Vios | 1,950"
+    }
+   },
+   {
+    "row_id": "L0006",
+    "date": "2026-05-07",
+    "description": "Tubig + yelo",
+    "amount": 300.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 313,
+      "xmin": 94,
+      "ymax": 338,
+      "xmax": 924
+     },
+     "snippet": "7 | Tubig + yelo | -300"
+    }
+   },
+   {
+    "row_id": "L0007",
+    "date": "2026-05-08",
+    "description": "Radiator flush - Adventure",
+    "amount": 2150.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 338,
+      "xmin": 93,
+      "ymax": 363,
+      "xmax": 924
+     },
+     "snippet": "8 | Radiator flush - Adventure | 2,150"
+    }
+   },
+   {
+    "row_id": "L0008",
+    "date": "2026-05-08",
+    "description": "Pamasahe - delivery parts",
+    "amount": 450.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 364,
+      "xmin": 92,
+      "ymax": 389,
+      "xmax": 925
+     },
+     "snippet": "8 | Pamasahe - delivery parts | -450"
+    }
+   },
+   {
+    "row_id": "L0009",
+    "date": "2026-05-09",
+    "description": "Palit bumbilya + wiper - Vios",
+    "amount": 1850.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 390,
+      "xmin": 91,
+      "ymax": 415,
+      "xmax": 923
+     },
+     "snippet": "9 | Palit bumbilya + wiper - Vios | 1,850"
+    }
+   },
+   {
+    "row_id": "L0010",
+    "date": "2026-05-13",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 1950.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 443,
+      "xmin": 92,
+      "ymax": 468,
+      "xmax": 925
+     },
+     "snippet": "13 | Palit brake fluid - Mirage | 1,950"
+    }
+   },
+   {
+    "row_id": "L0011",
+    "date": "2026-05-13",
+    "description": "Bili parts - Banawe",
+    "amount": 2250.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 468,
+      "xmin": 92,
+      "ymax": 494,
+      "xmax": 923
+     },
+     "snippet": "13 | Bili parts - Banawe | -2,250"
+    }
+   },
+   {
+    "row_id": "L0012",
+    "date": "2026-05-14",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 1900.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 495,
+      "xmin": 91,
+      "ymax": 520,
+      "xmax": 924
+     },
+     "snippet": "14 | Palit brake fluid - Mirage | 1,900"
+    }
+   },
+   {
+    "row_id": "L0013",
+    "date": "2026-05-15",
+    "description": "Palit gulong x2 - Fortuner",
+    "amount": 5950.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 520,
+      "xmin": 91,
+      "ymax": 546,
+      "xmax": 922
+     },
+     "snippet": "15 | Palit gulong x2 - Fortuner | 5,950"
+    }
+   },
+   {
+    "row_id": "L0014",
+    "date": "2026-05-15",
+    "description": "Pamasahe - delivery parts",
+    "amount": 250.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 546,
+      "xmin": 91,
+      "ymax": 571,
+      "xmax": 923
+     },
+     "snippet": "15 | Pamasahe - delivery parts | -250"
+    }
+   },
+   {
+    "row_id": "L0015",
+    "date": "2026-05-16",
+    "description": "Fan belt - Hilux",
+    "amount": 2150.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 571,
+      "xmin": 93,
+      "ymax": 597,
+      "xmax": 923
+     },
+     "snippet": "16 | Fan belt - Hilux | 2,150"
+    }
+   },
+   {
+    "row_id": "L0016",
+    "date": "2026-05-18",
+    "description": "Palit bumbilya + wiper - Vios",
+    "amount": 1700.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 625,
+      "xmin": 89,
+      "ymax": 651,
+      "xmax": 921
+     },
+     "snippet": "18 | Palit bumbilya + wiper - Vios | 1,700"
+    }
+   },
+   {
+    "row_id": "L0017",
+    "date": "2026-05-20",
+    "description": "Change oil - Toyota Vios",
+    "amount": 1600.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 650,
+      "xmin": 90,
+      "ymax": 676,
+      "xmax": 921
+     },
+     "snippet": "20 | Change oil - Toyota Vios | 1,600"
+    }
+   },
+   {
+    "row_id": "L0018",
+    "date": "2026-05-21",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 1600.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 676,
+      "xmin": 91,
+      "ymax": 702,
+      "xmax": 921
+     },
+     "snippet": "21 | Palit brake fluid - Mirage | 1,600"
+    }
+   },
+   {
+    "row_id": "L0019",
+    "date": "2026-05-22",
+    "description": "Change oil - Toyota Vios",
+    "amount": 2050.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 701,
+      "xmin": 91,
+      "ymax": 727,
+      "xmax": 920
+     },
+     "snippet": "22 | Change oil - Toyota Vios | 2,050"
+    }
+   },
+   {
+    "row_id": "L0020",
+    "date": "2026-05-25",
+    "description": "Aircon freon - City",
+    "amount": 2200.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 754,
+      "xmin": 89,
+      "ymax": 780,
+      "xmax": 921
+     },
+     "snippet": "25 | Aircon freon - City | 2,200"
+    }
+   },
+   {
+    "row_id": "L0021",
+    "date": "2026-05-26",
+    "description": "Check engine - Avanza",
+    "amount": 2200.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 779,
+      "xmin": 88,
+      "ymax": 805,
+      "xmax": 918
+     },
+     "snippet": "26 | Check engine - Avanza | 2,200"
+    }
+   },
+   {
+    "row_id": "L0022",
+    "date": "2026-05-27",
+    "description": "Clutch adjust - Wigo",
+    "amount": 2400.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 805,
+      "xmin": 89,
+      "ymax": 831,
+      "xmax": 920
+     },
+     "snippet": "27 | Clutch adjust - Wigo | 2,400"
+    }
+   },
+   {
+    "row_id": "L0023",
+    "date": "2026-05-28",
+    "description": "Overhaul deposit - L300",
+    "amount": 5950.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 830,
+      "xmin": 87,
+      "ymax": 856,
+      "xmax": 919
+     },
+     "snippet": "28 | Overhaul deposit - L300 | 5,950"
+    }
+   },
+   {
+    "row_id": "L0024",
+    "date": "2026-05-29",
+    "description": "Underchassis - Civic",
+    "amount": 2750.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 856,
+      "xmin": 87,
+      "ymax": 882,
+      "xmax": 917
+     },
+     "snippet": "29 | Underchassis - Civic | 2,750"
+    }
+   },
+   {
+    "row_id": "L0025",
+    "date": "2026-05-30",
+    "description": "Check engine - Avanza",
+    "amount": 2800.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 882,
+      "xmin": 87,
+      "ymax": 908,
+      "xmax": 916
+     },
+     "snippet": "30 | Check engine - Avanza | 2,800"
+    }
+   }
+  ]
+ },
+ "state": {
+  "output": {
+   "business_name_header": "Reyes Auto Repair",
+   "currency": "PHP",
+   "period_label": "Mayo 2026",
+   "entries": [
+    {
+     "row_id": "L0001",
+     "date": "2026-05-02",
+     "description": "Brake pads - Honda City",
+     "amount": 4100.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 159,
+       "xmin": 97,
+       "ymax": 184,
+       "xmax": 926
+      },
+      "snippet": "2 | Brake pads - Honda City | 4,100"
+     }
+    },
+    {
+     "row_id": "L0002",
+     "date": "2026-05-04",
+     "description": "Tune up - Mitsubishi Mirage",
+     "amount": 3250.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 210,
+       "xmin": 95,
+       "ymax": 235,
+       "xmax": 927
+      },
+      "snippet": "4 | Tune up - Mitsubishi Mirage | 3,250"
+     }
+    },
+    {
+     "row_id": "L0003",
+     "date": "2026-05-05",
+     "description": "Change oil + filter - Raize",
+     "amount": 2100.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 235,
+       "xmin": 95,
+       "ymax": 260,
+       "xmax": 927
+      },
+      "snippet": "5 | Change oil + filter - Raize | 2,100"
+     }
+    },
+    {
+     "row_id": "L0004",
+     "date": "2026-05-06",
+     "description": "Change oil + filter - Raize",
+     "amount": 2550.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 262,
+       "xmin": 95,
+       "ymax": 287,
+       "xmax": 926
+      },
+      "snippet": "6 | Change oil + filter - Raize | 2,550"
+     }
+    },
+    {
+     "row_id": "L0005",
+     "date": "2026-05-07",
+     "description": "Change oil - Toyota Vios",
+     "amount": 1950.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 287,
+       "xmin": 93,
+       "ymax": 313,
+       "xmax": 924
+      },
+      "snippet": "7 | Change oil - Toyota Vios | 1,950"
+     }
+    },
+    {
+     "row_id": "L0006",
+     "date": "2026-05-07",
+     "description": "Tubig + yelo",
+     "amount": 300.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 313,
+       "xmin": 94,
+       "ymax": 338,
+       "xmax": 924
+      },
+      "snippet": "7 | Tubig + yelo | -300"
+     }
+    },
+    {
+     "row_id": "L0007",
+     "date": "2026-05-08",
+     "description": "Radiator flush - Adventure",
+     "amount": 2150.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 338,
+       "xmin": 93,
+       "ymax": 363,
+       "xmax": 924
+      },
+      "snippet": "8 | Radiator flush - Adventure | 2,150"
+     }
+    },
+    {
+     "row_id": "L0008",
+     "date": "2026-05-08",
+     "description": "Pamasahe - delivery parts",
+     "amount": 450.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 364,
+       "xmin": 92,
+       "ymax": 389,
+       "xmax": 925
+      },
+      "snippet": "8 | Pamasahe - delivery parts | -450"
+     }
+    },
+    {
+     "row_id": "L0009",
+     "date": "2026-05-09",
+     "description": "Palit bumbilya + wiper - Vios",
+     "amount": 1850.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 390,
+       "xmin": 91,
+       "ymax": 415,
+       "xmax": 923
+      },
+      "snippet": "9 | Palit bumbilya + wiper - Vios | 1,850"
+     }
+    },
+    {
+     "row_id": "L0010",
+     "date": "2026-05-13",
+     "description": "Palit brake fluid - Mirage",
+     "amount": 1950.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 443,
+       "xmin": 92,
+       "ymax": 468,
+       "xmax": 925
+      },
+      "snippet": "13 | Palit brake fluid - Mirage | 1,950"
+     }
+    },
+    {
+     "row_id": "L0011",
+     "date": "2026-05-13",
+     "description": "Bili parts - Banawe",
+     "amount": 2250.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 468,
+       "xmin": 92,
+       "ymax": 494,
+       "xmax": 923
+      },
+      "snippet": "13 | Bili parts - Banawe | -2,250"
+     }
+    },
+    {
+     "row_id": "L0012",
+     "date": "2026-05-14",
+     "description": "Palit brake fluid - Mirage",
+     "amount": 1900.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 495,
+       "xmin": 91,
+       "ymax": 520,
+       "xmax": 924
+      },
+      "snippet": "14 | Palit brake fluid - Mirage | 1,900"
+     }
+    },
+    {
+     "row_id": "L0013",
+     "date": "2026-05-15",
+     "description": "Palit gulong x2 - Fortuner",
+     "amount": 5950.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 520,
+       "xmin": 91,
+       "ymax": 546,
+       "xmax": 922
+      },
+      "snippet": "15 | Palit gulong x2 - Fortuner | 5,950"
+     }
+    },
+    {
+     "row_id": "L0014",
+     "date": "2026-05-15",
+     "description": "Pamasahe - delivery parts",
+     "amount": 250.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 546,
+       "xmin": 91,
+       "ymax": 571,
+       "xmax": 923
+      },
+      "snippet": "15 | Pamasahe - delivery parts | -250"
+     }
+    },
+    {
+     "row_id": "L0015",
+     "date": "2026-05-16",
+     "description": "Fan belt - Hilux",
+     "amount": 2150.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 571,
+       "xmin": 93,
+       "ymax": 597,
+       "xmax": 923
+      },
+      "snippet": "16 | Fan belt - Hilux | 2,150"
+     }
+    },
+    {
+     "row_id": "L0016",
+     "date": "2026-05-18",
+     "description": "Palit bumbilya + wiper - Vios",
+     "amount": 1700.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 625,
+       "xmin": 89,
+       "ymax": 651,
+       "xmax": 921
+      },
+      "snippet": "18 | Palit bumbilya + wiper - Vios | 1,700"
+     }
+    },
+    {
+     "row_id": "L0017",
+     "date": "2026-05-20",
+     "description": "Change oil - Toyota Vios",
+     "amount": 1600.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 650,
+       "xmin": 90,
+       "ymax": 676,
+       "xmax": 921
+      },
+      "snippet": "20 | Change oil - Toyota Vios | 1,600"
+     }
+    },
+    {
+     "row_id": "L0018",
+     "date": "2026-05-21",
+     "description": "Palit brake fluid - Mirage",
+     "amount": 1600.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 676,
+       "xmin": 91,
+       "ymax": 702,
+       "xmax": 921
+      },
+      "snippet": "21 | Palit brake fluid - Mirage | 1,600"
+     }
+    },
+    {
+     "row_id": "L0019",
+     "date": "2026-05-22",
+     "description": "Change oil - Toyota Vios",
+     "amount": 2050.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 701,
+       "xmin": 91,
+       "ymax": 727,
+       "xmax": 920
+      },
+      "snippet": "22 | Change oil - Toyota Vios | 2,050"
+     }
+    },
+    {
+     "row_id": "L0020",
+     "date": "2026-05-25",
+     "description": "Aircon freon - City",
+     "amount": 2200.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 754,
+       "xmin": 89,
+       "ymax": 780,
+       "xmax": 921
+      },
+      "snippet": "25 | Aircon freon - City | 2,200"
+     }
+    },
+    {
+     "row_id": "L0021",
+     "date": "2026-05-26",
+     "description": "Check engine - Avanza",
+     "amount": 2200.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 779,
+       "xmin": 88,
+       "ymax": 805,
+       "xmax": 918
+      },
+      "snippet": "26 | Check engine - Avanza | 2,200"
+     }
+    },
+    {
+     "row_id": "L0022",
+     "date": "2026-05-27",
+     "description": "Clutch adjust - Wigo",
+     "amount": 2400.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 805,
+       "xmin": 89,
+       "ymax": 831,
+       "xmax": 920
+      },
+      "snippet": "27 | Clutch adjust - Wigo | 2,400"
+     }
+    },
+    {
+     "row_id": "L0023",
+     "date": "2026-05-28",
+     "description": "Overhaul deposit - L300",
+     "amount": 5950.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 830,
+       "xmin": 87,
+       "ymax": 856,
+       "xmax": 919
+      },
+      "snippet": "28 | Overhaul deposit - L300 | 5,950"
+     }
+    },
+    {
+     "row_id": "L0024",
+     "date": "2026-05-29",
+     "description": "Underchassis - Civic",
+     "amount": 2750.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 856,
+       "xmin": 87,
+       "ymax": 882,
+       "xmax": 917
+      },
+      "snippet": "29 | Underchassis - Civic | 2,750"
+     }
+    },
+    {
+     "row_id": "L0025",
+     "date": "2026-05-30",
+     "description": "Check engine - Avanza",
+     "amount": 2800.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 882,
+       "xmin": 87,
+       "ymax": 908,
+       "xmax": 916
+      },
+      "snippet": "30 | Check engine - Avanza | 2,800"
+     }
+    }
+   ]
+  }
+ },
+ "input_tokens": 996,
+ "output_tokens": 2605,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:handwritten_ledger",
+ "cached_at": "2026-10-15T07:07:16+00:00"
+}

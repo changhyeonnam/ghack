@@ -1,0 +1,302 @@
+{
+ "text": "{\n  \"merchant\": \"GHN EXPRESS\",\n  \"date\": \"2026-03-27\",\n  \"receipt_number\": \"GHN-2305\",\n  \"currency\": \"VND\",\n  \"total\": {\n    \"value\": 185000,\n    \"source\": {\n      \"doc_id\": \"D10\",\n      \"page\": 1,\n      \"bbox\": {\n        \"ymin\": 643,\n        \"xmin\": 402,\n        \"ymax\": 657,\n        \"xmax\": 535\n      },\n      \"snippet\": \"185.000\"\n    }\n  },\n  \"items\": [\n    {\n      \"description\": \"GHN822558A\",\n      \"amount\": 30000,\n      \"source\": {\n        \"doc_id\": \"D10\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 402,\n          \"xmin\": 113,\n          \"ymax\": 418,\n          \"xmax\": 846\n        },\n        \"snippet\": \"GHN822558A 900 30.000\"\n      }\n    },\n    {\n      \"description\": \"GHN786112A\",\n      \"amount\": 18000,\n      \"source\": {\n        \"doc_id\": \"D10\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 425,\n          \"xmin\": 113,\n          \"ymax\": 441,\n          \"xmax\": 847\n        },\n        \"snippet\": \"GHN786112A 300 18.000\"\n      }\n    },\n    {\n      \"description\": \"GHN454555A\",\n      \"amount\": 27000,\n      \"source\": {\n        \"doc_id\": \"D10\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 450,\n          \"xmin\": 113,\n          \"ymax\": 465,\n          \"xmax\": 848\n        },\n        \"snippet\": \"GHN454555A 750 27.000\"\n      }\n    },\n    {\n      \"description\": \"GHN186228A\",\n      \"amount\": 18000,\n      \"source\": {\n        \"doc_id\": \"D10\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 473,\n          \"xmin\": 113,\n          \"ymax\": 489,\n          \"xmax\": 848\n        },\n        \"snippet\": \"GHN186228A 300 18.000\"\n      }\n    },\n    {\n      \"description\": \"GHN711582A\",\n      \"amount\": 20000,\n      \"source\": {\n        \"doc_id\": \"D10\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 497,\n          \"xmin\": 113,\n          \"ymax\": 512,\n          \"xmax\": 846\n        },\n        \"snippet\": \"GHN711582A 350 20.000\"\n      }\n    },\n    {\n      \"description\": \"GHN336121A\",\n      \"amount\": 18000,\n      \"source\": {\n        \"doc_id\": \"D10\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 521,\n          \"xmin\": 113,\n          \"ymax\": 536,\n          \"xmax\": 847\n        },\n        \"snippet\": \"GHN336121A 250 18.000\"\n      }\n    },\n    {\n      \"description\": \"GHN736685A\",\n      \"amount\": 18000,\n      \"source\": {\n        \"doc_id\": \"D10\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 545,\n          \"xmin\": 113,\n          \"ymax\": 560,\n          \"xmax\": 847\n        },\n        \"snippet\": \"GHN736685A 300 18.000\"\n      }\n    },\n    {\n      \"description\": \"GHN292342A\",\n      \"amount\": 36000,\n      \"source\": {\n        \"doc_id\": \"D10\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 570,\n          \"xmin\": 113,\n          \"ymax\": 585,\n          \"xmax\": 847\n        },\n        \"snippet\": \"GHN292342A 1200 36.000\"\n      }\n    }\n  ],\n  \"payment_method\": \"TRU VAO VI GHN\",\n  \"direction\": \"purchase\",\n  \"handwritten\": false\n}",
+ "parsed": {
+  "merchant": "GHN EXPRESS",
+  "date": "2026-03-27",
+  "receipt_number": "GHN-2305",
+  "currency": "VND",
+  "total": {
+   "value": 185000.0,
+   "source": {
+    "doc_id": "D10",
+    "page": 1,
+    "bbox": {
+     "ymin": 643,
+     "xmin": 402,
+     "ymax": 657,
+     "xmax": 535
+    },
+    "snippet": "185.000"
+   }
+  },
+  "items": [
+   {
+    "description": "GHN822558A",
+    "amount": 30000.0,
+    "source": {
+     "doc_id": "D10",
+     "page": 1,
+     "bbox": {
+      "ymin": 402,
+      "xmin": 113,
+      "ymax": 418,
+      "xmax": 846
+     },
+     "snippet": "GHN822558A 900 30.000"
+    }
+   },
+   {
+    "description": "GHN786112A",
+    "amount": 18000.0,
+    "source": {
+     "doc_id": "D10",
+     "page": 1,
+     "bbox": {
+      "ymin": 425,
+      "xmin": 113,
+      "ymax": 441,
+      "xmax": 847
+     },
+     "snippet": "GHN786112A 300 18.000"
+    }
+   },
+   {
+    "description": "GHN454555A",
+    "amount": 27000.0,
+    "source": {
+     "doc_id": "D10",
+     "page": 1,
+     "bbox": {
+      "ymin": 450,
+      "xmin": 113,
+      "ymax": 465,
+      "xmax": 848
+     },
+     "snippet": "GHN454555A 750 27.000"
+    }
+   },
+   {
+    "description": "GHN186228A",
+    "amount": 18000.0,
+    "source": {
+     "doc_id": "D10",
+     "page": 1,
+     "bbox": {
+      "ymin": 473,
+      "xmin": 113,
+      "ymax": 489,
+      "xmax": 848
+     },
+     "snippet": "GHN186228A 300 18.000"
+    }
+   },
+   {
+    "description": "GHN711582A",
+    "amount": 20000.0,
+    "source": {
+     "doc_id": "D10",
+     "page": 1,
+     "bbox": {
+      "ymin": 497,
+      "xmin": 113,
+      "ymax": 512,
+      "xmax": 846
+     },
+     "snippet": "GHN711582A 350 20.000"
+    }
+   },
+   {
+    "description": "GHN336121A",
+    "amount": 18000.0,
+    "source": {
+     "doc_id": "D10",
+     "page": 1,
+     "bbox": {
+      "ymin": 521,
+      "xmin": 113,
+      "ymax": 536,
+      "xmax": 847
+     },
+     "snippet": "GHN336121A 250 18.000"
+    }
+   },
+   {
+    "description": "GHN736685A",
+    "amount": 18000.0,
+    "source": {
+     "doc_id": "D10",
+     "page": 1,
+     "bbox": {
+      "ymin": 545,
+      "xmin": 113,
+      "ymax": 560,
+      "xmax": 847
+     },
+     "snippet": "GHN736685A 300 18.000"
+    }
+   },
+   {
+    "description": "GHN292342A",
+    "amount": 36000.0,
+    "source": {
+     "doc_id": "D10",
+     "page": 1,
+     "bbox": {
+      "ymin": 570,
+      "xmin": 113,
+      "ymax": 585,
+      "xmax": 847
+     },
+     "snippet": "GHN292342A 1200 36.000"
+    }
+   }
+  ],
+  "payment_method": "TRU VAO VI GHN",
+  "direction": "purchase",
+  "handwritten": false
+ },
+ "state": {
+  "output": {
+   "merchant": "GHN EXPRESS",
+   "date": "2026-03-27",
+   "receipt_number": "GHN-2305",
+   "currency": "VND",
+   "total": {
+    "value": 185000.0,
+    "source": {
+     "doc_id": "D10",
+     "page": 1,
+     "bbox": {
+      "ymin": 643,
+      "xmin": 402,
+      "ymax": 657,
+      "xmax": 535
+     },
+     "snippet": "185.000"
+    }
+   },
+   "items": [
+    {
+     "description": "GHN822558A",
+     "amount": 30000.0,
+     "source": {
+      "doc_id": "D10",
+      "page": 1,
+      "bbox": {
+       "ymin": 402,
+       "xmin": 113,
+       "ymax": 418,
+       "xmax": 846
+      },
+      "snippet": "GHN822558A 900 30.000"
+     }
+    },
+    {
+     "description": "GHN786112A",
+     "amount": 18000.0,
+     "source": {
+      "doc_id": "D10",
+      "page": 1,
+      "bbox": {
+       "ymin": 425,
+       "xmin": 113,
+       "ymax": 441,
+       "xmax": 847
+      },
+      "snippet": "GHN786112A 300 18.000"
+     }
+    },
+    {
+     "description": "GHN454555A",
+     "amount": 27000.0,
+     "source": {
+      "doc_id": "D10",
+      "page": 1,
+      "bbox": {
+       "ymin": 450,
+       "xmin": 113,
+       "ymax": 465,
+       "xmax": 848
+      },
+      "snippet": "GHN454555A 750 27.000"
+     }
+    },
+    {
+     "description": "GHN186228A",
+     "amount": 18000.0,
+     "source": {
+      "doc_id": "D10",
+      "page": 1,
+      "bbox": {
+       "ymin": 473,
+       "xmin": 113,
+       "ymax": 489,
+       "xmax": 848
+      },
+      "snippet": "GHN186228A 300 18.000"
+     }
+    },
+    {
+     "description": "GHN711582A",
+     "amount": 20000.0,
+     "source": {
+      "doc_id": "D10",
+      "page": 1,
+      "bbox": {
+       "ymin": 497,
+       "xmin": 113,
+       "ymax": 512,
+       "xmax": 846
+      },
+      "snippet": "GHN711582A 350 20.000"
+     }
+    },
+    {
+     "description": "GHN336121A",
+     "amount": 18000.0,
+     "source": {
+      "doc_id": "D10",
+      "page": 1,
+      "bbox": {
+       "ymin": 521,
+       "xmin": 113,
+       "ymax": 536,
+       "xmax": 847
+      },
+      "snippet": "GHN336121A 250 18.000"
+     }
+    },
+    {
+     "description": "GHN736685A",
+     "amount": 18000.0,
+     "source": {
+      "doc_id": "D10",
+      "page": 1,
+      "bbox": {
+       "ymin": 545,
+       "xmin": 113,
+       "ymax": 560,
+       "xmax": 847
+      },
+      "snippet": "GHN736685A 300 18.000"
+     }
+    },
+    {
+     "description": "GHN292342A",
+     "amount": 36000.0,
+     "source": {
+      "doc_id": "D10",
+      "page": 1,
+      "bbox": {
+       "ymin": 570,
+       "xmin": 113,
+       "ymax": 585,
+       "xmax": 847
+      },
+      "snippet": "GHN292342A 1200 36.000"
+     }
+    }
+   ],
+   "payment_method": "TRU VAO VI GHN",
+   "direction": "purchase",
+   "handwritten": false
+  }
+ },
+ "input_tokens": 953,
+ "output_tokens": 1314,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:logistics_receipt",
+ "cached_at": "2026-10-15T07:04:42+00:00"
+}

@@ -1,0 +1,242 @@
+{
+ "text": "{\n  \"merchant\": \"TOKO GROSIR MAKMUR\",\n  \"date\": \"2026-06-26\",\n  \"receipt_number\": \"TGM-1094\",\n  \"currency\": \"IDR\",\n  \"total\": {\n    \"value\": 1422000.0,\n    \"source\": {\n      \"doc_id\": \"D15\",\n      \"page\": 1,\n      \"bbox\": {\n        \"ymin\": 637,\n        \"xmin\": 689,\n        \"ymax\": 655,\n        \"xmax\": 850\n      },\n      \"snippet\": \"1.422.000\"\n    }\n  },\n  \"items\": [\n    {\n      \"description\": \"Beras Premium 25kg (1 x 310.000)\",\n      \"amount\": 310000.0,\n      \"source\": {\n        \"doc_id\": \"D15\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 308,\n          \"xmin\": 149,\n          \"ymax\": 366,\n          \"xmax\": 875\n        },\n        \"snippet\": \"Beras Premium 25kg\\n1 x 310.000 310.000\"\n      }\n    },\n    {\n      \"description\": \"Garam 1kg (2 x 9.000)\",\n      \"amount\": 18000.0,\n      \"source\": {\n        \"doc_id\": \"D15\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 355,\n          \"xmin\": 147,\n          \"ymax\": 415,\n          \"xmax\": 871\n        },\n        \"snippet\": \"Garam 1kg\\n2 x 9.000 18.000\"\n      }\n    },\n    {\n      \"description\": \"Tepung Terigu 1kg (4 x 13.000)\",\n      \"amount\": 52000.0,\n      \"source\": {\n        \"doc_id\": \"D15\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 403,\n          \"xmin\": 143,\n          \"ymax\": 462,\n          \"xmax\": 868\n        },\n        \"snippet\": \"Tepung Terigu 1kg\\n4 x 13.000 52.000\"\n      }\n    },\n    {\n      \"description\": \"Bawang Merah 1kg (5 x 38.000)\",\n      \"amount\": 190000.0,\n      \"source\": {\n        \"doc_id\": \"D15\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 451,\n          \"xmin\": 139,\n          \"ymax\": 511,\n          \"xmax\": 862\n        },\n        \"snippet\": \"Bawang Merah 1kg\\n5 x 38.000 190.000\"\n      }\n    },\n    {\n      \"description\": \"Kopi Sachet 1 renceng (1 x 12.000)\",\n      \"amount\": 12000.0,\n      \"source\": {\n        \"doc_id\": \"D15\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 500,\n          \"xmin\": 135,\n          \"ymax\": 559,\n          \"xmax\": 858\n        },\n        \"snippet\": \"Kopi Sachet 1 renceng\\n1 x 12.000 12.000\"\n      }\n    },\n    {\n      \"description\": \"Telur Ayam 1 peti 15kg (2 x 420.000)\",\n      \"amount\": 840000.0,\n      \"source\": {\n        \"doc_id\": \"D15\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 548,\n          \"xmin\": 129,\n          \"ymax\": 607,\n          \"xmax\": 855\n        },\n        \"snippet\": \"Telur Ayam 1 peti 15kg\\n2 x 420.000 840.000\"\n      }\n    }\n  ],\n  \"payment_method\": \"TUNAI\",\n  \"direction\": \"purchase\",\n  \"handwritten\": false\n}",
+ "parsed": {
+  "merchant": "TOKO GROSIR MAKMUR",
+  "date": "2026-06-26",
+  "receipt_number": "TGM-1094",
+  "currency": "IDR",
+  "total": {
+   "value": 1422000.0,
+   "source": {
+    "doc_id": "D15",
+    "page": 1,
+    "bbox": {
+     "ymin": 637,
+     "xmin": 689,
+     "ymax": 655,
+     "xmax": 850
+    },
+    "snippet": "1.422.000"
+   }
+  },
+  "items": [
+   {
+    "description": "Beras Premium 25kg (1 x 310.000)",
+    "amount": 310000.0,
+    "source": {
+     "doc_id": "D15",
+     "page": 1,
+     "bbox": {
+      "ymin": 308,
+      "xmin": 149,
+      "ymax": 366,
+      "xmax": 875
+     },
+     "snippet": "Beras Premium 25kg\n1 x 310.000 310.000"
+    }
+   },
+   {
+    "description": "Garam 1kg (2 x 9.000)",
+    "amount": 18000.0,
+    "source": {
+     "doc_id": "D15",
+     "page": 1,
+     "bbox": {
+      "ymin": 355,
+      "xmin": 147,
+      "ymax": 415,
+      "xmax": 871
+     },
+     "snippet": "Garam 1kg\n2 x 9.000 18.000"
+    }
+   },
+   {
+    "description": "Tepung Terigu 1kg (4 x 13.000)",
+    "amount": 52000.0,
+    "source": {
+     "doc_id": "D15",
+     "page": 1,
+     "bbox": {
+      "ymin": 403,
+      "xmin": 143,
+      "ymax": 462,
+      "xmax": 868
+     },
+     "snippet": "Tepung Terigu 1kg\n4 x 13.000 52.000"
+    }
+   },
+   {
+    "description": "Bawang Merah 1kg (5 x 38.000)",
+    "amount": 190000.0,
+    "source": {
+     "doc_id": "D15",
+     "page": 1,
+     "bbox": {
+      "ymin": 451,
+      "xmin": 139,
+      "ymax": 511,
+      "xmax": 862
+     },
+     "snippet": "Bawang Merah 1kg\n5 x 38.000 190.000"
+    }
+   },
+   {
+    "description": "Kopi Sachet 1 renceng (1 x 12.000)",
+    "amount": 12000.0,
+    "source": {
+     "doc_id": "D15",
+     "page": 1,
+     "bbox": {
+      "ymin": 500,
+      "xmin": 135,
+      "ymax": 559,
+      "xmax": 858
+     },
+     "snippet": "Kopi Sachet 1 renceng\n1 x 12.000 12.000"
+    }
+   },
+   {
+    "description": "Telur Ayam 1 peti 15kg (2 x 420.000)",
+    "amount": 840000.0,
+    "source": {
+     "doc_id": "D15",
+     "page": 1,
+     "bbox": {
+      "ymin": 548,
+      "xmin": 129,
+      "ymax": 607,
+      "xmax": 855
+     },
+     "snippet": "Telur Ayam 1 peti 15kg\n2 x 420.000 840.000"
+    }
+   }
+  ],
+  "payment_method": "TUNAI",
+  "direction": "purchase",
+  "handwritten": false
+ },
+ "state": {
+  "output": {
+   "merchant": "TOKO GROSIR MAKMUR",
+   "date": "2026-06-26",
+   "receipt_number": "TGM-1094",
+   "currency": "IDR",
+   "total": {
+    "value": 1422000.0,
+    "source": {
+     "doc_id": "D15",
+     "page": 1,
+     "bbox": {
+      "ymin": 637,
+      "xmin": 689,
+      "ymax": 655,
+      "xmax": 850
+     },
+     "snippet": "1.422.000"
+    }
+   },
+   "items": [
+    {
+     "description": "Beras Premium 25kg (1 x 310.000)",
+     "amount": 310000.0,
+     "source": {
+      "doc_id": "D15",
+      "page": 1,
+      "bbox": {
+       "ymin": 308,
+       "xmin": 149,
+       "ymax": 366,
+       "xmax": 875
+      },
+      "snippet": "Beras Premium 25kg\n1 x 310.000 310.000"
+     }
+    },
+    {
+     "description": "Garam 1kg (2 x 9.000)",
+     "amount": 18000.0,
+     "source": {
+      "doc_id": "D15",
+      "page": 1,
+      "bbox": {
+       "ymin": 355,
+       "xmin": 147,
+       "ymax": 415,
+       "xmax": 871
+      },
+      "snippet": "Garam 1kg\n2 x 9.000 18.000"
+     }
+    },
+    {
+     "description": "Tepung Terigu 1kg (4 x 13.000)",
+     "amount": 52000.0,
+     "source": {
+      "doc_id": "D15",
+      "page": 1,
+      "bbox": {
+       "ymin": 403,
+       "xmin": 143,
+       "ymax": 462,
+       "xmax": 868
+      },
+      "snippet": "Tepung Terigu 1kg\n4 x 13.000 52.000"
+     }
+    },
+    {
+     "description": "Bawang Merah 1kg (5 x 38.000)",
+     "amount": 190000.0,
+     "source": {
+      "doc_id": "D15",
+      "page": 1,
+      "bbox": {
+       "ymin": 451,
+       "xmin": 139,
+       "ymax": 511,
+       "xmax": 862
+      },
+      "snippet": "Bawang Merah 1kg\n5 x 38.000 190.000"
+     }
+    },
+    {
+     "description": "Kopi Sachet 1 renceng (1 x 12.000)",
+     "amount": 12000.0,
+     "source": {
+      "doc_id": "D15",
+      "page": 1,
+      "bbox": {
+       "ymin": 500,
+       "xmin": 135,
+       "ymax": 559,
+       "xmax": 858
+      },
+      "snippet": "Kopi Sachet 1 renceng\n1 x 12.000 12.000"
+     }
+    },
+    {
+     "description": "Telur Ayam 1 peti 15kg (2 x 420.000)",
+     "amount": 840000.0,
+     "source": {
+      "doc_id": "D15",
+      "page": 1,
+      "bbox": {
+       "ymin": 548,
+       "xmin": 129,
+       "ymax": 607,
+       "xmax": 855
+      },
+      "snippet": "Telur Ayam 1 peti 15kg\n2 x 420.000 840.000"
+     }
+    }
+   ],
+   "payment_method": "TUNAI",
+   "direction": "purchase",
+   "handwritten": false
+  }
+ },
+ "input_tokens": 952,
+ "output_tokens": 1146,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:receipt",
+ "cached_at": "2026-10-15T06:47:18+00:00"
+}

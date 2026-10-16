@@ -46,8 +46,8 @@ export function CaseHeader({ kase, memo, challenge, onExportMemo, onOpenViewer }
             <h1 className="case-title">{kase.name}</h1>
             <StatusBadge status={kase.status} size="sm" />
             {kase.is_demo ? (
-              <span className="tag tag-demo tip" data-tip="Synthetic dataset generated for the demo; not a real applicant">
-                Synthetic
+              <span className="tag tag-demo tip" data-tip="Demo case prepared for this showcase; not a real applicant">
+                Demo
               </span>
             ) : null}
           </div>

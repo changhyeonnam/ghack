@@ -1,0 +1,167 @@
+{
+ "text": "{\n  \"signage_text\": \"WARUNG IBU SARI\",\n  \"business_type_guess\": \"grocery retail / small warung\",\n  \"apparent_size\": \"small\",\n  \"inventory_level\": \"dense\",\n  \"observations\": [\n    {\n      \"text\": \"Signage clearly displaying 'WARUNG IBU SARI' above the main shelving display.\",\n      \"source\": {\n        \"doc_id\": \"D18\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 41,\n          \"xmin\": 344,\n          \"ymax\": 109,\n          \"xmax\": 656\n        },\n        \"snippet\": \"WARUNG IBU SARI\"\n      }\n    },\n    {\n      \"text\": \"Digital QRIS payment display visible on the counter.\",\n      \"source\": {\n        \"doc_id\": \"D18\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 520,\n          \"xmin\": 597,\n          \"ymax\": 641,\n          \"xmax\": 702\n        },\n        \"snippet\": \"QRIS\"\n      }\n    },\n    {\n      \"text\": \"Beverage cooler / refrigerator labelled 'DINGIN' next to the checkout counter.\",\n      \"source\": {\n        \"doc_id\": \"D18\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 420,\n          \"xmin\": 799,\n          \"ymax\": 760,\n          \"xmax\": 971\n        },\n        \"snippet\": \"DINGIN\"\n      }\n    },\n    {\n      \"text\": \"Synthetic demo watermarking indicating an illustrative/synthetic image rather than a real photograph.\",\n      \"source\": {\n        \"doc_id\": \"D18\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 956,\n          \"xmin\": 792,\n          \"ymax\": 993,\n          \"xmax\": 994\n        },\n        \"snippet\": \"SYNTHETIC · FOR DEMO\"\n      }\n    },\n    {\n      \"text\": \"Extensive stock displayed across a large multi-shelf unit behind the counter.\",\n      \"source\": {\n        \"doc_id\": \"D18\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 119,\n          \"xmin\": 43,\n          \"ymax\": 641,\n          \"xmax\": 958\n        },\n        \"snippet\": null\n      }\n    }\n  ]\n}",
+ "parsed": {
+  "signage_text": "WARUNG IBU SARI",
+  "business_type_guess": "grocery retail / small warung",
+  "apparent_size": "small",
+  "inventory_level": "dense",
+  "observations": [
+   {
+    "text": "Signage clearly displaying 'WARUNG IBU SARI' above the main shelving display.",
+    "source": {
+     "doc_id": "D18",
+     "page": 1,
+     "bbox": {
+      "ymin": 41,
+      "xmin": 344,
+      "ymax": 109,
+      "xmax": 656
+     },
+     "snippet": "WARUNG IBU SARI"
+    }
+   },
+   {
+    "text": "Digital QRIS payment display visible on the counter.",
+    "source": {
+     "doc_id": "D18",
+     "page": 1,
+     "bbox": {
+      "ymin": 520,
+      "xmin": 597,
+      "ymax": 641,
+      "xmax": 702
+     },
+     "snippet": "QRIS"
+    }
+   },
+   {
+    "text": "Beverage cooler / refrigerator labelled 'DINGIN' next to the checkout counter.",
+    "source": {
+     "doc_id": "D18",
+     "page": 1,
+     "bbox": {
+      "ymin": 420,
+      "xmin": 799,
+      "ymax": 760,
+      "xmax": 971
+     },
+     "snippet": "DINGIN"
+    }
+   },
+   {
+    "text": "Synthetic demo watermarking indicating an illustrative/synthetic image rather than a real photograph.",
+    "source": {
+     "doc_id": "D18",
+     "page": 1,
+     "bbox": {
+      "ymin": 956,
+      "xmin": 792,
+      "ymax": 993,
+      "xmax": 994
+     },
+     "snippet": "SYNTHETIC · FOR DEMO"
+    }
+   },
+   {
+    "text": "Extensive stock displayed across a large multi-shelf unit behind the counter.",
+    "source": {
+     "doc_id": "D18",
+     "page": 1,
+     "bbox": {
+      "ymin": 119,
+      "xmin": 43,
+      "ymax": 641,
+      "xmax": 958
+     },
+     "snippet": null
+    }
+   }
+  ]
+ },
+ "state": {
+  "output": {
+   "signage_text": "WARUNG IBU SARI",
+   "business_type_guess": "grocery retail / small warung",
+   "apparent_size": "small",
+   "inventory_level": "dense",
+   "observations": [
+    {
+     "text": "Signage clearly displaying 'WARUNG IBU SARI' above the main shelving display.",
+     "source": {
+      "doc_id": "D18",
+      "page": 1,
+      "bbox": {
+       "ymin": 41,
+       "xmin": 344,
+       "ymax": 109,
+       "xmax": 656
+      },
+      "snippet": "WARUNG IBU SARI"
+     }
+    },
+    {
+     "text": "Digital QRIS payment display visible on the counter.",
+     "source": {
+      "doc_id": "D18",
+      "page": 1,
+      "bbox": {
+       "ymin": 520,
+       "xmin": 597,
+       "ymax": 641,
+       "xmax": 702
+      },
+      "snippet": "QRIS"
+     }
+    },
+    {
+     "text": "Beverage cooler / refrigerator labelled 'DINGIN' next to the checkout counter.",
+     "source": {
+      "doc_id": "D18",
+      "page": 1,
+      "bbox": {
+       "ymin": 420,
+       "xmin": 799,
+       "ymax": 760,
+       "xmax": 971
+      },
+      "snippet": "DINGIN"
+     }
+    },
+    {
+     "text": "Synthetic demo watermarking indicating an illustrative/synthetic image rather than a real photograph.",
+     "source": {
+      "doc_id": "D18",
+      "page": 1,
+      "bbox": {
+       "ymin": 956,
+       "xmin": 792,
+       "ymax": 993,
+       "xmax": 994
+      },
+      "snippet": "SYNTHETIC · FOR DEMO"
+     }
+    },
+    {
+     "text": "Extensive stock displayed across a large multi-shelf unit behind the counter.",
+     "source": {
+      "doc_id": "D18",
+      "page": 1,
+      "bbox": {
+       "ymin": 119,
+       "xmin": 43,
+       "ymax": 641,
+       "xmax": 958
+      }
+     }
+    }
+   ]
+  }
+ },
+ "input_tokens": 957,
+ "output_tokens": 634,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:premises_photo",
+ "cached_at": "2026-10-15T06:47:29+00:00"
+}

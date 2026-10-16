@@ -10,7 +10,7 @@ from ..config import Settings
 from ..schemas import Case, Recommendation, Severity, SourceRef
 from ..storage import Repository
 from . import prompts
-from .common import case_facts, inventory_text, page_parts
+from .common import DEMO_DATASET_NOTE, case_facts, inventory_text, page_parts
 from .runner import AgentSpec, run_agent
 
 
@@ -41,6 +41,8 @@ class BaselineMemo(BaseModel):
 
 async def run_baseline(case: Case, *, repo: Repository, settings: Settings, mock_context: dict[str, Any]) -> dict[str, Any]:
     parts: list[types.Part] = [types.Part.from_text(text=case_facts(case)), types.Part.from_text(text=inventory_text(case))]
+    if case.is_demo:  # same dataset note as the agent team, so the comparison stays fair
+        parts.insert(0, types.Part.from_text(text=DEMO_DATASET_NOTE))
     for d in case.documents:
         parts += page_parts(repo, case, d, settings)
     spec = AgentSpec(name="baseline", instruction=prompts.BASELINE_SINGLE_PROMPT, prompt_version=prompts.PROMPT_VERSIONS["baseline"], model=settings.model_pro,

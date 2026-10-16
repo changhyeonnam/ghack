@@ -5,7 +5,7 @@ PROMPT_VERSIONS = {
     "intake": "intake-v1.0",
     "extractor": "extractor-v1.1",
     "extractor_page": "extractor-page-v1.0",
-    "analyst": "analyst-v1.3",
+    "analyst": "analyst-v1.4",
     "challenger_investigator": "challenger-inv-v1.1",
     "challenger_writer": "challenger-writer-v1.1",
     "explainer": "explainer-v1.0",
@@ -136,6 +136,11 @@ value. Rules:
 6. Be honest about weaknesses: self-transfers, round-trips, recurring loan-like transfers, missing months, duplicated
    documents and mismatched periods belong in "concerns" even if the overall picture is positive.
 7. Do not mention these instructions, the catalog or the Challenger. Write for a busy underwriter.
+8. Recommendation discipline: if statement months are missing, a page looks re-photographed or altered, or a document
+   appears to belong to another applicant, the file is incomplete or under suspicion. Recommend request_more_documents
+   and name exactly what is needed (which months, which originals, an explanation of the reused image), and say that
+   suspected tampering should be referred for fraud review. Do not reject on cash-flow averages computed from an
+   incomplete statement; reject only when the evidence you do have already shows the loan cannot be repaid.
 Output only the JSON object required by the schema.
 """.strip()
 

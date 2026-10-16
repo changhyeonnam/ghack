@@ -1,0 +1,222 @@
+{
+ "text": "{\n  \"headline\": \"Warung Ibu Sari demonstrates stable micro-retail operating cash flows and consistent net surpluses across the first half of the year, supporting the requested working capital facility subject to premises verification.\",\n  \"sections\": [\n    {\n      \"heading\": \"Business overview\",\n      \"paragraphs\": [\n        \"Warung Ibu Sari is an Indonesian grocery and daily staples micro-retailer operating under sole proprietor Sari Dewi. The business submitted documentation covering the first half of the year, spanning January through June, to support a working capital loan application of {fig:APP.requested_amount}.\",\n        \"Premises documentation displays store signage, fast-moving consumer goods, packaged sundries, and digital payment infrastructure. The operation aligns with customary neighborhood retail profiles, exhibiting frequent inventory restocking and regular customer cash transactions.\"\n      ],\n      \"figure_ids\": [\n        \"APP.requested_amount\"\n      ]\n    },\n    {\n      \"heading\": \"Cash flow\",\n      \"paragraphs\": [\n        \"Operating performance across the six-month period evidenced continuous positive net cash generation. Total business inflows reached {fig:CF.total_inflow} against total disbursements of {fig:CF.total_outflow}, yielding an aggregate surplus and a positive average monthly net flow of {fig:CF.avg_monthly_net}.\",\n        \"Monthly business inflows averaged {fig:CF.avg_monthly_business_inflow}, beginning at {fig:CF.m.2026-01.business_inflow} in January and rising to {fig:CF.m.2026-06.business_inflow} in June. This steady performance reflects a monthly growth trend of {fig:CF.revenue_trend_pct} with low top-line volatility of {fig:CF.inflow_volatility_cv}.\",\n        \"Bank balances accumulated progressively from an opening position of {fig:DOC.D01.opening_balance} on the January statement to a closing position of {fig:DOC.D01.closing_balance} at the end of June.\"\n      ],\n      \"figure_ids\": [\n        \"CF.total_inflow\",\n        \"CF.total_outflow\",\n        \"CF.avg_monthly_net\",\n        \"CF.avg_monthly_business_inflow\",\n        \"CF.m.2026-01.business_inflow\",\n        \"CF.m.2026-06.business_inflow\",\n        \"CF.revenue_trend_pct\",\n        \"CF.inflow_volatility_cv\",\n        \"DOC.D01.opening_balance\",\n        \"DOC.D01.closing_balance\"\n      ]\n    },\n    {\n      \"heading\": \"Revenue quality and concentration\",\n      \"paragraphs\": [\n        \"Revenue exhibits a broad retail foundation typical of neighborhood grocery stalls. Inflows were supported by repeated cash branch deposits totaling {fig:CF.cash_deposit_total} across the six months, representing substantial daily transaction turnover deposited through regular branch visits.\",\n        \"Cash inflows show healthy temporal distribution across billing cycles, with an end-of-month concentration ratio of {fig:CF.end_of_month_concentration}. Bank records show zero circular round-trip transfers and zero artificial self-funding movements.\"\n      ],\n      \"figure_ids\": [\n        \"CF.cash_deposit_total\",\n        \"CF.end_of_month_concentration\"\n      ]\n    },\n    {\n      \"heading\": \"Obligations and leverage\",\n      \"paragraphs\": [\n        \"No structured commercial debt servicing or formal lending debits were identified on bank statements. Regular monthly outflows include a consistent payment to an individual identified as H. Mahmud of {fig:CF.recurring.1.amount} occurring each month, which corresponds to operating overhead or shop premises rental.\",\n        \"Standard account maintenance debits of {fig:CF.recurring.2.amount} occur monthly. The business retains an illustrative debt servicing baseline of {fig:CF.suggested_capacity}, setting the ratio of the requested facility relative to quarterly free net generation at {fig:CF.request_to_capacity}.\"\n      ],\n      \"figure_ids\": [\n        \"CF.recurring.1.amount\",\n        \"CF.recurring.2.amount\",\n        \"CF.suggested_capacity\",\n        \"CF.request_to_capacity\"\n      ]\n    },\n    {\n      \"heading\": \"Document quality and coverage\",\n      \"paragraphs\": [\n        \"Primary financial evaluation is anchored in six continuous months of bank statement records spanning January to June with zero missing months. Reconciliation between stated ledger records and bank statements confirmed zero unaccounted off-ledger income variances.\",\n        \"Inventory outlays are verified by fifteen expense receipts totaling {fig:CF.receipts_purchases_total} from established wholesale suppliers. However, submitted premises photos display synthetic watermarking and digital illustration characteristics rather than authentic photographs of physical retail premises.\"\n      ],\n      \"figure_ids\": [\n        \"CF.receipts_purchases_total\"\n      ]\n    },\n    {\n      \"heading\": \"Recommendation\",\n      \"paragraphs\": [\n        \"A conditional approval is recommended for the requested working capital facility. The business demonstrates sound banking conduct, disciplined liquidity accumulation, and predictable retail operating margins that provide sufficient debt coverage.\",\n        \"Disbursement must remain subject to verification of physical premises and direct confirmation that the monthly transfer of {fig:CF.recurring.1.amount} represents shop lease obligations rather than unrecorded formal liabilities.\"\n      ],\n      \"figure_ids\": [\n        \"CF.recurring.1.amount\"\n      ]\n    }\n  ],\n  \"key_figure_ids\": [\n    \"APP.requested_amount\",\n    \"CF.avg_monthly_business_inflow\",\n    \"CF.avg_monthly_net\",\n    \"CF.suggested_capacity\",\n    \"CF.request_to_capacity\",\n    \"DOC.D01.closing_balance\"\n  ],\n  \"strengths\": [\n    \"Consistent monthly net operating cash generation across all six documented months\",\n    \"Low revenue volatility with steady upward trajectory in monthly business receipts\",\n    \"Solid accumulation of liquid reserves without statement balance breaks or overdrafts\",\n    \"Clear supplier payment trail validated by fifteen corresponding purchase invoices\"\n  ],\n  \"concerns\": [\n    \"Premises documentation displays synthetic illustration watermarks requiring physical site confirmation\",\n    \"Recurring monthly outgoing transfer of significant scale to a private individual requiring lease contract substantiation\",\n    \"High dependence on physical cash branch deposits for banking turnover\"\n  ],\n  \"recommendation\": \"approve_with_conditions\",\n  \"conditions\": [\n    \"Conduct an on-site physical field verification of the retail shop premises and inventory\",\n    \"Obtain lease agreement or written proof clarifying recurring monthly payments to H. Mahmud\",\n    \"Obtain valid national identity documentation and tax identification of Sari Dewi\"\n  ],\n  \"rationale\": \"Warung Ibu Sari demonstrates steady cash generation, consistent profitability, and strong liquidity growth over six continuous months of banking history. The underlying operating cash flows adequately cover the requested facility size, provided that physical shop operations and recurrent private outflow obligations are verified prior to disbursement.\"\n}",
+ "parsed": {
+  "headline": "Warung Ibu Sari demonstrates stable micro-retail operating cash flows and consistent net surpluses across the first half of the year, supporting the requested working capital facility subject to premises verification.",
+  "sections": [
+   {
+    "heading": "Business overview",
+    "paragraphs": [
+     "Warung Ibu Sari is an Indonesian grocery and daily staples micro-retailer operating under sole proprietor Sari Dewi. The business submitted documentation covering the first half of the year, spanning January through June, to support a working capital loan application of {fig:APP.requested_amount}.",
+     "Premises documentation displays store signage, fast-moving consumer goods, packaged sundries, and digital payment infrastructure. The operation aligns with customary neighborhood retail profiles, exhibiting frequent inventory restocking and regular customer cash transactions."
+    ],
+    "figure_ids": [
+     "APP.requested_amount"
+    ]
+   },
+   {
+    "heading": "Cash flow",
+    "paragraphs": [
+     "Operating performance across the six-month period evidenced continuous positive net cash generation. Total business inflows reached {fig:CF.total_inflow} against total disbursements of {fig:CF.total_outflow}, yielding an aggregate surplus and a positive average monthly net flow of {fig:CF.avg_monthly_net}.",
+     "Monthly business inflows averaged {fig:CF.avg_monthly_business_inflow}, beginning at {fig:CF.m.2026-01.business_inflow} in January and rising to {fig:CF.m.2026-06.business_inflow} in June. This steady performance reflects a monthly growth trend of {fig:CF.revenue_trend_pct} with low top-line volatility of {fig:CF.inflow_volatility_cv}.",
+     "Bank balances accumulated progressively from an opening position of {fig:DOC.D01.opening_balance} on the January statement to a closing position of {fig:DOC.D01.closing_balance} at the end of June."
+    ],
+    "figure_ids": [
+     "CF.total_inflow",
+     "CF.total_outflow",
+     "CF.avg_monthly_net",
+     "CF.avg_monthly_business_inflow",
+     "CF.m.2026-01.business_inflow",
+     "CF.m.2026-06.business_inflow",
+     "CF.revenue_trend_pct",
+     "CF.inflow_volatility_cv",
+     "DOC.D01.opening_balance",
+     "DOC.D01.closing_balance"
+    ]
+   },
+   {
+    "heading": "Revenue quality and concentration",
+    "paragraphs": [
+     "Revenue exhibits a broad retail foundation typical of neighborhood grocery stalls. Inflows were supported by repeated cash branch deposits totaling {fig:CF.cash_deposit_total} across the six months, representing substantial daily transaction turnover deposited through regular branch visits.",
+     "Cash inflows show healthy temporal distribution across billing cycles, with an end-of-month concentration ratio of {fig:CF.end_of_month_concentration}. Bank records show zero circular round-trip transfers and zero artificial self-funding movements."
+    ],
+    "figure_ids": [
+     "CF.cash_deposit_total",
+     "CF.end_of_month_concentration"
+    ]
+   },
+   {
+    "heading": "Obligations and leverage",
+    "paragraphs": [
+     "No structured commercial debt servicing or formal lending debits were identified on bank statements. Regular monthly outflows include a consistent payment to an individual identified as H. Mahmud of {fig:CF.recurring.1.amount} occurring each month, which corresponds to operating overhead or shop premises rental.",
+     "Standard account maintenance debits of {fig:CF.recurring.2.amount} occur monthly. The business retains an illustrative debt servicing baseline of {fig:CF.suggested_capacity}, setting the ratio of the requested facility relative to quarterly free net generation at {fig:CF.request_to_capacity}."
+    ],
+    "figure_ids": [
+     "CF.recurring.1.amount",
+     "CF.recurring.2.amount",
+     "CF.suggested_capacity",
+     "CF.request_to_capacity"
+    ]
+   },
+   {
+    "heading": "Document quality and coverage",
+    "paragraphs": [
+     "Primary financial evaluation is anchored in six continuous months of bank statement records spanning January to June with zero missing months. Reconciliation between stated ledger records and bank statements confirmed zero unaccounted off-ledger income variances.",
+     "Inventory outlays are verified by fifteen expense receipts totaling {fig:CF.receipts_purchases_total} from established wholesale suppliers. However, submitted premises photos display synthetic watermarking and digital illustration characteristics rather than authentic photographs of physical retail premises."
+    ],
+    "figure_ids": [
+     "CF.receipts_purchases_total"
+    ]
+   },
+   {
+    "heading": "Recommendation",
+    "paragraphs": [
+     "A conditional approval is recommended for the requested working capital facility. The business demonstrates sound banking conduct, disciplined liquidity accumulation, and predictable retail operating margins that provide sufficient debt coverage.",
+     "Disbursement must remain subject to verification of physical premises and direct confirmation that the monthly transfer of {fig:CF.recurring.1.amount} represents shop lease obligations rather than unrecorded formal liabilities."
+    ],
+    "figure_ids": [
+     "CF.recurring.1.amount"
+    ]
+   }
+  ],
+  "key_figure_ids": [
+   "APP.requested_amount",
+   "CF.avg_monthly_business_inflow",
+   "CF.avg_monthly_net",
+   "CF.suggested_capacity",
+   "CF.request_to_capacity",
+   "DOC.D01.closing_balance"
+  ],
+  "strengths": [
+   "Consistent monthly net operating cash generation across all six documented months",
+   "Low revenue volatility with steady upward trajectory in monthly business receipts",
+   "Solid accumulation of liquid reserves without statement balance breaks or overdrafts",
+   "Clear supplier payment trail validated by fifteen corresponding purchase invoices"
+  ],
+  "concerns": [
+   "Premises documentation displays synthetic illustration watermarks requiring physical site confirmation",
+   "Recurring monthly outgoing transfer of significant scale to a private individual requiring lease contract substantiation",
+   "High dependence on physical cash branch deposits for banking turnover"
+  ],
+  "recommendation": "approve_with_conditions",
+  "conditions": [
+   "Conduct an on-site physical field verification of the retail shop premises and inventory",
+   "Obtain lease agreement or written proof clarifying recurring monthly payments to H. Mahmud",
+   "Obtain valid national identity documentation and tax identification of Sari Dewi"
+  ],
+  "rationale": "Warung Ibu Sari demonstrates steady cash generation, consistent profitability, and strong liquidity growth over six continuous months of banking history. The underlying operating cash flows adequately cover the requested facility size, provided that physical shop operations and recurrent private outflow obligations are verified prior to disbursement."
+ },
+ "state": {
+  "output": {
+   "headline": "Warung Ibu Sari demonstrates stable micro-retail operating cash flows and consistent net surpluses across the first half of the year, supporting the requested working capital facility subject to premises verification.",
+   "sections": [
+    {
+     "heading": "Business overview",
+     "paragraphs": [
+      "Warung Ibu Sari is an Indonesian grocery and daily staples micro-retailer operating under sole proprietor Sari Dewi. The business submitted documentation covering the first half of the year, spanning January through June, to support a working capital loan application of {fig:APP.requested_amount}.",
+      "Premises documentation displays store signage, fast-moving consumer goods, packaged sundries, and digital payment infrastructure. The operation aligns with customary neighborhood retail profiles, exhibiting frequent inventory restocking and regular customer cash transactions."
+     ],
+     "figure_ids": [
+      "APP.requested_amount"
+     ]
+    },
+    {
+     "heading": "Cash flow",
+     "paragraphs": [
+      "Operating performance across the six-month period evidenced continuous positive net cash generation. Total business inflows reached {fig:CF.total_inflow} against total disbursements of {fig:CF.total_outflow}, yielding an aggregate surplus and a positive average monthly net flow of {fig:CF.avg_monthly_net}.",
+      "Monthly business inflows averaged {fig:CF.avg_monthly_business_inflow}, beginning at {fig:CF.m.2026-01.business_inflow} in January and rising to {fig:CF.m.2026-06.business_inflow} in June. This steady performance reflects a monthly growth trend of {fig:CF.revenue_trend_pct} with low top-line volatility of {fig:CF.inflow_volatility_cv}.",
+      "Bank balances accumulated progressively from an opening position of {fig:DOC.D01.opening_balance} on the January statement to a closing position of {fig:DOC.D01.closing_balance} at the end of June."
+     ],
+     "figure_ids": [
+      "CF.total_inflow",
+      "CF.total_outflow",
+      "CF.avg_monthly_net",
+      "CF.avg_monthly_business_inflow",
+      "CF.m.2026-01.business_inflow",
+      "CF.m.2026-06.business_inflow",
+      "CF.revenue_trend_pct",
+      "CF.inflow_volatility_cv",
+      "DOC.D01.opening_balance",
+      "DOC.D01.closing_balance"
+     ]
+    },
+    {
+     "heading": "Revenue quality and concentration",
+     "paragraphs": [
+      "Revenue exhibits a broad retail foundation typical of neighborhood grocery stalls. Inflows were supported by repeated cash branch deposits totaling {fig:CF.cash_deposit_total} across the six months, representing substantial daily transaction turnover deposited through regular branch visits.",
+      "Cash inflows show healthy temporal distribution across billing cycles, with an end-of-month concentration ratio of {fig:CF.end_of_month_concentration}. Bank records show zero circular round-trip transfers and zero artificial self-funding movements."
+     ],
+     "figure_ids": [
+      "CF.cash_deposit_total",
+      "CF.end_of_month_concentration"
+     ]
+    },
+    {
+     "heading": "Obligations and leverage",
+     "paragraphs": [
+      "No structured commercial debt servicing or formal lending debits were identified on bank statements. Regular monthly outflows include a consistent payment to an individual identified as H. Mahmud of {fig:CF.recurring.1.amount} occurring each month, which corresponds to operating overhead or shop premises rental.",
+      "Standard account maintenance debits of {fig:CF.recurring.2.amount} occur monthly. The business retains an illustrative debt servicing baseline of {fig:CF.suggested_capacity}, setting the ratio of the requested facility relative to quarterly free net generation at {fig:CF.request_to_capacity}."
+     ],
+     "figure_ids": [
+      "CF.recurring.1.amount",
+      "CF.recurring.2.amount",
+      "CF.suggested_capacity",
+      "CF.request_to_capacity"
+     ]
+    },
+    {
+     "heading": "Document quality and coverage",
+     "paragraphs": [
+      "Primary financial evaluation is anchored in six continuous months of bank statement records spanning January to June with zero missing months. Reconciliation between stated ledger records and bank statements confirmed zero unaccounted off-ledger income variances.",
+      "Inventory outlays are verified by fifteen expense receipts totaling {fig:CF.receipts_purchases_total} from established wholesale suppliers. However, submitted premises photos display synthetic watermarking and digital illustration characteristics rather than authentic photographs of physical retail premises."
+     ],
+     "figure_ids": [
+      "CF.receipts_purchases_total"
+     ]
+    },
+    {
+     "heading": "Recommendation",
+     "paragraphs": [
+      "A conditional approval is recommended for the requested working capital facility. The business demonstrates sound banking conduct, disciplined liquidity accumulation, and predictable retail operating margins that provide sufficient debt coverage.",
+      "Disbursement must remain subject to verification of physical premises and direct confirmation that the monthly transfer of {fig:CF.recurring.1.amount} represents shop lease obligations rather than unrecorded formal liabilities."
+     ],
+     "figure_ids": [
+      "CF.recurring.1.amount"
+     ]
+    }
+   ],
+   "key_figure_ids": [
+    "APP.requested_amount",
+    "CF.avg_monthly_business_inflow",
+    "CF.avg_monthly_net",
+    "CF.suggested_capacity",
+    "CF.request_to_capacity",
+    "DOC.D01.closing_balance"
+   ],
+   "strengths": [
+    "Consistent monthly net operating cash generation across all six documented months",
+    "Low revenue volatility with steady upward trajectory in monthly business receipts",
+    "Solid accumulation of liquid reserves without statement balance breaks or overdrafts",
+    "Clear supplier payment trail validated by fifteen corresponding purchase invoices"
+   ],
+   "concerns": [
+    "Premises documentation displays synthetic illustration watermarks requiring physical site confirmation",
+    "Recurring monthly outgoing transfer of significant scale to a private individual requiring lease contract substantiation",
+    "High dependence on physical cash branch deposits for banking turnover"
+   ],
+   "recommendation": "approve_with_conditions",
+   "conditions": [
+    "Conduct an on-site physical field verification of the retail shop premises and inventory",
+    "Obtain lease agreement or written proof clarifying recurring monthly payments to H. Mahmud",
+    "Obtain valid national identity documentation and tax identification of Sari Dewi"
+   ],
+   "rationale": "Warung Ibu Sari demonstrates steady cash generation, consistent profitability, and strong liquidity growth over six continuous months of banking history. The underlying operating cash flows adequately cover the requested facility size, provided that physical shop operations and recurrent private outflow obligations are verified prior to disbursement."
+  }
+ },
+ "input_tokens": 8795,
+ "output_tokens": 1594,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "analyst-v1.3",
+ "agent": "analyst",
+ "cached_at": "2026-10-15T06:59:14+00:00"
+}

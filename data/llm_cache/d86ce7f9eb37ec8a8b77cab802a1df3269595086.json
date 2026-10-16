@@ -1,0 +1,296 @@
+{
+ "text": "{\n  \"documents\": [\n    {\n      \"doc_id\": \"D01\",\n      \"doc_type\": \"bank_statement\",\n      \"language\": \"en\",\n      \"currency\": \"PHP\",\n      \"quality_flags\": [\n        \"synthetic_watermark\"\n      ],\n      \"confidence\": 0.98,\n      \"summary\": \"First page of a Metro Pacific Savings Bank statement of account for Ramon Reyes covering January 2026.\"\n    },\n    {\n      \"doc_id\": \"D02\",\n      \"doc_type\": \"handwritten_ledger\",\n      \"language\": \"tl\",\n      \"currency\": \"PHP\",\n      \"quality_flags\": [\n        \"handwritten\",\n        \"synthetic_watermark\"\n      ],\n      \"confidence\": 0.99,\n      \"summary\": \"Handwritten daily revenue and expense ledger sheet of Reyes Auto Repair for January 2026.\"\n    },\n    {\n      \"doc_id\": \"D03\",\n      \"doc_type\": \"handwritten_ledger\",\n      \"language\": \"tl\",\n      \"currency\": \"PHP\",\n      \"quality_flags\": [\n        \"handwritten\",\n        \"synthetic_watermark\"\n      ],\n      \"confidence\": 0.99,\n      \"summary\": \"Handwritten daily revenue and expense ledger sheet of Reyes Auto Repair for February 2026.\"\n    },\n    {\n      \"doc_id\": \"D04\",\n      \"doc_type\": \"handwritten_ledger\",\n      \"language\": \"tl\",\n      \"currency\": \"PHP\",\n      \"quality_flags\": [\n        \"handwritten\",\n        \"synthetic_watermark\"\n      ],\n      \"confidence\": 0.99,\n      \"summary\": \"Handwritten daily revenue and expense ledger sheet of Reyes Auto Repair for March 2026.\"\n    },\n    {\n      \"doc_id\": \"D05\",\n      \"doc_type\": \"handwritten_ledger\",\n      \"language\": \"tl\",\n      \"currency\": \"PHP\",\n      \"quality_flags\": [\n        \"handwritten\",\n        \"synthetic_watermark\"\n      ],\n      \"confidence\": 0.99,\n      \"summary\": \"Handwritten daily revenue and expense ledger sheet of Reyes Auto Repair for April 2026.\"\n    },\n    {\n      \"doc_id\": \"D06\",\n      \"doc_type\": \"handwritten_ledger\",\n      \"language\": \"tl\",\n      \"currency\": \"PHP\",\n      \"quality_flags\": [\n        \"handwritten\",\n        \"synthetic_watermark\"\n      ],\n      \"confidence\": 0.99,\n      \"summary\": \"Handwritten daily revenue and expense ledger sheet of Reyes Auto Repair for May 2026.\"\n    },\n    {\n      \"doc_id\": \"D07\",\n      \"doc_type\": \"handwritten_ledger\",\n      \"language\": \"tl\",\n      \"currency\": \"PHP\",\n      \"quality_flags\": [\n        \"handwritten\",\n        \"duplicate_suspected\",\n        \"synthetic_watermark\"\n      ],\n      \"confidence\": 0.95,\n      \"summary\": \"Handwritten ledger page labeled April 2026 containing transactions duplicate to March 2026.\"\n    },\n    {\n      \"doc_id\": \"D08\",\n      \"doc_type\": \"handwritten_ledger\",\n      \"language\": \"tl\",\n      \"currency\": \"PHP\",\n      \"quality_flags\": [\n        \"handwritten\",\n        \"synthetic_watermark\"\n      ],\n      \"confidence\": 0.99,\n      \"summary\": \"Handwritten daily revenue and expense ledger sheet of Reyes Auto Repair for June 2026.\"\n    },\n    {\n      \"doc_id\": \"D09\",\n      \"doc_type\": \"handwritten_ledger\",\n      \"language\": \"tl\",\n      \"currency\": \"PHP\",\n      \"quality_flags\": [\n        \"handwritten\",\n        \"synthetic_watermark\"\n      ],\n      \"confidence\": 0.98,\n      \"summary\": \"Handwritten monthly summary ledger sheet showing total income and expenses for January to June 2026.\"\n    },\n    {\n      \"doc_id\": \"D10\",\n      \"doc_type\": \"premises_photo\",\n      \"language\": \"en\",\n      \"currency\": null,\n      \"quality_flags\": [\n        \"synthetic_watermark\"\n      ],\n      \"confidence\": 0.95,\n      \"summary\": \"Exterior storefront illustration of Reyes Auto Repair shop with a vehicle on a lift.\"\n    },\n    {\n      \"doc_id\": \"D11\",\n      \"doc_type\": \"premises_photo\",\n      \"language\": \"en\",\n      \"currency\": null,\n      \"quality_flags\": [\n        \"synthetic_watermark\"\n      ],\n      \"confidence\": 0.95,\n      \"summary\": \"Interior illustration of auto repair garage showing Service Bay 2 with car on a lift.\"\n    }\n  ],\n  \"business_name_candidates\": [\n    \"Reyes Auto Repair\",\n    \"Metro Pacific Savings Bank\"\n  ],\n  \"location_candidates\": [\n    \"Quiapo Branch, Manila\",\n    \"Banawe\"\n  ],\n  \"notes\": \"D07 is a duplicate copy of the March 2026 ledger sheet (D04) with an altered header stating 'Abril 2026'.\"\n}",
+ "parsed": {
+  "documents": [
+   {
+    "doc_id": "D01",
+    "doc_type": "bank_statement",
+    "language": "en",
+    "currency": "PHP",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.98,
+    "summary": "First page of a Metro Pacific Savings Bank statement of account for Ramon Reyes covering January 2026."
+   },
+   {
+    "doc_id": "D02",
+    "doc_type": "handwritten_ledger",
+    "language": "tl",
+    "currency": "PHP",
+    "quality_flags": [
+     "handwritten",
+     "synthetic_watermark"
+    ],
+    "confidence": 0.99,
+    "summary": "Handwritten daily revenue and expense ledger sheet of Reyes Auto Repair for January 2026."
+   },
+   {
+    "doc_id": "D03",
+    "doc_type": "handwritten_ledger",
+    "language": "tl",
+    "currency": "PHP",
+    "quality_flags": [
+     "handwritten",
+     "synthetic_watermark"
+    ],
+    "confidence": 0.99,
+    "summary": "Handwritten daily revenue and expense ledger sheet of Reyes Auto Repair for February 2026."
+   },
+   {
+    "doc_id": "D04",
+    "doc_type": "handwritten_ledger",
+    "language": "tl",
+    "currency": "PHP",
+    "quality_flags": [
+     "handwritten",
+     "synthetic_watermark"
+    ],
+    "confidence": 0.99,
+    "summary": "Handwritten daily revenue and expense ledger sheet of Reyes Auto Repair for March 2026."
+   },
+   {
+    "doc_id": "D05",
+    "doc_type": "handwritten_ledger",
+    "language": "tl",
+    "currency": "PHP",
+    "quality_flags": [
+     "handwritten",
+     "synthetic_watermark"
+    ],
+    "confidence": 0.99,
+    "summary": "Handwritten daily revenue and expense ledger sheet of Reyes Auto Repair for April 2026."
+   },
+   {
+    "doc_id": "D06",
+    "doc_type": "handwritten_ledger",
+    "language": "tl",
+    "currency": "PHP",
+    "quality_flags": [
+     "handwritten",
+     "synthetic_watermark"
+    ],
+    "confidence": 0.99,
+    "summary": "Handwritten daily revenue and expense ledger sheet of Reyes Auto Repair for May 2026."
+   },
+   {
+    "doc_id": "D07",
+    "doc_type": "handwritten_ledger",
+    "language": "tl",
+    "currency": "PHP",
+    "quality_flags": [
+     "handwritten",
+     "duplicate_suspected",
+     "synthetic_watermark"
+    ],
+    "confidence": 0.95,
+    "summary": "Handwritten ledger page labeled April 2026 containing transactions duplicate to March 2026."
+   },
+   {
+    "doc_id": "D08",
+    "doc_type": "handwritten_ledger",
+    "language": "tl",
+    "currency": "PHP",
+    "quality_flags": [
+     "handwritten",
+     "synthetic_watermark"
+    ],
+    "confidence": 0.99,
+    "summary": "Handwritten daily revenue and expense ledger sheet of Reyes Auto Repair for June 2026."
+   },
+   {
+    "doc_id": "D09",
+    "doc_type": "handwritten_ledger",
+    "language": "tl",
+    "currency": "PHP",
+    "quality_flags": [
+     "handwritten",
+     "synthetic_watermark"
+    ],
+    "confidence": 0.98,
+    "summary": "Handwritten monthly summary ledger sheet showing total income and expenses for January to June 2026."
+   },
+   {
+    "doc_id": "D10",
+    "doc_type": "premises_photo",
+    "language": "en",
+    "currency": null,
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.95,
+    "summary": "Exterior storefront illustration of Reyes Auto Repair shop with a vehicle on a lift."
+   },
+   {
+    "doc_id": "D11",
+    "doc_type": "premises_photo",
+    "language": "en",
+    "currency": null,
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.95,
+    "summary": "Interior illustration of auto repair garage showing Service Bay 2 with car on a lift."
+   }
+  ],
+  "business_name_candidates": [
+   "Reyes Auto Repair",
+   "Metro Pacific Savings Bank"
+  ],
+  "location_candidates": [
+   "Quiapo Branch, Manila",
+   "Banawe"
+  ],
+  "notes": "D07 is a duplicate copy of the March 2026 ledger sheet (D04) with an altered header stating 'Abril 2026'."
+ },
+ "state": {
+  "output": {
+   "documents": [
+    {
+     "doc_id": "D01",
+     "doc_type": "bank_statement",
+     "language": "en",
+     "currency": "PHP",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.98,
+     "summary": "First page of a Metro Pacific Savings Bank statement of account for Ramon Reyes covering January 2026."
+    },
+    {
+     "doc_id": "D02",
+     "doc_type": "handwritten_ledger",
+     "language": "tl",
+     "currency": "PHP",
+     "quality_flags": [
+      "handwritten",
+      "synthetic_watermark"
+     ],
+     "confidence": 0.99,
+     "summary": "Handwritten daily revenue and expense ledger sheet of Reyes Auto Repair for January 2026."
+    },
+    {
+     "doc_id": "D03",
+     "doc_type": "handwritten_ledger",
+     "language": "tl",
+     "currency": "PHP",
+     "quality_flags": [
+      "handwritten",
+      "synthetic_watermark"
+     ],
+     "confidence": 0.99,
+     "summary": "Handwritten daily revenue and expense ledger sheet of Reyes Auto Repair for February 2026."
+    },
+    {
+     "doc_id": "D04",
+     "doc_type": "handwritten_ledger",
+     "language": "tl",
+     "currency": "PHP",
+     "quality_flags": [
+      "handwritten",
+      "synthetic_watermark"
+     ],
+     "confidence": 0.99,
+     "summary": "Handwritten daily revenue and expense ledger sheet of Reyes Auto Repair for March 2026."
+    },
+    {
+     "doc_id": "D05",
+     "doc_type": "handwritten_ledger",
+     "language": "tl",
+     "currency": "PHP",
+     "quality_flags": [
+      "handwritten",
+      "synthetic_watermark"
+     ],
+     "confidence": 0.99,
+     "summary": "Handwritten daily revenue and expense ledger sheet of Reyes Auto Repair for April 2026."
+    },
+    {
+     "doc_id": "D06",
+     "doc_type": "handwritten_ledger",
+     "language": "tl",
+     "currency": "PHP",
+     "quality_flags": [
+      "handwritten",
+      "synthetic_watermark"
+     ],
+     "confidence": 0.99,
+     "summary": "Handwritten daily revenue and expense ledger sheet of Reyes Auto Repair for May 2026."
+    },
+    {
+     "doc_id": "D07",
+     "doc_type": "handwritten_ledger",
+     "language": "tl",
+     "currency": "PHP",
+     "quality_flags": [
+      "handwritten",
+      "duplicate_suspected",
+      "synthetic_watermark"
+     ],
+     "confidence": 0.95,
+     "summary": "Handwritten ledger page labeled April 2026 containing transactions duplicate to March 2026."
+    },
+    {
+     "doc_id": "D08",
+     "doc_type": "handwritten_ledger",
+     "language": "tl",
+     "currency": "PHP",
+     "quality_flags": [
+      "handwritten",
+      "synthetic_watermark"
+     ],
+     "confidence": 0.99,
+     "summary": "Handwritten daily revenue and expense ledger sheet of Reyes Auto Repair for June 2026."
+    },
+    {
+     "doc_id": "D09",
+     "doc_type": "handwritten_ledger",
+     "language": "tl",
+     "currency": "PHP",
+     "quality_flags": [
+      "handwritten",
+      "synthetic_watermark"
+     ],
+     "confidence": 0.98,
+     "summary": "Handwritten monthly summary ledger sheet showing total income and expenses for January to June 2026."
+    },
+    {
+     "doc_id": "D10",
+     "doc_type": "premises_photo",
+     "language": "en",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.95,
+     "summary": "Exterior storefront illustration of Reyes Auto Repair shop with a vehicle on a lift."
+    },
+    {
+     "doc_id": "D11",
+     "doc_type": "premises_photo",
+     "language": "en",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.95,
+     "summary": "Interior illustration of auto repair garage showing Service Bay 2 with car on a lift."
+    }
+   ],
+   "business_name_candidates": [
+    "Reyes Auto Repair",
+    "Metro Pacific Savings Bank"
+   ],
+   "location_candidates": [
+    "Quiapo Branch, Manila",
+    "Banawe"
+   ],
+   "notes": "D07 is a duplicate copy of the March 2026 ledger sheet (D04) with an altered header stating 'Abril 2026'."
+  }
+ },
+ "input_tokens": 6560,
+ "output_tokens": 1291,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "intake-v1.0",
+ "agent": "intake",
+ "cached_at": "2026-10-15T07:06:23+00:00"
+}

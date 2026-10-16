@@ -1,6 +1,7 @@
 """Stage 4: the Analyst drafts the memo. It can only *select* figure ids from the deterministic catalog."""
 from __future__ import annotations
 
+import logging
 import re
 from typing import Any
 
@@ -12,8 +13,11 @@ from ..storage import Repository
 from ..tools.checks import find_unsourced_numerals
 from ..tools.sector_benchmark import lookup_sector_benchmark
 from . import prompts
-from .common import FIG_TOKEN, case_facts, catalog_text, extraction_digest, inventory_text
-from .runner import AgentSpec, run_agent
+from .common import DEMO_DATASET_NOTE, FIG_TOKEN, case_facts, catalog_text, extraction_digest, inventory_text
+from .runner import AgentSpec, CacheMiss, run_agent
+
+log = logging.getLogger("ledgerlens.analyst")
+MAX_REDRAFTS = 2
 
 
 def cashflow_text(cf: CashflowSummary) -> str:
@@ -78,12 +82,14 @@ async def run_analyst(case: Case, *, cashflow: CashflowSummary, extractions: lis
     parts: list[types.Part] = [
         types.Part.from_text(text=case_facts(case)),
         types.Part.from_text(text=inventory_text(case)),
-        types.Part.from_text(text=extraction_digest(extractions, docs)),
+        types.Part.from_text(text=extraction_digest(extractions, docs, demo=case.is_demo)),
         types.Part.from_text(text=cashflow_text(cashflow)),
         types.Part.from_text(text=bench_txt),
         types.Part.from_text(text=catalog_text(cashflow.figures)),
         types.Part.from_text(text="Draft the memo now. Remember: no digits in prose, only {fig:ID} tokens from the catalog."),
     ]
+    if case.is_demo:
+        parts.insert(0, types.Part.from_text(text=DEMO_DATASET_NOTE))
     spec = AgentSpec(name="analyst", instruction=prompts.ANALYST, prompt_version=prompts.PROMPT_VERSIONS["analyst"], model=settings.model_pro,
                      output_schema=MemoDraft, description="Drafts the evidence-linked credit memo")
     signals = {
@@ -102,7 +108,26 @@ async def run_analyst(case: Case, *, cashflow: CashflowSummary, extractions: lis
     ctx = {**mock_context, "extra": {"catalog_ids": {f.id: f.label for f in cashflow.figures}, "expected_outcome": case.demo_expected_outcome, "signals": signals}}
     res = await run_agent(spec, parts, settings=settings, repo=repo, case_id=case.id, mock_context=ctx)
     draft = MemoDraft.model_validate(res.parsed)
-    return assemble_memo(case, draft, cashflow.figures, model=res.model or spec.model, prompt_version=spec.prompt_version)
+    memo = assemble_memo(case, draft, cashflow.figures, model=res.model or spec.model, prompt_version=spec.prompt_version)
+    # A memo with typed numbers or unknown figure ids is rejected and redrafted with the offending text quoted back.
+    # If it still fails (or a redraft is not possible, e.g. a cache_only miss), the memo keeps its unsourced list and
+    # the Challenger raises a critical Q9 objection, which the decision form shows as open-critical.
+    for attempt in range(MAX_REDRAFTS):
+        if not memo.unsourced_numerals and not memo.unresolved_figure_ids:
+            break
+        problems = [f"- '{u.text}' in {u.section}: \"...{u.context}...\"" for u in memo.unsourced_numerals[:12]]
+        problems += [f"- unknown figure id {{fig:{fid}}}" for fid in memo.unresolved_figure_ids[:12]]
+        retry_parts = parts + [types.Part.from_text(text="Your previous draft was REJECTED by the source check:\n" + "\n".join(problems)
+                                                    + "\nRewrite the memo. Replace every typed number with a {fig:ID} token from the catalog, "
+                                                      "or remove the claim. Use only catalog ids.")]
+        try:
+            res = await run_agent(spec, retry_parts, settings=settings, repo=repo, case_id=case.id, mock_context=ctx)
+        except CacheMiss:
+            log.warning("analyst redraft %d not in cache (cache_only); keeping flagged memo", attempt + 1)
+            break
+        memo = assemble_memo(case, MemoDraft.model_validate(res.parsed), cashflow.figures, model=res.model or spec.model,
+                             prompt_version=spec.prompt_version)
+    return memo
 
 
 _ = re

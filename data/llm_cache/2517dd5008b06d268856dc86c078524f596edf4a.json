@@ -1,0 +1,361 @@
+{
+ "text": "{\n  \"documents\": [\n    {\n      \"doc_id\": \"D01\",\n      \"doc_type\": \"bank_statement\",\n      \"language\": \"vi\",\n      \"currency\": \"VND\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.98,\n      \"summary\": \"Bank account statement for Nguyen Thi Linh from Ngan Hang So Saigon Mekong covering December 2025 to May 2026.\"\n    },\n    {\n      \"doc_id\": \"D02\",\n      \"doc_type\": \"seller_dashboard\",\n      \"language\": \"vi\",\n      \"currency\": \"VND\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.98,\n      \"summary\": \"Shopee Seller Centre monthly performance dashboard for Linh Fashion Official for January 2026.\"\n    },\n    {\n      \"doc_id\": \"D03\",\n      \"doc_type\": \"seller_dashboard\",\n      \"language\": \"vi\",\n      \"currency\": \"VND\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.98,\n      \"summary\": \"Shopee Seller Centre monthly performance dashboard for Linh Fashion Official for February 2026.\"\n    },\n    {\n      \"doc_id\": \"D04\",\n      \"doc_type\": \"seller_dashboard\",\n      \"language\": \"vi\",\n      \"currency\": \"VND\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.98,\n      \"summary\": \"Shopee Seller Centre monthly performance dashboard for Linh Fashion VN for March 2026.\"\n    },\n    {\n      \"doc_id\": \"D05\",\n      \"doc_type\": \"seller_dashboard\",\n      \"language\": \"vi\",\n      \"currency\": \"VND\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.98,\n      \"summary\": \"Shopee Seller Centre monthly performance dashboard for Linh Fashion Official for April 2026.\"\n    },\n    {\n      \"doc_id\": \"D06\",\n      \"doc_type\": \"seller_dashboard\",\n      \"language\": \"vi\",\n      \"currency\": \"VND\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.98,\n      \"summary\": \"Shopee Seller Centre monthly performance dashboard for Linh Fashion Official for May 2026.\"\n    },\n    {\n      \"doc_id\": \"D07\",\n      \"doc_type\": \"seller_dashboard\",\n      \"language\": \"vi\",\n      \"currency\": \"VND\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.98,\n      \"summary\": \"Shopee Seller Centre monthly performance dashboard for Linh Fashion Official for June 2026.\"\n    },\n    {\n      \"doc_id\": \"D08\",\n      \"doc_type\": \"logistics_receipt\",\n      \"language\": \"vi\",\n      \"currency\": \"VND\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.98,\n      \"summary\": \"GHN Express pickup receipt GHN-2187 dated 22/01/2026 for 7 parcels sent by Linh Fashion Official.\"\n    },\n    {\n      \"doc_id\": \"D09\",\n      \"doc_type\": \"logistics_receipt\",\n      \"language\": \"vi\",\n      \"currency\": \"VND\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.98,\n      \"summary\": \"GHN Express pickup receipt GHN-2231 dated 11/02/2026 for 6 parcels sent by Linh Fashion Official.\"\n    },\n    {\n      \"doc_id\": \"D10\",\n      \"doc_type\": \"logistics_receipt\",\n      \"language\": \"vi\",\n      \"currency\": \"VND\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.98,\n      \"summary\": \"GHN Express pickup receipt GHN-2305 dated 27/03/2026 for 8 parcels sent by Linh Fashion Official.\"\n    },\n    {\n      \"doc_id\": \"D11\",\n      \"doc_type\": \"logistics_receipt\",\n      \"language\": \"vi\",\n      \"currency\": \"VND\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.98,\n      \"summary\": \"GHN Express pickup receipt GHN-2378 dated 22/04/2026 for 5 parcels sent by Linh Fashion Official.\"\n    },\n    {\n      \"doc_id\": \"D12\",\n      \"doc_type\": \"logistics_receipt\",\n      \"language\": \"vi\",\n      \"currency\": \"VND\",\n      \"quality_flags\": [\"synthetic_watermark\", \"duplicate_suspected\"],\n      \"confidence\": 0.95,\n      \"summary\": \"GHN Express pickup receipt GHN-2231 dated 11/03/2026 showing identical waybills and amounts to D09.\"\n    },\n    {\n      \"doc_id\": \"D13\",\n      \"doc_type\": \"logistics_receipt\",\n      \"language\": \"vi\",\n      \"currency\": \"VND\",\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.98,\n      \"summary\": \"J&T Express pickup receipt JT-77109 dated 06/05/2026 for 7 parcels sent by Linh Fashion Official.\"\n    },\n    {\n      \"doc_id\": \"D14\",\n      \"doc_type\": \"premises_photo\",\n      \"language\": \"vi\",\n      \"currency\": null,\n      \"quality_flags\": [\"synthetic_watermark\"],\n      \"confidence\": 0.95,\n      \"summary\": \"Illustrated depiction of the Linh Fashion shop premises showing clothing racks, packaging boxes, and a workstation.\"\n    }\n  ],\n  \"business_name_candidates\": [\n    \"Linh Fashion Official\",\n    \"Linh Fashion VN\",\n    \"Linh Fashion\",\n    \"NGUYEN THI LINH\",\n    \"Ngan Hang So Saigon Mekong\",\n    \"GHN EXPRESS\",\n    \"J&T EXPRESS\"\n  ],\n  \"location_candidates\": [\n    \"PGD Tan Binh, TP. Ho Chi Minh\",\n    \"45/12 CONG HOA, TAN BINH\",\n    \"128 CONG HOA, P.4\",\n    \"77 TRUONG CHINH\"\n  ],\n  \"notes\": \"All documents carry synthetic demo watermarks. Note that D12 reuses the same receipt number (GHN-2231) and waybill identifiers as D09 with an edited date. Also, D04 lists shop name as 'Linh Fashion VN' instead of 'Linh Fashion Official'.\"\n}",
+ "parsed": {
+  "documents": [
+   {
+    "doc_id": "D01",
+    "doc_type": "bank_statement",
+    "language": "vi",
+    "currency": "VND",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.98,
+    "summary": "Bank account statement for Nguyen Thi Linh from Ngan Hang So Saigon Mekong covering December 2025 to May 2026."
+   },
+   {
+    "doc_id": "D02",
+    "doc_type": "seller_dashboard",
+    "language": "vi",
+    "currency": "VND",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.98,
+    "summary": "Shopee Seller Centre monthly performance dashboard for Linh Fashion Official for January 2026."
+   },
+   {
+    "doc_id": "D03",
+    "doc_type": "seller_dashboard",
+    "language": "vi",
+    "currency": "VND",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.98,
+    "summary": "Shopee Seller Centre monthly performance dashboard for Linh Fashion Official for February 2026."
+   },
+   {
+    "doc_id": "D04",
+    "doc_type": "seller_dashboard",
+    "language": "vi",
+    "currency": "VND",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.98,
+    "summary": "Shopee Seller Centre monthly performance dashboard for Linh Fashion VN for March 2026."
+   },
+   {
+    "doc_id": "D05",
+    "doc_type": "seller_dashboard",
+    "language": "vi",
+    "currency": "VND",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.98,
+    "summary": "Shopee Seller Centre monthly performance dashboard for Linh Fashion Official for April 2026."
+   },
+   {
+    "doc_id": "D06",
+    "doc_type": "seller_dashboard",
+    "language": "vi",
+    "currency": "VND",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.98,
+    "summary": "Shopee Seller Centre monthly performance dashboard for Linh Fashion Official for May 2026."
+   },
+   {
+    "doc_id": "D07",
+    "doc_type": "seller_dashboard",
+    "language": "vi",
+    "currency": "VND",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.98,
+    "summary": "Shopee Seller Centre monthly performance dashboard for Linh Fashion Official for June 2026."
+   },
+   {
+    "doc_id": "D08",
+    "doc_type": "logistics_receipt",
+    "language": "vi",
+    "currency": "VND",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.98,
+    "summary": "GHN Express pickup receipt GHN-2187 dated 22/01/2026 for 7 parcels sent by Linh Fashion Official."
+   },
+   {
+    "doc_id": "D09",
+    "doc_type": "logistics_receipt",
+    "language": "vi",
+    "currency": "VND",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.98,
+    "summary": "GHN Express pickup receipt GHN-2231 dated 11/02/2026 for 6 parcels sent by Linh Fashion Official."
+   },
+   {
+    "doc_id": "D10",
+    "doc_type": "logistics_receipt",
+    "language": "vi",
+    "currency": "VND",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.98,
+    "summary": "GHN Express pickup receipt GHN-2305 dated 27/03/2026 for 8 parcels sent by Linh Fashion Official."
+   },
+   {
+    "doc_id": "D11",
+    "doc_type": "logistics_receipt",
+    "language": "vi",
+    "currency": "VND",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.98,
+    "summary": "GHN Express pickup receipt GHN-2378 dated 22/04/2026 for 5 parcels sent by Linh Fashion Official."
+   },
+   {
+    "doc_id": "D12",
+    "doc_type": "logistics_receipt",
+    "language": "vi",
+    "currency": "VND",
+    "quality_flags": [
+     "synthetic_watermark",
+     "duplicate_suspected"
+    ],
+    "confidence": 0.95,
+    "summary": "GHN Express pickup receipt GHN-2231 dated 11/03/2026 showing identical waybills and amounts to D09."
+   },
+   {
+    "doc_id": "D13",
+    "doc_type": "logistics_receipt",
+    "language": "vi",
+    "currency": "VND",
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.98,
+    "summary": "J&T Express pickup receipt JT-77109 dated 06/05/2026 for 7 parcels sent by Linh Fashion Official."
+   },
+   {
+    "doc_id": "D14",
+    "doc_type": "premises_photo",
+    "language": "vi",
+    "currency": null,
+    "quality_flags": [
+     "synthetic_watermark"
+    ],
+    "confidence": 0.95,
+    "summary": "Illustrated depiction of the Linh Fashion shop premises showing clothing racks, packaging boxes, and a workstation."
+   }
+  ],
+  "business_name_candidates": [
+   "Linh Fashion Official",
+   "Linh Fashion VN",
+   "Linh Fashion",
+   "NGUYEN THI LINH",
+   "Ngan Hang So Saigon Mekong",
+   "GHN EXPRESS",
+   "J&T EXPRESS"
+  ],
+  "location_candidates": [
+   "PGD Tan Binh, TP. Ho Chi Minh",
+   "45/12 CONG HOA, TAN BINH",
+   "128 CONG HOA, P.4",
+   "77 TRUONG CHINH"
+  ],
+  "notes": "All documents carry synthetic demo watermarks. Note that D12 reuses the same receipt number (GHN-2231) and waybill identifiers as D09 with an edited date. Also, D04 lists shop name as 'Linh Fashion VN' instead of 'Linh Fashion Official'."
+ },
+ "state": {
+  "output": {
+   "documents": [
+    {
+     "doc_id": "D01",
+     "doc_type": "bank_statement",
+     "language": "vi",
+     "currency": "VND",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.98,
+     "summary": "Bank account statement for Nguyen Thi Linh from Ngan Hang So Saigon Mekong covering December 2025 to May 2026."
+    },
+    {
+     "doc_id": "D02",
+     "doc_type": "seller_dashboard",
+     "language": "vi",
+     "currency": "VND",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.98,
+     "summary": "Shopee Seller Centre monthly performance dashboard for Linh Fashion Official for January 2026."
+    },
+    {
+     "doc_id": "D03",
+     "doc_type": "seller_dashboard",
+     "language": "vi",
+     "currency": "VND",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.98,
+     "summary": "Shopee Seller Centre monthly performance dashboard for Linh Fashion Official for February 2026."
+    },
+    {
+     "doc_id": "D04",
+     "doc_type": "seller_dashboard",
+     "language": "vi",
+     "currency": "VND",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.98,
+     "summary": "Shopee Seller Centre monthly performance dashboard for Linh Fashion VN for March 2026."
+    },
+    {
+     "doc_id": "D05",
+     "doc_type": "seller_dashboard",
+     "language": "vi",
+     "currency": "VND",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.98,
+     "summary": "Shopee Seller Centre monthly performance dashboard for Linh Fashion Official for April 2026."
+    },
+    {
+     "doc_id": "D06",
+     "doc_type": "seller_dashboard",
+     "language": "vi",
+     "currency": "VND",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.98,
+     "summary": "Shopee Seller Centre monthly performance dashboard for Linh Fashion Official for May 2026."
+    },
+    {
+     "doc_id": "D07",
+     "doc_type": "seller_dashboard",
+     "language": "vi",
+     "currency": "VND",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.98,
+     "summary": "Shopee Seller Centre monthly performance dashboard for Linh Fashion Official for June 2026."
+    },
+    {
+     "doc_id": "D08",
+     "doc_type": "logistics_receipt",
+     "language": "vi",
+     "currency": "VND",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.98,
+     "summary": "GHN Express pickup receipt GHN-2187 dated 22/01/2026 for 7 parcels sent by Linh Fashion Official."
+    },
+    {
+     "doc_id": "D09",
+     "doc_type": "logistics_receipt",
+     "language": "vi",
+     "currency": "VND",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.98,
+     "summary": "GHN Express pickup receipt GHN-2231 dated 11/02/2026 for 6 parcels sent by Linh Fashion Official."
+    },
+    {
+     "doc_id": "D10",
+     "doc_type": "logistics_receipt",
+     "language": "vi",
+     "currency": "VND",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.98,
+     "summary": "GHN Express pickup receipt GHN-2305 dated 27/03/2026 for 8 parcels sent by Linh Fashion Official."
+    },
+    {
+     "doc_id": "D11",
+     "doc_type": "logistics_receipt",
+     "language": "vi",
+     "currency": "VND",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.98,
+     "summary": "GHN Express pickup receipt GHN-2378 dated 22/04/2026 for 5 parcels sent by Linh Fashion Official."
+    },
+    {
+     "doc_id": "D12",
+     "doc_type": "logistics_receipt",
+     "language": "vi",
+     "currency": "VND",
+     "quality_flags": [
+      "synthetic_watermark",
+      "duplicate_suspected"
+     ],
+     "confidence": 0.95,
+     "summary": "GHN Express pickup receipt GHN-2231 dated 11/03/2026 showing identical waybills and amounts to D09."
+    },
+    {
+     "doc_id": "D13",
+     "doc_type": "logistics_receipt",
+     "language": "vi",
+     "currency": "VND",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.98,
+     "summary": "J&T Express pickup receipt JT-77109 dated 06/05/2026 for 7 parcels sent by Linh Fashion Official."
+    },
+    {
+     "doc_id": "D14",
+     "doc_type": "premises_photo",
+     "language": "vi",
+     "quality_flags": [
+      "synthetic_watermark"
+     ],
+     "confidence": 0.95,
+     "summary": "Illustrated depiction of the Linh Fashion shop premises showing clothing racks, packaging boxes, and a workstation."
+    }
+   ],
+   "business_name_candidates": [
+    "Linh Fashion Official",
+    "Linh Fashion VN",
+    "Linh Fashion",
+    "NGUYEN THI LINH",
+    "Ngan Hang So Saigon Mekong",
+    "GHN EXPRESS",
+    "J&T EXPRESS"
+   ],
+   "location_candidates": [
+    "PGD Tan Binh, TP. Ho Chi Minh",
+    "45/12 CONG HOA, TAN BINH",
+    "128 CONG HOA, P.4",
+    "77 TRUONG CHINH"
+   ],
+   "notes": "All documents carry synthetic demo watermarks. Note that D12 reuses the same receipt number (GHN-2231) and waybill identifiers as D09 with an edited date. Also, D04 lists shop name as 'Linh Fashion VN' instead of 'Linh Fashion Official'."
+  }
+ },
+ "input_tokens": 8198,
+ "output_tokens": 1677,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "intake-v1.0",
+ "agent": "intake",
+ "cached_at": "2026-10-15T07:03:59+00:00"
+}

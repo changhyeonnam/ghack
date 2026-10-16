@@ -1,0 +1,210 @@
+{
+ "text": "{\n  \"headline\": \"Warung Ibu Sari demonstrates consistent positive monthly cash flow and authentic grocery operations but requires conditions due to a low net margin buffer relative to the requested loan size.\",\n  \"sections\": [\n    {\n      \"heading\": \"Business overview\",\n      \"paragraphs\": [\n        \"Warung Ibu Sari is a micro grocery retail business operated by Sari Dewi in Indonesia. Physical verification photos confirm an active storefront with visible signage, shelf inventory comprising packaged goods and beverages, gas and water containers, and an active digital QRIS payment station.\",\n        \"The business requests a working capital facility of {fig:APP.requested_amount}. Banking and supplier records cover the first half of the year, demonstrating established relationships with regional fast-moving consumer goods wholesalers.\"\n      ],\n      \"figure_ids\": [\"APP.requested_amount\"]\n    },\n    {\n      \"heading\": \"Cash flow\",\n      \"paragraphs\": [\n        \"Bank statement records from Bank Nusantara Digital show consistent operational volume across all six months. Total inflow across the period reached {fig:CF.total_inflow} against total outflow of {fig:CF.total_outflow}, generating an average monthly business inflow of {fig:CF.avg_monthly_business_inflow} and average monthly outflow of {fig:CF.avg_monthly_outflow}.\",\n        \"Net operational cash flow remained positive in every month, delivering an average monthly net surplus of {fig:CF.avg_monthly_net}. Monthly business inflow grew steadily with a positive trend of {fig:CF.revenue_trend_pct} and minimal volatility, reflected in a low coefficient of variation of {fig:CF.inflow_volatility_cv}. Bank closing balances accumulated from an opening level of {fig:DOC.D01.opening_balance} to {fig:DOC.D01.closing_balance}.\"\n      ],\n      \"figure_ids\": [\n        \"CF.total_inflow\",\n        \"CF.total_outflow\",\n        \"CF.avg_monthly_business_inflow\",\n        \"CF.avg_monthly_outflow\",\n        \"CF.avg_monthly_net\",\n        \"CF.revenue_trend_pct\",\n        \"CF.inflow_volatility_cv\",\n        \"DOC.D01.opening_balance\",\n        \"DOC.D01.closing_balance\"\n      ]\n    },\n    {\n      \"heading\": \"Revenue quality and concentration\",\n      \"paragraphs\": [\n        \"The applicant's inflows display healthy distribution, with credits arriving steadily throughout each calendar month. The share of inflow arriving in the final five days of the month stands at {fig:CF.end_of_month_concentration}, indicating regular retail cash flow rather than lumpy periodic settlements.\",\n        \"Cash deposits into the bank account total {fig:CF.cash_deposit_total}, which is consistent with neighborhood retail grocery turnover. Inflow analysis detected zero round-trips, zero self-transfers, and zero unverified large one-off deposits.\"\n      ],\n      \"figure_ids\": [\n        \"CF.end_of_month_concentration\",\n        \"CF.cash_deposit_total\"\n      ]\n    },\n    {\n      \"heading\": \"Obligations and leverage\",\n      \"paragraphs\": [\n        \"The account statements reflect regular supplier disbursements to wholesale grocery vendors such as Grosir Sembako Barokah, Toko Grosir Makmur, and CV Sumber Rejeki. A fixed recurring monthly transfer of {fig:CF.recurring.1.amount} occurs at the start of each month to H. Mahmud, which appears to represent commercial rent for the shop premises rather than institutional debt service.\",\n        \"Based on an illustrative repayment capacity of {fig:CF.suggested_capacity}, the requested loan principal of {fig:APP.requested_amount} represents a ratio of {fig:CF.request_to_capacity}. Because net monthly retained cash averages {fig:CF.avg_monthly_net}, debt service for the full requested principal would absorb a substantial share of monthly retained earnings unless structured over an extended tenor.\"\n      ],\n      \"figure_ids\": [\n        \"CF.recurring.1.amount\",\n        \"CF.suggested_capacity\",\n        \"APP.requested_amount\",\n        \"CF.request_to_capacity\",\n        \"CF.avg_monthly_net\"\n      ]\n    },\n    {\n      \"heading\": \"Document quality and coverage\",\n      \"paragraphs\": [\n        \"Documentation coverage is complete and consistent. The applicant submitted a continuous six-month bank statement from Bank Nusantara Digital covering January through June with zero missing months and unbroken balance continuity.\",\n        \"The file includes multiple purchase receipts totaling {fig:CF.receipts_purchases_total} from regular trade suppliers across the entire period, matching vendor names and transaction patterns observed on the bank ledger. Premises photographs corroborate the business trade name and retail inventory.\"\n      ],\n      \"figure_ids\": [\n        \"CF.receipts_purchases_total\"\n      ]\n    },\n    {\n      \"heading\": \"Recommendation\",\n      \"paragraphs\": [\n        \"Approval with conditions is recommended. Warung Ibu Sari exhibits solid revenue consistency, positive monthly net cash generation, and clean document hygiene. However, because the requested loan size is elevated relative to average monthly net operational cash, prudent underwriting controls regarding amortization structure and bank deduction are necessary.\"\n      ],\n      \"figure_ids\": []\n    }\n  ],\n  \"key_figure_ids\": [\n    \"APP.requested_amount\",\n    \"CF.avg_monthly_business_inflow\",\n    \"CF.avg_monthly_net\",\n    \"CF.suggested_capacity\",\n    \"CF.request_to_capacity\",\n    \"DOC.D01.closing_balance\"\n  ],\n  \"strengths\": [\n    \"Consistent positive net cash flow across all six evaluated months with zero balance breaks.\",\n    \"Stable revenue growth with low cash flow volatility and no artificial round-tripping or self-transfers.\",\n    \"Documented physical premises and matching wholesale supplier purchase receipts supporting legitimate business activity.\"\n  ],\n  \"concerns\": [\n    \"Requested loan amount is more than four times the standard illustrative single-quarter repayment capacity.\",\n    \"Fixed monthly overhead transfer to the landlord absorbs a steady portion of gross operational cash.\"\n  ],\n  \"recommendation\": \"approve_with_conditions\",\n  \"conditions\": [\n    \"Structure loan tenor with equal monthly amortizations sized such that debt service does not exceed half of average net monthly cash flow.\",\n    \"Establish auto-debit on the applicant's Bank Nusantara Digital account timed immediately following typical monthly cash deposit peaks.\",\n    \"Obtain written landlord confirmation or rental agreement verifying lease continuity for the business premises.\"\n  ],\n  \"rationale\": \"The borrower runs a viable, revenue-generating grocery business with stable cash flow and authentic operations. While cash generation is reliable, thin net profit margins relative to the requested principal require conservative tenor structuring and automated collection controls.\"\n}",
+ "parsed": {
+  "headline": "Warung Ibu Sari demonstrates consistent positive monthly cash flow and authentic grocery operations but requires conditions due to a low net margin buffer relative to the requested loan size.",
+  "sections": [
+   {
+    "heading": "Business overview",
+    "paragraphs": [
+     "Warung Ibu Sari is a micro grocery retail business operated by Sari Dewi in Indonesia. Physical verification photos confirm an active storefront with visible signage, shelf inventory comprising packaged goods and beverages, gas and water containers, and an active digital QRIS payment station.",
+     "The business requests a working capital facility of {fig:APP.requested_amount}. Banking and supplier records cover the first half of the year, demonstrating established relationships with regional fast-moving consumer goods wholesalers."
+    ],
+    "figure_ids": [
+     "APP.requested_amount"
+    ]
+   },
+   {
+    "heading": "Cash flow",
+    "paragraphs": [
+     "Bank statement records from Bank Nusantara Digital show consistent operational volume across all six months. Total inflow across the period reached {fig:CF.total_inflow} against total outflow of {fig:CF.total_outflow}, generating an average monthly business inflow of {fig:CF.avg_monthly_business_inflow} and average monthly outflow of {fig:CF.avg_monthly_outflow}.",
+     "Net operational cash flow remained positive in every month, delivering an average monthly net surplus of {fig:CF.avg_monthly_net}. Monthly business inflow grew steadily with a positive trend of {fig:CF.revenue_trend_pct} and minimal volatility, reflected in a low coefficient of variation of {fig:CF.inflow_volatility_cv}. Bank closing balances accumulated from an opening level of {fig:DOC.D01.opening_balance} to {fig:DOC.D01.closing_balance}."
+    ],
+    "figure_ids": [
+     "CF.total_inflow",
+     "CF.total_outflow",
+     "CF.avg_monthly_business_inflow",
+     "CF.avg_monthly_outflow",
+     "CF.avg_monthly_net",
+     "CF.revenue_trend_pct",
+     "CF.inflow_volatility_cv",
+     "DOC.D01.opening_balance",
+     "DOC.D01.closing_balance"
+    ]
+   },
+   {
+    "heading": "Revenue quality and concentration",
+    "paragraphs": [
+     "The applicant's inflows display healthy distribution, with credits arriving steadily throughout each calendar month. The share of inflow arriving in the final five days of the month stands at {fig:CF.end_of_month_concentration}, indicating regular retail cash flow rather than lumpy periodic settlements.",
+     "Cash deposits into the bank account total {fig:CF.cash_deposit_total}, which is consistent with neighborhood retail grocery turnover. Inflow analysis detected zero round-trips, zero self-transfers, and zero unverified large one-off deposits."
+    ],
+    "figure_ids": [
+     "CF.end_of_month_concentration",
+     "CF.cash_deposit_total"
+    ]
+   },
+   {
+    "heading": "Obligations and leverage",
+    "paragraphs": [
+     "The account statements reflect regular supplier disbursements to wholesale grocery vendors such as Grosir Sembako Barokah, Toko Grosir Makmur, and CV Sumber Rejeki. A fixed recurring monthly transfer of {fig:CF.recurring.1.amount} occurs at the start of each month to H. Mahmud, which appears to represent commercial rent for the shop premises rather than institutional debt service.",
+     "Based on an illustrative repayment capacity of {fig:CF.suggested_capacity}, the requested loan principal of {fig:APP.requested_amount} represents a ratio of {fig:CF.request_to_capacity}. Because net monthly retained cash averages {fig:CF.avg_monthly_net}, debt service for the full requested principal would absorb a substantial share of monthly retained earnings unless structured over an extended tenor."
+    ],
+    "figure_ids": [
+     "CF.recurring.1.amount",
+     "CF.suggested_capacity",
+     "APP.requested_amount",
+     "CF.request_to_capacity",
+     "CF.avg_monthly_net"
+    ]
+   },
+   {
+    "heading": "Document quality and coverage",
+    "paragraphs": [
+     "Documentation coverage is complete and consistent. The applicant submitted a continuous six-month bank statement from Bank Nusantara Digital covering January through June with zero missing months and unbroken balance continuity.",
+     "The file includes multiple purchase receipts totaling {fig:CF.receipts_purchases_total} from regular trade suppliers across the entire period, matching vendor names and transaction patterns observed on the bank ledger. Premises photographs corroborate the business trade name and retail inventory."
+    ],
+    "figure_ids": [
+     "CF.receipts_purchases_total"
+    ]
+   },
+   {
+    "heading": "Recommendation",
+    "paragraphs": [
+     "Approval with conditions is recommended. Warung Ibu Sari exhibits solid revenue consistency, positive monthly net cash generation, and clean document hygiene. However, because the requested loan size is elevated relative to average monthly net operational cash, prudent underwriting controls regarding amortization structure and bank deduction are necessary."
+    ],
+    "figure_ids": []
+   }
+  ],
+  "key_figure_ids": [
+   "APP.requested_amount",
+   "CF.avg_monthly_business_inflow",
+   "CF.avg_monthly_net",
+   "CF.suggested_capacity",
+   "CF.request_to_capacity",
+   "DOC.D01.closing_balance"
+  ],
+  "strengths": [
+   "Consistent positive net cash flow across all six evaluated months with zero balance breaks.",
+   "Stable revenue growth with low cash flow volatility and no artificial round-tripping or self-transfers.",
+   "Documented physical premises and matching wholesale supplier purchase receipts supporting legitimate business activity."
+  ],
+  "concerns": [
+   "Requested loan amount is more than four times the standard illustrative single-quarter repayment capacity.",
+   "Fixed monthly overhead transfer to the landlord absorbs a steady portion of gross operational cash."
+  ],
+  "recommendation": "approve_with_conditions",
+  "conditions": [
+   "Structure loan tenor with equal monthly amortizations sized such that debt service does not exceed half of average net monthly cash flow.",
+   "Establish auto-debit on the applicant's Bank Nusantara Digital account timed immediately following typical monthly cash deposit peaks.",
+   "Obtain written landlord confirmation or rental agreement verifying lease continuity for the business premises."
+  ],
+  "rationale": "The borrower runs a viable, revenue-generating grocery business with stable cash flow and authentic operations. While cash generation is reliable, thin net profit margins relative to the requested principal require conservative tenor structuring and automated collection controls."
+ },
+ "state": {
+  "output": {
+   "headline": "Warung Ibu Sari demonstrates consistent positive monthly cash flow and authentic grocery operations but requires conditions due to a low net margin buffer relative to the requested loan size.",
+   "sections": [
+    {
+     "heading": "Business overview",
+     "paragraphs": [
+      "Warung Ibu Sari is a micro grocery retail business operated by Sari Dewi in Indonesia. Physical verification photos confirm an active storefront with visible signage, shelf inventory comprising packaged goods and beverages, gas and water containers, and an active digital QRIS payment station.",
+      "The business requests a working capital facility of {fig:APP.requested_amount}. Banking and supplier records cover the first half of the year, demonstrating established relationships with regional fast-moving consumer goods wholesalers."
+     ],
+     "figure_ids": [
+      "APP.requested_amount"
+     ]
+    },
+    {
+     "heading": "Cash flow",
+     "paragraphs": [
+      "Bank statement records from Bank Nusantara Digital show consistent operational volume across all six months. Total inflow across the period reached {fig:CF.total_inflow} against total outflow of {fig:CF.total_outflow}, generating an average monthly business inflow of {fig:CF.avg_monthly_business_inflow} and average monthly outflow of {fig:CF.avg_monthly_outflow}.",
+      "Net operational cash flow remained positive in every month, delivering an average monthly net surplus of {fig:CF.avg_monthly_net}. Monthly business inflow grew steadily with a positive trend of {fig:CF.revenue_trend_pct} and minimal volatility, reflected in a low coefficient of variation of {fig:CF.inflow_volatility_cv}. Bank closing balances accumulated from an opening level of {fig:DOC.D01.opening_balance} to {fig:DOC.D01.closing_balance}."
+     ],
+     "figure_ids": [
+      "CF.total_inflow",
+      "CF.total_outflow",
+      "CF.avg_monthly_business_inflow",
+      "CF.avg_monthly_outflow",
+      "CF.avg_monthly_net",
+      "CF.revenue_trend_pct",
+      "CF.inflow_volatility_cv",
+      "DOC.D01.opening_balance",
+      "DOC.D01.closing_balance"
+     ]
+    },
+    {
+     "heading": "Revenue quality and concentration",
+     "paragraphs": [
+      "The applicant's inflows display healthy distribution, with credits arriving steadily throughout each calendar month. The share of inflow arriving in the final five days of the month stands at {fig:CF.end_of_month_concentration}, indicating regular retail cash flow rather than lumpy periodic settlements.",
+      "Cash deposits into the bank account total {fig:CF.cash_deposit_total}, which is consistent with neighborhood retail grocery turnover. Inflow analysis detected zero round-trips, zero self-transfers, and zero unverified large one-off deposits."
+     ],
+     "figure_ids": [
+      "CF.end_of_month_concentration",
+      "CF.cash_deposit_total"
+     ]
+    },
+    {
+     "heading": "Obligations and leverage",
+     "paragraphs": [
+      "The account statements reflect regular supplier disbursements to wholesale grocery vendors such as Grosir Sembako Barokah, Toko Grosir Makmur, and CV Sumber Rejeki. A fixed recurring monthly transfer of {fig:CF.recurring.1.amount} occurs at the start of each month to H. Mahmud, which appears to represent commercial rent for the shop premises rather than institutional debt service.",
+      "Based on an illustrative repayment capacity of {fig:CF.suggested_capacity}, the requested loan principal of {fig:APP.requested_amount} represents a ratio of {fig:CF.request_to_capacity}. Because net monthly retained cash averages {fig:CF.avg_monthly_net}, debt service for the full requested principal would absorb a substantial share of monthly retained earnings unless structured over an extended tenor."
+     ],
+     "figure_ids": [
+      "CF.recurring.1.amount",
+      "CF.suggested_capacity",
+      "APP.requested_amount",
+      "CF.request_to_capacity",
+      "CF.avg_monthly_net"
+     ]
+    },
+    {
+     "heading": "Document quality and coverage",
+     "paragraphs": [
+      "Documentation coverage is complete and consistent. The applicant submitted a continuous six-month bank statement from Bank Nusantara Digital covering January through June with zero missing months and unbroken balance continuity.",
+      "The file includes multiple purchase receipts totaling {fig:CF.receipts_purchases_total} from regular trade suppliers across the entire period, matching vendor names and transaction patterns observed on the bank ledger. Premises photographs corroborate the business trade name and retail inventory."
+     ],
+     "figure_ids": [
+      "CF.receipts_purchases_total"
+     ]
+    },
+    {
+     "heading": "Recommendation",
+     "paragraphs": [
+      "Approval with conditions is recommended. Warung Ibu Sari exhibits solid revenue consistency, positive monthly net cash generation, and clean document hygiene. However, because the requested loan size is elevated relative to average monthly net operational cash, prudent underwriting controls regarding amortization structure and bank deduction are necessary."
+     ],
+     "figure_ids": []
+    }
+   ],
+   "key_figure_ids": [
+    "APP.requested_amount",
+    "CF.avg_monthly_business_inflow",
+    "CF.avg_monthly_net",
+    "CF.suggested_capacity",
+    "CF.request_to_capacity",
+    "DOC.D01.closing_balance"
+   ],
+   "strengths": [
+    "Consistent positive net cash flow across all six evaluated months with zero balance breaks.",
+    "Stable revenue growth with low cash flow volatility and no artificial round-tripping or self-transfers.",
+    "Documented physical premises and matching wholesale supplier purchase receipts supporting legitimate business activity."
+   ],
+   "concerns": [
+    "Requested loan amount is more than four times the standard illustrative single-quarter repayment capacity.",
+    "Fixed monthly overhead transfer to the landlord absorbs a steady portion of gross operational cash."
+   ],
+   "recommendation": "approve_with_conditions",
+   "conditions": [
+    "Structure loan tenor with equal monthly amortizations sized such that debt service does not exceed half of average net monthly cash flow.",
+    "Establish auto-debit on the applicant's Bank Nusantara Digital account timed immediately following typical monthly cash deposit peaks.",
+    "Obtain written landlord confirmation or rental agreement verifying lease continuity for the business premises."
+   ],
+   "rationale": "The borrower runs a viable, revenue-generating grocery business with stable cash flow and authentic operations. While cash generation is reliable, thin net profit margins relative to the requested principal require conservative tenor structuring and automated collection controls."
+  }
+ },
+ "input_tokens": 8848,
+ "output_tokens": 1542,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "analyst-v1.4",
+ "agent": "analyst",
+ "cached_at": "2026-10-16T06:16:15+00:00"
+}

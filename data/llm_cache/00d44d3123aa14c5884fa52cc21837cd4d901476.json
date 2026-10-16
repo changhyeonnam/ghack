@@ -1,0 +1,927 @@
+{
+ "text": "{\"business_name_header\":\"Reyes Auto Repair\",\"address_header\":null,\"currency\":\"PHP\",\"period_label\":\"Abril 2026\",\"entries\":[{\"row_id\":\"L0001\",\"date\":\"2026-04-01\",\"description\":\"Aircon cleaning - Innova\",\"amount\":3300.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":156,\"xmin\":89,\"ymax\":182,\"xmax\":920},\"snippet\":\"1 | Aircon cleaning - Innova | 3,300\"}},{\"row_id\":\"L0002\",\"date\":\"2026-04-04\",\"description\":\"Palit bumbilya + wiper - Vios\",\"amount\":1850.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":185,\"xmin\":86,\"ymax\":211,\"xmax\":920},\"snippet\":\"4 | Palit bumbilya + wiper - Vios | 1,850\"}},{\"row_id\":\"L0003\",\"date\":\"2026-04-06\",\"description\":\"Fan belt - Hilux\",\"amount\":1900.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":238,\"xmin\":86,\"ymax\":263,\"xmax\":920},\"snippet\":\"6 | Fan belt - Hilux | 1,900\"}},{\"row_id\":\"L0004\",\"date\":\"2026-04-06\",\"description\":\"Bili parts - Banawe\",\"amount\":-3100.0,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":265,\"xmin\":88,\"ymax\":291,\"xmax\":920},\"snippet\":\"6 | Bili parts - Banawe | -3,100\"}},{\"row_id\":\"L0005\",\"date\":\"2026-04-07\",\"description\":\"Check engine - Avanza\",\"amount\":2000.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":290,\"xmin\":87,\"ymax\":317,\"xmax\":920},\"snippet\":\"7 | Check engine - Avanza | 2,000\"}},{\"row_id\":\"L0006\",\"date\":\"2026-04-08\",\"description\":\"Palit brake fluid - Mirage\",\"amount\":1700.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":316,\"xmin\":86,\"ymax\":342,\"xmax\":920},\"snippet\":\"8 | Palit brake fluid - Mirage | 1,700\"}},{\"row_id\":\"L0007\",\"date\":\"2026-04-10\",\"description\":\"Palit brake fluid - Mirage\",\"amount\":2000.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":342,\"xmin\":86,\"ymax\":368,\"xmax\":920},\"snippet\":\"10 | Palit brake fluid - Mirage | 2,000\"}},{\"row_id\":\"L0008\",\"date\":\"2026-04-11\",\"description\":\"Palit bumbilya + wiper - Vios\",\"amount\":1700.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":368,\"xmin\":88,\"ymax\":394,\"xmax\":920},\"snippet\":\"11 | Palit bumbilya + wiper - Vios | 1,700\"}},{\"row_id\":\"L0009\",\"date\":\"2026-04-11\",\"description\":\"Bili sandpaper, grease\",\"amount\":-550.0,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":395,\"xmin\":88,\"ymax\":421,\"xmax\":920},\"snippet\":\"11 | Bili sandpaper, grease | -550\"}},{\"row_id\":\"L0010\",\"date\":\"2026-04-13\",\"description\":\"Palit brake fluid - Mirage\",\"amount\":1900.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":446,\"xmin\":88,\"ymax\":472,\"xmax\":922},\"snippet\":\"13 | Palit brake fluid - Mirage | 1,900\"}},{\"row_id\":\"L0011\",\"date\":\"2026-04-14\",\"description\":\"Overhaul deposit - L300\",\"amount\":5400.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":471,\"xmin\":88,\"ymax\":497,\"xmax\":922},\"snippet\":\"14 | Overhaul deposit - L300 | 5,400\"}},{\"row_id\":\"L0012\",\"date\":\"2026-04-15\",\"description\":\"Tune up - Mitsubishi Mirage\",\"amount\":2700.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":497,\"xmin\":88,\"ymax\":523,\"xmax\":922},\"snippet\":\"15 | Tune up - Mitsubishi Mirage | 2,700\"}},{\"row_id\":\"L0013\",\"date\":\"2026-04-15\",\"description\":\"Tubig + yelo\",\"amount\":-500.0,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":523,\"xmin\":88,\"ymax\":549,\"xmax\":922},\"snippet\":\"15 | Tubig + yelo | -500\"}},{\"row_id\":\"L0014\",\"date\":\"2026-04-17\",\"description\":\"Radiator flush - Adventure\",\"amount\":2100.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":548,\"xmin\":88,\"ymax\":574,\"xmax\":922},\"snippet\":\"17 | Radiator flush - Adventure | 2,100\"}},{\"row_id\":\"L0015\",\"date\":\"2026-04-18\",\"description\":\"Palit gulong x2 - Fortuner\",\"amount\":5050.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":573,\"xmin\":88,\"ymax\":599,\"xmax\":923},\"snippet\":\"18 | Palit gulong x2 - Fortuner | 5,050\"}},{\"row_id\":\"L0016\",\"date\":\"2026-04-20\",\"description\":\"Underchassis - Civic\",\"amount\":2650.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":625,\"xmin\":88,\"ymax\":651,\"xmax\":923},\"snippet\":\"20 | Underchassis - Civic | 2,650\"}},{\"row_id\":\"L0017\",\"date\":\"2026-04-21\",\"description\":\"Clutch adjust - Wigo\",\"amount\":2250.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":652,\"xmin\":88,\"ymax\":678,\"xmax\":923},\"snippet\":\"21 | Clutch adjust - Wigo | 2,250\"}},{\"row_id\":\"L0018\",\"date\":\"2026-04-22\",\"description\":\"Tune up - Mitsubishi Mirage\",\"amount\":3650.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":678,\"xmin\":88,\"ymax\":703,\"xmax\":923},\"snippet\":\"22 | Tune up - Mitsubishi Mirage | 3,650\"}},{\"row_id\":\"L0019\",\"date\":\"2026-04-24\",\"description\":\"Palit shock absorber - Xpander\",\"amount\":4850.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":704,\"xmin\":88,\"ymax\":730,\"xmax\":923},\"snippet\":\"24 | Palit shock absorber - Xpander | 4,850\"}},{\"row_id\":\"L0020\",\"date\":\"2026-04-24\",\"description\":\"Tubig + yelo\",\"amount\":-300.0,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":730,\"xmin\":88,\"ymax\":756,\"xmax\":923},\"snippet\":\"24 | Tubig + yelo | -300\"}},{\"row_id\":\"L0021\",\"date\":\"2026-04-25\",\"description\":\"Check engine - Avanza\",\"amount\":3000.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":756,\"xmin\":88,\"ymax\":782,\"xmax\":924},\"snippet\":\"25 | Check engine - Avanza | 3,000\"}},{\"row_id\":\"L0022\",\"date\":\"2026-04-27\",\"description\":\"Alternator repair - Crosswind\",\"amount\":5450.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":807,\"xmin\":88,\"ymax\":833,\"xmax\":927},\"snippet\":\"27 | Alternator repair - Crosswind | 5,450\"}},{\"row_id\":\"L0023\",\"date\":\"2026-04-28\",\"description\":\"Fan belt - Hilux\",\"amount\":1650.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":833,\"xmin\":88,\"ymax\":859,\"xmax\":927},\"snippet\":\"28 | Fan belt - Hilux | 1,650\"}},{\"row_id\":\"L0024\",\"date\":\"2026-04-29\",\"description\":\"Palit bumbilya + wiper - Vios\",\"amount\":1750.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":859,\"xmin\":88,\"ymax\":884,\"xmax\":927},\"snippet\":\"29 | Palit bumbilya + wiper - Vios | 1,750\"}},{\"row_id\":\"L0025\",\"date\":\"2026-04-30\",\"description\":\"Overhaul deposit - L300\",\"amount\":5100.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":885,\"xmin\":88,\"ymax\":911,\"xmax\":927},\"snippet\":\"30 | Overhaul deposit - L300 | 5,100\"}}]}",
+ "parsed": {
+  "business_name_header": "Reyes Auto Repair",
+  "address_header": null,
+  "currency": "PHP",
+  "period_label": "Abril 2026",
+  "entries": [
+   {
+    "row_id": "L0001",
+    "date": "2026-04-01",
+    "description": "Aircon cleaning - Innova",
+    "amount": 3300.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 156,
+      "xmin": 89,
+      "ymax": 182,
+      "xmax": 920
+     },
+     "snippet": "1 | Aircon cleaning - Innova | 3,300"
+    }
+   },
+   {
+    "row_id": "L0002",
+    "date": "2026-04-04",
+    "description": "Palit bumbilya + wiper - Vios",
+    "amount": 1850.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 185,
+      "xmin": 86,
+      "ymax": 211,
+      "xmax": 920
+     },
+     "snippet": "4 | Palit bumbilya + wiper - Vios | 1,850"
+    }
+   },
+   {
+    "row_id": "L0003",
+    "date": "2026-04-06",
+    "description": "Fan belt - Hilux",
+    "amount": 1900.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 238,
+      "xmin": 86,
+      "ymax": 263,
+      "xmax": 920
+     },
+     "snippet": "6 | Fan belt - Hilux | 1,900"
+    }
+   },
+   {
+    "row_id": "L0004",
+    "date": "2026-04-06",
+    "description": "Bili parts - Banawe",
+    "amount": -3100.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 265,
+      "xmin": 88,
+      "ymax": 291,
+      "xmax": 920
+     },
+     "snippet": "6 | Bili parts - Banawe | -3,100"
+    }
+   },
+   {
+    "row_id": "L0005",
+    "date": "2026-04-07",
+    "description": "Check engine - Avanza",
+    "amount": 2000.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 290,
+      "xmin": 87,
+      "ymax": 317,
+      "xmax": 920
+     },
+     "snippet": "7 | Check engine - Avanza | 2,000"
+    }
+   },
+   {
+    "row_id": "L0006",
+    "date": "2026-04-08",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 1700.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 316,
+      "xmin": 86,
+      "ymax": 342,
+      "xmax": 920
+     },
+     "snippet": "8 | Palit brake fluid - Mirage | 1,700"
+    }
+   },
+   {
+    "row_id": "L0007",
+    "date": "2026-04-10",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 2000.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 342,
+      "xmin": 86,
+      "ymax": 368,
+      "xmax": 920
+     },
+     "snippet": "10 | Palit brake fluid - Mirage | 2,000"
+    }
+   },
+   {
+    "row_id": "L0008",
+    "date": "2026-04-11",
+    "description": "Palit bumbilya + wiper - Vios",
+    "amount": 1700.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 368,
+      "xmin": 88,
+      "ymax": 394,
+      "xmax": 920
+     },
+     "snippet": "11 | Palit bumbilya + wiper - Vios | 1,700"
+    }
+   },
+   {
+    "row_id": "L0009",
+    "date": "2026-04-11",
+    "description": "Bili sandpaper, grease",
+    "amount": -550.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 395,
+      "xmin": 88,
+      "ymax": 421,
+      "xmax": 920
+     },
+     "snippet": "11 | Bili sandpaper, grease | -550"
+    }
+   },
+   {
+    "row_id": "L0010",
+    "date": "2026-04-13",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 1900.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 446,
+      "xmin": 88,
+      "ymax": 472,
+      "xmax": 922
+     },
+     "snippet": "13 | Palit brake fluid - Mirage | 1,900"
+    }
+   },
+   {
+    "row_id": "L0011",
+    "date": "2026-04-14",
+    "description": "Overhaul deposit - L300",
+    "amount": 5400.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 471,
+      "xmin": 88,
+      "ymax": 497,
+      "xmax": 922
+     },
+     "snippet": "14 | Overhaul deposit - L300 | 5,400"
+    }
+   },
+   {
+    "row_id": "L0012",
+    "date": "2026-04-15",
+    "description": "Tune up - Mitsubishi Mirage",
+    "amount": 2700.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 497,
+      "xmin": 88,
+      "ymax": 523,
+      "xmax": 922
+     },
+     "snippet": "15 | Tune up - Mitsubishi Mirage | 2,700"
+    }
+   },
+   {
+    "row_id": "L0013",
+    "date": "2026-04-15",
+    "description": "Tubig + yelo",
+    "amount": -500.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 523,
+      "xmin": 88,
+      "ymax": 549,
+      "xmax": 922
+     },
+     "snippet": "15 | Tubig + yelo | -500"
+    }
+   },
+   {
+    "row_id": "L0014",
+    "date": "2026-04-17",
+    "description": "Radiator flush - Adventure",
+    "amount": 2100.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 548,
+      "xmin": 88,
+      "ymax": 574,
+      "xmax": 922
+     },
+     "snippet": "17 | Radiator flush - Adventure | 2,100"
+    }
+   },
+   {
+    "row_id": "L0015",
+    "date": "2026-04-18",
+    "description": "Palit gulong x2 - Fortuner",
+    "amount": 5050.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 573,
+      "xmin": 88,
+      "ymax": 599,
+      "xmax": 923
+     },
+     "snippet": "18 | Palit gulong x2 - Fortuner | 5,050"
+    }
+   },
+   {
+    "row_id": "L0016",
+    "date": "2026-04-20",
+    "description": "Underchassis - Civic",
+    "amount": 2650.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 625,
+      "xmin": 88,
+      "ymax": 651,
+      "xmax": 923
+     },
+     "snippet": "20 | Underchassis - Civic | 2,650"
+    }
+   },
+   {
+    "row_id": "L0017",
+    "date": "2026-04-21",
+    "description": "Clutch adjust - Wigo",
+    "amount": 2250.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 652,
+      "xmin": 88,
+      "ymax": 678,
+      "xmax": 923
+     },
+     "snippet": "21 | Clutch adjust - Wigo | 2,250"
+    }
+   },
+   {
+    "row_id": "L0018",
+    "date": "2026-04-22",
+    "description": "Tune up - Mitsubishi Mirage",
+    "amount": 3650.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 678,
+      "xmin": 88,
+      "ymax": 703,
+      "xmax": 923
+     },
+     "snippet": "22 | Tune up - Mitsubishi Mirage | 3,650"
+    }
+   },
+   {
+    "row_id": "L0019",
+    "date": "2026-04-24",
+    "description": "Palit shock absorber - Xpander",
+    "amount": 4850.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 704,
+      "xmin": 88,
+      "ymax": 730,
+      "xmax": 923
+     },
+     "snippet": "24 | Palit shock absorber - Xpander | 4,850"
+    }
+   },
+   {
+    "row_id": "L0020",
+    "date": "2026-04-24",
+    "description": "Tubig + yelo",
+    "amount": -300.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 730,
+      "xmin": 88,
+      "ymax": 756,
+      "xmax": 923
+     },
+     "snippet": "24 | Tubig + yelo | -300"
+    }
+   },
+   {
+    "row_id": "L0021",
+    "date": "2026-04-25",
+    "description": "Check engine - Avanza",
+    "amount": 3000.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 756,
+      "xmin": 88,
+      "ymax": 782,
+      "xmax": 924
+     },
+     "snippet": "25 | Check engine - Avanza | 3,000"
+    }
+   },
+   {
+    "row_id": "L0022",
+    "date": "2026-04-27",
+    "description": "Alternator repair - Crosswind",
+    "amount": 5450.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 807,
+      "xmin": 88,
+      "ymax": 833,
+      "xmax": 927
+     },
+     "snippet": "27 | Alternator repair - Crosswind | 5,450"
+    }
+   },
+   {
+    "row_id": "L0023",
+    "date": "2026-04-28",
+    "description": "Fan belt - Hilux",
+    "amount": 1650.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 833,
+      "xmin": 88,
+      "ymax": 859,
+      "xmax": 927
+     },
+     "snippet": "28 | Fan belt - Hilux | 1,650"
+    }
+   },
+   {
+    "row_id": "L0024",
+    "date": "2026-04-29",
+    "description": "Palit bumbilya + wiper - Vios",
+    "amount": 1750.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 859,
+      "xmin": 88,
+      "ymax": 884,
+      "xmax": 927
+     },
+     "snippet": "29 | Palit bumbilya + wiper - Vios | 1,750"
+    }
+   },
+   {
+    "row_id": "L0025",
+    "date": "2026-04-30",
+    "description": "Overhaul deposit - L300",
+    "amount": 5100.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 885,
+      "xmin": 88,
+      "ymax": 911,
+      "xmax": 927
+     },
+     "snippet": "30 | Overhaul deposit - L300 | 5,100"
+    }
+   }
+  ]
+ },
+ "state": {
+  "output": {
+   "business_name_header": "Reyes Auto Repair",
+   "currency": "PHP",
+   "period_label": "Abril 2026",
+   "entries": [
+    {
+     "row_id": "L0001",
+     "date": "2026-04-01",
+     "description": "Aircon cleaning - Innova",
+     "amount": 3300.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 156,
+       "xmin": 89,
+       "ymax": 182,
+       "xmax": 920
+      },
+      "snippet": "1 | Aircon cleaning - Innova | 3,300"
+     }
+    },
+    {
+     "row_id": "L0002",
+     "date": "2026-04-04",
+     "description": "Palit bumbilya + wiper - Vios",
+     "amount": 1850.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 185,
+       "xmin": 86,
+       "ymax": 211,
+       "xmax": 920
+      },
+      "snippet": "4 | Palit bumbilya + wiper - Vios | 1,850"
+     }
+    },
+    {
+     "row_id": "L0003",
+     "date": "2026-04-06",
+     "description": "Fan belt - Hilux",
+     "amount": 1900.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 238,
+       "xmin": 86,
+       "ymax": 263,
+       "xmax": 920
+      },
+      "snippet": "6 | Fan belt - Hilux | 1,900"
+     }
+    },
+    {
+     "row_id": "L0004",
+     "date": "2026-04-06",
+     "description": "Bili parts - Banawe",
+     "amount": -3100.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 265,
+       "xmin": 88,
+       "ymax": 291,
+       "xmax": 920
+      },
+      "snippet": "6 | Bili parts - Banawe | -3,100"
+     }
+    },
+    {
+     "row_id": "L0005",
+     "date": "2026-04-07",
+     "description": "Check engine - Avanza",
+     "amount": 2000.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 290,
+       "xmin": 87,
+       "ymax": 317,
+       "xmax": 920
+      },
+      "snippet": "7 | Check engine - Avanza | 2,000"
+     }
+    },
+    {
+     "row_id": "L0006",
+     "date": "2026-04-08",
+     "description": "Palit brake fluid - Mirage",
+     "amount": 1700.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 316,
+       "xmin": 86,
+       "ymax": 342,
+       "xmax": 920
+      },
+      "snippet": "8 | Palit brake fluid - Mirage | 1,700"
+     }
+    },
+    {
+     "row_id": "L0007",
+     "date": "2026-04-10",
+     "description": "Palit brake fluid - Mirage",
+     "amount": 2000.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 342,
+       "xmin": 86,
+       "ymax": 368,
+       "xmax": 920
+      },
+      "snippet": "10 | Palit brake fluid - Mirage | 2,000"
+     }
+    },
+    {
+     "row_id": "L0008",
+     "date": "2026-04-11",
+     "description": "Palit bumbilya + wiper - Vios",
+     "amount": 1700.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 368,
+       "xmin": 88,
+       "ymax": 394,
+       "xmax": 920
+      },
+      "snippet": "11 | Palit bumbilya + wiper - Vios | 1,700"
+     }
+    },
+    {
+     "row_id": "L0009",
+     "date": "2026-04-11",
+     "description": "Bili sandpaper, grease",
+     "amount": -550.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 395,
+       "xmin": 88,
+       "ymax": 421,
+       "xmax": 920
+      },
+      "snippet": "11 | Bili sandpaper, grease | -550"
+     }
+    },
+    {
+     "row_id": "L0010",
+     "date": "2026-04-13",
+     "description": "Palit brake fluid - Mirage",
+     "amount": 1900.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 446,
+       "xmin": 88,
+       "ymax": 472,
+       "xmax": 922
+      },
+      "snippet": "13 | Palit brake fluid - Mirage | 1,900"
+     }
+    },
+    {
+     "row_id": "L0011",
+     "date": "2026-04-14",
+     "description": "Overhaul deposit - L300",
+     "amount": 5400.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 471,
+       "xmin": 88,
+       "ymax": 497,
+       "xmax": 922
+      },
+      "snippet": "14 | Overhaul deposit - L300 | 5,400"
+     }
+    },
+    {
+     "row_id": "L0012",
+     "date": "2026-04-15",
+     "description": "Tune up - Mitsubishi Mirage",
+     "amount": 2700.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 497,
+       "xmin": 88,
+       "ymax": 523,
+       "xmax": 922
+      },
+      "snippet": "15 | Tune up - Mitsubishi Mirage | 2,700"
+     }
+    },
+    {
+     "row_id": "L0013",
+     "date": "2026-04-15",
+     "description": "Tubig + yelo",
+     "amount": -500.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 523,
+       "xmin": 88,
+       "ymax": 549,
+       "xmax": 922
+      },
+      "snippet": "15 | Tubig + yelo | -500"
+     }
+    },
+    {
+     "row_id": "L0014",
+     "date": "2026-04-17",
+     "description": "Radiator flush - Adventure",
+     "amount": 2100.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 548,
+       "xmin": 88,
+       "ymax": 574,
+       "xmax": 922
+      },
+      "snippet": "17 | Radiator flush - Adventure | 2,100"
+     }
+    },
+    {
+     "row_id": "L0015",
+     "date": "2026-04-18",
+     "description": "Palit gulong x2 - Fortuner",
+     "amount": 5050.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 573,
+       "xmin": 88,
+       "ymax": 599,
+       "xmax": 923
+      },
+      "snippet": "18 | Palit gulong x2 - Fortuner | 5,050"
+     }
+    },
+    {
+     "row_id": "L0016",
+     "date": "2026-04-20",
+     "description": "Underchassis - Civic",
+     "amount": 2650.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 625,
+       "xmin": 88,
+       "ymax": 651,
+       "xmax": 923
+      },
+      "snippet": "20 | Underchassis - Civic | 2,650"
+     }
+    },
+    {
+     "row_id": "L0017",
+     "date": "2026-04-21",
+     "description": "Clutch adjust - Wigo",
+     "amount": 2250.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 652,
+       "xmin": 88,
+       "ymax": 678,
+       "xmax": 923
+      },
+      "snippet": "21 | Clutch adjust - Wigo | 2,250"
+     }
+    },
+    {
+     "row_id": "L0018",
+     "date": "2026-04-22",
+     "description": "Tune up - Mitsubishi Mirage",
+     "amount": 3650.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 678,
+       "xmin": 88,
+       "ymax": 703,
+       "xmax": 923
+      },
+      "snippet": "22 | Tune up - Mitsubishi Mirage | 3,650"
+     }
+    },
+    {
+     "row_id": "L0019",
+     "date": "2026-04-24",
+     "description": "Palit shock absorber - Xpander",
+     "amount": 4850.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 704,
+       "xmin": 88,
+       "ymax": 730,
+       "xmax": 923
+      },
+      "snippet": "24 | Palit shock absorber - Xpander | 4,850"
+     }
+    },
+    {
+     "row_id": "L0020",
+     "date": "2026-04-24",
+     "description": "Tubig + yelo",
+     "amount": -300.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 730,
+       "xmin": 88,
+       "ymax": 756,
+       "xmax": 923
+      },
+      "snippet": "24 | Tubig + yelo | -300"
+     }
+    },
+    {
+     "row_id": "L0021",
+     "date": "2026-04-25",
+     "description": "Check engine - Avanza",
+     "amount": 3000.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 756,
+       "xmin": 88,
+       "ymax": 782,
+       "xmax": 924
+      },
+      "snippet": "25 | Check engine - Avanza | 3,000"
+     }
+    },
+    {
+     "row_id": "L0022",
+     "date": "2026-04-27",
+     "description": "Alternator repair - Crosswind",
+     "amount": 5450.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 807,
+       "xmin": 88,
+       "ymax": 833,
+       "xmax": 927
+      },
+      "snippet": "27 | Alternator repair - Crosswind | 5,450"
+     }
+    },
+    {
+     "row_id": "L0023",
+     "date": "2026-04-28",
+     "description": "Fan belt - Hilux",
+     "amount": 1650.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 833,
+       "xmin": 88,
+       "ymax": 859,
+       "xmax": 927
+      },
+      "snippet": "28 | Fan belt - Hilux | 1,650"
+     }
+    },
+    {
+     "row_id": "L0024",
+     "date": "2026-04-29",
+     "description": "Palit bumbilya + wiper - Vios",
+     "amount": 1750.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 859,
+       "xmin": 88,
+       "ymax": 884,
+       "xmax": 927
+      },
+      "snippet": "29 | Palit bumbilya + wiper - Vios | 1,750"
+     }
+    },
+    {
+     "row_id": "L0025",
+     "date": "2026-04-30",
+     "description": "Overhaul deposit - L300",
+     "amount": 5100.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 885,
+       "xmin": 88,
+       "ymax": 911,
+       "xmax": 927
+      },
+      "snippet": "30 | Overhaul deposit - L300 | 5,100"
+     }
+    }
+   ]
+  }
+ },
+ "input_tokens": 996,
+ "output_tokens": 2668,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:handwritten_ledger",
+ "cached_at": "2026-10-15T07:06:59+00:00"
+}

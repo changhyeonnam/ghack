@@ -1,0 +1,56 @@
+{
+ "results": [
+  {
+   "text": "### Q1: Double Counting of Revenue\n- **Verdict**: PASS\n- **Evidence**: There are no seller dashboards or separate sales ledgers submitted; the 15 expense receipts (D02–D16) represent purchase outlays (outflows) totaling 14,430,500 IDR rather than sales revenues. Cash reconciliation indicates receipt sales = 0 IDR and ledger income = 0 IDR against 75,050,000 IDR in bank cash deposits, yielding an off-ledger variance of 0 IDR (`CF.off_ledger_income_estimate`). No double counting of revenue exists.\n\n### Q2: Month-to-Month Swings & Seasonality\n- **Verdict**: PASS\n- **Evidence**: Business inflows show steady, low-volatility progression from 30,683,000 IDR in 2026-01 (`CF.m.2026-01.business_inflow`) to 36,486,000 IDR in 2026-06 (`CF.m.2026-06.business_inflow`), with an inflow coefficient of variation of 0.063 (`CF.inflow_volatility_cv`) and an average month-on-month trend of +3.42% (`CF.revenue_trend_pct`). There are no large erratic spikes or one-off artificial inflows distorting operating performance.\n\n### Q3: Self-Transfers and Round-Trips\n- **Verdict**: PASS\n- **Evidence**: Automated checks and statement parsing identify 0 self-transfers (`sender = account holder`) and 0 circular round-trips. Inflows are comprised of recurring customer transfers and 26 regular physical cash branch deposits totaling 75,050,000 IDR (`CF.cash_deposit_total`).\n\n### Q4: Image Duplication / Document Reuse\n- **Verdict**: PASS\n- **Evidence**: Tool check via `image_similarity` on D17 and D18 yielded a Hamming distance of 102 (`verdict: different`). Automated check confirms 0 duplicate images across all 18 files. (Note: Synthetic watermarking on premises photos is addressed under Q8).\n\n### Q5: Period Alignment Across Documents\n- **Verdict**: PASS\n- **Evidence**: Bank statement D01 covers 2026-01-01 through 2026-06-30 across all 6 calendar months with zero missing months (`CF.months_missing_count` = 0). The 15 supplier purchase receipts span January 2026 through June 2026, aligning squarely within the statement evaluation period.\n\n### Q6: Running Balance Continuity\n- **Verdict**: PASS\n- **Evidence**: Verified using `recompute_balance_chain` on D01 (`bank_statement_2026H1.pdf`). Across all 184 transactions (credits 120, debits 64), 0 balance continuity breaks were found. Opening balance of 10,550,000 IDR (`DOC.D01.opening_balance`) perfectly rolls forward to the closing balance of 21,878,054 IDR (`DOC.D01.closing_balance`).\n\n### Q7: Recurring Transfers / Undisclosed Liabilities\n- **Verdict**: PASS\n- **Evidence**: Verification via `lookup_transactions` for recurring debits identified:\n  1. H. MAHMUD: 2,500,000 IDR debited on the 1st of each month (rows T0001, T0034, T0065, T0096, T0125, T0155). The transaction description explicitly reads `\"SEWA KIOS BULAN [MM]/2026 - H. MAHMUD\"`, confirming these are shop premises lease rental payments rather than debt service.\n  2. BIAYA ADMIN BULANAN: 15,000 IDR debited at each month-end (rows T0033, T0064, T0095, T0124, T0154, T0184), representing routine bank account administration fees.\n  No informal lender, fintech/BNPL, or unrecorded loan repayments were detected.\n\n### Q8: Premises Photo Plausibility\n- **Verdict**: OBJECTION\n- **Severity**: Medium\n- **Evidence**: Both submitted premises images (D17: `premises_01.jpg` and D18: `premises_02.jpg`) are tagged with synthetic demo watermarks (`flags=synthetic_watermark`) and describe stylized graphic illustrations rather than authentic photographic evidence of an operating brick-and-mortar warung. While the memo accurately captures this limitation and imposes a pre-disbursement on-site field verification condition, the submission of synthetic imagery remains an inherent documentation integrity defect.\n\n### Q9: Sourced Figures in Memo\n- **Verdict**: PASS\n- **Evidence**: All 20 figures cited in the credit memo prose are mapped directly to valid catalog entries with exact identifiers and valid evidence refs (D01, D02–D16, T0001, T0033, etc.). There are 0 unsourced figures and 0 unsourced numerals.\n\n### Q10: Month-End Inflow Concentration (Window Dressing)\n- **Verdict**: PASS\n- **Evidence**: The month-end concentration ratio is 0.162 (`CF.end_of_month_concentration`), meaning only 16.2% of inflows land during the final five days of the month. Inflows are evenly distributed across each month through daily customer payments and routine cash deposits.\n\n### Q11: Entity and Identity Consistency\n- **Verdict**: PASS\n- **Evidence**: Business name (\"Warung Ibu Sari\") is consistent across the application, store signage descriptions in D17/D18, and statement descriptions. The bank account holder (\"SARI DEWI\") is consistent between application records and D01.\n\n### Q12: Currency and Language Consistency\n- **Verdict**: PASS\n- **Evidence**: Currency is consistently Indonesian Rupiah (`IDR`) across all 18 documents. Stated and extracted language is consistently Indonesian (`id`), matching the operating location in Indonesia.\n\n---\n\n### Overall Assessment\nThe credit memo for Warung Ibu Sari is financially robust, thoroughly sourced, and technically sound. Balance chain continuity over 184 transactions is verified with zero breaks, cash deposits are legitimate, and recurring monthly disbursements to H. Mahmud are verified as kiosk lease payments (\"SEWA KIOS\") rather than unrecorded debt service. The only notable defect is the submission of synthetic illustrative images for shop premises (D17 and D18), which the memo has appropriately addressed via a mandatory physical site inspection condition prior to loan disbursement.",
+   "parsed": null
+  },
+  {
+   "text": "{\n  \"objections\": [\n    {\n      \"id\": \"OBJ-001\",\n      \"question_id\": \"Q8\",\n      \"severity\": \"medium\",\n      \"title\": \"Submitted premises images are synthetic illustrations\",\n      \"claim\": \"Documents D17 (premises_01.jpg) and D18 (premises_02.jpg) contain synthetic demo watermarks and represent stylized graphic illustrations rather than authentic photographs of an operational retail kiosk.\",\n      \"evidence_refs\": [\n        {\n          \"doc_id\": \"D17\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"premises_01.jpg\"\n        },\n        {\n          \"doc_id\": \"D18\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"premises_02.jpg\"\n        }\n      ],\n      \"figure_ids\": [],\n      \"tool_evidence\": \"image_flags: synthetic_watermark; document inventory metadata\",\n      \"suggested_action\": \"Require an on-site physical field inspection of the retail kiosk or request geo-tagged photographs showing actual store operations and inventory before disbursing funds.\",\n      \"financial_impact\": null\n    }\n  ],\n  \"questions_checked\": [\n    \"Q1\",\n    \"Q2\",\n    \"Q3\",\n    \"Q4\",\n    \"Q5\",\n    \"Q6\",\n    \"Q7\",\n    \"Q8\",\n    \"Q9\",\n    \"Q10\",\n    \"Q11\",\n    \"Q12\"\n  ],\n  \"overall_assessment\": \"The financial profile of Warung Ibu Sari is well-supported by 6 months of continuous bank records, zero balance continuity breaks across 184 transactions, and substantiated recurring lease outflows to H. Mahmud. All numerical memo claims are fully sourced and cash flows demonstrate consistent profitability. However, the applicant submitted synthetic graphic illustrations for premises verification (D17, D18), requiring strict physical field inspection prior to loan disbursement.\"\n}",
+   "parsed": {
+    "objections": [
+     {
+      "id": "OBJ-001",
+      "question_id": "Q8",
+      "severity": "medium",
+      "title": "Submitted premises images are synthetic illustrations",
+      "claim": "Documents D17 (premises_01.jpg) and D18 (premises_02.jpg) contain synthetic demo watermarks and represent stylized graphic illustrations rather than authentic photographs of an operational retail kiosk.",
+      "evidence_refs": [
+       {
+        "doc_id": "D17",
+        "page": 1,
+        "bbox": null,
+        "snippet": "premises_01.jpg"
+       },
+       {
+        "doc_id": "D18",
+        "page": 1,
+        "bbox": null,
+        "snippet": "premises_02.jpg"
+       }
+      ],
+      "figure_ids": [],
+      "tool_evidence": "image_flags: synthetic_watermark; document inventory metadata",
+      "suggested_action": "Require an on-site physical field inspection of the retail kiosk or request geo-tagged photographs showing actual store operations and inventory before disbursing funds.",
+      "financial_impact": null
+     }
+    ],
+    "questions_checked": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12"
+    ],
+    "overall_assessment": "The financial profile of Warung Ibu Sari is well-supported by 6 months of continuous bank records, zero balance continuity breaks across 184 transactions, and substantiated recurring lease outflows to H. Mahmud. All numerical memo claims are fully sourced and cash flows demonstrate consistent profitability. However, the applicant submitted synthetic graphic illustrations for premises verification (D17, D18), requiring strict physical field inspection prior to loan disbursement."
+   }
+  }
+ ],
+ "cached_at": "2026-10-15T07:02:56+00:00"
+}
