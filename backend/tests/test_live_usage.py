@@ -37,6 +37,9 @@ def test_provider_limit_is_recognised_and_remembered(tmp_path):
     s, repo = _repo(tmp_path)
     err = RuntimeError("402 RESOURCE_EXHAUSTED. Your prepayment credits are depleted.")
     assert budget.is_provider_limit_error(err) and not budget.is_provider_limit_error(RuntimeError("503 UNAVAILABLE high demand"))
+    per_minute = RuntimeError("429 RESOURCE_EXHAUSTED. You exceeded your current quota. Quota exceeded for metric: "
+                              "generate_requests_per_model, quotaId: GenerateRequestsPerMinutePerProjectPerModel. Please retry in 6.8s.")
+    assert not budget.is_provider_limit_error(per_minute)  # rate limit: retry, do not pause for an hour
     budget.record_provider_limit(repo, err)
     st = budget.state(repo, s)
     assert st["exhausted"] and st["reason"] == "provider_limit"

@@ -17,8 +17,10 @@ from ..config import Settings
 from ..storage import Repository
 
 PROVIDER_DOC = "ai_provider_limit"
-_PROVIDER_LIMIT = re.compile(r"\b402\b|prepayment|credits? (?:are |is )?depleted|billing|exceeded your current quota|quota exceeded|"
-                             r"RESOURCE_EXHAUSTED.*quota|quota.*RESOURCE_EXHAUSTED", re.IGNORECASE | re.DOTALL)
+# Billing limits only. A 429 per-minute rate limit ("exceeded your current quota ... PerMinute ... retry in 6s") is
+# transient and must not pause live analysis for the cool-down; it is retried by the runner instead.
+_PROVIDER_LIMIT = re.compile(r"\b402\b|prepayment|credits? (?:are |is )?depleted|billing account|PerDay", re.IGNORECASE)
+_TRANSIENT = re.compile(r"PerMinute|retry in [0-9.]+s|retryDelay", re.IGNORECASE)
 
 
 class BudgetExceeded(RuntimeError):
@@ -26,7 +28,10 @@ class BudgetExceeded(RuntimeError):
 
 
 def is_provider_limit_error(exc: BaseException) -> bool:
-    return bool(_PROVIDER_LIMIT.search(f"{type(exc).__name__}: {exc}"))
+    msg = f"{type(exc).__name__}: {exc}"
+    if _TRANSIENT.search(msg) and not re.search(r"\b402\b|prepayment|depleted", msg, re.IGNORECASE):
+        return False
+    return bool(_PROVIDER_LIMIT.search(msg))
 
 
 def record_provider_limit(repo: Repository, exc: BaseException) -> None:
