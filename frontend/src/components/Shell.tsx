@@ -1,6 +1,6 @@
 import { useEffect, useState, type ReactNode } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { getHealth } from '../api'
+import { AI_LIMIT_EVENT, getHealth } from '../api'
 import { modelDisplayName } from '../format'
 import type { Health } from '../types'
 import { Icon, LensMark } from './Icons'
@@ -13,15 +13,23 @@ export function TopBar() {
 
   useEffect(() => {
     let cancelled = false
-    getHealth()
-      .then((h) => !cancelled && setHealth(h))
-      .catch(() => !cancelled && setHealth('error'))
+    const load = () =>
+      getHealth()
+        .then((h) => !cancelled && setHealth(h))
+        .catch(() => !cancelled && setHealth('error'))
+    void load()
+    const timer = window.setInterval(load, 60_000)
+    window.addEventListener(AI_LIMIT_EVENT, load)
     return () => {
       cancelled = true
+      window.clearInterval(timer)
+      window.removeEventListener(AI_LIMIT_EVENT, load)
     }
   }, [])
 
+  const limit = health && health !== 'error' ? health.ai_limit : undefined
   return (
+    <>
     <header className="topbar">
       <div className="topbar-inner">
         <Link to="/" className="wordmark" aria-label="LedgerLens home">
@@ -53,6 +61,19 @@ export function TopBar() {
         </div>
       </div>
     </header>
+    {limit?.exhausted ? (
+      <div className="ai-limit-banner" role="status">
+        <Icon name="alert" size={16} />
+        <span>
+          <strong>Live AI analysis is paused</strong>
+          {limit.reason === 'budget_cap'
+            ? ` — this demo's AI budget (USD ${limit.cap_usd.toFixed(2)}) is used up.`
+            : ' — the Gemini API key has reached its billing limit.'}{' '}
+          Every case analysed so far, including runs shared by other visitors, can still be opened.
+        </span>
+      </div>
+    ) : null}
+    </>
   )
 }
 
@@ -69,7 +90,10 @@ function EnvPill({ health }: { health: Health | null | 'error' }) {
   const model = modelDisplayName(health.models.flash)
   let label = ''
   let tone = 'env-live'
-  if (health.llm_mode === 'live') label = `Live · ${model}`
+  if (health.llm_mode === 'live' && health.ai_limit?.exhausted) {
+    label = `Paused · cached results only`
+    tone = 'env-cached'
+  } else if (health.llm_mode === 'live') label = `Live · ${model}`
   else if (health.llm_mode === 'cache_only') {
     label = `Cached · ${model}`
     tone = 'env-cached'

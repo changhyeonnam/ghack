@@ -14,6 +14,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 from .agents.runner import BudgetExceeded, CacheMiss, spent_usd
+from .llm import budget
 from .config import Settings, get_settings
 from .feedback import compute_priorities, load_priorities
 from .pipeline import Pipeline, PipelineError
@@ -78,7 +79,7 @@ async def _pipeline_error(_: Request, exc: PipelineError):
 
 @app.exception_handler(BudgetExceeded)
 async def _budget_error(_: Request, exc: BudgetExceeded):
-    return JSONResponse(status_code=402, content={"detail": str(exc)})
+    return JSONResponse(status_code=402, content={"detail": str(exc), "code": "ai_limit"})
 
 
 @app.exception_handler(CacheMiss)
@@ -103,9 +104,11 @@ def _artifact_or_404(p: Pipeline, case_id: str, name: str) -> dict:
 
 # ---------------------------------------------------------------- health
 @app.get("/api/health")
-def health(s: Settings = Depends(settings_dep)):
+def health(s: Settings = Depends(settings_dep), p: Pipeline = Depends(pipe)):
+    ai = budget.state(p.repo, s)
+    ai["live_available"] = s.resolved_llm_mode == "live" and not ai["exhausted"]
     return {"status": "ok", "llm_mode": s.resolved_llm_mode, "storage": s.storage, "models": {"flash": s.model_flash, "pro": s.model_pro},
-            "spent_usd_this_process": round(spent_usd(), 4), "budget_cap_usd": s.budget_cap_usd}
+            "spent_usd_this_process": round(spent_usd(), 4), "budget_cap_usd": s.budget_cap_usd, "ai_limit": ai}
 
 
 # ---------------------------------------------------------------- cases
@@ -117,6 +120,14 @@ def workspace_dep(x_ledgerlens_workspace: Optional[str] = Header(default=None)) 
     if x_ledgerlens_workspace and _WORKSPACE_RE.match(x_ledgerlens_workspace):
         return x_ledgerlens_workspace
     return None
+
+
+def _owned_case(p: Pipeline, case_id: str, ws: Optional[str]) -> Case:
+    """Cases shared by other visitors are read-only: only the creating workspace may change them."""
+    c = _case_or_404(p, case_id)
+    if c.workspace and c.workspace != ws:
+        raise HTTPException(403, "This case was shared by another visitor and is read-only. Load the demo cases or create your own.")
+    return c
 
 
 @app.get("/api/cases", response_model=list[Case])
@@ -135,16 +146,16 @@ def get_case(case_id: str, p: Pipeline = Depends(pipe)):
 
 
 @app.delete("/api/cases/{case_id}")
-def delete_case(case_id: str, p: Pipeline = Depends(pipe)):
-    _case_or_404(p, case_id)
+def delete_case(case_id: str, p: Pipeline = Depends(pipe), ws: Optional[str] = Depends(workspace_dep)):
+    _owned_case(p, case_id, ws)
     p.repo.delete_case(case_id)
     return {"deleted": True}
 
 
 # ---------------------------------------------------------------- documents
 @app.post("/api/cases/{case_id}/documents", response_model=Case)
-async def upload_documents(case_id: str, files: list[UploadFile] = File(...), p: Pipeline = Depends(pipe)):
-    case = _case_or_404(p, case_id)
+async def upload_documents(case_id: str, files: list[UploadFile] = File(...), p: Pipeline = Depends(pipe), ws: Optional[str] = Depends(workspace_dep)):
+    case = _owned_case(p, case_id, ws)
     if case.status == "decided":
         raise PipelineError("Case already decided")
     for f in files:
@@ -158,8 +169,8 @@ async def upload_documents(case_id: str, files: list[UploadFile] = File(...), p:
 
 
 @app.delete("/api/cases/{case_id}/documents/{doc_id}", response_model=Case)
-def delete_document(case_id: str, doc_id: str, p: Pipeline = Depends(pipe)):
-    case = _case_or_404(p, case_id)
+def delete_document(case_id: str, doc_id: str, p: Pipeline = Depends(pipe), ws: Optional[str] = Depends(workspace_dep)):
+    case = _owned_case(p, case_id, ws)
     p.remove_document(case, doc_id)
     for st in case.stages:
         st.status = "pending"
@@ -200,8 +211,8 @@ def document_page(case_id: str, doc_id: str, page: int, scale: int = Query(1, ge
 
 # ---------------------------------------------------------------- pipeline
 @app.post("/api/cases/{case_id}/run", response_model=Case)
-async def run(case_id: str, stage: str = Query("all"), p: Pipeline = Depends(pipe)):
-    _case_or_404(p, case_id)
+async def run(case_id: str, stage: str = Query("all"), p: Pipeline = Depends(pipe), ws: Optional[str] = Depends(workspace_dep)):
+    _owned_case(p, case_id, ws)
     if stage == "all":
         return await p.run_all(case_id)
     try:
@@ -256,20 +267,20 @@ def get_traces(case_id: str, p: Pipeline = Depends(pipe)):
 
 # ---------------------------------------------------------------- underwriter actions
 @app.post("/api/cases/{case_id}/objections/{objection_id}/resolution", response_model=Case)
-def resolve(case_id: str, objection_id: str, body: ResolutionBody, p: Pipeline = Depends(pipe)):
-    case = _case_or_404(p, case_id)
+def resolve(case_id: str, objection_id: str, body: ResolutionBody, p: Pipeline = Depends(pipe), ws: Optional[str] = Depends(workspace_dep)):
+    case = _owned_case(p, case_id, ws)
     return p.resolve_objection(case, objection_id, body.status, body.note, body.by)
 
 
 @app.post("/api/cases/{case_id}/decision", response_model=Case)
-def decide(case_id: str, body: DecisionBody, p: Pipeline = Depends(pipe)):
-    case = _case_or_404(p, case_id)
+def decide(case_id: str, body: DecisionBody, p: Pipeline = Depends(pipe), ws: Optional[str] = Depends(workspace_dep)):
+    case = _owned_case(p, case_id, ws)
     return p.sign_decision(case, Decision(case_id=case.id, outcome=body.outcome, conditions=body.conditions, rationale=body.rationale, underwriter=body.underwriter))
 
 
 @app.post("/api/cases/{case_id}/letter")
-async def letter(case_id: str, body: LetterBody, p: Pipeline = Depends(pipe)):
-    case = _case_or_404(p, case_id)
+async def letter(case_id: str, body: LetterBody, p: Pipeline = Depends(pipe), ws: Optional[str] = Depends(workspace_dep)):
+    case = _owned_case(p, case_id, ws)
     return (await p.explain(case, body.language)).model_dump(mode="json")
 
 

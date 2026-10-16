@@ -31,6 +31,14 @@ export class ApiError extends Error {
   }
 }
 
+/** Fired when the API reports that live AI analysis is paused (budget cap or provider billing limit). */
+export const AI_LIMIT_EVENT = 'ledgerlens:ai-limit'
+
+/** True when the case was created in another browser and shared with everyone (read-only here). */
+export function isSharedFromOthers(c: { workspace?: string | null }): boolean {
+  return Boolean(c.workspace) && c.workspace !== workspaceId()
+}
+
 // Each browser gets its own copy of the demo cases, so one reviewer signing a case does not lock it for the next.
 const WORKSPACE_KEY = 'ledgerlens.workspace'
 let memoryWorkspace = ''
@@ -70,6 +78,7 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
     } catch {
       // Non-JSON error body; keep the status text.
     }
+    if (res.status === 402) window.dispatchEvent(new CustomEvent(AI_LIMIT_EVENT))
     throw new ApiError(res.status, detail)
   }
   if (res.status === 204) return undefined as T

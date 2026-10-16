@@ -600,6 +600,8 @@ class CaseCreate(BaseModel):
     language: str = "en"
     currency: str = "USD"
     requested_amount: Optional[float] = None
+    # Visible (read-only) to other visitors once analysed, so their runs can be browsed without re-running Gemini.
+    shared: bool = True
 
 
 class Case(BaseModel):
@@ -624,6 +626,7 @@ class Case(BaseModel):
     tags: list[str] = Field(default_factory=list)
     # Browser workspace that owns the case (X-LedgerLens-Workspace). None = shared/legacy case.
     workspace: Optional[str] = None
+    shared: bool = False  # other visitors may open it (read-only) once analysed
 
     def stage(self, name: StageName) -> StageStatus:
         for s in self.stages:

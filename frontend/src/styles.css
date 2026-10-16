@@ -4345,3 +4345,17 @@ details[open] > summary .summary-chev {
     padding: var(--s-3) var(--s-4);
   }
 }
+
+/* AI usage limit banner (shown while live analysis is paused) */
+.ai-limit-banner {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 24px;
+  background: var(--warn-soft);
+  color: var(--warn-text);
+  border-bottom: 1px solid var(--warn);
+  font-size: 14px; line-height: 1.4;
+}
+.ai-limit-banner svg { flex: none; color: var(--warn); }
+.tag-shared { background: color-mix(in srgb, var(--accent, #2563eb) 14%, transparent); color: var(--accent, #2563eb); }
+.share-opt { display: flex; gap: 8px; align-items: flex-start; margin: 12px 0 4px; font-size: 13px; color: var(--muted, #6b7280); }
+.share-opt input { margin-top: 2px; }

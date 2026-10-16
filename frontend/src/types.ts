@@ -500,6 +500,7 @@ export interface CaseCreate {
   language: string
   currency: string
   requested_amount: number | null
+  shared?: boolean
 }
 
 export interface Case {
@@ -521,6 +522,7 @@ export interface Case {
   objection_resolutions: ObjectionResolution[]
   is_demo: boolean
   workspace?: string | null
+  shared?: boolean
   demo_expected_outcome: string | null
   tags: string[]
 }
@@ -540,11 +542,20 @@ export interface FeedbackPriorities {
   priorities: ChallengerPriority[]
 }
 
+export interface AiLimit {
+  exhausted: boolean
+  reason: 'budget_cap' | 'provider_limit' | null
+  spent_usd: number
+  cap_usd: number
+  live_available: boolean
+}
+
 export interface Health {
   status: string
   llm_mode: 'live' | 'cache_only' | 'mock'
   storage: 'local' | 'gcp'
   models: { flash: string; pro: string }
+  ai_limit?: AiLimit
 }
 
 export interface BenchmarkSummary {

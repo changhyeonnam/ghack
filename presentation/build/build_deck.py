@@ -6,6 +6,10 @@ from pptx.enum.shapes import MSO_SHAPE
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
 import copy, os
 
+# Submission links: fill these in before the final build.
+VIDEO_URL = "TBD"  # public YouTube link to the demo video (<= 3 minutes)
+APP_URL = "TBD"    # Cloud Run URL of the public demo (cache_only mode)
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 IMG = HERE + "/img"
 SHOTS = HERE + "/shots"
@@ -198,7 +202,7 @@ tb(s, 0.3, 5.22, 9.4, 0.25, [{"t": "Sources: FiinGroup via Viet Nam News (Aug 20
 s = S[4]
 set_title(s, "Brief about the idea")
 headline(s, "LedgerLens turns a shoebox of receipts, screenshots and bank PDFs into a credit memo a bank can trust.", y=1.25, size=20, h=0.9)
-mech = [("1", "Read with evidence", "Gemini reads every document. Every value carries document id, page and bounding box. Python computes the cash flow. Unsourced numbers cannot enter the memo.", False),
+mech = [("1", "Read with evidence", "Gemini reads every document. Every value carries document id, page and bounding box. Python computes the cash flow. A memo with unsourced numbers is rejected and regenerated.", False),
         ("2", "Challenge", "A second agent that never sees the first one's prompt runs 12 underwriting checks against the memo and raises severity-ranked objections with evidence.", True),
         ("3", "Human signs", "The underwriter accepts or dismisses each objection and signs. Every decision is logged and re-weights the next Challenger run. The applicant gets the reasons in their own language.", False)]
 x = 0.3; cw = 2.95
@@ -223,8 +227,8 @@ for p in sh.text_frame.paragraphs[1:]:
     for r in p.runs:
         r.text = ""
 sh.height = Inches(0.5)
-headline(s, "Same documents. Read in about 2 minutes. Every number defensible.", y=1.22, size=19, h=0.5)
-nums = [("45 → 2", "minutes per file, manual estimate vs measured run", False), ("11 → 0.31", "USD per case, manual estimate vs measured run", False), ("0", "unsourced numbers in any memo", True)]
+headline(s, "Same documents. About 2 minutes per file. Every number defensible.", y=1.22, size=19, h=0.5)
+nums = [("~2 min", "per file, end to end (measured, live Gemini)", False), ("~0.28", "USD per case on a cold run; USD 0 on a cached re-run", False), ("0 vs 62", "unsourced numbers in the memo: LedgerLens vs a single prompt", True)]
 x = 0.3
 for big, small, acc in nums:
     card(s, x, 1.8, 3.0, 1.35, fill=AMBER_T if acc else WHITE, line=AMBER if acc else LINE, lw=1.5 if acc else 1)
@@ -276,7 +280,7 @@ for i, (px, py) in enumerate(marks):
     pill(s, cx - 0.15, cy - 0.15, 0.3, 0.3, str(i + 1), fill=AMBER, color=INK, size=10)
 steps8 = [("The memo cites a figure", "Every underlined value is a catalog figure with a source. Here: VND 82,500,000, credits from the applicant's own accounts."),
           ("One click opens the evidence", "The computation (sum of 3 credits whose sender matches the account holder) and all 3 source references: pages 2, 4 and 5."),
-          ("The source line lights up", "The statement page opens with the extractor's bounding box drawn on the exact row. Unsourced numbers: 0, enforced by the output schema.")]
+          ("The source line lights up", "The statement page opens with the extractor's bounding box drawn on the exact row. A memo with an unsourced number is rejected and regenerated.")]
 y = 1.95
 for i, (t, d) in enumerate(steps8):
     acc = i == 2
@@ -290,7 +294,7 @@ for i, (t, d) in enumerate(steps8):
 s = S[10]
 set_title(s, "Technologies to be used in the solution")
 headline(s, "Gemini reads, ADK orchestrates, Python computes, Cloud Run serves.", y=1.22, size=18, h=0.5)
-tech = [("Google Cloud", "Gemini 3.8 Flash", "Default for every agent. Measured USD 0.26-0.31 per cold case; free tier available.", False),
+tech = [("Google Cloud", "Gemini 3.8 Flash", "Default for every agent. Measured USD 0.26-0.31 per cold case; USD 0 cached.", False),
         ("Google Cloud", "Gemini 3.1 Pro", "One env var moves Extractor, Analyst and Challenger to Pro.", False),
         ("Google Cloud", "Agent Development Kit", "Intake, 5 Extractors, Analyst, Challenger (investigator and writer), Explainer.", False),
         ("Google Cloud", "Cloud Run + Firebase", "FastAPI backend scales to zero; React workbench on Firebase Hosting.", False),
@@ -311,31 +315,32 @@ tb(s, 0.3, 5.15, 9.4, 0.3, [{"t": "Output schema requires source {doc_id, page, 
 # ---------- Slide 13: Benchmark ----------
 s = S[13]
 set_title(s, "Prototype performance report / Benchmarking")
-headline(s, "16 of 20 planted traps caught, zero unsourced numbers. A single prompt on the same documents caught 1 and left 45 numbers unsourced.", y=1.22, size=17, h=0.7)
+headline(s, "18 of 20 planted traps caught on live Gemini output; a single prompt on the same documents caught 3.", y=1.22, size=17, h=0.7)
 # hero numbers
 card(s, 0.3, 1.95, 4.5, 2.0, fill=AMBER_T, line=AMBER, lw=1.5)
 tb(s, 0.45, 2.0, 2.2, 0.3, [{"t": "LEDGERLENS", "size": 9, "bold": True, "color": AMBER}], margin=0.0)
-tb(s, 0.45, 2.25, 2.3, 1.2, [{"t": "16", "size": 72, "bold": True, "color": INK}], margin=0.0)
-tb(s, 0.45, 3.45, 2.2, 0.4, [{"t": "of 20 traps caught", "size": 11, "color": TXT}], margin=0.0)
+tb(s, 0.45, 2.25, 2.3, 1.2, [{"t": "18", "size": 72, "bold": True, "color": INK}], margin=0.0)
+tb(s, 0.45, 3.4, 2.2, 0.5, [{"t": "of 20 traps caught", "size": 11, "color": TXT}, {"t": "95% Wilson CI 0.70-0.97", "size": 8.5, "color": GREY}], margin=0.0)
 tb(s, 2.75, 2.0, 2.0, 0.3, [{"t": "SINGLE PROMPT", "size": 9, "bold": True, "color": GREY}], margin=0.0)
-tb(s, 2.75, 2.25, 2.0, 1.2, [{"t": "1", "size": 72, "bold": True, "color": RGBColor(0xB0, 0xB8, 0xBE)}], margin=0.0)
-tb(s, 2.75, 3.45, 2.0, 0.4, [{"t": "same documents, one prompt", "size": 11, "color": GREY}], margin=0.0)
+tb(s, 2.75, 2.25, 2.0, 1.2, [{"t": "3", "size": 72, "bold": True, "color": RGBColor(0xB0, 0xB8, 0xBE)}], margin=0.0)
+tb(s, 2.75, 3.4, 2.0, 0.5, [{"t": "of 20, same documents", "size": 11, "color": GREY}, {"t": "and same model", "size": 8.5, "color": GREY}], margin=0.0)
 card(s, 0.3, 4.1, 2.2, 1.25, fill=WHITE, line=LINE)
 tb(s, 0.42, 4.15, 2.0, 0.6, [{"t": "0", "size": 30, "bold": True, "color": INK}], margin=0.0)
-tb(s, 0.42, 4.75, 2.0, 0.55, [{"t": "unsourced numbers (baseline: 45)", "size": 9.5, "color": GREY}], margin=0.0)
+tb(s, 0.42, 4.75, 2.0, 0.55, [{"t": "unsourced numbers in the memo (single prompt: 62)", "size": 9.5, "color": GREY}], margin=0.0)
 card(s, 2.6, 4.1, 2.2, 1.25, fill=WHITE, line=LINE)
 tb(s, 2.72, 4.15, 2.0, 0.6, [{"t": "~2 min", "size": 30, "bold": True, "color": INK}], margin=0.0)
-tb(s, 2.72, 4.75, 2.0, 0.55, [{"t": "per cold case, USD 0.26-0.31; cached re-run free", "size": 9.5, "color": GREY}], margin=0.0)
+tb(s, 2.72, 4.75, 2.0, 0.55, [{"t": "per case cold, USD 0.26-0.31; cached re-run USD 0", "size": 9.5, "color": GREY}], margin=0.0)
 rows = [["Metric", "Target", "Result"],
-        ["Trap recall", "≥ 16 / 20", "16 / 20"],
-        ["Unsourced numbers", "0", "0"],
-        ["Objections on clean case A", "≤ 20%", "1 (4.5%)"],
-        ["Extraction row accuracy", "≥ 97%", "100% (481/481)"],
-        ["Evidence-link accuracy", "≥ 95%", "100%"],
-        ["Time per case", "≤ 180 s", "~130 s"]]
-table(s, 5.0, 1.95, 4.7, 2.3, rows, [2.3, 1.1, 1.3], font=9.5, bold_first_col=True)
-card(s, 5.0, 4.4, 4.7, 0.95, fill=PANEL, line=LINE)
-tb(s, 5.12, 4.44, 4.5, 0.9, [{"t": [("How measured. ", {"bold": True}), ("Live Gemini 3.8 Flash run, 2026-10-15. 3 synthetic businesses, 43 born-digital documents, 20 traps. Strict scoring: amount or document under an expected question (95% CI 0.58-0.92). Missed T02, T03, T18, T19. Scanned documents will extract below 100%.", {})], "size": 8.5, "color": TXT}], margin=0.0)
+        ["Trap recall (strict)", "≥ 16 / 20", "18 / 20"],
+        ["Unsourced numbers", "0", "0 (single prompt: 62)"],
+        ["Objections on clean case A", "≤ 20%", "0"],
+        ["Extraction row accuracy*", "≥ 97%", "100% (481 / 481)"],
+        ["Evidence-link accuracy*", "≥ 95%", "100%"],
+        ["Time per case (cold)", "≤ 180 s", "~2 min"],
+        ["Cost per case (cold)", "≤ USD 0.50", "USD 0.26-0.31"]]
+table(s, 5.0, 1.95, 4.7, 2.25, rows, [2.0, 1.0, 1.7], font=9, bold_first_col=True)
+card(s, 5.0, 4.28, 4.7, 1.12, fill=PANEL, line=LINE)
+tb(s, 5.1, 4.31, 4.52, 1.08, [{"t": [("How measured. ", {"bold": True}), ("Live gemini-3.8-flash runs, 2026-10-15/16: 3 synthetic businesses, 43 documents, 20 planted traps. Strict scoring: an objection counts only if it carries the trap's identifying amount or document, one objection per trap. ", {}), ("n = 3 synthetic businesses with team-planted traps, so read as indicative. Missed: dashboard gross vs payout, COD vs cash deposits. Recommendation matched on C; A gave approve_with_conditions (expected approve), B request_more_documents (expected approve_with_conditions). *Clean born-digital synthetic PDFs; real scans will be lower.", {})], "size": 7.5, "color": TXT}], margin=0.0)
 
 # ---------- Slide 6: Process flow ----------
 s = S[7]
@@ -352,30 +357,32 @@ picture(s, f"{IMG}/architecture.png", 0.9, 1.28, h=3.95)
 # ---------- Slide 11: Cost ----------
 s = S[11]
 set_title(s, "Estimated implementation cost")
-tb(s, 0.3, 1.25, 9.4, 0.45, [{"t": "Cheap enough for small loans: USD 0.26-0.31 per case measured on Flash, zero on a cached re-run", "size": 14, "bold": True, "color": INK}])
+tb(s, 0.3, 1.25, 9.4, 0.45, [{"t": "Measured: USD 0.26-0.31 per case on a cold Flash run, USD 0 on a cached re-run", "size": 14, "bold": True, "color": INK}])
 from pptx.chart.data import CategoryChartData
 from pptx.enum.chart import XL_CHART_TYPE, XL_LABEL_POSITION
 cd = CategoryChartData()
-cd.categories = ["Manual review (45 min at USD 15/h)", "Single prompt (catches 1 of 20 traps)", "LedgerLens, Gemini 3.8 Flash, measured", "LedgerLens, cached re-run"]
-cd.add_series("USD per case", (11.25, 0.015, 0.31, 0.0))
+cd.categories = ["LedgerLens cold run, case B (14 docs)", "LedgerLens cold run, case C (11 docs)", "Single-prompt baseline (no checks)", "LedgerLens cached re-run"]
+cd.add_series("USD per case", (0.306, 0.257, 0.015, 0.0))
 gf = s.shapes.add_chart(XL_CHART_TYPE.BAR_CLUSTERED, Inches(0.3), Inches(1.75), Inches(5.7), Inches(3.5), cd)
 ch = gf.chart; ch.has_legend = False; ch.has_title = True
-ch.chart_title.text_frame.text = "Cost per case, USD"
+ch.chart_title.text_frame.text = "Cost per case, USD (gemini-3.8-flash, live run 2026-10-15)"
 tp = ch.chart_title.text_frame.paragraphs[0]; tp.runs[0].font.size = Pt(10.5); tp.runs[0].font.bold = True; tp.runs[0].font.color.rgb = INK; tp.runs[0].font.name = FONT
 pl = ch.plots[0]; pl.has_data_labels = True; pl.gap_width = 55
-pl.data_labels.number_format = '0.00#'; pl.data_labels.number_format_is_linked = False
+pl.data_labels.number_format = '0.000'; pl.data_labels.number_format_is_linked = False
 pl.data_labels.position = XL_LABEL_POSITION.OUTSIDE_END
 pl.data_labels.font.size = Pt(10.5); pl.data_labels.font.bold = True; pl.data_labels.font.color.rgb = INK; pl.data_labels.font.name = FONT
 ser = pl.series[0]; ser.format.fill.solid(); ser.format.fill.fore_color.rgb = TEAL
-p0 = ser.points[0]; p0.format.fill.solid(); p0.format.fill.fore_color.rgb = RGBColor(0xB0, 0xB8, 0xBE)
-p2 = ser.points[2]; p2.format.fill.solid(); p2.format.fill.fore_color.rgb = AMBER
+for _i in (0, 1):
+    _pt = ser.points[_i]; _pt.format.fill.solid(); _pt.format.fill.fore_color.rgb = AMBER
+p2 = ser.points[2]; p2.format.fill.solid(); p2.format.fill.fore_color.rgb = RGBColor(0xB0, 0xB8, 0xBE)
 ca = ch.category_axis; ca.tick_labels.font.size = Pt(9.5); ca.tick_labels.font.name = FONT; ca.tick_labels.font.color.rgb = TXT; ca.format.line.color.rgb = LINE; ca.has_major_gridlines = False
 ca.reverse_order = True
-va = ch.value_axis; va.visible = False; va.has_major_gridlines = False; va.maximum_scale = 13.5
+va = ch.value_axis; va.visible = False; va.has_major_gridlines = False; va.maximum_scale = 0.38; va.minimum_scale = 0.0
 rows = [["Assumption", "Value"],
         ["Gemini 3.8 Flash list price", "USD 0.75 / 3.75 per 1M tokens"],
-        ["Gemini 3.1 Pro list price", "USD 2.00 / 12.00 per 1M tokens"],
-        ["Tokens per case (measured)", "77-103k for 11-18 documents"],
+        ["Measured cold run", "~2 min and USD 0.26-0.31 per case"],
+        ["Cached re-run", "USD 0 (content-hash LLM cache)"],
+        ["Public demo", "Replays the recorded live Gemini run, USD 0; only the customer letter calls Gemini (~USD 0.0015)"],
         ["Hosting", "Cloud Run scales to zero; Firestore and Storage in free tier"],
         ["Guardrail", "Budget-cap env var stops Gemini calls once spent"],
         ["Build", "2 engineers, 4 days, free tier and trial credits"]]
@@ -419,8 +426,8 @@ for p in sh.text_frame.paragraphs[1:]:
         r.text = ""
 sh.height = Inches(0.5)
 links = [("GitHub public repository", "github.com/changhyeonnam/ghack", "English README, architecture, run instructions, synthetic-data notice, presentation/"),
-         ("Demo video (3 to 4 minutes)", "YouTube public link", "Problem in 20 seconds, click-to-source and Challenger scenes, benchmark near the end"),
-         ("Final product", "ledgerlens-<hash>.a.run.app", "Cloud Run service, three demo cases preloaded, warm through evaluation")]
+         ("Demo video (up to 3 minutes)", VIDEO_URL, "Problem in 20 seconds, click-to-source and Challenger scenes, benchmark near the end"),
+         ("Final product", APP_URL, "Cloud Run service; each browser gets its own copy of the three demo cases (Reset demo). Scales to zero; demo cases replay the recorded live Gemini run (only the customer letter calls Gemini live), so judging costs nothing")]
 y = 1.3
 for t, u, d in links:
     card(s, 0.3, y, 9.4, 1.2, fill=PANEL, line=LINE)

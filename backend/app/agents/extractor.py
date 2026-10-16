@@ -17,7 +17,7 @@ from ..storage import Repository
 from . import prompts
 from ..tools.textlayer import cross_check_statement
 from .common import case_facts, load_doc_bytes, page_parts
-from .runner import AgentSpec, run_agent
+from .runner import AgentSpec, BudgetExceeded, run_agent
 
 log = logging.getLogger("ledgerlens.extractor")
 
@@ -164,6 +164,8 @@ async def run_extraction(case: Case, *, repo: Repository, settings: Settings, mo
         async with sem:
             try:
                 return await extract_document(case, d, repo=repo, settings=settings, mock_context=mock_context)
+            except BudgetExceeded:
+                raise  # the AI limit applies to the whole case, not one document
             except Exception as e:  # isolate: one unreadable receipt must not block the case
                 log.exception("extraction failed for %s", d.doc_id)
                 return DocumentExtraction(doc_id=d.doc_id, doc_type=d.doc_type or DocType.other, extraction_notes=f"EXTRACTION FAILED: {type(e).__name__}: {str(e)[:300]}")

@@ -64,6 +64,15 @@ class Repository(ABC):
     @abstractmethod
     def save_global(self, name: str, data: dict[str, Any]) -> None: ...
 
+    # ---- AI spend (persisted so the budget cap survives restarts and spans instances) ----
+    def get_spend(self) -> float:
+        return float((self.get_global("ai_spend") or {}).get("total_usd", 0.0))
+
+    def add_spend(self, usd: float) -> float:
+        total = self.get_spend() + usd
+        self.save_global("ai_spend", {"total_usd": total})
+        return total
+
 
 # ---------------------------------------------------------------------------
 # Local filesystem
@@ -180,6 +189,10 @@ class LocalRepository(Repository):
 
     def get_global(self, name: str) -> Optional[dict[str, Any]]:
         return self._read_json(self.root / "global" / f"{name}.json")
+
+    def add_spend(self, usd: float) -> float:
+        with self._lock:
+            return super().add_spend(usd)
 
     def save_global(self, name: str, data: dict[str, Any]) -> None:
         with self._lock:
@@ -311,6 +324,16 @@ class GcpRepository(Repository):
 
     def save_global(self, name: str, data: dict[str, Any]) -> None:
         self._col("global").document(name).set({"__json__": json.dumps(data, ensure_ascii=False)})
+
+    def get_spend(self) -> float:
+        snap = self._col("global").document("ai_spend_counter").get()
+        return float((snap.to_dict() or {}).get("total_usd", 0.0)) if snap.exists else 0.0
+
+    def add_spend(self, usd: float) -> float:
+        from google.cloud import firestore
+        ref = self._col("global").document("ai_spend_counter")
+        ref.set({"total_usd": firestore.Increment(usd)}, merge=True)  # atomic across instances
+        return self.get_spend()
 
 
 def build_repository(settings: Settings) -> Repository:

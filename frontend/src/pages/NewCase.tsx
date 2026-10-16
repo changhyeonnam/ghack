@@ -41,6 +41,7 @@ export default function NewCase() {
     language: 'id',
     currency: 'IDR',
     requested_amount: null,
+    shared: true,
   })
   const [creating, setCreating] = useState(false)
   const [created, setCreated] = useState<Case | null>(null)
@@ -219,6 +220,14 @@ export default function NewCase() {
                 </div>
               </label>
             </fieldset>
+            {!created ? (
+              <label className="share-opt">
+                <input type="checkbox" checked={form.shared ?? true} onChange={(e) => setForm((f) => ({ ...f, shared: e.target.checked }))} />
+                <span>
+                  Share this case with other visitors once it is analysed (read-only). Do not upload real customer data.
+                </span>
+              </label>
+            ) : null}
             {!created ? (
               <div className="form-actions">
                 <button type="submit" className="btn btn-primary" disabled={creating}>

@@ -134,7 +134,7 @@ def journey():
         arrow(ax, cx[i] + W, 1.78, cx[i + 1], 1.78, lw=1.6)
     arrow(ax, cx[2] + W, 1.78, 8.2, 1.78, lw=1.6)
     ax.plot([cx[0], cx[2] + W], [2.75, 2.75], color=LINE, lw=1)
-    text(ax, (cx[0] + cx[2] + W) / 2, 2.9, "LedgerLens  ·  about 3 minutes and USD 0.10 per case", 7.6, GREY, ha="center")
+    text(ax, (cx[0] + cx[2] + W) / 2, 2.9, "LedgerLens  ·  about 2 minutes and about USD 0.28 per case (measured, cold run)", 7.6, GREY, ha="center")
     # feedback loop
     arrow(ax, cx[2] + W / 2, yc, cx[2] + W / 2, 0.78, style="-", color=AMBER)
     arrow(ax, cx[2] + W / 2, 0.78, cx[1] + W / 2, 0.78, style="-", color=AMBER)
@@ -162,9 +162,9 @@ def before_after():
         text(ax, x + W / 2, 3.05, st, 8.5, INK, True, ha="center")
     ax.plot([1.4, 8.38], [2.92, 2.92], color=LINE, lw=1)
     lanes = [("Today", 1.85, PANEL, LINE,
-              [["Same PDFs,", "screenshots, receipts"], ["45 min by hand,", "retyped into Excel"], ["Collateral and", "gut feel"], ["Decline, or price", "blind at high rates"], ["No reason the", "customer can read"]]),
+              [["Same PDFs,", "screenshots, receipts"], ["Read by hand,", "retyped into Excel"], ["Collateral and", "gut feel"], ["Decline, or price", "blind at high rates"], ["No reason the", "customer can read"]]),
              ("With\nLedgerLens", 0.55, AMBER_T, AMBER,
-              [["Same documents,", "uploaded as one case"], ["3 min, every figure", "linked to its line"], ["Challenger raises", "12 checks as objections"], ["Underwriter signs", "with evidence in hand"], ["Letter in the", "customer's language"]])]
+              [["Same documents,", "uploaded as one case"], ["~2 min, every figure", "linked to its line"], ["Challenger raises", "12 checks as objections"], ["Underwriter signs", "with evidence in hand"], ["Letter in the", "customer's language"]])]
     for name, y, fill, edge, notes in lanes:
         text(ax, 0.2, y + 0.45, name, 8.5, INK, True, maxw=1.1)
         for x, n in zip(xs, notes):
@@ -174,14 +174,14 @@ def before_after():
         for i in range(4):
             arrow(ax, xs[i] + W, y + 0.45, xs[i + 1], y + 0.45, lw=1.2, color=edge if edge == AMBER else LINE)
     # impact column
-    imp = [("45 → 3", "minutes per file"), ("11 → 0.10", "USD per case"), ("0", "unsourced numbers")]
+    imp = [("~2 min", "per file, end to end"), ("~0.28", "USD per case, cold"), ("0 vs 62", "unsourced numbers")]
     yy = 2.75
     for big, small in imp:
         rbox(ax, 8.55, yy - 0.8, 0.75, 0.8, fill=TINT, edge=TEAL, lw=1.1)
         text(ax, 8.925, yy - 0.3, big, 8, INK, True, ha="center", maxw=0.68)
         text(ax, 8.925, yy - 0.58, small, 5.6, GREY, ha="center", maxw=0.7)
         yy -= 0.9
-    title(ax, "What changes for the lender: the same documents, read in 3 minutes, every number defensible", 3.4)
+    title(ax, "What changes for the lender: the same documents, read in about 2 minutes, every number defensible", 3.4)
     save(f, "before_after.png")
 
 
@@ -266,7 +266,7 @@ def roadmap():
         if i < 2:
             arrow(ax, x + w, y + h / 2, phases[i + 1][3], y + h / 2, lw=1.4)
     ax.plot([0.2, 9.2], [y - 0.12, y - 0.12], color=LINE, lw=1)
-    limits = [("Synthetic benchmark", ["Live Gemini run: 16 of 20 traps, n = 3 synthetic firms.", "The pilot replaces them with real-data results."], 0.2, 0),
+    limits = [("Synthetic benchmark", ["3 synthetic businesses (n = 3) with planted traps;", "real-data results come with the pilot."], 0.2, 0),
               ("Forged documents", ["Hash and balance-chain checks catch crude edits.", "Open-banking data closes the gap for the rest."], 3.25, 1),
               ("Platform sellers", ["Shopee and Grab already lend to their own sellers.", "We target banks and MFIs lending outside platforms."], 6.3, None)]
     text(ax, 0.2, 1.72, "What we do not claim yet, and which phase answers it", 8, GREY, True)
@@ -315,7 +315,7 @@ def process_flow2():
         step(n, t, d, x, w, y2, fill=AMBER_T if acc else WHITE, edge=AMBER if acc else INK, bfill=AMBER if acc else INK, lw=1.8 if acc else 1.3)
     for i in range(len(steps) - 1):
         arrow(ax, steps[i][3] + steps[i][4], y2 + H / 2, steps[i + 1][3], y2 + H / 2, lw=1.3)
-    text(ax, 1.6, 1.72, "about 3 minutes, about USD 0.10, every figure carries doc id · page · bbox", 6.2, GREY, style="italic")
+    text(ax, 1.6, 1.72, "about 2 minutes, about USD 0.28 (cold; cached re-run USD 0), every figure carries doc id · page · bbox", 6.2, GREY, style="italic")
     # lane 3
     y3 = 0.38
     step("7", "Review memo", "click any number to its line", 1.6, 1.85, y3)
