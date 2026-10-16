@@ -78,7 +78,7 @@ cd backend && .venv/bin/python -m pytest -q
 backend/.venv/bin/python benchmark/run_benchmark.py
 ```
 
-Open the app, click **Load demo cases**, open *Linh Fashion Online* (case B), press **Run all**, then click any number in the memo.
+Open the app, click **Load demo cases** (each browser gets its own copy; **Reset demo** restores it), open *Linh Fashion Online* (case B), press **Run all**, then click any number in the memo.
 
 ### LLM modes
 | `LEDGERLENS_LLM_MODE` | Behaviour |
@@ -104,6 +104,7 @@ export PROJECT_ID=your-project REGION=asia-southeast1
 echo -n "$GOOGLE_API_KEY" | gcloud secrets create gemini-api-key --data-file=-
 ./deploy/deploy.sh                       # Cloud Run from source (Dockerfile builds the frontend too, served at /)
 DEPLOY_FIREBASE=1 ./deploy/deploy.sh     # additionally publish the frontend on Firebase Hosting with /api rewritten to Cloud Run
+LLM_MODE=cache_only ./deploy/deploy.sh   # public demo that only replays cached runs (no Gemini spend)
 ```
 
 ## Synthetic data and limits

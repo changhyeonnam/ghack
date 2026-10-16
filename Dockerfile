@@ -1,3 +1,4 @@
+# Build context is the repository root (gcloud run deploy --source . picks up this file).
 # ---- frontend build ----
 FROM node:22-slim AS web
 WORKDIR /web
@@ -14,6 +15,7 @@ COPY backend/requirements.txt ./requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 COPY backend/app ./app
 COPY data/synth ./data/synth
+COPY benchmark/results ./benchmark/results
 COPY --from=web /web/dist ./static
 ENV LEDGERLENS_STATIC_DIR=/app/static LEDGERLENS_SYNTH_DIR=/app/data/synth LEDGERLENS_LOCAL_DATA_DIR=/tmp/ledgerlens
 EXPOSE 8080

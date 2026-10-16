@@ -2,7 +2,7 @@
 **/.venv
 **/__pycache__
 **/dist
-data/runtime
-benchmark/results
+data/runtime*
+benchmark/*.log
 .git
 .env

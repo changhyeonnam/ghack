@@ -11,12 +11,18 @@ REGION="${REGION:-asia-southeast1}"
 SERVICE="${SERVICE:-ledgerlens-api}"
 BUCKET="${BUCKET:-${PROJECT_ID}-ledgerlens-docs}"
 MIN_INSTANCES="${MIN_INSTANCES:-0}"   # set 1 only if you accept ~USD 10+/month for an always-warm instance
+# auto = live Gemini (judges' uploads cost money, capped per process by BUDGET_CAP_USD);
+# cache_only = replay cached runs only (USD 0 for Gemini, new uploads return 503 until cached).
+LLM_MODE="${LLM_MODE:-auto}"
+BUDGET_CAP_USD="${BUDGET_CAP_USD:-5}"
+ADMIN_TOKEN="${ADMIN_TOKEN:-}"        # protects re-seeding the shared demo cases; per-browser demo copies need no token
 
 cd "$(dirname "$0")/.."
 gcloud config set project "$PROJECT_ID" >/dev/null
 gcloud services enable run.googleapis.com cloudbuild.googleapis.com artifactregistry.googleapis.com firestore.googleapis.com \
   storage.googleapis.com secretmanager.googleapis.com generativelanguage.googleapis.com >/dev/null
 
+# The Dockerfile sits at the repo root (it builds the frontend and the backend), so --source . finds it.
 # Firestore (native mode) + bucket, idempotent
 gcloud firestore databases describe --database="(default)" >/dev/null 2>&1 || gcloud firestore databases create --location="$REGION" --type=firestore-native
 gsutil ls -b "gs://$BUCKET" >/dev/null 2>&1 || gsutil mb -l "$REGION" "gs://$BUCKET"
@@ -28,7 +34,7 @@ fi
 
 gcloud run deploy "$SERVICE" --source . --region "$REGION" --platform managed --allow-unauthenticated \
   --cpu 1 --memory 1Gi --concurrency 8 --timeout 600 --min-instances "$MIN_INSTANCES" --max-instances 2 --cpu-boost \
-  --set-env-vars "LEDGERLENS_STORAGE=gcp,LEDGERLENS_GCS_BUCKET=$BUCKET,GOOGLE_CLOUD_PROJECT=$PROJECT_ID,LEDGERLENS_LLM_MODE=auto,LEDGERLENS_BUDGET_CAP_USD=5,LEDGERLENS_ENV=prod" \
+  --set-env-vars "LEDGERLENS_STORAGE=gcp,LEDGERLENS_GCS_BUCKET=$BUCKET,GOOGLE_CLOUD_PROJECT=$PROJECT_ID,LEDGERLENS_LLM_MODE=$LLM_MODE,LEDGERLENS_BUDGET_CAP_USD=$BUDGET_CAP_USD,LEDGERLENS_ENV=prod${ADMIN_TOKEN:+,LEDGERLENS_ADMIN_TOKEN=$ADMIN_TOKEN}" \
   --set-secrets "GOOGLE_API_KEY=gemini-api-key:latest"
 
 URL=$(gcloud run services describe "$SERVICE" --region "$REGION" --format 'value(status.url)')
