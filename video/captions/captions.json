@@ -19,5 +19,5 @@
  "S6c": "The audit trail keeps every stage, agent call and human action.",
  "S7a": "We tested three demo businesses with 20 planted traps, | in a live Gemini 3.8 Flash run with strict scoring. | LedgerLens caught 18 of 20. | A single prompt on the same documents caught 3 | and wrote 62 unsourced numbers. LedgerLens wrote zero. | A cold run takes about two minutes and about 28 cents per case. | A cached re-run costs nothing.",
  "S7b": "Humans decide. | AI shows its work.",
- "S1d": "Here is how it works. | First, Gemini reads every document and links each value to its document, page and box. | Second, a separate Challenger agent attacks the memo with deterministic checks. | Third, the underwriter accepts or dismisses each objection, and signs the decision."
+ "S1d": "Three steps: read with evidence, challenge, and a human signs."
 }

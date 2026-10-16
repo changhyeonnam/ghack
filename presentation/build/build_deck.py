@@ -426,7 +426,7 @@ for p in sh.text_frame.paragraphs[1:]:
         r.text = ""
 sh.height = Inches(0.5)
 links = [("GitHub public repository", "github.com/changhyeonnam/ghack", "English README, architecture, run instructions, synthetic-data notice, presentation/"),
-         ("Demo video (3 min 12 s)", VIDEO_URL, "Problem, how it works, one case end to end (click-to-source, Challenger, decision, letter), benchmark"),
+         ("Demo video (2 min 59 s)", VIDEO_URL, "Problem, how it works, one case end to end (click-to-source, Challenger, decision, letter), benchmark"),
          ("Final product", APP_URL, "Cloud Run, live Gemini within a fixed AI budget (on-screen notice when reached). Each browser gets its own copy of the three demo cases, which replay the recorded live run in seconds; visitors' cases are shared read-only. No login")]
 y = 1.3
 for t, u, d in links:
