@@ -198,7 +198,9 @@ def detect_recurring(rows: list[Row]) -> list[RecurringTransfer]:
         days = [r.d.day for r in grp]
         gaps = [(grp[i + 1].d - grp[i].d).days for i in range(len(grp) - 1)]
         monthly = len(months) >= 3 and len(months) == len(grp) and (max(days) - min(days) <= 4 or (min(days) <= 2 and max(days) >= 28))
-        weekly = len(grp) >= 6 and gaps and statistics.median(gaps) in (6, 7, 8) and max(gaps) <= 15
+        # weekly: most gaps are about a week; a long gap is tolerated when statement months are missing in between
+        weekly = len(grp) >= 6 and bool(gaps) and statistics.median(gaps) in (6, 7, 8) and \
+            sum(1 for g in gaps if 5 <= g <= 9) >= 0.75 * len(gaps)
         if not (monthly or weekly):
             continue
         text = " ".join(f"{r.tx.description} {r.tx.counterparty or ''}" for r in grp[:3])
@@ -218,6 +220,51 @@ def detect_recurring(rows: list[Row]) -> list[RecurringTransfer]:
 # ---------------------------------------------------------------------------
 # Main entry
 # ---------------------------------------------------------------------------
+def duplicate_ledger_pages(extractions: Iterable[DocumentExtraction]) -> set[str]:
+    """Ledger pages whose entries (day of month, amount, kind, description) repeat an earlier page exactly: the same
+    page photographed again with only the month header changed. The later page is the duplicate."""
+    seen: dict[tuple, str] = {}
+    dups: set[str] = set()
+    for ex in extractions:
+        lg = ex.handwritten_ledger
+        if not lg or len(lg.entries) < 3:
+            continue
+        # descriptions are left out: two reads of the same handwriting rarely transcribe them identically
+        sig = tuple(sorted((e.date[8:10], round(e.amount), e.kind) for e in lg.entries))
+        if sig in seen:
+            dups.add(ex.doc_id)
+        else:
+            seen[sig] = ex.doc_id
+    return dups
+
+
+def ledger_summary_pages(extractions: Iterable[DocumentExtraction], tolerance: float = 0.01) -> set[str]:
+    """Ledger pages that only restate other pages' monthly totals (a "Buod"/summary page). Their lines are not new
+    income: a page is a summary when at least two of its income lines equal another page's income total for that month."""
+    monthly: dict[str, dict[str, float]] = defaultdict(dict)   # month -> doc_id -> income total on that page
+    for ex in extractions:
+        lg = ex.handwritten_ledger
+        if lg:
+            for e in lg.entries:
+                if e.kind == "income":
+                    monthly[e.date[:7]][ex.doc_id] = monthly[e.date[:7]].get(ex.doc_id, 0.0) + e.amount
+    out: set[str] = set()
+    for ex in extractions:
+        lg = ex.handwritten_ledger
+        if not lg:
+            continue
+        hits = 0
+        for e in lg.entries:
+            if e.kind != "income" or e.amount <= 0:
+                continue
+            others = [v for d, v in monthly[e.date[:7]].items() if d != ex.doc_id]
+            if any(abs(v - e.amount) <= tolerance * e.amount for v in others):
+                hits += 1
+        if hits >= 2:
+            out.add(ex.doc_id)
+    return out
+
+
 def compute_cashflow(extractions: list[DocumentExtraction], currency: str, holder_names: list[str],
                      requested_amount: Optional[float] = None) -> CashflowSummary:
     rows = flatten_transactions(extractions)
@@ -288,7 +335,9 @@ def compute_cashflow(extractions: list[DocumentExtraction], currency: str, holde
     # cross-source totals
     dash_gross = dash_payout = 0.0
     rec_purch = rec_sales = 0.0
-    led_in = led_out = 0.0
+    led_in = led_out = led_cmp = 0.0
+    bank_months = {m.month for m in monthly if m.n_credits + m.n_debits > 0}
+    dup_ledgers = duplicate_ledger_pages(extractions) | ledger_summary_pages(extractions)
     for ex in extractions:
         if ex.seller_dashboard:
             for mtr in ex.seller_dashboard.metrics:
@@ -303,15 +352,21 @@ def compute_cashflow(extractions: list[DocumentExtraction], currency: str, holde
                 rec_purch += ex.receipt.total.value
         if ex.handwritten_ledger:
             for e in ex.handwritten_ledger.entries:
+                if ex.doc_id in dup_ledgers:
+                    continue  # re-photographed or summary page: its lines restate other pages
                 if e.kind == "income":
                     led_in += e.amount
+                    if e.date[:7] in bank_months:
+                        led_cmp += e.amount
                 else:
                     led_out += e.amount
     payout_total = sum(f.amount for f in flagged if f.reason == "platform_payout")
     cash_total = sum(f.amount for f in flagged if f.reason == "cash_deposit")
     self_total = sum(f.amount for f in flagged if f.reason == "self_transfer")
     rt_total = sum(f.amount for f in flagged if f.reason == "round_trip")
-    off_ledger = max(0.0, led_in + rec_sales - cash_total)
+    # like-for-like: ledger months the statement covers, duplicates removed (6 ledger months vs 4 statement months
+    # would otherwise read as "unbanked" income)
+    off_ledger = max(0.0, led_cmp + rec_sales - cash_total) if bank_months else max(0.0, led_in + rec_sales - cash_total)
     debt_service = sum(r.amount * (4.33 if r.occurrences >= 6 and len(r.months) < r.occurrences else 1) for r in recurring if r.likely_debt_service)
     net_biz = avg_biz - avg_out
     capacity = max(0.0, 3 * net_biz)
@@ -324,6 +379,7 @@ def compute_cashflow(extractions: list[DocumentExtraction], currency: str, holde
         balance_checks=balance_checks, platform_payout_total=_round(payout_total), cash_deposit_total=_round(cash_total),
         dashboard_gross_sales_total=_round(dash_gross), dashboard_payout_total=_round(dash_payout), receipts_purchases_total=_round(rec_purch),
         receipts_sales_total=_round(rec_sales), ledger_income_total=_round(led_in), ledger_expense_total=_round(led_out),
+        ledger_income_comparable=_round(led_cmp), ledger_duplicate_doc_ids=sorted(dup_ledgers),
         off_ledger_income_estimate=_round(off_ledger), suggested_capacity=_round(capacity),
     )
     summary.figures = build_figure_catalog(summary, rows, extractions, requested_amount, self_total, rt_total, debt_service)
@@ -430,8 +486,9 @@ def build_figure_catalog(s: CashflowSummary, rows: list[Row], extractions: list[
         if ex.handwritten_ledger:
             inc = [e for e in ex.handwritten_ledger.entries if e.kind == "income"]
             exp = [e for e in ex.handwritten_ledger.entries if e.kind == "expense"]
-            led_refs += [e.source for e in inc]
-            led_exp_refs += [e.source for e in exp]
+            if ex.doc_id not in s.ledger_duplicate_doc_ids:  # totals cite only the pages they sum
+                led_refs += [e.source for e in inc]
+                led_exp_refs += [e.source for e in exp]
             add(f"DOC.{ex.doc_id}.income_total", f"Ledger income {ex.handwritten_ledger.period_label or ''} ({ex.doc_id})", sum(e.amount for e in inc),
                 refs=[e.source for e in inc][:25], origin="document", computation=f"Sum of {len(inc)} income lines on the page")
         if ex.bank_statement:
@@ -446,10 +503,16 @@ def build_figure_catalog(s: CashflowSummary, rows: list[Row], extractions: list[
     add("CF.receipts_count", "Number of receipts provided", len(rec_p) + len(rec_s), "count", refs=(rec_p + rec_s)[:25], origin="document")
     add("CF.receipts_sales_total", "Sales evidenced by receipts", s.receipts_sales_total, refs=rec_s[:25], origin="document")
     add("CF.ledger_income_total", "Cash income recorded in handwritten ledger", s.ledger_income_total, refs=led_refs[:25], origin="document",
-        computation=f"Sum of {len(led_refs)} income lines across ledger pages")
+        computation=f"Sum of {len(led_refs)} income lines across ledger pages"
+                    + (f" (excluding duplicate/summary pages {', '.join(s.ledger_duplicate_doc_ids)})" if s.ledger_duplicate_doc_ids else ""))
     add("CF.ledger_expense_total", "Expenses recorded in handwritten ledger", s.ledger_expense_total, refs=led_exp_refs[:25], origin="document")
-    add("CF.off_ledger_income_estimate", "Income seen in ledger/receipts but not deposited", s.off_ledger_income_estimate,
-        computation="max(0, ledger income + receipt sales - bank cash deposits)", derived=["CF.ledger_income_total", "CF.receipts_sales_total", "CF.cash_deposit_total"])
+    add("CF.ledger_income_comparable", "Ledger cash income in months the bank statement covers (duplicate pages excluded)",
+        s.ledger_income_comparable, refs=led_refs[:25], origin="document",
+        computation="Ledger income lines dated in statement months"
+                    + (f"; excludes re-photographed pages {', '.join(s.ledger_duplicate_doc_ids)}" if s.ledger_duplicate_doc_ids else ""))
+    add("CF.off_ledger_income_estimate", "Income seen in ledger/receipts but not deposited (same months)", s.off_ledger_income_estimate,
+        computation="max(0, comparable ledger income + receipt sales - bank cash deposits)",
+        derived=["CF.ledger_income_comparable", "CF.receipts_sales_total", "CF.cash_deposit_total"])
     add("CF.recurring_debt_service_monthly", "Monthly outflow on recurring loan-like transfers", debt_service,
         refs=[ref for r in s.recurring_transfers if r.likely_debt_service for ref in r.source_refs][:25], origin="document",
         computation="Sum of recurring transfers flagged as likely debt service (weekly ones x4.33)")

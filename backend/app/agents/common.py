@@ -17,6 +17,17 @@ from ..tools.documents import pages_for_llm, thumbnail
 
 FIG_TOKEN = re.compile(r"\{fig:([A-Za-z0-9_.\-]+)\}")
 
+# Demo cases are built from generated documents: every page carries a dataset watermark and the premises "photos" are
+# rendered illustrations. Those are properties of the dataset, not of the applicant, so downstream agents are told to
+# ignore them and the corresponding flags/observations are not passed on. Real uploads (is_demo=False) are unaffected.
+DEMO_DATASET_NOTE = (
+    "DATASET NOTE: this is a demonstration case built from generated documents. A dataset watermark on every page and the "
+    "illustrated look of premises images come from the demo dataset, not from the applicant. Never treat the watermark or "
+    "the drawing style as evidence about authenticity, and never mention them. Judge authenticity only from content: "
+    "duplicate or reused images, past-case matches, balance chains, dates, names and amounts.")
+_DATASET_ARTEFACT = re.compile(r"watermark|synthetic|illustrat|render(?:ed|ing)|for demo|graphic", re.IGNORECASE)
+_HIDDEN_FLAGS = {"synthetic_watermark"}
+
 
 def doc_label(d: DocumentMeta) -> str:
     return f"{d.doc_id} ({d.filename})"
@@ -67,7 +78,7 @@ def inventory_text(case: Case) -> str:
     lines = [f"DOCUMENT INVENTORY ({len(case.documents)} files)"]
     for d in case.documents:
         lines.append(f"- {d.doc_id}: {d.filename} | type={d.doc_type.value if d.doc_type else '?'} | pages={d.pages} | language={d.language or '?'}"
-                     + (f" | flags={','.join(f.value for f in d.quality_flags)}" if d.quality_flags else ""))
+                     + (f" | flags={','.join(f.value for f in flags)}" if (flags := [f for f in d.quality_flags if f.value not in _HIDDEN_FLAGS]) else ""))
     return "\n".join(lines)
 
 
@@ -121,7 +132,7 @@ def ref_dict(r: SourceRef) -> dict[str, Any]:
     return {"doc_id": r.doc_id, "page": r.page, "bbox": [r.bbox.ymin, r.bbox.xmin, r.bbox.ymax, r.bbox.xmax] if r.bbox else None, "snippet": r.snippet}
 
 
-def extraction_digest(extractions: list[DocumentExtraction], docs: dict[str, DocumentMeta], max_tx: int = 0) -> str:
+def extraction_digest(extractions: list[DocumentExtraction], docs: dict[str, DocumentMeta], max_tx: int = 0, demo: bool = False) -> str:
     L = ["EXTRACTED DOCUMENT SUMMARY"]
     for ex in extractions:
         name = docs[ex.doc_id].filename if ex.doc_id in docs else ex.doc_id
@@ -148,8 +159,9 @@ def extraction_digest(extractions: list[DocumentExtraction], docs: dict[str, Doc
                      f"dates={min((e.date for e in lg.entries), default='?')}..{max((e.date for e in lg.entries), default='?')}")
         elif ex.premises:
             p = ex.premises
+            obs = [o.text for o in p.observations if not (demo and _DATASET_ARTEFACT.search(o.text))]
             L.append(f"- {ex.doc_id} ({name}) premises_photo: signage={p.signage_text} type={p.business_type_guess} size={p.apparent_size} inventory={p.inventory_level} | "
-                     + "; ".join(o.text for o in p.observations[:5]))
+                     + "; ".join(obs[:5]))
         else:
             L.append(f"- {ex.doc_id} ({name}) {ex.doc_type.value}: no structured extraction ({ex.extraction_notes or ''})")
     return "\n".join(L)
