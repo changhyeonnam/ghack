@@ -11,3 +11,7 @@ benchmark/results/*.tmp
 data/runtime_benchmark/
 data/runtime_live/
 benchmark/*.log
+
+# motion graphics renders
+video/motion/out/
+video/motion/node_modules/

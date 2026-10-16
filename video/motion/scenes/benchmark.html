@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>LedgerLens · benchmark</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --ink: #0F3D4C; --teal: #2A7F8E; --tint: #E6F2F4;
+    --amber: #E0A100; --red: #B3261E; --grey: #5F6368; --grey-bar: #A9ADB1; --blue: #1f4fd8; --rule: #dedcd5;
+  }
+  html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: var(--bg); }
+  body { font-family: "Inter", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+         color: var(--ink); -webkit-font-smoothing: antialiased; font-feature-settings: "tnum" 1; }
+  .abs { position: absolute; }
+  .brand { left: 96px; top: 64px; display: flex; align-items: center; gap: 14px; font-size: 30px; font-weight: 700; letter-spacing: -0.5px; }
+  .brand svg { width: 44px; height: 44px; }
+
+  #title { left: 150px; right: 150px; top: 150px; font-size: 60px; font-weight: 750; letter-spacing: -1.4px; }
+  #title .sep { color: var(--teal); padding: 0 18px; }
+  .section { left: 150px; font-size: 24px; font-weight: 700; letter-spacing: 2.4px; text-transform: uppercase; color: var(--teal); }
+  #s1 { top: 268px; } #s2 { top: 580px; }
+
+  .row { left: 150px; width: 1620px; height: 96px; display: flex; align-items: center; }
+  #r1 { top: 320px; } #r2 { top: 436px; }
+  .row .label { width: 470px; font-size: 32px; font-weight: 650; line-height: 1.2; }
+  #r2 .label { color: var(--grey); font-weight: 550; }
+  .row .track { position: relative; width: 880px; height: 64px; border-radius: 12px; background: #ebebe6; overflow: hidden; }
+  .row .fill { position: absolute; left: 0; top: 0; bottom: 0; width: 0; border-radius: 12px; }
+  #r1 .fill { background: linear-gradient(90deg, #0F3D4C, #2A7F8E); }
+  #r2 .fill { background: var(--grey-bar); }
+  .row .val { width: 270px; box-sizing: border-box; padding-left: 40px; text-align: left; font-size: 64px; font-weight: 800; letter-spacing: -1.5px; }
+  .row .val small { font-size: 34px; font-weight: 600; color: var(--grey); letter-spacing: 0; }
+  #r2 .val { color: var(--grey); }
+
+  .counter { top: 628px; width: 790px; height: 210px; box-sizing: border-box; padding: 26px 44px; border-radius: 26px;
+             background: #fff; border: 3px solid var(--tint); box-shadow: 0 10px 36px rgba(15,61,76,0.06);
+             display: flex; align-items: center; justify-content: space-between; }
+  #k1 { left: 150px; } #k2 { left: 980px; }
+  .counter .who { font-size: 32px; font-weight: 650; line-height: 1.25; max-width: 420px; }
+  #k2 .who { color: var(--grey); font-weight: 550; }
+  .counter .big { font-size: 150px; font-weight: 800; letter-spacing: -5px; line-height: 1; }
+  #k1 .big { color: var(--teal); } #k2 .big { color: var(--red); }
+
+  #cost { left: 150px; right: 150px; top: 892px; font-size: 36px; font-weight: 500; }
+  #cost b { font-weight: 750; }
+  #cost .sep { color: var(--teal); padding: 0 14px; }
+  #foot { left: 150px; right: 150px; top: 972px; font-size: 23px; color: var(--grey); }
+</style>
+</head>
+<body>
+<!-- ============ EDIT TEXT AND NUMBERS HERE ============ -->
+<script>
+const DEFAULT_DURATION = 16;            // seconds; override with ?d=<seconds> or render.mjs --d
+const DATA = {
+  title: ["Live Gemini run", "3 demo businesses", "20 planted traps"],
+  section1: "Planted traps caught",
+  total: 20,
+  ours:     { label: "LedgerLens", caught: 18 },
+  baseline: { label: "Single prompt, same documents", caught: 3 },
+  section2: "Unsourced numbers in the memo",
+  unsourced: { ours: 0, baseline: 62, oursLabel: "LedgerLens", baselineLabel: "Single prompt, same documents" },
+  cost: ["<b>~2 min</b> and <b>~USD 0.28</b> per case", "<b>USD 0</b> on a cached re-run"],
+  footnote: "Strict scoring: an objection counts only with the trap's amount or document.",
+};
+</script>
+<!-- ==================================================== -->
+
+<div class="abs brand" id="brand">
+  <svg viewBox="0 0 64 64" aria-hidden="true">
+    <circle cx="27" cy="27" r="19" fill="#E6F2F4" stroke="#2A7F8E" stroke-width="5"/>
+    <line x1="18" y1="21" x2="36" y2="21" stroke="#0F3D4C" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="18" y1="28" x2="33" y2="28" stroke="#0F3D4C" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="18" y1="35" x2="28" y2="35" stroke="#0F3D4C" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="41.5" y1="41.5" x2="56" y2="56" stroke="#0F3D4C" stroke-width="7" stroke-linecap="round"/>
+  </svg>
+  <span>LedgerLens</span>
+</div>
+<div class="abs" id="title"></div>
+
+<div class="abs section" id="s1"></div>
+<div class="abs row" id="r1"><div class="label"></div><div class="track"><div class="fill"></div></div><div class="val"></div></div>
+<div class="abs row" id="r2"><div class="label"></div><div class="track"><div class="fill"></div></div><div class="val"></div></div>
+
+<div class="abs section" id="s2"></div>
+<div class="abs counter" id="k1"><div class="who"></div><div class="big">0</div></div>
+<div class="abs counter" id="k2"><div class="who"></div><div class="big">0</div></div>
+
+<div class="abs" id="cost"></div>
+<div class="abs" id="foot"></div>
+
+<script>
+// ---------- shared timing helpers (pure functions of t) ----------
+const P = new URLSearchParams(location.search);
+const D = parseFloat(P.get('d')) > 0 ? parseFloat(P.get('d')) : DEFAULT_DURATION;
+window.SCENE = { duration: D };
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const E = {
+  linear: (k) => k,
+  outCubic: (k) => 1 - Math.pow(1 - k, 3),
+  outQuart: (k) => 1 - Math.pow(1 - k, 4),
+  inOutCubic: (k) => (k < 0.5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2),
+  outBack: (k) => { const c1 = 1.5, c3 = c1 + 1; return 1 + c3 * Math.pow(k - 1, 3) + c1 * Math.pow(k - 1, 2); },
+};
+// cue(t, a, b): eased 0..1 progress between fractions a and b of the scene duration
+const cue = (t, a, b, ease = E.outCubic) => ease(clamp((t / D - a) / (b - a)));
+const $ = (s, root = document) => root.querySelector(s);
+function show(el, k, dy = 28, s0 = null) {
+  el.style.opacity = clamp(k);
+  el.style.transform = `translateY(${(1 - k) * dy}px)` + (s0 !== null ? ` scale(${lerp(s0, 1, k)})` : '');
+}
+
+
+// ---------- build DOM from DATA ----------
+$('#title').innerHTML = DATA.title.join('<span class="sep">·</span>');
+$('#s1').textContent = DATA.section1;
+$('#s2').textContent = DATA.section2;
+$('#r1 .label').textContent = DATA.ours.label;
+$('#r2 .label').textContent = DATA.baseline.label;
+$('#k1 .who').textContent = DATA.unsourced.oursLabel;
+$('#k2 .who').textContent = DATA.unsourced.baselineLabel;
+$('#cost').innerHTML = DATA.cost.join('<span class="sep">·</span>');
+$('#foot').textContent = DATA.footnote;
+
+function bar(id, value, t, a, b) {
+  const k = cue(t, a, b, E.inOutCubic);
+  show($(`#${id}`), cue(t, a - 0.04, a + 0.02), 20);
+  $(`#${id} .fill`).style.width = (100 * value / DATA.total * k) + '%';
+  $(`#${id} .val`).innerHTML = `${Math.round(value * k)}<small> / ${DATA.total}</small>`;
+}
+function counter(id, value, t, a) {
+  show($(`#${id}`), cue(t, a, a + 0.06), 30, 0.96);
+  const k = cue(t, a + 0.03, a + 0.15, E.outQuart);
+  $(`#${id} .big`).textContent = Math.round(value * k);
+}
+
+// ---------- timeline (fractions of D; final state holds from 0.75) ----------
+window.renderAt = function (t) {
+  show($('#brand'), cue(t, 0.0, 0.05), -12);
+  show($('#title'), cue(t, 0.0, 0.07), 30);
+  show($('#s1'), cue(t, 0.06, 0.11), 12);
+  bar('r1', DATA.ours.caught, t, 0.12, 0.32);
+  bar('r2', DATA.baseline.caught, t, 0.16, 0.34);
+
+  show($('#s2'), cue(t, 0.36, 0.41), 12);
+  counter('k1', DATA.unsourced.ours, t, 0.38);
+  counter('k2', DATA.unsourced.baseline, t, 0.43);
+
+  show($('#cost'), cue(t, 0.60, 0.66), 20);
+  show($('#foot'), cue(t, 0.66, 0.72), 12);
+};
+
+// Preview in a browser: plays on loop; ?t=<s> freezes a frame. render.mjs passes ?capture=1.
+if (P.has('capture')) renderAt(0);
+else if (P.has('t')) renderAt(parseFloat(P.get('t')));
+else { const s0 = performance.now(); (function loop() { renderAt(((performance.now() - s0) / 1000) % (D + 1)); requestAnimationFrame(loop); })(); }
+</script>
+</body>
+</html>

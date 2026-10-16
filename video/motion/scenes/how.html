@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>LedgerLens · how</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --ink: #0F3D4C; --teal: #2A7F8E; --tint: #E6F2F4;
+    --amber: #E0A100; --amber-tint: #FDF4D9; --red: #B3261E; --grey: #5F6368; --blue: #1f4fd8; --rule: #dedcd5;
+  }
+  html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: var(--bg); }
+  body { font-family: "Inter", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+         color: var(--ink); -webkit-font-smoothing: antialiased; }
+  .abs { position: absolute; }
+  .brand { left: 96px; top: 64px; display: flex; align-items: center; gap: 14px; font-size: 30px; font-weight: 700; letter-spacing: -0.5px; }
+  .brand svg { width: 44px; height: 44px; }
+
+  #title { left: 0; right: 0; top: 140px; text-align: center; font-size: 72px; font-weight: 750; letter-spacing: -1.8px; }
+  #links { left: 0; top: 0; width: 1920px; height: 1080px; }
+
+  .card { top: 320px; width: 460px; height: 500px; display: flex; flex-direction: column; box-sizing: border-box; padding: 48px 44px; border-radius: 28px;
+          background: #fff; border: 3px solid var(--tint); box-shadow: 0 10px 36px rgba(15,61,76,0.07); }
+  #c1 { left: 150px; } #c2 { left: 730px; } #c3 { left: 1310px; }
+  .badge { width: 76px; height: 76px; border-radius: 50%; background: var(--teal); color: #fff; display: flex;
+           align-items: center; justify-content: center; font-size: 38px; font-weight: 800; }
+  .card h2 { margin: 30px 0 16px; font-size: 48px; font-weight: 750; letter-spacing: -1px; line-height: 1.1; }
+  .card p { margin: 0; font-size: 29px; line-height: 1.4; color: var(--grey); }
+  .tag { margin-top: auto; align-self: flex-start; padding: 10px 20px; border-radius: 30px; background: var(--tint);
+         color: var(--ink); font-size: 23px; font-weight: 600; letter-spacing: 0.2px; }
+  #c2 .tag { background: var(--amber-tint); }
+
+  #caption { left: 0; right: 0; top: 905px; display: flex; justify-content: center; align-items: center; gap: 28px;
+             font-size: 32px; font-weight: 600; color: var(--grey); letter-spacing: 0.2px; }
+  #caption .rule { width: 120px; height: 2px; background: var(--rule); }
+  #caption .dot { color: var(--teal); }
+</style>
+</head>
+<body>
+<!-- ============ EDIT TEXT HERE ============ -->
+<script>
+const DEFAULT_DURATION = 14;            // seconds; override with ?d=<seconds> or render.mjs --d
+const TEXT = {
+  title: "How LedgerLens works",
+  steps: [
+    { title: "Read with evidence", body: "Every number is linked to its document, page and box.", tag: "document · page · box" },
+    { title: "Challenge", body: "A second agent attacks the memo with deterministic checks.", tag: "objections + Python checks" },
+    { title: "Human signs", body: "The underwriter accepts or dismisses each objection and decides.", tag: "accept · dismiss · decide" },
+  ],
+  highlight: 1,                          // index of the step shown in amber (0-based)
+  caption: ["Gemini 3.8 Flash", "Agent Development Kit", "Python checks"],
+};
+</script>
+<!-- ======================================== -->
+
+<div class="abs brand" id="brand">
+  <svg viewBox="0 0 64 64" aria-hidden="true">
+    <circle cx="27" cy="27" r="19" fill="#E6F2F4" stroke="#2A7F8E" stroke-width="5"/>
+    <line x1="18" y1="21" x2="36" y2="21" stroke="#0F3D4C" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="18" y1="28" x2="33" y2="28" stroke="#0F3D4C" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="18" y1="35" x2="28" y2="35" stroke="#0F3D4C" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="41.5" y1="41.5" x2="56" y2="56" stroke="#0F3D4C" stroke-width="7" stroke-linecap="round"/>
+  </svg>
+  <span>LedgerLens</span>
+</div>
+<div class="abs" id="title"></div>
+
+<svg class="abs" id="links" viewBox="0 0 1920 1080" aria-hidden="true">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2A7F8E"/>
+    </marker>
+  </defs>
+  <path id="l1" d="M622 570 L718 570" stroke="#2A7F8E" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path id="l2" d="M1202 570 L1298 570" stroke="#2A7F8E" stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>
+
+<div class="abs card" id="c1"><div class="badge">1</div><h2></h2><p></p><div class="tag"></div></div>
+<div class="abs card" id="c2"><div class="badge">2</div><h2></h2><p></p><div class="tag"></div></div>
+<div class="abs card" id="c3"><div class="badge">3</div><h2></h2><p></p><div class="tag"></div></div>
+
+<div class="abs" id="caption"></div>
+
+<script>
+// ---------- shared timing helpers (pure functions of t) ----------
+const P = new URLSearchParams(location.search);
+const D = parseFloat(P.get('d')) > 0 ? parseFloat(P.get('d')) : DEFAULT_DURATION;
+window.SCENE = { duration: D };
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const E = {
+  linear: (k) => k,
+  outCubic: (k) => 1 - Math.pow(1 - k, 3),
+  outQuart: (k) => 1 - Math.pow(1 - k, 4),
+  inOutCubic: (k) => (k < 0.5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2),
+  outBack: (k) => { const c1 = 1.5, c3 = c1 + 1; return 1 + c3 * Math.pow(k - 1, 3) + c1 * Math.pow(k - 1, 2); },
+};
+// cue(t, a, b): eased 0..1 progress between fractions a and b of the scene duration
+const cue = (t, a, b, ease = E.outCubic) => ease(clamp((t / D - a) / (b - a)));
+const $ = (s, root = document) => root.querySelector(s);
+function show(el, k, dy = 28, s0 = null) {
+  el.style.opacity = clamp(k);
+  el.style.transform = `translateY(${(1 - k) * dy}px)` + (s0 !== null ? ` scale(${lerp(s0, 1, k)})` : '');
+}
+
+
+// ---------- build DOM from TEXT ----------
+$('#title').textContent = TEXT.title;
+const cards = ['#c1', '#c2', '#c3'].map((s) => $(s));
+cards.forEach((c, i) => {
+  $('h2', c).textContent = TEXT.steps[i].title;
+  $('p', c).textContent = TEXT.steps[i].body;
+  $('.tag', c).textContent = TEXT.steps[i].tag;
+});
+$('#caption').innerHTML = '<span class="rule"></span>' +
+  TEXT.caption.map((x) => `<span>${x}</span>`).join('<span class="dot">·</span>') + '<span class="rule"></span>';
+const lines = ['#l1', '#l2'].map((s) => $(s));
+const SPANS = [[624, 704], [1204, 1284]];          // x from/to of each connector (y = 570)
+lines.forEach((l) => l.setAttribute('marker-end', 'url(#arrow)'));
+
+const AMBER = [224, 161, 0], TINT = [230, 242, 244], TEAL = [42, 127, 142], WHITE = [255, 255, 255], AMBER_BG = [255, 251, 238];
+const mix = (a, b, k) => `rgb(${a.map((v, i) => Math.round(lerp(v, b[i], k))).join(',')})`;
+
+// ---------- timeline (fractions of D; final state holds from 0.75) ----------
+window.renderAt = function (t) {
+  show($('#brand'), cue(t, 0.0, 0.05), -12);
+  show($('#title'), cue(t, 0.0, 0.08), 30);
+
+  const starts = [0.08, 0.26, 0.46];
+  cards.forEach((c, i) => {
+    const a = starts[i];
+    show(c, cue(t, a, a + 0.09, E.outCubic), 50, 0.94);
+    show($('h2', c), cue(t, a + 0.03, a + 0.10), 16);
+    show($('p', c), cue(t, a + 0.05, a + 0.12), 16);
+    show($('.tag', c), cue(t, a + 0.08, a + 0.14), 10);
+  });
+  [[0.18, 0.26], [0.38, 0.46]].forEach(([a, b], i) => {
+    const k = cue(t, a, b, E.inOutCubic);
+    const [x0, x1] = SPANS[i];
+    lines[i].setAttribute('d', `M${x0} 570 L${lerp(x0, x1, k)} 570`);
+    lines[i].style.opacity = clamp(k * 5);
+  });
+
+  // highlight the challenge step in amber
+  const h = cue(t, 0.60, 0.70, E.inOutCubic);
+  cards.forEach((c, i) => {
+    if (i === TEXT.highlight) {
+      c.style.borderColor = mix(TINT, AMBER, h);
+      c.style.background = mix(WHITE, AMBER_BG, h);
+      c.style.boxShadow = `0 ${lerp(10, 22, h)}px ${lerp(36, 56, h)}px rgba(224,161,0,${lerp(0.0, 0.22, h)}), 0 10px 36px rgba(15,61,76,0.07)`;
+      $('.badge', c).style.background = mix(TEAL, AMBER, h);
+      const k = cue(t, 0.26, 0.35);
+      c.style.transform = `translateY(${(1 - k) * 50 - 14 * h}px) scale(${lerp(0.94, 1, k) * lerp(1, 1.04, h)})`;
+    } else if (t / D > 0.6) {
+      c.style.opacity = lerp(1, 0.86, h);
+    }
+  });
+
+  show($('#caption'), cue(t, 0.66, 0.75), 20);
+};
+
+// Preview in a browser: plays on loop; ?t=<s> freezes a frame. render.mjs passes ?capture=1.
+if (P.has('capture')) renderAt(0);
+else if (P.has('t')) renderAt(parseFloat(P.get('t')));
+else { const s0 = performance.now(); (function loop() { renderAt(((performance.now() - s0) / 1000) % (D + 1)); requestAnimationFrame(loop); })(); }
+</script>
+</body>
+</html>
