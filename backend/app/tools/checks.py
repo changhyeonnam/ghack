@@ -196,7 +196,9 @@ def reconcile_cash(cf: CashflowSummary) -> Optional[CashReconciliation]:
 # Q9: every number sourced
 # ---------------------------------------------------------------------------
 FIG_TOKEN = re.compile(r"\{fig:([A-Za-z0-9_.\-]+)\}")
-DATEISH = re.compile(r"^(?:\d{4}(?:-\d{2}){0,2}|\d{1,2}/\d{1,2}(?:/\d{2,4})?|Q[1-4]|\d{1,2}(?:st|nd|rd|th)?|[12]\d{3})$")
+# Tolerated in prose: years (19xx/20xx, optionally -mm-dd), d/m(/y) dates, quarters and 1-2 digit counts/ordinals.
+# Any other 4-digit number ("2500 customers", "9999 orders") is an amount and must be a figure token.
+DATEISH = re.compile(r"^(?:(?:19|20)\d{2}(?:-\d{2}){0,2}|\d{1,2}/\d{1,2}(?:/\d{2,4})?|Q[1-4]|\d{1,2}(?:st|nd|rd|th)?)$")
 NUMERAL = re.compile(r"(?<![A-Za-z{:.\-])\d[\d,.]*%?")
 
 
@@ -205,6 +207,7 @@ def find_unsourced_numerals(memo: Memo) -> list[UnsourcedNumeral]:
     out: list[UnsourcedNumeral] = []
     chunks: list[tuple[str, str]] = [("headline", memo.draft.headline), ("rationale", memo.draft.rationale)]
     for s in memo.draft.sections:
+        chunks.append((s.heading, s.heading))  # headings are rendered too
         for p in s.paragraphs:
             chunks.append((s.heading, p))
     for lst, name in ((memo.draft.strengths, "strengths"), (memo.draft.concerns, "concerns"), (memo.draft.conditions, "conditions")):
@@ -213,7 +216,7 @@ def find_unsourced_numerals(memo: Memo) -> list[UnsourcedNumeral]:
         stripped = FIG_TOKEN.sub(" ", text)
         for m in NUMERAL.finditer(stripped):
             tok = m.group(0).rstrip(".,")
-            if DATEISH.match(tok) or _looks_like_date(stripped, m.start()):
+            if DATEISH.match(tok) or _looks_like_date(stripped, m.start(), tok):
                 continue
             ctx = stripped[max(0, m.start() - 40): m.end() + 40].replace("\n", " ")
             out.append(UnsourcedNumeral(section=section, text=tok, context=ctx))
@@ -224,9 +227,16 @@ MONTHS = ("january", "february", "march", "april", "may", "june", "july", "augus
           "jan", "feb", "mar", "apr", "jun", "jul", "aug", "sep", "sept", "oct", "nov", "dec")
 
 
-def _looks_like_date(text: str, pos: int) -> bool:
-    window = text[max(0, pos - 12): pos + 16].lower()
-    return any(mn in window for mn in MONTHS)
+MONTH_RE = re.compile(r"\b(?:" + "|".join(MONTHS) + r")\b\.?", re.IGNORECASE)
+
+
+def _looks_like_date(text: str, pos: int, tok: str = "") -> bool:
+    """A day or year next to a month name ("14 March", "Mar 2026"). Whole words only: "margin" and "declined" are not
+    months. Amounts (thousands separators, decimals, more than 4 digits) are never dates."""
+    if "," in tok or "." in tok or len(tok.rstrip("%")) > 4 or tok.endswith("%"):
+        return False
+    window = text[max(0, pos - 12): pos + 16]
+    return bool(MONTH_RE.search(window))
 
 
 def unsourced_figure_ids(memo: Memo) -> list[str]:
