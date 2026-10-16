@@ -222,7 +222,7 @@ def feature_pipeline():
 # ------------------------------------------------------------------ E. tech stack
 def tech_stack():
     f, ax = fig(9.4, 3.7)
-    layers = [("Experience", "Firebase Hosting · React + Vite: portfolio, new case, workbench, evidence viewer, print export", "One screen per decision; dark and light themes", True),
+    layers = [("Experience", "React + Vite on Cloud Run: portfolio, new case, workbench, evidence viewer, print export", "One screen per decision; dark and light themes", True),
               ("Agents", "ADK: Intake · Extractor x5 · Analyst · Challenger (investigator, writer) · Explainer", "Challenger never sees the Analyst prompt", True),
               ("Models", "Gemini 3.8 Flash for every agent · Gemini 3.1 Pro optional for the heavy agents", "One env var switches to Pro", True),
               ("Tools", "Python: cash-flow model · balance chain · image hash · PDF text-layer cross-check · date/entity checks", "Numbers computed, never generated; the text layer verifies what Gemini read", False),
@@ -351,12 +351,12 @@ def architecture2():
         ax.add_patch(FancyBboxPatch((0.2, y), 9.0, h, boxstyle="round,pad=0,rounding_size=0.08", fc=PANEL, ec="#D5DBDE", lw=1))
         text(ax, 0.34, y + h - 0.2, label, 8, INK, True, maxw=8.6)
     # Frontend: y 3.3 .. 4.2
-    cont(3.3, 0.9, "Frontend  ·  Firebase Hosting (React + Vite)")
+    cont(3.3, 0.9, "Frontend  ·  React + Vite, served by Cloud Run")
     rbox(ax, 0.4, 3.4, 1.9, 0.44, fill=WHITE, edge=LINE); text(ax, 1.35, 3.62, "Portfolio · New case", 7.4, INK, True, ha="center", maxw=1.7)
     rbox(ax, 2.45, 3.4, 6.6, 0.44, fill=WHITE, edge=LINE); text(ax, 5.75, 3.62, "Workbench: memo · evidence viewer with bbox highlight · objections · decision · audit · print export", 7, INK, True, ha="center", maxw=6.3)
     arrow(ax, 4.7, 3.3, 4.7, 3.12, lw=1.3)
     # Backend: y 0.95 .. 3.1
-    cont(0.95, 2.15, "Backend  ·  Cloud Run (Python FastAPI + ADK)  ·  scales to zero  ·  cache_only mode for the public demo")
+    cont(0.95, 2.15, "Backend  ·  Cloud Run (Python FastAPI + ADK)  ·  scales to zero  ·  live Gemini within a budget; recorded runs replay free")
     rbox(ax, 0.4, 2.3, 1.7, 0.44, fill=WHITE, edge=LINE); text(ax, 1.25, 2.52, "REST API", 7.4, INK, True, ha="center")
     rbox(ax, 2.4, 2.3, 2.1, 0.44, fill=TINT, edge=TEAL, lw=1.6); text(ax, 3.45, 2.52, "ADK Orchestrator", 7.4, INK, True, ha="center")
     arrow(ax, 2.1, 2.52, 2.4, 2.52, lw=1.3)

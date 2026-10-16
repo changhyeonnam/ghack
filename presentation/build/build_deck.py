@@ -7,8 +7,8 @@ from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
 import copy, os
 
 # Submission links: fill these in before the final build.
-VIDEO_URL = "TBD"  # public YouTube link to the demo video (<= 3 minutes)
-APP_URL = "TBD"    # Cloud Run URL of the public demo (cache_only mode)
+VIDEO_URL = "TBD"  # public YouTube link to the demo video (3-4 minutes)
+APP_URL = "ledgerlens-api-629502893425.asia-southeast1.run.app"    # Cloud Run URL of the public demo
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 IMG = HERE + "/img"
@@ -297,7 +297,7 @@ headline(s, "Gemini reads, ADK orchestrates, Python computes, Cloud Run serves."
 tech = [("Google Cloud", "Gemini 3.8 Flash", "Default for every agent. Measured USD 0.26-0.31 per cold case; USD 0 cached.", False),
         ("Google Cloud", "Gemini 3.1 Pro", "One env var moves Extractor, Analyst and Challenger to Pro.", False),
         ("Google Cloud", "Agent Development Kit", "Intake, 5 Extractors, Analyst, Challenger (investigator and writer), Explainer.", False),
-        ("Google Cloud", "Cloud Run + Firebase", "FastAPI backend scales to zero; React workbench on Firebase Hosting.", False),
+        ("Google Cloud", "Cloud Run", "One service: FastAPI, the ADK agents and the React workbench; scales to zero.", False),
         ("Google Cloud", "Firestore + Storage", "Cases, extractions, memos, objections, decisions, audit, traces; documents.", False),
         ("Python", "Deterministic tools", "Cash-flow model, balance chain, image hash, PDF text-layer cross-check, date and entity checks.", False),
         ("Python", "LLM cache, budget cap", "Content-hash cache per model and prompt version; hard USD cap per process.", False),
@@ -426,8 +426,8 @@ for p in sh.text_frame.paragraphs[1:]:
         r.text = ""
 sh.height = Inches(0.5)
 links = [("GitHub public repository", "github.com/changhyeonnam/ghack", "English README, architecture, run instructions, synthetic-data notice, presentation/"),
-         ("Demo video (up to 3 minutes)", VIDEO_URL, "Problem in 20 seconds, click-to-source and Challenger scenes, benchmark near the end"),
-         ("Final product", APP_URL, "Cloud Run service; each browser gets its own copy of the three demo cases (Reset demo). Scales to zero; demo cases replay the recorded live Gemini run (only the customer letter calls Gemini live), so judging costs nothing")]
+         ("Demo video (3 min 12 s)", VIDEO_URL, "Problem, how it works, one case end to end (click-to-source, Challenger, decision, letter), benchmark"),
+         ("Final product", APP_URL, "Cloud Run, live Gemini within a fixed AI budget (on-screen notice when reached). Each browser gets its own copy of the three demo cases, which replay the recorded live run in seconds; visitors' cases are shared read-only. No login")]
 y = 1.3
 for t, u, d in links:
     card(s, 0.3, y, 9.4, 1.2, fill=PANEL, line=LINE)

@@ -38,7 +38,7 @@ More: [objection evidence](docs/media/07_objection_evidence.png) · [audit trail
 ## Architecture
 
 ```
-Browser (React/Vite, Firebase Hosting) ──/api──> Cloud Run (FastAPI)
+Browser (React/Vite, served by Cloud Run) ──/api──> Cloud Run (FastAPI)
                                                    ├─ ADK agents: Intake · Extractor×5 · Analyst · Challenger(investigator→writer) · Explainer
                                                    ├─ Deterministic tools: compute_cashflow · recompute_balance_chain · image_similarity · date_crosscheck · entity checks
                                                    ├─ Firestore: cases · extractions · memos · objections · decisions · audit · traces · LLM cache
@@ -127,8 +127,8 @@ LEDGERLENS_STORAGE=gcp GOOGLE_CLOUD_PROJECT=$PROJECT_ID LEDGERLENS_GCS_BUCKET=$P
 - **Cold start (Cloud Run scales to zero):** startup does no work beyond loading the app (demo seeding moved to the
   browser's first visit); documents are stored by content hash and page renders are shared, so after the first visitor
   a demo copy seeds in about 2 s and replays the full pipeline in about 5 s. A live case takes about 2 minutes;
-  the request timeout is 600 s and the web app calls Cloud Run directly, so long stages are not cut by the 60 s
-  Firebase Hosting proxy limit.
+  the request timeout is 600 s. (An optional Firebase Hosting mirror would call Cloud Run directly, because Hosting
+  rewrites stop at 60 s.)
 - **Agents:** the five agents are Google ADK `LlmAgent`s (the Challenger is a `SequentialAgent` with tools), deployed
   on Cloud Run, calling Gemini 3.8 Flash.
 
