@@ -1,0 +1,193 @@
+{
+ "text": "{\n  \"signage_text\": \"Linh Fashion\",\n  \"business_type_guess\": \"online apparel retail / clothing shop\",\n  \"apparent_size\": \"small\",\n  \"inventory_level\": \"moderate\",\n  \"observations\": [\n    {\n      \"text\": \"Signage clearly displays the applicant business name 'Linh Fashion'\",\n      \"source\": {\n        \"doc_id\": \"D14\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 59,\n          \"xmin\": 369,\n          \"ymax\": 154,\n          \"xmax\": 645\n        },\n        \"snippet\": \"Linh Fashion\"\n      }\n    },\n    {\n      \"text\": \"Two clothing racks displaying various colored garments and apparel items\",\n      \"source\": {\n        \"doc_id\": \"D14\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 247,\n          \"xmin\": 36,\n          \"ymax\": 646,\n          \"xmax\": 697\n        },\n        \"snippet\": null\n      }\n    },\n    {\n      \"text\": \"Cardboard shipping boxes labeled 'J&T', 'AO THUN', and 'FRAGILE' ready for dispatch\",\n      \"source\": {\n        \"doc_id\": \"D14\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 377,\n          \"xmin\": 747,\n          \"ymax\": 776,\n          \"xmax\": 992\n        },\n        \"snippet\": \"J&T AO THUN FRAGILE\"\n      }\n    },\n    {\n      \"text\": \"Workstation table equipped with an open laptop and order/packaging materials\",\n      \"source\": {\n        \"doc_id\": \"D14\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 595,\n          \"xmin\": 110,\n          \"ymax\": 905,\n          \"xmax\": 505\n        },\n        \"snippet\": null\n      }\n    },\n    {\n      \"text\": \"A mannequin dressed in bright pink attire next to clothing racks\",\n      \"source\": {\n        \"doc_id\": \"D14\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 298,\n          \"xmin\": 629,\n          \"ymax\": 724,\n          \"xmax\": 726\n        },\n        \"snippet\": null\n      }\n    },\n    {\n      \"text\": \"Watermark indicating image is synthetic or an illustration/demonstration graphic\",\n      \"source\": {\n        \"doc_id\": \"D14\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 954,\n          \"xmin\": 791,\n          \"ymax\": 996,\n          \"xmax\": 998\n        },\n        \"snippet\": \"SYNTHETIC · FOR DEMO\"\n      }\n    }\n  ]\n}",
+ "parsed": {
+  "signage_text": "Linh Fashion",
+  "business_type_guess": "online apparel retail / clothing shop",
+  "apparent_size": "small",
+  "inventory_level": "moderate",
+  "observations": [
+   {
+    "text": "Signage clearly displays the applicant business name 'Linh Fashion'",
+    "source": {
+     "doc_id": "D14",
+     "page": 1,
+     "bbox": {
+      "ymin": 59,
+      "xmin": 369,
+      "ymax": 154,
+      "xmax": 645
+     },
+     "snippet": "Linh Fashion"
+    }
+   },
+   {
+    "text": "Two clothing racks displaying various colored garments and apparel items",
+    "source": {
+     "doc_id": "D14",
+     "page": 1,
+     "bbox": {
+      "ymin": 247,
+      "xmin": 36,
+      "ymax": 646,
+      "xmax": 697
+     },
+     "snippet": null
+    }
+   },
+   {
+    "text": "Cardboard shipping boxes labeled 'J&T', 'AO THUN', and 'FRAGILE' ready for dispatch",
+    "source": {
+     "doc_id": "D14",
+     "page": 1,
+     "bbox": {
+      "ymin": 377,
+      "xmin": 747,
+      "ymax": 776,
+      "xmax": 992
+     },
+     "snippet": "J&T AO THUN FRAGILE"
+    }
+   },
+   {
+    "text": "Workstation table equipped with an open laptop and order/packaging materials",
+    "source": {
+     "doc_id": "D14",
+     "page": 1,
+     "bbox": {
+      "ymin": 595,
+      "xmin": 110,
+      "ymax": 905,
+      "xmax": 505
+     },
+     "snippet": null
+    }
+   },
+   {
+    "text": "A mannequin dressed in bright pink attire next to clothing racks",
+    "source": {
+     "doc_id": "D14",
+     "page": 1,
+     "bbox": {
+      "ymin": 298,
+      "xmin": 629,
+      "ymax": 724,
+      "xmax": 726
+     },
+     "snippet": null
+    }
+   },
+   {
+    "text": "Watermark indicating image is synthetic or an illustration/demonstration graphic",
+    "source": {
+     "doc_id": "D14",
+     "page": 1,
+     "bbox": {
+      "ymin": 954,
+      "xmin": 791,
+      "ymax": 996,
+      "xmax": 998
+     },
+     "snippet": "SYNTHETIC · FOR DEMO"
+    }
+   }
+  ]
+ },
+ "state": {
+  "output": {
+   "signage_text": "Linh Fashion",
+   "business_type_guess": "online apparel retail / clothing shop",
+   "apparent_size": "small",
+   "inventory_level": "moderate",
+   "observations": [
+    {
+     "text": "Signage clearly displays the applicant business name 'Linh Fashion'",
+     "source": {
+      "doc_id": "D14",
+      "page": 1,
+      "bbox": {
+       "ymin": 59,
+       "xmin": 369,
+       "ymax": 154,
+       "xmax": 645
+      },
+      "snippet": "Linh Fashion"
+     }
+    },
+    {
+     "text": "Two clothing racks displaying various colored garments and apparel items",
+     "source": {
+      "doc_id": "D14",
+      "page": 1,
+      "bbox": {
+       "ymin": 247,
+       "xmin": 36,
+       "ymax": 646,
+       "xmax": 697
+      }
+     }
+    },
+    {
+     "text": "Cardboard shipping boxes labeled 'J&T', 'AO THUN', and 'FRAGILE' ready for dispatch",
+     "source": {
+      "doc_id": "D14",
+      "page": 1,
+      "bbox": {
+       "ymin": 377,
+       "xmin": 747,
+       "ymax": 776,
+       "xmax": 992
+      },
+      "snippet": "J&T AO THUN FRAGILE"
+     }
+    },
+    {
+     "text": "Workstation table equipped with an open laptop and order/packaging materials",
+     "source": {
+      "doc_id": "D14",
+      "page": 1,
+      "bbox": {
+       "ymin": 595,
+       "xmin": 110,
+       "ymax": 905,
+       "xmax": 505
+      }
+     }
+    },
+    {
+     "text": "A mannequin dressed in bright pink attire next to clothing racks",
+     "source": {
+      "doc_id": "D14",
+      "page": 1,
+      "bbox": {
+       "ymin": 298,
+       "xmin": 629,
+       "ymax": 724,
+       "xmax": 726
+      }
+     }
+    },
+    {
+     "text": "Watermark indicating image is synthetic or an illustration/demonstration graphic",
+     "source": {
+      "doc_id": "D14",
+      "page": 1,
+      "bbox": {
+       "ymin": 954,
+       "xmin": 791,
+       "ymax": 996,
+       "xmax": 998
+      },
+      "snippet": "SYNTHETIC · FOR DEMO"
+     }
+    }
+   ]
+  }
+ },
+ "input_tokens": 961,
+ "output_tokens": 741,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:premises_photo",
+ "cached_at": "2026-10-15T07:04:59+00:00"
+}

@@ -1,0 +1,242 @@
+{
+ "text": "{\n  \"merchant\": \"TOKO GROSIR MAKMUR\",\n  \"date\": \"2026-02-06\",\n  \"receipt_number\": \"TGM-1023\",\n  \"currency\": \"IDR\",\n  \"total\": {\n    \"value\": 2215000,\n    \"source\": {\n      \"doc_id\": \"D06\",\n      \"page\": 1,\n      \"bbox\": {\n        \"ymin\": 630,\n        \"xmin\": 716,\n        \"ymax\": 644,\n        \"xmax\": 884\n      },\n      \"snippet\": \"2.215.000\"\n    }\n  },\n  \"items\": [\n    {\n      \"description\": \"Sabun Mandi 1 lusin\",\n      \"amount\": 240000,\n      \"source\": {\n        \"doc_id\": \"D06\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 316,\n          \"xmin\": 113,\n          \"ymax\": 357,\n          \"xmax\": 875\n        },\n        \"snippet\": \"Sabun Mandi 1 lusin\\n 5 x 48.000 240.000\"\n      }\n    },\n    {\n      \"description\": \"Susu Kental Manis 1 dus\",\n      \"amount\": 920000,\n      \"source\": {\n        \"doc_id\": \"D06\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 364,\n          \"xmin\": 115,\n          \"ymax\": 406,\n          \"xmax\": 875\n        },\n        \"snippet\": \"Susu Kental Manis 1 dus\\n 2 x 460.000 920.000\"\n      }\n    },\n    {\n      \"description\": \"Cabai Rawit 1kg\",\n      \"amount\": 390000,\n      \"source\": {\n        \"doc_id\": \"D06\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 414,\n          \"xmin\": 116,\n          \"ymax\": 454,\n          \"xmax\": 877\n        },\n        \"snippet\": \"Cabai Rawit 1kg\\n 6 x 65.000 390.000\"\n      }\n    },\n    {\n      \"description\": \"Deterjen 800g\",\n      \"amount\": 63000,\n      \"source\": {\n        \"doc_id\": \"D06\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 464,\n          \"xmin\": 117,\n          \"ymax\": 505,\n          \"xmax\": 879\n        },\n        \"snippet\": \"Deterjen 800g\\n 3 x 21.000 63.000\"\n      }\n    },\n    {\n      \"description\": \"Tepung Terigu 1kg\",\n      \"amount\": 26000,\n      \"source\": {\n        \"doc_id\": \"D06\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 512,\n          \"xmin\": 119,\n          \"ymax\": 553,\n          \"xmax\": 880\n        },\n        \"snippet\": \"Tepung Terigu 1kg\\n 2 x 13.000 26.000\"\n      }\n    },\n    {\n      \"description\": \"Pasta Gigi 1 lusin\",\n      \"amount\": 57600,\n      \"source\": {\n        \"doc_id\": \"D06\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 561,\n          \"xmin\": 121,\n          \"ymax\": 602,\n          \"xmax\": 882\n        },\n        \"snippet\": \"Pasta Gigi 1 lusin\\n 6 x 96.000 576.000\"\n      }\n    }\n  ],\n  \"payment_method\": \"TRANSFER\",\n  \"direction\": \"purchase\",\n  \"handwritten\": false\n}",
+ "parsed": {
+  "merchant": "TOKO GROSIR MAKMUR",
+  "date": "2026-02-06",
+  "receipt_number": "TGM-1023",
+  "currency": "IDR",
+  "total": {
+   "value": 2215000.0,
+   "source": {
+    "doc_id": "D06",
+    "page": 1,
+    "bbox": {
+     "ymin": 630,
+     "xmin": 716,
+     "ymax": 644,
+     "xmax": 884
+    },
+    "snippet": "2.215.000"
+   }
+  },
+  "items": [
+   {
+    "description": "Sabun Mandi 1 lusin",
+    "amount": 240000.0,
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 316,
+      "xmin": 113,
+      "ymax": 357,
+      "xmax": 875
+     },
+     "snippet": "Sabun Mandi 1 lusin\n 5 x 48.000 240.000"
+    }
+   },
+   {
+    "description": "Susu Kental Manis 1 dus",
+    "amount": 920000.0,
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 364,
+      "xmin": 115,
+      "ymax": 406,
+      "xmax": 875
+     },
+     "snippet": "Susu Kental Manis 1 dus\n 2 x 460.000 920.000"
+    }
+   },
+   {
+    "description": "Cabai Rawit 1kg",
+    "amount": 390000.0,
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 414,
+      "xmin": 116,
+      "ymax": 454,
+      "xmax": 877
+     },
+     "snippet": "Cabai Rawit 1kg\n 6 x 65.000 390.000"
+    }
+   },
+   {
+    "description": "Deterjen 800g",
+    "amount": 63000.0,
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 464,
+      "xmin": 117,
+      "ymax": 505,
+      "xmax": 879
+     },
+     "snippet": "Deterjen 800g\n 3 x 21.000 63.000"
+    }
+   },
+   {
+    "description": "Tepung Terigu 1kg",
+    "amount": 26000.0,
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 512,
+      "xmin": 119,
+      "ymax": 553,
+      "xmax": 880
+     },
+     "snippet": "Tepung Terigu 1kg\n 2 x 13.000 26.000"
+    }
+   },
+   {
+    "description": "Pasta Gigi 1 lusin",
+    "amount": 57600.0,
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 561,
+      "xmin": 121,
+      "ymax": 602,
+      "xmax": 882
+     },
+     "snippet": "Pasta Gigi 1 lusin\n 6 x 96.000 576.000"
+    }
+   }
+  ],
+  "payment_method": "TRANSFER",
+  "direction": "purchase",
+  "handwritten": false
+ },
+ "state": {
+  "output": {
+   "merchant": "TOKO GROSIR MAKMUR",
+   "date": "2026-02-06",
+   "receipt_number": "TGM-1023",
+   "currency": "IDR",
+   "total": {
+    "value": 2215000.0,
+    "source": {
+     "doc_id": "D06",
+     "page": 1,
+     "bbox": {
+      "ymin": 630,
+      "xmin": 716,
+      "ymax": 644,
+      "xmax": 884
+     },
+     "snippet": "2.215.000"
+    }
+   },
+   "items": [
+    {
+     "description": "Sabun Mandi 1 lusin",
+     "amount": 240000.0,
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 316,
+       "xmin": 113,
+       "ymax": 357,
+       "xmax": 875
+      },
+      "snippet": "Sabun Mandi 1 lusin\n 5 x 48.000 240.000"
+     }
+    },
+    {
+     "description": "Susu Kental Manis 1 dus",
+     "amount": 920000.0,
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 364,
+       "xmin": 115,
+       "ymax": 406,
+       "xmax": 875
+      },
+      "snippet": "Susu Kental Manis 1 dus\n 2 x 460.000 920.000"
+     }
+    },
+    {
+     "description": "Cabai Rawit 1kg",
+     "amount": 390000.0,
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 414,
+       "xmin": 116,
+       "ymax": 454,
+       "xmax": 877
+      },
+      "snippet": "Cabai Rawit 1kg\n 6 x 65.000 390.000"
+     }
+    },
+    {
+     "description": "Deterjen 800g",
+     "amount": 63000.0,
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 464,
+       "xmin": 117,
+       "ymax": 505,
+       "xmax": 879
+      },
+      "snippet": "Deterjen 800g\n 3 x 21.000 63.000"
+     }
+    },
+    {
+     "description": "Tepung Terigu 1kg",
+     "amount": 26000.0,
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 512,
+       "xmin": 119,
+       "ymax": 553,
+       "xmax": 880
+      },
+      "snippet": "Tepung Terigu 1kg\n 2 x 13.000 26.000"
+     }
+    },
+    {
+     "description": "Pasta Gigi 1 lusin",
+     "amount": 57600.0,
+     "source": {
+      "doc_id": "D06",
+      "page": 1,
+      "bbox": {
+       "ymin": 561,
+       "xmin": 121,
+       "ymax": 602,
+       "xmax": 882
+      },
+      "snippet": "Pasta Gigi 1 lusin\n 6 x 96.000 576.000"
+     }
+    }
+   ],
+   "payment_method": "TRANSFER",
+   "direction": "purchase",
+   "handwritten": false
+  }
+ },
+ "input_tokens": 939,
+ "output_tokens": 1077,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:receipt",
+ "cached_at": "2026-10-15T06:46:45+00:00"
+}

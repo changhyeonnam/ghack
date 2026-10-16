@@ -1,0 +1,242 @@
+{
+ "text": "{\"merchant\":\"TOKO GROSIR MAKMUR\",\"date\":\"2026-04-20\",\"receipt_number\":\"TGM-1063\",\"currency\":\"IDR\",\"total\":{\"value\":1052000.0,\"source\":{\"doc_id\":\"D11\",\"page\":1,\"bbox\":{\"ymin\":621,\"xmin\":711,\"ymax\":638,\"xmax\":875},\"snippet\":\"1.052.000\"}},\"items\":[{\"description\":\"Kecap Manis 600ml\",\"amount\":144000.0,\"source\":{\"doc_id\":\"D11\",\"page\":1,\"bbox\":{\"ymin\":332,\"xmin\":727,\"ymax\":348,\"xmax\":851},\"snippet\":\"144.000\"}},{\"description\":\"Bawang Merah 1kg\",\"amount\":190000.0,\"source\":{\"doc_id\":\"D11\",\"page\":1,\"bbox\":{\"ymin\":380,\"xmin\":730,\"ymax\":397,\"xmax\":855},\"snippet\":\"190.000\"}},{\"description\":\"Sabun Mandi 1 lusin\",\"amount\":144000.0,\"source\":{\"doc_id\":\"D11\",\"page\":1,\"bbox\":{\"ymin\":429,\"xmin\":734,\"ymax\":445,\"xmax\":859},\"snippet\":\"144.000\"}},{\"description\":\"Air Mineral 1 dus (48)\",\"amount\":42000.0,\"source\":{\"doc_id\":\"D11\",\"page\":1,\"bbox\":{\"ymin\":476,\"xmin\":755,\"ymax\":494,\"xmax\":862},\"snippet\":\"42.000\"}},{\"description\":\"Susu Kental Manis 1 dus\",\"amount\":460000.0,\"source\":{\"doc_id\":\"D11\",\"page\":1,\"bbox\":{\"ymin\":525,\"xmin\":742,\"ymax\":542,\"xmax\":867},\"snippet\":\"460.000\"}},{\"description\":\"Shampo Sachet 1 renceng\",\"amount\":72000.0,\"source\":{\"doc_id\":\"D11\",\"page\":1,\"bbox\":{\"ymin\":573,\"xmin\":763,\"ymax\":591,\"xmax\":871},\"snippet\":\"72.000\"}}],\"payment_method\":\"TUNAI\",\"direction\":\"purchase\",\"handwritten\":false}",
+ "parsed": {
+  "merchant": "TOKO GROSIR MAKMUR",
+  "date": "2026-04-20",
+  "receipt_number": "TGM-1063",
+  "currency": "IDR",
+  "total": {
+   "value": 1052000.0,
+   "source": {
+    "doc_id": "D11",
+    "page": 1,
+    "bbox": {
+     "ymin": 621,
+     "xmin": 711,
+     "ymax": 638,
+     "xmax": 875
+    },
+    "snippet": "1.052.000"
+   }
+  },
+  "items": [
+   {
+    "description": "Kecap Manis 600ml",
+    "amount": 144000.0,
+    "source": {
+     "doc_id": "D11",
+     "page": 1,
+     "bbox": {
+      "ymin": 332,
+      "xmin": 727,
+      "ymax": 348,
+      "xmax": 851
+     },
+     "snippet": "144.000"
+    }
+   },
+   {
+    "description": "Bawang Merah 1kg",
+    "amount": 190000.0,
+    "source": {
+     "doc_id": "D11",
+     "page": 1,
+     "bbox": {
+      "ymin": 380,
+      "xmin": 730,
+      "ymax": 397,
+      "xmax": 855
+     },
+     "snippet": "190.000"
+    }
+   },
+   {
+    "description": "Sabun Mandi 1 lusin",
+    "amount": 144000.0,
+    "source": {
+     "doc_id": "D11",
+     "page": 1,
+     "bbox": {
+      "ymin": 429,
+      "xmin": 734,
+      "ymax": 445,
+      "xmax": 859
+     },
+     "snippet": "144.000"
+    }
+   },
+   {
+    "description": "Air Mineral 1 dus (48)",
+    "amount": 42000.0,
+    "source": {
+     "doc_id": "D11",
+     "page": 1,
+     "bbox": {
+      "ymin": 476,
+      "xmin": 755,
+      "ymax": 494,
+      "xmax": 862
+     },
+     "snippet": "42.000"
+    }
+   },
+   {
+    "description": "Susu Kental Manis 1 dus",
+    "amount": 460000.0,
+    "source": {
+     "doc_id": "D11",
+     "page": 1,
+     "bbox": {
+      "ymin": 525,
+      "xmin": 742,
+      "ymax": 542,
+      "xmax": 867
+     },
+     "snippet": "460.000"
+    }
+   },
+   {
+    "description": "Shampo Sachet 1 renceng",
+    "amount": 72000.0,
+    "source": {
+     "doc_id": "D11",
+     "page": 1,
+     "bbox": {
+      "ymin": 573,
+      "xmin": 763,
+      "ymax": 591,
+      "xmax": 871
+     },
+     "snippet": "72.000"
+    }
+   }
+  ],
+  "payment_method": "TUNAI",
+  "direction": "purchase",
+  "handwritten": false
+ },
+ "state": {
+  "output": {
+   "merchant": "TOKO GROSIR MAKMUR",
+   "date": "2026-04-20",
+   "receipt_number": "TGM-1063",
+   "currency": "IDR",
+   "total": {
+    "value": 1052000.0,
+    "source": {
+     "doc_id": "D11",
+     "page": 1,
+     "bbox": {
+      "ymin": 621,
+      "xmin": 711,
+      "ymax": 638,
+      "xmax": 875
+     },
+     "snippet": "1.052.000"
+    }
+   },
+   "items": [
+    {
+     "description": "Kecap Manis 600ml",
+     "amount": 144000.0,
+     "source": {
+      "doc_id": "D11",
+      "page": 1,
+      "bbox": {
+       "ymin": 332,
+       "xmin": 727,
+       "ymax": 348,
+       "xmax": 851
+      },
+      "snippet": "144.000"
+     }
+    },
+    {
+     "description": "Bawang Merah 1kg",
+     "amount": 190000.0,
+     "source": {
+      "doc_id": "D11",
+      "page": 1,
+      "bbox": {
+       "ymin": 380,
+       "xmin": 730,
+       "ymax": 397,
+       "xmax": 855
+      },
+      "snippet": "190.000"
+     }
+    },
+    {
+     "description": "Sabun Mandi 1 lusin",
+     "amount": 144000.0,
+     "source": {
+      "doc_id": "D11",
+      "page": 1,
+      "bbox": {
+       "ymin": 429,
+       "xmin": 734,
+       "ymax": 445,
+       "xmax": 859
+      },
+      "snippet": "144.000"
+     }
+    },
+    {
+     "description": "Air Mineral 1 dus (48)",
+     "amount": 42000.0,
+     "source": {
+      "doc_id": "D11",
+      "page": 1,
+      "bbox": {
+       "ymin": 476,
+       "xmin": 755,
+       "ymax": 494,
+       "xmax": 862
+      },
+      "snippet": "42.000"
+     }
+    },
+    {
+     "description": "Susu Kental Manis 1 dus",
+     "amount": 460000.0,
+     "source": {
+      "doc_id": "D11",
+      "page": 1,
+      "bbox": {
+       "ymin": 525,
+       "xmin": 742,
+       "ymax": 542,
+       "xmax": 867
+      },
+      "snippet": "460.000"
+     }
+    },
+    {
+     "description": "Shampo Sachet 1 renceng",
+     "amount": 72000.0,
+     "source": {
+      "doc_id": "D11",
+      "page": 1,
+      "bbox": {
+       "ymin": 573,
+       "xmin": 763,
+       "ymax": 591,
+       "xmax": 871
+      },
+      "snippet": "72.000"
+     }
+    }
+   ],
+   "payment_method": "TUNAI",
+   "direction": "purchase",
+   "handwritten": false
+  }
+ },
+ "input_tokens": 952,
+ "output_tokens": 570,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:receipt",
+ "cached_at": "2026-10-15T06:46:59+00:00"
+}

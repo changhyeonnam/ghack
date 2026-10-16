@@ -1,0 +1,1683 @@
+{
+ "text": "{\n  \"bank_name\": \"Bank Nusantara Digital (synthetic)\",\n  \"account_holder\": \"SARI DEWI\",\n  \"account_number_masked\": \"1120 **** **** 7781\",\n  \"address\": null,\n  \"currency\": \"IDR\",\n  \"period_start\": null,\n  \"period_end\": null,\n  \"opening_balance\": null,\n  \"closing_balance\": null,\n  \"transactions\": [\n    {\n      \"row_id\": \"T0001\",\n      \"date\": \"2026-01-30\",\n      \"description\": \"QRIS SETTLEMENT MID 93604304 - PENJUALAN\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 930000,\n      \"balance_after\": 12512361,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 139,\n          \"xmin\": 62,\n          \"ymax\": 151,\n          \"xmax\": 935\n        },\n        \"snippet\": \"30/01/2026 FT26013096640 QRIS SETTLEMENT MID 93604304 - PENJUALAN 930.000 12.512.361\"\n      }\n    },\n    {\n      \"row_id\": \"T0002\",\n      \"date\": \"2026-01-31\",\n      \"description\": \"BIAYA ADMIN BULANAN\",\n      \"counterparty\": null,\n      \"debit\": 15000,\n      \"credit\": 0,\n      \"balance_after\": 12497361,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 157,\n          \"xmin\": 62,\n          \"ymax\": 170,\n          \"xmax\": 935\n        },\n        \"snippet\": \"31/01/2026 FT26013191644 BIAYA ADMIN BULANAN 15.000 12.497.361\"\n      }\n    },\n    {\n      \"row_id\": \"T0003\",\n      \"date\": \"2026-02-01\",\n      \"description\": \"SEWA KIOS BULAN 02/2026 - H. MAHMUD\",\n      \"counterparty\": \"H. MAHMUD\",\n      \"debit\": 2500000,\n      \"credit\": 0,\n      \"balance_after\": 9997361,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 175,\n          \"xmin\": 62,\n          \"ymax\": 188,\n          \"xmax\": 935\n        },\n        \"snippet\": \"01/02/2026 FT26020197427 SEWA KIOS BULAN 02/2026 - H. MAHMUD 2.500.000 9.997.361\"\n      }\n    },\n    {\n      \"row_id\": \"T0004\",\n      \"date\": \"2026-02-01\",\n      \"description\": \"QRIS SETTLEMENT MID 93604103 - PENJUALAN\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 1449000,\n      \"balance_after\": 11446361,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 194,\n          \"xmin\": 62,\n          \"ymax\": 207,\n          \"xmax\": 935\n        },\n        \"snippet\": \"01/02/2026 FT26020111288 QRIS SETTLEMENT MID 93604103 - PENJUALAN 1.449.000 11.446.361\"\n      }\n    },\n    {\n      \"row_id\": \"T0005\",\n      \"date\": \"2026-02-02\",\n      \"description\": \"QRIS SETTLEMENT MID 93605170 - PENJUALAN\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 1543000,\n      \"balance_after\": 12989361,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 213,\n          \"xmin\": 62,\n          \"ymax\": 225,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/02/2026 FT26020224034 QRIS SETTLEMENT MID 93605170 - PENJUALAN 1.543.000 12.989.361\"\n      }\n    },\n    {\n      \"row_id\": \"T0006\",\n      \"date\": \"2026-02-02\",\n      \"description\": \"SETOR TUNAI - CABANG KEBAYORAN LAMA\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 2900000,\n      \"balance_after\": 15889361,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 231,\n          \"xmin\": 62,\n          \"ymax\": 243,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/02/2026 FT26020230639 SETOR TUNAI - CABANG KEBAYORAN LAMA 2.900.000 15.889.361\"\n      }\n    },\n    {\n      \"row_id\": \"T0007\",\n      \"date\": \"2026-02-04\",\n      \"description\": \"QRIS SETTLEMENT MID 93605183 - PENJUALAN\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 1522000,\n      \"balance_after\": 17411361,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 249,\n          \"xmin\": 62,\n          \"ymax\": 262,\n          \"xmax\": 935\n        },\n        \"snippet\": \"04/02/2026 FT26020451421 QRIS SETTLEMENT MID 93605183 - PENJUALAN 1.522.000 17.411.361\"\n      }\n    },\n    {\n      \"row_id\": \"T0008\",\n      \"date\": \"2026-02-05\",\n      \"description\": \"QRIS SETTLEMENT MID 93606492 - PENJUALAN\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 1726000,\n      \"balance_after\": 19137361,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 267,\n          \"xmin\": 62,\n          \"ymax\": 281,\n          \"xmax\": 935\n        },\n        \"snippet\": \"05/02/2026 FT26020526061 QRIS SETTLEMENT MID 93606492 - PENJUALAN 1.726.000 19.137.361\"\n      }\n    },\n    {\n      \"row_id\": \"T0009\",\n      \"date\": \"2026-02-05\",\n      \"description\": \"TRF KE TOKO GROSIR SEMBAKO BAROKAH - PEMBELIAN\",\n      \"counterparty\": \"TOKO GROSIR SEMBAKO BAROKAH\",\n      \"debit\": 6350000,\n      \"credit\": 0,\n      \"balance_after\": 12787361,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 286,\n          \"xmin\": 62,\n          \"ymax\": 298,\n          \"xmax\": 935\n        },\n        \"snippet\": \"05/02/2026 FT26020512095 TRF KE TOKO GROSIR SEMBAKO BAROKAH - PEMBELIAN 6.350.000 12.787.361\"\n      }\n    },\n    {\n      \"row_id\": \"T0010\",\n      \"date\": \"2026-02-05\",\n      \"description\": \"TARIK TUNAI ATM - ATM NUSANTARA 0231\",\n      \"counterparty\": null,\n      \"debit\": 700000,\n      \"credit\": 0,\n      \"balance_after\": 12087361,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 305,\n          \"xmin\": 62,\n          \"ymax\": 317,\n          \"xmax\": 935\n        },\n        \"snippet\": \"05/02/2026 FT26020535586 TARIK TUNAI ATM - ATM NUSANTARA 0231 700.000 12.087.361\"\n      }\n    },\n    {\n      \"row_id\": \"T0011\",\n      \"date\": \"2026-02-06\",\n      \"description\": \"TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK\",\n      \"counterparty\": \"TOKO GROSIR MAKMUR\",\n      \"debit\": 2215000,\n      \"credit\": 0,\n      \"balance_after\": 9872361,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 323,\n          \"xmin\": 62,\n          \"ymax\": 336,\n          \"xmax\": 935\n        },\n        \"snippet\": \"06/02/2026 FT26020674453 TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK 2.215.000 9.872.361\"\n      }\n    },\n    {\n      \"row_id\": \"T0012\",\n      \"date\": \"2026-02-07\",\n      \"description\": \"QRIS SETTLEMENT MID 93603497 - PENJUALAN\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 1363000,\n      \"balance_after\": 11235361,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 341,\n          \"xmin\": 62,\n          \"ymax\": 354,\n          \"xmax\": 935\n        },\n        \"snippet\": \"07/02/2026 FT26020773879 QRIS SETTLEMENT MID 93603497 - PENJUALAN 1.363.000 11.235.361\"\n      }\n    },\n    {\n      \"row_id\": \"T0013\",\n      \"date\": \"2026-02-09\",\n      \"description\": \"QRIS SETTLEMENT MID 93604794 - PENJUALAN\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 935000,\n      \"balance_after\": 12170361,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 359,\n          \"xmin\": 62,\n          \"ymax\": 372,\n          \"xmax\": 935\n        },\n        \"snippet\": \"09/02/2026 FT26020952370 QRIS SETTLEMENT MID 93604794 - PENJUALAN 935.000 12.170.361\"\n      }\n    },\n    {\n      \"row_id\": \"T0014\",\n      \"date\": \"2026-02-09\",\n      \"description\": \"SETOR TUNAI - CABANG KEBAYORAN LAMA\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 3300000,\n      \"balance_after\": 15470361,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 378,\n          \"xmin\": 62,\n          \"ymax\": 391,\n          \"xmax\": 935\n        },\n        \"snippet\": \"09/02/2026 FT26020993017 SETOR TUNAI - CABANG KEBAYORAN LAMA 3.300.000 15.470.361\"\n      }\n    },\n    {\n      \"row_id\": \"T0015\",\n      \"date\": \"2026-02-10\",\n      \"description\": \"QRIS SETTLEMENT MID 93602962 - PENJUALAN\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 1445000,\n      \"balance_after\": 16915361,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 397,\n          \"xmin\": 62,\n          \"ymax\": 409,\n          \"xmax\": 935\n        },\n        \"snippet\": \"10/02/2026 FT26021056718 QRIS SETTLEMENT MID 93602962 - PENJUALAN 1.445.000 16.915.361\"\n      }\n    },\n    {\n      \"row_id\": \"T0016\",\n      \"date\": \"2026-02-10\",\n      \"description\": \"PDAM AIR BERSIH - TAGIHAN BULANAN\",\n      \"counterparty\": null,\n      \"debit\": 96500,\n      \"credit\": 0,\n      \"balance_after\": 16818861,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 415,\n          \"xmin\": 62,\n          \"ymax\": 427,\n          \"xmax\": 935\n        },\n        \"snippet\": \"10/02/2026 FT26021086605 PDAM AIR BERSIH - TAGIHAN BULANAN 96.500 16.818.861\"\n      }\n    },\n    {\n      \"row_id\": \"T0017\",\n      \"date\": \"2026-02-11\",\n      \"description\": \"QRIS SETTLEMENT MID 93603434 - PENJUALAN\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 969000,\n      \"balance_after\": 17787861,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 433,\n          \"xmin\": 62,\n          \"ymax\": 446,\n          \"xmax\": 935\n        },\n        \"snippet\": \"11/02/2026 FT26021166230 QRIS SETTLEMENT MID 93603434 - PENJUALAN 969.000 17.787.861\"\n      }\n    },\n    {\n      \"row_id\": \"T0018\",\n      \"date\": \"2026-02-11\",\n      \"description\": \"PLN LISTRIK PASCABAYAR - ID PEL 5412xxxx\",\n      \"counterparty\": \"PLN\",\n      \"debit\": 465000,\n      \"credit\": 0,\n      \"balance_after\": 17322861,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 452,\n          \"xmin\": 62,\n          \"ymax\": 464,\n          \"xmax\": 935\n        },\n        \"snippet\": \"11/02/2026 FT26021180504 PLN LISTRIK PASCABAYAR - ID PEL 5412xxxx 465.000 17.322.861\"\n      }\n    },\n    {\n      \"row_id\": \"T0019\",\n      \"date\": \"2026-02-12\",\n      \"description\": \"QRIS SETTLEMENT MID 93606025 - PENJUALAN\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 1778000,\n      \"balance_after\": 19100861,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 471,\n          \"xmin\": 62,\n          \"ymax\": 483,\n          \"xmax\": 935\n        },\n        \"snippet\": \"12/02/2026 FT26021208126 QRIS SETTLEMENT MID 93606025 - PENJUALAN 1.778.000 19.100.861\"\n      }\n    },\n    {\n      \"row_id\": \"T0020\",\n      \"date\": \"2026-02-14\",\n      \"description\": \"QRIS SETTLEMENT MID 93602540 - PENJUALAN\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 1367000,\n      \"balance_after\": 20467861,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 489,\n          \"xmin\": 62,\n          \"ymax\": 501,\n          \"xmax\": 935\n        },\n        \"snippet\": \"14/02/2026 FT26021472505 QRIS SETTLEMENT MID 93602540 - PENJUALAN 1.367.000 20.467.861\"\n      }\n    },\n    {\n      \"row_id\": \"T0021\",\n      \"date\": \"2026-02-16\",\n      \"description\": \"SETOR TUNAI - CABANG KEBAYORAN LAMA\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 2450000,\n      \"balance_after\": 22917861,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 507,\n          \"xmin\": 62,\n          \"ymax\": 519,\n          \"xmax\": 935\n        },\n        \"snippet\": \"16/02/2026 FT26021659221 SETOR TUNAI - CABANG KEBAYORAN LAMA 2.450.000 22.917.861\"\n      }\n    },\n    {\n      \"row_id\": \"T0022\",\n      \"date\": \"2026-02-16\",\n      \"description\": \"TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN\",\n      \"counterparty\": \"GROSIR SEMBAKO BAROKAH\",\n      \"debit\": 5500000,\n      \"credit\": 0,\n      \"balance_after\": 17417861,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 526,\n          \"xmin\": 62,\n          \"ymax\": 538,\n          \"xmax\": 935\n        },\n        \"snippet\": \"16/02/2026 FT26021672687 TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN 5.500.000 17.417.861\"\n      }\n    },\n    {\n      \"row_id\": \"T0023\",\n      \"date\": \"2026-02-20\",\n      \"description\": \"TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK\",\n      \"counterparty\": \"TOKO GROSIR MAKMUR\",\n      \"debit\": 4450000,\n      \"credit\": 0,\n      \"balance_after\": 12967861,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 543,\n          \"xmin\": 62,\n          \"ymax\": 556,\n          \"xmax\": 935\n        },\n        \"snippet\": \"20/02/2026 FT26022001284 TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK 4.450.000 12.967.861\"\n      }\n    },\n    {\n      \"row_id\": \"T0024\",\n      \"date\": \"2026-02-21\",\n      \"description\": \"QRIS SETTLEMENT MID 93605187 - PENJUALAN\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 1239000,\n      \"balance_after\": 14206861,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 562,\n          \"xmin\": 62,\n          \"ymax\": 574,\n          \"xmax\": 935\n        },\n        \"snippet\": \"21/02/2026 FT26022109744 QRIS SETTLEMENT MID 93605187 - PENJUALAN 1.239.000 14.206.861\"\n      }\n    },\n    {\n      \"row_id\": \"T0025\",\n      \"date\": \"2026-02-22\",\n      \"description\": \"QRIS SETTLEMENT MID 93602291 - PENJUALAN\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 1241000,\n      \"balance_after\": 15447861,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 580,\n          \"xmin\": 62,\n          \"ymax\": 593,\n          \"xmax\": 935\n        },\n        \"snippet\": \"22/02/2026 FT26022288236 QRIS SETTLEMENT MID 93602291 - PENJUALAN 1.241.000 15.447.861\"\n      }\n    },\n    {\n      \"row_id\": \"T0026\",\n      \"date\": \"2026-02-23\",\n      \"description\": \"QRIS SETTLEMENT MID 93609955 - PENJUALAN\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 1230000,\n      \"balance_after\": 16677861,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 599,\n          \"xmin\": 62,\n          \"ymax\": 611,\n          \"xmax\": 935\n        },\n        \"snippet\": \"23/02/2026 FT26022368057 QRIS SETTLEMENT MID 93609955 - PENJUALAN 1.230.000 16.677.861\"\n      }\n    },\n    {\n      \"row_id\": \"T0027\",\n      \"date\": \"2026-02-23\",\n      \"description\": \"SETOR TUNAI - CABANG KEBAYORAN LAMA\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 2550000,\n      \"balance_after\": 19227861,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 617,\n          \"xmin\": 62,\n          \"ymax\": 629,\n          \"xmax\": 935\n        },\n        \"snippet\": \"23/02/2026 FT26022392422 SETOR TUNAI - CABANG KEBAYORAN LAMA 2.550.000 19.227.861\"\n      }\n    },\n    {\n      \"row_id\": \"T0028\",\n      \"date\": \"2026-02-23\",\n      \"description\": \"INTERNET WIFI NUSANET - TAGIHAN\",\n      \"counterparty\": \"NUSANET\",\n      \"debit\": 200000,\n      \"credit\": 0,\n      \"balance_after\": 19027861,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 635,\n          \"xmin\": 62,\n          \"ymax\": 648,\n          \"xmax\": 935\n        },\n        \"snippet\": \"23/02/2026 FT26022313680 INTERNET WIFI NUSANET - TAGIHAN 200.000 19.027.861\"\n      }\n    },\n    {\n      \"row_id\": \"T0029\",\n      \"date\": \"2026-02-24\",\n      \"description\": \"TRF DARI AGUS PRASETYO - PESANAN SEMBAKO\",\n      \"counterparty\": \"AGUS PRASETYO\",\n      \"debit\": 0,\n      \"credit\": 430000,\n      \"balance_after\": 19457861,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 653,\n          \"xmin\": 62,\n          \"ymax\": 666,\n          \"xmax\": 935\n        },\n        \"snippet\": \"24/02/2026 FT26022422040 TRF DARI AGUS PRASETYO - PESANAN SEMBAKO 430.000 19.457.861\"\n      }\n    },\n    {\n      \"row_id\": \"T0030\",\n      \"date\": \"2026-02-26\",\n      \"description\": \"TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK\",\n      \"counterparty\": \"TOKO GROSIR MAKMUR\",\n      \"debit\": 1259000,\n      \"credit\": 0,\n      \"balance_after\": 18198861,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 672,\n          \"xmin\": 62,\n          \"ymax\": 684,\n          \"xmax\": 935\n        },\n        \"snippet\": \"26/02/2026 FT26022622890 TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK 1.259.000 18.198.861\"\n      }\n    },\n    {\n      \"row_id\": \"T0031\",\n      \"date\": \"2026-02-27\",\n      \"description\": \"QRIS SETTLEMENT MID 93605121 - PENJUALAN\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 1480000,\n      \"balance_after\": 19678861,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 690,\n          \"xmin\": 62,\n          \"ymax\": 703,\n          \"xmax\": 935\n        },\n        \"snippet\": \"27/02/2026 FT26022795078 QRIS SETTLEMENT MID 93605121 - PENJUALAN 1.480.000 19.678.861\"\n      }\n    },\n    {\n      \"row_id\": \"T0032\",\n      \"date\": \"2026-02-27\",\n      \"description\": \"TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN\",\n      \"counterparty\": \"GROSIR SEMBAKO BAROKAH\",\n      \"debit\": 5299219,\n      \"credit\": 0,\n      \"balance_after\": 14379642,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 709,\n          \"xmin\": 62,\n          \"ymax\": 721,\n          \"xmax\": 935\n        },\n        \"snippet\": \"27/02/2026 FT26022756673 TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN 5.299.219 14.379.642\"\n      }\n    },\n    {\n      \"row_id\": \"T0033\",\n      \"date\": \"2026-02-28\",\n      \"description\": \"BIAYA ADMIN BULANAN\",\n      \"counterparty\": null,\n      \"debit\": 15000,\n      \"credit\": 0,\n      \"balance_after\": 14364642,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 727,\n          \"xmin\": 62,\n          \"ymax\": 740,\n          \"xmax\": 935\n        },\n        \"snippet\": \"28/02/2026 FT26022854679 BIAYA ADMIN BULANAN 15.000 14.364.642\"\n      }\n    },\n    {\n      \"row_id\": \"T0034\",\n      \"date\": \"2026-03-01\",\n      \"description\": \"SEWA KIOS BULAN 03/2026 - H. MAHMUD\",\n      \"counterparty\": \"H. MAHMUD\",\n      \"debit\": 2500000,\n      \"credit\": 0,\n      \"balance_after\": 11864642,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 745,\n          \"xmin\": 62,\n          \"ymax\": 758,\n          \"xmax\": 935\n        },\n        \"snippet\": \"01/03/2026 FT26030160547 SEWA KIOS BULAN 03/2026 - H. MAHMUD 2.500.000 11.864.642\"\n      }\n    },\n    {\n      \"row_id\": \"T0035\",\n      \"date\": \"2026-03-01\",\n      \"description\": \"QRIS SETTLEMENT MID 93604102 - PENJUALAN\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 1759000,\n      \"balance_after\": 13623642,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 764,\n          \"xmin\": 62,\n          \"ymax\": 776,\n          \"xmax\": 935\n        },\n        \"snippet\": \"01/03/2026 FT26030142763 QRIS SETTLEMENT MID 93604102 - PENJUALAN 1.759.000 13.623.642\"\n      }\n    },\n    {\n      \"row_id\": \"T0036\",\n      \"date\": \"2026-03-02\",\n      \"description\": \"QRIS SETTLEMENT MID 93608939 - PENJUALAN\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 1251000,\n      \"balance_after\": 14874642,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 782,\n          \"xmin\": 62,\n          \"ymax\": 795,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/03/2026 FT26030249738 QRIS SETTLEMENT MID 93608939 - PENJUALAN 1.251.000 14.874.642\"\n      }\n    },\n    {\n      \"row_id\": \"T0037\",\n      \"date\": \"2026-03-02\",\n      \"description\": \"SETOR TUNAI - CABANG KEBAYORAN LAMA\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 3150000,\n      \"balance_after\": 18024642,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 801,\n          \"xmin\": 62,\n          \"ymax\": 813,\n          \"xmax\": 935\n        },\n        \"snippet\": \"02/03/2026 FT26030206026 SETOR TUNAI - CABANG KEBAYORAN LAMA 3.150.000 18.024.642\"\n      }\n    },\n    {\n      \"row_id\": \"T0038\",\n      \"date\": \"2026-03-04\",\n      \"description\": \"TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN\",\n      \"counterparty\": \"GROSIR SEMBAKO BAROKAH\",\n      \"debit\": 7950000,\n      \"credit\": 0,\n      \"balance_after\": 10074642,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 819,\n          \"xmin\": 62,\n          \"ymax\": 832,\n          \"xmax\": 935\n        },\n        \"snippet\": \"04/03/2026 FT26030431303 TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN 7.950.000 10.074.642\"\n      }\n    },\n    {\n      \"row_id\": \"T0039\",\n      \"date\": \"2026-03-05\",\n      \"description\": \"QRIS SETTLEMENT MID 93601301 - PENJUALAN\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 1133000,\n      \"balance_after\": 11207642,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 838,\n          \"xmin\": 62,\n          \"ymax\": 850,\n          \"xmax\": 935\n        },\n        \"snippet\": \"05/03/2026 FT26030532703 QRIS SETTLEMENT MID 93601301 - PENJUALAN 1.133.000 11.207.642\"\n      }\n    },\n    {\n      \"row_id\": \"T0040\",\n      \"date\": \"2026-03-06\",\n      \"description\": \"QRIS SETTLEMENT MID 93601944 - PENJUALAN\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 1438000,\n      \"balance_after\": 12645642,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 856,\n          \"xmin\": 62,\n          \"ymax\": 869,\n          \"xmax\": 935\n        },\n        \"snippet\": \"06/03/2026 FT26030615413 QRIS SETTLEMENT MID 93601944 - PENJUALAN 1.438.000 12.645.642\"\n      }\n    },\n    {\n      \"row_id\": \"T0041\",\n      \"date\": \"2026-03-08\",\n      \"description\": \"QRIS SETTLEMENT MID 93601398 - PENJUALAN\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 1189000,\n      \"balance_after\": 13834642,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 875,\n          \"xmin\": 62,\n          \"ymax\": 887,\n          \"xmax\": 935\n        },\n        \"snippet\": \"08/03/2026 FT26030837543 QRIS SETTLEMENT MID 93601398 - PENJUALAN 1.189.000 13.834.642\"\n      }\n    },\n    {\n      \"row_id\": \"T0042\",\n      \"date\": \"2026-03-09\",\n      \"description\": \"SETOR TUNAI - CABANG KEBAYORAN LAMA\",\n      \"counterparty\": null,\n      \"debit\": 0,\n      \"credit\": 2400000,\n      \"balance_after\": 16234642,\n      \"source\": {\n        \"doc_id\": \"D01\",\n        \"page\": 2,\n        \"bbox\": {\n          \"ymin\": 893,\n          \"xmin\": 62,\n          \"ymax\": 905,\n          \"xmax\": 935\n        },\n        \"snippet\": \"09/03/2026 FT26030935243 SETOR TUNAI - CABANG KEBAYORAN LAMA 2.400.000 16.234.642\"\n      }\n    }\n  ]\n}",
+ "parsed": {
+  "bank_name": "Bank Nusantara Digital (synthetic)",
+  "account_holder": "SARI DEWI",
+  "account_number_masked": "1120 **** **** 7781",
+  "address": null,
+  "currency": "IDR",
+  "period_start": null,
+  "period_end": null,
+  "opening_balance": null,
+  "closing_balance": null,
+  "transactions": [
+   {
+    "row_id": "T0001",
+    "date": "2026-01-30",
+    "description": "QRIS SETTLEMENT MID 93604304 - PENJUALAN",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 930000.0,
+    "balance_after": 12512361.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 139,
+      "xmin": 62,
+      "ymax": 151,
+      "xmax": 935
+     },
+     "snippet": "30/01/2026 FT26013096640 QRIS SETTLEMENT MID 93604304 - PENJUALAN 930.000 12.512.361"
+    }
+   },
+   {
+    "row_id": "T0002",
+    "date": "2026-01-31",
+    "description": "BIAYA ADMIN BULANAN",
+    "counterparty": null,
+    "debit": 15000.0,
+    "credit": 0.0,
+    "balance_after": 12497361.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 157,
+      "xmin": 62,
+      "ymax": 170,
+      "xmax": 935
+     },
+     "snippet": "31/01/2026 FT26013191644 BIAYA ADMIN BULANAN 15.000 12.497.361"
+    }
+   },
+   {
+    "row_id": "T0003",
+    "date": "2026-02-01",
+    "description": "SEWA KIOS BULAN 02/2026 - H. MAHMUD",
+    "counterparty": "H. MAHMUD",
+    "debit": 2500000.0,
+    "credit": 0.0,
+    "balance_after": 9997361.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 175,
+      "xmin": 62,
+      "ymax": 188,
+      "xmax": 935
+     },
+     "snippet": "01/02/2026 FT26020197427 SEWA KIOS BULAN 02/2026 - H. MAHMUD 2.500.000 9.997.361"
+    }
+   },
+   {
+    "row_id": "T0004",
+    "date": "2026-02-01",
+    "description": "QRIS SETTLEMENT MID 93604103 - PENJUALAN",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 1449000.0,
+    "balance_after": 11446361.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 194,
+      "xmin": 62,
+      "ymax": 207,
+      "xmax": 935
+     },
+     "snippet": "01/02/2026 FT26020111288 QRIS SETTLEMENT MID 93604103 - PENJUALAN 1.449.000 11.446.361"
+    }
+   },
+   {
+    "row_id": "T0005",
+    "date": "2026-02-02",
+    "description": "QRIS SETTLEMENT MID 93605170 - PENJUALAN",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 1543000.0,
+    "balance_after": 12989361.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 213,
+      "xmin": 62,
+      "ymax": 225,
+      "xmax": 935
+     },
+     "snippet": "02/02/2026 FT26020224034 QRIS SETTLEMENT MID 93605170 - PENJUALAN 1.543.000 12.989.361"
+    }
+   },
+   {
+    "row_id": "T0006",
+    "date": "2026-02-02",
+    "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 2900000.0,
+    "balance_after": 15889361.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 231,
+      "xmin": 62,
+      "ymax": 243,
+      "xmax": 935
+     },
+     "snippet": "02/02/2026 FT26020230639 SETOR TUNAI - CABANG KEBAYORAN LAMA 2.900.000 15.889.361"
+    }
+   },
+   {
+    "row_id": "T0007",
+    "date": "2026-02-04",
+    "description": "QRIS SETTLEMENT MID 93605183 - PENJUALAN",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 1522000.0,
+    "balance_after": 17411361.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 249,
+      "xmin": 62,
+      "ymax": 262,
+      "xmax": 935
+     },
+     "snippet": "04/02/2026 FT26020451421 QRIS SETTLEMENT MID 93605183 - PENJUALAN 1.522.000 17.411.361"
+    }
+   },
+   {
+    "row_id": "T0008",
+    "date": "2026-02-05",
+    "description": "QRIS SETTLEMENT MID 93606492 - PENJUALAN",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 1726000.0,
+    "balance_after": 19137361.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 267,
+      "xmin": 62,
+      "ymax": 281,
+      "xmax": 935
+     },
+     "snippet": "05/02/2026 FT26020526061 QRIS SETTLEMENT MID 93606492 - PENJUALAN 1.726.000 19.137.361"
+    }
+   },
+   {
+    "row_id": "T0009",
+    "date": "2026-02-05",
+    "description": "TRF KE TOKO GROSIR SEMBAKO BAROKAH - PEMBELIAN",
+    "counterparty": "TOKO GROSIR SEMBAKO BAROKAH",
+    "debit": 6350000.0,
+    "credit": 0.0,
+    "balance_after": 12787361.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 286,
+      "xmin": 62,
+      "ymax": 298,
+      "xmax": 935
+     },
+     "snippet": "05/02/2026 FT26020512095 TRF KE TOKO GROSIR SEMBAKO BAROKAH - PEMBELIAN 6.350.000 12.787.361"
+    }
+   },
+   {
+    "row_id": "T0010",
+    "date": "2026-02-05",
+    "description": "TARIK TUNAI ATM - ATM NUSANTARA 0231",
+    "counterparty": null,
+    "debit": 700000.0,
+    "credit": 0.0,
+    "balance_after": 12087361.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 305,
+      "xmin": 62,
+      "ymax": 317,
+      "xmax": 935
+     },
+     "snippet": "05/02/2026 FT26020535586 TARIK TUNAI ATM - ATM NUSANTARA 0231 700.000 12.087.361"
+    }
+   },
+   {
+    "row_id": "T0011",
+    "date": "2026-02-06",
+    "description": "TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK",
+    "counterparty": "TOKO GROSIR MAKMUR",
+    "debit": 2215000.0,
+    "credit": 0.0,
+    "balance_after": 9872361.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 323,
+      "xmin": 62,
+      "ymax": 336,
+      "xmax": 935
+     },
+     "snippet": "06/02/2026 FT26020674453 TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK 2.215.000 9.872.361"
+    }
+   },
+   {
+    "row_id": "T0012",
+    "date": "2026-02-07",
+    "description": "QRIS SETTLEMENT MID 93603497 - PENJUALAN",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 1363000.0,
+    "balance_after": 11235361.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 341,
+      "xmin": 62,
+      "ymax": 354,
+      "xmax": 935
+     },
+     "snippet": "07/02/2026 FT26020773879 QRIS SETTLEMENT MID 93603497 - PENJUALAN 1.363.000 11.235.361"
+    }
+   },
+   {
+    "row_id": "T0013",
+    "date": "2026-02-09",
+    "description": "QRIS SETTLEMENT MID 93604794 - PENJUALAN",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 935000.0,
+    "balance_after": 12170361.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 359,
+      "xmin": 62,
+      "ymax": 372,
+      "xmax": 935
+     },
+     "snippet": "09/02/2026 FT26020952370 QRIS SETTLEMENT MID 93604794 - PENJUALAN 935.000 12.170.361"
+    }
+   },
+   {
+    "row_id": "T0014",
+    "date": "2026-02-09",
+    "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 3300000.0,
+    "balance_after": 15470361.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 378,
+      "xmin": 62,
+      "ymax": 391,
+      "xmax": 935
+     },
+     "snippet": "09/02/2026 FT26020993017 SETOR TUNAI - CABANG KEBAYORAN LAMA 3.300.000 15.470.361"
+    }
+   },
+   {
+    "row_id": "T0015",
+    "date": "2026-02-10",
+    "description": "QRIS SETTLEMENT MID 93602962 - PENJUALAN",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 1445000.0,
+    "balance_after": 16915361.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 397,
+      "xmin": 62,
+      "ymax": 409,
+      "xmax": 935
+     },
+     "snippet": "10/02/2026 FT26021056718 QRIS SETTLEMENT MID 93602962 - PENJUALAN 1.445.000 16.915.361"
+    }
+   },
+   {
+    "row_id": "T0016",
+    "date": "2026-02-10",
+    "description": "PDAM AIR BERSIH - TAGIHAN BULANAN",
+    "counterparty": null,
+    "debit": 96500.0,
+    "credit": 0.0,
+    "balance_after": 16818861.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 415,
+      "xmin": 62,
+      "ymax": 427,
+      "xmax": 935
+     },
+     "snippet": "10/02/2026 FT26021086605 PDAM AIR BERSIH - TAGIHAN BULANAN 96.500 16.818.861"
+    }
+   },
+   {
+    "row_id": "T0017",
+    "date": "2026-02-11",
+    "description": "QRIS SETTLEMENT MID 93603434 - PENJUALAN",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 969000.0,
+    "balance_after": 17787861.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 433,
+      "xmin": 62,
+      "ymax": 446,
+      "xmax": 935
+     },
+     "snippet": "11/02/2026 FT26021166230 QRIS SETTLEMENT MID 93603434 - PENJUALAN 969.000 17.787.861"
+    }
+   },
+   {
+    "row_id": "T0018",
+    "date": "2026-02-11",
+    "description": "PLN LISTRIK PASCABAYAR - ID PEL 5412xxxx",
+    "counterparty": "PLN",
+    "debit": 465000.0,
+    "credit": 0.0,
+    "balance_after": 17322861.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 452,
+      "xmin": 62,
+      "ymax": 464,
+      "xmax": 935
+     },
+     "snippet": "11/02/2026 FT26021180504 PLN LISTRIK PASCABAYAR - ID PEL 5412xxxx 465.000 17.322.861"
+    }
+   },
+   {
+    "row_id": "T0019",
+    "date": "2026-02-12",
+    "description": "QRIS SETTLEMENT MID 93606025 - PENJUALAN",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 1778000.0,
+    "balance_after": 19100861.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 471,
+      "xmin": 62,
+      "ymax": 483,
+      "xmax": 935
+     },
+     "snippet": "12/02/2026 FT26021208126 QRIS SETTLEMENT MID 93606025 - PENJUALAN 1.778.000 19.100.861"
+    }
+   },
+   {
+    "row_id": "T0020",
+    "date": "2026-02-14",
+    "description": "QRIS SETTLEMENT MID 93602540 - PENJUALAN",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 1367000.0,
+    "balance_after": 20467861.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 489,
+      "xmin": 62,
+      "ymax": 501,
+      "xmax": 935
+     },
+     "snippet": "14/02/2026 FT26021472505 QRIS SETTLEMENT MID 93602540 - PENJUALAN 1.367.000 20.467.861"
+    }
+   },
+   {
+    "row_id": "T0021",
+    "date": "2026-02-16",
+    "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 2450000.0,
+    "balance_after": 22917861.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 507,
+      "xmin": 62,
+      "ymax": 519,
+      "xmax": 935
+     },
+     "snippet": "16/02/2026 FT26021659221 SETOR TUNAI - CABANG KEBAYORAN LAMA 2.450.000 22.917.861"
+    }
+   },
+   {
+    "row_id": "T0022",
+    "date": "2026-02-16",
+    "description": "TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN",
+    "counterparty": "GROSIR SEMBAKO BAROKAH",
+    "debit": 5500000.0,
+    "credit": 0.0,
+    "balance_after": 17417861.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 526,
+      "xmin": 62,
+      "ymax": 538,
+      "xmax": 935
+     },
+     "snippet": "16/02/2026 FT26021672687 TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN 5.500.000 17.417.861"
+    }
+   },
+   {
+    "row_id": "T0023",
+    "date": "2026-02-20",
+    "description": "TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK",
+    "counterparty": "TOKO GROSIR MAKMUR",
+    "debit": 4450000.0,
+    "credit": 0.0,
+    "balance_after": 12967861.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 543,
+      "xmin": 62,
+      "ymax": 556,
+      "xmax": 935
+     },
+     "snippet": "20/02/2026 FT26022001284 TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK 4.450.000 12.967.861"
+    }
+   },
+   {
+    "row_id": "T0024",
+    "date": "2026-02-21",
+    "description": "QRIS SETTLEMENT MID 93605187 - PENJUALAN",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 1239000.0,
+    "balance_after": 14206861.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 562,
+      "xmin": 62,
+      "ymax": 574,
+      "xmax": 935
+     },
+     "snippet": "21/02/2026 FT26022109744 QRIS SETTLEMENT MID 93605187 - PENJUALAN 1.239.000 14.206.861"
+    }
+   },
+   {
+    "row_id": "T0025",
+    "date": "2026-02-22",
+    "description": "QRIS SETTLEMENT MID 93602291 - PENJUALAN",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 1241000.0,
+    "balance_after": 15447861.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 580,
+      "xmin": 62,
+      "ymax": 593,
+      "xmax": 935
+     },
+     "snippet": "22/02/2026 FT26022288236 QRIS SETTLEMENT MID 93602291 - PENJUALAN 1.241.000 15.447.861"
+    }
+   },
+   {
+    "row_id": "T0026",
+    "date": "2026-02-23",
+    "description": "QRIS SETTLEMENT MID 93609955 - PENJUALAN",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 1230000.0,
+    "balance_after": 16677861.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 599,
+      "xmin": 62,
+      "ymax": 611,
+      "xmax": 935
+     },
+     "snippet": "23/02/2026 FT26022368057 QRIS SETTLEMENT MID 93609955 - PENJUALAN 1.230.000 16.677.861"
+    }
+   },
+   {
+    "row_id": "T0027",
+    "date": "2026-02-23",
+    "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 2550000.0,
+    "balance_after": 19227861.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 617,
+      "xmin": 62,
+      "ymax": 629,
+      "xmax": 935
+     },
+     "snippet": "23/02/2026 FT26022392422 SETOR TUNAI - CABANG KEBAYORAN LAMA 2.550.000 19.227.861"
+    }
+   },
+   {
+    "row_id": "T0028",
+    "date": "2026-02-23",
+    "description": "INTERNET WIFI NUSANET - TAGIHAN",
+    "counterparty": "NUSANET",
+    "debit": 200000.0,
+    "credit": 0.0,
+    "balance_after": 19027861.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 635,
+      "xmin": 62,
+      "ymax": 648,
+      "xmax": 935
+     },
+     "snippet": "23/02/2026 FT26022313680 INTERNET WIFI NUSANET - TAGIHAN 200.000 19.027.861"
+    }
+   },
+   {
+    "row_id": "T0029",
+    "date": "2026-02-24",
+    "description": "TRF DARI AGUS PRASETYO - PESANAN SEMBAKO",
+    "counterparty": "AGUS PRASETYO",
+    "debit": 0.0,
+    "credit": 430000.0,
+    "balance_after": 19457861.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 653,
+      "xmin": 62,
+      "ymax": 666,
+      "xmax": 935
+     },
+     "snippet": "24/02/2026 FT26022422040 TRF DARI AGUS PRASETYO - PESANAN SEMBAKO 430.000 19.457.861"
+    }
+   },
+   {
+    "row_id": "T0030",
+    "date": "2026-02-26",
+    "description": "TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK",
+    "counterparty": "TOKO GROSIR MAKMUR",
+    "debit": 1259000.0,
+    "credit": 0.0,
+    "balance_after": 18198861.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 672,
+      "xmin": 62,
+      "ymax": 684,
+      "xmax": 935
+     },
+     "snippet": "26/02/2026 FT26022622890 TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK 1.259.000 18.198.861"
+    }
+   },
+   {
+    "row_id": "T0031",
+    "date": "2026-02-27",
+    "description": "QRIS SETTLEMENT MID 93605121 - PENJUALAN",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 1480000.0,
+    "balance_after": 19678861.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 690,
+      "xmin": 62,
+      "ymax": 703,
+      "xmax": 935
+     },
+     "snippet": "27/02/2026 FT26022795078 QRIS SETTLEMENT MID 93605121 - PENJUALAN 1.480.000 19.678.861"
+    }
+   },
+   {
+    "row_id": "T0032",
+    "date": "2026-02-27",
+    "description": "TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN",
+    "counterparty": "GROSIR SEMBAKO BAROKAH",
+    "debit": 5299219.0,
+    "credit": 0.0,
+    "balance_after": 14379642.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 709,
+      "xmin": 62,
+      "ymax": 721,
+      "xmax": 935
+     },
+     "snippet": "27/02/2026 FT26022756673 TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN 5.299.219 14.379.642"
+    }
+   },
+   {
+    "row_id": "T0033",
+    "date": "2026-02-28",
+    "description": "BIAYA ADMIN BULANAN",
+    "counterparty": null,
+    "debit": 15000.0,
+    "credit": 0.0,
+    "balance_after": 14364642.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 727,
+      "xmin": 62,
+      "ymax": 740,
+      "xmax": 935
+     },
+     "snippet": "28/02/2026 FT26022854679 BIAYA ADMIN BULANAN 15.000 14.364.642"
+    }
+   },
+   {
+    "row_id": "T0034",
+    "date": "2026-03-01",
+    "description": "SEWA KIOS BULAN 03/2026 - H. MAHMUD",
+    "counterparty": "H. MAHMUD",
+    "debit": 2500000.0,
+    "credit": 0.0,
+    "balance_after": 11864642.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 745,
+      "xmin": 62,
+      "ymax": 758,
+      "xmax": 935
+     },
+     "snippet": "01/03/2026 FT26030160547 SEWA KIOS BULAN 03/2026 - H. MAHMUD 2.500.000 11.864.642"
+    }
+   },
+   {
+    "row_id": "T0035",
+    "date": "2026-03-01",
+    "description": "QRIS SETTLEMENT MID 93604102 - PENJUALAN",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 1759000.0,
+    "balance_after": 13623642.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 764,
+      "xmin": 62,
+      "ymax": 776,
+      "xmax": 935
+     },
+     "snippet": "01/03/2026 FT26030142763 QRIS SETTLEMENT MID 93604102 - PENJUALAN 1.759.000 13.623.642"
+    }
+   },
+   {
+    "row_id": "T0036",
+    "date": "2026-03-02",
+    "description": "QRIS SETTLEMENT MID 93608939 - PENJUALAN",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 1251000.0,
+    "balance_after": 14874642.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 782,
+      "xmin": 62,
+      "ymax": 795,
+      "xmax": 935
+     },
+     "snippet": "02/03/2026 FT26030249738 QRIS SETTLEMENT MID 93608939 - PENJUALAN 1.251.000 14.874.642"
+    }
+   },
+   {
+    "row_id": "T0037",
+    "date": "2026-03-02",
+    "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 3150000.0,
+    "balance_after": 18024642.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 801,
+      "xmin": 62,
+      "ymax": 813,
+      "xmax": 935
+     },
+     "snippet": "02/03/2026 FT26030206026 SETOR TUNAI - CABANG KEBAYORAN LAMA 3.150.000 18.024.642"
+    }
+   },
+   {
+    "row_id": "T0038",
+    "date": "2026-03-04",
+    "description": "TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN",
+    "counterparty": "GROSIR SEMBAKO BAROKAH",
+    "debit": 7950000.0,
+    "credit": 0.0,
+    "balance_after": 10074642.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 819,
+      "xmin": 62,
+      "ymax": 832,
+      "xmax": 935
+     },
+     "snippet": "04/03/2026 FT26030431303 TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN 7.950.000 10.074.642"
+    }
+   },
+   {
+    "row_id": "T0039",
+    "date": "2026-03-05",
+    "description": "QRIS SETTLEMENT MID 93601301 - PENJUALAN",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 1133000.0,
+    "balance_after": 11207642.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 838,
+      "xmin": 62,
+      "ymax": 850,
+      "xmax": 935
+     },
+     "snippet": "05/03/2026 FT26030532703 QRIS SETTLEMENT MID 93601301 - PENJUALAN 1.133.000 11.207.642"
+    }
+   },
+   {
+    "row_id": "T0040",
+    "date": "2026-03-06",
+    "description": "QRIS SETTLEMENT MID 93601944 - PENJUALAN",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 1438000.0,
+    "balance_after": 12645642.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 856,
+      "xmin": 62,
+      "ymax": 869,
+      "xmax": 935
+     },
+     "snippet": "06/03/2026 FT26030615413 QRIS SETTLEMENT MID 93601944 - PENJUALAN 1.438.000 12.645.642"
+    }
+   },
+   {
+    "row_id": "T0041",
+    "date": "2026-03-08",
+    "description": "QRIS SETTLEMENT MID 93601398 - PENJUALAN",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 1189000.0,
+    "balance_after": 13834642.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 875,
+      "xmin": 62,
+      "ymax": 887,
+      "xmax": 935
+     },
+     "snippet": "08/03/2026 FT26030837543 QRIS SETTLEMENT MID 93601398 - PENJUALAN 1.189.000 13.834.642"
+    }
+   },
+   {
+    "row_id": "T0042",
+    "date": "2026-03-09",
+    "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+    "counterparty": null,
+    "debit": 0.0,
+    "credit": 2400000.0,
+    "balance_after": 16234642.0,
+    "source": {
+     "doc_id": "D01",
+     "page": 2,
+     "bbox": {
+      "ymin": 893,
+      "xmin": 62,
+      "ymax": 905,
+      "xmax": 935
+     },
+     "snippet": "09/03/2026 FT26030935243 SETOR TUNAI - CABANG KEBAYORAN LAMA 2.400.000 16.234.642"
+    }
+   }
+  ]
+ },
+ "state": {
+  "output": {
+   "bank_name": "Bank Nusantara Digital (synthetic)",
+   "account_holder": "SARI DEWI",
+   "account_number_masked": "1120 **** **** 7781",
+   "currency": "IDR",
+   "transactions": [
+    {
+     "row_id": "T0001",
+     "date": "2026-01-30",
+     "description": "QRIS SETTLEMENT MID 93604304 - PENJUALAN",
+     "debit": 0.0,
+     "credit": 930000.0,
+     "balance_after": 12512361.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 139,
+       "xmin": 62,
+       "ymax": 151,
+       "xmax": 935
+      },
+      "snippet": "30/01/2026 FT26013096640 QRIS SETTLEMENT MID 93604304 - PENJUALAN 930.000 12.512.361"
+     }
+    },
+    {
+     "row_id": "T0002",
+     "date": "2026-01-31",
+     "description": "BIAYA ADMIN BULANAN",
+     "debit": 15000.0,
+     "credit": 0.0,
+     "balance_after": 12497361.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 157,
+       "xmin": 62,
+       "ymax": 170,
+       "xmax": 935
+      },
+      "snippet": "31/01/2026 FT26013191644 BIAYA ADMIN BULANAN 15.000 12.497.361"
+     }
+    },
+    {
+     "row_id": "T0003",
+     "date": "2026-02-01",
+     "description": "SEWA KIOS BULAN 02/2026 - H. MAHMUD",
+     "counterparty": "H. MAHMUD",
+     "debit": 2500000.0,
+     "credit": 0.0,
+     "balance_after": 9997361.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 175,
+       "xmin": 62,
+       "ymax": 188,
+       "xmax": 935
+      },
+      "snippet": "01/02/2026 FT26020197427 SEWA KIOS BULAN 02/2026 - H. MAHMUD 2.500.000 9.997.361"
+     }
+    },
+    {
+     "row_id": "T0004",
+     "date": "2026-02-01",
+     "description": "QRIS SETTLEMENT MID 93604103 - PENJUALAN",
+     "debit": 0.0,
+     "credit": 1449000.0,
+     "balance_after": 11446361.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 194,
+       "xmin": 62,
+       "ymax": 207,
+       "xmax": 935
+      },
+      "snippet": "01/02/2026 FT26020111288 QRIS SETTLEMENT MID 93604103 - PENJUALAN 1.449.000 11.446.361"
+     }
+    },
+    {
+     "row_id": "T0005",
+     "date": "2026-02-02",
+     "description": "QRIS SETTLEMENT MID 93605170 - PENJUALAN",
+     "debit": 0.0,
+     "credit": 1543000.0,
+     "balance_after": 12989361.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 213,
+       "xmin": 62,
+       "ymax": 225,
+       "xmax": 935
+      },
+      "snippet": "02/02/2026 FT26020224034 QRIS SETTLEMENT MID 93605170 - PENJUALAN 1.543.000 12.989.361"
+     }
+    },
+    {
+     "row_id": "T0006",
+     "date": "2026-02-02",
+     "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+     "debit": 0.0,
+     "credit": 2900000.0,
+     "balance_after": 15889361.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 231,
+       "xmin": 62,
+       "ymax": 243,
+       "xmax": 935
+      },
+      "snippet": "02/02/2026 FT26020230639 SETOR TUNAI - CABANG KEBAYORAN LAMA 2.900.000 15.889.361"
+     }
+    },
+    {
+     "row_id": "T0007",
+     "date": "2026-02-04",
+     "description": "QRIS SETTLEMENT MID 93605183 - PENJUALAN",
+     "debit": 0.0,
+     "credit": 1522000.0,
+     "balance_after": 17411361.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 249,
+       "xmin": 62,
+       "ymax": 262,
+       "xmax": 935
+      },
+      "snippet": "04/02/2026 FT26020451421 QRIS SETTLEMENT MID 93605183 - PENJUALAN 1.522.000 17.411.361"
+     }
+    },
+    {
+     "row_id": "T0008",
+     "date": "2026-02-05",
+     "description": "QRIS SETTLEMENT MID 93606492 - PENJUALAN",
+     "debit": 0.0,
+     "credit": 1726000.0,
+     "balance_after": 19137361.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 267,
+       "xmin": 62,
+       "ymax": 281,
+       "xmax": 935
+      },
+      "snippet": "05/02/2026 FT26020526061 QRIS SETTLEMENT MID 93606492 - PENJUALAN 1.726.000 19.137.361"
+     }
+    },
+    {
+     "row_id": "T0009",
+     "date": "2026-02-05",
+     "description": "TRF KE TOKO GROSIR SEMBAKO BAROKAH - PEMBELIAN",
+     "counterparty": "TOKO GROSIR SEMBAKO BAROKAH",
+     "debit": 6350000.0,
+     "credit": 0.0,
+     "balance_after": 12787361.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 286,
+       "xmin": 62,
+       "ymax": 298,
+       "xmax": 935
+      },
+      "snippet": "05/02/2026 FT26020512095 TRF KE TOKO GROSIR SEMBAKO BAROKAH - PEMBELIAN 6.350.000 12.787.361"
+     }
+    },
+    {
+     "row_id": "T0010",
+     "date": "2026-02-05",
+     "description": "TARIK TUNAI ATM - ATM NUSANTARA 0231",
+     "debit": 700000.0,
+     "credit": 0.0,
+     "balance_after": 12087361.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 305,
+       "xmin": 62,
+       "ymax": 317,
+       "xmax": 935
+      },
+      "snippet": "05/02/2026 FT26020535586 TARIK TUNAI ATM - ATM NUSANTARA 0231 700.000 12.087.361"
+     }
+    },
+    {
+     "row_id": "T0011",
+     "date": "2026-02-06",
+     "description": "TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK",
+     "counterparty": "TOKO GROSIR MAKMUR",
+     "debit": 2215000.0,
+     "credit": 0.0,
+     "balance_after": 9872361.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 323,
+       "xmin": 62,
+       "ymax": 336,
+       "xmax": 935
+      },
+      "snippet": "06/02/2026 FT26020674453 TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK 2.215.000 9.872.361"
+     }
+    },
+    {
+     "row_id": "T0012",
+     "date": "2026-02-07",
+     "description": "QRIS SETTLEMENT MID 93603497 - PENJUALAN",
+     "debit": 0.0,
+     "credit": 1363000.0,
+     "balance_after": 11235361.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 341,
+       "xmin": 62,
+       "ymax": 354,
+       "xmax": 935
+      },
+      "snippet": "07/02/2026 FT26020773879 QRIS SETTLEMENT MID 93603497 - PENJUALAN 1.363.000 11.235.361"
+     }
+    },
+    {
+     "row_id": "T0013",
+     "date": "2026-02-09",
+     "description": "QRIS SETTLEMENT MID 93604794 - PENJUALAN",
+     "debit": 0.0,
+     "credit": 935000.0,
+     "balance_after": 12170361.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 359,
+       "xmin": 62,
+       "ymax": 372,
+       "xmax": 935
+      },
+      "snippet": "09/02/2026 FT26020952370 QRIS SETTLEMENT MID 93604794 - PENJUALAN 935.000 12.170.361"
+     }
+    },
+    {
+     "row_id": "T0014",
+     "date": "2026-02-09",
+     "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+     "debit": 0.0,
+     "credit": 3300000.0,
+     "balance_after": 15470361.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 378,
+       "xmin": 62,
+       "ymax": 391,
+       "xmax": 935
+      },
+      "snippet": "09/02/2026 FT26020993017 SETOR TUNAI - CABANG KEBAYORAN LAMA 3.300.000 15.470.361"
+     }
+    },
+    {
+     "row_id": "T0015",
+     "date": "2026-02-10",
+     "description": "QRIS SETTLEMENT MID 93602962 - PENJUALAN",
+     "debit": 0.0,
+     "credit": 1445000.0,
+     "balance_after": 16915361.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 397,
+       "xmin": 62,
+       "ymax": 409,
+       "xmax": 935
+      },
+      "snippet": "10/02/2026 FT26021056718 QRIS SETTLEMENT MID 93602962 - PENJUALAN 1.445.000 16.915.361"
+     }
+    },
+    {
+     "row_id": "T0016",
+     "date": "2026-02-10",
+     "description": "PDAM AIR BERSIH - TAGIHAN BULANAN",
+     "debit": 96500.0,
+     "credit": 0.0,
+     "balance_after": 16818861.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 415,
+       "xmin": 62,
+       "ymax": 427,
+       "xmax": 935
+      },
+      "snippet": "10/02/2026 FT26021086605 PDAM AIR BERSIH - TAGIHAN BULANAN 96.500 16.818.861"
+     }
+    },
+    {
+     "row_id": "T0017",
+     "date": "2026-02-11",
+     "description": "QRIS SETTLEMENT MID 93603434 - PENJUALAN",
+     "debit": 0.0,
+     "credit": 969000.0,
+     "balance_after": 17787861.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 433,
+       "xmin": 62,
+       "ymax": 446,
+       "xmax": 935
+      },
+      "snippet": "11/02/2026 FT26021166230 QRIS SETTLEMENT MID 93603434 - PENJUALAN 969.000 17.787.861"
+     }
+    },
+    {
+     "row_id": "T0018",
+     "date": "2026-02-11",
+     "description": "PLN LISTRIK PASCABAYAR - ID PEL 5412xxxx",
+     "counterparty": "PLN",
+     "debit": 465000.0,
+     "credit": 0.0,
+     "balance_after": 17322861.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 452,
+       "xmin": 62,
+       "ymax": 464,
+       "xmax": 935
+      },
+      "snippet": "11/02/2026 FT26021180504 PLN LISTRIK PASCABAYAR - ID PEL 5412xxxx 465.000 17.322.861"
+     }
+    },
+    {
+     "row_id": "T0019",
+     "date": "2026-02-12",
+     "description": "QRIS SETTLEMENT MID 93606025 - PENJUALAN",
+     "debit": 0.0,
+     "credit": 1778000.0,
+     "balance_after": 19100861.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 471,
+       "xmin": 62,
+       "ymax": 483,
+       "xmax": 935
+      },
+      "snippet": "12/02/2026 FT26021208126 QRIS SETTLEMENT MID 93606025 - PENJUALAN 1.778.000 19.100.861"
+     }
+    },
+    {
+     "row_id": "T0020",
+     "date": "2026-02-14",
+     "description": "QRIS SETTLEMENT MID 93602540 - PENJUALAN",
+     "debit": 0.0,
+     "credit": 1367000.0,
+     "balance_after": 20467861.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 489,
+       "xmin": 62,
+       "ymax": 501,
+       "xmax": 935
+      },
+      "snippet": "14/02/2026 FT26021472505 QRIS SETTLEMENT MID 93602540 - PENJUALAN 1.367.000 20.467.861"
+     }
+    },
+    {
+     "row_id": "T0021",
+     "date": "2026-02-16",
+     "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+     "debit": 0.0,
+     "credit": 2450000.0,
+     "balance_after": 22917861.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 507,
+       "xmin": 62,
+       "ymax": 519,
+       "xmax": 935
+      },
+      "snippet": "16/02/2026 FT26021659221 SETOR TUNAI - CABANG KEBAYORAN LAMA 2.450.000 22.917.861"
+     }
+    },
+    {
+     "row_id": "T0022",
+     "date": "2026-02-16",
+     "description": "TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN",
+     "counterparty": "GROSIR SEMBAKO BAROKAH",
+     "debit": 5500000.0,
+     "credit": 0.0,
+     "balance_after": 17417861.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 526,
+       "xmin": 62,
+       "ymax": 538,
+       "xmax": 935
+      },
+      "snippet": "16/02/2026 FT26021672687 TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN 5.500.000 17.417.861"
+     }
+    },
+    {
+     "row_id": "T0023",
+     "date": "2026-02-20",
+     "description": "TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK",
+     "counterparty": "TOKO GROSIR MAKMUR",
+     "debit": 4450000.0,
+     "credit": 0.0,
+     "balance_after": 12967861.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 543,
+       "xmin": 62,
+       "ymax": 556,
+       "xmax": 935
+      },
+      "snippet": "20/02/2026 FT26022001284 TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK 4.450.000 12.967.861"
+     }
+    },
+    {
+     "row_id": "T0024",
+     "date": "2026-02-21",
+     "description": "QRIS SETTLEMENT MID 93605187 - PENJUALAN",
+     "debit": 0.0,
+     "credit": 1239000.0,
+     "balance_after": 14206861.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 562,
+       "xmin": 62,
+       "ymax": 574,
+       "xmax": 935
+      },
+      "snippet": "21/02/2026 FT26022109744 QRIS SETTLEMENT MID 93605187 - PENJUALAN 1.239.000 14.206.861"
+     }
+    },
+    {
+     "row_id": "T0025",
+     "date": "2026-02-22",
+     "description": "QRIS SETTLEMENT MID 93602291 - PENJUALAN",
+     "debit": 0.0,
+     "credit": 1241000.0,
+     "balance_after": 15447861.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 580,
+       "xmin": 62,
+       "ymax": 593,
+       "xmax": 935
+      },
+      "snippet": "22/02/2026 FT26022288236 QRIS SETTLEMENT MID 93602291 - PENJUALAN 1.241.000 15.447.861"
+     }
+    },
+    {
+     "row_id": "T0026",
+     "date": "2026-02-23",
+     "description": "QRIS SETTLEMENT MID 93609955 - PENJUALAN",
+     "debit": 0.0,
+     "credit": 1230000.0,
+     "balance_after": 16677861.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 599,
+       "xmin": 62,
+       "ymax": 611,
+       "xmax": 935
+      },
+      "snippet": "23/02/2026 FT26022368057 QRIS SETTLEMENT MID 93609955 - PENJUALAN 1.230.000 16.677.861"
+     }
+    },
+    {
+     "row_id": "T0027",
+     "date": "2026-02-23",
+     "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+     "debit": 0.0,
+     "credit": 2550000.0,
+     "balance_after": 19227861.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 617,
+       "xmin": 62,
+       "ymax": 629,
+       "xmax": 935
+      },
+      "snippet": "23/02/2026 FT26022392422 SETOR TUNAI - CABANG KEBAYORAN LAMA 2.550.000 19.227.861"
+     }
+    },
+    {
+     "row_id": "T0028",
+     "date": "2026-02-23",
+     "description": "INTERNET WIFI NUSANET - TAGIHAN",
+     "counterparty": "NUSANET",
+     "debit": 200000.0,
+     "credit": 0.0,
+     "balance_after": 19027861.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 635,
+       "xmin": 62,
+       "ymax": 648,
+       "xmax": 935
+      },
+      "snippet": "23/02/2026 FT26022313680 INTERNET WIFI NUSANET - TAGIHAN 200.000 19.027.861"
+     }
+    },
+    {
+     "row_id": "T0029",
+     "date": "2026-02-24",
+     "description": "TRF DARI AGUS PRASETYO - PESANAN SEMBAKO",
+     "counterparty": "AGUS PRASETYO",
+     "debit": 0.0,
+     "credit": 430000.0,
+     "balance_after": 19457861.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 653,
+       "xmin": 62,
+       "ymax": 666,
+       "xmax": 935
+      },
+      "snippet": "24/02/2026 FT26022422040 TRF DARI AGUS PRASETYO - PESANAN SEMBAKO 430.000 19.457.861"
+     }
+    },
+    {
+     "row_id": "T0030",
+     "date": "2026-02-26",
+     "description": "TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK",
+     "counterparty": "TOKO GROSIR MAKMUR",
+     "debit": 1259000.0,
+     "credit": 0.0,
+     "balance_after": 18198861.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 672,
+       "xmin": 62,
+       "ymax": 684,
+       "xmax": 935
+      },
+      "snippet": "26/02/2026 FT26022622890 TRF KE TOKO GROSIR MAKMUR - PEMBELIAN STOK 1.259.000 18.198.861"
+     }
+    },
+    {
+     "row_id": "T0031",
+     "date": "2026-02-27",
+     "description": "QRIS SETTLEMENT MID 93605121 - PENJUALAN",
+     "debit": 0.0,
+     "credit": 1480000.0,
+     "balance_after": 19678861.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 690,
+       "xmin": 62,
+       "ymax": 703,
+       "xmax": 935
+      },
+      "snippet": "27/02/2026 FT26022795078 QRIS SETTLEMENT MID 93605121 - PENJUALAN 1.480.000 19.678.861"
+     }
+    },
+    {
+     "row_id": "T0032",
+     "date": "2026-02-27",
+     "description": "TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN",
+     "counterparty": "GROSIR SEMBAKO BAROKAH",
+     "debit": 5299219.0,
+     "credit": 0.0,
+     "balance_after": 14379642.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 709,
+       "xmin": 62,
+       "ymax": 721,
+       "xmax": 935
+      },
+      "snippet": "27/02/2026 FT26022756673 TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN 5.299.219 14.379.642"
+     }
+    },
+    {
+     "row_id": "T0033",
+     "date": "2026-02-28",
+     "description": "BIAYA ADMIN BULANAN",
+     "debit": 15000.0,
+     "credit": 0.0,
+     "balance_after": 14364642.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 727,
+       "xmin": 62,
+       "ymax": 740,
+       "xmax": 935
+      },
+      "snippet": "28/02/2026 FT26022854679 BIAYA ADMIN BULANAN 15.000 14.364.642"
+     }
+    },
+    {
+     "row_id": "T0034",
+     "date": "2026-03-01",
+     "description": "SEWA KIOS BULAN 03/2026 - H. MAHMUD",
+     "counterparty": "H. MAHMUD",
+     "debit": 2500000.0,
+     "credit": 0.0,
+     "balance_after": 11864642.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 745,
+       "xmin": 62,
+       "ymax": 758,
+       "xmax": 935
+      },
+      "snippet": "01/03/2026 FT26030160547 SEWA KIOS BULAN 03/2026 - H. MAHMUD 2.500.000 11.864.642"
+     }
+    },
+    {
+     "row_id": "T0035",
+     "date": "2026-03-01",
+     "description": "QRIS SETTLEMENT MID 93604102 - PENJUALAN",
+     "debit": 0.0,
+     "credit": 1759000.0,
+     "balance_after": 13623642.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 764,
+       "xmin": 62,
+       "ymax": 776,
+       "xmax": 935
+      },
+      "snippet": "01/03/2026 FT26030142763 QRIS SETTLEMENT MID 93604102 - PENJUALAN 1.759.000 13.623.642"
+     }
+    },
+    {
+     "row_id": "T0036",
+     "date": "2026-03-02",
+     "description": "QRIS SETTLEMENT MID 93608939 - PENJUALAN",
+     "debit": 0.0,
+     "credit": 1251000.0,
+     "balance_after": 14874642.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 782,
+       "xmin": 62,
+       "ymax": 795,
+       "xmax": 935
+      },
+      "snippet": "02/03/2026 FT26030249738 QRIS SETTLEMENT MID 93608939 - PENJUALAN 1.251.000 14.874.642"
+     }
+    },
+    {
+     "row_id": "T0037",
+     "date": "2026-03-02",
+     "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+     "debit": 0.0,
+     "credit": 3150000.0,
+     "balance_after": 18024642.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 801,
+       "xmin": 62,
+       "ymax": 813,
+       "xmax": 935
+      },
+      "snippet": "02/03/2026 FT26030206026 SETOR TUNAI - CABANG KEBAYORAN LAMA 3.150.000 18.024.642"
+     }
+    },
+    {
+     "row_id": "T0038",
+     "date": "2026-03-04",
+     "description": "TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN",
+     "counterparty": "GROSIR SEMBAKO BAROKAH",
+     "debit": 7950000.0,
+     "credit": 0.0,
+     "balance_after": 10074642.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 819,
+       "xmin": 62,
+       "ymax": 832,
+       "xmax": 935
+      },
+      "snippet": "04/03/2026 FT26030431303 TRF KE GROSIR SEMBAKO BAROKAH - PEMBELIAN 7.950.000 10.074.642"
+     }
+    },
+    {
+     "row_id": "T0039",
+     "date": "2026-03-05",
+     "description": "QRIS SETTLEMENT MID 93601301 - PENJUALAN",
+     "debit": 0.0,
+     "credit": 1133000.0,
+     "balance_after": 11207642.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 838,
+       "xmin": 62,
+       "ymax": 850,
+       "xmax": 935
+      },
+      "snippet": "05/03/2026 FT26030532703 QRIS SETTLEMENT MID 93601301 - PENJUALAN 1.133.000 11.207.642"
+     }
+    },
+    {
+     "row_id": "T0040",
+     "date": "2026-03-06",
+     "description": "QRIS SETTLEMENT MID 93601944 - PENJUALAN",
+     "debit": 0.0,
+     "credit": 1438000.0,
+     "balance_after": 12645642.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 856,
+       "xmin": 62,
+       "ymax": 869,
+       "xmax": 935
+      },
+      "snippet": "06/03/2026 FT26030615413 QRIS SETTLEMENT MID 93601944 - PENJUALAN 1.438.000 12.645.642"
+     }
+    },
+    {
+     "row_id": "T0041",
+     "date": "2026-03-08",
+     "description": "QRIS SETTLEMENT MID 93601398 - PENJUALAN",
+     "debit": 0.0,
+     "credit": 1189000.0,
+     "balance_after": 13834642.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 875,
+       "xmin": 62,
+       "ymax": 887,
+       "xmax": 935
+      },
+      "snippet": "08/03/2026 FT26030837543 QRIS SETTLEMENT MID 93601398 - PENJUALAN 1.189.000 13.834.642"
+     }
+    },
+    {
+     "row_id": "T0042",
+     "date": "2026-03-09",
+     "description": "SETOR TUNAI - CABANG KEBAYORAN LAMA",
+     "debit": 0.0,
+     "credit": 2400000.0,
+     "balance_after": 16234642.0,
+     "source": {
+      "doc_id": "D01",
+      "page": 2,
+      "bbox": {
+       "ymin": 893,
+       "xmin": 62,
+       "ymax": 905,
+       "xmax": 935
+      },
+      "snippet": "09/03/2026 FT26030935243 SETOR TUNAI - CABANG KEBAYORAN LAMA 2.400.000 16.234.642"
+     }
+    }
+   ]
+  }
+ },
+ "input_tokens": 1296,
+ "output_tokens": 10743,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-page-v1.0",
+ "agent": "extractor:bank_statement:page",
+ "cached_at": "2026-10-15T06:58:40+00:00"
+}

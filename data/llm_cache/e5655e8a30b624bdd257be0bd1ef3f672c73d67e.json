@@ -1,0 +1,927 @@
+{
+ "text": "{\"business_name_header\":\"Reyes Auto Repair\",\"address_header\":null,\"currency\":\"PHP\",\"period_label\":\"Abril 2026\",\"entries\":[{\"row_id\":\"L0001\",\"date\":\"2026-04-02\",\"description\":\"Check engine - Avanza\",\"amount\":2050.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":156,\"xmin\":86,\"ymax\":182,\"xmax\":924},\"snippet\":\"2 Check engine - Avanza 2,050\"}},{\"row_id\":\"L0002\",\"date\":\"2026-04-03\",\"description\":\"Radiator flush - Adventure\",\"amount\":2850.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":184,\"xmin\":86,\"ymax\":208,\"xmax\":924},\"snippet\":\"3 Radiator flush - Adventure 2,850\"}},{\"row_id\":\"L0003\",\"date\":\"2026-04-04\",\"description\":\"Fan belt - Hilux\",\"amount\":2200.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":210,\"xmin\":86,\"ymax\":233,\"xmax\":924},\"snippet\":\"4 Fan belt - Hilux 2,200\"}},{\"row_id\":\"L0004\",\"date\":\"2026-04-06\",\"description\":\"Radiator flush - Adventure\",\"amount\":2250.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":235,\"xmin\":86,\"ymax\":258,\"xmax\":924},\"snippet\":\"6 Radiator flush - Adventure 2,250\"}},{\"row_id\":\"L0005\",\"date\":\"2026-04-07\",\"description\":\"Aircon cleaning - Innova\",\"amount\":2600.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":263,\"xmin\":86,\"ymax\":287,\"xmax\":924},\"snippet\":\"7 Aircon cleaning - Innova 2,600\"}},{\"row_id\":\"L0006\",\"date\":\"2026-04-09\",\"description\":\"Check engine - Avanza\",\"amount\":2350.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":313,\"xmin\":86,\"ymax\":337,\"xmax\":924},\"snippet\":\"9 Check engine - Avanza 2,350\"}},{\"row_id\":\"L0007\",\"date\":\"2026-04-10\",\"description\":\"Clutch adjust - Wigo\",\"amount\":1900.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":340,\"xmin\":86,\"ymax\":362,\"xmax\":924},\"snippet\":\"10 Clutch adjust - Wigo 1,900\"}},{\"row_id\":\"L0008\",\"date\":\"2026-04-11\",\"description\":\"Change oil + filter - Raize\",\"amount\":2300.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":366,\"xmin\":86,\"ymax\":388,\"xmax\":924},\"snippet\":\"11 Change oil + filter - Raize 2,300\"}},{\"row_id\":\"L0009\",\"date\":\"2026-04-13\",\"description\":\"Underchassis - Civic\",\"amount\":3300.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":393,\"xmin\":86,\"ymax\":413,\"xmax\":924},\"snippet\":\"13 Underchassis - Civic 3,300\"}},{\"row_id\":\"L0010\",\"date\":\"2026-04-14\",\"description\":\"Tubig + yelo\",\"amount\":-400.0,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":419,\"xmin\":86,\"ymax\":439,\"xmax\":924},\"snippet\":\"14 Tubig + yelo -400\"}},{\"row_id\":\"L0011\",\"date\":\"2026-04-16\",\"description\":\"Wheel alignment - Montero\",\"amount\":1900.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":471,\"xmin\":86,\"ymax\":493,\"xmax\":924},\"snippet\":\"16 Wheel alignment - Montero 1,900\"}},{\"row_id\":\"L0012\",\"date\":\"2026-04-17\",\"description\":\"Overhaul deposit - L300\",\"amount\":5200.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":498,\"xmin\":86,\"ymax\":519,\"xmax\":924},\"snippet\":\"17 Overhaul deposit - L300 5,200\"}},{\"row_id\":\"L0013\",\"date\":\"2026-04-17\",\"description\":\"Bili parts - Banawe\",\"amount\":-2250.0,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":523,\"xmin\":86,\"ymax\":546,\"xmax\":924},\"snippet\":\"17 Bili parts - Banawe -2,250\"}},{\"row_id\":\"L0014\",\"date\":\"2026-04-18\",\"description\":\"Alternator repair - Crosswind\",\"amount\":5000.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":549,\"xmin\":86,\"ymax\":571,\"xmax\":924},\"snippet\":\"18 Alternator repair - Crosswind 5,000\"}},{\"row_id\":\"L0015\",\"date\":\"2026-04-19\",\"description\":\"Suspension bushing - Innova\",\"amount\":4650.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":575,\"xmin\":86,\"ymax\":598,\"xmax\":924},\"snippet\":\"19 Suspension bushing - Innova 4,650\"}},{\"row_id\":\"L0016\",\"date\":\"2026-04-21\",\"description\":\"Palit gulong x2 - Fortuner\",\"amount\":5850.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":601,\"xmin\":86,\"ymax\":623,\"xmax\":924},\"snippet\":\"21 Palit gulong x2 - Fortuner 5,850\"}},{\"row_id\":\"L0017\",\"date\":\"2026-04-23\",\"description\":\"Underchassis - Civic\",\"amount\":3150.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":652,\"xmin\":86,\"ymax\":673,\"xmax\":924},\"snippet\":\"23 Underchassis - Civic 3,150\"}},{\"row_id\":\"L0018\",\"date\":\"2026-04-24\",\"description\":\"Battery replace - Hyundai Accent\",\"amount\":4850.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":678,\"xmin\":86,\"ymax\":700,\"xmax\":924},\"snippet\":\"24 Battery replace - Hyundai Accent 4,850\"}},{\"row_id\":\"L0019\",\"date\":\"2026-04-25\",\"description\":\"Palit gulong x2 - Fortuner\",\"amount\":4650.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":704,\"xmin\":86,\"ymax\":727,\"xmax\":924},\"snippet\":\"25 Palit gulong x2 - Fortuner 4,650\"}},{\"row_id\":\"L0020\",\"date\":\"2026-04-26\",\"description\":\"Check engine - Avanza\",\"amount\":3000.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":730,\"xmin\":86,\"ymax\":752,\"xmax\":924},\"snippet\":\"26 Check engine - Avanza 3,000\"}},{\"row_id\":\"L0021\",\"date\":\"2026-04-26\",\"description\":\"Kuryente - Meralco (cash)\",\"amount\":-2350.0,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":756,\"xmin\":86,\"ymax\":777,\"xmax\":924},\"snippet\":\"26 Kuryente - Meralco (cash) -2,350\"}},{\"row_id\":\"L0022\",\"date\":\"2026-04-27\",\"description\":\"Palit brake fluid - Mirage\",\"amount\":1750.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":783,\"xmin\":86,\"ymax\":803,\"xmax\":924},\"snippet\":\"27 Palit brake fluid - Mirage 1,750\"}},{\"row_id\":\"L0023\",\"date\":\"2026-04-27\",\"description\":\"Bili sandpaper, grease\",\"amount\":-800.0,\"kind\":\"expense\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":808,\"xmin\":86,\"ymax\":830,\"xmax\":924},\"snippet\":\"27 Bili sandpaper, grease -800\"}},{\"row_id\":\"L0024\",\"date\":\"2026-04-28\",\"description\":\"Palit gulong x2 - Fortuner\",\"amount\":4850.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":834,\"xmin\":86,\"ymax\":856,\"xmax\":924},\"snippet\":\"28 Palit gulong x2 - Fortuner 4,850\"}},{\"row_id\":\"L0025\",\"date\":\"2026-04-30\",\"description\":\"Check engine - Avanza\",\"amount\":2350.0,\"kind\":\"income\",\"source\":{\"doc_id\":\"D07\",\"page\":1,\"bbox\":{\"ymin\":887,\"xmin\":86,\"ymax\":909,\"xmax\":924},\"snippet\":\"30 Check engine - Avanza 2,350\"}}]}",
+ "parsed": {
+  "business_name_header": "Reyes Auto Repair",
+  "address_header": null,
+  "currency": "PHP",
+  "period_label": "Abril 2026",
+  "entries": [
+   {
+    "row_id": "L0001",
+    "date": "2026-04-02",
+    "description": "Check engine - Avanza",
+    "amount": 2050.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 156,
+      "xmin": 86,
+      "ymax": 182,
+      "xmax": 924
+     },
+     "snippet": "2 Check engine - Avanza 2,050"
+    }
+   },
+   {
+    "row_id": "L0002",
+    "date": "2026-04-03",
+    "description": "Radiator flush - Adventure",
+    "amount": 2850.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 184,
+      "xmin": 86,
+      "ymax": 208,
+      "xmax": 924
+     },
+     "snippet": "3 Radiator flush - Adventure 2,850"
+    }
+   },
+   {
+    "row_id": "L0003",
+    "date": "2026-04-04",
+    "description": "Fan belt - Hilux",
+    "amount": 2200.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 210,
+      "xmin": 86,
+      "ymax": 233,
+      "xmax": 924
+     },
+     "snippet": "4 Fan belt - Hilux 2,200"
+    }
+   },
+   {
+    "row_id": "L0004",
+    "date": "2026-04-06",
+    "description": "Radiator flush - Adventure",
+    "amount": 2250.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 235,
+      "xmin": 86,
+      "ymax": 258,
+      "xmax": 924
+     },
+     "snippet": "6 Radiator flush - Adventure 2,250"
+    }
+   },
+   {
+    "row_id": "L0005",
+    "date": "2026-04-07",
+    "description": "Aircon cleaning - Innova",
+    "amount": 2600.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 263,
+      "xmin": 86,
+      "ymax": 287,
+      "xmax": 924
+     },
+     "snippet": "7 Aircon cleaning - Innova 2,600"
+    }
+   },
+   {
+    "row_id": "L0006",
+    "date": "2026-04-09",
+    "description": "Check engine - Avanza",
+    "amount": 2350.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 313,
+      "xmin": 86,
+      "ymax": 337,
+      "xmax": 924
+     },
+     "snippet": "9 Check engine - Avanza 2,350"
+    }
+   },
+   {
+    "row_id": "L0007",
+    "date": "2026-04-10",
+    "description": "Clutch adjust - Wigo",
+    "amount": 1900.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 340,
+      "xmin": 86,
+      "ymax": 362,
+      "xmax": 924
+     },
+     "snippet": "10 Clutch adjust - Wigo 1,900"
+    }
+   },
+   {
+    "row_id": "L0008",
+    "date": "2026-04-11",
+    "description": "Change oil + filter - Raize",
+    "amount": 2300.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 366,
+      "xmin": 86,
+      "ymax": 388,
+      "xmax": 924
+     },
+     "snippet": "11 Change oil + filter - Raize 2,300"
+    }
+   },
+   {
+    "row_id": "L0009",
+    "date": "2026-04-13",
+    "description": "Underchassis - Civic",
+    "amount": 3300.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 393,
+      "xmin": 86,
+      "ymax": 413,
+      "xmax": 924
+     },
+     "snippet": "13 Underchassis - Civic 3,300"
+    }
+   },
+   {
+    "row_id": "L0010",
+    "date": "2026-04-14",
+    "description": "Tubig + yelo",
+    "amount": -400.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 419,
+      "xmin": 86,
+      "ymax": 439,
+      "xmax": 924
+     },
+     "snippet": "14 Tubig + yelo -400"
+    }
+   },
+   {
+    "row_id": "L0011",
+    "date": "2026-04-16",
+    "description": "Wheel alignment - Montero",
+    "amount": 1900.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 471,
+      "xmin": 86,
+      "ymax": 493,
+      "xmax": 924
+     },
+     "snippet": "16 Wheel alignment - Montero 1,900"
+    }
+   },
+   {
+    "row_id": "L0012",
+    "date": "2026-04-17",
+    "description": "Overhaul deposit - L300",
+    "amount": 5200.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 498,
+      "xmin": 86,
+      "ymax": 519,
+      "xmax": 924
+     },
+     "snippet": "17 Overhaul deposit - L300 5,200"
+    }
+   },
+   {
+    "row_id": "L0013",
+    "date": "2026-04-17",
+    "description": "Bili parts - Banawe",
+    "amount": -2250.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 523,
+      "xmin": 86,
+      "ymax": 546,
+      "xmax": 924
+     },
+     "snippet": "17 Bili parts - Banawe -2,250"
+    }
+   },
+   {
+    "row_id": "L0014",
+    "date": "2026-04-18",
+    "description": "Alternator repair - Crosswind",
+    "amount": 5000.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 549,
+      "xmin": 86,
+      "ymax": 571,
+      "xmax": 924
+     },
+     "snippet": "18 Alternator repair - Crosswind 5,000"
+    }
+   },
+   {
+    "row_id": "L0015",
+    "date": "2026-04-19",
+    "description": "Suspension bushing - Innova",
+    "amount": 4650.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 575,
+      "xmin": 86,
+      "ymax": 598,
+      "xmax": 924
+     },
+     "snippet": "19 Suspension bushing - Innova 4,650"
+    }
+   },
+   {
+    "row_id": "L0016",
+    "date": "2026-04-21",
+    "description": "Palit gulong x2 - Fortuner",
+    "amount": 5850.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 601,
+      "xmin": 86,
+      "ymax": 623,
+      "xmax": 924
+     },
+     "snippet": "21 Palit gulong x2 - Fortuner 5,850"
+    }
+   },
+   {
+    "row_id": "L0017",
+    "date": "2026-04-23",
+    "description": "Underchassis - Civic",
+    "amount": 3150.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 652,
+      "xmin": 86,
+      "ymax": 673,
+      "xmax": 924
+     },
+     "snippet": "23 Underchassis - Civic 3,150"
+    }
+   },
+   {
+    "row_id": "L0018",
+    "date": "2026-04-24",
+    "description": "Battery replace - Hyundai Accent",
+    "amount": 4850.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 678,
+      "xmin": 86,
+      "ymax": 700,
+      "xmax": 924
+     },
+     "snippet": "24 Battery replace - Hyundai Accent 4,850"
+    }
+   },
+   {
+    "row_id": "L0019",
+    "date": "2026-04-25",
+    "description": "Palit gulong x2 - Fortuner",
+    "amount": 4650.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 704,
+      "xmin": 86,
+      "ymax": 727,
+      "xmax": 924
+     },
+     "snippet": "25 Palit gulong x2 - Fortuner 4,650"
+    }
+   },
+   {
+    "row_id": "L0020",
+    "date": "2026-04-26",
+    "description": "Check engine - Avanza",
+    "amount": 3000.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 730,
+      "xmin": 86,
+      "ymax": 752,
+      "xmax": 924
+     },
+     "snippet": "26 Check engine - Avanza 3,000"
+    }
+   },
+   {
+    "row_id": "L0021",
+    "date": "2026-04-26",
+    "description": "Kuryente - Meralco (cash)",
+    "amount": -2350.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 756,
+      "xmin": 86,
+      "ymax": 777,
+      "xmax": 924
+     },
+     "snippet": "26 Kuryente - Meralco (cash) -2,350"
+    }
+   },
+   {
+    "row_id": "L0022",
+    "date": "2026-04-27",
+    "description": "Palit brake fluid - Mirage",
+    "amount": 1750.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 783,
+      "xmin": 86,
+      "ymax": 803,
+      "xmax": 924
+     },
+     "snippet": "27 Palit brake fluid - Mirage 1,750"
+    }
+   },
+   {
+    "row_id": "L0023",
+    "date": "2026-04-27",
+    "description": "Bili sandpaper, grease",
+    "amount": -800.0,
+    "kind": "expense",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 808,
+      "xmin": 86,
+      "ymax": 830,
+      "xmax": 924
+     },
+     "snippet": "27 Bili sandpaper, grease -800"
+    }
+   },
+   {
+    "row_id": "L0024",
+    "date": "2026-04-28",
+    "description": "Palit gulong x2 - Fortuner",
+    "amount": 4850.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 834,
+      "xmin": 86,
+      "ymax": 856,
+      "xmax": 924
+     },
+     "snippet": "28 Palit gulong x2 - Fortuner 4,850"
+    }
+   },
+   {
+    "row_id": "L0025",
+    "date": "2026-04-30",
+    "description": "Check engine - Avanza",
+    "amount": 2350.0,
+    "kind": "income",
+    "source": {
+     "doc_id": "D07",
+     "page": 1,
+     "bbox": {
+      "ymin": 887,
+      "xmin": 86,
+      "ymax": 909,
+      "xmax": 924
+     },
+     "snippet": "30 Check engine - Avanza 2,350"
+    }
+   }
+  ]
+ },
+ "state": {
+  "output": {
+   "business_name_header": "Reyes Auto Repair",
+   "currency": "PHP",
+   "period_label": "Abril 2026",
+   "entries": [
+    {
+     "row_id": "L0001",
+     "date": "2026-04-02",
+     "description": "Check engine - Avanza",
+     "amount": 2050.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 156,
+       "xmin": 86,
+       "ymax": 182,
+       "xmax": 924
+      },
+      "snippet": "2 Check engine - Avanza 2,050"
+     }
+    },
+    {
+     "row_id": "L0002",
+     "date": "2026-04-03",
+     "description": "Radiator flush - Adventure",
+     "amount": 2850.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 184,
+       "xmin": 86,
+       "ymax": 208,
+       "xmax": 924
+      },
+      "snippet": "3 Radiator flush - Adventure 2,850"
+     }
+    },
+    {
+     "row_id": "L0003",
+     "date": "2026-04-04",
+     "description": "Fan belt - Hilux",
+     "amount": 2200.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 210,
+       "xmin": 86,
+       "ymax": 233,
+       "xmax": 924
+      },
+      "snippet": "4 Fan belt - Hilux 2,200"
+     }
+    },
+    {
+     "row_id": "L0004",
+     "date": "2026-04-06",
+     "description": "Radiator flush - Adventure",
+     "amount": 2250.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 235,
+       "xmin": 86,
+       "ymax": 258,
+       "xmax": 924
+      },
+      "snippet": "6 Radiator flush - Adventure 2,250"
+     }
+    },
+    {
+     "row_id": "L0005",
+     "date": "2026-04-07",
+     "description": "Aircon cleaning - Innova",
+     "amount": 2600.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 263,
+       "xmin": 86,
+       "ymax": 287,
+       "xmax": 924
+      },
+      "snippet": "7 Aircon cleaning - Innova 2,600"
+     }
+    },
+    {
+     "row_id": "L0006",
+     "date": "2026-04-09",
+     "description": "Check engine - Avanza",
+     "amount": 2350.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 313,
+       "xmin": 86,
+       "ymax": 337,
+       "xmax": 924
+      },
+      "snippet": "9 Check engine - Avanza 2,350"
+     }
+    },
+    {
+     "row_id": "L0007",
+     "date": "2026-04-10",
+     "description": "Clutch adjust - Wigo",
+     "amount": 1900.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 340,
+       "xmin": 86,
+       "ymax": 362,
+       "xmax": 924
+      },
+      "snippet": "10 Clutch adjust - Wigo 1,900"
+     }
+    },
+    {
+     "row_id": "L0008",
+     "date": "2026-04-11",
+     "description": "Change oil + filter - Raize",
+     "amount": 2300.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 366,
+       "xmin": 86,
+       "ymax": 388,
+       "xmax": 924
+      },
+      "snippet": "11 Change oil + filter - Raize 2,300"
+     }
+    },
+    {
+     "row_id": "L0009",
+     "date": "2026-04-13",
+     "description": "Underchassis - Civic",
+     "amount": 3300.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 393,
+       "xmin": 86,
+       "ymax": 413,
+       "xmax": 924
+      },
+      "snippet": "13 Underchassis - Civic 3,300"
+     }
+    },
+    {
+     "row_id": "L0010",
+     "date": "2026-04-14",
+     "description": "Tubig + yelo",
+     "amount": -400.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 419,
+       "xmin": 86,
+       "ymax": 439,
+       "xmax": 924
+      },
+      "snippet": "14 Tubig + yelo -400"
+     }
+    },
+    {
+     "row_id": "L0011",
+     "date": "2026-04-16",
+     "description": "Wheel alignment - Montero",
+     "amount": 1900.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 471,
+       "xmin": 86,
+       "ymax": 493,
+       "xmax": 924
+      },
+      "snippet": "16 Wheel alignment - Montero 1,900"
+     }
+    },
+    {
+     "row_id": "L0012",
+     "date": "2026-04-17",
+     "description": "Overhaul deposit - L300",
+     "amount": 5200.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 498,
+       "xmin": 86,
+       "ymax": 519,
+       "xmax": 924
+      },
+      "snippet": "17 Overhaul deposit - L300 5,200"
+     }
+    },
+    {
+     "row_id": "L0013",
+     "date": "2026-04-17",
+     "description": "Bili parts - Banawe",
+     "amount": -2250.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 523,
+       "xmin": 86,
+       "ymax": 546,
+       "xmax": 924
+      },
+      "snippet": "17 Bili parts - Banawe -2,250"
+     }
+    },
+    {
+     "row_id": "L0014",
+     "date": "2026-04-18",
+     "description": "Alternator repair - Crosswind",
+     "amount": 5000.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 549,
+       "xmin": 86,
+       "ymax": 571,
+       "xmax": 924
+      },
+      "snippet": "18 Alternator repair - Crosswind 5,000"
+     }
+    },
+    {
+     "row_id": "L0015",
+     "date": "2026-04-19",
+     "description": "Suspension bushing - Innova",
+     "amount": 4650.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 575,
+       "xmin": 86,
+       "ymax": 598,
+       "xmax": 924
+      },
+      "snippet": "19 Suspension bushing - Innova 4,650"
+     }
+    },
+    {
+     "row_id": "L0016",
+     "date": "2026-04-21",
+     "description": "Palit gulong x2 - Fortuner",
+     "amount": 5850.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 601,
+       "xmin": 86,
+       "ymax": 623,
+       "xmax": 924
+      },
+      "snippet": "21 Palit gulong x2 - Fortuner 5,850"
+     }
+    },
+    {
+     "row_id": "L0017",
+     "date": "2026-04-23",
+     "description": "Underchassis - Civic",
+     "amount": 3150.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 652,
+       "xmin": 86,
+       "ymax": 673,
+       "xmax": 924
+      },
+      "snippet": "23 Underchassis - Civic 3,150"
+     }
+    },
+    {
+     "row_id": "L0018",
+     "date": "2026-04-24",
+     "description": "Battery replace - Hyundai Accent",
+     "amount": 4850.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 678,
+       "xmin": 86,
+       "ymax": 700,
+       "xmax": 924
+      },
+      "snippet": "24 Battery replace - Hyundai Accent 4,850"
+     }
+    },
+    {
+     "row_id": "L0019",
+     "date": "2026-04-25",
+     "description": "Palit gulong x2 - Fortuner",
+     "amount": 4650.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 704,
+       "xmin": 86,
+       "ymax": 727,
+       "xmax": 924
+      },
+      "snippet": "25 Palit gulong x2 - Fortuner 4,650"
+     }
+    },
+    {
+     "row_id": "L0020",
+     "date": "2026-04-26",
+     "description": "Check engine - Avanza",
+     "amount": 3000.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 730,
+       "xmin": 86,
+       "ymax": 752,
+       "xmax": 924
+      },
+      "snippet": "26 Check engine - Avanza 3,000"
+     }
+    },
+    {
+     "row_id": "L0021",
+     "date": "2026-04-26",
+     "description": "Kuryente - Meralco (cash)",
+     "amount": -2350.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 756,
+       "xmin": 86,
+       "ymax": 777,
+       "xmax": 924
+      },
+      "snippet": "26 Kuryente - Meralco (cash) -2,350"
+     }
+    },
+    {
+     "row_id": "L0022",
+     "date": "2026-04-27",
+     "description": "Palit brake fluid - Mirage",
+     "amount": 1750.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 783,
+       "xmin": 86,
+       "ymax": 803,
+       "xmax": 924
+      },
+      "snippet": "27 Palit brake fluid - Mirage 1,750"
+     }
+    },
+    {
+     "row_id": "L0023",
+     "date": "2026-04-27",
+     "description": "Bili sandpaper, grease",
+     "amount": -800.0,
+     "kind": "expense",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 808,
+       "xmin": 86,
+       "ymax": 830,
+       "xmax": 924
+      },
+      "snippet": "27 Bili sandpaper, grease -800"
+     }
+    },
+    {
+     "row_id": "L0024",
+     "date": "2026-04-28",
+     "description": "Palit gulong x2 - Fortuner",
+     "amount": 4850.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 834,
+       "xmin": 86,
+       "ymax": 856,
+       "xmax": 924
+      },
+      "snippet": "28 Palit gulong x2 - Fortuner 4,850"
+     }
+    },
+    {
+     "row_id": "L0025",
+     "date": "2026-04-30",
+     "description": "Check engine - Avanza",
+     "amount": 2350.0,
+     "kind": "income",
+     "source": {
+      "doc_id": "D07",
+      "page": 1,
+      "bbox": {
+       "ymin": 887,
+       "xmin": 86,
+       "ymax": 909,
+       "xmax": 924
+      },
+      "snippet": "30 Check engine - Avanza 2,350"
+     }
+    }
+   ]
+  }
+ },
+ "input_tokens": 996,
+ "output_tokens": 2606,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:handwritten_ledger",
+ "cached_at": "2026-10-15T07:07:19+00:00"
+}

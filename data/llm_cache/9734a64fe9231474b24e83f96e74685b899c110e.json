@@ -1,0 +1,212 @@
+{
+ "text": "{\"merchant\":\"TOKO GROSIR MAKMUR\",\"date\":\"2026-02-26\",\"receipt_number\":\"TGM-1006\",\"currency\":\"IDR\",\"total\":{\"value\":1259000.0,\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":619,\"xmin\":705,\"ymax\":636,\"xmax\":875},\"snippet\":\"1.259.000\"}},\"items\":[{\"description\":\"Kecap Manis 600ml\",\"amount\":144000.0,\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":361,\"xmin\":753,\"ymax\":378,\"xmax\":882},\"snippet\":\"144.000\"}},{\"description\":\"Minuman Botol 1 krat\",\"amount\":72000.0,\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":412,\"xmin\":770,\"ymax\":428,\"xmax\":881},\"snippet\":\"72.000\"}},{\"description\":\"Cabai Rawit 1kg\",\"amount\":65000.0,\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":463,\"xmin\":770,\"ymax\":480,\"xmax\":880},\"snippet\":\"65.000\"}},{\"description\":\"Snack Ringan 1 dus\",\"amount\":588000.0,\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":514,\"xmin\":748,\"ymax\":531,\"xmax\":877},\"snippet\":\"588.000\"}},{\"description\":\"Biskuit 1 dus\",\"amount\":390000.0,\"source\":{\"doc_id\":\"D05\",\"page\":1,\"bbox\":{\"ymin\":565,\"xmin\":747,\"ymax\":582,\"xmax\":876},\"snippet\":\"390.000\"}}],\"payment_method\":\"TRANSFER\",\"direction\":\"purchase\",\"handwritten\":false}",
+ "parsed": {
+  "merchant": "TOKO GROSIR MAKMUR",
+  "date": "2026-02-26",
+  "receipt_number": "TGM-1006",
+  "currency": "IDR",
+  "total": {
+   "value": 1259000.0,
+   "source": {
+    "doc_id": "D05",
+    "page": 1,
+    "bbox": {
+     "ymin": 619,
+     "xmin": 705,
+     "ymax": 636,
+     "xmax": 875
+    },
+    "snippet": "1.259.000"
+   }
+  },
+  "items": [
+   {
+    "description": "Kecap Manis 600ml",
+    "amount": 144000.0,
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 361,
+      "xmin": 753,
+      "ymax": 378,
+      "xmax": 882
+     },
+     "snippet": "144.000"
+    }
+   },
+   {
+    "description": "Minuman Botol 1 krat",
+    "amount": 72000.0,
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 412,
+      "xmin": 770,
+      "ymax": 428,
+      "xmax": 881
+     },
+     "snippet": "72.000"
+    }
+   },
+   {
+    "description": "Cabai Rawit 1kg",
+    "amount": 65000.0,
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 463,
+      "xmin": 770,
+      "ymax": 480,
+      "xmax": 880
+     },
+     "snippet": "65.000"
+    }
+   },
+   {
+    "description": "Snack Ringan 1 dus",
+    "amount": 588000.0,
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 514,
+      "xmin": 748,
+      "ymax": 531,
+      "xmax": 877
+     },
+     "snippet": "588.000"
+    }
+   },
+   {
+    "description": "Biskuit 1 dus",
+    "amount": 390000.0,
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 565,
+      "xmin": 747,
+      "ymax": 582,
+      "xmax": 876
+     },
+     "snippet": "390.000"
+    }
+   }
+  ],
+  "payment_method": "TRANSFER",
+  "direction": "purchase",
+  "handwritten": false
+ },
+ "state": {
+  "output": {
+   "merchant": "TOKO GROSIR MAKMUR",
+   "date": "2026-02-26",
+   "receipt_number": "TGM-1006",
+   "currency": "IDR",
+   "total": {
+    "value": 1259000.0,
+    "source": {
+     "doc_id": "D05",
+     "page": 1,
+     "bbox": {
+      "ymin": 619,
+      "xmin": 705,
+      "ymax": 636,
+      "xmax": 875
+     },
+     "snippet": "1.259.000"
+    }
+   },
+   "items": [
+    {
+     "description": "Kecap Manis 600ml",
+     "amount": 144000.0,
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 361,
+       "xmin": 753,
+       "ymax": 378,
+       "xmax": 882
+      },
+      "snippet": "144.000"
+     }
+    },
+    {
+     "description": "Minuman Botol 1 krat",
+     "amount": 72000.0,
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 412,
+       "xmin": 770,
+       "ymax": 428,
+       "xmax": 881
+      },
+      "snippet": "72.000"
+     }
+    },
+    {
+     "description": "Cabai Rawit 1kg",
+     "amount": 65000.0,
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 463,
+       "xmin": 770,
+       "ymax": 480,
+       "xmax": 880
+      },
+      "snippet": "65.000"
+     }
+    },
+    {
+     "description": "Snack Ringan 1 dus",
+     "amount": 588000.0,
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 514,
+       "xmin": 748,
+       "ymax": 531,
+       "xmax": 877
+      },
+      "snippet": "588.000"
+     }
+    },
+    {
+     "description": "Biskuit 1 dus",
+     "amount": 390000.0,
+     "source": {
+      "doc_id": "D05",
+      "page": 1,
+      "bbox": {
+       "ymin": 565,
+       "xmin": 747,
+       "ymax": 582,
+       "xmax": 876
+      },
+      "snippet": "390.000"
+     }
+    }
+   ],
+   "payment_method": "TRANSFER",
+   "direction": "purchase",
+   "handwritten": false
+  }
+ },
+ "input_tokens": 952,
+ "output_tokens": 488,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:receipt",
+ "cached_at": "2026-10-15T06:46:39+00:00"
+}

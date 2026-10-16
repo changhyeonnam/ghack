@@ -1,0 +1,272 @@
+{
+ "text": "{\n  \"merchant\": \"TOKO GROSIR MAKMUR\",\n  \"date\": \"2026-04-27\",\n  \"receipt_number\": \"TGM-1055\",\n  \"currency\": \"IDR\",\n  \"total\": {\n    \"value\": 1249500,\n    \"source\": {\n      \"doc_id\": \"D10\",\n      \"page\": 1,\n      \"bbox\": {\n        \"ymin\": 651,\n        \"xmin\": 697,\n        \"ymax\": 670,\n        \"xmax\": 866\n      },\n      \"snippet\": \"1.249.500\"\n    }\n  },\n  \"items\": [\n    {\n      \"description\": \"Tisu 1 dus (4 x 86.000)\",\n      \"amount\": 344000,\n      \"source\": {\n        \"doc_id\": \"D10\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 328,\n          \"xmin\": 751,\n          \"ymax\": 344,\n          \"xmax\": 883\n        },\n        \"snippet\": \"344.000\"\n      }\n    },\n    {\n      \"description\": \"Gula Pasir 1kg (1 x 17.500)\",\n      \"amount\": 17500,\n      \"source\": {\n        \"doc_id\": \"D10\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 374,\n          \"xmin\": 768,\n          \"ymax\": 390,\n          \"xmax\": 880\n        },\n        \"snippet\": \"17.500\"\n      }\n    },\n    {\n      \"description\": \"Air Mineral 1 dus (48) (6 x 42.000)\",\n      \"amount\": 252000,\n      \"source\": {\n        \"doc_id\": \"D10\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 420,\n          \"xmin\": 747,\n          \"ymax\": 437,\n          \"xmax\": 878\n        },\n        \"snippet\": \"252.000\"\n      }\n    },\n    {\n      \"description\": \"Mie Instan 1 dus (40) (3 x 112.000)\",\n      \"amount\": 336000,\n      \"source\": {\n        \"doc_id\": \"D10\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 468,\n          \"xmin\": 745,\n          \"ymax\": 484,\n          \"xmax\": 874\n        },\n        \"snippet\": \"336.000\"\n      }\n    },\n    {\n      \"description\": \"Minyak Goreng 2L (2 x 34.000)\",\n      \"amount\": 68000,\n      \"source\": {\n        \"doc_id\": \"D10\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 514,\n          \"xmin\": 764,\n          \"ymax\": 530,\n          \"xmax\": 872\n        },\n        \"snippet\": \"68.000\"\n      }\n    },\n    {\n      \"description\": \"Teh Celup 1 dus (4 x 55.000)\",\n      \"amount\": 220000,\n      \"source\": {\n        \"doc_id\": \"D10\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 560,\n          \"xmin\": 740,\n          \"ymax\": 577,\n          \"xmax\": 870\n        },\n        \"snippet\": \"220.000\"\n      }\n    },\n    {\n      \"description\": \"Kopi Sachet 1 renceng (1 x 12.000)\",\n      \"amount\": 12000,\n      \"source\": {\n        \"doc_id\": \"D10\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 607,\n          \"xmin\": 757,\n          \"ymax\": 623,\n          \"xmax\": 867\n        },\n        \"snippet\": \"12.000\"\n      }\n    }\n  ],\n  \"payment_method\": \"cash\",\n  \"direction\": \"purchase\",\n  \"handwritten\": false\n}",
+ "parsed": {
+  "merchant": "TOKO GROSIR MAKMUR",
+  "date": "2026-04-27",
+  "receipt_number": "TGM-1055",
+  "currency": "IDR",
+  "total": {
+   "value": 1249500.0,
+   "source": {
+    "doc_id": "D10",
+    "page": 1,
+    "bbox": {
+     "ymin": 651,
+     "xmin": 697,
+     "ymax": 670,
+     "xmax": 866
+    },
+    "snippet": "1.249.500"
+   }
+  },
+  "items": [
+   {
+    "description": "Tisu 1 dus (4 x 86.000)",
+    "amount": 344000.0,
+    "source": {
+     "doc_id": "D10",
+     "page": 1,
+     "bbox": {
+      "ymin": 328,
+      "xmin": 751,
+      "ymax": 344,
+      "xmax": 883
+     },
+     "snippet": "344.000"
+    }
+   },
+   {
+    "description": "Gula Pasir 1kg (1 x 17.500)",
+    "amount": 17500.0,
+    "source": {
+     "doc_id": "D10",
+     "page": 1,
+     "bbox": {
+      "ymin": 374,
+      "xmin": 768,
+      "ymax": 390,
+      "xmax": 880
+     },
+     "snippet": "17.500"
+    }
+   },
+   {
+    "description": "Air Mineral 1 dus (48) (6 x 42.000)",
+    "amount": 252000.0,
+    "source": {
+     "doc_id": "D10",
+     "page": 1,
+     "bbox": {
+      "ymin": 420,
+      "xmin": 747,
+      "ymax": 437,
+      "xmax": 878
+     },
+     "snippet": "252.000"
+    }
+   },
+   {
+    "description": "Mie Instan 1 dus (40) (3 x 112.000)",
+    "amount": 336000.0,
+    "source": {
+     "doc_id": "D10",
+     "page": 1,
+     "bbox": {
+      "ymin": 468,
+      "xmin": 745,
+      "ymax": 484,
+      "xmax": 874
+     },
+     "snippet": "336.000"
+    }
+   },
+   {
+    "description": "Minyak Goreng 2L (2 x 34.000)",
+    "amount": 68000.0,
+    "source": {
+     "doc_id": "D10",
+     "page": 1,
+     "bbox": {
+      "ymin": 514,
+      "xmin": 764,
+      "ymax": 530,
+      "xmax": 872
+     },
+     "snippet": "68.000"
+    }
+   },
+   {
+    "description": "Teh Celup 1 dus (4 x 55.000)",
+    "amount": 220000.0,
+    "source": {
+     "doc_id": "D10",
+     "page": 1,
+     "bbox": {
+      "ymin": 560,
+      "xmin": 740,
+      "ymax": 577,
+      "xmax": 870
+     },
+     "snippet": "220.000"
+    }
+   },
+   {
+    "description": "Kopi Sachet 1 renceng (1 x 12.000)",
+    "amount": 12000.0,
+    "source": {
+     "doc_id": "D10",
+     "page": 1,
+     "bbox": {
+      "ymin": 607,
+      "xmin": 757,
+      "ymax": 623,
+      "xmax": 867
+     },
+     "snippet": "12.000"
+    }
+   }
+  ],
+  "payment_method": "cash",
+  "direction": "purchase",
+  "handwritten": false
+ },
+ "state": {
+  "output": {
+   "merchant": "TOKO GROSIR MAKMUR",
+   "date": "2026-04-27",
+   "receipt_number": "TGM-1055",
+   "currency": "IDR",
+   "total": {
+    "value": 1249500.0,
+    "source": {
+     "doc_id": "D10",
+     "page": 1,
+     "bbox": {
+      "ymin": 651,
+      "xmin": 697,
+      "ymax": 670,
+      "xmax": 866
+     },
+     "snippet": "1.249.500"
+    }
+   },
+   "items": [
+    {
+     "description": "Tisu 1 dus (4 x 86.000)",
+     "amount": 344000.0,
+     "source": {
+      "doc_id": "D10",
+      "page": 1,
+      "bbox": {
+       "ymin": 328,
+       "xmin": 751,
+       "ymax": 344,
+       "xmax": 883
+      },
+      "snippet": "344.000"
+     }
+    },
+    {
+     "description": "Gula Pasir 1kg (1 x 17.500)",
+     "amount": 17500.0,
+     "source": {
+      "doc_id": "D10",
+      "page": 1,
+      "bbox": {
+       "ymin": 374,
+       "xmin": 768,
+       "ymax": 390,
+       "xmax": 880
+      },
+      "snippet": "17.500"
+     }
+    },
+    {
+     "description": "Air Mineral 1 dus (48) (6 x 42.000)",
+     "amount": 252000.0,
+     "source": {
+      "doc_id": "D10",
+      "page": 1,
+      "bbox": {
+       "ymin": 420,
+       "xmin": 747,
+       "ymax": 437,
+       "xmax": 878
+      },
+      "snippet": "252.000"
+     }
+    },
+    {
+     "description": "Mie Instan 1 dus (40) (3 x 112.000)",
+     "amount": 336000.0,
+     "source": {
+      "doc_id": "D10",
+      "page": 1,
+      "bbox": {
+       "ymin": 468,
+       "xmin": 745,
+       "ymax": 484,
+       "xmax": 874
+      },
+      "snippet": "336.000"
+     }
+    },
+    {
+     "description": "Minyak Goreng 2L (2 x 34.000)",
+     "amount": 68000.0,
+     "source": {
+      "doc_id": "D10",
+      "page": 1,
+      "bbox": {
+       "ymin": 514,
+       "xmin": 764,
+       "ymax": 530,
+       "xmax": 872
+      },
+      "snippet": "68.000"
+     }
+    },
+    {
+     "description": "Teh Celup 1 dus (4 x 55.000)",
+     "amount": 220000.0,
+     "source": {
+      "doc_id": "D10",
+      "page": 1,
+      "bbox": {
+       "ymin": 560,
+       "xmin": 740,
+       "ymax": 577,
+       "xmax": 870
+      },
+      "snippet": "220.000"
+     }
+    },
+    {
+     "description": "Kopi Sachet 1 renceng (1 x 12.000)",
+     "amount": 12000.0,
+     "source": {
+      "doc_id": "D10",
+      "page": 1,
+      "bbox": {
+       "ymin": 607,
+       "xmin": 757,
+       "ymax": 623,
+       "xmax": 867
+      },
+      "snippet": "12.000"
+     }
+    }
+   ],
+   "payment_method": "cash",
+   "direction": "purchase",
+   "handwritten": false
+  }
+ },
+ "input_tokens": 939,
+ "output_tokens": 1148,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:receipt",
+ "cached_at": "2026-10-15T06:47:00+00:00"
+}

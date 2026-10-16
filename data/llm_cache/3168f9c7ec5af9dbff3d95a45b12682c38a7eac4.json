@@ -1,0 +1,230 @@
+{
+ "results": [
+  {
+   "text": "### Checklist Investigation Notes\n\n#### Q1: Double Counting of Revenue\n- **Verdict:** PASS\n- **Evidence & Findings:** The cash reconciliation check shows handwritten ledger revenue of 827,600 PHP versus bank cash deposits of 232,800 PHP. The credit memo treats bank deposits and ledger earnings separately, explicitly highlighting an unbanked collection estimate of 594,800 PHP [CF.off_ledger_income_estimate] without adding ledger figures into verified cash flow totals. No double counting between documents occurred.\n\n#### Q2: Month-to-Month Inflow Swings & Seasonality\n- **Verdict:** PASS\n- **Evidence & Findings:** Inflow volatility is very low across active months (CV = 0.035, [CF.inflow_volatility_cv]). Active months display steady inflows: Jan 74,655 PHP [CF.m.2026-01.inflow], Feb 70,653 PHP [CF.m.2026-02.inflow], May 67,854 PHP [CF.m.2026-05.inflow], and Jun 70,104 PHP [CF.m.2026-06.inflow]. No artificial single-month spikes or unexplained lump-sum inflows are present.\n\n#### Q3: Self-Transfers & Round-Trips\n- **Verdict:** PASS\n- **Evidence & Findings:** Automated checks detected 0 self-transfers and 0 round-trips. Incoming transfers consist of small retail GCash payments from third parties (e.g., Liza Garcia 1,400 PHP [T0008], Jose Ramos 3,750 PHP [T0012], Paolo Cruz 2,150 PHP [T0022], Mark Villanueva 1,600 PHP [T0041]). No round-tripping or internal capital injections detected.\n\n#### Q4: Document / Image Re-use or Duplication\n- **Verdict:** OBJECTION (CRITICAL)\n- **Evidence & Findings:** \n  1. Ledger duplication within case: D07 (`ledger_p6.jpg`) duplicates D04 (`ledger_p3.jpg`) with a perceptual hash hamming distance of 2 (`image_similarity(D04, D07)` confirmed near-identical). D07 re-labels March 2026 entries as April 2026 with an identical 69,000 PHP sum.\n  2. Cross-case image re-use: Automated image similarity confirmed D11 (`premises_02.jpg`) is an exact perceptual hash match (hamming distance 0) to `premises.jpg` from past case `PAST-2025-0471`.\n  3. Synthetic imagery: Both D10 and D11 are synthetic graphic vector illustrations containing demo watermarks (\"SYNTHETIC · FOR DEMO\") rather than authentic facility photographs.\n\n#### Q5: Ledger / Statement Period Match\n- **Verdict:** OBJECTION (MEDIUM)\n- **Evidence & Findings:** Statement D01 spans 2026-01-01 to 2026-06-30 but completely omits March and April 2026 (`date_crosscheck` confirmed zero rows for 2026-03 and 2026-04). In contrast, the handwritten ledgers cover all six months (D02 to D09). Bank statements fail to cover the ledger period.\n\n#### Q6: Running Balance Continuity\n- **Verdict:** OBJECTION (CRITICAL)\n- **Evidence & Findings:** Running balance recomputation (`recompute_balance_chain(D01)`) reveals a severe balance discontinuity at row T0051 on 2026-05-01 (page 3). The closing balance on 2026-02-28 was 48,950.00 PHP [T0050]. Following a debit of 3,000.00 PHP on 2026-05-01, the expected balance was 45,950.00 PHP, but the statement reports 58,400.00 PHP (an unexplained positive discrepancy of +12,450.00 PHP), corroborating missing unrecorded statement activity between February and May.\n\n#### Q7: Undisclosed Debt Service / Recurring Transfers\n- **Verdict:** OBJECTION (HIGH)\n- **Evidence & Findings:** Bank debits reveal an ongoing vehicle debt obligation to Banco de Oro (BDO) of 14,800 PHP monthly [CF.recurring_debt_service_monthly], executing on the 10th of every active month: T0006 (01/10), T0032 (02/10), T0055 (05/10), and T0082 (06/10). In addition, recurring weekly GCash transfers of 3,000 PHP are paid out regularly to an individual (Juan Dela Cruz, e.g., T0001, T0005, T0011, T0019, T0023, T0027, T0034, T0038, T0047, T0051, T0053, T0058), representing either undisclosed informal debt/payroll commitments totaling ~12,000–13,000 PHP per month.\n\n#### Q8: Premises Scale Plausibility\n- **Verdict:** OBJECTION (HIGH)\n- **Evidence & Findings:** The submitted premises files D10 and D11 are synthetic vector drawings featuring \"SYNTHETIC · FOR DEMO\" watermarks rather than real photographs of a garage. Furthermore, D11 is an exact recycled file from `PAST-2025-0471`. There is no verified physical workshop backing the 827,600 PHP claimed ledger turnover.\n\n#### Q9: Sourced Memo Numbers\n- **Verdict:** PASS\n- **Evidence & Findings:** Automated inspection confirmed 0 unsourced figure IDs and 0 unsourced numeric literals in prose. Recomputed figures (`recompute_figure(CF.avg_monthly_net)`) match the memo calculations (-570.47 PHP rounded to -570 PHP).\n\n#### Q10: Month-End Inflow Concentration (Window Dressing)\n- **Verdict:** PASS\n- **Evidence & Findings:** [CF.end_of_month_concentration] is 0.090 (9.0%), indicating cash deposits are distributed evenly throughout the month (primarily weekly deposits) without month-end clustering.\n\n#### Q11: Entity & Account Consistency\n- **Verdict:** PASS\n- **Evidence & Findings:** Business name \"Reyes Auto Repair\" is consistent across application and handwritten ledgers D02–D09. Bank statement D01 names account holder Ramon Reyes (sole proprietorship match). D11's signage reads \"SERVICE BAY 2\" which has no entity token, but this is an image illustration issue already captured in Q4/Q8.\n\n#### Q12: Language & Currency Alignment\n- **Verdict:** PASS\n- **Evidence & Findings:** All currencies are Philippine Pesos (PHP). Statements and signage are in English (en), and ledgers are in Tagalog (tl), perfectly matching standard commercial practice in the Philippines.\n\n---\n\n### Overall Assessment\nThe memo's rejection recommendation is thoroughly justified and substantiated. The credit application fails on multiple fundamental underwriting standards: severe document tampering/fabrication (re-use of a synthetic vector illustration D11 from a past case `PAST-2025-0471`, synthetic demo drawings for D10, and duplicate ledger submission D07 copying D04), broken bank continuity (+12,450 PHP balance break at T0051 with two missing months), negative average net cash flow (-570 PHP/month), and heavy recurring debt obligations (14,800 PHP/month to BDO plus recurring 3,000 PHP weekly individual transfers) leaving 0 PHP debt service capacity.",
+   "parsed": null
+  },
+  {
+   "text": "{\n  \"objections\": [\n    {\n      \"id\": \"OBJ-1\",\n      \"question_id\": \"Q4\",\n      \"severity\": \"critical\",\n      \"title\": \"Duplicated and recycled synthetic documents across ledger and premises files\",\n      \"claim\": \"Ledger document D07 is a near-identical duplicate of D04 (hamming distance 2) resubmitted with altered dates, while premises photo D11 is an exact recycled match (hamming distance 0) to a file from past case PAST-2025-0471 bearing synthetic demo watermarks alongside D10.\",\n      \"evidence_refs\": [\n        {\n          \"doc_id\": \"D04\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"ledger_p3.jpg\"\n        },\n        {\n          \"doc_id\": \"D07\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"ledger_p6.jpg\"\n        },\n        {\n          \"doc_id\": \"D10\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"premises_01.jpg\"\n        },\n        {\n          \"doc_id\": \"D11\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"premises_02.jpg\"\n        }\n      ],\n      \"figure_ids\": [\n        \"CF.ledger_income_total\"\n      ],\n      \"tool_evidence\": \"image_similarity\",\n      \"suggested_action\": \"Exclude duplicated ledger D07 income from revenue, decline unverified records, and refer the file for fraud review due to recycled and synthetic imagery.\",\n      \"financial_impact\": 69000.0\n    },\n    {\n      \"id\": \"OBJ-2\",\n      \"question_id\": \"Q6\",\n      \"severity\": \"critical\",\n      \"title\": \"Bank statement running balance discontinuity between February and May\",\n      \"claim\": \"Statement D01 exhibits a running balance continuity break at row T0051 on 2026-05-01 where reported balance is 58,400.00 PHP versus an expected 45,950.00 PHP (+12,450.00 PHP discrepancy) following February's close of 48,950.00 PHP.\",\n      \"evidence_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 2,\n          \"bbox\": {\n            \"ymin\": 636,\n            \"xmin\": 64,\n            \"ymax\": 647,\n            \"xmax\": 935\n          },\n          \"snippet\": \"02/28/2026 MP26022847414 WITHHOLDING TAX ON INTEREST 0.64 48,950.00\"\n        },\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 3,\n          \"bbox\": {\n            \"ymin\": 196,\n            \"xmin\": 63,\n            \"ymax\": 206,\n            \"xmax\": 934\n          },\n          \"snippet\": \"05/01/2026 MP26050159537 GCASH TRANSFER TO JUAN DELA CRUZ 3,000.00 58,400.00\"\n        }\n      ],\n      \"figure_ids\": [\n        \"CF.m.2026-02.closing_balance\",\n        \"CF.m.2026-05.closing_balance\"\n      ],\n      \"tool_evidence\": \"recompute_balance_chain\",\n      \"suggested_action\": \"Require the applicant to submit complete, certified bank statements covering March and April 2026 to reconcile the 12,450.00 PHP balance jump.\",\n      \"financial_impact\": 12450.0\n    },\n    {\n      \"id\": \"OBJ-3\",\n      \"question_id\": \"Q5\",\n      \"severity\": \"medium\",\n      \"title\": \"Bank statement period missing March and April relative to ledger submission\",\n      \"claim\": \"Bank statement D01 completely omits transaction history for March 2026 and April 2026 (2 months missing), whereas ledger records D02 through D09 present trading activity across the full six months.\",\n      \"evidence_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"bank_statement_2026_partial.pdf\"\n        },\n        {\n          \"doc_id\": \"D04\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"ledger_p3.jpg\"\n        },\n        {\n          \"doc_id\": \"D05\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"ledger_p4.jpg\"\n        }\n      ],\n      \"figure_ids\": [\n        \"CF.months_missing_count\",\n        \"CF.months_covered\"\n      ],\n      \"tool_evidence\": \"date_crosscheck\",\n      \"suggested_action\": \"Request full, unbroken bank statements for March and April 2026 prior to any further financial assessment.\",\n      \"financial_impact\": null\n    },\n    {\n      \"id\": \"OBJ-4\",\n      \"question_id\": \"Q7\",\n      \"severity\": \"high\",\n      \"title\": \"Undisclosed recurring loan amortization and weekly individual transfers\",\n      \"claim\": \"Bank statement D01 shows regular debt service payments of 14,800.00 PHP monthly to Banco de Oro across rows T0006, T0032, T0055, and T0082, as well as recurring weekly 3,000.00 PHP transfers to Juan Dela Cruz, indicating unlisted liabilities.\",\n      \"evidence_refs\": [\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 1,\n          \"bbox\": {\n            \"ymin\": 392,\n            \"xmin\": 64,\n            \"ymax\": 402,\n            \"xmax\": 933\n          },\n          \"snippet\": \"01/10/2026 MP26011018864 BDO AUTO LOAN PAYMENT - 4411xxxx 14,800.00 23,737.21\"\n        },\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 2,\n          \"bbox\": {\n            \"ymin\": 305,\n            \"xmin\": 64,\n            \"ymax\": 317,\n            \"xmax\": 935\n          },\n          \"snippet\": \"02/10/2026 MP26021063552 BDO AUTO LOAN PAYMENT - 4411xxxx 14,800.00 66,373.79\"\n        },\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 3,\n          \"bbox\": {\n            \"ymin\": 269,\n            \"xmin\": 63,\n            \"ymax\": 279,\n            \"xmax\": 934\n          },\n          \"snippet\": \"05/10/2026 MP26051035098 BDO AUTO LOAN PAYMENT - 4411xxxx 14,800.00 57,651.00\"\n        },\n        {\n          \"doc_id\": \"D01\",\n          \"page\": 4,\n          \"bbox\": {\n            \"ymin\": 286,\n            \"xmin\": 62,\n            \"ymax\": 298,\n            \"xmax\": 935\n          },\n          \"snippet\": \"06/10/2026 MP26061032260 BDO AUTO LOAN PAYMENT - 4411xxxx 14,800.00 51,300.73\"\n        }\n      ],\n      \"figure_ids\": [\n        \"CF.recurring_debt_service_monthly\",\n        \"TX.T0006\",\n        \"TX.T0082\"\n      ],\n      \"tool_evidence\": \"lookup_transactions\",\n      \"suggested_action\": \"Factor 14,800.00 PHP monthly existing debt service into debt-to-income limits and clarify the contractual nature of the recurring 3,000.00 PHP weekly disbursements.\",\n      \"financial_impact\": 14800.0\n    },\n    {\n      \"id\": \"OBJ-5\",\n      \"question_id\": \"Q8\",\n      \"severity\": \"high\",\n      \"title\": \"Unverifiable premises scale due to synthetic graphic renderings\",\n      \"claim\": \"Documents D10 and D11 do not represent real physical workshop premises but are synthetic graphic illustrations bearing demo disclaimers, leaving the claimed 827,600.00 PHP ledger turnover unverified by physical infrastructure.\",\n      \"evidence_refs\": [\n        {\n          \"doc_id\": \"D10\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"premises_01.jpg\"\n        },\n        {\n          \"doc_id\": \"D11\",\n          \"page\": 1,\n          \"bbox\": null,\n          \"snippet\": \"premises_02.jpg\"\n        }\n      ],\n      \"figure_ids\": [\n        \"CF.ledger_income_total\"\n      ],\n      \"tool_evidence\": null,\n      \"suggested_action\": \"Conduct an in-person physical site verification or request genuine geotagged workshop photographs showing active repair operations and tooling.\",\n      \"financial_impact\": null\n    }\n  ],\n  \"questions_checked\": [\n    \"Q1\",\n    \"Q2\",\n    \"Q3\",\n    \"Q4\",\n    \"Q5\",\n    \"Q6\",\n    \"Q7\",\n    \"Q8\",\n    \"Q9\",\n    \"Q10\",\n    \"Q11\",\n    \"Q12\"\n  ],\n  \"overall_assessment\": \"The rejection recommendation is sound and fully justified by multiple critical integrity and financial issues. The file contains severe document compromises including a duplicated ledger page (D07 duplicating D04), synthetic premises drawings (D10, D11), and cross-case image re-use of D11 from PAST-2025-0471. Furthermore, bank statements omit March and April 2026, causing an unverified 12,450 PHP balance jump at T0051, while ongoing debt commitments to BDO of 14,800 PHP/month and negative monthly net cash flow leave zero debt service capacity for the requested 250,000 PHP loan.\"\n}",
+   "parsed": {
+    "objections": [
+     {
+      "id": "OBJ-1",
+      "question_id": "Q4",
+      "severity": "critical",
+      "title": "Duplicated and recycled synthetic documents across ledger and premises files",
+      "claim": "Ledger document D07 is a near-identical duplicate of D04 (hamming distance 2) resubmitted with altered dates, while premises photo D11 is an exact recycled match (hamming distance 0) to a file from past case PAST-2025-0471 bearing synthetic demo watermarks alongside D10.",
+      "evidence_refs": [
+       {
+        "doc_id": "D04",
+        "page": 1,
+        "bbox": null,
+        "snippet": "ledger_p3.jpg"
+       },
+       {
+        "doc_id": "D07",
+        "page": 1,
+        "bbox": null,
+        "snippet": "ledger_p6.jpg"
+       },
+       {
+        "doc_id": "D10",
+        "page": 1,
+        "bbox": null,
+        "snippet": "premises_01.jpg"
+       },
+       {
+        "doc_id": "D11",
+        "page": 1,
+        "bbox": null,
+        "snippet": "premises_02.jpg"
+       }
+      ],
+      "figure_ids": [
+       "CF.ledger_income_total"
+      ],
+      "tool_evidence": "image_similarity",
+      "suggested_action": "Exclude duplicated ledger D07 income from revenue, decline unverified records, and refer the file for fraud review due to recycled and synthetic imagery.",
+      "financial_impact": 69000.0
+     },
+     {
+      "id": "OBJ-2",
+      "question_id": "Q6",
+      "severity": "critical",
+      "title": "Bank statement running balance discontinuity between February and May",
+      "claim": "Statement D01 exhibits a running balance continuity break at row T0051 on 2026-05-01 where reported balance is 58,400.00 PHP versus an expected 45,950.00 PHP (+12,450.00 PHP discrepancy) following February's close of 48,950.00 PHP.",
+      "evidence_refs": [
+       {
+        "doc_id": "D01",
+        "page": 2,
+        "bbox": {
+         "ymin": 636,
+         "xmin": 64,
+         "ymax": 647,
+         "xmax": 935
+        },
+        "snippet": "02/28/2026 MP26022847414 WITHHOLDING TAX ON INTEREST 0.64 48,950.00"
+       },
+       {
+        "doc_id": "D01",
+        "page": 3,
+        "bbox": {
+         "ymin": 196,
+         "xmin": 63,
+         "ymax": 206,
+         "xmax": 934
+        },
+        "snippet": "05/01/2026 MP26050159537 GCASH TRANSFER TO JUAN DELA CRUZ 3,000.00 58,400.00"
+       }
+      ],
+      "figure_ids": [
+       "CF.m.2026-02.closing_balance",
+       "CF.m.2026-05.closing_balance"
+      ],
+      "tool_evidence": "recompute_balance_chain",
+      "suggested_action": "Require the applicant to submit complete, certified bank statements covering March and April 2026 to reconcile the 12,450.00 PHP balance jump.",
+      "financial_impact": 12450.0
+     },
+     {
+      "id": "OBJ-3",
+      "question_id": "Q5",
+      "severity": "medium",
+      "title": "Bank statement period missing March and April relative to ledger submission",
+      "claim": "Bank statement D01 completely omits transaction history for March 2026 and April 2026 (2 months missing), whereas ledger records D02 through D09 present trading activity across the full six months.",
+      "evidence_refs": [
+       {
+        "doc_id": "D01",
+        "page": 1,
+        "bbox": null,
+        "snippet": "bank_statement_2026_partial.pdf"
+       },
+       {
+        "doc_id": "D04",
+        "page": 1,
+        "bbox": null,
+        "snippet": "ledger_p3.jpg"
+       },
+       {
+        "doc_id": "D05",
+        "page": 1,
+        "bbox": null,
+        "snippet": "ledger_p4.jpg"
+       }
+      ],
+      "figure_ids": [
+       "CF.months_missing_count",
+       "CF.months_covered"
+      ],
+      "tool_evidence": "date_crosscheck",
+      "suggested_action": "Request full, unbroken bank statements for March and April 2026 prior to any further financial assessment.",
+      "financial_impact": null
+     },
+     {
+      "id": "OBJ-4",
+      "question_id": "Q7",
+      "severity": "high",
+      "title": "Undisclosed recurring loan amortization and weekly individual transfers",
+      "claim": "Bank statement D01 shows regular debt service payments of 14,800.00 PHP monthly to Banco de Oro across rows T0006, T0032, T0055, and T0082, as well as recurring weekly 3,000.00 PHP transfers to Juan Dela Cruz, indicating unlisted liabilities.",
+      "evidence_refs": [
+       {
+        "doc_id": "D01",
+        "page": 1,
+        "bbox": {
+         "ymin": 392,
+         "xmin": 64,
+         "ymax": 402,
+         "xmax": 933
+        },
+        "snippet": "01/10/2026 MP26011018864 BDO AUTO LOAN PAYMENT - 4411xxxx 14,800.00 23,737.21"
+       },
+       {
+        "doc_id": "D01",
+        "page": 2,
+        "bbox": {
+         "ymin": 305,
+         "xmin": 64,
+         "ymax": 317,
+         "xmax": 935
+        },
+        "snippet": "02/10/2026 MP26021063552 BDO AUTO LOAN PAYMENT - 4411xxxx 14,800.00 66,373.79"
+       },
+       {
+        "doc_id": "D01",
+        "page": 3,
+        "bbox": {
+         "ymin": 269,
+         "xmin": 63,
+         "ymax": 279,
+         "xmax": 934
+        },
+        "snippet": "05/10/2026 MP26051035098 BDO AUTO LOAN PAYMENT - 4411xxxx 14,800.00 57,651.00"
+       },
+       {
+        "doc_id": "D01",
+        "page": 4,
+        "bbox": {
+         "ymin": 286,
+         "xmin": 62,
+         "ymax": 298,
+         "xmax": 935
+        },
+        "snippet": "06/10/2026 MP26061032260 BDO AUTO LOAN PAYMENT - 4411xxxx 14,800.00 51,300.73"
+       }
+      ],
+      "figure_ids": [
+       "CF.recurring_debt_service_monthly",
+       "TX.T0006",
+       "TX.T0082"
+      ],
+      "tool_evidence": "lookup_transactions",
+      "suggested_action": "Factor 14,800.00 PHP monthly existing debt service into debt-to-income limits and clarify the contractual nature of the recurring 3,000.00 PHP weekly disbursements.",
+      "financial_impact": 14800.0
+     },
+     {
+      "id": "OBJ-5",
+      "question_id": "Q8",
+      "severity": "high",
+      "title": "Unverifiable premises scale due to synthetic graphic renderings",
+      "claim": "Documents D10 and D11 do not represent real physical workshop premises but are synthetic graphic illustrations bearing demo disclaimers, leaving the claimed 827,600.00 PHP ledger turnover unverified by physical infrastructure.",
+      "evidence_refs": [
+       {
+        "doc_id": "D10",
+        "page": 1,
+        "bbox": null,
+        "snippet": "premises_01.jpg"
+       },
+       {
+        "doc_id": "D11",
+        "page": 1,
+        "bbox": null,
+        "snippet": "premises_02.jpg"
+       }
+      ],
+      "figure_ids": [
+       "CF.ledger_income_total"
+      ],
+      "tool_evidence": null,
+      "suggested_action": "Conduct an in-person physical site verification or request genuine geotagged workshop photographs showing active repair operations and tooling.",
+      "financial_impact": null
+     }
+    ],
+    "questions_checked": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4",
+     "Q5",
+     "Q6",
+     "Q7",
+     "Q8",
+     "Q9",
+     "Q10",
+     "Q11",
+     "Q12"
+    ],
+    "overall_assessment": "The rejection recommendation is sound and fully justified by multiple critical integrity and financial issues. The file contains severe document compromises including a duplicated ledger page (D07 duplicating D04), synthetic premises drawings (D10, D11), and cross-case image re-use of D11 from PAST-2025-0471. Furthermore, bank statements omit March and April 2026, causing an unverified 12,450 PHP balance jump at T0051, while ongoing debt commitments to BDO of 14,800 PHP/month and negative monthly net cash flow leave zero debt service capacity for the requested 250,000 PHP loan."
+   }
+  }
+ ],
+ "cached_at": "2026-10-15T07:08:19+00:00"
+}

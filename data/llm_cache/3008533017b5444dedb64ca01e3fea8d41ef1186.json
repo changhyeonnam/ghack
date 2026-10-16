@@ -1,0 +1,139 @@
+{
+ "text": "{\n  \"signage_text\": \"WARUNG IBU SARI\",\n  \"business_type_guess\": \"grocery retail / convenience store (warung)\",\n  \"apparent_size\": \"small\",\n  \"inventory_level\": \"moderate\",\n  \"observations\": [\n    {\n      \"text\": \"Main storefront sign reads 'WARUNG IBU SARI'.\",\n      \"source\": {\n        \"doc_id\": \"D17\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 195,\n          \"xmin\": 172,\n          \"ymax\": 285,\n          \"xmax\": 830\n        },\n        \"snippet\": \"WARUNG IBU SARI\"\n      }\n    },\n    {\n      \"text\": \"Subheading awning text lists offerings: 'Sembako • Minuman • Pulsa • Gas & Galon'.\",\n      \"source\": {\n        \"doc_id\": \"D17\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 369,\n          \"xmin\": 353,\n          \"ymax\": 389,\n          \"xmax\": 661\n        },\n        \"snippet\": \"Sembako • Minuman • Pulsa • Gas & Galon\"\n      }\n    },\n    {\n      \"text\": \"Image is a synthetic graphic illustration rather than a real photograph of business premises.\",\n      \"source\": {\n        \"doc_id\": \"D17\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 956,\n          \"xmin\": 792,\n          \"ymax\": 994,\n          \"xmax\": 996\n        },\n        \"snippet\": \"SYNTHETIC · FOR DEMO\"\n      }\n    },\n    {\n      \"text\": \"Front counter with shelving units displaying stylized packaged goods and beverage/gas containers.\",\n      \"source\": {\n        \"doc_id\": \"D17\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 395,\n          \"xmin\": 164,\n          \"ymax\": 625,\n          \"xmax\": 838\n        },\n        \"snippet\": null\n      }\n    }\n  ]\n}",
+ "parsed": {
+  "signage_text": "WARUNG IBU SARI",
+  "business_type_guess": "grocery retail / convenience store (warung)",
+  "apparent_size": "small",
+  "inventory_level": "moderate",
+  "observations": [
+   {
+    "text": "Main storefront sign reads 'WARUNG IBU SARI'.",
+    "source": {
+     "doc_id": "D17",
+     "page": 1,
+     "bbox": {
+      "ymin": 195,
+      "xmin": 172,
+      "ymax": 285,
+      "xmax": 830
+     },
+     "snippet": "WARUNG IBU SARI"
+    }
+   },
+   {
+    "text": "Subheading awning text lists offerings: 'Sembako • Minuman • Pulsa • Gas & Galon'.",
+    "source": {
+     "doc_id": "D17",
+     "page": 1,
+     "bbox": {
+      "ymin": 369,
+      "xmin": 353,
+      "ymax": 389,
+      "xmax": 661
+     },
+     "snippet": "Sembako • Minuman • Pulsa • Gas & Galon"
+    }
+   },
+   {
+    "text": "Image is a synthetic graphic illustration rather than a real photograph of business premises.",
+    "source": {
+     "doc_id": "D17",
+     "page": 1,
+     "bbox": {
+      "ymin": 956,
+      "xmin": 792,
+      "ymax": 994,
+      "xmax": 996
+     },
+     "snippet": "SYNTHETIC · FOR DEMO"
+    }
+   },
+   {
+    "text": "Front counter with shelving units displaying stylized packaged goods and beverage/gas containers.",
+    "source": {
+     "doc_id": "D17",
+     "page": 1,
+     "bbox": {
+      "ymin": 395,
+      "xmin": 164,
+      "ymax": 625,
+      "xmax": 838
+     },
+     "snippet": null
+    }
+   }
+  ]
+ },
+ "state": {
+  "output": {
+   "signage_text": "WARUNG IBU SARI",
+   "business_type_guess": "grocery retail / convenience store (warung)",
+   "apparent_size": "small",
+   "inventory_level": "moderate",
+   "observations": [
+    {
+     "text": "Main storefront sign reads 'WARUNG IBU SARI'.",
+     "source": {
+      "doc_id": "D17",
+      "page": 1,
+      "bbox": {
+       "ymin": 195,
+       "xmin": 172,
+       "ymax": 285,
+       "xmax": 830
+      },
+      "snippet": "WARUNG IBU SARI"
+     }
+    },
+    {
+     "text": "Subheading awning text lists offerings: 'Sembako • Minuman • Pulsa • Gas & Galon'.",
+     "source": {
+      "doc_id": "D17",
+      "page": 1,
+      "bbox": {
+       "ymin": 369,
+       "xmin": 353,
+       "ymax": 389,
+       "xmax": 661
+      },
+      "snippet": "Sembako • Minuman • Pulsa • Gas & Galon"
+     }
+    },
+    {
+     "text": "Image is a synthetic graphic illustration rather than a real photograph of business premises.",
+     "source": {
+      "doc_id": "D17",
+      "page": 1,
+      "bbox": {
+       "ymin": 956,
+       "xmin": 792,
+       "ymax": 994,
+       "xmax": 996
+      },
+      "snippet": "SYNTHETIC · FOR DEMO"
+     }
+    },
+    {
+     "text": "Front counter with shelving units displaying stylized packaged goods and beverage/gas containers.",
+     "source": {
+      "doc_id": "D17",
+      "page": 1,
+      "bbox": {
+       "ymin": 395,
+       "xmin": 164,
+       "ymax": 625,
+       "xmax": 838
+      }
+     }
+    }
+   ]
+  }
+ },
+ "input_tokens": 957,
+ "output_tokens": 544,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:premises_photo",
+ "cached_at": "2026-10-15T06:47:25+00:00"
+}

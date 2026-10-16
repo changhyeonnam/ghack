@@ -1,0 +1,152 @@
+{
+ "text": "{\n  \"merchant\": \"CV SUMBER REJEKI\",\n  \"date\": \"2026-05-13\",\n  \"receipt_number\": \"SR-0638\",\n  \"currency\": \"IDR\",\n  \"total\": {\n    \"value\": 708000,\n    \"source\": {\n      \"doc_id\": \"D12\",\n      \"page\": 1,\n      \"bbox\": {\n        \"ymin\": 574,\n        \"xmin\": 743,\n        \"ymax\": 594,\n        \"xmax\": 870\n      },\n      \"snippet\": \"708.000\"\n    }\n  },\n  \"items\": [\n    {\n      \"description\": \"Deterjen 800g 2 x 21.000\",\n      \"amount\": 42000,\n      \"source\": {\n        \"doc_id\": \"D12\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 361,\n          \"xmin\": 126,\n          \"ymax\": 421,\n          \"xmax\": 879\n        },\n        \"snippet\": \"Deterjen 800g\\n  2 x     21.000                                 42.000\"\n      }\n    },\n    {\n      \"description\": \"Pasta Gigi 1 lusin 6 x 96.000\",\n      \"amount\": 576000,\n      \"source\": {\n        \"doc_id\": \"D12\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 420,\n          \"xmin\": 123,\n          \"ymax\": 477,\n          \"xmax\": 878\n        },\n        \"snippet\": \"Pasta Gigi 1 lusin\\n  6 x     96.000                                576.000\"\n      }\n    },\n    {\n      \"description\": \"Shampo Sachet 1 renceng 5 x 18.000\",\n      \"amount\": 90000,\n      \"source\": {\n        \"doc_id\": \"D12\",\n        \"page\": 1,\n        \"bbox\": {\n          \"ymin\": 476,\n          \"xmin\": 123,\n          \"ymax\": 530,\n          \"xmax\": 873\n        },\n        \"snippet\": \"Shampo Sachet 1 renceng\\n  5 x     18.000                                 90.000\"\n      }\n    }\n  ],\n  \"payment_method\": \"TRANSFER\",\n  \"direction\": \"purchase\",\n  \"handwritten\": false\n}",
+ "parsed": {
+  "merchant": "CV SUMBER REJEKI",
+  "date": "2026-05-13",
+  "receipt_number": "SR-0638",
+  "currency": "IDR",
+  "total": {
+   "value": 708000.0,
+   "source": {
+    "doc_id": "D12",
+    "page": 1,
+    "bbox": {
+     "ymin": 574,
+     "xmin": 743,
+     "ymax": 594,
+     "xmax": 870
+    },
+    "snippet": "708.000"
+   }
+  },
+  "items": [
+   {
+    "description": "Deterjen 800g 2 x 21.000",
+    "amount": 42000.0,
+    "source": {
+     "doc_id": "D12",
+     "page": 1,
+     "bbox": {
+      "ymin": 361,
+      "xmin": 126,
+      "ymax": 421,
+      "xmax": 879
+     },
+     "snippet": "Deterjen 800g\n  2 x     21.000                                 42.000"
+    }
+   },
+   {
+    "description": "Pasta Gigi 1 lusin 6 x 96.000",
+    "amount": 576000.0,
+    "source": {
+     "doc_id": "D12",
+     "page": 1,
+     "bbox": {
+      "ymin": 420,
+      "xmin": 123,
+      "ymax": 477,
+      "xmax": 878
+     },
+     "snippet": "Pasta Gigi 1 lusin\n  6 x     96.000                                576.000"
+    }
+   },
+   {
+    "description": "Shampo Sachet 1 renceng 5 x 18.000",
+    "amount": 90000.0,
+    "source": {
+     "doc_id": "D12",
+     "page": 1,
+     "bbox": {
+      "ymin": 476,
+      "xmin": 123,
+      "ymax": 530,
+      "xmax": 873
+     },
+     "snippet": "Shampo Sachet 1 renceng\n  5 x     18.000                                 90.000"
+    }
+   }
+  ],
+  "payment_method": "TRANSFER",
+  "direction": "purchase",
+  "handwritten": false
+ },
+ "state": {
+  "output": {
+   "merchant": "CV SUMBER REJEKI",
+   "date": "2026-05-13",
+   "receipt_number": "SR-0638",
+   "currency": "IDR",
+   "total": {
+    "value": 708000.0,
+    "source": {
+     "doc_id": "D12",
+     "page": 1,
+     "bbox": {
+      "ymin": 574,
+      "xmin": 743,
+      "ymax": 594,
+      "xmax": 870
+     },
+     "snippet": "708.000"
+    }
+   },
+   "items": [
+    {
+     "description": "Deterjen 800g 2 x 21.000",
+     "amount": 42000.0,
+     "source": {
+      "doc_id": "D12",
+      "page": 1,
+      "bbox": {
+       "ymin": 361,
+       "xmin": 126,
+       "ymax": 421,
+       "xmax": 879
+      },
+      "snippet": "Deterjen 800g\n  2 x     21.000                                 42.000"
+     }
+    },
+    {
+     "description": "Pasta Gigi 1 lusin 6 x 96.000",
+     "amount": 576000.0,
+     "source": {
+      "doc_id": "D12",
+      "page": 1,
+      "bbox": {
+       "ymin": 420,
+       "xmin": 123,
+       "ymax": 477,
+       "xmax": 878
+      },
+      "snippet": "Pasta Gigi 1 lusin\n  6 x     96.000                                576.000"
+     }
+    },
+    {
+     "description": "Shampo Sachet 1 renceng 5 x 18.000",
+     "amount": 90000.0,
+     "source": {
+      "doc_id": "D12",
+      "page": 1,
+      "bbox": {
+       "ymin": 476,
+       "xmin": 123,
+       "ymax": 530,
+       "xmax": 873
+      },
+      "snippet": "Shampo Sachet 1 renceng\n  5 x     18.000                                 90.000"
+     }
+    }
+   ],
+   "payment_method": "TRANSFER",
+   "direction": "purchase",
+   "handwritten": false
+  }
+ },
+ "input_tokens": 944,
+ "output_tokens": 669,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "extractor-v1.1",
+ "agent": "extractor:receipt",
+ "cached_at": "2026-10-15T06:47:06+00:00"
+}

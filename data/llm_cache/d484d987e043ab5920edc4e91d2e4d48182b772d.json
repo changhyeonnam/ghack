@@ -1,0 +1,242 @@
+{
+ "text": "{\n  \"headline\": \"Linh Fashion Official demonstrates active online retail turnover supported by platform payouts, but approval must be deferred pending clarification of duplicate documentation, mismatched shop naming, and leverage capacity against the requested amount.\",\n  \"sections\": [\n    {\n      \"heading\": \"Business overview\",\n      \"paragraphs\": [\n        \"The applicant operates Linh Fashion Official, a small online apparel retail business based in Vietnam selling predominantly via the Shopee marketplace platform. The loan file includes six monthly seller dashboard reports covering January through June of the current operational period, five pages of bank account statements covering December through May, multiple logistics receipts, and a business premises photograph.\",\n        \"Physical verification via document D14 shows a functional order processing and packaging location displaying 'Linh Fashion' signage, equipped with clothing display racks, garments, shipping cartons labeled for domestic couriers, and a packing workstation. Verified activity reflects genuine order fulfillment consistent with micro-retail e-commerce.\"\n      ],\n      \"figure_ids\": []\n    },\n    {\n      \"heading\": \"Cash flow\",\n      \"paragraphs\": [\n        \"Primary banking records across six statement months from December through May show total recorded account inflows of {fig:CF.total_inflow} against operational outflows of {fig:CF.total_outflow}, yielding an average monthly inflow of {fig:CF.avg_monthly_inflow} and net monthly cash flow of {fig:CF.avg_monthly_net}.\",\n        \"Adjusting for non-business financing transfers, including {fig:CF.self_transfer_count} self-transfers totaling {fig:CF.self_transfer_total} from the owner's secondary account and a round-trip credit of {fig:CF.round_trip_total}, the normalized average monthly business inflow stands at {fig:CF.avg_monthly_business_inflow}. Monthly underlying business inflows display moderate stability, expanding at a trend rate of {fig:CF.revenue_trend_pct} with an inflow volatility coefficient of {fig:CF.inflow_volatility_cv}.\"\n      ],\n      \"figure_ids\": [\n        \"CF.total_inflow\",\n        \"CF.total_outflow\",\n        \"CF.avg_monthly_inflow\",\n        \"CF.avg_monthly_net\",\n        \"CF.self_transfer_count\",\n        \"CF.self_transfer_total\",\n        \"CF.round_trip_total\",\n        \"CF.avg_monthly_business_inflow\",\n        \"CF.revenue_trend_pct\",\n        \"CF.inflow_volatility_cv\"\n      ]\n    },\n    {\n      \"heading\": \"Revenue quality and concentration\",\n      \"paragraphs\": [\n        \"Bank deposits are primarily driven by marketplace settlements, with Shopee platform disbursements contributing {fig:CF.platform_payout_total} across eighteen transactions, supplemented by {fig:CF.cash_deposit_total} in cash counter deposits from cash-on-delivery collections. Individual platform disbursements range between {fig:TX.T0145} and {fig:TX.T0061}.\",\n        \"Seller dashboard extracts corroborate steady retail performance, showing monthly marketplace sales expanding from {fig:DOC.D02.gross_sales} in January to {fig:DOC.D07.gross_sales} in June, alongside healthy order counts such as {fig:DOC.D02.orders} in January and {fig:DOC.D07.orders} in June. A concentrated portion of deposits occurs near period conclusions, with an end-of-month inflow share of {fig:CF.end_of_month_concentration}.\"\n      ],\n      \"figure_ids\": [\n        \"CF.platform_payout_total\",\n        \"CF.cash_deposit_total\",\n        \"TX.T0145\",\n        \"TX.T0061\",\n        \"DOC.D02.gross_sales\",\n        \"DOC.D07.gross_sales\",\n        \"DOC.D02.orders\",\n        \"DOC.D07.orders\",\n        \"CF.end_of_month_concentration\"\n      ]\n    },\n    {\n      \"heading\": \"Obligations and leverage\",\n      \"paragraphs\": [\n        \"The applicant maintains active recurring debt service obligations totaling {fig:CF.recurring_debt_service_monthly} per month, comprised of monthly installment debits of {fig:CF.recurring.1.amount} to FE CREDIT and {fig:CF.recurring.2.amount} to SPAYLATER across all six recorded months. Additional regular transfers of {fig:CF.recurring.3.amount} are made monthly to an individual counterparty.\",\n        \"Relative to the requested financing amount of {fig:APP.requested_amount}, the applicant's estimated repayment capacity benchmark of {fig:CF.suggested_capacity} indicates a stretched leverage ratio of {fig:CF.request_to_capacity}. The requested facility is substantially higher than conservative debt-bearing capacity given existing consumer commitments.\"\n      ],\n      \"figure_ids\": [\n        \"CF.recurring_debt_service_monthly\",\n        \"CF.recurring.1.amount\",\n        \"CF.recurring.2.amount\",\n        \"CF.recurring.3.amount\",\n        \"APP.requested_amount\",\n        \"CF.suggested_capacity\",\n        \"CF.request_to_capacity\"\n      ]\n    },\n    {\n      \"heading\": \"Document quality and coverage\",\n      \"paragraphs\": [\n        \"Document consistency shows material anomalies across secondary submissions. Shipping receipt D12 from GHN Express duplicates the receipt reference number and amount of {fig:DOC.D12.total} previously seen on receipt D09, while bearing an incongruous future date. Furthermore, dashboard document D04 displays the shop title 'Linh Fashion VN' rather than 'Linh Fashion Official' alongside lower follower metrics, indicating potential mixing of store accounts.\",\n        \"The primary bank statement D01 covers six unbroken months from December through May, closing at {fig:DOC.D01.closing_balance}. However, June bank transaction data is absent to cross-verify the June Shopee dashboard D07, and two balance continuity interruptions require clarification.\"\n      ],\n      \"figure_ids\": [\n        \"DOC.D12.total\",\n        \"DOC.D01.closing_balance\"\n      ]\n    },\n    {\n      \"heading\": \"Recommendation\",\n      \"paragraphs\": [\n        \"A final credit decision cannot be reached without addressing file defects. Approval should be placed on hold and formal clarification requested from the borrower. Specifically, the applicant must resolve the duplicated GHN logistics receipt D12, justify shop name divergence on dashboard D04, and provide the complete June bank statement.\",\n        \"Should the applicant satisfactorily substantiate these items, underwriting should consider a significantly right-sized facility commensurate with debt service capacity rather than the requested {fig:APP.requested_amount}.\"\n      ],\n      \"figure_ids\": [\n        \"APP.requested_amount\"\n      ]\n    }\n  ],\n  \"key_figure_ids\": [\n    \"APP.requested_amount\",\n    \"CF.avg_monthly_business_inflow\",\n    \"CF.recurring_debt_service_monthly\",\n    \"CF.suggested_capacity\",\n    \"CF.request_to_capacity\",\n    \"CF.platform_payout_total\"\n  ],\n  \"strengths\": [\n    \"Consistent and growing gross sales across Shopee store dashboards from January through June\",\n    \"Clear verification of physical retail inventory, workstation, and courier packaging via premises documentation\",\n    \"Regular marketplace payout settlements deposited into the applicant bank account matching seller turnover\"\n  ],\n  \"concerns\": [\n    \"Duplicated receipt number on logistics document D12 with an inconsistent future date\",\n    \"Discrepant shop title 'Linh Fashion VN' and drop in follower base on March dashboard D04\",\n    \"Material debt service commitments to FE CREDIT and SPAYLATER consuming regular cash flow\",\n    \"High requested financing amount relative to illustrative repayment capacity\",\n    \"Absence of June bank statements to cross-reconcile June dashboard payouts\"\n  ],\n  \"recommendation\": \"request_more_documents\",\n  \"conditions\": [\n    \"Submit original, unaltered logistics invoices replacing suspected duplicate document D12\",\n    \"Provide written explanation and administrative proof of ownership regarding the March dashboard store name variation 'Linh Fashion VN'\",\n    \"Furnish the complete bank statement for the month of June to reconcile platform payouts against dashboard D07\",\n    \"Reduce facility quantum to align within suggested repayment capacity following document resolution\"\n  ],\n  \"rationale\": \"While the core trading activity of Linh Fashion Official is substantiated by marketplace settlements and premises inspection, the presence of an altered or duplicated shipping invoice, a diverging store name on dashboard D04, and an absence of the June bank statement create evidentiary gaps. Additionally, existing debt service to micro-lenders constrains capacity against the requested amount. Supplemental documentation must be verified prior to any credit commitment.\"\n}",
+ "parsed": {
+  "headline": "Linh Fashion Official demonstrates active online retail turnover supported by platform payouts, but approval must be deferred pending clarification of duplicate documentation, mismatched shop naming, and leverage capacity against the requested amount.",
+  "sections": [
+   {
+    "heading": "Business overview",
+    "paragraphs": [
+     "The applicant operates Linh Fashion Official, a small online apparel retail business based in Vietnam selling predominantly via the Shopee marketplace platform. The loan file includes six monthly seller dashboard reports covering January through June of the current operational period, five pages of bank account statements covering December through May, multiple logistics receipts, and a business premises photograph.",
+     "Physical verification via document D14 shows a functional order processing and packaging location displaying 'Linh Fashion' signage, equipped with clothing display racks, garments, shipping cartons labeled for domestic couriers, and a packing workstation. Verified activity reflects genuine order fulfillment consistent with micro-retail e-commerce."
+    ],
+    "figure_ids": []
+   },
+   {
+    "heading": "Cash flow",
+    "paragraphs": [
+     "Primary banking records across six statement months from December through May show total recorded account inflows of {fig:CF.total_inflow} against operational outflows of {fig:CF.total_outflow}, yielding an average monthly inflow of {fig:CF.avg_monthly_inflow} and net monthly cash flow of {fig:CF.avg_monthly_net}.",
+     "Adjusting for non-business financing transfers, including {fig:CF.self_transfer_count} self-transfers totaling {fig:CF.self_transfer_total} from the owner's secondary account and a round-trip credit of {fig:CF.round_trip_total}, the normalized average monthly business inflow stands at {fig:CF.avg_monthly_business_inflow}. Monthly underlying business inflows display moderate stability, expanding at a trend rate of {fig:CF.revenue_trend_pct} with an inflow volatility coefficient of {fig:CF.inflow_volatility_cv}."
+    ],
+    "figure_ids": [
+     "CF.total_inflow",
+     "CF.total_outflow",
+     "CF.avg_monthly_inflow",
+     "CF.avg_monthly_net",
+     "CF.self_transfer_count",
+     "CF.self_transfer_total",
+     "CF.round_trip_total",
+     "CF.avg_monthly_business_inflow",
+     "CF.revenue_trend_pct",
+     "CF.inflow_volatility_cv"
+    ]
+   },
+   {
+    "heading": "Revenue quality and concentration",
+    "paragraphs": [
+     "Bank deposits are primarily driven by marketplace settlements, with Shopee platform disbursements contributing {fig:CF.platform_payout_total} across eighteen transactions, supplemented by {fig:CF.cash_deposit_total} in cash counter deposits from cash-on-delivery collections. Individual platform disbursements range between {fig:TX.T0145} and {fig:TX.T0061}.",
+     "Seller dashboard extracts corroborate steady retail performance, showing monthly marketplace sales expanding from {fig:DOC.D02.gross_sales} in January to {fig:DOC.D07.gross_sales} in June, alongside healthy order counts such as {fig:DOC.D02.orders} in January and {fig:DOC.D07.orders} in June. A concentrated portion of deposits occurs near period conclusions, with an end-of-month inflow share of {fig:CF.end_of_month_concentration}."
+    ],
+    "figure_ids": [
+     "CF.platform_payout_total",
+     "CF.cash_deposit_total",
+     "TX.T0145",
+     "TX.T0061",
+     "DOC.D02.gross_sales",
+     "DOC.D07.gross_sales",
+     "DOC.D02.orders",
+     "DOC.D07.orders",
+     "CF.end_of_month_concentration"
+    ]
+   },
+   {
+    "heading": "Obligations and leverage",
+    "paragraphs": [
+     "The applicant maintains active recurring debt service obligations totaling {fig:CF.recurring_debt_service_monthly} per month, comprised of monthly installment debits of {fig:CF.recurring.1.amount} to FE CREDIT and {fig:CF.recurring.2.amount} to SPAYLATER across all six recorded months. Additional regular transfers of {fig:CF.recurring.3.amount} are made monthly to an individual counterparty.",
+     "Relative to the requested financing amount of {fig:APP.requested_amount}, the applicant's estimated repayment capacity benchmark of {fig:CF.suggested_capacity} indicates a stretched leverage ratio of {fig:CF.request_to_capacity}. The requested facility is substantially higher than conservative debt-bearing capacity given existing consumer commitments."
+    ],
+    "figure_ids": [
+     "CF.recurring_debt_service_monthly",
+     "CF.recurring.1.amount",
+     "CF.recurring.2.amount",
+     "CF.recurring.3.amount",
+     "APP.requested_amount",
+     "CF.suggested_capacity",
+     "CF.request_to_capacity"
+    ]
+   },
+   {
+    "heading": "Document quality and coverage",
+    "paragraphs": [
+     "Document consistency shows material anomalies across secondary submissions. Shipping receipt D12 from GHN Express duplicates the receipt reference number and amount of {fig:DOC.D12.total} previously seen on receipt D09, while bearing an incongruous future date. Furthermore, dashboard document D04 displays the shop title 'Linh Fashion VN' rather than 'Linh Fashion Official' alongside lower follower metrics, indicating potential mixing of store accounts.",
+     "The primary bank statement D01 covers six unbroken months from December through May, closing at {fig:DOC.D01.closing_balance}. However, June bank transaction data is absent to cross-verify the June Shopee dashboard D07, and two balance continuity interruptions require clarification."
+    ],
+    "figure_ids": [
+     "DOC.D12.total",
+     "DOC.D01.closing_balance"
+    ]
+   },
+   {
+    "heading": "Recommendation",
+    "paragraphs": [
+     "A final credit decision cannot be reached without addressing file defects. Approval should be placed on hold and formal clarification requested from the borrower. Specifically, the applicant must resolve the duplicated GHN logistics receipt D12, justify shop name divergence on dashboard D04, and provide the complete June bank statement.",
+     "Should the applicant satisfactorily substantiate these items, underwriting should consider a significantly right-sized facility commensurate with debt service capacity rather than the requested {fig:APP.requested_amount}."
+    ],
+    "figure_ids": [
+     "APP.requested_amount"
+    ]
+   }
+  ],
+  "key_figure_ids": [
+   "APP.requested_amount",
+   "CF.avg_monthly_business_inflow",
+   "CF.recurring_debt_service_monthly",
+   "CF.suggested_capacity",
+   "CF.request_to_capacity",
+   "CF.platform_payout_total"
+  ],
+  "strengths": [
+   "Consistent and growing gross sales across Shopee store dashboards from January through June",
+   "Clear verification of physical retail inventory, workstation, and courier packaging via premises documentation",
+   "Regular marketplace payout settlements deposited into the applicant bank account matching seller turnover"
+  ],
+  "concerns": [
+   "Duplicated receipt number on logistics document D12 with an inconsistent future date",
+   "Discrepant shop title 'Linh Fashion VN' and drop in follower base on March dashboard D04",
+   "Material debt service commitments to FE CREDIT and SPAYLATER consuming regular cash flow",
+   "High requested financing amount relative to illustrative repayment capacity",
+   "Absence of June bank statements to cross-reconcile June dashboard payouts"
+  ],
+  "recommendation": "request_more_documents",
+  "conditions": [
+   "Submit original, unaltered logistics invoices replacing suspected duplicate document D12",
+   "Provide written explanation and administrative proof of ownership regarding the March dashboard store name variation 'Linh Fashion VN'",
+   "Furnish the complete bank statement for the month of June to reconcile platform payouts against dashboard D07",
+   "Reduce facility quantum to align within suggested repayment capacity following document resolution"
+  ],
+  "rationale": "While the core trading activity of Linh Fashion Official is substantiated by marketplace settlements and premises inspection, the presence of an altered or duplicated shipping invoice, a diverging store name on dashboard D04, and an absence of the June bank statement create evidentiary gaps. Additionally, existing debt service to micro-lenders constrains capacity against the requested amount. Supplemental documentation must be verified prior to any credit commitment."
+ },
+ "state": {
+  "output": {
+   "headline": "Linh Fashion Official demonstrates active online retail turnover supported by platform payouts, but approval must be deferred pending clarification of duplicate documentation, mismatched shop naming, and leverage capacity against the requested amount.",
+   "sections": [
+    {
+     "heading": "Business overview",
+     "paragraphs": [
+      "The applicant operates Linh Fashion Official, a small online apparel retail business based in Vietnam selling predominantly via the Shopee marketplace platform. The loan file includes six monthly seller dashboard reports covering January through June of the current operational period, five pages of bank account statements covering December through May, multiple logistics receipts, and a business premises photograph.",
+      "Physical verification via document D14 shows a functional order processing and packaging location displaying 'Linh Fashion' signage, equipped with clothing display racks, garments, shipping cartons labeled for domestic couriers, and a packing workstation. Verified activity reflects genuine order fulfillment consistent with micro-retail e-commerce."
+     ],
+     "figure_ids": []
+    },
+    {
+     "heading": "Cash flow",
+     "paragraphs": [
+      "Primary banking records across six statement months from December through May show total recorded account inflows of {fig:CF.total_inflow} against operational outflows of {fig:CF.total_outflow}, yielding an average monthly inflow of {fig:CF.avg_monthly_inflow} and net monthly cash flow of {fig:CF.avg_monthly_net}.",
+      "Adjusting for non-business financing transfers, including {fig:CF.self_transfer_count} self-transfers totaling {fig:CF.self_transfer_total} from the owner's secondary account and a round-trip credit of {fig:CF.round_trip_total}, the normalized average monthly business inflow stands at {fig:CF.avg_monthly_business_inflow}. Monthly underlying business inflows display moderate stability, expanding at a trend rate of {fig:CF.revenue_trend_pct} with an inflow volatility coefficient of {fig:CF.inflow_volatility_cv}."
+     ],
+     "figure_ids": [
+      "CF.total_inflow",
+      "CF.total_outflow",
+      "CF.avg_monthly_inflow",
+      "CF.avg_monthly_net",
+      "CF.self_transfer_count",
+      "CF.self_transfer_total",
+      "CF.round_trip_total",
+      "CF.avg_monthly_business_inflow",
+      "CF.revenue_trend_pct",
+      "CF.inflow_volatility_cv"
+     ]
+    },
+    {
+     "heading": "Revenue quality and concentration",
+     "paragraphs": [
+      "Bank deposits are primarily driven by marketplace settlements, with Shopee platform disbursements contributing {fig:CF.platform_payout_total} across eighteen transactions, supplemented by {fig:CF.cash_deposit_total} in cash counter deposits from cash-on-delivery collections. Individual platform disbursements range between {fig:TX.T0145} and {fig:TX.T0061}.",
+      "Seller dashboard extracts corroborate steady retail performance, showing monthly marketplace sales expanding from {fig:DOC.D02.gross_sales} in January to {fig:DOC.D07.gross_sales} in June, alongside healthy order counts such as {fig:DOC.D02.orders} in January and {fig:DOC.D07.orders} in June. A concentrated portion of deposits occurs near period conclusions, with an end-of-month inflow share of {fig:CF.end_of_month_concentration}."
+     ],
+     "figure_ids": [
+      "CF.platform_payout_total",
+      "CF.cash_deposit_total",
+      "TX.T0145",
+      "TX.T0061",
+      "DOC.D02.gross_sales",
+      "DOC.D07.gross_sales",
+      "DOC.D02.orders",
+      "DOC.D07.orders",
+      "CF.end_of_month_concentration"
+     ]
+    },
+    {
+     "heading": "Obligations and leverage",
+     "paragraphs": [
+      "The applicant maintains active recurring debt service obligations totaling {fig:CF.recurring_debt_service_monthly} per month, comprised of monthly installment debits of {fig:CF.recurring.1.amount} to FE CREDIT and {fig:CF.recurring.2.amount} to SPAYLATER across all six recorded months. Additional regular transfers of {fig:CF.recurring.3.amount} are made monthly to an individual counterparty.",
+      "Relative to the requested financing amount of {fig:APP.requested_amount}, the applicant's estimated repayment capacity benchmark of {fig:CF.suggested_capacity} indicates a stretched leverage ratio of {fig:CF.request_to_capacity}. The requested facility is substantially higher than conservative debt-bearing capacity given existing consumer commitments."
+     ],
+     "figure_ids": [
+      "CF.recurring_debt_service_monthly",
+      "CF.recurring.1.amount",
+      "CF.recurring.2.amount",
+      "CF.recurring.3.amount",
+      "APP.requested_amount",
+      "CF.suggested_capacity",
+      "CF.request_to_capacity"
+     ]
+    },
+    {
+     "heading": "Document quality and coverage",
+     "paragraphs": [
+      "Document consistency shows material anomalies across secondary submissions. Shipping receipt D12 from GHN Express duplicates the receipt reference number and amount of {fig:DOC.D12.total} previously seen on receipt D09, while bearing an incongruous future date. Furthermore, dashboard document D04 displays the shop title 'Linh Fashion VN' rather than 'Linh Fashion Official' alongside lower follower metrics, indicating potential mixing of store accounts.",
+      "The primary bank statement D01 covers six unbroken months from December through May, closing at {fig:DOC.D01.closing_balance}. However, June bank transaction data is absent to cross-verify the June Shopee dashboard D07, and two balance continuity interruptions require clarification."
+     ],
+     "figure_ids": [
+      "DOC.D12.total",
+      "DOC.D01.closing_balance"
+     ]
+    },
+    {
+     "heading": "Recommendation",
+     "paragraphs": [
+      "A final credit decision cannot be reached without addressing file defects. Approval should be placed on hold and formal clarification requested from the borrower. Specifically, the applicant must resolve the duplicated GHN logistics receipt D12, justify shop name divergence on dashboard D04, and provide the complete June bank statement.",
+      "Should the applicant satisfactorily substantiate these items, underwriting should consider a significantly right-sized facility commensurate with debt service capacity rather than the requested {fig:APP.requested_amount}."
+     ],
+     "figure_ids": [
+      "APP.requested_amount"
+     ]
+    }
+   ],
+   "key_figure_ids": [
+    "APP.requested_amount",
+    "CF.avg_monthly_business_inflow",
+    "CF.recurring_debt_service_monthly",
+    "CF.suggested_capacity",
+    "CF.request_to_capacity",
+    "CF.platform_payout_total"
+   ],
+   "strengths": [
+    "Consistent and growing gross sales across Shopee store dashboards from January through June",
+    "Clear verification of physical retail inventory, workstation, and courier packaging via premises documentation",
+    "Regular marketplace payout settlements deposited into the applicant bank account matching seller turnover"
+   ],
+   "concerns": [
+    "Duplicated receipt number on logistics document D12 with an inconsistent future date",
+    "Discrepant shop title 'Linh Fashion VN' and drop in follower base on March dashboard D04",
+    "Material debt service commitments to FE CREDIT and SPAYLATER consuming regular cash flow",
+    "High requested financing amount relative to illustrative repayment capacity",
+    "Absence of June bank statements to cross-reconcile June dashboard payouts"
+   ],
+   "recommendation": "request_more_documents",
+   "conditions": [
+    "Submit original, unaltered logistics invoices replacing suspected duplicate document D12",
+    "Provide written explanation and administrative proof of ownership regarding the March dashboard store name variation 'Linh Fashion VN'",
+    "Furnish the complete bank statement for the month of June to reconcile platform payouts against dashboard D07",
+    "Reduce facility quantum to align within suggested repayment capacity following document resolution"
+   ],
+   "rationale": "While the core trading activity of Linh Fashion Official is substantiated by marketplace settlements and premises inspection, the presence of an altered or duplicated shipping invoice, a diverging store name on dashboard D04, and an absence of the June bank statement create evidentiary gaps. Additionally, existing debt service to micro-lenders constrains capacity against the requested amount. Supplemental documentation must be verified prior to any credit commitment."
+  }
+ },
+ "input_tokens": 12970,
+ "output_tokens": 2010,
+ "thinking_tokens": 0,
+ "model": "gemini-3.8-flash",
+ "prompt_version": "analyst-v1.4",
+ "agent": "analyst",
+ "cached_at": "2026-10-16T06:17:15+00:00"
+}

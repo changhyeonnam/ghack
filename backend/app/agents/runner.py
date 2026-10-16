@@ -116,6 +116,23 @@ def build_llm_agent(spec: AgentSpec, settings: Settings, mock: bool) -> LlmAgent
     return LlmAgent(**kwargs)
 
 
+def _cache_lookup(repo: Repository, settings: Settings, keys: list[str]) -> Optional[dict[str, Any]]:
+    """Repository cache first (migrating legacy keys to keys[0]), then the read-only cache bundled with the repo."""
+    for k in keys:
+        hit = repo.cache_get(k)
+        if hit:
+            if k != keys[0]:
+                repo.cache_put(keys[0], hit)
+            return hit
+    d = settings.bundled_cache_dir
+    if d and d.is_dir():
+        for k in keys:
+            f = d / f"{k}.json"
+            if f.is_file():
+                return json.loads(f.read_text("utf-8"))
+    return None
+
+
 def cache_key(spec: AgentSpec, parts: list[types.Part], extra: Optional[dict[str, Any]] = None, portable: bool = True) -> str:
     """Content hash of the call. portable=True identifies rendered images by their source document and view (see
     llm/image_ids.py) so a cache built on one OS replays on another; portable=False is the original byte-hash key,
@@ -202,12 +219,7 @@ async def run_agent(spec: AgentSpec, parts: list[types.Part], *, settings: Setti
     trace_id = uuid.uuid4().hex[:12]
 
     if use_cache and settings.llm_cache_enabled and not mock:
-        hit = repo.cache_get(key)
-        if not hit:
-            legacy = cache_key(spec, parts, cache_extra, portable=False)
-            hit = repo.cache_get(legacy)
-            if hit:  # migrate an entry cached under the byte-hash key
-                repo.cache_put(key, hit)
+        hit = _cache_lookup(repo, settings, [key, cache_key(spec, parts, cache_extra, portable=False)])
         if hit:
             res = AgentResult(text=hit.get("text", ""), parsed=hit.get("parsed"), cached=True, model=spec.model,
                               input_tokens=hit.get("input_tokens", 0), output_tokens=hit.get("output_tokens", 0),
@@ -220,6 +232,8 @@ async def run_agent(spec: AgentSpec, parts: list[types.Part], *, settings: Setti
     live_ok = {a.strip() for a in settings.live_agents_in_cache_only.split(",") if a.strip()}
     if mode == "cache_only" and spec.name.split(":")[0] not in live_ok:
         raise CacheMiss(f"LLM cache miss for {spec.name} while running in cache_only mode")
+    if mode == "cache_only" and not (settings.google_api_key or settings.use_vertexai):
+        raise CacheMiss(f"{spec.name} needs a live Gemini call; set GOOGLE_API_KEY (this replay has no key)")
     if not mock and _spent_usd >= settings.budget_cap_usd:
         raise BudgetExceeded(f"Budget cap of USD {settings.budget_cap_usd} reached in this process; refusing to call Gemini")
 
@@ -287,11 +301,7 @@ async def run_sequence(specs: list[AgentSpec], parts: list[types.Part], *, setti
     key = cache_key(seq_spec, parts, cache_extra)
     started = time.time()
     if settings.llm_cache_enabled and not mock:
-        hit = repo.cache_get(key)
-        if not hit:
-            hit = repo.cache_get(cache_key(seq_spec, parts, cache_extra, portable=False))
-            if hit:  # migrate an entry cached under the byte-hash key
-                repo.cache_put(key, hit)
+        hit = _cache_lookup(repo, settings, [key, cache_key(seq_spec, parts, cache_extra, portable=False)])
         if hit:
             out = []
             for s, r in zip(specs, hit["results"]):
