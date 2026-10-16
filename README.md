@@ -114,6 +114,24 @@ LEDGERLENS_STORAGE=gcp GOOGLE_CLOUD_PROJECT=$PROJECT_ID LEDGERLENS_GCS_BUCKET=$P
   backend/.venv/bin/python backend/scripts/upload_llm_cache.py data/runtime_live/cache
 ```
 
+## Public demo: how to try it, limits, cold start
+
+- **Try it without an account:** open the link, click **Load demo cases**, open *Reyes Auto Repair* and press
+  **Run all remaining**. Each browser gets its own copy of the three demo cases (**Reset demo** restores them).
+- **Your own documents:** **New case** uploads PDFs or photos and runs live Gemini. Upload generated or anonymised
+  documents only. Cases are shared read-only with other visitors once analysed (untick the box to keep one private).
+- **AI budget:** live Gemini spend is capped (`LEDGERLENS_BUDGET_CAP_USD`, persisted in Firestore across instances).
+  When the cap or the key's billing limit is reached, a banner says live analysis is paused, and every case analysed so
+  far, including other visitors' runs, can still be opened. Demo cases and re-runs of the same documents replay the
+  recorded Gemini responses and cost nothing.
+- **Cold start (Cloud Run scales to zero):** startup does no work beyond loading the app (demo seeding moved to the
+  browser's first visit); documents are stored by content hash and page renders are shared, so after the first visitor
+  a demo copy seeds in about 2 s and replays the full pipeline in about 5 s. A live case takes about 2 minutes;
+  the request timeout is 600 s and the web app calls Cloud Run directly, so long stages are not cut by the 60 s
+  Firebase Hosting proxy limit.
+- **Agents:** the five agents are Google ADK `LlmAgent`s (the Challenger is a `SequentialAgent` with tools), deployed
+  on Cloud Run, calling Gemini 3.8 Flash.
+
 ## Synthetic data and limits
 
 No real customer data is used anywhere. The three businesses, their statements, dashboards, receipts, ledgers and
