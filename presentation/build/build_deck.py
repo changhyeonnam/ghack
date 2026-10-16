@@ -228,7 +228,7 @@ for p in sh.text_frame.paragraphs[1:]:
         r.text = ""
 sh.height = Inches(0.5)
 headline(s, "Same documents. About 2 minutes per file. Every number defensible.", y=1.22, size=19, h=0.5)
-nums = [("~2 min", "per file, end to end (measured, live Gemini)", False), ("~0.28", "USD per case on a cold run; USD 0 on a cached re-run", False), ("0 vs 47", "unsourced numbers in the memo: LedgerLens vs a single prompt", True)]
+nums = [("~2 min", "per file, end to end (measured, live Gemini)", False), ("~0.28", "USD per case on a cold run; USD 0 on a cached re-run", False), ("0 vs 62", "unsourced numbers in the memo: LedgerLens vs a single prompt", True)]
 x = 0.3
 for big, small, acc in nums:
     card(s, x, 1.8, 3.0, 1.35, fill=AMBER_T if acc else WHITE, line=AMBER if acc else LINE, lw=1.5 if acc else 1)
@@ -315,32 +315,32 @@ tb(s, 0.3, 5.15, 9.4, 0.3, [{"t": "Output schema requires source {doc_id, page, 
 # ---------- Slide 13: Benchmark ----------
 s = S[13]
 set_title(s, "Prototype performance report / Benchmarking")
-headline(s, "16 of 20 planted traps caught on live Gemini; a single prompt on the same documents caught 1.", y=1.22, size=17, h=0.7)
+headline(s, "18 of 20 planted traps caught on live Gemini output; a single prompt on the same documents caught 3.", y=1.22, size=17, h=0.7)
 # hero numbers
 card(s, 0.3, 1.95, 4.5, 2.0, fill=AMBER_T, line=AMBER, lw=1.5)
 tb(s, 0.45, 2.0, 2.2, 0.3, [{"t": "LEDGERLENS", "size": 9, "bold": True, "color": AMBER}], margin=0.0)
-tb(s, 0.45, 2.25, 2.3, 1.2, [{"t": "16", "size": 72, "bold": True, "color": INK}], margin=0.0)
-tb(s, 0.45, 3.4, 2.2, 0.5, [{"t": "of 20 traps caught", "size": 11, "color": TXT}, {"t": "95% Wilson CI 0.58-0.92", "size": 8.5, "color": GREY}], margin=0.0)
+tb(s, 0.45, 2.25, 2.3, 1.2, [{"t": "18", "size": 72, "bold": True, "color": INK}], margin=0.0)
+tb(s, 0.45, 3.4, 2.2, 0.5, [{"t": "of 20 traps caught", "size": 11, "color": TXT}, {"t": "95% Wilson CI 0.70-0.97", "size": 8.5, "color": GREY}], margin=0.0)
 tb(s, 2.75, 2.0, 2.0, 0.3, [{"t": "SINGLE PROMPT", "size": 9, "bold": True, "color": GREY}], margin=0.0)
-tb(s, 2.75, 2.25, 2.0, 1.2, [{"t": "1", "size": 72, "bold": True, "color": RGBColor(0xB0, 0xB8, 0xBE)}], margin=0.0)
+tb(s, 2.75, 2.25, 2.0, 1.2, [{"t": "3", "size": 72, "bold": True, "color": RGBColor(0xB0, 0xB8, 0xBE)}], margin=0.0)
 tb(s, 2.75, 3.4, 2.0, 0.5, [{"t": "of 20, same documents", "size": 11, "color": GREY}, {"t": "and same model", "size": 8.5, "color": GREY}], margin=0.0)
 card(s, 0.3, 4.1, 2.2, 1.25, fill=WHITE, line=LINE)
 tb(s, 0.42, 4.15, 2.0, 0.6, [{"t": "0", "size": 30, "bold": True, "color": INK}], margin=0.0)
-tb(s, 0.42, 4.75, 2.0, 0.55, [{"t": "unsourced numbers in the memo (single prompt: 47)", "size": 9.5, "color": GREY}], margin=0.0)
+tb(s, 0.42, 4.75, 2.0, 0.55, [{"t": "unsourced numbers in the memo (single prompt: 62)", "size": 9.5, "color": GREY}], margin=0.0)
 card(s, 2.6, 4.1, 2.2, 1.25, fill=WHITE, line=LINE)
 tb(s, 2.72, 4.15, 2.0, 0.6, [{"t": "~2 min", "size": 30, "bold": True, "color": INK}], margin=0.0)
 tb(s, 2.72, 4.75, 2.0, 0.55, [{"t": "per case cold, USD 0.26-0.31; cached re-run USD 0", "size": 9.5, "color": GREY}], margin=0.0)
 rows = [["Metric", "Target", "Result"],
-        ["Trap recall (strict)", "≥ 16 / 20", "16 / 20"],
-        ["Unsourced numbers", "0", "0 (single prompt: 47)"],
-        ["Objections on clean case A", "≤ 20%", "1 (4.5%)"],
+        ["Trap recall (strict)", "≥ 16 / 20", "18 / 20"],
+        ["Unsourced numbers", "0", "0 (single prompt: 62)"],
+        ["Objections on clean case A", "≤ 20%", "0"],
         ["Extraction row accuracy*", "≥ 97%", "100% (481 / 481)"],
         ["Evidence-link accuracy*", "≥ 95%", "100%"],
         ["Time per case (cold)", "≤ 180 s", "~2 min"],
         ["Cost per case (cold)", "≤ USD 0.50", "USD 0.26-0.31"]]
 table(s, 5.0, 1.95, 4.7, 2.25, rows, [2.0, 1.0, 1.7], font=9, bold_first_col=True)
 card(s, 5.0, 4.28, 4.7, 1.12, fill=PANEL, line=LINE)
-tb(s, 5.1, 4.31, 4.52, 1.08, [{"t": [("How measured. ", {"bold": True}), ("Live gemini-3.8-flash run, 2026-10-15: 3 synthetic businesses, 43 documents, 20 planted traps. Strict scoring: an objection counts only if it carries the trap's identifying amount or document, one objection per trap. n = 3, so read as indicative. Missed: dashboard gross vs payout, COD vs cash deposits, weekly informal lender with a data gap, ledger cash vs deposits. Recommendation matched on B; A gave approve_with_conditions (expected approve), C gave reject (expected request_more_documents). *Clean born-digital synthetic PDFs; real scans will be lower.", {})], "size": 7.5, "color": TXT}], margin=0.0)
+tb(s, 5.1, 4.31, 4.52, 1.08, [{"t": [("How measured. ", {"bold": True}), ("Live gemini-3.8-flash runs, 2026-10-15/16: 3 synthetic businesses, 43 documents, 20 planted traps. Strict scoring: an objection counts only if it carries the trap's identifying amount or document, one objection per trap. ", {}), ("Not a blind evaluation: ", {"bold": True}), ("these three cases informed the fixes (demo watermark handling, ledger/deposit alignment, weekly-lender detection, recommendation rule); held-out cases are future work. n = 3. Missed: dashboard gross vs payout, COD vs cash deposits. Recommendation matched on C; A gave approve_with_conditions (expected approve), B request_more_documents (expected approve_with_conditions). *Clean born-digital synthetic PDFs; real scans will be lower.", {})], "size": 7.5, "color": TXT}], margin=0.0)
 
 # ---------- Slide 6: Process flow ----------
 s = S[7]
@@ -382,7 +382,7 @@ rows = [["Assumption", "Value"],
         ["Gemini 3.8 Flash list price", "USD 0.75 / 3.75 per 1M tokens"],
         ["Measured cold run", "~2 min and USD 0.26-0.31 per case"],
         ["Cached re-run", "USD 0 (content-hash LLM cache)"],
-        ["Public demo", "cache_only replay, USD 0; only the customer letter calls Gemini (~USD 0.0015)"],
+        ["Public demo", "Replays the recorded live Gemini run, USD 0; only the customer letter calls Gemini (~USD 0.0015)"],
         ["Hosting", "Cloud Run scales to zero; Firestore and Storage in free tier"],
         ["Guardrail", "Budget-cap env var stops Gemini calls once spent"],
         ["Build", "2 engineers, 4 days, free tier and trial credits"]]
@@ -427,7 +427,7 @@ for p in sh.text_frame.paragraphs[1:]:
 sh.height = Inches(0.5)
 links = [("GitHub public repository", "github.com/changhyeonnam/ghack", "English README, architecture, run instructions, synthetic-data notice, presentation/"),
          ("Demo video (up to 3 minutes)", VIDEO_URL, "Problem in 20 seconds, click-to-source and Challenger scenes, benchmark near the end"),
-         ("Final product", APP_URL, "Cloud Run service; each browser gets its own copy of the three demo cases (Reset demo). Scales to zero; demo cases replay cached runs, so judging costs nothing")]
+         ("Final product", APP_URL, "Cloud Run service; each browser gets its own copy of the three demo cases (Reset demo). Scales to zero; demo cases replay the recorded live Gemini run (only the customer letter calls Gemini live), so judging costs nothing")]
 y = 1.3
 for t, u, d in links:
     card(s, 0.3, y, 9.4, 1.2, fill=PANEL, line=LINE)
