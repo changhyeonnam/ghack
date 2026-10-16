@@ -51,6 +51,9 @@ class Settings(BaseSettings):
     llm_max_retries: int = 2
     # Hard stop: refuse to spend more than this in one process lifetime (USD).
     budget_cap_usd: float = 5.0
+    # In cache_only mode these agents may still call Gemini on a cache miss. The Explainer's letter depends on each
+    # reviewer's own signed decision, so it can never be pre-cached; it is one short Flash call per letter.
+    live_agents_in_cache_only: str = "explainer"
 
     # --- documents ---------------------------------------------------------
     max_upload_mb: int = 20

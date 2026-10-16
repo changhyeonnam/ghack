@@ -85,7 +85,7 @@ Open the app, click **Load demo cases** (each browser gets its own copy; **Reset
 |---|---|
 | `auto` (default) | live Gemini when a key is present, otherwise mock |
 | `live` | call Gemini; responses are cached by content hash (model + prompt version + inputs) so re-runs are free and deterministic |
-| `cache_only` | never call Gemini; a cache miss returns 503. Use for the public demo instance |
+| `cache_only` | never call Gemini except for the customer letter (`LEDGERLENS_LIVE_AGENTS_IN_CACHE_ONLY=explainer`, one short Flash call per signed decision, under the budget cap); any other cache miss returns 503. Use for the public demo instance |
 | `mock` | offline; answers come from the synthetic answer key |
 
 ## Cost (budget mode)
@@ -105,6 +105,9 @@ echo -n "$GOOGLE_API_KEY" | gcloud secrets create gemini-api-key --data-file=-
 ./deploy/deploy.sh                       # Cloud Run from source (Dockerfile builds the frontend too, served at /)
 DEPLOY_FIREBASE=1 ./deploy/deploy.sh     # additionally publish the frontend on Firebase Hosting with /api rewritten to Cloud Run
 LLM_MODE=cache_only ./deploy/deploy.sh   # public demo that only replays cached runs (no Gemini spend)
+# fill the deployed cache once from a local live run (Firestore + GCS, uses your gcloud ADC):
+LEDGERLENS_STORAGE=gcp GOOGLE_CLOUD_PROJECT=$PROJECT_ID LEDGERLENS_GCS_BUCKET=$PROJECT_ID-ledgerlens-docs \
+  backend/.venv/bin/python backend/scripts/upload_llm_cache.py data/runtime_live/cache
 ```
 
 ## Synthetic data and limits

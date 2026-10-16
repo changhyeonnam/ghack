@@ -11,7 +11,7 @@ from fastapi import Depends, FastAPI, File, Header, HTTPException, Query, Reques
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse, Response
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from .agents.runner import BudgetExceeded, CacheMiss, spent_usd
 from .config import Settings, get_settings
@@ -38,7 +38,8 @@ class DecisionBody(BaseModel):
 
 
 class LetterBody(BaseModel):
-    language: str = "en"
+    # A language code, not free text: the value goes into the prompt and into the cache key.
+    language: str = Field(default="en", pattern=r"^[a-z]{2,3}(-[A-Za-z]{2,4})?$")
 
 
 @asynccontextmanager
