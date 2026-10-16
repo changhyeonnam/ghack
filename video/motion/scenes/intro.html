@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>LedgerLens · intro</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --ink: #0F3D4C; --teal: #2A7F8E; --tint: #E6F2F4;
+    --amber: #E0A100; --red: #B3261E; --grey: #5F6368; --blue: #1f4fd8; --rule: #dedcd5;
+  }
+  html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: var(--bg); }
+  body { font-family: "Inter", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+         color: var(--ink); -webkit-font-smoothing: antialiased; font-feature-settings: "tnum" 1; }
+  .abs { position: absolute; }
+  .brand { left: 96px; top: 64px; display: flex; align-items: center; gap: 14px; font-size: 30px; font-weight: 700; letter-spacing: -0.5px; }
+  .brand svg { width: 44px; height: 44px; }
+
+  #headline { left: 0; right: 0; top: 0; text-align: center; font-size: 88px; font-weight: 750; letter-spacing: -2px;
+              line-height: 1.1; transform-origin: 50% 0; }
+  #headline .w { display: inline-block; white-space: pre; }
+  #headline .hl { color: var(--teal); }
+
+  .stat { top: 300px; width: 700px; }
+  #stat1 { left: 170px; } #stat2 { left: 1050px; }
+  .num { font-size: 210px; font-weight: 800; letter-spacing: -8px; line-height: 1; }
+  .num small { font-size: 120px; letter-spacing: -2px; margin-left: 4px; }
+  #stat1 .num { color: var(--ink); } #stat2 .num { color: var(--red); }
+  .track { margin-top: 26px; width: 640px; height: 12px; border-radius: 6px; background: var(--tint); overflow: hidden; }
+  .fill { height: 100%; width: 0; border-radius: 6px; }
+  #stat1 .fill { background: var(--amber); } #stat2 .fill { background: var(--red); }
+  .cap { margin-top: 30px; font-size: 38px; line-height: 1.3; font-weight: 500; max-width: 680px; }
+  .src { margin-top: 16px; font-size: 22px; color: var(--grey); letter-spacing: 0.3px; }
+  #divider { left: 959px; top: 310px; width: 2px; height: 380px; background: var(--rule); transform-origin: 50% 0; }
+
+  #have { left: 0; right: 0; top: 770px; text-align: center; font-size: 42px; font-weight: 600; letter-spacing: -0.5px; }
+  #have span { color: var(--grey); font-weight: 500; }
+  #chips { left: 0; right: 0; top: 852px; display: flex; justify-content: center; gap: 36px; }
+  .chip { display: flex; align-items: center; gap: 18px; padding: 18px 34px 18px 22px; border-radius: 60px;
+          background: #fff; border: 2px solid var(--tint); box-shadow: 0 6px 24px rgba(15,61,76,0.07);
+          font-size: 32px; font-weight: 600; }
+  .chip svg { width: 60px; height: 60px; }
+</style>
+</head>
+<body>
+<!-- ============ EDIT TEXT AND NUMBERS HERE ============ -->
+<script>
+const DEFAULT_DURATION = 18;            // seconds; override with ?d=<seconds> or render.mjs --d
+const TEXT = {
+  headline: "Southeast Asia's small businesses |run the economy.",   // "|" = line break + teal highlight
+  stat1: { value: 8.8, decimals: 1, caption: "of Vietnam's 914,000 SMEs have a bank loan", source: "Source: FiinGroup, Aug 2026" },
+  stat2: { value: 75.5, decimals: 1, caption: "of Vietnamese firms cannot borrow without collateral", source: "Source: VCCI Private Economic Report 2025" },
+  have: ["What they have:", " bank PDFs, marketplace screenshots, paper receipts."],
+  chips: ["Bank PDFs", "Marketplace screenshots", "Paper receipts"],
+};
+</script>
+<!-- ==================================================== -->
+
+<div class="abs brand" id="brand">
+  <svg viewBox="0 0 64 64" aria-hidden="true">
+    <circle cx="27" cy="27" r="19" fill="#E6F2F4" stroke="#2A7F8E" stroke-width="5"/>
+    <line x1="18" y1="21" x2="36" y2="21" stroke="#0F3D4C" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="18" y1="28" x2="33" y2="28" stroke="#0F3D4C" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="18" y1="35" x2="28" y2="35" stroke="#0F3D4C" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="41.5" y1="41.5" x2="56" y2="56" stroke="#0F3D4C" stroke-width="7" stroke-linecap="round"/>
+  </svg>
+  <span>LedgerLens</span>
+</div>
+
+<div class="abs" id="headline"></div>
+
+<div class="abs stat" id="stat1">
+  <div class="num"><span class="v">0.0</span><small>%</small></div>
+  <div class="track"><div class="fill"></div></div>
+  <div class="cap"></div>
+  <div class="src"></div>
+</div>
+<div class="abs" id="divider"></div>
+<div class="abs stat" id="stat2">
+  <div class="num"><span class="v">0.0</span><small>%</small></div>
+  <div class="track"><div class="fill"></div></div>
+  <div class="cap"></div>
+  <div class="src"></div>
+</div>
+
+<div class="abs" id="have"></div>
+<div class="abs" id="chips">
+  <div class="chip"><!-- bank PDF -->
+    <svg viewBox="0 0 60 60"><path d="M14 6h22l12 12v36H14z" fill="#E6F2F4" stroke="#0F3D4C" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M36 6v12h12" fill="none" stroke="#0F3D4C" stroke-width="3" stroke-linejoin="round"/>
+      <rect x="8" y="30" width="30" height="15" rx="3" fill="#B3261E"/>
+      <text x="23" y="41.5" font-size="11" font-weight="800" fill="#fff" text-anchor="middle" font-family="Helvetica Neue, Arial">PDF</text></svg>
+    <span></span></div>
+  <div class="chip"><!-- marketplace screenshot -->
+    <svg viewBox="0 0 60 60"><rect x="16" y="4" width="28" height="52" rx="5" fill="#E6F2F4" stroke="#0F3D4C" stroke-width="3"/>
+      <line x1="26" y1="10" x2="34" y2="10" stroke="#0F3D4C" stroke-width="2.5" stroke-linecap="round"/>
+      <rect x="21" y="34" width="4.5" height="12" fill="#2A7F8E"/><rect x="27.8" y="26" width="4.5" height="20" fill="#2A7F8E"/>
+      <rect x="34.6" y="20" width="4.5" height="26" fill="#E0A100"/>
+      <line x1="21" y1="16" x2="33" y2="16" stroke="#5F6368" stroke-width="2.5" stroke-linecap="round"/></svg>
+    <span></span></div>
+  <div class="chip"><!-- paper receipt -->
+    <svg viewBox="0 0 60 60"><path d="M15 5h30v47l-5-4-5 4-5-4-5 4-5-4-5 4z" fill="#fff" stroke="#0F3D4C" stroke-width="3" stroke-linejoin="round"/>
+      <line x1="21" y1="15" x2="39" y2="15" stroke="#5F6368" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="21" y1="22" x2="35" y2="22" stroke="#5F6368" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="21" y1="29" x2="37" y2="29" stroke="#5F6368" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="21" y1="38" x2="39" y2="38" stroke="#0F3D4C" stroke-width="3.5" stroke-linecap="round"/></svg>
+    <span></span></div>
+</div>
+
+<script>
+// ---------- shared timing helpers (pure functions of t) ----------
+const P = new URLSearchParams(location.search);
+const D = parseFloat(P.get('d')) > 0 ? parseFloat(P.get('d')) : DEFAULT_DURATION;
+window.SCENE = { duration: D };
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const E = {
+  linear: (k) => k,
+  outCubic: (k) => 1 - Math.pow(1 - k, 3),
+  outQuart: (k) => 1 - Math.pow(1 - k, 4),
+  inOutCubic: (k) => (k < 0.5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2),
+  outBack: (k) => { const c1 = 1.5, c3 = c1 + 1; return 1 + c3 * Math.pow(k - 1, 3) + c1 * Math.pow(k - 1, 2); },
+};
+// cue(t, a, b): eased 0..1 progress between fractions a and b of the scene duration
+const cue = (t, a, b, ease = E.outCubic) => ease(clamp((t / D - a) / (b - a)));
+const $ = (s, root = document) => root.querySelector(s);
+function show(el, k, dy = 28, s0 = null) {
+  el.style.opacity = clamp(k);
+  el.style.transform = `translateY(${(1 - k) * dy}px)` + (s0 !== null ? ` scale(${lerp(s0, 1, k)})` : '');
+}
+
+// ---------- build DOM from TEXT ----------
+const [h1, h2] = TEXT.headline.split('|');
+const words = [];
+const headline = $('#headline');
+for (const [part, cls] of [[h1, ''], [h2, 'hl']]) {
+  if (cls) headline.appendChild(document.createElement('br'));
+  for (const w of part.split(/(?<= )/)) {
+    const s = document.createElement('span');
+    s.className = 'w ' + cls; s.textContent = w; headline.appendChild(s); words.push(s);
+  }
+}
+for (const id of ['stat1', 'stat2']) {
+  $(`#${id} .cap`).textContent = TEXT[id].caption;
+  $(`#${id} .src`).textContent = TEXT[id].source;
+}
+$('#have').innerHTML = `${TEXT.have[0]}<span>${TEXT.have[1]}</span>`;
+document.querySelectorAll('.chip span').forEach((s, i) => (s.textContent = TEXT.chips[i]));
+const chips = [...document.querySelectorAll('.chip')];
+
+function stat(id, t, a) {
+  const root = $('#' + id), cfg = TEXT[id];
+  show($('.num', root), cue(t, a, a + 0.05), 40);
+  const c = cue(t, a + 0.01, a + 0.13, E.outQuart);
+  $('.v', root).textContent = (cfg.value * c).toFixed(cfg.decimals);
+  $('.track', root).style.opacity = cue(t, a, a + 0.04);
+  $('.fill', root).style.width = (cfg.value * c) + '%';
+  show($('.cap', root), cue(t, a + 0.05, a + 0.10), 20);
+  show($('.src', root), cue(t, a + 0.08, a + 0.12), 12);
+}
+
+// ---------- timeline (fractions of D; final state holds from 0.75) ----------
+window.renderAt = function (t) {
+  show($('#brand'), cue(t, 0.0, 0.05), -12);
+
+  words.forEach((w, i) => {
+    const a = 0.01 + i * 0.016;
+    show(w, cue(t, a, a + 0.05), 50);
+  });
+  const up = cue(t, 0.19, 0.25, E.inOutCubic);
+  headline.style.transform = `translateY(${lerp(400, 140, up)}px) scale(${lerp(1, 0.6, up)})`;
+
+  stat('stat1', t, 0.25);
+  const dv = cue(t, 0.38, 0.45, E.inOutCubic);
+  $('#divider').style.transform = `scaleY(${dv})`;
+  stat('stat2', t, 0.41);
+
+  show($('#have'), cue(t, 0.57, 0.63), 24);
+  chips.forEach((c, i) => {
+    const a = 0.62 + i * 0.03;
+    show(c, cue(t, a, a + 0.06, E.outBack), 30, 0.85);
+  });
+};
+
+// Preview in a browser: plays on loop; ?t=<s> freezes a frame. render.mjs passes ?capture=1.
+if (P.has('capture')) renderAt(0);
+else if (P.has('t')) renderAt(parseFloat(P.get('t')));
+else { const s0 = performance.now(); (function loop() { renderAt(((performance.now() - s0) / 1000) % (D + 1)); requestAnimationFrame(loop); })(); }
+</script>
+</body>
+</html>

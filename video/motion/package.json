@@ -1,0 +1,11 @@
+{
+  "name": "ledgerlens-motion",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "node render.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.60.0"
+  }
+}
