@@ -64,10 +64,14 @@ export function workspaceId(): string {
   }
 }
 
+// Empty when the API is served from the same origin (Cloud Run, Vite proxy). The Firebase Hosting build sets it to
+// the Cloud Run URL: Hosting rewrites time out after 60 s, and a live extraction stage can take longer.
+const API_BASE = ((import.meta.env.VITE_API_BASE as string | undefined) ?? '').replace(/\/$/, '')
+
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   const headers = new Headers(init?.headers)
   headers.set('X-LedgerLens-Workspace', workspaceId())
-  const res = await fetch(path, { ...init, headers })
+  const res = await fetch(API_BASE + path, { ...init, headers })
   if (!res.ok) {
     let detail = `${res.status} ${res.statusText}`
     try {
@@ -112,9 +116,9 @@ export function uploadDocuments(caseId: string, files: File[]): Promise<Case> {
 export const deleteDocument = (caseId: string, docId: string) =>
   json<Case>(`/api/cases/${encodeURIComponent(caseId)}/documents/${encodeURIComponent(docId)}`, 'DELETE')
 export const documentFileUrl = (caseId: string, docId: string) =>
-  `/api/cases/${encodeURIComponent(caseId)}/documents/${encodeURIComponent(docId)}/file`
+  `${API_BASE}/api/cases/${encodeURIComponent(caseId)}/documents/${encodeURIComponent(docId)}/file`
 export const documentPageUrl = (caseId: string, docId: string, page: number, scale: 1 | 2 = 1) =>
-  `/api/cases/${encodeURIComponent(caseId)}/documents/${encodeURIComponent(docId)}/pages/${page}?scale=${scale}`
+  `${API_BASE}/api/cases/${encodeURIComponent(caseId)}/documents/${encodeURIComponent(docId)}/pages/${page}?scale=${scale}`
 
 // ---- Pipeline ----
 export const runStage = (caseId: string, stage: StageName | 'all') =>

@@ -64,7 +64,8 @@ class Settings(BaseSettings):
     # Gemini responses from the recorded live run, shipped with the repo so a checkout without an API key replays the
     # real results (cache_only) instead of falling back to the answer-key mock.
     bundled_cache_dir: Path = REPO_ROOT / "data" / "llm_cache"
-    demo_seed_on_startup: bool = True
+    # Off by default: each browser seeds its own demo copies on demand, so a cold start does not wait on seeding.
+    demo_seed_on_startup: bool = False
 
     # --- api ---------------------------------------------------------------
     cors_origins: list[str] = ["*"]
